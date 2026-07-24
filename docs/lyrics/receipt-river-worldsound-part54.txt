@@ -1,0 +1,6 @@
+Title: receipt_river_worldsound_part54
+ID: 841c9248-3871-42f2-9568-fbc4731161ee
+Tags: Ambient soundscape characterized by high-frequency white noise and a consistent static texture. The audio profile is dominated by a broad-spectrum hiss, resembling heavy rainfall or a pressurized air release. There are no melodic elements, rhythmic structures, or harmonic progressions present. The sonic density is uniform throughout the duration, with a flat dynamic range and no discernible transients or percussive hits. The production is raw and unpolished, focusing entirely on the textural quality of the noise floor. No instruments, vocals, or electronic synthesis are utilized beyond the continuous broadband noise signal.
+
+--- Prompt ---
+[Instrumental]

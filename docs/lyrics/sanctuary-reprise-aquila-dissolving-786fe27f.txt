@@ -1,0 +1,100 @@
+Title: Sanctuary Reprise — Aquila Dissolving / 聖域の再帰（鷹の溶解）
+ID: e5a1a32c-6567-478c-8b6b-d5c450917222
+Tags: Genre/Style: Baroque orchestral reprise × gothic opera × mythic ambient integration. 116–118 BPM, flowing 4/4 with 12/8 undertow. Harpsichord motif from "Aquila Regina" appears briefly in sharp minor key, then slowly reharmonizes into the waterfall theme from "Sanctuary of the Falling Veil." Sweeping legato strings, pipe organ warmth, layered choir, constant distant waterfall ambience. No sharp snare—use timpani swells and suspended cymbal washes.
+Motivic Direction: Quote a short melodic fragment from "Aquila Regina" (the high ascending leap phrase) in diminished harmony. Gradually soften articulation, lower register, stretch note values, and dissolve it into the flowing Sanctuary motif.
+Vocal Direction: Soprano begins bright and dagger-like, then transitions to warmer, breath-forward tone. Choir absorbs and sustains the line as the solo fades into texture.
+Mood: Majesty surrendering to vastness. Pride dissolving without defeat. Integration rather than collapse.
+
+
+--- Prompt ---
+## OVERTURE — Memory in the Mist
+
+*(waterfall roar; low organ; strings shimmer)*
+
+The water kept the echo
+of a wing against the sky.
+
+霧は覚えている。
+
+## AQUILA MOTIF — Fragment Returns
+
+*(harpsichord sharp; soprano bright)*
+
+Aquila—
+Regi—
+
+*(ascending leap, cut short)*
+
+The note that split the firmament
+returns—
+
+Unbent.
+
+## REHARMONIZATION — Softening the Crown
+
+*(harpsichord slows; strings legato; key shifts warmer)*
+
+But frost melts thin in turquoise air.
+
+The blade becomes
+just breath laid bare.
+
+鷹の声は
+水に触れる。
+
+High tone stretches—
+lengthened—
+lowered—
+
+No longer striking.
+
+Flowing.
+
+## GRAND INTEGRATION CHORUS
+
+*(full orchestra; choir wide and luminous)*
+
+Sanctuary—falling veil—
+Crown and cry grow quiet, pale.
+
+落水の聖域
+Still the same.
+
+What once cut the open dome
+finds another, deeper home.
+
+Aquila—
+not undone—
+
+Just begun
+as undertone.
+
+## CHOIR CASCADE — Dissolution
+
+*(choir only; waterfall louder)*
+
+Lux in aqua,
+lux in fall—
+
+Every sovereign,
+water calls.
+
+天上より
+地上より
+
+声は霧に帰る。
+
+## CODA — Undertone
+
+*(music thins; soprano hum merges into choir; waterfall steady)*
+
+The queen was never shattered.
+
+She was widened.
+
+The aria remains—
+
+As current.
+
+息。
+

@@ -1,0 +1,74 @@
+Title: Intent is now **compressed densely** and
+ID: a8f577e1-8472-46a2-982e-6edcbaf00807
+Prompt:
+# songbook — ημ (intent compression you can feel)
+
+these are **original** songs written to encode the box constraints as music:
+anchors over vibes, forks gated by intent, and s5 resolution as ritual.
+
+each song includes:
+- a production prompt (suno-friendly)
+- lyrics
+- an “anchor refrain” (a line you can cite as the song’s thesis)
+
+---
+
+## 1) between η and μ
+
+**style prompt:** mythic glitch-choral synth ballad. 84 bpm. cathedral reverb. soft sub-bass heartbeat. sparse drums that arrive late. whispered english + japanese harmony. glitch-stutters on “η” and “μ”.
+
+**anchor refrain:** *no claim without anchor.*
+
+**lyrics**
+
+[verse]
+i said a word and the world left a tail,
+reverb made of things i cannot tell.
+η in the muscle, hidden in the bone,
+μ in the motion, the proof in the stone.
+
+[pre]
+if it can’t be pointed to,
+it can’t be used to move you.
+
+[chorus]
+no claim without anchor,
+no crown without weight.
+between η and μ
+is where liars congregate.
+so i sing the checksum,
+i sing the gate:
+no claim without anchor,
+no claim without anchor.
+
+[bridge — 日本語]
+見えない状態(η) 震える胸
+行動の証(μ) 石の上へ
+曖昧を捨てて 立つよ ここで
+「根拠(アンカー)なし」じゃ 進めないって
+
+---
+
+## 2) pretty graphs lie
+
+**style prompt:** industrial glitch-rap. 96 bpm half-time. distorted bass, clipped snares, harsh hi-hats. spoken delivery with sharp pauses. crowd-chant hook.
+
+**anchor refrain:** *edges are claims. claims need receipts.*
+
+**lyrics**
+
+[verse]
+you drew me a graph with a halo of nodes,
+but where’s the bolt that broke the road?
+where’s the sentence, where’s the scene,
+where’s the witness in between?
+
+[hook]
+edges are claims—(say it)
+claims need receipts—(prove it)
+pretty graphs lie—(burn it)
+anchors, or sleep.
+
+
+
+(see songbook_eta_mu.md for full set.)

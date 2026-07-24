@@ -1,0 +1,6 @@
+Title: fork_tax_epic_part56_84bpm
+ID: af457b63-a332-4198-beee-57c957a2428d
+Tags: A high-energy, cinematic orchestral piece characterized by a driving staccato string section and powerful brass accents. The composition features a relentless 4/4 rhythmic pulse at 140 BPM, utilizing a minor key to create a sense of urgency and tension. Layered violin and viola ostinatos provide a constant melodic motion, while cellos and double basses ground the track with heavy, rhythmic pulses. Periodic swells from the horn section and sharp trumpet stabs add dynamic contrast and a sense of scale. The production is clean and expansive, with a large hall reverb that enhances the epic, soundtrack-like quality of the arrangement. Percussive elements include deep orchestral timpani and metallic hits that emphasize the downbeats, contributing to a dramatic and suspenseful atmosphere.
+
+--- Prompt ---
+[Instrumental]

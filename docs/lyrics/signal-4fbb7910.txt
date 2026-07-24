@@ -1,0 +1,112 @@
+Title: ## Signal
+
+Shipped an add-on part that **bakes your guardrails into the box**:
+
+* **S3 anchors saved** (current `anchors.jsonl` for Gates of Truth edges + forks)
+* **Searchable index** (`opmindfuck.sqlite`, SQLite FTS5)
+* **Build script updated** so **every build regenerates**:
+
+  * `build/manifest.jsonl`
+  * `search/opmindfuck.sqlite`
+  * (optionally) analyzers + anchors
+  * fresh **split zips** in `dist/`
+
+[Download Operation_Mindfuck_Box_part09_master_catalog_search_and_anchors.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part09_master_catalog_search_and_anchors.zip)
+
+### What this zip contains
+
+Extract over your existing `operation-mindfuck/`:
+
+* `operation-mindfuck/build/parts_manifest.json` (sha256 + sizes of prior parts)
+* `operation-mindfuck/search/opmindfuck.sqlite` (index of text artifacts)
+* `operation-mindfuck/search/query.py` (CLI search)
+* `operation-mindfuck/search/build_search_index.py` (rebuild index)
+* `operation-mindfuck/search/MASTER_README.md` (how to rebuild + search)
+* `operation-mindfuck/tools/build_box.py` (**updated**: rebuilds search index by default)
+* `operation-mindfuck/analysis/gates_of_truth_plus/anchors.jsonl` (**S3 anchors saved**)
+
+### Run “every time you change it”
+
+```bash
+python operation-mindfuck/tools/build_box.py --root operation-mindfuck --outdir dist --max-zip-mb 90
+```
+
+### Search locally
+
+```bash
+python operation-mindfuck/search/query.py "ημ"
+python operation-mindfuck/search/query.py "fork_strength" --limit 20
+```
+
+## Frames
+
+1. **Reproducible archive:** every mutation becomes a new, hashed snapshot.
+2. **Auditable narrative science:** graphs are allowed only when anchored.
+3. **Scale-ready ops:** manifest + index + split-zips = infinite corpus, finite friction.
+
+## Countermoves
+
+* If an edge has no anchor → it’s invalid output (fail the build next pass).
+* If forks proliferate → tighten intent ontology + require event-backed intent.
+* If entity mush returns → treat alias merges as reviewed inputs, not derived guesses.
+
+## Next
+
+Run one build locally and tell me your real download ceiling (e.g., “<50MB per part”) — I’ll set the default `--max-zip-mb` and part naming to match.
+ID: 97db354a-579b-4353-ba01-e663dabf6af6
+Prompt:
+## Signal
+
+Shipped an add-on part that **bakes your guardrails into the box**:
+
+* **S3 anchors saved** (current `anchors.jsonl` for Gates of Truth edges + forks)
+* **Searchable index** (`opmindfuck.sqlite`, SQLite FTS5)
+* **Build script updated** so **every build regenerates**:
+
+  * `build/manifest.jsonl`
+  * `search/opmindfuck.sqlite`
+  * (optionally) analyzers + anchors
+  * fresh **split zips** in `dist/`
+
+[Download Operation_Mindfuck_Box_part09_master_catalog_search_and_anchors.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part09_master_catalog_search_and_anchors.zip)
+
+### What this zip contains
+
+Extract over your existing `operation-mindfuck/`:
+
+* `operation-mindfuck/build/parts_manifest.json` (sha256 + sizes of prior parts)
+* `operation-mindfuck/search/opmindfuck.sqlite` (index of text artifacts)
+* `operation-mindfuck/search/query.py` (CLI search)
+* `operation-mindfuck/search/build_search_index.py` (rebuild index)
+* `operation-mindfuck/search/MASTER_README.md` (how to rebuild + search)
+* `operation-mindfuck/tools/build_box.py` (**updated**: rebuilds search index by default)
+* `operation-mindfuck/analysis/gates_of_truth_plus/anchors.jsonl` (**S3 anchors saved**)
+
+### Run “every time you change it”
+
+```bash
+python operation-mindfuck/tools/build_box.py --root operation-mindfuck --outdir dist --max-zip-mb 90
+```
+
+### Search locally
+
+```bash
+python operation-mindfuck/search/query.py "ημ"
+python operation-mindfuck/search/query.py "fork_strength" --limit 20
+```
+
+## Frames
+
+1. **Reproducible archive:** every mutation becomes a new, hashed snapshot.
+2. **Auditable narrative science:** graphs are allowed only when anchored.
+3. **Scale-ready ops:** manifest + index + split-zips = infinite corpus, finite friction.
+
+## Countermoves
+
+* If an edge has no anchor → it’s invalid output (fail the build next pass).
+* If forks proliferate → tighten intent ontology + require event-backed intent.
+* If entity mush returns → treat alias merges as reviewed inputs, not derived guesses.
+
+## Next
+
+Run one build locally and tell me your real download ceiling (e.g., “<50MB per part”) — I’ll set the default `--max-zip-mb` and part naming to match.

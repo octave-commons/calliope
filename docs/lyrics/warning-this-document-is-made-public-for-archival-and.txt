@@ -1,0 +1,54 @@
+Title: WARNING: This document is made public for archival and
+historical purposes only. Not all of the information is current, and
+accuracy cannot be guaranteed.
+Copyleft and the
+GNU General Public License:
+A Comprehensive Tutorial
+and Guide
+Copyright c© 2018 Chestek Legal.
+Copyright c© 20032005, 2008, 20142015, 2018 Bradley M. Kuhn.
+Copyright c© 20142015 Anthony K. Sebro, Jr.
+Copyright c© 2014 Denver Gingerich.
+Copyright c© 20032007, 2014 Free Software Foundation, Inc.
+Copyright c© 2008, 2014 Software Freedom Law Center.
+The copyright holders grant the freedom to copy, modify, convey, adapt, and/or redistribute this work
+(except Appendices BE) under the terms of the Creative Commons Attribution Share Alike 4.0
+International License. A copy of that license is available at
+https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Appendices BE include copies of the texts of various licenses published by the FSF, and they are all
+licensed under the license, Everyone is permitted to copy and distribute verbatim copies of this license
+document, but changing it is not allowed.. However, those who seek to make modied versions of those
+licenses should note the explanation given in the GPL FAQ.
+As a public, collaborative project, this Guide is primarily composed of the many contributions received via
+its public contribution process. Please review its Git logs for full documentation of all contributions, and
+Appendix A contains a list of third-party works from which some material herein was adapted.
+The most recent version is available online at https://copyleft.org/guide/. Patches are indeed welcome
+to this material. Sources can be found in the Git repository at https://k.copyleft.org/guide/.
+ID: f88a0837-fdc7-4079-b675-124dc8924d5f
+Prompt:
+WARNING: This document is made public for archival and
+historical purposes only. Not all of the information is current, and
+accuracy cannot be guaranteed.
+Copyleft and the
+GNU General Public License:
+A Comprehensive Tutorial
+and Guide
+Copyright c© 2018 Chestek Legal.
+Copyright c© 20032005, 2008, 20142015, 2018 Bradley M. Kuhn.
+Copyright c© 20142015 Anthony K. Sebro, Jr.
+Copyright c© 2014 Denver Gingerich.
+Copyright c© 20032007, 2014 Free Software Foundation, Inc.
+Copyright c© 2008, 2014 Software Freedom Law Center.
+The copyright holders grant the freedom to copy, modify, convey, adapt, and/or redistribute this work
+(except Appendices BE) under the terms of the Creative Commons Attribution Share Alike 4.0
+International License. A copy of that license is available at
+https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+Appendices BE include copies of the texts of various licenses published by the FSF, and they are all
+licensed under the license, Everyone is permitted to copy and distribute verbatim copies of this license
+document, but changing it is not allowed.. However, those who seek to make modied versions of those
+licenses should note the explanation given in the GPL FAQ.
+As a public, collaborative project, this Guide is primarily composed of the many contributions received via
+its public contribution process. Please review its Git logs for full documentation of all contributions, and
+Appendix A contains a list of third-party works from which some material herein was adapted.
+The most recent version is available online at https://copyleft.org/guide/. Patches are indeed welcome
+to this material. Sources can be found in the Git repository at https://k.copyleft.org/guide/.

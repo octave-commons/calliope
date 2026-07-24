@@ -1,0 +1,85 @@
+Title: ## Signal
+ID: ecf6d476-b76a-4efe-accb-241c495fb417
+Tags: Π := **Synthesis → Plan → Program**
+
+Formally:
+
+* Inputs: (N) (normalized signals), constraints (C), goal (G)
+* Output: a *candidate policy/plan* (\pi) (sequence of actions + decision rules)
+
+[
+\Pi(N, C, G) \to \pi
+]
+
+Where a plan/policy can be modeled as:
+
+[
+\pi := \langle \text{Steps }(a_1,\dots,a_k),\ \text{StopConditions},\ \text{Fallbacks},\ \text{SuccessMetrics}\rangle
+]
+
+In your loop:
+
+[
+P \rightarrow R \rightarrow N \rightarrow \Pi \rightarrow A \rightarrow (feedback) \rightarrow P
+]
+
+Π is the moment raw/cleaned understanding becomes *an executable intent* (what to do, in what order, under what guardrails).
+
+
+--- Prompt ---
+## Signal
+
+Yep — **parts** is the right move. Here’s the **Operation Mindfuck Box v3** split into sane downloads. Unzip them into the same folder and they merge under `operation-mindfuck/`.
+
+### Download (required)
+
+1. **Core (index + schema + tools + books + non-image corpus)**
+   [Operation_Mindfuck_Box_v3_part00_core.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v3_part00_core.zip)
+
+2. **Images part 1**
+   [Operation_Mindfuck_Box_v3_part01_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v3_part01_images.zip)
+
+3. **Images part 2**
+   [Operation_Mindfuck_Box_v3_part02_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v3_part02_images.zip)
+
+4. **Images part 3**
+   [Operation_Mindfuck_Box_v3_part03_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v3_part03_images.zip)
+
+### Optional provenance (raw original archive)
+
+If you want the original `images.zip` preserved at `operation-mindfuck/source_archives/images.zip`, download this and place it there:
+[images.zip](sandbox:/mnt/data/images.zip)
+
+### Included in v3 (new)
+
+Your uploaded PDFs are inside `operation-mindfuck/content/books/`:
+
+* `Principia_Discordia.pdf`
+* `Quantum_Psychology_PDF.pdf`
+* `Robert-Anton-Wilson-Prometheus-Rising.pdf`
+
+## Reassemble
+
+Unzip **part00_core** first, then unzip **part01–part03** into the same location.
+
+## Search it (Python)
+
+From inside the extracted `operation-mindfuck/` folder:
+
+```bash
+python tools/search.py "ημ" --limit 25
+python tools/search.py "gates of truth"
+python tools/search.py "protocol" --circuit "Protocol/Law"
+
+python tools/nearest.py --query "space between η and μ" --top 15
+```
+
+## What’s still missing for literal “entirety”
+
+Anything that only exists in-chat (canvases/transcripts) but isn’t exported as files yet. Checklist is in:
+`operation-mindfuck/meta/MISSING.md`
+
+## Next
+
+Export your chat/canvas history to **markdown or json**, drop it under `operation-mindfuck/content/exports/`, and I’ll re-run the **P→R→N→Π→A** loop and ship the next set of parts.
+

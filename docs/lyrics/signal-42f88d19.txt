@@ -1,0 +1,162 @@
+Title: ## Signal
+
+Here’s the **Operation Mindfuck Box v2** rebuilt **in downloadable parts** (so you can actually pull it down), with:
+
+* **hash-verified manifest**
+* **SQLite FTS full-text search**
+* **8-circuit schema**
+* **64-D scaffold vectors (8 circuits × 8 dims)**
+* your added PDFs included under `content/books/`
+
+Download parts:
+
+1. **Core (index + schema + tools + text corpus + books; ~57 MB)**
+   [Download Operation_Mindfuck_Box_v2_part00_core.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part00_core.zip)
+
+2. **Images (extracted) part 1 (~109 MB)**
+   [Download Operation_Mindfuck_Box_v2_part01_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part01_images.zip)
+
+3. **Images (extracted) part 2 (~109 MB)**
+   [Download Operation_Mindfuck_Box_v2_part02_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part02_images.zip)
+
+4. **Images (extracted) part 3 (~61 MB)**
+   [Download Operation_Mindfuck_Box_v2_part03_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part03_images.zip)
+
+5. **Optional provenance: the original `source_archives/images.zip` (~275 MB)**
+   (Only if you want the raw original zip inside the box too.)
+   [Download Operation_Mindfuck_Box_v2_part04_source_imageszip.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part04_source_imageszip.zip)
+
+### Reassemble
+
+Unzip **part00_core** first, then unzip **part01–part03** into the same folder (it all merges under `operation-mindfuck/`). Part04 is optional.
+
+### Use it (search + ημ + nearest neighbors)
+
+From the folder that contains `operation-mindfuck/`:
+
+```bash
+python operation-mindfuck/tools/search.py "ημ" --limit 25
+python operation-mindfuck/tools/search.py "gates of truth"
+python operation-mindfuck/tools/search.py "protocol" --circuit "Protocol/Law"
+
+python operation-mindfuck/tools/nearest.py --query "space between η and μ" --top 15
+```
+
+If you add/modify files later:
+
+```bash
+python operation-mindfuck/tools/reindex.py
+```
+
+Key map files:
+
+* `operation-mindfuck/meta/INDEX.md` (how the box works)
+* `operation-mindfuck/meta/circuit_schema.json` (8 circuits + keywords + 64-D layout)
+* `operation-mindfuck/meta/ETA_MU_GAP.md` (the ημ gap note)
+* `operation-mindfuck/search/opmindfuck.sqlite` (FTS index)
+
+## Evidence
+
+No web browsing. Everything in these zips is built from the local corpus already in the project + the PDFs you uploaded.
+
+## Frames
+
+* **Archive-as-body:** the box is a “frozen nervous system” you can query and perturb (P→R→N→Π→A).
+* **Archive-as-court-record:** hash + manifest + provenance = artifacts you can cite without vibes.
+* **Archive-as-compass:** circuits/vectors aren’t “truth,” they’re a navigation overlay you’ll refine.
+
+## Countermoves
+
+* If the circuit map starts feeling “authoritative,” treat it as **UI**, not ontology: edit `circuit_schema.json`, rerun `reindex.py`.
+* If search feels incomplete, remember: **images aren’t OCR’d**—they’re indexed by filename/path only unless you add OCR later.
+* If size becomes friction again, keep **core + optional raw zips**, and only extract image parts when you need them.
+
+## Next
+
+Unzip **part00_core** and run:
+
+```bash
+python operation-mindfuck/tools/search.py "ημ"
+```
+ID: 03b94167-2db4-4a66-bcc4-2b5d715100e2
+Prompt:
+## Signal
+
+Here’s the **Operation Mindfuck Box v2** rebuilt **in downloadable parts** (so you can actually pull it down), with:
+
+* **hash-verified manifest**
+* **SQLite FTS full-text search**
+* **8-circuit schema**
+* **64-D scaffold vectors (8 circuits × 8 dims)**
+* your added PDFs included under `content/books/`
+
+Download parts:
+
+1. **Core (index + schema + tools + text corpus + books; ~57 MB)**
+   [Download Operation_Mindfuck_Box_v2_part00_core.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part00_core.zip)
+
+2. **Images (extracted) part 1 (~109 MB)**
+   [Download Operation_Mindfuck_Box_v2_part01_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part01_images.zip)
+
+3. **Images (extracted) part 2 (~109 MB)**
+   [Download Operation_Mindfuck_Box_v2_part02_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part02_images.zip)
+
+4. **Images (extracted) part 3 (~61 MB)**
+   [Download Operation_Mindfuck_Box_v2_part03_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part03_images.zip)
+
+5. **Optional provenance: the original `source_archives/images.zip` (~275 MB)**
+   (Only if you want the raw original zip inside the box too.)
+   [Download Operation_Mindfuck_Box_v2_part04_source_imageszip.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v2_part04_source_imageszip.zip)
+
+### Reassemble
+
+Unzip **part00_core** first, then unzip **part01–part03** into the same folder (it all merges under `operation-mindfuck/`). Part04 is optional.
+
+### Use it (search + ημ + nearest neighbors)
+
+From the folder that contains `operation-mindfuck/`:
+
+```bash
+python operation-mindfuck/tools/search.py "ημ" --limit 25
+python operation-mindfuck/tools/search.py "gates of truth"
+python operation-mindfuck/tools/search.py "protocol" --circuit "Protocol/Law"
+
+python operation-mindfuck/tools/nearest.py --query "space between η and μ" --top 15
+```
+
+If you add/modify files later:
+
+```bash
+python operation-mindfuck/tools/reindex.py
+```
+
+Key map files:
+
+* `operation-mindfuck/meta/INDEX.md` (how the box works)
+* `operation-mindfuck/meta/circuit_schema.json` (8 circuits + keywords + 64-D layout)
+* `operation-mindfuck/meta/ETA_MU_GAP.md` (the ημ gap note)
+* `operation-mindfuck/search/opmindfuck.sqlite` (FTS index)
+
+## Evidence
+
+No web browsing. Everything in these zips is built from the local corpus already in the project + the PDFs you uploaded.
+
+## Frames
+
+* **Archive-as-body:** the box is a “frozen nervous system” you can query and perturb (P→R→N→Π→A).
+* **Archive-as-court-record:** hash + manifest + provenance = artifacts you can cite without vibes.
+* **Archive-as-compass:** circuits/vectors aren’t “truth,” they’re a navigation overlay you’ll refine.
+
+## Countermoves
+
+* If the circuit map starts feeling “authoritative,” treat it as **UI**, not ontology: edit `circuit_schema.json`, rerun `reindex.py`.
+* If search feels incomplete, remember: **images aren’t OCR’d**—they’re indexed by filename/path only unless you add OCR later.
+* If size becomes friction again, keep **core + optional raw zips**, and only extract image parts when you need them.
+
+## Next
+
+Unzip **part00_core** and run:
+
+```bash
+python operation-mindfuck/tools/search.py "ημ"
+```

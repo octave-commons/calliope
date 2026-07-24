@@ -1,0 +1,100 @@
+Title: Intent is now **compressed densely** and
+ID: a8f577e1-8472-46a2-982e-6edcbaf00807
+Tags: Reproducible archive: every mutation becomes a new, hashed snapshot.
+
+Auditable narrative science: graphs are allowed only when anchored.
+
+Scale-ready ops: manifest + index + split-zips = infinite corpus, finite friction.Intent as signal compression: keep it dense enough to stream through cephalon loops.
+
+Intent as fork fuel: forks only happen where intent-energy crosses gates.
+
+Intent as audit object: binary for speed; anchors for truth.
+P→R→N→Π→A→(feedback)→P
+remember ημ
+
+Compression frame: intent becomes a low-latency signal stream (binary) with anchors as the “truth membrane.”
+
+Fork frame: forks are allowed only when intent-energy clears a gate; everything else is noise.
+
+Audit frame: “pretty graphs that lie” are disallowed because every edge/claim must cite an anchor snippet.
+How to use (minimal)
+
+Unzip all v4 parts into the same directory (order doesn’t matter).
+
+Unzip the patch over the same directory (adds helper scripts + docs).
+
+Now you have an extracted operation-mindfuck/ c
+
+--- Prompt ---
+# songbook — ημ (intent compression you can feel)
+
+these are **original** songs written to encode the box constraints as music:
+anchors over vibes, forks gated by intent, and s5 resolution as ritual.
+
+each song includes:
+- a production prompt (suno-friendly)
+- lyrics
+- an “anchor refrain” (a line you can cite as the song’s thesis)
+
+---
+
+## 1) between η and μ
+
+**style prompt:** mythic glitch-choral synth ballad. 84 bpm. cathedral reverb. soft sub-bass heartbeat. sparse drums that arrive late. whispered english + japanese harmony. glitch-stutters on “η” and “μ”.
+
+**anchor refrain:** *no claim without anchor.*
+
+**lyrics**
+
+[verse]
+i said a word and the world left a tail,
+reverb made of things i cannot tell.
+η in the muscle, hidden in the bone,
+μ in the motion, the proof in the stone.
+
+[pre]
+if it can’t be pointed to,
+it can’t be used to move you.
+
+[chorus]
+no claim without anchor,
+no crown without weight.
+between η and μ
+is where liars congregate.
+so i sing the checksum,
+i sing the gate:
+no claim without anchor,
+no claim without anchor.
+
+[bridge — 日本語]
+見えない状態(η) 震える胸
+行動の証(μ) 石の上へ
+曖昧を捨てて 立つよ ここで
+「根拠(アンカー)なし」じゃ 進めないって
+
+---
+
+## 2) pretty graphs lie
+
+**style prompt:** industrial glitch-rap. 96 bpm half-time. distorted bass, clipped snares, harsh hi-hats. spoken delivery with sharp pauses. crowd-chant hook.
+
+**anchor refrain:** *edges are claims. claims need receipts.*
+
+**lyrics**
+
+[verse]
+you drew me a graph with a halo of nodes,
+but where’s the bolt that broke the road?
+where’s the sentence, where’s the scene,
+where’s the witness in between?
+
+[hook]
+edges are claims—(say it)
+claims need receipts—(prove it)
+pretty graphs lie—(burn it)
+anchors, or sleep.
+
+
+
+(see songbook_eta_mu.md for full set.)
+

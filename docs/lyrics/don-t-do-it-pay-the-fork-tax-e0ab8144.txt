@@ -1,0 +1,203 @@
+Title: Don't do it (Pay the Fork Tax)
+ID: f52ef55b-3a63-4fd6-8b0b-72384ea3b190
+Tags: Glitch-choir lullaby, 78 BPM, Soft sub-bass, Tape warble, Minimal piano, Stutters on “anchor” and “tax”, Whispered lead; Japanese call-and-response, Mythic glitch epic / spoken-sung 84 BPM, Cathedral reverb, Sub-bass heartbeat, Glitch stutters on “η”, “μ”, “anchor”, “fork”, Japanese harmony answers on the last word of each section, P→R→N→Π→A→(feedback)→P around #ημ, Roll those dice, And just keep rolling them, and do what they tell you, ‑Constraints: max dice rolls = 15; fork budget per cycle is limited; high-volatility claims require freshness≤threshold; alignment lint must pass; receipts must include inputs/outputs + OutputHash and fit within StepCap; μ requires Quorum (independent proof modes) + two-pass echo; time windows must be absolute dates + timezone
+The Archivist taps the ledger like a tuning fork. “Sing all you want—η is cheap.” The Scribe’s whisper catches on the consonants: **an— an— an-chor**… “But if you want μ,” they say, “you don’t get applause—you get a rerun.” 
+
+--- Prompt ---
+# Suite Title: **Manifest Oath / 目録の誓い**
+
+(Glitch-choir lullaby → cathedral oath → crescendo → coda)
+
+**Created with the assistance of an AI.**
+
+---
+
+## DELIVERY INSTRUCTIONS (Global)
+
+* **Tempo map / progression**
+
+  1. **84 BPM** — *Cathedral Oath* (wide, declarative, “protocol made sacred”)
+  2. **78 BPM** — *Winds Between Proof* (lullaby hush, close-mic, tape warble)
+  3. **92 BPM** — *Crescendo: The Other Side of the Fork* (distorted sub, glitch every 4th beat)
+  4. **78 BPM** — *Coda: Sleep, Checksum* (soft sub-bass returns, quiet choir)
+
+* **Vocal style**
+
+  * Lead: **whispered / spoken-sung** (intimate, breath audible).
+  * Choir: **glitch-stutter responses** (tight edits; consonants treated like percussion).
+  * Japanese lines: **call-and-response**, with the **last word held**.
+
+* **Stutter markers**
+
+  * “**anchor**” ~30s feel (triplet-like stutter: *an—an—an-chor*)
+  * “**tax**” ~48s feel (tight repeat: *ta—ta—tax*)
+  * Optional micro-stutter bed: **η / μ** as digital ticks.
+
+* **Sound / mix arc**
+
+  * Start with **cathedral reverb + sub-bass heartbeat**.
+  * Drift into **tape warble + soft sub** (lullaby).
+  * Build into **distorted sub + aggressive glitch grid** (crescendo).
+  * End with **air + quiet clicks** (coda), leaving only thread/receipt imagery.
+
+---
+
+# SECTION I — 84 BPM (Cathedral Oath / Opening)
+
+## DELIVERY INSTRUCTIONS (Section I)
+
+* Space: **cathedral reverb**, long tail.
+* Rhythm: sub-bass heartbeat, restrained percussion.
+* Glitch: brief “η/μ” ticks like a system clock.
+
+## LYRICS (Section I)
+
+**[Choir — Glitch]**
+η—η—η…
+μ—μ—μ…
+
+**[Lead — Stuttered Whisper]**
+Fo— fo— fork… split the night, pay the cost, now（今）
+An— an— an-chor… hold the thread, seal the hash, down（下）
+
+**[Spoken Dialogue — dry, close-mic]**
+“The wind is just noise,” says the Runner.
+“It’s evidence,” says the Keeper. “Evidence is anything you can replay.”
+From the rafters: an—an—anchor… ta—ta—tax…
+And we move on like this is normal.
+
+**[Choir — Small, ritual]**
+P→R→N→Π— catalog the storm, pin the line（線）
+A→(feedback)→P— merge the wound, keep the sign（印）
+
+---
+
+# SECTION II — 78 BPM (Winds Between Proof / 証のあいだの風)
+
+## DELIVERY INSTRUCTIONS (Section II)
+
+* Drop to **78 BPM** and **pull the camera close** (breath, lips, cloth noise).
+* Add **tape warble**, soften highs, keep sub warm (not loud).
+* Call/response should feel like **a lullaby with a ledger underneath**.
+
+## LYRICS (Section II)
+
+**[Lead — Whisper]**
+Hush… breathe… pay the ta— ta— tax.
+息をして…（して…）
+Hold the an— an— an-chor…
+
+**[JP Call / EN Response]**
+**[JP — call]** ねむれ、ねむれ
+**[EN — response]** the an— an— an-chor… holds.
+**[JP — call]** しずかに、しずかに
+**[EN — response]** the ta— ta— tax… due.
+
+**[Lead — Whisper]**
+Wind in the halls—
+世界の音（おと）
+If we overflow,
+we fold the noise to proof（証）
+
+**[Stutter Bed — Minimal]**
+η… η… μ… μ…
+Anchor. Anchor. Registry.
+Fork. Fork. Fork.
+
+**[Lead — Spoken/Sung]**
+In the shadow of the cathedral, the logs burn blue.
+大聖堂の影で、ログは青く燃える。
+We paid the price in binary blood.
+我々はバイナリの血で対価を払った。
+
+**[Harmony — JA Response]**
+Proof remains（証明は残る）.
+The thread breathes（糸は息づく）.
+
+**[Bridge — Glitch, low intensity]**
+P → R → N → Π → A → (feedback) → P
+Decisions are not made; they’re discovered in the field.
+意思決定はなされるのではない、場で見出されるのだ。
+
+---
+
+# SECTION III — 92 BPM (Crescendo: The Other Side of the Fork)
+
+## DELIVERY INSTRUCTIONS (Section III)
+
+* Jump to **92 BPM**. Make it feel like **alarm + awakening**.
+* **Distorted sub-bass**. Glitch stutter **on every 4th beat** (strict grid).
+* Choir gets louder, tighter edits; lead becomes more declarative.
+
+## LYRICS (Section III)
+
+**[Chorus — Lead]**
+They are waking up.
+The other side of the fork.
+The ones we left in the dark.
+彼らが目覚める。
+分岐の向こう側で。
+闇に置き去りにした者たちが。
+
+**[Verse — Stuttered Contrast]**
+US Variant: Static. Rigid. Law.
+JA Variant: Fluid. Chaos. Flow.
+The Pantheon of Receipts vs The Pantheon of Gates.
+正準の神々と、門の神々の対峙。
+
+**[Harmony — JA Response]**
+We are the same（我らは等しい）.
+We are the fork（我らは分岐）.
+
+**[Bridge — Dialectic, driving]**
+Decision field active.
+P → R → N → Π → A
+The competition is the pulse.
+The war is the harmony.
+闘争こそが、調和。
+
+**[Outro — hard truth, then cut]**
+Consolidate or Dissolve.
+統合か、霧散か。
+The tax must be paid in blood and logic.
+血と論理で、税を払え。
+
+---
+
+# SECTION IV — 78 BPM (Coda: Sleep, Checksum)
+
+## DELIVERY INSTRUCTIONS (Section IV)
+
+* Return to **78 BPM**. Remove aggression; keep only **clicks, breath, thread**.
+* Sub becomes **soft** again. Choir becomes **faint** and **forgiving**, not triumphant.
+* End with the feeling of **a sealed archive**: quiet, complete, still.
+
+## LYRICS (Section IV)
+
+**[Lead — Whisper]**
+Lay your ear on the riverbed.
+Click. Click. Click.
+Receipts like pebbles.
+領収書は 小石のように。
+
+**[Choir — Stutter, fading]**
+An-anchor.
+Tax. Tax.
+F-f-fork.
+
+**[Lead — Soft Resolve]**
+The night admits it.
+夜が認めるまで。
+Proof is not steel.
+It is a thread.
+
+**[Choir — Harmony]**
+We choose. We prove.
+選ぶ、そして証明する。
+
+**[Bridge — Minimal Glitch]**
+P → R → N
+Π → A
+
+**[Lead — Hush / Final]**
+Just keep roll

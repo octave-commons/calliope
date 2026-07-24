@@ -1,0 +1,6 @@
+Title: fork_tax_hymn_part53_84bpm
+ID: f8f02325-b5ce-4255-9288-1f318d3ef899
+Tags: Experimental dark ambient soundscape characterized by a heavy, distorted low-frequency drone and industrial textures. The piece features a continuous, oscillating bass synth with a gritty, overdriven quality that creates a sense of tension and unease. Layered over the foundation are metallic, resonant echoes and high-frequency digital artifacts that shimmer and fade. The tempo is slow and atmospheric, lacking a traditional rhythmic pulse or percussion. The harmonic structure is static, focusing on a single deep root note with evolving overtones. Production is dense with heavy reverb and spatial processing, creating a vast, cavernous sonic environment. The dynamic range is narrow, maintaining a consistent level of intensity throughout the duration.
+
+--- Prompt ---
+[Instrumental]

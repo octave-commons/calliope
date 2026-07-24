@@ -1,0 +1,137 @@
+Title: Frame Shifter / 枠をずらせ
+ID: 75417434-53f4-465a-99e5-d6f59d893b2a
+Tags: **Genre/Style:** Dark synthwave × glitch-rap × cinematic minimalism. 90 BPM, half‑time backbone with subtle triplet hats in verses. Deep sub pulse, analog bass growl, glassy arps, tape warble, choir fragments reversed into texture, sharp percussive clicks like camera shutters.
+
+**Structure:** Static intro → Verse 1 (tight cadence) → Pre (riser) → Hook (anthemic but controlled) → Verse 2 (denser flow) → Bridge (near-silence + whisper) → Final Hook (brighter top layer) → Outro (heartbeat + shutter clicks).
+
+**Vocals:** Spoken-rap clarity with occasional melodic lift on key lines. Japanese response lines (short, sharp). No preaching tone—measured, surgical, grounded.
+
+**Mood:** Surgical clarity. Calm power. Perception widening without losing center.
+
+
+--- Prompt ---
+## INTRO — Static & Shutter
+
+*(camera shutter clicks / low sub heartbeat)*
+
+click.
+
+another angle.
+
+枠をずらせ。
+
+## VERSE 1 — The Lens
+
+Everybody arguing inside a box
+calling it sky, calling it rocks
+
+Frames stacked on frames like Russian dolls
+no one asking who built the walls
+
+Facts on the table—
+ink still wet
+Interpretation—
+shadow cast
+
+Narrative—
+the mask we wear
+
+But the mask isn’t air.
+
+## PRE‑CHORUS — Reframe
+
+*(riser + metallic ticks)*
+
+Tilt the camera.
+Step back.
+
+Choose your axis.
+Don’t react.
+
+反応するな
+観察しろ
+
+## HOOK — Frame Shifter
+
+*(controlled drop; sub + bright arp)*
+
+I’m a **frame shifter**
+not a storm chaser
+
+Name the lens
+then step through the laser
+
+Evidence first
+then the story
+
+枠をずらせ
+still hold your glory
+
+I’m a **frame shifter**
+hands still mine
+
+Perception sharp
+but autonomy fine
+
+## VERSE 2 — Bullshit Detector
+
+Bullshit’s loud but it’s structurally weak
+volume up when the footing’s bleak
+
+If it can’t survive a single “why”
+it wasn’t built to clarify
+
+Redteam the thought
+before it nests
+
+Mirror the motive
+stress-test the text
+
+笑ってから
+刺せ
+
+Cut clean, not cruel
+
+Precision is fuel.
+
+## BRIDGE — Quiet Room
+
+*(beat drops; piano two notes; whisper layer)*
+
+You don’t have to believe every feeling.
+You don’t have to fight every frame.
+
+呼吸して
+
+Notice the lens.
+
+Change it.
+
+## FINAL HOOK — Widened Sky
+
+*(beat returns bigger; subtle choir lift)*
+
+I’m a **frame shifter**
+no panic in sight
+
+Wonder intact
+in the edge of the light
+
+Evidence first
+then the story
+
+枠をずらせ
+write your own glory
+
+I’m a **frame shifter**
+steady and free
+
+No one gets to think
+inside of me.
+
+## OUTRO — Click
+
+*(heartbeat fades; single shutter)*
+
+click.
+

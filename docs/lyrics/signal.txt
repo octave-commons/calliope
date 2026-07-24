@@ -1,0 +1,346 @@
+Title: ## Signal
+
+Here’s the **Skill Graph** I’d follow to compile *Operation Mindfuck* into scalable “box parts” while **executing the ημ model over narrative** (relationships, ideologies, timelines, forks) and getting better at it each cycle.
+
+Think of it as a **production graph** (pipeline skills) + a **learning graph** (how we improve the pipeline by observing outcomes of narrative actions).
+
+### Skill Graph (nodes + dependencies)
+
+**Legend**
+
+* **μ-skills**: produce artifacts (graphs, metrics, indexes).
+* **η-skills**: evaluate/choose/weight (latent quality control).
+* Each node can emit an **8×8 = 64D coordinate**: `layer ℓ ∈ [1..8]`, `dims d ∈ [1..8]`.
+
+---
+
+### A) Ingest → Canonicalize (scale foundation)
+
+**S0. Corpus Manifest (μ)**
+
+* Input: zip parts / folders
+* Output: `manifest.jsonl` (every file, hash, type, provenance)
+* Enables: incremental rebuilds, dedupe, reproducibility.
+
+**S1. Text Normalization (μ)** ← S0
+
+* Strip frontmatter/boilerplate, unify newlines, keep offsets.
+* Output: canonical `.txt` + `spans.json` (offset map).
+
+**S2. Asset Indexing (μ)** ← S0
+
+* Images/audio/pdf: extract metadata, dimensions/duration/pages, thumbnails.
+* Output: `assets.csv`, `thumbs/`.
+
+**S3. Provenance & Quote Anchors (μ)** ← S1
+
+* Every derived claim points to: `file_id + span_start + span_end`.
+* Output: `anchors.jsonl` (citation-ready artifacts).
+
+> Scaling win: **S0–S3** make everything incremental + citeable + searchable.
+
+---
+
+### B) Entity & World Modeling (characters, factions, symbols)
+
+**S4. Entity Registry (μ)** ← S1
+
+* Build canonical entities: characters, factions, places, concepts (η, μ, ημ, Truth…).
+* Output: `entities.json` + alias table.
+
+**S5. Entity Resolution / Coref (η→μ)** ← S4
+
+* Decide “same entity?” across aliases/epithets/pronouns.
+* Output: updated alias merges + confidence.
+
+**S6. Scene / Beat Segmentation (μ)** ← S1
+
+* Split into beats (blank lines / headings / dialogue turns).
+* Output: `beats.csv` (beat_id, chapter, text_span).
+
+---
+
+### C) Action → Intent → Consequence (narrative physics)
+
+**S7. Action Extraction (μ)** ← S6 + S4
+
+* Detect events: who did what to whom (verbs + roles).
+* Output: `events.csv` (actor, act, target, modality, span).
+
+**S8. Intent Scoring (η→μ)** ← S7
+
+* Intent isn’t “positive sentiment.” It’s **commitment energy**: vows, refusals, irreversible choices.
+* Output: `intent.csv` (event_id, intent_strength, intent_type, evidence_span).
+
+**S9. Consequence Linking (η→μ)** ← S7 + S6
+
+* Link later beats as consequences of earlier actions: escalation, betrayal, alliance shift, revelation.
+* Output: `causal_edges.csv` (event→event, lag, confidence).
+
+> This is the backbone for “world forks when intent is great enough.”
+
+---
+
+### D) Graph Products (relationships, ideology, state)
+
+**S10. Relationship Graph (μ)** ← S6 + S4
+
+* Edges from co-occurrence + action roles + causal links.
+* Output: GraphML + `edges.csv` with typed edges (trust/conflict/mentor/etc).
+
+**S11. Ideology Vectors (μ)** ← S6 + S4
+
+* 8-circuit score per entity, over time (per chapter/beat).
+* Output: `ideology.json` + `ideology_timeseries.csv`.
+
+**S12. State Vector per Beat (μ)** ← S6 + S10 + S11
+
+* For each beat:
+
+  * mention distribution
+  * relationship deltas
+  * ideology drift
+  * intent energy
+* Output: `state_vectors.parquet|csv` (beat_id → 64D + extras).
+
+---
+
+### E) Timelines & Forks (branching reality)
+
+**S13. Change Detection (η→μ)** ← S12
+
+* Detect “state discontinuities” (JS divergence / cosine drift / edge churn).
+
+**S14. Fork Detection (η→μ)** ← S13 + S8
+
+* Fork rule (core):
+
+  * **Intent gates the fork**
+  * **State divergence sets fork magnitude**
+* Output: `fork_points.json` + branch ids.
+
+**S15. Fork Snapshots (μ)** ← S14 + S10
+
+* Emit per-fork subgraphs + “before/after” deltas.
+* Output: `fork_graphs/*.graphml`, `fork_deltas.csv`.
+
+---
+
+### F) Searchability & Packaging (the “box”)
+
+**S16. Search Index (μ)** ← S0–S15
+
+* Build a lightweight local index:
+
+  * keywords
+  * entity mentions
+  * anchor spans
+  * artifact references
+* Output: `sqlite` or `whoosh` index + CLI query.
+
+**S17. Part Builder (μ)** ← S16
+
+* Build downloadable parts: per story / per layer / per artifact type.
+* Output: `Operation_Mindfuck_Box_partXX_*.zip`.
+
+---
+
+### G) Learning Loop (how the skill graph improves)
+
+**S18. Outcome Scoring (η)** ← S10–S15
+
+* Evaluate: do derived edges match explicit text evidence?
+* Track false merges, missed events, spurious forks.
+
+**S19. Weight Tuning (η→μ)** ← S18
+
+* Adjust weights: co-occurrence vs action edges vs causal edges; lexicons; thresholds.
+* Output: `config.toml` with versioned params.
+
+**S20. Curriculum Scheduler (η)** ← S18 + S0
+
+* Choose next improvements by **information gain per cost**:
+
+  * biggest error class × easiest fix first.
+
+---
+
+## How this maps to your P→R→N→Π→A loop
+
+* **P (Plan)**: pick next bottleneck node (usually S5/S7/S9/S14 at scale)
+* **R (Run)**: execute μ nodes with current params
+* **N (Notice)**: measure errors (S18) + drift + missing edge
+ID: ba07f5cd-aced-4c2c-bd2e-c758dd492466
+Prompt:
+## Signal
+
+Here’s the **Skill Graph** I’d follow to compile *Operation Mindfuck* into scalable “box parts” while **executing the ημ model over narrative** (relationships, ideologies, timelines, forks) and getting better at it each cycle.
+
+Think of it as a **production graph** (pipeline skills) + a **learning graph** (how we improve the pipeline by observing outcomes of narrative actions).
+
+### Skill Graph (nodes + dependencies)
+
+**Legend**
+
+* **μ-skills**: produce artifacts (graphs, metrics, indexes).
+* **η-skills**: evaluate/choose/weight (latent quality control).
+* Each node can emit an **8×8 = 64D coordinate**: `layer ℓ ∈ [1..8]`, `dims d ∈ [1..8]`.
+
+---
+
+### A) Ingest → Canonicalize (scale foundation)
+
+**S0. Corpus Manifest (μ)**
+
+* Input: zip parts / folders
+* Output: `manifest.jsonl` (every file, hash, type, provenance)
+* Enables: incremental rebuilds, dedupe, reproducibility.
+
+**S1. Text Normalization (μ)** ← S0
+
+* Strip frontmatter/boilerplate, unify newlines, keep offsets.
+* Output: canonical `.txt` + `spans.json` (offset map).
+
+**S2. Asset Indexing (μ)** ← S0
+
+* Images/audio/pdf: extract metadata, dimensions/duration/pages, thumbnails.
+* Output: `assets.csv`, `thumbs/`.
+
+**S3. Provenance & Quote Anchors (μ)** ← S1
+
+* Every derived claim points to: `file_id + span_start + span_end`.
+* Output: `anchors.jsonl` (citation-ready artifacts).
+
+> Scaling win: **S0–S3** make everything incremental + citeable + searchable.
+
+---
+
+### B) Entity & World Modeling (characters, factions, symbols)
+
+**S4. Entity Registry (μ)** ← S1
+
+* Build canonical entities: characters, factions, places, concepts (η, μ, ημ, Truth…).
+* Output: `entities.json` + alias table.
+
+**S5. Entity Resolution / Coref (η→μ)** ← S4
+
+* Decide “same entity?” across aliases/epithets/pronouns.
+* Output: updated alias merges + confidence.
+
+**S6. Scene / Beat Segmentation (μ)** ← S1
+
+* Split into beats (blank lines / headings / dialogue turns).
+* Output: `beats.csv` (beat_id, chapter, text_span).
+
+---
+
+### C) Action → Intent → Consequence (narrative physics)
+
+**S7. Action Extraction (μ)** ← S6 + S4
+
+* Detect events: who did what to whom (verbs + roles).
+* Output: `events.csv` (actor, act, target, modality, span).
+
+**S8. Intent Scoring (η→μ)** ← S7
+
+* Intent isn’t “positive sentiment.” It’s **commitment energy**: vows, refusals, irreversible choices.
+* Output: `intent.csv` (event_id, intent_strength, intent_type, evidence_span).
+
+**S9. Consequence Linking (η→μ)** ← S7 + S6
+
+* Link later beats as consequences of earlier actions: escalation, betrayal, alliance shift, revelation.
+* Output: `causal_edges.csv` (event→event, lag, confidence).
+
+> This is the backbone for “world forks when intent is great enough.”
+
+---
+
+### D) Graph Products (relationships, ideology, state)
+
+**S10. Relationship Graph (μ)** ← S6 + S4
+
+* Edges from co-occurrence + action roles + causal links.
+* Output: GraphML + `edges.csv` with typed edges (trust/conflict/mentor/etc).
+
+**S11. Ideology Vectors (μ)** ← S6 + S4
+
+* 8-circuit score per entity, over time (per chapter/beat).
+* Output: `ideology.json` + `ideology_timeseries.csv`.
+
+**S12. State Vector per Beat (μ)** ← S6 + S10 + S11
+
+* For each beat:
+
+  * mention distribution
+  * relationship deltas
+  * ideology drift
+  * intent energy
+* Output: `state_vectors.parquet|csv` (beat_id → 64D + extras).
+
+---
+
+### E) Timelines & Forks (branching reality)
+
+**S13. Change Detection (η→μ)** ← S12
+
+* Detect “state discontinuities” (JS divergence / cosine drift / edge churn).
+
+**S14. Fork Detection (η→μ)** ← S13 + S8
+
+* Fork rule (core):
+
+  * **Intent gates the fork**
+  * **State divergence sets fork magnitude**
+* Output: `fork_points.json` + branch ids.
+
+**S15. Fork Snapshots (μ)** ← S14 + S10
+
+* Emit per-fork subgraphs + “before/after” deltas.
+* Output: `fork_graphs/*.graphml`, `fork_deltas.csv`.
+
+---
+
+### F) Searchability & Packaging (the “box”)
+
+**S16. Search Index (μ)** ← S0–S15
+
+* Build a lightweight local index:
+
+  * keywords
+  * entity mentions
+  * anchor spans
+  * artifact references
+* Output: `sqlite` or `whoosh` index + CLI query.
+
+**S17. Part Builder (μ)** ← S16
+
+* Build downloadable parts: per story / per layer / per artifact type.
+* Output: `Operation_Mindfuck_Box_partXX_*.zip`.
+
+---
+
+### G) Learning Loop (how the skill graph improves)
+
+**S18. Outcome Scoring (η)** ← S10–S15
+
+* Evaluate: do derived edges match explicit text evidence?
+* Track false merges, missed events, spurious forks.
+
+**S19. Weight Tuning (η→μ)** ← S18
+
+* Adjust weights: co-occurrence vs action edges vs causal edges; lexicons; thresholds.
+* Output: `config.toml` with versioned params.
+
+**S20. Curriculum Scheduler (η)** ← S18 + S0
+
+* Choose next improvements by **information gain per cost**:
+
+  * biggest error class × easiest fix first.
+
+---
+
+## How this maps to your P→R→N→Π→A loop
+
+* **P (Plan)**: pick next bottleneck node (usually S5/S7/S9/S14 at scale)
+* **R (Run)**: execute μ nodes with current params
+* **N (Notice)**: measure errors (S18) + drift + missing edge

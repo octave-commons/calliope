@@ -1,0 +1,178 @@
+Title: After the Ritual / 儀式のあとで
+ID: 5455b967-ca47-455a-b086-6ec1ee68d5fa
+Tags: **Style:** Dark cinematic bass / industrial sci-fi / apocalyptic sound design
+90–105 BPM, half-time crush. Massive sub drops, distorted bass hits, seismic impacts, rising noise sweeps, metallic shrieks, warped orchestral stabs.
+
+**Mood:** Catastrophic, inevitable, cosmic dread.
+**Structure:** Tension → impact → cascading collapse → echoing ruin.
+
+**Vocal:**
+Minimal. Distant screams stretched into texture, reversed chants, radio transmissions dissolving into noise.
+
+--- Prompt ---
+# TITLE: "After the Ritual / 儀式のあとで"
+
+---
+
+## STYLE PROMPT
+
+**Genre Fusion:** Abstract Nocturnal Pop × Breath-Guided IDM × Post-Industrial Comedown × Deconstructed Piano Minimalism × Soft Glitch Ambient × Somatic Monologue
+
+**Tuning / Tempo:** 432Hz, 76–88 BPM, slow exhale pacing, slight tempo sag in final chorus
+
+**Key Center:** F minor resolving toward C minor with occasional E natural intrusion (fragile brightness)
+
+**Rhythm Design:**
+
+* Subdued, distant kick (heartbeat feel)
+* Minimal brushed snare or soft metallic taps
+* Sparse glitch accents like flickering fluorescent lights
+* Long silence pockets between phrases
+
+**Texture Palette:**
+
+* Felt piano (close mic, audible hammer noise)
+* Low warehouse reverb tail fading into emptiness
+* Airy choir pads stretched almost beyond recognition
+* Soft sub-bass warmth instead of pressure
+* Field recording: faint wind through broken windows
+
+**Vocal Direction:**
+
+* Intimate lead vocal, nearly whispered
+* Japanese harmony layers answering English lines
+* No aggressive stacking; emotional restraint
+
+**Mood:** Dawn after intensity. Emotional recalibration. Cool concrete, pale light, breath steadying. Vulnerable but grounded.
+
+---
+
+# LYRICS
+
+## INTRO — Dawn Air
+
+(soft wind through broken glass)
+
+息を吸う
+colder now
+
+The warehouse is quiet.
+No lights.
+No choir.
+
+Just dust
+and morning.
+
+---
+
+## VERSE 1
+
+Last night we burned like neon veins
+今はただの静かな床
+
+Concrete remembers everything
+but it doesn’t judge.
+
+I trace the cracks with my finger
+like constellations that survived
+
+"Are you still here?"
+
+まだ。
+
+---
+
+## PRE-CHORUS
+
+吸って — steady
+吐いて — slower
+
+The body returns to itself
+
+神経が静まる
+like water after stones
+
+---
+
+## CHORUS
+
+After the ritual
+we are only breath
+
+No altar
+no anthem
+just pulse under skin
+
+儀式のあとで
+we stay
+
+Not shining
+Not breaking
+
+Just alive.
+
+---
+
+## VERSE 2
+
+Piano notes fall like pale light
+鍵盤がやわらかく鳴る
+
+The chromatic knives are gone
+only warmth remains
+
+I used to think transcendence
+had to be loud
+
+But maybe it’s this —
+
+staying.
+
+---
+
+## BRIDGE — Silence Embrace
+
+(beat drops out)
+
+Listen.
+
+The quiet isn’t empty.
+
+この静けさは
+痛みの裏側じゃない
+
+It’s what’s left
+when fear dissolves.
+
+---
+
+## FINAL CHORUS
+
+After the ritual
+we are only breath
+
+Warehouse sky turning silver
+
+儀式のあとで
+we remain
+
+C minor shadow
+F minor bloom
+
+No collapse
+no cathedral
+
+Just pulse.
+
+---
+
+## OUTRO
+
+息。
+
+Morning light through broken glass.
+
+Still here.
+
+Still human.
+

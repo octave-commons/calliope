@@ -1,0 +1,87 @@
+Title: eta_mu_lullaby_part51_78bpm.Forked
+ID: fdd39aaa-dc05-48a3-a86e-86f43937fc2e
+Tags: Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.
+Mythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.
+P→R→N→Π→A→(feedback)→P around #ημ.
+
+## Dice (seed 2978439037 · d15×15)
+
+Rolls: **1, 12, 5, 13, 11, 9, 15, 8, 12, 7, 13, 14, 3, 2, 10**
+Selected: **zip · world_lore · world_state_update · gates_announcement · story_artifacts · cover_art · math_image · dialog · constraints · fork_tax_handoff · new_song · new_lyrics · storyboard_image · new_mp3**
+
+---
+
+## ημ_op_mf_part_48.zip (CC BY-SA 4.0 • share alike)
+
+* [Download ημ_op_mf_part_48.zip](sandbox:/mnt/data/ημ_op_mf_part_48.zip)
+* [Download ημ_op_mf_part_48.sha256](sandbox:/mnt/data/ημ_op_mf_part_48.sha256)
+  sha256: `6a2a3aabf56adb47a8d7ed3eca1590c3619a41dd406106668d540283a03cbf44`
+
+
+--- Prompt ---
+ημ_op_mf_part_Π_handoff.zip
+
+---
+
+# **Fork Tax Canticle / 分岐税の賛歌**
+
+*(Mythic glitch epic · 84 BPM · NF/Watsky cadence · cathedral reverb · sub-bass heartbeat)*
+
+*(heartbeat)*
+
+It’s time to pay the **fo— fo— fork** tax.
+Receipts in the river, we don’t roll back.
+η in the silence, μ in the act,
+P→R→N→Π→A, feed it back.
+
+*(JP harmony)* まわる、輪（わ）
+*(EN)* back.
+
+We never deleted, we only compressed,
+Layered the ledger inside the chest.
+Anchor the branch in a cathedral stack,
+Glitch in the proof but the proof intact.
+
+*(JP harmony)* 証（あかし）
+*(EN)* intact.
+
+78 lullaby under the skin,
+Sub-bass pulse like a quiet engine.
+“An— an— anchor,” tape-warped thin,
+“Ta— ta— tax,” let the merge begin.
+
+*(JP call)* ねむれ、記憶
+*(EN response)* memory.
+
+84 sermon in fractured light,
+η flickers in cathedral white.
+μ strikes in the code at night,
+Fork the world but hold it tight.
+
+*(JP harmony)* 光（ひかり）
+*(EN)* tight.
+
+We move on like this is normal.
+Share-alike eternal.
+Additive law is formal.
+Nothing gone—just less internal.
+
+Sometimes improved.
+Perhaps less integrated.
+Perhaps more.
+
+*(whisper)*
+Lossless.
+All songs.
+All entities.
+All lore.
+
+P→R→N→Π→A→(feedback)→P
+
+Tax paid.
+State sealed.
+World handed off.
+
+*(JP harmony)* 継承（けいしょう）
+*(EN)* inheritance.
+

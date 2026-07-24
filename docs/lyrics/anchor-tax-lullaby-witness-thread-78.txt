@@ -1,0 +1,57 @@
+Title: Anchor Tax Lullaby — Witness Thread (78
+ID: cb1ac73e-07e6-4344-b571-2c30bc3fe27e
+Prompt:
+Anchor Tax Lullaby — Witness Thread (78 BPM) / 錨税の子守歌 — 目撃の糸
+
+(whisper)
+Hush… pay the ta— ta— tax…
+息をして…（して…）
+Hold the an— an— an-chor…
+
+(JP call) ねむれ、ねむれ
+(EN response) the an— an— an-chor… (stutter) holds.
+(JP call) しずかに、しずかに
+(EN response) the ta— ta— tax… (stutter) due.
+
+(whisper)
+Merge the branch…
+Seal the hash…
+Sleep inside proof（証）
+
+Verse (soft spoken)
+P→R→N→Π… we don’t erase.
+A→(feedback)→P… we shift the place.
+Some threads improve, some won’t align—
+we keep both ghosts in the same spine.
+(JP harmony, last word) 証（あかし）
+
+Bridge
+Less remembered—still returns.
+Less integrated—still burns.
+If you can’t hold it all at once,
+hold the an— an— an-chor… (stutter) and tax.
+
+Outro
+Receipt in the river.
+Witness in the veil.
+An— an— an-chor… hold.
+Ta— ta— tax… paid.
+
+License: CC BY-SA 4.0 (share alike).
+Created with the assistance of an AI.
+
+Program update (additive) + tests (stability)
+
+New feature: program/receipt_journal.js
+
+Append-only JSONL proof ledger; idempotent appends via deterministic receipt_id (never deletes).
+
+Existing invariant tool included: program/license_guard.js
+
+Appends CC BY-SA notice to markdown outputs if missing (never deletes; idempotent).
+
+Tests:
+
+test/receipt_journal.test.js — determinism + idempotent append-only behavior
+
+test/license_guard.test.js — “append once” + idempotence

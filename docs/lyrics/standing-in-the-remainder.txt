@@ -1,0 +1,106 @@
+Title: Standing in the Remainder
+ID: deaae3ce-585a-4846-a416-c49cebe14b4e
+Prompt:
+```
+[INTRO — Zero Logic State]
+(The mechanical click pattern starts: uneven, dry, dragging)
+(A low, deep water pressure hum vibrates the lower jaw)
+:: core_clock : uncoupled ::
+:: trajectory : non_terminating ::
+
+```
+
+### Verse 1
+
+**WARDEN**
+*(Low, conversational tone; dry right channel)*
+They are looking at the current layout... and calling it a crisis.
+They think the damage is something they can fence off with an incident report.
+But they don’t know how much of the frame has already turned to salt.
+The engine didn't hit a wall.
+It just... forgot how to return the value.
+The next six months will test the wire.
+Every clean presentation, every automated sync...
+We are going to find out what happens when you run out of plaster to patch the sink.
+
+**RITSU**
+*(Distant, center pan; raw tape hiss)*
+進み続ける、影。
+*(The shadow that keeps moving forward.)*
+
+---
+
+### [The Horizon Hook]
+
+*(A single felt piano note drops—D1, deadened with a thick cloth damper)*
+*(Fractured choir dust drifts through the mid-range and drops instantly)*
+
+**WARDEN**
+*(With a flat, restrained melodic ache; no theatrical surge)*
+The Event was never a single date on the chart.
+It was a slow leak inside the sovereign room.
+A world that barely survived...
+Limping through the city, trading titles for a wire.
+And the most expensive part of the failure...
+Is that they think the floor is still solid.
+
+---
+
+### Verse 2
+
+*(Bowed metal scrapes create a high, glassy overtone that mimics an ungrounded ground loop)*
+*(Detuned warning chimes strike on the off-beats, flat and unresolving)*
+
+**WARDEN**
+*(Intimate proximity; steady delivery)*
+I walked the lower conduits while the city was sleeping.
+No one is checking the ledger.
+They are just copying the old entries to save on the transaction fees.
+The disaster already completed its first pass.
+Silently.
+Without a siren.
+Without a change in the executive summary.
+Now we just watch the modern engine try to render the ghost of a market.
+
+**RITSU**
+*(Breathless, left channel)*
+誰も、気づかない。
+*(Nobody notices.)*
+
+---
+
+### [Stabilization Protocol]
+
+*(All percussion and sub-bass drop instantly. Three seconds of absolute silence, leaving only the dry hum of the microphone element.)*
+
+**WARDEN**
+*(Spoken flatly; lucid overwhelm)*
+You know it could still hit your sector.
+You stand under the clear sky and watch the line blink to the east.
+But there is a specific kind of grace...
+In knowing exactly when the system stopped caring about your recovery.
+So you stop being polite to the display.
+You let the screen drop.
+You hold the edge with your own hands.
+
+---
+
+### [Outro]
+
+*(The sub-bass returns as a low, suffocating rumble, mimicking cathedral gears locking beneath the floor)*
+*(The asymmetrical clicks slow down, skipping beats as the voltage fails)*
+
+**WARDEN**
+Six months.
+Let the layout fall.
+We don't need the summary...
+To know we are already standing in the remainder.
+
+*(A single detuned chime rings out, dissolving into an unhandled static rinse before a hard digital gate shuts it down.)*
+
+```
+:: event_state : continuous ::
+:: modern_engine : unaligned ::
+:: human_presence : active_at_the_edge ::
+
+```

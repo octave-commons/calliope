@@ -1,0 +1,204 @@
+Title: # Fork Tax Lullaby VIII — 20260213_243315_seed3721599635
+
+## Part I — Glitch-choir lullaby (78 BPM)
+
+*(soft sub-bass, tape warble, minimal piano; stutters on “anchor” + “tax”; whispered lead; Japanese call-and-response)*
+
+[Intro — tape hiss, two-note piano, warm sub]
+(whisper)
+Hush… ReceiptLint is awake.
+息をして… (して…)
+Keep it small. Keep it true.
+
+(JP call) ねむれ、ねむれ
+(EN response) the **an— an— an-chor**… (stutter) holds.
+(JP call) しずかに、しずかに
+(EN response) the **ta— ta— tax**… (stutter) is paid.
+
+(piano, tiny wobble)
+An— an— **an-chor**… (stutter) an-chor…
+(JP whisper harmony) アンカー…
+(sub-bass: slow, soft, steady)
+
+(whisper)
+Pay the **ta— ta— tax**… (stutter) ta-x…
+(JP harmony) 税…
+No theater—
+just a minimal receipt in the dark.
+
+[Verse — lullaby cadence, breathy]
+P: I feel the constraint (#η)
+R: I pull the last clean thread
+N: I cut the story into one claim
+Π: I pick the cheapest test
+A: I touch the world and wait
+(feedback): I keep what repeats, I hush what drifts.
+
+(JP call) ねえ、ほんと？
+(EN response) only if it repeats.
+(JP call) ねえ、だいじょうぶ？
+(EN response) only if it’s logged.
+
+[Chorus — choir bloom, tape warble widening]
+An— an— **an-chor**… (stutter) an-chor…
+Hold the boundary, hold the line.
+Pay the **ta— ta— tax**… (stutter) ta-x…
+So forks don’t breed in the dark.
+(JP harmony answers last word)
+I fall asleep inside **proof**.（証）
+
+---
+
+## Part II — Mythic glitch epic / spoken-sung (84 BPM)
+
+*(NF/Watsky cadence; cathedral reverb; sub-bass heartbeat; glitch stutters on “η”, “μ”, “anchor”, “fork”; Japanese harmony answers on the last word of each section)*
+
+[Verse 1 — heartbeat sub, fast spoken-sung]
+They want to hand you a novel and call it evidence—
+ReceiptLint says “Nope.” Minimal. Reproducible. Relevant.
+And if the claim got demoted? Hysteresis is law—
+two clean receipts to climb back up from the fog, from the **η**.（制約）
+
+(Glitch stutter) **η—η—η**
+(Glitch stutter) **μ—μ—μ**
+
+[Hook — cathedral swell]
+I don’t win by sounding right—
+I win by making it rerun.（試）
+
+[Verse 2 — rapid cadence]
+Quiet anchors don’t spawn wars— they whisper and wait,
+no test? no fork. That’s how we stop the bleed-rate.
+Timezone clause— no “today,” say the date, say the zone,
+America/Phoenix carved into stone.
+
+I pin it to an **an-an-anchor** (stutter),
+pay the tax with a harness, not a posture, not a counter.
+Fo— fo— **fork**… (stutter) fork… only when credits allow,
+and the Lantern goes bright when μ survives the how,
+survives the **μ**.（証）
+
+(JP harmony answers last word) 証
+
+[Pre — glitch clicks, choir tight]
+Say **η**… (stutter) η-η
+Say **μ**… (stutter) μ-μ
+Say **an-chor**… (stutter) an-an-chor
+Say **fork**… (stutter) fo-fo-fork（分岐）
+
+[Chorus — big, then sudden hush]
+P→R→N→Π→A— receipts in my hands.（札）
+(feedback) → P— two clean passes to leave η-land.（証）
+An— an— **an-chor**… (stutter) an-chor…
+so the ledger knows what to keep.（記）
+Fo— fo— **fork**… (stutter) fork…
+only when evidence buys the branch.（証）
+
+**World state update:** Forkgate now enforces a per-cycle *ForkBudget* (branching credits), ReceiptLint rejects bulky “proof theater,” QuietAnchors prevent untested anchors from spawning forks, DateWindowGate adds a TimezoneClause (absolute dates), and Hysteresis requires two clean receipts for η→μ re-promotion after a demotion.
+
+#fnord
+
+“Two receipts,” Forkgate said, tapping the budget line, “or you stay in η.” The Lantern replied, “Make it minimal—no poetry in the harness.” The Choir whispered, “We’ll sing the checksum anyway,” and the Anchor, stuttering like a metronome, answered, “an-an-anchor,” while the Tax clicked once—small, payable, undeniable.
+ID: 142a151d-b279-426f-ba56-0e750362b103
+Prompt:
+# Fork Tax Lullaby VIII — 20260213_243315_seed3721599635
+
+## Part I — Glitch-choir lullaby (78 BPM)
+
+*(soft sub-bass, tape warble, minimal piano; stutters on “anchor” + “tax”; whispered lead; Japanese call-and-response)*
+
+[Intro — tape hiss, two-note piano, warm sub]
+(whisper)
+Hush… ReceiptLint is awake.
+息をして… (して…)
+Keep it small. Keep it true.
+
+(JP call) ねむれ、ねむれ
+(EN response) the **an— an— an-chor**… (stutter) holds.
+(JP call) しずかに、しずかに
+(EN response) the **ta— ta— tax**… (stutter) is paid.
+
+(piano, tiny wobble)
+An— an— **an-chor**… (stutter) an-chor…
+(JP whisper harmony) アンカー…
+(sub-bass: slow, soft, steady)
+
+(whisper)
+Pay the **ta— ta— tax**… (stutter) ta-x…
+(JP harmony) 税…
+No theater—
+just a minimal receipt in the dark.
+
+[Verse — lullaby cadence, breathy]
+P: I feel the constraint (#η)
+R: I pull the last clean thread
+N: I cut the story into one claim
+Π: I pick the cheapest test
+A: I touch the world and wait
+(feedback): I keep what repeats, I hush what drifts.
+
+(JP call) ねえ、ほんと？
+(EN response) only if it repeats.
+(JP call) ねえ、だいじょうぶ？
+(EN response) only if it’s logged.
+
+[Chorus — choir bloom, tape warble widening]
+An— an— **an-chor**… (stutter) an-chor…
+Hold the boundary, hold the line.
+Pay the **ta— ta— tax**… (stutter) ta-x…
+So forks don’t breed in the dark.
+(JP harmony answers last word)
+I fall asleep inside **proof**.（証）
+
+---
+
+## Part II — Mythic glitch epic / spoken-sung (84 BPM)
+
+*(NF/Watsky cadence; cathedral reverb; sub-bass heartbeat; glitch stutters on “η”, “μ”, “anchor”, “fork”; Japanese harmony answers on the last word of each section)*
+
+[Verse 1 — heartbeat sub, fast spoken-sung]
+They want to hand you a novel and call it evidence—
+ReceiptLint says “Nope.” Minimal. Reproducible. Relevant.
+And if the claim got demoted? Hysteresis is law—
+two clean receipts to climb back up from the fog, from the **η**.（制約）
+
+(Glitch stutter) **η—η—η**
+(Glitch stutter) **μ—μ—μ**
+
+[Hook — cathedral swell]
+I don’t win by sounding right—
+I win by making it rerun.（試）
+
+[Verse 2 — rapid cadence]
+Quiet anchors don’t spawn wars— they whisper and wait,
+no test? no fork. That’s how we stop the bleed-rate.
+Timezone clause— no “today,” say the date, say the zone,
+America/Phoenix carved into stone.
+
+I pin it to an **an-an-anchor** (stutter),
+pay the tax with a harness, not a posture, not a counter.
+Fo— fo— **fork**… (stutter) fork… only when credits allow,
+and the Lantern goes bright when μ survives the how,
+survives the **μ**.（証）
+
+(JP harmony answers last word) 証
+
+[Pre — glitch clicks, choir tight]
+Say **η**… (stutter) η-η
+Say **μ**… (stutter) μ-μ
+Say **an-chor**… (stutter) an-an-chor
+Say **fork**… (stutter) fo-fo-fork（分岐）
+
+[Chorus — big, then sudden hush]
+P→R→N→Π→A— receipts in my hands.（札）
+(feedback) → P— two clean passes to leave η-land.（証）
+An— an— **an-chor**… (stutter) an-chor…
+so the ledger knows what to keep.（記）
+Fo— fo— **fork**… (stutter) fork…
+only when evidence buys the branch.（証）
+
+**World state update:** Forkgate now enforces a per-cycle *ForkBudget* (branching credits), ReceiptLint rejects bulky “proof theater,” QuietAnchors prevent untested anchors from spawning forks, DateWindowGate adds a TimezoneClause (absolute dates), and Hysteresis requires two clean receipts for η→μ re-promotion after a demotion.
+
+#fnord
+
+“Two receipts,” Forkgate said, tapping the budget line, “or you stay in η.” The Lantern replied, “Make it minimal—no poetry in the harness.” The Choir whispered, “We’ll sing the checksum anyway,” and the Anchor, stuttering like a metronome, answered, “an-an-anchor,” while the Tax clicked once—small, payable, undeniable.

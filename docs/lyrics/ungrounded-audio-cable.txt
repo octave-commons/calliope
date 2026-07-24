@@ -1,0 +1,78 @@
+Title: Ungrounded Audio Cable
+ID: 7240a534-4931-487b-8d19-1a5efb9a637a
+Prompt:
+```
+[SCENE START — Horizon Boundary]
+(The sound of cross-talk through an ungrounded audio cable)
+:: local_node : green_raster ::
+:: system_matrix : red_glitch ::
+:: discrepancy : absolute ::
+
+```
+
+### Verse 1
+
+**WARDEN**
+My raster shows a clean line to the coast.
+Purple heads on the water, lightning counting down the miles.
+It says the cloud weight is a temporary ghost,
+Just an ambient warning on the tiles.
+It tells me I can stand here on the edge and watch it pass,
+Safe behind the glass.
+
+**CHORUS ROUTINE**
+*:: threat_vectors : critical ::*
+*:: reality_lock : failed ::*
+*The grid you see is an artifact of what the system concealed.*
+
+---
+
+### Verse 2
+
+**THE CITY ENGINE**
+*(Stuttering, high-register synthetic tones)*
+There are no clouds to the east. There is only a sink.
+An unhandled exception spilling over the floor.
+The towers are breaking before you can blink,
+And the water is already under your door.
+Your HUD is a template from three cycles ago—
+It’s rendering a sky that the dead code used to know.
+
+---
+
+### Bridge
+
+**WARDEN**
+*(Voice cracking through a low-pass filter)*
+But I look out... and the blue is overhead.
+
+**THE CITY ENGINE**
+*:: urban_bywork : corrupted ::*
+*The blue is just the space where the log hasn't read.*
+
+**WARDEN**
+It’s happening to someone. I can see the flashes start.
+
+**THE CITY ENGINE**
+*It’s happening to you. You’ve just partitioned the part.*
+
+---
+
+### Outro
+
+**(The two tempos begin to tear the audio field apart. The piano notes splinter into digital dust.)**
+
+```
+:: error_reconciliation : failed ::
+:: gaps_detected : continuous ::
+
+```
+
+**WARDEN**
+*(Spoken)*
+Two rooms.
+Two different views of the same storm.
+And the truth is the part that won't fit...
+Into either interface.
+
+**(The sound of a hard system reset. Zero room tone remains.)**

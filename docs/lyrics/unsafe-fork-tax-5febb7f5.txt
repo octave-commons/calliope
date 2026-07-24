@@ -1,0 +1,55 @@
+Title: Unsafe Fork Tax
+ID: 8b19b8de-5e76-45f5-a5cb-624dad3d7cf3
+Prompt:
+* `handoff_manifest.json` (290 bytes)
+
+Manifest contents (decoded):
+
+* `run_id`: `20260213_handoff`
+* `seed`: `3721599645`
+* `cycle_model`: `P→R→N→Π→A→(feedback)→P`
+* `features`: `ForkBudget`, `Quorum+Echo`, `RoleSignature`, `RevalidationDaemon`, `EntropyPressure`
+* `status`: `HANDOFF_READY`
+
+I also packaged your lyrics + the manifest into a **more complete handoff bundle** (adds `Fork_Tax_Lullaby.md`, `README.md`, and `SHA256SUMS`):
+
+* [Download Fork_Tax_Lullaby_Handoff_20260213.zip](sandbox:/mnt/data/Fork_Tax_Lullaby_Handoff_20260213.zip)
+* [Download original Π.5eaf4b85f8314e77.zip](sandbox:/mnt/data/Π.5eaf4b85f8314e77.zip)
+
+### Proof hashes (SHA-256)
+
+* `Π.5eaf4b85f8314e77.zip`
+  `f2b8e9b1238e76fe8e004ecb1e94793f22987abb56cf2ee6e3f478bead68a065`
+* `Fork_Tax_Lullaby_Handoff_20260213.zip`
+  `2aebb3850600e4803df5d1764885d3ee728bf148c1eabd4b9a4f9b3771d547ac`
+
+### Quick verify
+
+```bash
+unzip -l Π.5eaf4b85f8314e77.zip
+unzip -p Π.5eaf4b85f8314e77.zip handoff_manifest.json
+
+unzip -l Fork_Tax_Lullaby_Handoff_20260213.zip
+unzip -p Fork_Tax_Lullaby_Handoff_20260213.zip SHA256SUMS
+```
+
+**Files written (additive, safe):**
+
+* `/mnt/data/Fork_Tax_Lullaby_Handoff_20260213.zip`
+* (staging dir used to build it) `/mnt/data/Fork_Tax_Lullaby_Handoff_20260213/`
+
+## Frames
+
+* **Ritual frame:** “Fork tax” as a lullaby for disciplined branching—rest earned by proof.
+* **Ops frame:** handoff metadata as a minimal “build receipt” for future automation hooks (revalidation daemon, quorum/echo).
+* **Myth frame:** anchor/hash as the modern seal—binding story to state.
+
+## Countermoves
+
+* Ritual → don’t let the chant replace checks: always include a verifiable hash.
+* Ops → don’t let metadata become theater: tie `run_id` to an actual repo/commit when it matters.
+* Myth → don’t let symbolism erase accountability: make “proof” machine-checkable.
+
+## Next
+
+Add a `commit_hash` field to `handoff_manifest.json` the first time this handoff attaches to a real repo state.

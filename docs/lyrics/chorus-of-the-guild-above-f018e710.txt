@@ -1,0 +1,150 @@
+Title: Chorus of the Guild Above / 天上ギルドの合唱
+ID: a450cd87-5c96-45a7-8f55-bd364563b25c
+Tags: 
+**Genre/Style:** Fast baroque-pop opera × gothic choral spectacle × MMO mythic commentary. 126 BPM driving 4/4. Rapid harpsichord ostinatos, racing strings, cathedral organ swells, militant snare, rolling timpani. Large mixed choir (SATB) with call-and-response passages. Subtle glitch shimmer under transitions.
+
+**Vocal Direction:** Primarily choral narration (Greek chorus energy). Alternating male and female leads. Occasional soaring soprano descants above the choir. Crisp diction, percussive consonants, dramatic dynamic shifts.
+
+**Mood:** Regal observation. Ironic reverence. Awe without allegiance.
+
+**Structure:** Orchestral Overture → Chorus Verse I (narration) → Pre-Chorus (rising tension) → Grand Refrain → Chorus Verse II → Bridge (whispered guild counsel) → Final Refrain (full blaze) → Echoing coda.
+
+
+--- Prompt ---
+## OVERTURE — Balcony of Light
+
+*(organ swell; choir hum; strings racing beneath)*
+
+From the ramparts of reflected sky,
+We watch the velvet falcon fly.
+
+And on the marble, unbowed flame,
+Stands the one who will not claim.
+
+天上より見守る。
+
+## CHORUS VERSE I — Witness
+
+Sopranos:
+Crown of frost and silver decree—
+
+Tenors:
+Spine of steel in defiant key—
+
+Altos:
+Blade of song in satin air—
+
+Basses:
+Grounded pulse that does not care—
+
+All:
+Thus begins the sacred duel,
+Pride as scepter, breath as rule.
+
+## PRE-CHORUS — Divided Air
+
+*(strings ascending; timpani rumble)*
+
+High above the shattering nave,
+No one kneels and none are saved.
+
+Tick—tock—
+threads align.
+
+Is this fate?
+Or design?
+
+## GRAND REFRAIN — We Bear No Banner
+
+*(full orchestral surge; choir in harmony)*
+
+We bear no banner—
+We cast no stone.
+
+We witness fire
+against the throne.
+
+鷹の女王
+跪かない
+
+Two bright notes in mirrored sky,
+Neither willing yet to die.
+
+We bear no banner—
+We take no side.
+
+In spectacle,
+we do not hide.
+
+## CHORUS VERSE II — The Measure
+
+Sopranos:
+Hear the aria cut like glass—
+
+Tenors:
+Hear the answer—steady, brass—
+
+Altos:
+Velocity and vertical flame—
+
+Basses:
+Continuance without a name—
+
+All:
+What is power without a crown?
+What is rising without down?
+
+## BRIDGE — Guild Counsel
+
+*(music drops; whispering choir; faint glitch shimmer)*
+
+Observe.
+
+Do not inherit the rage.
+
+Remember:
+Every queen was once a page.
+
+Remember:
+Every rebel risks a throne.
+
+Remember:
+Breath is never owned.
+
+息は借り物。
+
+## FINAL REFRAIN — Vast Arena
+
+*(orchestra blazing; choir at full force; soprano descant above)*
+
+We bear no banner—
+but we ascend
+In understanding
+without end.
+
+Crown and spine,
+blade and ground—
+
+Both are bound
+by common sound.
+
+天上ギルド
+静かに歌う。
+
+We bear no banner—
+we remain.
+
+Witness to glory.
+Witness to flame.
+
+## CODA — Echo in the Heights
+
+*(choir fades; organ softens)*
+
+In every duel of frost and will,
+The sky is watching—
+
+Still.
+
+息。
+

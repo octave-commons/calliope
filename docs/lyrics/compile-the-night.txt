@@ -1,0 +1,97 @@
+Title: Compile the Night (逃避と解放)
+ID: e1f0d5b2-951a-4d0b-9fa7-2e13e721f4cc
+Tags: **Style / Genre:** Glitchcore + kawaii bass + cinematic dubstep + electronicore. Thick, growling bass layers under rapid-fire synths, sparkly kawaii bass leads, chiptune motifs, and glitchy stutters. Verses tense and digital, choruses explode with layered aggression and bright neon textures. Big halftime drops with cinematic hits, then chaotic electronicore breakdown (glitch guitars/synth-metal feel).
+
+**Tempo / Feel:** 155 BPM (chorus feels double-time; drops hit halftime).
+**Mood:** “Tune the world out” escape → self-empowerment, reclaiming control. Neon, anime-opener energy, cyber-terminal glow, broken pixels snapping into clarity.
+**Vocals:** Soaring, reverb-laden lead vocal with an otherworldly sheen + occasional vocoder chops. Mostly Japanese with English lines interleaved. Kawaii ad-libs and glitchy vocal samples.
+
+**Song Structure:**
+Intro (glitch ambience) → Verse 1 → Pre → Chorus → Drop 1 → Verse 2 → Pre → Chorus → Breakdown (electronic
+
+--- Prompt ---
+[Intro]
+（ノイズの海へ…）
+Digital hush, shut the world outside
+キラキラのビットが胸を刺す
+
+[Verse 1]
+通知(つうち)の嵐(あらし) もうミュートして
+I’m fading out the crowd, I need a private sky
+心(こころ)の奥(おく)で 低音(ていおん)が唸(うな)る
+Bass like a heartbeat—raw, amplified
+画面(がめん)の光(ひかり)で 生(い)き返(かえ)るみたい
+I build my own world when the real one bites
+
+[Pre-Chorus]
+逃(に)げじゃない これは選択(せんたく)
+Not a retreat—this is control
+ブレる現実(げんじつ)を 直(なお)していく
+I patch the cracks in my soul
+
+[Chorus]
+世界(せかい)を切(き)って ここに来(き)た
+I tune it out, I tune in—feel that power surge
+私(わたし)は私(わたし)で 立(た)ち上(あ)がる
+No chain, no cage, I’m rewriting the words
+闇(やみ)を越(こ)えて 眩(まぶ)しいノイズ
+Kawaii lights and violent joy, let it burn
+“Promethean” spark—点火(てんか)して
+I am the fire, I don’t need permission
+
+[Drop 1] *(instrumental callouts / vocal chops)*
+（こわれて、つながって、光(ひか)れ）
+Glitch it—break it—make it mine
+(heavy cinematic dubstep drop + kawaii lead counter-melody)
+
+[Verse 2]
+ループする不安(ふあん) でも上書(うわが)き
+Overwrite the fear, commit to the night
+傷(きず)だらけの夢(ゆめ) まだ走(はし)れる
+If it’s broken, I can still make it bright
+名前(なまえ)もラベルも いらないよ
+No masters, no gatekeepers—just a signal and glow
+共有(きょうゆう)する鼓動(こどう) ひとりじゃない
+Open hands, open source, open sky
+
+[Pre-Chorus]
+涙(なみだ)のデバッグ 終(お)わらせて
+Let the feedback fade, I’m done apologizing
+この音(おと)が盾(たて) この声(こえ)が刃(やいば)
+This sound’s my shield—this voice is rising
+
+[Chorus]
+世界(せかい)を切(き)って ここに来(き)た
+I tune it out, I tune in—feel that power surge
+私(わたし)は私(わたし)で 立(た)ち上(あ)がる
+No chain, no cage, I’m rewriting the words
+闇(やみ)を越(こ)えて 眩(まぶ)しいノイズ
+Kawaii lights and violent joy, let it burn
+“Promethean” spark—点火(てんか)して
+I am the fire, I don’t need permission
+
+[Breakdown / Electronicore] *(more aggressive, glitch-guitar vibe)*
+壊(こわ)れてもいい、進(すす)め！
+Break the frame—don’t you flinch!
+この痛(いた)みさえ 武器(ぶき)にして
+Turn my scars into a switch
+叫(さけ)べ、コードみたいに
+Scream in sync, like circuitry
+私(わたし)の未来(みらい)にプルリクして
+Pull request to my future—merge with me
+
+[Final Chorus] *(biggest, add extra harmonies & ad-libs)*
+世界(せかい)を切(き)って ここに来(き)た
+I tune it out, I tune in—feel that power surge
+私(わたし)は私(わたし)で 立(た)ち上(あ)がる
+No chain, no cage, I’m rewriting the words
+闇(やみ)を越(こ)えて 眩(まぶ)しいノイズ
+Kawaii lights and violent joy, let it burn
+“Promethean” spark—点火(てんか)して
+I am the fire, I don’t need permission
+
+[Outro]
+（静(しず)かなノイズ…）
+Fade to pixels, soft and bright
+世界(せかい)は遠(とお)く、私は近(ちか)い
+

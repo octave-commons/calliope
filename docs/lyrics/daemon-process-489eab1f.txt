@@ -1,0 +1,121 @@
+Title: Daemon Process / 常駐プロセス
+ID: 55a27580-4c51-4d2b-9833-41afb66cdd7d
+Prompt:
+## INTRO — Boot Log
+
+*(low hum, faint mechanical ticks)*
+
+:: initializing ::
+
+breath online
+
+常駐プロセス 起動
+
+## VERSE 1 — Background Thread
+
+Not everything loud deserves a thread
+Some thoughts run hot but they’re underfed
+
+I used to foreground every fear
+CPU pinned, no buffer clear
+
+今は違う
+
+I learned to daemon what I can’t delete
+Let it idle low, not take the seat
+
+If it’s just weather, let it pass
+Not every cloud needs a forecast
+
+## PRE‑CHORUS — Scheduler
+
+*(riser, metallic ticks increase)*
+
+Allocate attention.
+Free the stack.
+
+Return what’s noise
+back to black.
+
+呼吸して
+優先度を下げろ
+
+## HOOK — Daemon Process
+
+*(controlled sub drop)*
+
+I’m running a **daemon process**
+steady and light
+
+Guarding the edges
+all through the night
+
+If it’s not signal
+it won’t persist
+
+常駐してるのは
+静かな意志
+
+I’m running a **daemon process**
+calm in the core
+
+Background strength
+I don’t need more
+
+## VERSE 2 — Resource Control
+
+The mind is a system with finite RAM
+Don’t give root to every spam
+
+Toxin labels? Kill the task.
+Confusion? One clarifying ask.
+
+Curiosity? Give it space.
+Specific critique? Increase its base.
+
+証拠があるなら
+保持する
+
+Everything else can page to disk.
+
+## BRIDGE — Quiet Kernel
+
+*(beat drops; piano two notes; long silence pockets)*
+
+You don’t have to silence the storm.
+
+You just don’t let it own the kernel.
+
+中心は
+静かだ
+
+## FINAL HOOK — Persistent Calm
+
+*(sub returns warmer, subtle choir lift)*
+
+I’m running a **daemon process**
+breath in the wire
+
+Not chasing chaos
+not feeding fire
+
+Signal survives
+static dissolves
+
+常駐してる
+それが resolve
+
+I’m running a **daemon process**
+all the time
+
+Not loud.
+Not fragile.
+Just mine.
+
+## OUTRO — Idle State
+
+*(server hum fades, single soft piano note)*
+
+:: stable ::
+
+息。

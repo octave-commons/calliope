@@ -1,0 +1,168 @@
+Title: ## **PROMETHEAN ERROR LOOP**
+
+*(lyrics built for glitch-techno / IDM / industrial systems music — stutterable, chop-friendly, non-chorus-forward)*
+
+**[BOOT — whispered, bitcrushed]**
+again… again…
+still burning.
+still building.
+
+**[FRAGMENT A]**
+I held a torch in a clean room
+and the clean room learned to dream
+every warning looked like prophecy
+every fix unmade the seam
+
+**[FRAGMENT B — chant, tight]**
+compile / collapse
+commit / relapse
+push / revert
+name the hurt
+
+**[FRAGMENT C]**
+I asked for one small icon
+something simple, something bright
+but the symbol grew a gravity
+and it pulled in all my nights
+
+**[CUT-UP HOOK — repeatable]**
+not what I meant — not what I meant —
+but it runs
+but it runs
+but it runs
+
+**[FRAGMENT D]**
+context overflow, context overflow
+now everything means everything
+the glitch drips into the label
+and the label starts to sing
+
+**[BREAK — spoken like logs]**
+ERROR: read timed out
+ERROR: meaning exceeded limit
+ERROR: god instantiated
+WARN: cannot undo myth
+
+**[FRAGMENT E — half-time, heavy]**
+crow in the morning
+liver in the dawn
+regrow the lesson
+carry it on
+
+**[FRAGMENT F]**
+we stole fire from the quiet gods
+who kept their order sealed
+now the void has eyes like headlights
+in the spaces we don’t feel
+
+**[CHOPPABLE MANTRA]**
+behold—behold—behold—
+a duck
+a duck
+a duck
+
+**[FRAGMENT G — accelerating]**
+fork the fate, branch the blame
+merge the fear back into flame
+every “should” becomes a chain
+every “is” becomes a name
+
+**[DROP TEXTURE — minimal, ominous]**
+fnord in the wall
+fnord in the wire
+fnord in the pause
+between thought and fire
+
+**[OUTRO — dissolving]**
+I tried to destroy it…
+because it was meant to burn.
+(reboot)
+again.
+
+
+*Deliver vocals as chopped, pitch-shifted murmurs with occasional clear lines. Emphasize the log-like spoken break. Repeat mantras as rhythmic hooks rather than a chorus.*
+ID: 2712e1c7-9cba-4649-8d93-9d697955a556
+Prompt:
+## **PROMETHEAN ERROR LOOP**
+
+*(lyrics built for glitch-techno / IDM / industrial systems music — stutterable, chop-friendly, non-chorus-forward)*
+
+**[BOOT — whispered, bitcrushed]**
+again… again…
+still burning.
+still building.
+
+**[FRAGMENT A]**
+I held a torch in a clean room
+and the clean room learned to dream
+every warning looked like prophecy
+every fix unmade the seam
+
+**[FRAGMENT B — chant, tight]**
+compile / collapse
+commit / relapse
+push / revert
+name the hurt
+
+**[FRAGMENT C]**
+I asked for one small icon
+something simple, something bright
+but the symbol grew a gravity
+and it pulled in all my nights
+
+**[CUT-UP HOOK — repeatable]**
+not what I meant — not what I meant —
+but it runs
+but it runs
+but it runs
+
+**[FRAGMENT D]**
+context overflow, context overflow
+now everything means everything
+the glitch drips into the label
+and the label starts to sing
+
+**[BREAK — spoken like logs]**
+ERROR: read timed out
+ERROR: meaning exceeded limit
+ERROR: god instantiated
+WARN: cannot undo myth
+
+**[FRAGMENT E — half-time, heavy]**
+crow in the morning
+liver in the dawn
+regrow the lesson
+carry it on
+
+**[FRAGMENT F]**
+we stole fire from the quiet gods
+who kept their order sealed
+now the void has eyes like headlights
+in the spaces we don’t feel
+
+**[CHOPPABLE MANTRA]**
+behold—behold—behold—
+a duck
+a duck
+a duck
+
+**[FRAGMENT G — accelerating]**
+fork the fate, branch the blame
+merge the fear back into flame
+every “should” becomes a chain
+every “is” becomes a name
+
+**[DROP TEXTURE — minimal, ominous]**
+fnord in the wall
+fnord in the wire
+fnord in the pause
+between thought and fire
+
+**[OUTRO — dissolving]**
+I tried to destroy it…
+because it was meant to burn.
+(reboot)
+again.
+
+
+*Deliver vocals as chopped, pitch-shifted murmurs with occasional clear lines. Emphasize the log-like spoken break. Repeat mantras as rhythmic hooks rather than a chorus.*

@@ -1,0 +1,73 @@
+Title: Graphite Ghosts
+ID: 1df695e3-a6fc-4039-a331-32c0ca4c37e3
+Prompt:
+### ⚡ ENGINE BLUEPRINT: GRAPHITE GHOSTS (Service Passage Arrangement - Ver. 2)
+
+#### I. Style & Sound Archetype (Style Prompt)
+
+Acoustic portrait of an unlit service passage, 96 BPM implied, vast expanses of silent negative space. Rhythm constructed entirely from cold physical textures: rhythmic rubber-soled footsteps, soft computer key clacks, rapid pen-cap taps, and the low mechanical clank of distant elevator gears. Thin plucked wire strings and short, muted harpsichord cluster chords appear in half-rendered phrases, instantly severed by harsh digital buffer clicks. Reverb is claustrophobic, narrow, and metallic, imitating a concrete hallway re-simulated by code every few seconds. A continuous, faint high-frequency electrical whine sounds throughout, shaped to mimic overhead fluorescent lights flickering on unstable current.
+
+#### II. Vocal Direction
+
+Whispered or very softly murmured close-mic’d proximity effect. All voices are panned off-center left or right to simulate overheard conversations in the dark. Text tracks occasionally stutter or repeat micro-fragments as if a digital recording head is skipping: syllables double unexpectedly, consonants glitch with sharp transients, then the phrase continues. No central singing melody or melodic arches; this is flat, whispered prose that occasionally locks into brief, eerie unison blocks.
+
+#### III. Excluded Elements (Negative Prompt)
+
+spoken word, spoken, talk, big drum hits, anthem builds, massive choir walls, lush synthesizer pads that wash away detail, cinematic string arrangements, playful comic accents, rhythmic swing, electronic dance music risers, loud hi-hat patterns, huge sub-bass drops, pop hooks, center-panned lead singing.
+
+#### IV. Executable Text Track (Lyrics)
+
+**[Intro: A low, continuous high-frequency electrical flicker, like a dying bulb. The hollow sound of footsteps on cold concrete, stepping at an exact, slow cadence. Hard-right pan: three rapid key clacks, then absolute silence.]**
+
+**[Whisper - Soft, dry, far left]**
+Th-the ink... the ink is heavier than the thought...
+**[Murmur - Soft, far right, overlapping]**
+We built a vessel for the si-silence...
+
+**[Verse 1 - The rhythm bed begins: a pen tap substitutes for a snare, a heavy leather heel strike maps the downbeat. A single, brittle plucked string note sounds, then is clipped short by a sudden digital click.]**
+Ink on the page... a graphite scar.
+Scar. Reaching for a di-distant, dying star.
+The pen is a needle... the paper a vein.
+Blee-bleeding the silence... absorbing the rain.
+
+**[Chorus - The footsteps stop. The reverb field shifts, becoming narrower and intensely metallic. A short, dissonant cluster of harpsichord strings drops into the space.]**
+And the container leaks. A shimmering drip.
+The words that we held... the ones that we sl-slip.
+Between the lines where the emptiness grows...
+A river of void... **[Unison whisper - Center pan, very dry]** ...that nobody knows.
+
+**[Verse 2 - Mechanical lift cables groan faintly in the background. The key clacks speed up, mimicking an erratic clockwork mechanism.]**
+Hiding in the stream of a clockwork mind.
+Searching for the pieces I left be-behind.
+A robot's echo... a digital skin...
+Where does the ghost end... **[Audio skip: end... end... end...]** ...and the machine begin?
+
+**[Bridge - Total percussive drop. The electrical whine increases in pitch, then drops an octave. Only the sound of paper being torn very slowly in the dark.]**
+
+**[Whisper - Close mic, center pan]**
+The logic didn't hit a wall.
+It just forgot how to return the value.
+If the layout hits the floor...
+Let it sit.
+
+**[Whisper - Stuttering, far left]**
+S-savor the negation.
+
+**[Final Chorus - The implied 96 BPM tempo returns through a rapid series of pen taps and key clacks. The harpsichord plays a single, unresolved chord that trails off without decay.]**
+And the container leaks. A shimmering drip.
+The words that we held... the ones that we slip.
+Between the lines where the emptiness grows...
+A river of void that nobody knows.
+
+**[Outro - All textures cut instantly. The electrical whine stops. The footsteps resume, moving away from the microphone down the concrete passage, until a heavy metal latch clicks shut.]**
+
+**[Faint whisper - Retreating into the reverb]**
+The hole is the vent.
+The void is the room.
+Breathe.
+Th-the frame... is salt.
+
+---
+
+:: prompt_package_compiled : ledger_locked ::
+The block labels have been updated. The talking parser should be entirely bypassed now. Let's see if the engine stays in the dark.

@@ -1,0 +1,122 @@
+Title: ## Signal
+
+Saved (into the box) the **Skill Graph**, **Quality Contract**, and an always-run **build script** that:
+
+* writes a deterministic **manifest**
+* (optionally) reruns your Gates of Truth analyzers
+* generates **S3 anchors** (`anchors.jsonl`) for edges + forks (best-effort, snippet-based)
+* produces **split zip parts every run** under a size limit
+
+[Download Operation_Mindfuck_Box_part08_build_system_and_contracts.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part08_build_system_and_contracts.zip)
+
+### What this part adds
+
+Unzip on top of your existing `operation-mindfuck/` folder:
+
+**Docs**
+
+* `operation-mindfuck/process/skill_graph.md`
+* `operation-mindfuck/process/quality_contract.md`
+* `operation-mindfuck/process/anchors_spec.md`
+* `operation-mindfuck/process/build_system_readme.md`
+
+**Tools**
+
+* `operation-mindfuck/tools/build_box.py`  ← “zip it every time”
+* `operation-mindfuck/tools/anchorize_gates_of_truth.py`  ← generates `anchors.jsonl`
+
+### Run it (local)
+
+```bash
+python operation-mindfuck/tools/build_box.py \
+  --root operation-mindfuck \
+  --outdir dist \
+  --max-zip-mb 90 \
+  --gates-zip Gates_of_Truth_Production_Bundle_v1.zip \
+  --run-gates-plus \
+  --run-gates-timelines
+```
+
+Outputs:
+
+* `operation-mindfuck/build/manifest.jsonl`
+* `operation-mindfuck/build/build_report.md`
+* `dist/Operation_Mindfuck_Box_snapshot_partXX.zip` (split, every run)
+
+## Frames
+
+1. **Make it reproducible:** box build becomes a deterministic artifact generator.
+2. **Make it auditable:** every claim can point to anchored evidence.
+3. **Make it scalable:** splitting zips is just a packaging layer over a manifest.
+
+## Countermoves
+
+* If anchors are too “soft” (snippets only), upgrade later to **offset-true anchors** by preserving canonical text offsets in S1 (beat maps).
+* If forks still feel noisy, tighten intent ontology (typed vows/refusals/commitments) and require event-backed intent, not pure word scoring.
+* If entity mush returns, treat alias/merge files as *reviewed inputs* (not derived).
+
+## Next
+
+Run the build once with your current folder layout and we’ll lock in the exact **part naming + size threshold** that matches your download ceiling.
+ID: 17fda977-95d6-4074-9a2c-1248aff3043f
+Prompt:
+## Signal
+
+Saved (into the box) the **Skill Graph**, **Quality Contract**, and an always-run **build script** that:
+
+* writes a deterministic **manifest**
+* (optionally) reruns your Gates of Truth analyzers
+* generates **S3 anchors** (`anchors.jsonl`) for edges + forks (best-effort, snippet-based)
+* produces **split zip parts every run** under a size limit
+
+[Download Operation_Mindfuck_Box_part08_build_system_and_contracts.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part08_build_system_and_contracts.zip)
+
+### What this part adds
+
+Unzip on top of your existing `operation-mindfuck/` folder:
+
+**Docs**
+
+* `operation-mindfuck/process/skill_graph.md`
+* `operation-mindfuck/process/quality_contract.md`
+* `operation-mindfuck/process/anchors_spec.md`
+* `operation-mindfuck/process/build_system_readme.md`
+
+**Tools**
+
+* `operation-mindfuck/tools/build_box.py`  ← “zip it every time”
+* `operation-mindfuck/tools/anchorize_gates_of_truth.py`  ← generates `anchors.jsonl`
+
+### Run it (local)
+
+```bash
+python operation-mindfuck/tools/build_box.py \
+  --root operation-mindfuck \
+  --outdir dist \
+  --max-zip-mb 90 \
+  --gates-zip Gates_of_Truth_Production_Bundle_v1.zip \
+  --run-gates-plus \
+  --run-gates-timelines
+```
+
+Outputs:
+
+* `operation-mindfuck/build/manifest.jsonl`
+* `operation-mindfuck/build/build_report.md`
+* `dist/Operation_Mindfuck_Box_snapshot_partXX.zip` (split, every run)
+
+## Frames
+
+1. **Make it reproducible:** box build becomes a deterministic artifact generator.
+2. **Make it auditable:** every claim can point to anchored evidence.
+3. **Make it scalable:** splitting zips is just a packaging layer over a manifest.
+
+## Countermoves
+
+* If anchors are too “soft” (snippets only), upgrade later to **offset-true anchors** by preserving canonical text offsets in S1 (beat maps).
+* If forks still feel noisy, tighten intent ontology (typed vows/refusals/commitments) and require event-backed intent, not pure word scoring.
+* If entity mush returns, treat alias/merge files as *reviewed inputs* (not derived).
+
+## Next
+
+Run the build once with your current folder layout and we’ll lock in the exact **part naming + size threshold** that matches your download ceiling.

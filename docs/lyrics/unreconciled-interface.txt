@@ -1,0 +1,124 @@
+Title: Unreconciled Interface
+ID: 7c742998-baf8-4582-ac8e-a51719e6284c
+Prompt:
+
+## THE UNRECONCILED INTERFACE (92 BPM / Half-Time)
+
+### Acoustic State
+
+* **The Low End:** A submarine sub-bass hum that functions as a continuous, unstable system weight.
+* **The Percussion:** Asymmetrical, metallic clicks—like a relay switch hunting for an ungrounded connection in an empty corridor.
+* **The Mid-Range:** Single, isolated notes on a felt-dampened piano that decay slowly into radio hiss and detuned warning chimes.
+* **The Negative Space:** Major sections where the instruments drop out completely, leaving only the close-mic dry vocal and the sound of cold room tone.
+
+---
+
+### [Intro]
+
+*(An asymmetrical click pattern: tap... tap-tap...... tap.)*
+*(A low, sub-surface drone swells like heavy iron gears turning under deep water.)*
+*(A detuned chime rings once, flat and unresolving.)*
+
+**WARDEN**
+*(Close-mic whisper; dry, low, right channel)*
+The local node is holding blue.
+It says the horizon is forty miles off.
+It says the weight... is an estimate.
+
+**RITSU**
+*(Left channel; distant tape artifact, no reverb tail)*
+遠い雷。
+*(Distant lightning.)*
+
+---
+
+### [Verse 1]
+
+**WARDEN**
+*(Paced strictly against the half-time pulse; long pauses between lines)*
+I am watching the storm go by from a clean bench.
+Overhead, the sky is a dry slate.
+But the east is blinking in unmetered intervals.
+Every flash... is a ledger updating in the dark.
+You thank God it isn't you under that shelf.
+You thank the system for the buffer.
+But you know the track isn't locked.
+You know the wind can always turn.
+
+*(A single felt piano note drops: C#1, heavy and deadened.)*
+
+**RITSU**
+*(Whispered near the center seam)*
+誰かの空が、今。
+*(Someone's sky, right now.)*
+
+---
+
+### [The Seam Hook]
+
+*(The sub-bass shifts tone subtly, imitating an intake of breath from heavy machinery.)*
+*(Fractured choir dust floats into the stereo field and immediately dissolves.)*
+
+**WARDEN**
+*(With a restrained, melodic ache; flat delivery, zero belting)*
+Truth doesn't live in the glass anymore.
+My overlay says the ground is clear.
+The city line says the sink is full.
+We are standing on the border of the rooms...
+And neither display can hold the form.
+
+---
+
+### [Verse 2]
+
+*(The percussive clicks grow more frequent but stay completely asymmetrical, mimicking failing hardware.)*
+*(Bowed metal scrapes create a high, glassy overtone that mimics a distant siren.)*
+
+**WARDEN**
+The red HUD is bleeding through the center panel.
+It says the towers are already coming down.
+It says the exception is unhandled.
+I reach out my hand to check the brick...
+It feels warm.
+It feels like the aftermath of something my screen says hasn't arrived.
+
+**RITSU**
+*(A low, breathless statement)*
+もう、ここにある。
+*(It is already here.)*
+
+---
+
+### [Stabilization Protocol]
+
+*(All instrumentation drops instantly. Total silence for three full seconds, save for the faint hum of a cooling fan.)*
+
+**WARDEN**
+*(Spoken completely dry; calm, clear overwhelm)*
+The blue is just a delayed packet.
+The storm didn't miss the house.
+It just haven't written to my drive yet.
+So I use the grace...
+To keep the spine straight while the layout drops.
+
+---
+
+### [Outro]
+
+*(The 92 BPM half-time pulse slows down manually, like an analog motor losing voltage.)*
+*(The radio ghosts overtake the left channel, leaving only a low-bitrate white noise wash.)*
+
+**WARDEN**
+Watch it collapse.
+From the inside.
+It's nothing.
+It's everything.
+
+*(A final detuned chime rings, cut short by a hard digital gate.)*
+
+```
+:: reality_lock : absolute_zero ::
+:: local_view : unrendered ::
+:: room_state : dark ::
+
+```

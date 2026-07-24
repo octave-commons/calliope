@@ -1,0 +1,108 @@
+Title: [
+\begin{aligned}
+\textbf{息} &:= \text{a liveness-pause primitive (breath / break)} \
+\end{aligned}
+]
+
+### As an operator on time-indexed activity
+
+Let (x(t)) be an activity signal (speech, actions, CPU load, token emission, etc.). Define a “breath” event when activity drops below a threshold for long enough:
+
+[
+\operatorname{Breath}_\tau(x) := {, [t_i, t_i+\Delta_i] \mid x(t) < \epsilon \ \forall t\in[t_i,t_i+\Delta_i],\ \Delta_i \ge \tau ,}
+]
+
+Interpretation: **息 = contiguous low-activity intervals** of duration (\ge \tau).
+
+### As a segmentation boundary (息のキャッシュ)
+
+Given an event stream (E = (e_1, e_2, \dots)) with timestamps, define segments by breath boundaries:
+
+[
+\operatorname{Segment}(E;\tau) := (S_1, S_2, \dots) \quad \text{where } S_k \text{ ends at the start of the next } \operatorname{Breath}_\tau
+]
+
+Then “breath cache” is a commit rule:
+
+[
+\operatorname{CommitOnBreath}(S_k) \Rightarrow \text{persist/flush/summary(snapshot)}
+]
+
+### In your loop
+
+[
+P \rightarrow R \rightarrow N \rightarrow \Pi \rightarrow A \rightarrow (feedback) \rightarrow P
+]
+
+Define a throttle/reset step (B) (“take a breath”) that can be inserted as a guardrail:
+
+[
+A \rightarrow B \rightarrow (feedback)
+]
+
+Where (B) enforces:
+
+[
+B := \begin{cases}
+\text{commit logs + snapshot state} \
+\text{cooldown / rate-limit} \
+\text{drop stale context / clear transient buffers}
+\end{cases}
+]
+
+So: **息 is a boundary condition that turns continuous activity into discrete, stable chunks you can cache, evaluate, and safely continue from.**
+ID: 4ada7ba2-6753-4615-9a4b-ea6e63fb1e29
+Prompt:
+[
+\begin{aligned}
+\textbf{息} &:= \text{a liveness-pause primitive (breath / break)} \
+\end{aligned}
+]
+
+### As an operator on time-indexed activity
+
+Let (x(t)) be an activity signal (speech, actions, CPU load, token emission, etc.). Define a “breath” event when activity drops below a threshold for long enough:
+
+[
+\operatorname{Breath}_\tau(x) := {, [t_i, t_i+\Delta_i] \mid x(t) < \epsilon \ \forall t\in[t_i,t_i+\Delta_i],\ \Delta_i \ge \tau ,}
+]
+
+Interpretation: **息 = contiguous low-activity intervals** of duration (\ge \tau).
+
+### As a segmentation boundary (息のキャッシュ)
+
+Given an event stream (E = (e_1, e_2, \dots)) with timestamps, define segments by breath boundaries:
+
+[
+\operatorname{Segment}(E;\tau) := (S_1, S_2, \dots) \quad \text{where } S_k \text{ ends at the start of the next } \operatorname{Breath}_\tau
+]
+
+Then “breath cache” is a commit rule:
+
+[
+\operatorname{CommitOnBreath}(S_k) \Rightarrow \text{persist/flush/summary(snapshot)}
+]
+
+### In your loop
+
+[
+P \rightarrow R \rightarrow N \rightarrow \Pi \rightarrow A \rightarrow (feedback) \rightarrow P
+]
+
+Define a throttle/reset step (B) (“take a breath”) that can be inserted as a guardrail:
+
+[
+A \rightarrow B \rightarrow (feedback)
+]
+
+Where (B) enforces:
+
+[
+B := \begin{cases}
+\text{commit logs + snapshot state} \
+\text{cooldown / rate-limit} \
+\text{drop stale context / clear transient buffers}
+\end{cases}
+]
+
+So: **息 is a boundary condition that turns continuous activity into discrete, stable chunks you can cache, evaluate, and safely continue from.**

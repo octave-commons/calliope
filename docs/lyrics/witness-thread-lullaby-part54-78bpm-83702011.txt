@@ -1,0 +1,6 @@
+Title: witness_thread_lullaby_part54_78bpm
+ID: a56d7ac5-4362-4c80-9311-5a4c8aae7f1f
+Tags: Experimental electronic composition characterized by a minimalist, glitch-inspired aesthetic. The track features a steady, mid-tempo rhythmic foundation built from crisp, percussive clicks and digital pops. A prominent, resonant bass synth provides a deep, undulating low-end pulse that anchors the arrangement. Layered over this are intricate, high-frequency melodic fragments and granular synthesis textures that create a sense of digital space and movement. The production is clean and clinical, utilizing sharp transients and wide stereo imaging for the atmospheric sound effects. There is no traditional chord progression; instead, the piece focuses on timbral evolution and rhythmic interplay between the synthetic elements. The tempo is approximately 110 BPM, maintaining a consistent, driving energy throughout the instrumental duration.
+
+--- Prompt ---
+[Instrumental]

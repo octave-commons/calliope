@@ -1,0 +1,74 @@
+Title: # Feature — World State Ledger (μ-world)
+
+Goal:
+Convert the living narrative of the world (markdown updates + constraints) into a queryable, checkable state.
+
+Why:
+- η can describe anything.
+- μ must serialize to something machines can diff, gate, and re-echo.
+- If the system can’t answer “what is the current world state?” without vibes, it will drift.
+
+Inputs:
+- `analysis/world/*.md`
+- `analysis/constraints/*.md`
+
+Outputs:
+- `analysis/world/world_state_ledger.jsonl`
+  - one JSON object per source doc (kind=world|constraints)
+  - includes `id`, `seed`, `kv`, `notes`, and `file`
+- `analysis/world/world_state.json`
+  - `{ last_id, seed, merged }` where `merged` is the latest overlay
+
+Determinism:
+- Ledger is rebuilt deterministically from file contents.
+- Sorting: by `id` then `kind`.
+- Snapshot: merges in that order (constraints can override world).
+
+CLI:
+- `node program/world_state_ledger.js --root . --emit`
+
+Suggested gate usage:
+- Run ledger build as a pre-step for any “announcement” or “revalidation” cycle.
+- Consume `world_state.json.merged` as the canonical config surface for tools.
+
+Safety:
+- Additive only; does not mutate source docs.
+- Output files are derived artifacts; can be deleted and rebuilt any time.
+ID: e1f4cfc1-8301-427d-9310-3328918c25ac
+Prompt:
+# Feature — World State Ledger (μ-world)
+
+Goal:
+Convert the living narrative of the world (markdown updates + constraints) into a queryable, checkable state.
+
+Why:
+- η can describe anything.
+- μ must serialize to something machines can diff, gate, and re-echo.
+- If the system can’t answer “what is the current world state?” without vibes, it will drift.
+
+Inputs:
+- `analysis/world/*.md`
+- `analysis/constraints/*.md`
+
+Outputs:
+- `analysis/world/world_state_ledger.jsonl`
+  - one JSON object per source doc (kind=world|constraints)
+  - includes `id`, `seed`, `kv`, `notes`, and `file`
+- `analysis/world/world_state.json`
+  - `{ last_id, seed, merged }` where `merged` is the latest overlay
+
+Determinism:
+- Ledger is rebuilt deterministically from file contents.
+- Sorting: by `id` then `kind`.
+- Snapshot: merges in that order (constraints can override world).
+
+CLI:
+- `node program/world_state_ledger.js --root . --emit`
+
+Suggested gate usage:
+- Run ledger build as a pre-step for any “announcement” or “revalidation” cycle.
+- Consume `world_state.json.merged` as the canonical config surface for tools.
+
+Safety:
+- Additive only; does not mutate source docs.
+- Output files are derived artifacts; can be deleted and rebuilt any time.

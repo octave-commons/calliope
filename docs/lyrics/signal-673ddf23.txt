@@ -1,0 +1,158 @@
+Title: ## Signal
+
+Intent is now **compressed densely** and **auditable**.
+
+**New add-on part (saved to the box):**
+[Download Operation_Mindfuck_Box_part10_intent_dense_compression.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part10_intent_dense_compression.zip)
+
+### What this adds (all inside the zip)
+
+**Dense intent artifacts (Gates of Truth)**
+
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_events.bin`
+  **16 bytes / intent event** (fixed-width, streamable)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_events.jsonl` (debuggable mirror)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_anchors.jsonl` (**S3 anchors for every intent event**)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_timeline.csv` (per-chapter intent energy)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/entities_index.json` (entity IDs + intent type codes + binary schema)
+
+**Tools**
+
+* `operation-mindfuck/tools/analyze_gates_of_truth_intent_dense.py` (regenerates all the above)
+* `operation-mindfuck/tools/intent_codec.py` (decode/inspect the binary)
+* `operation-mindfuck/tools/build_box.py` (**updated**: adds `--run-gates-intent`)
+
+**Process**
+
+* `operation-mindfuck/process/intent_compression_spec.md` (binary layout + audit rule)
+
+### Why this matches your constraint
+
+* **Compression:** fixed **16 bytes/event** in `intent_events.bin`
+* **Anti-lie:** every intent record has an **S3 anchor** line (`intent_anchors.jsonl`)
+* **Fork discipline:** intent events become the *eligible fuel* for fork scoring (you can gate forks on strength thresholds cleanly)
+
+### Quick verify
+
+```bash
+python operation-mindfuck/tools/analyze_gates_of_truth_intent_dense.py \
+  --input-zip Gates_of_Truth_Production_Bundle_v1.zip \
+  --out operation-mindfuck/analysis/gates_of_truth_intent_dense
+
+python operation-mindfuck/tools/intent_codec.py \
+  --bin operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_events.bin \
+  --index operation-mindfuck/analysis/gates_of_truth_intent_dense/entities_index.json \
+  --limit 20
+```
+
+## Files written
+
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/*` (dense intent + anchors + timeline)
+* `operation-mindfuck/tools/analyze_gates_of_truth_intent_dense.py`
+* `operation-mindfuck/tools/intent_codec.py`
+* `operation-mindfuck/tools/build_box.py` (additive flag)
+* `operation-mindfuck/process/intent_compression_spec.md`
+
+## Why this is safe
+
+Additive + versioned: it doesn’t overwrite your story corpus, only adds a new analysis lane (`gates_of_truth_intent_dense`) and a new optional build flag.
+
+## Frames
+
+1. **Intent as signal compression:** keep it dense enough to stream through cephalon loops.
+2. **Intent as fork fuel:** forks only happen where intent-energy crosses gates.
+3. **Intent as audit object:** binary for speed; anchors for truth.
+
+## Countermoves
+
+* If an intent event can’t be anchored → treat it as **invalid output** (drop it / fail build next pass).
+* If intent feels “over-saturated” (too many 255s) → adjust the strength curve in the analyzer (still stays 0..255).
+
+## Next
+
+Run your normal build with intent enabled:
+
+```bash
+python operation-mindfuck/tools/build_box.py --root operation-mindfuck --outdir dist --max-zip-mb 90 \
+  --gates-zip Gates_of_Truth_Production_Bundle_v1.zip --run-gates-intent
+```
+ID: f26c960d-36c4-493b-bd31-594a80c81594
+Prompt:
+## Signal
+
+Intent is now **compressed densely** and **auditable**.
+
+**New add-on part (saved to the box):**
+[Download Operation_Mindfuck_Box_part10_intent_dense_compression.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part10_intent_dense_compression.zip)
+
+### What this adds (all inside the zip)
+
+**Dense intent artifacts (Gates of Truth)**
+
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_events.bin`
+  **16 bytes / intent event** (fixed-width, streamable)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_events.jsonl` (debuggable mirror)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_anchors.jsonl` (**S3 anchors for every intent event**)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_timeline.csv` (per-chapter intent energy)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/entities_index.json` (entity IDs + intent type codes + binary schema)
+
+**Tools**
+
+* `operation-mindfuck/tools/analyze_gates_of_truth_intent_dense.py` (regenerates all the above)
+* `operation-mindfuck/tools/intent_codec.py` (decode/inspect the binary)
+* `operation-mindfuck/tools/build_box.py` (**updated**: adds `--run-gates-intent`)
+
+**Process**
+
+* `operation-mindfuck/process/intent_compression_spec.md` (binary layout + audit rule)
+
+### Why this matches your constraint
+
+* **Compression:** fixed **16 bytes/event** in `intent_events.bin`
+* **Anti-lie:** every intent record has an **S3 anchor** line (`intent_anchors.jsonl`)
+* **Fork discipline:** intent events become the *eligible fuel* for fork scoring (you can gate forks on strength thresholds cleanly)
+
+### Quick verify
+
+```bash
+python operation-mindfuck/tools/analyze_gates_of_truth_intent_dense.py \
+  --input-zip Gates_of_Truth_Production_Bundle_v1.zip \
+  --out operation-mindfuck/analysis/gates_of_truth_intent_dense
+
+python operation-mindfuck/tools/intent_codec.py \
+  --bin operation-mindfuck/analysis/gates_of_truth_intent_dense/intent_events.bin \
+  --index operation-mindfuck/analysis/gates_of_truth_intent_dense/entities_index.json \
+  --limit 20
+```
+
+## Files written
+
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense/*` (dense intent + anchors + timeline)
+* `operation-mindfuck/tools/analyze_gates_of_truth_intent_dense.py`
+* `operation-mindfuck/tools/intent_codec.py`
+* `operation-mindfuck/tools/build_box.py` (additive flag)
+* `operation-mindfuck/process/intent_compression_spec.md`
+
+## Why this is safe
+
+Additive + versioned: it doesn’t overwrite your story corpus, only adds a new analysis lane (`gates_of_truth_intent_dense`) and a new optional build flag.
+
+## Frames
+
+1. **Intent as signal compression:** keep it dense enough to stream through cephalon loops.
+2. **Intent as fork fuel:** forks only happen where intent-energy crosses gates.
+3. **Intent as audit object:** binary for speed; anchors for truth.
+
+## Countermoves
+
+* If an intent event can’t be anchored → treat it as **invalid output** (drop it / fail build next pass).
+* If intent feels “over-saturated” (too many 255s) → adjust the strength curve in the analyzer (still stays 0..255).
+
+## Next
+
+Run your normal build with intent enabled:
+
+```bash
+python operation-mindfuck/tools/build_box.py --root operation-mindfuck --outdir dist --max-zip-mb 90 \
+  --gates-zip Gates_of_Truth_Production_Bundle_v1.zip --run-gates-intent
+```

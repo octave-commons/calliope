@@ -1,0 +1,13 @@
+Title: Structure: question-driven build → argument crescendo → silence cut → serene synth wash.
+Vocal: Spoken-word whispers with vocoder harmonies.
+Lyrics theme: Doom is a posture, not a theorem. Ask for falsifiability. Quantify fear. Trade panic for measurement. “What evidence updates you?” “What reduces risk by 1%?”
+Motifs: Bayesian update, priors, levers, evals, deployment discipline, coordination.
+Hook: “Name a number. Name a lever. Stay alive. Do the work.”
+ID: b258a433-c6a0-4c36-9a53-d4aab0492565
+Prompt:
+
+Structure: question-driven build → argument crescendo → silence cut → serene synth wash.
+Vocal: Spoken-word whispers with vocoder harmonies.
+Lyrics theme: Doom is a posture, not a theorem. Ask for falsifiability. Quantify fear. Trade panic for measurement. “What evidence updates you?” “What reduces risk by 1%?”
+Motifs: Bayesian update, priors, levers, evals, deployment discipline, coordination.
+Hook: “Name a number. Name a lever. Stay alive. Do the work.”

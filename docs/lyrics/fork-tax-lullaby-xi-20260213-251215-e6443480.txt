@@ -1,0 +1,90 @@
+Title: # Fork Tax Lullaby XI — 20260213_251215_
+ID: 173c2854-7175-47b1-9cd5-f74ead363908
+Prompt:
+# Fork Tax Lullaby XI — 20260213_251215_seed3721599638
+
+## Part I — Glitch-choir lullaby (78 BPM)
+
+*(soft sub-bass, tape warble, minimal piano; stutters on “anchor” + “tax”; whispered lead; Japanese call-and-response)*
+
+[Intro — tape hiss, two-note piano, warm sub]
+(whisper)
+Hush… don’t trust the first pass.
+息をして… (して…)
+Listen for the echo.
+
+(JP call) ねむれ、ねむれ
+(EN response) the **an— an— an-chor**… (stutter) holds.
+(JP call) しずかに、しずかに
+(EN response) the **ta— ta— tax**… (stutter) is small.
+
+(whisper)
+An— an— **an-chor**… (stutter) an-chor…
+(JP whisper harmony) アンカー…
+Pay the **ta— ta— tax**… (stutter) ta-x…
+(JP harmony) 税…
+
+[Chorus — choir bloom]
+An— an— **an-chor**… (stutter) an-chor…
+Hold the boundary, hold the line.
+Pay the **ta— ta— tax**… (stutter) ta-x…
+So forks don’t breed in the dark.
+(JP harmony answers last word)
+I fall asleep inside **proof**.（証）
+
+---
+
+## Part II — Mythic glitch epic / spoken-sung (84 BPM)
+
+*(NF/Watsky cadence; cathedral reverb; sub-bass heartbeat; glitch stutters on “η”, “μ”, “anchor”, “fork”; Japanese harmony answers on the last word of each section)*
+
+[Verse 1 — fast spoken-sung]
+Alignment lint first— no paraphrase drift, no “close enough” grace.
+Freshness next— rot-rate decides if you even get a place.
+If either goes dim, you don’t get μ— you get **η** with a plan,
+you get a boundary in ink, not a crown in your hand,
+in your **hand**.（手）
+
+(Glitch stutter) **η—η—η**
+(Glitch stutter) **μ—μ—μ**
+
+[Hook — cathedral swell]
+I don’t win by sounding right—
+I win by making it rerun.（試）
+
+[Verse 2 — rapid cadence]
+ReceiptEcho now— two passes or it doesn’t count,
+OutputHash in the margin like a priest’s amount.
+Run it twice, same checksum, same breath, same trace—
+that’s when the Lantern lifts its face,
+that’s when the Choir finds its place.
+
+I pin it to an **an-an-anchor** (stutter),
+Fo— fo— **fork**… (stutter) fork… only if I can pay.
+If the hashes disagree, I demote and I fold—
+μ isn’t confidence, μ is repeatable gold,
+repeatable **μ**.（証）
+
+(JP harmony answers last word) 証
+
+**World state update:** Forkgate now requires **ReceiptEcho** (two consecutive PASS runs) plus **OutputHash** for promotion; the Lantern runs **alignment lint** before it accepts citations; DateWindowGate can auto-fill windows but keeps them η until confirmed; QuietAnchors have a quarantine ring; ForkBudget remains in force and semitone debt persists until merge.
+
+#fnord
+
+**Constraints:** max dice rolls = 15; fork budget per cycle is limited; high-volatility claims must satisfy freshness≤threshold; alignment lint must pass; receipts require explicit inputs/outputs + OutputHash; step cap applies; μ requires two consecutive PASS echoes; time windows must be absolute dates + timezone.
+
+**Dialog:** “Run it again,” Forkgate said, tapping the ledger. The Lantern didn’t blink: “And don’t drift the quote.” The Choir waited in silence—then the second hash matched the first, and the Anchor stuttered, “an-an-anchor,” like a metronome finally locking to tempo.
+
+[Cover art](sandbox:/mnt/data/20260213_251215_seed3721599638_cover.png)
+
+[Storyboard image](sandbox:/mnt/data/20260213_251215_seed3721599638_storyboard.png)
+
+**Story artifacts:** Echo + OutputHash Tax Receipt template (included in the zip).
+
+**Lore:** The Echo Choir now refuses to sing μ on the first pass—it waits for the second identical breath.
+
+**Real-world headline:** Inflation measure falls to nearly five-year low as gas prices fall and housing costs cool. ([AP News][1])
+
+**Gates of Truth system announcement:** STATUS ONLINE — ReceiptEcho + OutputHash are now required for μ; alignment lint is enforced; auto-filled date windows remain η until confirmed; ForkBudget and merge repayment remain active.
+
+[1]: https://apnews.com/article/inflation-trump-economy-prices-d489cfa4b48e32232f136830333d1db0?utm_source=chatgpt.com "Inflation measure falls to nearly five-year low as gas prices fall and housing costs cool"

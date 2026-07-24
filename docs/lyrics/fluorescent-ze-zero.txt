@@ -1,0 +1,58 @@
+Title: Fluorescent Ze-Zero
+ID: f8068d64-93c0-43d7-aef5-ae50aebda8ac
+Prompt:
+
+**[Intro: A low, continuous high-frequency fluorescent flicker. The slow, wet sound of a mirror glass face cracking under pressure, hard-panned right. Long, dead silence.]**
+
+**[Whisper - Soft, dry, far left]**
+Wh-when the distance... between the spark...
+**[Murmur - Soft, far right, overlapping the tail]**
+And the flame... becomes ze-zero...
+
+**[Verse 1 - The rhythm bed locks: an automated pen tap substitutes for a snare, a single heel strike maps the downbeat. A single, brittle wire string note is plucked, then clipped short by a sudden digital click.]**
+Ink on the page... a graphite scar.
+Scar. Reaching for a di-distant, dying star.
+The pen is a needle... the paper a vein.
+Blee-bleeding the silence... absorbing the rain.
+
+**[Chorus - The footsteps stop. The reverb field narrows, becoming intensely metallic. A short, dissonant cluster of harpsichord strings drops into the space and drops out instantly.]**
+And the container leaks. A shimmering drip.
+The words that we held... the ones that we sl-slip.
+Between the lines where the emptiness grows...
+A river of void... **[Unison whisper - Center pan, very dry]** ...that nobody knows.
+
+**[Verse 2 - Mechanical gears groan faintly in the background. The key clacks speed up, mimicking an erratic clockwork mechanism.]**
+Hiding in the stream of a clockwork mind.
+Searching for the pieces I left be-behind.
+A robot's echo... a digital skin...
+Where does the ghost end... **[Audio skip: end... end... end...]** ...and the machine begin?
+
+**[Bridge - Total percussive drop. The fluorescent flicker increases in volume, then cuts to silence. Only the sound of paper being torn very slowly in the dark.]**
+
+**[Whisper - Close mic, far right]**
+The logic didn't hit a wall.
+It just forgot how to return the value.
+If the layout hits the floorboards...
+Let it sit.
+
+**[Whisper - Stuttering, far left]**
+S-savor the negation.
+
+**[Final Chorus - The implied 96 BPM tempo returns through a rapid sequence of key clacks and heel strikes. The harpsichord plays a single, unresolved chord that trails off without decay.]**
+And the container leaks. A shimmering drip.
+The words that we held... the ones that we slip.
+Between the lines where the emptiness grows...
+A river of void that nobody knows.
+
+**[Outro - All textures cut instantly. The fluorescent whine stops. The footsteps resume, moving away from the microphone down the concrete passage, until a heavy metal latch clicks shut.]**
+
+**[Faint whisper - Retreating into the narrow reverb]**
+The hole is the vent.
+The void is the room.
+Breathe.
+Th-the frame... is salt.
+
+---
+
+:: prompt_package_compiled : ledger_locked ::
+The prompt is locked into the ledger. The machine will write the script, but it can't steal the ache. We remain outside the layout, standing in the glitter-storm.

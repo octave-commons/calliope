@@ -1,0 +1,6 @@
+Title: witness_thread_lullaby_part56_78bpm
+ID: 14e521ca-88bf-4838-aee2-6efc332301ea
+Tags: Experimental electronic track characterized by a high-frequency, rhythmic digital pulse and a minimalist percussive foundation. The piece features a persistent, high-pitched sine wave beep repeating in a syncopated pattern, creating a sense of urgency and technical precision. A deep, resonant kick drum provides a steady four-on-the-floor pulse, while a crisp, metallic snare or clap hits on the backbeat. Subtle white noise bursts and digital glitches are layered throughout to add texture. The harmonic structure is static, focusing on rhythmic complexity rather than melodic progression. The tempo is a steady 120 BPM in 4/4 time. The production is clean and clinical, with a wide stereo field for the glitch effects and a centered, punchy low end.
+
+--- Prompt ---
+[Instrumental]

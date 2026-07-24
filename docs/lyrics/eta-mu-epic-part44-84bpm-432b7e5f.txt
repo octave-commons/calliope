@@ -1,0 +1,43 @@
+Title: ημ_epic_part44_84bpm
+ID: 179d968d-ac94-43ce-9397-d5b6820ad188
+Prompt:
+# Anchor Tax Lullaby / 錨税の子守歌 (78 BPM)
+
+**Vibe:** glitch-choir lullaby, soft sub-bass, tape warble, minimal piano.
+**Stutters:** “an— an— an-chor”, “ta— ta— tax”.
+**Vox:** whispered lead; Japanese call-and-response.
+
+(whisper)
+Hush… it’s time to pay the **ta— ta— tax**…
+息をして…（して…）
+Hold the **an— an— an-chor**…
+
+(JP call) ねむれ、ねむれ
+(EN response) the **an— an— an-chor**… (stutter) holds.
+(JP call) しずかに、しずかに
+(EN response) the **ta— ta— tax**… (stutter) due.
+
+(whisper)
+Merge the branch…
+Seal the hash…
+Sleep inside **proof**（証）
+
+---
+
+## Verse (soft spoken)
+P→R→N→Π… we don’t erase.
+A→(feedback)→P… we change the place.
+Some things improve. Some don’t align.
+We keep both threads in the same spine.
+
+(JP harmony, last word) 証（あかし）
+
+## Outro (breath + choir pad)
+If it’s less integrated, it’s still true.
+If it’s less remembered, it still moves through you.
+An— an— **an-chor**… hold.
+Ta— ta— **tax**… paid.
+
+License: **CC BY-SA 4.0** (share alike).
+Created with the assistance of an AI.
+

@@ -1,0 +1,64 @@
+Title: ημ_worldsound_lullaby_part41_78bpm
+ID: b6232cb1-f315-4305-8393-acfe6ecf63e4
+Tags: Artifact Manifest + Registry Update
+
+program/artifact_manifest.js (NEW): deterministic sha256 inventory for /audio + /art
+
+program/registry_update.js (NEW): runs constraints_gate → manifest → anchor_chain
+
+Tests added:
+
+test/artifact_manifest.test.js
+
+test/registry_update.test.js
+
+test/anchor_chain.test.js
+
+Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.
+Mythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.
+P→R→N→Π→A→(feedback)→P around #ημ.
+
+It's time to pay the fork tax.
+Prepare hand off packet (zip artifact)
+Sent only the song and the zip
+
+
+--- Prompt ---
+Manifest Oath / 目録の誓い (84 BPM)
+P→R→N→Π— catalog the storm, pin the line（線）
+A→(feedback)→P— merge the wound, keep the sign（印）
+
+(Glitch) η—η—η…
+(Glitch) μ—μ—μ…
+
+Fo— fo— fork… split the night, pay the cost, now（今）
+An— an— an-chor… hold the thread, seal the hash, down（下）
+
+Created with the assistance of an AI.
+
+Paragraph of dialog
+
+“The wind is just noise,” says the Runner.
+“It’s evidence,” says the Keeper. “Evidence is anything you can replay.”
+From the rafters: an—an—anchor… ta—ta—tax…
+And we move on like this is normal.
+New lyrics (78 BPM lullaby)
+
+Winds Between Proof / 証のあいだの風 (78 BPM)
+(whisper)
+Hush… breathe… pay the ta— ta— tax.
+息をして…（して…）
+Hold the an— an— an-chor…
+
+(JP call) ねむれ、ねむれ
+(EN response) the an— an— an-chor… holds.
+(JP call) しずかに、しずかに
+(EN response) the ta— ta— tax… due.
+
+(whisper)
+Wind in the halls—
+世界の音（おと）
+If we overflow,
+we fold the noise to proof（証）
+
+Created with the assistance of an AI.

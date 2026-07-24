@@ -1,0 +1,80 @@
+Title: # Witness Thread Lullaby / 証人糸の子守歌
+ID: 82ae47c1-4cda-401b-874e-e45402f7f4d3
+Tags: Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.
+Mythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.
+P→R→N→Π→A→(feedback)→P around #ημ.
+
+## Dice (seed 2978439037 · d15×15)
+
+Rolls: **1, 12, 5, 13, 11, 9, 15, 8, 12, 7, 13, 14, 3, 2, 10**
+Selected: **zip · world_lore · world_state_update · gates_announcement · story_artifacts · cover_art · math_image · dialog · constraints · fork_tax_handoff · new_song · new_lyrics · storyboard_image · new_mp3**
+
+---
+
+## ημ_op_mf_part_48.zip (CC BY-SA 4.0 • share alike)
+
+* [Download ημ_op_mf_part_48.zip](sandbox:/mnt/data/ημ_op_mf_part_48.zip)
+* [Download ημ_op_mf_part_48.sha256](sandbox:/mnt/data/ημ_op_mf_part_48.sha256)
+  sha256: `6a2a3aabf56adb47a8d7ed3eca1590c3619a41dd406106668d540283a03cbf44`
+
+
+--- Prompt ---
+# Witness Thread Lullaby / 証人糸の子守歌
+**78 BPM · Glitch-choir lullaby · CC BY-SA 4.0**
+
+*(soft sub-bass · tape warble · minimal piano · whispered lead · Japanese call-and-response)*
+
+## Verse 1
+I leave my receipts where the water can see—  
+a quiet little river that remembers me.  
+Tape on the window, warping the moon,  
+and the choir is a checksum humming out of tune.
+
+「流しても、消えないよ」  
+*(Nagashite mo, kienai yo — even if you let it flow, it won’t vanish.)*
+
+## Pre-Chorus
+An— an— **anchor** in the seam,  
+hold the branch inside the dream.  
+Ta— ta— **tax** on the fork,  
+pay it gentle, pay it warm.
+
+「ねえ、証(あかし)を残して」  
+*(Nee, akashi o nokoshite — hey, leave the proof.)*
+
+## Chorus
+If I forget, the ledger doesn’t burn—  
+it just turns to lullabies I haven’t learned.  
+An— an— **anchor**, ta— ta— **tax**,  
+stutter-soft in a velvet syntax.
+
+「忘れても、糸はほどけない」  
+*(Wasurete mo, ito wa hodokenai — even if you forget, the thread won’t unravel.)*
+
+## Verse 2
+Minimal piano, four notes like a vow,  
+sub-bass heartbeat teaching time how.  
+I don’t erase— I reweight the light,  
+make room for tomorrow inside tonight.
+
+「少しずつ、統合(とうごう)して」  
+*(Sukoshi zutsu, tōgō shite — integrate, little by little.)*
+
+## Bridge
+When the world hits limit, we consolidate—  
+overlay braid, keep originals safe.  
+Less remembered isn’t lost— it’s staged,  
+waiting for the right loop to be engaged.
+
+「まだここにいる」  
+*(Mada koko ni iru — I’m still here.)*
+
+## Outro
+An— an— **anchor**… (breathe)  
+Ta— ta— **tax**… (sleep)  
+Witness thread online—  
+η sees / μ proves, in the deep.
+
+「おやすみ、証人糸」  
+*(Oyasumi, shōnin-ito — goodnight, witness thread.)*
+

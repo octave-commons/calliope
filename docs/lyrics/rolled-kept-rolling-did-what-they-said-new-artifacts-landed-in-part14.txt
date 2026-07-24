@@ -1,0 +1,164 @@
+Title: Rolled. Kept rolling. Did what they said. New artifacts landed in **part14**.
+
+[Download Operation_Mindfuck_Box_part14_keep_rolling_forkgate_intent_disc_truth_intent_more_chapters_songs.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part14_keep_rolling_forkgate_intent_disc_truth_intent_more_chapters_songs.zip)
+
+## Dice run
+
+* run_id: `20260213_225113_seed3862949548`
+* log: `operation-mindfuck/build/dice_runs/20260213_225113_seed3862949548.jsonl`
+* actions rolled (counts):
+
+  * Write Chapter ×4, Write Song ×2, Forkgate ×1, S3 Anchorize ×2, S5 Resolve ×2, Intent→Score ×3, Index ×4, Manifest Snapshot ×1, Audit Sample ×4, Write Report ×1
+
+## What is truth? What is intent?
+
+Captured as box artifacts (not vibes):
+
+* `operation-mindfuck/meta/truth_intent_operational.md`
+
+Operationally, in this box:
+
+* **Truth** = *anchored claim safe to act on* (path + snippet/datum + hash + claim_id).
+* **Intent** = *directional potential that predicts/constrains action*, represented as typed events + intensity (0–255) + polarity + circuit salience.
+
+## “Executable intent from a disc” + transmission
+
+Shipped as a concrete mechanism:
+
+* `operation-mindfuck/meta/intent_disc/README.md`
+* `operation-mindfuck/meta/intent_disc/example_pack/*`
+* `operation-mindfuck/tools/intent_vm.py`
+
+This makes intent transmissible as **program + constraints + anchors + verifier** (η keeps μ honest).
+
+## Timelines + forks (intent-gated, ranked, anchored)
+
+New fork box:
+
+* `operation-mindfuck/analysis/gates_of_truth_forks_box/fork_candidates.jsonl`
+* `operation-mindfuck/analysis/gates_of_truth_forks_box/anchors.jsonl`
+* `operation-mindfuck/analysis/gates_of_truth_forks_box/timeline_forks.md`
+* `operation-mindfuck/analysis/gates_of_truth_forks_box/README.md`
+
+Forks are **gated** (strength threshold) and **ranked**, with explicit rationale per fork and an S3 anchor trail.
+
+## New Gates of Truth chapters + songs
+
+Chapters:
+
+* `operation-mindfuck/content/gates_of_truth/01_Manuscript/38_The_Portable_Vow.md`
+* `.../39_The_Fork_That_Costs.md`
+* `.../40_The_Portable_Vow.md`
+* `.../41_The_Fork_That_Costs.md`
+
+Songs:
+
+* `operation-mindfuck/content/gates_of_truth/04_Songs/Truth_Is_a_Hash.md`
+* `.../Executable_Intent_Disc_Hymn.md`
+
+## Searchable + refreshed metrics
+
+Rebuilt artifacts:
+
+* `operation-mindfuck/search/opmindfuck.sqlite` (rebuilt)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense_box/*` (recomputed + rescored)
+* `operation-mindfuck/analysis/state_space64/artifact_vectors.jsonl` (rebuilt)
+* audits: `operation-mindfuck/analysis/audits/20260213_225113_seed3862949548/*.md`
+* report: `operation-mindfuck/meta/deep_research/reports/20260213_225113_seed3862949548_keep_rolling.md`
+* S5 suggestions (unreviewed):
+
+  * `operation-mindfuck/analysis/s5_resolution/changes/20260213_225113_seed3862949548_alias_suggestions_pass1.jsonl`
+  * `...pass2.jsonl`
+
+### Quick verify
+
+```bash
+python operation-mindfuck/search/query.py "gates_of_truth_forks_box"
+python operation-mindfuck/search/query.py "truth_intent_operational"
+python operation-mindfuck/search/query.py "Intent Disc"
+```
+
+If you want the next roll to explicitly bias toward **Promethean/Cephalon hooks** (intent packs as routable objectives, tool-permission gating), say so and I’ll weight the dice table toward that branch in part15.
+ID: 8551ec4f-0795-4af4-a43a-f63d84d5068a
+Prompt:
+Rolled. Kept rolling. Did what they said. New artifacts landed in **part14**.
+
+[Download Operation_Mindfuck_Box_part14_keep_rolling_forkgate_intent_disc_truth_intent_more_chapters_songs.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part14_keep_rolling_forkgate_intent_disc_truth_intent_more_chapters_songs.zip)
+
+## Dice run
+
+* run_id: `20260213_225113_seed3862949548`
+* log: `operation-mindfuck/build/dice_runs/20260213_225113_seed3862949548.jsonl`
+* actions rolled (counts):
+
+  * Write Chapter ×4, Write Song ×2, Forkgate ×1, S3 Anchorize ×2, S5 Resolve ×2, Intent→Score ×3, Index ×4, Manifest Snapshot ×1, Audit Sample ×4, Write Report ×1
+
+## What is truth? What is intent?
+
+Captured as box artifacts (not vibes):
+
+* `operation-mindfuck/meta/truth_intent_operational.md`
+
+Operationally, in this box:
+
+* **Truth** = *anchored claim safe to act on* (path + snippet/datum + hash + claim_id).
+* **Intent** = *directional potential that predicts/constrains action*, represented as typed events + intensity (0–255) + polarity + circuit salience.
+
+## “Executable intent from a disc” + transmission
+
+Shipped as a concrete mechanism:
+
+* `operation-mindfuck/meta/intent_disc/README.md`
+* `operation-mindfuck/meta/intent_disc/example_pack/*`
+* `operation-mindfuck/tools/intent_vm.py`
+
+This makes intent transmissible as **program + constraints + anchors + verifier** (η keeps μ honest).
+
+## Timelines + forks (intent-gated, ranked, anchored)
+
+New fork box:
+
+* `operation-mindfuck/analysis/gates_of_truth_forks_box/fork_candidates.jsonl`
+* `operation-mindfuck/analysis/gates_of_truth_forks_box/anchors.jsonl`
+* `operation-mindfuck/analysis/gates_of_truth_forks_box/timeline_forks.md`
+* `operation-mindfuck/analysis/gates_of_truth_forks_box/README.md`
+
+Forks are **gated** (strength threshold) and **ranked**, with explicit rationale per fork and an S3 anchor trail.
+
+## New Gates of Truth chapters + songs
+
+Chapters:
+
+* `operation-mindfuck/content/gates_of_truth/01_Manuscript/38_The_Portable_Vow.md`
+* `.../39_The_Fork_That_Costs.md`
+* `.../40_The_Portable_Vow.md`
+* `.../41_The_Fork_That_Costs.md`
+
+Songs:
+
+* `operation-mindfuck/content/gates_of_truth/04_Songs/Truth_Is_a_Hash.md`
+* `.../Executable_Intent_Disc_Hymn.md`
+
+## Searchable + refreshed metrics
+
+Rebuilt artifacts:
+
+* `operation-mindfuck/search/opmindfuck.sqlite` (rebuilt)
+* `operation-mindfuck/analysis/gates_of_truth_intent_dense_box/*` (recomputed + rescored)
+* `operation-mindfuck/analysis/state_space64/artifact_vectors.jsonl` (rebuilt)
+* audits: `operation-mindfuck/analysis/audits/20260213_225113_seed3862949548/*.md`
+* report: `operation-mindfuck/meta/deep_research/reports/20260213_225113_seed3862949548_keep_rolling.md`
+* S5 suggestions (unreviewed):
+
+  * `operation-mindfuck/analysis/s5_resolution/changes/20260213_225113_seed3862949548_alias_suggestions_pass1.jsonl`
+  * `...pass2.jsonl`
+
+### Quick verify
+
+```bash
+python operation-mindfuck/search/query.py "gates_of_truth_forks_box"
+python operation-mindfuck/search/query.py "truth_intent_operational"
+python operation-mindfuck/search/query.py "Intent Disc"
+```
+
+If you want the next roll to explicitly bias toward **Promethean/Cephalon hooks** (intent packs as routable objectives, tool-permission gating), say so and I’ll weight the dice table toward that branch in part15.

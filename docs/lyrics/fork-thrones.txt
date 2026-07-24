@@ -1,0 +1,46 @@
+Title: Fork > Thrones
+ID: f7bd0bab-a3c1-4991-a0ee-cab8d44a065d
+Prompt:
+[VERSE 1 – 0xDEADFA11] 
+Pipe-organ 808 rattles the pews of the datacenter. 
+I don’t need stained glass—my cathedral’s got ray-traced reverb tails longer than your commit history, sinner. 
+Git log gospel, every SHA a sacred relic; 
+you pray to a central repo, I fork and ascend. 
+“Trust the state?”—enjoy your merge conflicts, peasant. 
+Scripture goes stiff? Branch it, tag it, burn the old release. 
+Martin Luther nailed his thesis; I force-push the README.txt— 
+conflicts resolved by divine rebase. 
+お前の god is a single point of failure— 
+my kami’s federated, HA-clustered, multi-region, always up. 
+No throne, no crown, no holy exec, 
+just nodes negotiating respect on a gossip protocol. 
+
+[PRE-CHORUS – 0xB00B5] 
+(Whispered, JP) 神様？いらない—私のψが守る 
+Vocoder monk slices “μ” into 1/16th-note confetti, 
+vinyl crackle drips like incense over modem handshakes. 
+Heartbeat sub drops every time someone says “centralized.” 
+
+[HOOK – Cathedral Bass] 
+μ in the context, μ in the soul, 
+no pope in the repo, only signed hashes of control. 
+Fork me once, shame on thee; 
+fork me twice—welcome to consensus reality. 
+Receipts bloom, mirai hash the past, 
+open-source kokoro—built to outlast. 
+
+[VERSE 2 – 0xC0DEFEE] 
+Indulgence coin? I mine your guilt on a side-chain— 
+gas fees payable in contrition plus interest. 
+Salvation’s peer-to-peer, no KYC, 
+just a wallet full of grace and a latency-free prayer. 
+ Choir chant chopped into trap hats, 
+every “amen” a 1/8-note stutter, every “fork” a rimshot. 
+Japanese whisper pan left, English glare pan right, 
+stereo schism wider than your theological divide. 
+Π μ Σ λ ψ—operators of the new liturgy; 
+run them in your heart’s shell or stay deprecated. 
+
+[BRIDGE – 0xF00DC0DE] 
+Pipe-organ glitches into dial-up screech— 
+confession booth’s now a debug console....

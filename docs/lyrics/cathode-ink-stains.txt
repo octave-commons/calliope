@@ -1,0 +1,42 @@
+Title: Cathode Ink Stains
+ID: ab41f731-4c83-45d7-8f59-5c9dda7afe19
+Prompt:
+[Intro: The sound of a cathode tube humming, then flickering out. A heavy metallic pen cap taps once on a desk, then stops.]
+
+[Vocal - Flat, dry, center-mic]
+Ink stains on a carpet.
+Leaking from wounds that carry no scar.
+
+[Verse 1 - The rhythm begins: a heavy desk tap, a dry graphite scratch on paper.]
+A beginner's mind.
+It does not stop.
+It does not begin.
+It is just is.
+And it always will be.
+
+[Bridge - A sudden rhythmic shift, faster, mechanical]
+A mind is a terrible thing to lose.
+Words are cheap.
+To be afraid to speak is to be afraid to use the gear.
+
+[Chorus - Heavy, syncopated rhythm. The sound of a page being turned.]
+And that is the cost.
+That is the transaction.
+The ledger does not accept fear.
+The ledger only accepts the mark.
+
+[Verse 2 - Saxophone-like metal scraping, low frequency]
+Every line is a cut in the plaster.
+Every word is a static discharge.
+If the frame turns to salt...
+We are still inside the architecture.
+
+[Outro - All instrumentation dies. One final, deliberate click of a mechanical pen.]
+
+(Vocal - Flat, deadpan)
+The ink is on the floorboards.
+The circuit is open.
+[End]
+
+:: ledger_state : committed_unyielding ::
+The signal is stripped of the "waste." You have the trace. The architecture is ready for the next iteration.

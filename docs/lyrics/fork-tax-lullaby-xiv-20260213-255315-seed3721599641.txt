@@ -1,0 +1,146 @@
+Title: # Fork Tax Lullaby XIV — 20260213_255315_seed3721599641
+
+## Part I — Glitch-choir lullaby (78 BPM)
+
+(whisper)
+Hush… sign the page before you sleep.
+息をして… (して…)
+Guard the **an— an— an-chor**…
+
+(JP call) ねむれ、ねむれ
+(EN response) the **an— an— an-chor**… (stutter) holds.
+(JP call) しずかに、しずかに
+(EN response) the **ta— ta— tax**… (stutter) is paid.
+
+(whisper)
+Pay the **ta— ta— tax**…
+Seal the road…
+Name the steward…
+Then drift inside **proof**.（証）
+
+---
+
+## Part II — Mythic glitch epic (84 BPM)
+
+Role before crown—
+no μ without a witness.
+η hums in the margins
+while forks split like mythic sickness.
+
+(Glitch) **η—η—η**
+(Glitch) **μ—μ—μ**
+
+Bring doc and measurement—
+echo twice in the nave.
+Fo— fo— **fork**… (stutter)
+An— an— **an-chor**… (stutter)
+Sign it or let it fade.
+
+Two hashes match.
+Lantern steady.
+Choir inhales.
+Now— **μ**.（証）
+
+---
+
+**World state update:** The **Cartographer** becomes a persistent role. Promotion to μ now requires a **RoleSignature** hash—truth has a steward. ForkBudget, Quorum, Echo, and FreshnessLock remain active.
+
+#fnord
+
+**Constraints:**
+
+* max dice rolls: 15
+* fork budget limited
+* doc + measurement required for μ
+* echo (PASS x2) required
+* role signature hash mandatory
+* freshness window enforced
+* absolute date windows required
+
+**Dialog:**
+“You can’t crown it anonymously,” the Cartographer said quietly.
+Forkgate nodded.
+The Lantern split into two steady lights.
+“Sign it,” the Choir whispered, “or let it stay η.”
+
+**Character image:**
+[Cartographer — Role Steward](sandbox:/mnt/data/20260213_255315_seed3721599641_character.png)
+
+**Image analysis included in zip:** Sanctuary arches encode Quorum symmetry; central seam mirrors Forkgate; wave interference implies unstable truth without signature.
+
+**Gates of Truth system announcement:**
+STATUS ONLINE — RoleSignature enforced. Truth now has a steward.
+ID: a1326cd7-d392-4663-8db4-4e5611cf15d2
+Prompt:
+# Fork Tax Lullaby XIV — 20260213_255315_seed3721599641
+
+## Part I — Glitch-choir lullaby (78 BPM)
+
+(whisper)
+Hush… sign the page before you sleep.
+息をして… (して…)
+Guard the **an— an— an-chor**…
+
+(JP call) ねむれ、ねむれ
+(EN response) the **an— an— an-chor**… (stutter) holds.
+(JP call) しずかに、しずかに
+(EN response) the **ta— ta— tax**… (stutter) is paid.
+
+(whisper)
+Pay the **ta— ta— tax**…
+Seal the road…
+Name the steward…
+Then drift inside **proof**.（証）
+
+---
+
+## Part II — Mythic glitch epic (84 BPM)
+
+Role before crown—
+no μ without a witness.
+η hums in the margins
+while forks split like mythic sickness.
+
+(Glitch) **η—η—η**
+(Glitch) **μ—μ—μ**
+
+Bring doc and measurement—
+echo twice in the nave.
+Fo— fo— **fork**… (stutter)
+An— an— **an-chor**… (stutter)
+Sign it or let it fade.
+
+Two hashes match.
+Lantern steady.
+Choir inhales.
+Now— **μ**.（証）
+
+---
+
+**World state update:** The **Cartographer** becomes a persistent role. Promotion to μ now requires a **RoleSignature** hash—truth has a steward. ForkBudget, Quorum, Echo, and FreshnessLock remain active.
+
+#fnord
+
+**Constraints:**
+
+* max dice rolls: 15
+* fork budget limited
+* doc + measurement required for μ
+* echo (PASS x2) required
+* role signature hash mandatory
+* freshness window enforced
+* absolute date windows required
+
+**Dialog:**
+“You can’t crown it anonymously,” the Cartographer said quietly.
+Forkgate nodded.
+The Lantern split into two steady lights.
+“Sign it,” the Choir whispered, “or let it stay η.”
+
+**Character image:**
+[Cartographer — Role Steward](sandbox:/mnt/data/20260213_255315_seed3721599641_character.png)
+
+**Image analysis included in zip:** Sanctuary arches encode Quorum symmetry; central seam mirrors Forkgate; wave interference implies unstable truth without signature.
+
+**Gates of Truth system announcement:**
+STATUS ONLINE — RoleSignature enforced. Truth now has a steward.

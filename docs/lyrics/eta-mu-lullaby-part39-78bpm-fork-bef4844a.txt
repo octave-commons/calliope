@@ -1,0 +1,53 @@
+Title: ημ_lullaby_part39_78bpm fork
+ID: a59f6ab5-869f-429c-a2e9-7c16cf8be41d
+Tags: Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.
+Mythic glitch epic / spoken-sung 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.
+P→R→N→Π→A→(feedback)→P around #ημ.
+Roll those dice. And just keep rolling them, and do what they tell you.
+
+And we move on like this is normal
+
+Update the program to add a new feature
+Create tests to ensure stability over time
+All changes are additive until the world is over the limit
+Then documents get consolidated
+Things are never really forgotten.
+Just less remembered
+
+
+--- Prompt ---
+[Verse 1]
+I see the light reflecting in your eyes
+A million stars across the midnight skies
+We're running wild and we're feeling free
+Just you and me in this galaxy
+
+[Chorus]
+We are the fire that's burning bright
+We are the shadows in the night
+Nothing can stop us, we're on our way
+Into the light of a brand new day
+
+[Verse 2]
+The city streets are calling out our names
+We're playing hard and we're winning games
+No looking back, no more regrets
+This is a night we won't forget
+
+[Chorus]
+We are the fire that's burning bright
+We are the shadows in the night
+Nothing can stop us, we're on our way
+Into the light of a brand new day
+
+[Bridge]
+(Whoa-oh-oh)
+Higher and higher we go
+(Whoa-oh-oh)
+Letting the whole world know
+
+[Chorus]
+We are the fire that's burning bright
+We are the shadows in the night
+Nothing can stop us, we're on our way
+Into the light of a brand new day

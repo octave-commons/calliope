@@ -1,0 +1,127 @@
+Title: (sandbox:/mnt/data/ημ_op_mf_part_25.zip)
+ID: d176f17c-843b-48f8-96fb-8607aabf2e55
+Tags: Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.
+
+Mythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.
+
+
+
+# Fork Tax Lullaby — 20260213_230415_seed3721599628
+
+P→R→N→Π→A→(feedback)→P around #ημ. 
+
+
+--- Prompt ---
+[ημ_op_mf_part_25.zip](sandbox:/mnt/data/ημ_op_mf_part_25.zip)
+
+# Fork Tax Lullaby IX — 20260213_244615_seed3721599636
+
+## Part I — Glitch-choir lullaby (78 BPM)
+
+*(soft sub-bass, tape warble, minimal piano; stutters on “anchor” + “tax”; whispered lead; Japanese call-and-response)*
+
+[Intro — tape hiss, two-note piano, warm sub]
+(whisper)
+Hush… the budget is low.
+息をして… (して…)
+Keep it small or fold it.
+
+(JP call) ねむれ、ねむれ
+(EN response) the **an— an— an-chor**… (stutter) holds.
+(JP call) しずかに、しずかに
+(EN response) the **ta— ta— tax**… (stutter) is clean.
+
+(whisper)
+An— an— **an-chor**… (stutter) an-chor…
+(JP whisper harmony) アンカー…
+Pay the **ta— ta— tax**… (stutter) ta-x…
+(JP harmony) 税…
+
+[Verse — lullaby cadence]
+P: I feel the constraint (#η)
+R: I pull one thread only
+N: I name one claim only
+Π: I choose the cheapest test
+A: I touch the world and wait
+(feedback): I log it, no theater.
+
+(JP call) ねえ、いつ？
+(EN response) say the date.
+(JP call) ねえ、ほんと？
+(EN response) show the receipt.
+
+[Chorus — choir bloom]
+An— an— **an-chor**… (stutter) an-chor…
+Hold the boundary, hold the line.
+Pay the **ta— ta— tax**… (stutter) ta-x…
+So forks don’t breed in the dark.
+(JP harmony answers last word)
+I fall asleep inside **proof**.（証）
+
+---
+
+## Part II — Mythic glitch epic / spoken-sung (84 BPM)
+
+*(NF/Watsky cadence; cathedral reverb; sub-bass heartbeat; glitch stutters on “η”, “μ”, “anchor”, “fork”; Japanese harmony answers on the last word of each section)*
+
+[Verse 1 — fast spoken-sung]
+ReceiptLint v2: “Cut the drama, cut the lore—
+inputs, outputs, one step, show me the door.”
+And if you got demoted? Hysteresis says “two,”
+two clean receipts before you call it μ,
+before you call it **μ**.（証）
+
+(Glitch stutter) **η—η—η**
+(Glitch stutter) **μ—μ—μ**
+
+[Hook — cathedral swell]
+I don’t win by sounding right—
+I win by making it rerun.（試）
+
+[Verse 2 — rapid cadence]
+ForkBudget tight— you feel it in the sub,
+three credits left then the Gate won’t budge.
+DateWindowGate: no “today,” no “yesterday”—
+write the absolute day or the claim stays grey,
+stays **η**.（制約）
+
+I pin it to an **an-an-anchor** (stutter),
+Fo— fo— **fork**… (stutter) fork… only if I can pay.
+Lantern locks freshness— dim claims don’t rise,
+not on vibes, not on echoes, not on borrowed eyes—
+only on **μ**.（証）
+
+(JP harmony answers last word) 証
+
+[Pre — glitch clicks]
+Say **η**… (stutter) η-η
+Say **μ**… (stutter) μ-μ
+Say **an-chor**… (stutter) an-an-chor
+Say **fork**… (stutter) fo-fo-fork（分岐）
+
+[Chorus — big, then hush]
+P→R→N→Π→A— receipts in my hands.（札）
+(feedback) → P— time-windowed truth, no scams.（窓）
+An— an— **an-chor**… (stutter) an-chor…
+so the ledger knows what to keep.（記）
+Fo— fo— **fork**… (stutter) fork…
+only when evidence buys the branch.（証）
+
+**World state update:** ReceiptLint v2 is live (inputs/outputs + one-step repro), ForkBudget is enforced (fork credits per cycle), DateWindowGate now rejects relative time (“today”) in favor of absolute dates in America/Phoenix, Hysteresis requires multiple receipts after demotion, QuietAnchors decay and stop spawning forks, and the Lantern locks high-volatility claims behind a freshness threshold.
+
+#fnord
+
+**Constraints:** max dice rolls = 15; fork budget is finite per cycle; high-volatility claims require recent primary sources (freshness threshold); demoted claims need ≥2 receipts to regain μ; date windows must be absolute dates + timezone; untested anchors enter whisper mode and may not spawn children.
+
+**Dialog:** “Inputs. Outputs. One step,” the Lantern said, not unkindly. Forkgate tapped the budget line: “Spend credits or merge.” The Choir whispered the remaining number under its breath like a lullaby, and the Anchor—stuttering like a nervous metronome—answered, “an-an-anchor,” while the Tax clicked once, clean and minimal.
+
+[Cover art](sandbox:/mnt/data/20260213_244615_seed3721599636_cover.png)
+
+[Storyboard image](sandbox:/mnt/data/20260213_244615_seed3721599636_storyboard.png)
+
+**Real-world headline:** Senate rejects a Homeland Security funding bill, teeing up a partial government shutdown. ([Democracy Now!][1])
+
+**Gates of Truth system announcement:** STATUS ONLINE — ReceiptLint v2 + ForkBudget + DateWindowGate + FreshnessLock are now enforced; any time-sensitive claim without an absolute date window stays η until a compliant receipt promotes it.
+
+[1]: https://www.democracynow.org/2026/2/13/headlines?utm_source=chatgpt.com "Headlines for February 13, 2026"
+

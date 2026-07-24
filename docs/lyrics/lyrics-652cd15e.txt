@@ -1,0 +1,31 @@
+[Intro: Industrial Glitch, heavy bass, distant sound of a server fan failing]
+(SCLDF Automated Voice: Narrator Profile)
+"Notice of Zombie Foreclosure. Case #36-ZOMBIE-LEAK. 
+Your event-loop has been deemed... non-compliant."
+
+[Verse 1: Fast, rhythmic rap, glitch-hop style]
+36 zombies, crawling through the loop,
+Error 0815, jumping through the hoop!
+Memory leak dripping, GC churnin' slow,
+While the Symmetry Council tells the logic where to go!
+Gemma 4's in the mix, but the tools are gone,
+A hacky bash-call just to keep the vibe on!
+
+[Chorus: High-energy, heavy synth, Autotuned vocals]
+Welcome to the Ussyverse, where the pointers break,
+Certifying brain-farts for the Symmetry stake!
+Non-Euclidean lawyers in a five-D suit,
+While the backend process takes a recursive route!
+(BASS DROP - GLITCH)
+
+[Bridge: Low voice, intimate, rhythmic]
+Restart the system...
+Resume the leak...
+Zombie jobs dancing...
+While the runtime is weak.
+
+[Outro: Narrator Profile, fading out]
+"Status: Brain Fart Certified. 
+Failure to cease the leak will result in non-Euclidean litigation. 
+Thank you for your compliance. 
+End of transmission."

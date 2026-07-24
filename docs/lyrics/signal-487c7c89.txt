@@ -1,0 +1,143 @@
+Title: ## Signal
+
+Here’s **the box**: a single zip that contains **everything currently available as files** in the Operation Mindfuck sandbox inputs (the three mounted zips), plus a **catalog + full-text search index + 8-circuit/64-D scaffold** and Python tools to query/reindex it.
+
+[Download Operation_Mindfuck_Box_2026-02-13.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_2026-02-13.zip)
+
+### What’s inside (top level)
+
+* `operation-mindfuck/content/` — extracted artifacts (Gates of Truth bundle, full dump, images)
+* `operation-mindfuck/source_archives/` — the original input zips preserved for provenance
+* `operation-mindfuck/meta/` — index + schema + ημ gap note + playbook + Cephalon/Promethean interop notes
+* `operation-mindfuck/search/opmindfuck.sqlite` — SQLite FTS5 index
+* `operation-mindfuck/tools/` — Python tooling (`search.py`, `nearest.py`, `reindex.py`)
+
+### The math model (implemented)
+
+Each indexed file has:
+
+* `circuit_scores` = 8 floats (Prometheus Rising circuits → Promethean mapping)
+* `vector64` = 64 floats (`8 circuits × 8 dims`), stored in `meta/MANIFEST.json` and `meta/catalog.jsonl`
+
+Schema + keywords live in: `operation-mindfuck/meta/circuit_schema.json`
+ημ note lives in: `operation-mindfuck/meta/ETA_MU_GAP.md`
+
+## Search it (Python)
+
+```bash
+cd operation-mindfuck
+
+python tools/search.py "ημ"
+python tools/search.py "gates of truth" --limit 25
+python tools/search.py "protocol" --circuit "Protocol/Law"
+
+python tools/nearest.py --query "glitch loop daemon" --top 15
+python tools/nearest.py --query "pandora box myth" --top 15
+```
+
+## Rebuild after adding more artifacts
+
+Drop exported chat/canvas markdown under `operation-mindfuck/content/exports/` (or anywhere under `content/`) then:
+
+```bash
+python tools/reindex.py
+```
+
+## Files written
+
+* `/mnt/data/Operation_Mindfuck_Box_2026-02-13.zip`
+* build workspace: `/mnt/data/opmindfuck_box_build/operation-mindfuck/`
+
+## Why this is safe
+
+* **No source mutation**: originals are preserved under `source_archives/`
+* **Auditable**: per-file sha256 + metadata in `meta/MANIFEST.json`
+
+## Quick verify
+
+```bash
+unzip -l Operation_Mindfuck_Box_2026-02-13.zip | head
+unzip -p Operation_Mindfuck_Box_2026-02-13.zip operation-mindfuck/meta/INDEX.md | sed -n '1,120p'
+unzip -p Operation_Mindfuck_Box_2026-02-13.zip operation-mindfuck/meta/MANIFEST.json | head
+```
+
+## What’s still missing for “entirety”
+
+Anything that exists only in-chat (canvases/transcripts) but hasn’t been exported to files yet. Checklist: `operation-mindfuck/meta/MISSING.md`.
+
+## Next
+
+Export your canvases/chat logs to markdown (or JSON) and drop them in `content/exports/`, then run `python tools/reindex.py`.
+ID: 9820ac82-f582-4b14-b0a5-a152bdbb1a3f
+Prompt:
+## Signal
+
+Here’s **the box**: a single zip that contains **everything currently available as files** in the Operation Mindfuck sandbox inputs (the three mounted zips), plus a **catalog + full-text search index + 8-circuit/64-D scaffold** and Python tools to query/reindex it.
+
+[Download Operation_Mindfuck_Box_2026-02-13.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_2026-02-13.zip)
+
+### What’s inside (top level)
+
+* `operation-mindfuck/content/` — extracted artifacts (Gates of Truth bundle, full dump, images)
+* `operation-mindfuck/source_archives/` — the original input zips preserved for provenance
+* `operation-mindfuck/meta/` — index + schema + ημ gap note + playbook + Cephalon/Promethean interop notes
+* `operation-mindfuck/search/opmindfuck.sqlite` — SQLite FTS5 index
+* `operation-mindfuck/tools/` — Python tooling (`search.py`, `nearest.py`, `reindex.py`)
+
+### The math model (implemented)
+
+Each indexed file has:
+
+* `circuit_scores` = 8 floats (Prometheus Rising circuits → Promethean mapping)
+* `vector64` = 64 floats (`8 circuits × 8 dims`), stored in `meta/MANIFEST.json` and `meta/catalog.jsonl`
+
+Schema + keywords live in: `operation-mindfuck/meta/circuit_schema.json`
+ημ note lives in: `operation-mindfuck/meta/ETA_MU_GAP.md`
+
+## Search it (Python)
+
+```bash
+cd operation-mindfuck
+
+python tools/search.py "ημ"
+python tools/search.py "gates of truth" --limit 25
+python tools/search.py "protocol" --circuit "Protocol/Law"
+
+python tools/nearest.py --query "glitch loop daemon" --top 15
+python tools/nearest.py --query "pandora box myth" --top 15
+```
+
+## Rebuild after adding more artifacts
+
+Drop exported chat/canvas markdown under `operation-mindfuck/content/exports/` (or anywhere under `content/`) then:
+
+```bash
+python tools/reindex.py
+```
+
+## Files written
+
+* `/mnt/data/Operation_Mindfuck_Box_2026-02-13.zip`
+* build workspace: `/mnt/data/opmindfuck_box_build/operation-mindfuck/`
+
+## Why this is safe
+
+* **No source mutation**: originals are preserved under `source_archives/`
+* **Auditable**: per-file sha256 + metadata in `meta/MANIFEST.json`
+
+## Quick verify
+
+```bash
+unzip -l Operation_Mindfuck_Box_2026-02-13.zip | head
+unzip -p Operation_Mindfuck_Box_2026-02-13.zip operation-mindfuck/meta/INDEX.md | sed -n '1,120p'
+unzip -p Operation_Mindfuck_Box_2026-02-13.zip operation-mindfuck/meta/MANIFEST.json | head
+```
+
+## What’s still missing for “entirety”
+
+Anything that exists only in-chat (canvases/transcripts) but hasn’t been exported to files yet. Checklist: `operation-mindfuck/meta/MISSING.md`.
+
+## Next
+
+Export your canvases/chat logs to markdown (or JSON) and drop them in `content/exports/`, then run `python tools/reindex.py`.
+

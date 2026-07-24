@@ -1,0 +1,12 @@
+Title: Licenses are permissions given by the copyright holder for their content. Licenses can be applied to copyrighted material in order to give permission for certain uses of the material. Copyright is still held by the creator in these cases, but the creator has decided to allow others to use their work. Sometimes licenses are purchased and sometimes they are given freely by the creator. 
+
+Licenses can be applied to allow reuse, redistribution, derivative works, and commercial use. 
+
+Creative Commons is the most frequently used and accessible free licensing scheme, but there are others that are used by certain communities. Licenses can also be applied by commercial entities that own copyright to an item such as a journal article. These licenses generally spell out limited usage for users and are available for a fee.
+ID: f65d8398-56b7-4f80-b9b5-48b73410a937
+Prompt:
+Licenses are permissions given by the copyright holder for their content. Licenses can be applied to copyrighted material in order to give permission for certain uses of the material. Copyright is still held by the creator in these cases, but the creator has decided to allow others to use their work. Sometimes licenses are purchased and sometimes they are given freely by the creator. 
+
+Licenses can be applied to allow reuse, redistribution, derivative works, and commercial use. 
+
+Creative Commons is the most frequently used and accessible free licensing scheme, but there are others that are used by certain communities. Licenses can also be applied by commercial entities that own copyright to an item such as a journal article. These licenses generally spell out limited usage for users and are available for a fee. 

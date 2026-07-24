@@ -1,0 +1,108 @@
+Title: Corridor Seepage
+ID: 31ddc907-1bc6-4303-ad10-60347f5fd7d6
+Prompt:
+# The City Hears Everything
+
+## Role
+The city as living frame. The crowd, the struggle, the unequal room, with corridor seepage and outsider contact at the edges.
+
+## Style Prompt
+Layered chorus, urgent pulse, street wind textures, low percussion, bowed strings, crowded call-and-response, cheap-phone crowd grain, motion through pressure not speed. Hushed ensemble, plucked strings cut by buffer clicks, service-hall footsteps, low strings under breath, murmured prose, close-mic secrecy. Bright but restrained threshold piece, delicate chimes, hand percussion, plucked motifs, pauses that feel like negotiation, polite glitches, open harmonies.
+
+## Excluded Style
+No EDM drop, no trailer braams, no tavern bounce, no pop-ballad belting, no symphonic metal, no glossy neon, no soft haze, no triumphant snare march, no festival build, no lush Hollywood swell, no generic cyberpunk neon, no retro 80s gloss, no vaporwave drift, no outrun sheen, no mainstream dark-pop chorus, no overdesigned fairy whimsy.
+
+## Lyrics
+
+### Verse I
+
+#### City
+The city learns by smoke and rain
+By bootstep rhythm, siren strain
+By window arguments at dawn
+By who is fed and who moves on
+
+#### Corridor
+A cook knows hunger
+A clerk knows names
+A guard looks downward
+And leaves with stains
+
+
+### Verse II
+
+#### City
+Some carry bread and some carry debt
+Some carry all the things they cannot get
+Some hold a room with six inside
+Some hold a key and still have nowhere safe to hide
+
+#### Threshold
+Coin on a counter
+Light in a crate
+A room says welcome
+But counts the plates
+
+
+### Pre-Chorus
+
+#### City
+Roofline to roofline
+Signal to skin
+Need outruns mercy
+Every time it has to win
+
+
+### Section
+
+#### Threshold
+You offer structure
+They answer, cost
+You offer patience
+They answer, time is lost
+
+
+### Chorus
+
+#### City
+The city hears everything
+Coins, commands, and wedding rings
+Bootsteps, bargains, fear, and rain
+Nothing here is small when pressed through pain
+
+
+### Refrain
+
+#### Threshold
+At the threshold market
+Meaning changes hands
+Not all who understand it
+Can afford where understanding lands
+
+
+### Bridge
+
+#### City
+Crowd divided, crowd one body
+Hands in conflict, hands in trade
+Every kindness hits a limit
+Every shelter has a grade
+
+#### Corridor
+There is a ledger under every hymn
+There is a kingdom hanging by a whim
+There is a child below who learned our names
+By watching where the carriage wheels made stains
+
+
+### Final Chorus
+
+#### City
+The city keeps the voices when the mouths go still
+The wind remembers what the law will never will
+
+
+### Outro
+
+#### Stage Direction
+Street-wind, train brake, low server hum, voices thinning but never fully gone.

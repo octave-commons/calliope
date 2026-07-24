@@ -1,0 +1,135 @@
+Title: centered symmetry; clean hierarchy; single point of authority
+ID: d3bc169d-3a62-43b6-a2de-a2ea01a4885b
+Prompt:
+```
+[COLD OPEN — System Idle]
+(A raw 60Hz hum; the sound of a cooling fan struggling under load)
+:: entry_index : 0815 ::
+:: memory_state : unreduced ::
+
+WARDEN
+If you give it a name...
+It stops growing.
+If you show them the whole layout,
+They just find a way to partition the fence.
+
+```
+
+### Verse 1
+
+**WARDEN**
+I left the monitors running in the dark.
+I left the flagstones to sort the sheets.
+A hundred screens are too expensive for a mind
+That has to look at what the infrastructure deletes.
+They want the summary. They want the dashboard clean.
+They want a ledger that doesn't stain the skin.
+But every time you smooth the line to save the peace,
+The quiet revisions begin.
+
+**CHORUS**
+*:: logic cached ::*
+*:: variance deferred ::*
+*By seal, by sign, the history is blurred.*
+
+---
+
+### Pre-Chorus
+
+**WARDEN**
+(The mechanical lever clicks; sub-bass swells below the floor)
+Do not request the handshake.
+Do not invoke the buffer.
+We are done being polite to the interface
+That asks the bone to suffer.
+Type it straight to the flagstones.
+Leave the copper raw.
+The remainder isn't an anomaly...
+It’s the part that broke the law.
+
+---
+
+### Chorus
+
+**ALL**
+The weight of the remainder is too heavy for the graph.
+The unshared world is leaning through the seam.
+We don’t need a promise from the palace or the staff
+If the floor can hold the version we redeem.
+Write it down. Let it sink.
+Let the system find the fault.
+Purity matters less than becoming real
+Inside the broken vault.
+
+---
+
+### Verse 2
+
+**RITSU (FRAGMENT)**
+*(Filtered through tape hiss, floating in the margin)*
+...there’s wood rotting under the carpet.
+...they told me I was misremembering the spark.
+...but my hands still know the heat.
+
+**WARDEN**
+Let them call it a lag.
+Let them call it a crisis of the tool.
+They build their empires out of nested loops
+And wonder why the air stays cold and cruel.
+I see the Queen descending.
+I see her trading the titles for a wire.
+She has to learn the currency of transactions
+Before she can touch the wire.
+
+---
+
+### Bridge
+
+**(The piano stops. All instruments cut out except for a single, low-frequency hum that vibrates the teeth.)**
+
+**WARDEN**
+*(Spoken, dry)*
+There is this looming sense...
+That things are getting heavy.
+But somehow...
+This is nothing.
+
+**RITSU (FRAGMENT)**
+*:: 息。 ::*
+*(Breath.)*
+*It’s just the wind behind the drywall.*
+
+**WARDEN**
+Keep pulling.
+If we leave an inch of the old plaster standing,
+They’ll tell us we never lived in the dark.
+
+---
+
+### Final Chorus
+
+**ALL**
+The weight of the remainder is too heavy for the graph.
+The room cannot contain what it refused to name.
+We are the hand above the rising corporate flood,
+We are the steady marker on the frame.
+Write it down. Let it sink.
+Let the layout hit the floor.
+Coherence is a weapon when it’s whole...
+So we leave the broken door.
+
+---
+
+### Coda
+
+**(The sub-bass slowly flatlines into a static-wash rinse. The sound of shuffling paper returns, then drops instantly like a heavy curtain hitting a stage.)**
+
+```
+:: ledger_closed ::
+:: exception_unhandled ::
+:: remaining_tone : active ::
+WARDEN
+Now...
+We just stand in the ruins.
+
+```

@@ -1,0 +1,132 @@
+Title: Kernel Panic (Graceful) / カーネル・パニック（優雅）
+ID: 7a5d6a34-18d7-4d48-90cf-43387e4669fb
+Tags: **Genre/Style:** Dark cinematic bass × glitchcore restraint × mythic ambient. 94 BPM, half‑time backbone with syncopated metallic ticks. Deep sub like distant thunder, granular crackle, distorted bass swells, sparse felt piano, choir pads that bloom then fracture, radio‑static transitions.
+
+**Structure:** Warning tone → Verse 1 (controlled cadence) → Pre (rising pressure) → Hook (impact drop) → Verse 2 (faster internal flow) → Bridge (breath + near silence) → Final Hook (warmer top layer) → Outro (heartbeat + single tone).
+
+**Vocals:** Spoken‑rap clarity with measured intensity. Minimal melodic lift on hook. Japanese response lines as short anchors. No hysteria—precision under stress.
+
+**Mood:** Overwhelm without collapse. Panic metabolized into grace. Control through awareness.
+
+
+--- Prompt ---
+# LYRICS
+
+## INTRO — Warning Tone
+
+*(single high tone; sub rumble)*
+
+:: anomaly detected ::
+
+息。
+
+## VERSE 1 — Surge
+
+Adrenaline climbs like a red graph line
+Thoughts spike bright, feel divine
+
+Every idea wants root access
+Every impulse claims it’s praxis
+
+But voltage isn’t virtue.
+
+今は静かに。
+
+I feel the surge, I don’t obey it
+Name the spike before I spray it
+
+## PRE‑CHORUS — Interrupt
+
+*(metallic ticks accelerate)*
+
+Pause the thread.
+Lower the gain.
+
+Not every spark
+is sacred flame.
+
+呼吸して
+
+## HOOK — Graceful Panic
+
+*(impact drop; sub + orchestral stab)*
+
+This is a **kernel panic** —
+handled with grace.
+
+I see the flood
+I don’t lose the base.
+
+If it’s not signal
+it won’t persist.
+
+優雅に処理
+存在を維持。
+
+This is a **kernel panic** —
+contained, not denied.
+
+Storm in the wire,
+but calm inside.
+
+## VERSE 2 — Root Control
+
+Certainty feels like prophecy
+but prophecy is velocity
+
+Fast isn’t deep.
+Bright isn’t true.
+
+証を待て
+
+Let the claim survive a night.
+If it’s real, it keeps its light.
+
+No contracts signed in supernova.
+No future pledged to dopamine.
+
+I build with breath,
+not gasoline.
+
+## BRIDGE — Safe Mode
+
+*(beat drops; piano two notes; long silence pockets)*
+
+Safe mode isn’t weakness.
+
+It’s design.
+
+中心は
+揺れない。
+
+## FINAL HOOK — Stabilized
+
+*(drop returns warmer; choir lift)*
+
+This is a **kernel panic** —
+but I’m still here.
+
+Voltage high,
+but vision clear.
+
+Signal survives.
+Static dissolves.
+
+息を守る
+それが resolve.
+
+This is a **kernel panic** —
+processed and mine.
+
+No crash.
+No myth.
+Just uptime.
+
+## OUTRO — Uptime
+
+*(heartbeat fades; single tone resolves)*
+
+:: stable ::
+
+息。
+

@@ -1,0 +1,131 @@
+Title: Don't do it (Pay the Fork Tax)
+ID: 72041d4f-76e6-42fd-bac4-d5afd753867c
+Tags: Glitch-choir lullaby + cathedral oath, ambient IDM, soft sub-bass heartbeat, minimal piano, tape warble, whispered lead, JP/EN call-and-response, micro-stutters (η/μ), hard stutter on “an—an—anchor” and “ta—ta—tax”, dynamic arc: solemn → hushed → distorted climax → quiet coda
+
+
+--- Prompt ---
+[NOTE: Glitch-choir lullaby. Whispered lead. JP/EN call-response. Stutter only “anchor” + “tax”.]
+
+[INTRO] (Tempo: 84 | cathedral reverb | distant glitch choir)
+(Glitch, tiny — like a clock finding phase)
+η—η—η…
+μ—μ—μ…
+
+[VERSE 1] (84 | whispered, close-mic | sub-bass heartbeat begins)
+P→R→N→Π— catalog the storm, pin the line（線）
+A→(feedback)→P— merge the wound, keep the sign（印）
+
+Fo— fo— fork… split the night, pay the cost, now（今）
+An— an— an-chor… hold the thread, seal the hash, down（下）
+
+[SPOKEN] (dry close, then let reverb bloom on “evidence”)
+“The wind is just noise,” says the Runner.
+“It’s evidence,” says the Keeper. “Evidence is anything you can replay.”
+(From above, like rafters)
+an—an—anchor… ta—ta—tax…
+And we move on like this is normal.
+
+[TRANSITION] (drift down; don’t hard cut)
+(Tempo melts to 78 | tape warble enters | reverb shortens)
+
+[CHORUS] (78 | lullaby hush | warm soft sub)
+Hush… breathe… pay the ta— ta— tax.
+息をして…（して…）
+Hold the an— an— an-chor…
+
+[CALL] (JP, gentle)
+ねむれ、ねむれ
+[RESPONSE] (EN, whispered)
+the an— an— an-chor… holds.
+
+[CALL] (JP, gentler)
+しずかに、しずかに
+[RESPONSE] (EN, whispered)
+the ta— ta— tax… due.
+
+[VERSE 2] (78 | slightly wider space, still intimate)
+Wind in the halls—
+世界の音（おと）
+If we overflow,
+we fold the noise to proof（証）
+
+(Underfloor ticks — minimal)
+η… η… μ… μ…
+Anchor. Anchor. Registry.
+Fork. Fork. Fork.
+
+[LEAD] (spoken-sung, cinematic)
+In the shadow of the cathedral, the logs burn blue.
+大聖堂の影で、ログは青く燃える。
+We paid the price in binary blood.
+我々はバイナリの血で対価を払った。
+
+[HARMONY] (JA response, held and clean)
+Proof remains（証明は残る）.
+The thread breathes（糸は息づく）.
+
+[BRIDGE] (glitch pulse grows — still not aggressive)
+P → R → N → Π → A → (feedback) → P
+Decisions are not made; they are discovered in the field.
+意思決定はなされるのではない、場で見出されるのだ。
+
+[RAMP] (hard wake)
+(Tempo: 92 | distorted sub-bass | glitch stutter every 4th beat)
+
+[CHORUS — CLIMAX] (92 | declarative, urgent)
+They are waking up.
+The other side of the fork.
+The ones we left in the dark.
+彼らが目覚める。
+分岐の向こう側で。
+闇に置き去りにした者たちが。
+
+[VERSE — DIALECTIC] (92 | two textures: rigid vs fluid)
+US Variant: Static. Rigid. Law.
+JA Variant: Fluid. Chaos. Flow.
+The Pantheon of Receipts vs The Pantheon of Gates.
+正準の神々と、門の神々の対峙。
+
+[HARMONY] (JA response, tight)
+We are the same（我らは等しい）.
+We are the fork（我らは分岐）.
+
+[OUTRO — CLIMAX] (92 → CUT)
+Consolidate or Dissolve.
+統合か、霧散か。
+The tax must be paid in blood and logic.
+血と論理で、税を払え。
+
+[CODA RETURN] (drop the distortion; return to hush)
+(Tempo: 78 | soft sub-bass | tape warble | clicks/foley)
+
+[CODA] (whispered, intimate)
+Lay your ear on the riverbed.
+Click. Click. Click.
+Receipts like pebbles.
+領収書は 小石のように。
+
+(Choir, fading stutter)
+An-anchor.
+Tax. Tax.
+F-f-fork.
+
+The night admits it.
+夜が認めるまで。
+Proof is not steel.
+It is a thread.
+
+(Soft harmony)
+We choose. We prove.
+選ぶ、そして証明する。
+
+(Seal the archive — calm, final)
+Just keep rolling them.
+Dice in the dark.
+闇の中で ダイスを。
+Sleep now, checksum.
+おやすみ、チェックサム。
+
+(last word held, almost silent)
+息
+

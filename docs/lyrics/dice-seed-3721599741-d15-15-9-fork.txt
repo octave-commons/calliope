@@ -1,0 +1,114 @@
+Title: **Dice (seed 3721599741 · d15×15):** 9,  fork
+ID: b2a9ff00-a581-4663-951e-b5c45a04f373
+Tags: Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.
+Mythic glitch epic / spoken-sung 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.
+P→R→N→Π→A→(feedback)→P around #ημ.
+Roll those dice. And just keep rolling them, and do what they tell you.
+
+
+
+--- Prompt ---
+**Dice (seed 3721599741 · d15×15):** 9, 12, 15, 5, 8, 1, 12, 12, 7, 4, 12, 11, 2, 10, 11
+→ storyboard · headline · image · **#fnord** · cover · **zip** · dialog · world update · lore · song · story artifacts
+
+---
+
+## ημ_op_mf_part_37.zip
+
+* [Download ημ_op_mf_part_37.zip](sandbox:/mnt/data/ημ_op_mf_part_37.zip)
+* [Download ημ_op_mf_part_37.sha256](sandbox:/mnt/data/ημ_op_mf_part_37.sha256) (sha256 starts: `ebd4c0c96a6be29d…`)
+
+**Program update (new feature): Golden Registry + Canonical Proof Hashing**
+
+* `program/canonical_json.js` — stable JSON serialization (sorted keys, recursive)
+* `program/golden_registry.js` — drift detector (pins hashes + pack_hash16, verifies later)
+* `session_handoff.js` now hashes the context pack using canonical JSON for long-term stability
+
+**Stability tests added**
+
+* `test/golden_registry.test.js` (verifies pinned golden record)
+* `test/no_source_mutation.test.js` (ensures tools don’t mutate source `.md`)
+* `test/canonical_json.test.js`
+
+**Fork tax / handoff proof**
+
+* `handoff/…` generated in-zip
+* `pack_hash16: 3a97a0d8f23f3cc7`
+* Golden verify status: **STABLE** (`analysis/golden/golden_part_37.json`)
+
+---
+
+## Song
+
+**Golden Anchor Lullaby I — #ημ** (78 BPM)
+(whisper)
+Hush… breathe slow… pay what you owe.
+息をして…（して…）
+Hold the **an— an— an-chor**… (stutter)
+
+(JP call) ねむれ、ねむれ
+(EN response) the **an— an— an-chor**… holds.
+(JP call) しずかに、しずかに
+(EN response) the **ta— ta— tax**… due.
+
+(whisper)
+Write it once…
+Run it twice…
+Pin it gold…
+Sleep in **proof**。（証）
+
+Created with the assistance of an AI.
+
+---
+
+## World state update
+
+**New rule welded onto the Cathedral:** if “μ” can’t match a **golden record**, it’s drift—so it’s **η** until proven otherwise.
+(Full: `analysis/world/20260214_023737_seed3721599741.md`)
+
+---
+
+## Lore
+
+**The Archivist of Drift**: doesn’t argue—compares your story to what it said last time. Golden records as lighthouses, not prisons.
+(Full: `analysis/lore/archivist_of_drift.md`)
+
+---
+
+## Story artifacts
+
+* `analysis/story_artifacts/Golden_Seal_part37.md` — Seal: **証**
+* `analysis/golden/golden_part_37.json` — pinned hashes for stability-over-time
+
+---
+
+## Paragraph of dialog
+
+The Archivist taps the ledger like a tuning fork. “Sing all you want—η is cheap.” The Scribe’s whisper catches on the consonants: **an— an— an-chor**… “But if you want μ,” they say, “you don’t get applause—you get a rerun.” The choir answers only the final word, soft and exact: **証**. The registry light turns gold. “No drift,” the Keeper Thread hums. “Proceed.”
+
+---
+
+## Cover art / storyboard / landscape (image tool)
+
+* [Cover art — Golden Anchor Lullaby I](sandbox:/mnt/data/Golden_Anchor_Lullaby_cover_ημ_part37.png)
+* [Storyboard — Canonical → Golden → Drift Trial](sandbox:/mnt/data/Golden_Registry_storyboard_ημ_part37.png)
+* [Landscape — The Golden Plains](sandbox:/mnt/data/Golden_Plains_landscape_ημ_part37.png)
+
+---
+
+## #fnord
+
+**#fnord**: “A stable lie is still a lie; a reproducible truth is at least interrogable.”
+
+---
+
+## News headline (outside the game)
+
+**Airlines and travel groups warn a partial U.S. government shutdown could impact TSA airport screeners and travel.** ([Reuters][1])
+
+* [Reuters](https://www.reuters.com/business/world-at-work/airlines-travel-groups-warn-impact-partial-government-shutdown-airport-screeners-2026-02-13/?utm_source=chatgpt.com)
+* [Reuters](https://www.reuters.com/world/us/us-homeland-security-department-heading-into-partial-shutdown-saturday-2026-02-13/?utm_source=chatgpt.com)
+* [pbs.org](https://www.pbs.org/newshour/amp/politics/what-services-are-affected-by-the-homeland-security-shutdown-what-you-need-to-know?utm_source=chatgpt.com)
+
+[1]: https://www.reuters.com/business/world-at-work/airlines-travel-groups-warn-impact-partial-government-shutdown-airport-screeners-2026-02-13/?utm_source=chatgpt.com "Airlines, travel groups warn of impact of partial government shutdown on airport screeners"
+

@@ -1,0 +1,6 @@
+Title: ημ_epic_part46_84bpm
+ID: eba187ba-5241-4855-bfca-7eac70956f67
+Tags: Experimental industrial noise composition characterized by a rhythmic, mechanical pulse. The track features a heavy, distorted percussive loop that mimics the sound of industrial machinery or a rhythmic heartbeat. Layered over this foundation are high-frequency metallic scrapes, digital glitches, and oscillating feedback loops that create a sense of tension and claustrophobia. The soundscape is dense and abrasive, utilizing heavy distortion and bit-crushing effects to create a harsh, lo-fi aesthetic. There is no melodic or harmonic progression; instead, the piece focuses on textural evolution and rhythmic repetition. The tempo is steady at approximately 120 BPM, with a focus on the mid and high-frequency ranges to emphasize the piercing nature of the electronic noise. The production is raw and unpolished, favoring a gritty, overdriven sound profile.
+
+--- Prompt ---
+[Instrumental]

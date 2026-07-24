@@ -1,0 +1,89 @@
+Title: **Cathedral of Variants / 変異の聖堂**
+ID: 19bd6acd-95b7-4df0-8af4-4c381ff74984
+Prompt:
+### Program update (additive)
+
+**New feature**
+
+* `program/euclid_rhythm.js` — Euclidean rhythm patterns (deterministic stutter gating)
+* `program/procedural_score.js` — seed + constraints → deterministic event/score JSON (kick/bass/stutters)
+
+**Cathedral-ish multitap reverb, sub-bass heartbeat + kick sweep, minimal piano ticks, tape warble, and glitch-stutter bursts** for **η / μ / anchor / fork**.
+(spoken-sung, tight cadence)
+P to R to N to Π—
+tell the truth your hands can see.
+A—feedback—back again,
+μ survives the echo pen.
+
+(Glitch) **η—η—η**
+(Glitch) **μ—μ—μ**
+
+Fo— fo— **fork**… (stutter) costs in light.
+An— an— **an-chor**… (stutter) holds it tight.
+Two hashes match—cathedral hum—
+keeper thread says: “Now it’s done.”
+Last word: **proof**
+(答え) 証（あかし）
+
+**Verse**
+I don’t erase what didn’t integrate—
+I index it, I let it wait.
+Less remembered is still alive,
+compressed in the frame where the good parts survive.
+Last word: **anchor**
+(答え) 錨（いかり）
+
+**Hook**
+Pay the tax.
+Close the loop.
+Hand it off.
+Guard the proof.
+
+(JP harmony answers the last word)
+proof… 証（あかし）
+fork… 分岐（ぶんき）
+anchor… 錨（いかり）
+μ… みゅー
+η… えーた
+
+License: **CC BY-SA 4.0** (share alike).
+Created with the assistance of an AI.
+(Full text: `songs/Cathedral_of_Variants_84.md` inside the zip.)
+
+---
+
+All prior invariants remain (additive-until-limit → consolidate overlays; originals never deleted; share-alike enforced).
+
+---
+
+## World state update
+
+* Gate online: **CATHEDRAL_OF_VARIANTS_GATE**
+* New mechanism: **score-as-receipt** (seed + constraints → replayable stutter plan)
+* Tone: **total creative freedom as reproducible procedure**
+
+---
+
+## World lore
+
+**The Cathedral Stores the Forks**: Variants don’t compete; they stack like choir layers.
+Integration is not moral status—just coupling strength. When the world is crowded, overlays compress *attention*, not history.
+Returnability is sacred: if you can replay it, you can share it; if you can share it, it can outlive you.
+
+(See `lore/Cathedral_of_Variants.md`.)
+
+---
+
+## Paragraph of dialog
+
+“Total creative freedom.”
+“Sure—just don’t confuse freedom with forgetting.”
+“So we keep the ugly drafts?”
+“We keep *everything*—then consolidate overlays when the room gets crowded.”
+“And the stutters?”
+“They’re proof the system is alive enough to hesitate.”
+
+---
+
+
+

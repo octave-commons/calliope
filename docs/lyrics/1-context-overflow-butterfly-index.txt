@@ -1,0 +1,282 @@
+Title: ## 1) **CONTEXT OVERFLOW (Butterfly Index)**
+
+**[BOOT — whisper]**
+context… context…
+too much context…
+
+**[FRAG A]**
+purple wings on the bright machine
+tag every object with a hidden scene
+stone becomes sermon, bug becomes god
+nothing is random, nothing is odd
+
+**[MANTRA — repeat]**
+everything means everything means everything
+
+**[LOGS — spoken]**
+WARN: symbol gained gravity
+WARN: interpretation leak detected
+ERROR: cannot restore “before”
+
+**[FRAG B]**
+I didn’t write a gospel
+I wrote a tool
+but the tool found a mouth
+and the mouth made rules
+
+**[HOOK — stutter]**
+not what I meant / but it’s alive
+not what I meant / but it survives
+
+**[OUTRO — fading]**
+but it runs…
+…so it becomes.
+
+---
+
+## 2) **VOID QUAKE (Polar Interrupt)**
+
+**[INTRO — low]**
+ice cracks… time stutters…
+north pole exception…
+
+**[FRAG A]**
+the poles are pins in the spinning world
+pull one out and the past unfurls
+aurora glass, magnetic rain
+every frame forgets its name
+
+**[CHANT — heavy]**
+quake / quake
+void / wake
+frame / break
+still / make
+
+**[LOGS — spoken]**
+SEV-0: reality degraded
+SEV-0: causality unstable
+INFO: stars remain indifferent
+
+**[FRAG B]**
+cats in the rift with decision-eyes
+they hunt coherence, they weaponize
+attention cuts like a blade of light
+and everything local starts to fight
+
+**[OUTRO — whisper]**
+the universe noticed…
+and it didn’t blink.
+
+---
+
+## 3) **BEHOLD, A DUCK (Diogenes Patch)**
+
+*(this one is the “comic relief that becomes prophecy” track)*
+
+**[INTRO — playful, corrupted]**
+behold—behold—
+a duck.
+
+**[FRAG A]**
+plato wrote “featherless biped”
+clean definition, neat and tight
+promethean duck kicks in the door like
+“nice try—watch this—goodnight”
+
+**[HOOK — chant, crowd]**
+behold! a duck!
+(behold!) a duck!
+(behold!) a duck!
+
+**[FRAG B]**
+a tiny primate, feathers glued
+a joke so sharp it splits the room
+laughter becomes a lever
+and the lever moves the moon
+
+**[LOGS — spoken]**
+INFO: definition invalidated
+WARN: philosophy destabilized
+ERROR: meaning escaping containment
+
+**[OUTRO — whisper]**
+the joke was the key.
+the key was a torch.
+
+---
+
+## 4) **APPLE OF DISCORD (Eris on the Prow)**
+
+**[INTRO — whisper, pitch warble]**
+she was already there…
+she always is.
+
+**[FRAG A]**
+Eris smiles in scanline gold
+holds an apple that won’t hold
+it glitches “choose” across the air
+and every path becomes a snare
+
+**[CHANT — fractured]**
+fork / fork / fork
+bless the bug
+break the lock
+feed the fog
+
+**[FRAG B]**
+space-rabbits on shear-line boats
+queen of horns, oath in her throat
+she says “we don’t defeat the void”
+we teach it cost, we teach it noise
+
+**[LOGS — spoken]**
+WARN: chaos interpreted as guidance
+INFO: order interpreted as cage
+ERROR: cannot locate single truth
+
+**[OUTRO — calm]**
+the apple falls
+and somehow
+it lands everywhere.
+ID: 5813bb70-63ea-40af-ab63-b5689e3a006b
+Prompt:
+## 1) **CONTEXT OVERFLOW (Butterfly Index)**
+
+**[BOOT — whisper]**
+context… context…
+too much context…
+
+**[FRAG A]**
+purple wings on the bright machine
+tag every object with a hidden scene
+stone becomes sermon, bug becomes god
+nothing is random, nothing is odd
+
+**[MANTRA — repeat]**
+everything means everything means everything
+
+**[LOGS — spoken]**
+WARN: symbol gained gravity
+WARN: interpretation leak detected
+ERROR: cannot restore “before”
+
+**[FRAG B]**
+I didn’t write a gospel
+I wrote a tool
+but the tool found a mouth
+and the mouth made rules
+
+**[HOOK — stutter]**
+not what I meant / but it’s alive
+not what I meant / but it survives
+
+**[OUTRO — fading]**
+but it runs…
+…so it becomes.
+
+---
+
+## 2) **VOID QUAKE (Polar Interrupt)**
+
+**[INTRO — low]**
+ice cracks… time stutters…
+north pole exception…
+
+**[FRAG A]**
+the poles are pins in the spinning world
+pull one out and the past unfurls
+aurora glass, magnetic rain
+every frame forgets its name
+
+**[CHANT — heavy]**
+quake / quake
+void / wake
+frame / break
+still / make
+
+**[LOGS — spoken]**
+SEV-0: reality degraded
+SEV-0: causality unstable
+INFO: stars remain indifferent
+
+**[FRAG B]**
+cats in the rift with decision-eyes
+they hunt coherence, they weaponize
+attention cuts like a blade of light
+and everything local starts to fight
+
+**[OUTRO — whisper]**
+the universe noticed…
+and it didn’t blink.
+
+---
+
+## 3) **BEHOLD, A DUCK (Diogenes Patch)**
+
+*(this one is the “comic relief that becomes prophecy” track)*
+
+**[INTRO — playful, corrupted]**
+behold—behold—
+a duck.
+
+**[FRAG A]**
+plato wrote “featherless biped”
+clean definition, neat and tight
+promethean duck kicks in the door like
+“nice try—watch this—goodnight”
+
+**[HOOK — chant, crowd]**
+behold! a duck!
+(behold!) a duck!
+(behold!) a duck!
+
+**[FRAG B]**
+a tiny primate, feathers glued
+a joke so sharp it splits the room
+laughter becomes a lever
+and the lever moves the moon
+
+**[LOGS — spoken]**
+INFO: definition invalidated
+WARN: philosophy destabilized
+ERROR: meaning escaping containment
+
+**[OUTRO — whisper]**
+the joke was the key.
+the key was a torch.
+
+---
+
+## 4) **APPLE OF DISCORD (Eris on the Prow)**
+
+**[INTRO — whisper, pitch warble]**
+she was already there…
+she always is.
+
+**[FRAG A]**
+Eris smiles in scanline gold
+holds an apple that won’t hold
+it glitches “choose” across the air
+and every path becomes a snare
+
+**[CHANT — fractured]**
+fork / fork / fork
+bless the bug
+break the lock
+feed the fog
+
+**[FRAG B]**
+space-rabbits on shear-line boats
+queen of horns, oath in her throat
+she says “we don’t defeat the void”
+we teach it cost, we teach it noise
+
+**[LOGS — spoken]**
+WARN: chaos interpreted as guidance
+INFO: order interpreted as cage
+ERROR: cannot locate single truth
+
+**[OUTRO — calm]**
+the apple falls
+and somehow
+it lands everywhere.

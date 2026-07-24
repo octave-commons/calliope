@@ -1,0 +1,6 @@
+Title: receipt_river_worldsound_part56
+ID: dde93927-9c33-43c8-95cd-909bc7251f7b
+Tags: Experimental noise composition characterized by high-frequency static and rhythmic digital interference. The piece features a consistent layer of white noise and pink noise, punctuated by rhythmic clicks and pops that suggest a malfunctioning electronic circuit. There are no melodic instruments, chord progressions, or vocal elements present. The structure is linear and repetitive, focusing on the textural evolution of the static. The production is raw and unpolished, emphasizing the harshness of the signal distortion and the absence of a traditional musical key or tempo.
+
+--- Prompt ---
+[Instrumental]

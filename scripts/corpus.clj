@@ -7,13 +7,16 @@
 ;; The deduplicated songbook under docs/lyrics/ is a pure projection over
 ;; that ledger — never edit docs/lyrics by hand.
 ;;
-;; Later passes (edit distance, embedding similarity) will refine the
-;; projection; the ledger stays the source of truth.
+;; Pass 2: edit-distance variant clustering. Same-title songs with different
+;; bodies (Suno re-renders, mashups) are grouped from the songs-v1 projection
+;; and compared with a line-level Levenshtein distance. Every cluster is
+;; appended as a :doc/variant-cluster event — a graded signal, never a merge.
 ;;
 ;; Usage:
 ;;   bb scripts/corpus.clj ingest    scan roots, append events to the ledger
 ;;   bb scripts/corpus.clj project   rebuild docs/lyrics from the ledger
 ;;   bb scripts/corpus.clj stats     summarize the latest ingest run
+;;   bb scripts/corpus.clj variants  pass 2: cluster same-title variants
 
 (require '[babashka.fs :as fs]
          '[babashka.process :as p]
@@ -263,9 +266,106 @@
     (pprint/pprint by-class)
     (println "Lyric files:" (count lyrics) "| unique bodies:" unique)))
 
+;; ------------------------------------------------------------- variants
+;; Pass 2: same-title variant clustering by line-level edit distance.
+;; Consumes the songs-v1 projection; emits :doc/variant-cluster events and
+;; ledgers/projections/variants-v1.edn. Signals only — never merges.
+
+(defn line-levenshtein
+  "Edit distance between two sequences of lines (two-row DP)."
+  [a b]
+  (let [a (vec a) b (vec b) n (count a) m (count b)]
+    (cond (zero? n) m
+          (zero? m) n
+          :else
+          (loop [i 1 prev (vec (range (inc m)))]
+            (if (> i n)
+              (peek prev)
+              (let [ai (nth a (dec i))
+                    curr (reduce (fn [row j]
+                                   (let [cost (if (= ai (nth b (dec j))) 0 1)]
+                                     (conj row (min (inc (nth row (dec j)))
+                                                    (inc (nth prev j))
+                                                    (+ (nth prev (dec j)) cost)))))
+                                 [i] (range 1 (inc m)))]
+                (recur (inc i) curr)))))))
+
+(defn body-lines [^String file]
+  (let [path (str (fs/path repo-root file))]
+    (when (fs/exists? path)
+      (->> (normalize-body (slurp path))
+           str/split-lines
+           (map str/trim)
+           (remove str/blank?)))))
+
+(defn title-key [^String title]
+  (some-> title str/lower-case str/trim (str/replace #"\s+" " ") not-empty))
+
+(defn variants! []
+  (let [idx-file (str (fs/path projections-dir "songs-v1.edn"))]
+    (if-not (fs/exists? idx-file)
+      (println "ERROR:" idx-file "missing — run `bb scripts/corpus.clj project` first.")
+      (let [events (read-events)
+            run-id (latest-run-id events)
+            idx (edn/read-string (slurp idx-file))
+            by-title (->> idx
+                          (filter (fn [[_ v]] (title-key (:title v))))
+                          (group-by (fn [[_ v]] (title-key (:title v))))
+                          (filter (fn [[_ xs]] (> (count xs) 1))))
+            clusters
+            (into []
+                  (map (fn [[tk entries]]
+                         (let [members (mapv (fn [[slug v]]
+                                               {:slug slug
+                                                :body-sha256 (:body-sha256 v)
+                                                :file (:file v)
+                                                :lines (body-lines (:file v))})
+                                             entries)
+                               edges (into []
+                                           (for [a members b members
+                                                 :when (neg? (compare (:slug a) (:slug b)))
+                                                 :let [la (:lines a) lb (:lines b)]
+                                                 :when (and (seq la) (seq lb))]
+                                           (let [d (line-levenshtein la lb)
+                                                 mx (max (count la) (count lb))]
+                                             {:a (:slug a) :b (:slug b)
+                                              :distance d
+                                              :similarity (double (- 1 (/ d mx)))})))
+                               sims (map :similarity edges)]
+                           {:cluster/key tk
+                            :members (mapv #(dissoc % :lines) members)
+                            :edges edges
+                            :mean-similarity (when (seq sims)
+                                               (double (/ (reduce + sims) (count sims))))})))
+                  by-title)
+            ts (now-iso)]
+        (fs/create-dirs projections-dir)
+        (doseq [c clusters]
+          (append-event! (cond-> {:event/id (uuid)
+                                  :event/type :doc/variant-cluster
+                                  :pass 2 :run/id run-id :ts ts
+                                  :method :line-levenshtein
+                                  :cluster/key (:cluster/key c)
+                                  :members (:members c)
+                                  :edges (:edges c)}
+                           (:mean-similarity c)
+                           (assoc :mean-similarity (:mean-similarity c)))))
+        (let [out (str (fs/path projections-dir "variants-v1.edn"))]
+          (spit out (with-out-str (pprint/pprint clusters)))
+          (append-event! {:event/id (uuid) :event/type :projection/computed
+                          :ts ts :projection :variants-v1 :run/id run-id
+                          :pass 2 :method :line-levenshtein
+                          :clusters (count clusters)
+                          :songs-in-clusters (reduce + (map (comp count :members) clusters))
+                          :index out})
+          (println "Pass 2:" (count clusters) "same-title clusters,"
+                   (reduce + (map (comp count :members) clusters)) "songs involved."
+                   "Index:" out))))))
+
 (let [cmd (first *command-line-args*)]
   (case cmd
     "ingest" (ingest!)
     "project" (project!)
     "stats" (stats!)
-    (println "usage: bb scripts/corpus.clj [ingest|project|stats]")))
+    "variants" (variants!)
+    (println "usage: bb scripts/corpus.clj [ingest|project|stats|variants]")))

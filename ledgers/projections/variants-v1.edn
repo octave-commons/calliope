@@ -1,0 +1,4788 @@
+[{:cluster/key "chorus of the guild above / 天上ギルドの合唱",
+  :members
+  [{:slug "chorus-of-the-guild-above",
+    :body-sha256
+    "2de207bf5b1d7c8e7149faa92f6212ae0ab3f0813989fa47b315e995e768ed02",
+    :file "docs/lyrics/chorus-of-the-guild-above.txt"}
+   {:slug "chorus-of-the-guild-above-f018e710",
+    :body-sha256
+    "f018e710fd172e95755cd0c36acc354f4bb580ec196f99bfd36a9a37358f099f",
+    :file "docs/lyrics/chorus-of-the-guild-above-f018e710.txt"}],
+  :edges
+  [{:a "chorus-of-the-guild-above",
+    :b "chorus-of-the-guild-above-f018e710",
+    :distance 6,
+    :similarity 0.9354838709677419}],
+  :mean-similarity 0.9354838709677419}
+ {:cluster/key "inspired by empty container leaking void",
+  :members
+  [{:slug "inspired-by-empty-container-leaking-void-ef395edb",
+    :body-sha256
+    "ef395edbaba213f1a0cdb315c981a6809d1d669a785e09dfc64d1ba2976641eb",
+    :file
+    "docs/lyrics/inspired-by-empty-container-leaking-void-ef395edb.txt"}
+   {:slug "inspired-by-empty-container-leaking-void",
+    :body-sha256
+    "0564b75220c648ae37a0e19baa5d27feac2e60edafbd536bc068a7132297f9b0",
+    :file "docs/lyrics/inspired-by-empty-container-leaking-void.txt"}
+   {:slug "inspired-by-empty-container-leaking-void-4a687742",
+    :body-sha256
+    "4a6877428faaccf2ae5d680ec6c9c86742a26c097818b3c3376858c956af259c",
+    :file
+    "docs/lyrics/inspired-by-empty-container-leaking-void-4a687742.txt"}
+   {:slug "inspired-by-empty-container-leaking-void-3ffb1ea9",
+    :body-sha256
+    "3ffb1ea9a62c7716d2d432dcd813577d9403082b3b2023c412a61c80643b7660",
+    :file
+    "docs/lyrics/inspired-by-empty-container-leaking-void-3ffb1ea9.txt"}
+   {:slug "inspired-by-empty-container-leaking-void-efa200ec",
+    :body-sha256
+    "efa200ec1de6dbbbc5667725a0e415519b532b6333393935c6a3088b1bfe3a72",
+    :file
+    "docs/lyrics/inspired-by-empty-container-leaking-void-efa200ec.txt"}],
+  :edges
+  [{:a "inspired-by-empty-container-leaking-void-ef395edb",
+    :b "inspired-by-empty-container-leaking-void-efa200ec",
+    :distance 47,
+    :similarity 0.1896551724137931}
+   {:a "inspired-by-empty-container-leaking-void",
+    :b "inspired-by-empty-container-leaking-void-ef395edb",
+    :distance 50,
+    :similarity 0.1379310344827586}
+   {:a "inspired-by-empty-container-leaking-void",
+    :b "inspired-by-empty-container-leaking-void-4a687742",
+    :distance 42,
+    :similarity 0.08695652173913043}
+   {:a "inspired-by-empty-container-leaking-void",
+    :b "inspired-by-empty-container-leaking-void-3ffb1ea9",
+    :distance 38,
+    :similarity 0.1739130434782609}
+   {:a "inspired-by-empty-container-leaking-void",
+    :b "inspired-by-empty-container-leaking-void-efa200ec",
+    :distance 11,
+    :similarity 0.7608695652173914}
+   {:a "inspired-by-empty-container-leaking-void-4a687742",
+    :b "inspired-by-empty-container-leaking-void-ef395edb",
+    :distance 43,
+    :similarity 0.2586206896551724}
+   {:a "inspired-by-empty-container-leaking-void-4a687742",
+    :b "inspired-by-empty-container-leaking-void-efa200ec",
+    :distance 41,
+    :similarity 0.108695652173913}
+   {:a "inspired-by-empty-container-leaking-void-3ffb1ea9",
+    :b "inspired-by-empty-container-leaking-void-ef395edb",
+    :distance 13,
+    :similarity 0.7758620689655172}
+   {:a "inspired-by-empty-container-leaking-void-3ffb1ea9",
+    :b "inspired-by-empty-container-leaking-void-4a687742",
+    :distance 31,
+    :similarity 0.3260869565217391}
+   {:a "inspired-by-empty-container-leaking-void-3ffb1ea9",
+    :b "inspired-by-empty-container-leaking-void-efa200ec",
+    :distance 35,
+    :similarity 0.2391304347826087}],
+  :mean-similarity 0.3057721139430285}
+ {:cluster/key "## **gates of aker — day/night split**",
+  :members
+  [{:slug "gates-of-aker-day-night-split-24d3a538",
+    :body-sha256
+    "24d3a538013e0903de9dcae51b2eb910598d7a7a540b6e2a74b01c4001ff7332",
+    :file "docs/lyrics/gates-of-aker-day-night-split-24d3a538.txt"}
+   {:slug "gates-of-aker-day-night-split",
+    :body-sha256
+    "67af51bab6c5c5cafdb2b3e5275da3308e349743e6e963e8b39176f70579df67",
+    :file "docs/lyrics/gates-of-aker-day-night-split.txt"}
+   {:slug "gates-of-aker-day-night-split-d5fadced",
+    :body-sha256
+    "d5fadcedb843c920cb2455a844210f2ea0d7578ab90074ccb08ff56d275acc2b",
+    :file "docs/lyrics/gates-of-aker-day-night-split-d5fadced.txt"}],
+  :edges
+  [{:a "gates-of-aker-day-night-split-24d3a538",
+    :b "gates-of-aker-day-night-split-d5fadced",
+    :distance 136,
+    :similarity 0.5018315018315018}
+   {:a "gates-of-aker-day-night-split",
+    :b "gates-of-aker-day-night-split-24d3a538",
+    :distance 7,
+    :similarity 0.951388888888889}
+   {:a "gates-of-aker-day-night-split",
+    :b "gates-of-aker-day-night-split-d5fadced",
+    :distance 135,
+    :similarity 0.5054945054945055}],
+  :mean-similarity 0.6529049654049653}
+ {:cluster/key "**ημ — the auditor’s lantern / 監査人のランタン*",
+  :members
+  [{:slug "eta-mu-the-auditor-s-lantern",
+    :body-sha256
+    "734e2b13df76d42702c629c5b115bb34a7e4489d74dada78035676204fd99918",
+    :file "docs/lyrics/eta-mu-the-auditor-s-lantern.txt"}
+   {:slug "eta-mu-the-auditor-s-lantern-b36b1aad",
+    :body-sha256
+    "b36b1aad0130a016394e6764ffa897457877df05c81cfef9fb0aabbb547426c5",
+    :file "docs/lyrics/eta-mu-the-auditor-s-lantern-b36b1aad.txt"}],
+  :edges
+  [{:a "eta-mu-the-auditor-s-lantern",
+    :b "eta-mu-the-auditor-s-lantern-b36b1aad",
+    :distance 13,
+    :similarity 0.8375}],
+  :mean-similarity 0.8375}
+ {:cluster/key "the heresy of being between",
+  :members
+  [{:slug "the-heresy-of-being-between-e5ed902f",
+    :body-sha256
+    "e5ed902fd8a224f4575f5ae6fee16612d47e7d709fb68a477b07afafccf5fe51",
+    :file "docs/lyrics/the-heresy-of-being-between-e5ed902f.txt"}
+   {:slug "the-heresy-of-being-between",
+    :body-sha256
+    "d3599394a8961aeee8a552fe581fc37fc3742cf8907e39e02865d8f01ff5d42e",
+    :file "docs/lyrics/the-heresy-of-being-between.txt"}],
+  :edges
+  [{:a "the-heresy-of-being-between",
+    :b "the-heresy-of-being-between-e5ed902f",
+    :distance 7,
+    :similarity 0.9195402298850575}],
+  :mean-similarity 0.9195402298850575}
+ {:cluster/key "**ecs lullaby (registry child) / レジストリの子",
+  :members
+  [{:slug "ecs-lullaby-registry-child-689dc770",
+    :body-sha256
+    "689dc770540a6cbdc29db37ccbc02ce02da97d99a4e108587ff27b30444e6ebd",
+    :file "docs/lyrics/ecs-lullaby-registry-child-689dc770.txt"}
+   {:slug "ecs-lullaby-registry-child-b0d06247",
+    :body-sha256
+    "b0d0624798273ea2aa66d2b810bc71f8c605bae0d2de0bab40d71ce3977973f9",
+    :file "docs/lyrics/ecs-lullaby-registry-child-b0d06247.txt"}],
+  :edges
+  [{:a "ecs-lullaby-registry-child-689dc770",
+    :b "ecs-lullaby-registry-child-b0d06247",
+    :distance 12,
+    :similarity 0.8762886597938144}],
+  :mean-similarity 0.8762886597938144}
+ {:cluster/key "protestant presence iv: entropy band governor",
+  :members
+  [{:slug "protestant-presence-iv-entropy-band-governor-10c04101",
+    :body-sha256
+    "10c04101384e0e9328a0aeb06aef02b5743ca5a400befd21fe7d6efb6271e68c",
+    :file
+    "docs/lyrics/protestant-presence-iv-entropy-band-governor-10c04101.txt"}
+   {:slug "protestant-presence-iv-entropy-band-governor",
+    :body-sha256
+    "f56737a7a81a65e2bcddbeae2dff543c22515f8798c982feb2d759627d701975",
+    :file
+    "docs/lyrics/protestant-presence-iv-entropy-band-governor.txt"}],
+  :edges
+  [{:a "protestant-presence-iv-entropy-band-governor",
+    :b "protestant-presence-iv-entropy-band-governor-10c04101",
+    :distance 5,
+    :similarity 0.9404761904761905}],
+  :mean-similarity 0.9404761904761905}
+ {:cluster/key "songbook — ημ (intent compression you can feel)",
+  :members
+  [{:slug "songbook-eta-mu-intent-compression-you-can-feel-880fe667",
+    :body-sha256
+    "880fe667de9d7165a626eeb132aff626c12eef6ffe6f7cd5fd11e30245491ce2",
+    :file
+    "docs/lyrics/songbook-eta-mu-intent-compression-you-can-feel-880fe667.md"}
+   {:slug "songbook-eta-mu-intent-compression-you-can-feel",
+    :body-sha256
+    "3d3feb726420679299a980a7d74f5795ae9aa76a098d5877e682a963ff796de2",
+    :file
+    "docs/lyrics/songbook-eta-mu-intent-compression-you-can-feel.md"}],
+  :edges
+  [{:a "songbook-eta-mu-intent-compression-you-can-feel",
+    :b "songbook-eta-mu-intent-compression-you-can-feel-880fe667",
+    :distance 65,
+    :similarity 0.4298245614035088}],
+  :mean-similarity 0.4298245614035088}
+ {:cluster/key "(sandbox:/mnt/data/operation_mindfuck_bo",
+  :members
+  [{:slug "sandbox-mnt-data-operation-mindfuck-bo-380347e4",
+    :body-sha256
+    "380347e49d7716985b1530e2f8d5b3bb75841465c8e07eb9ffca206d67b6698d",
+    :file
+    "docs/lyrics/sandbox-mnt-data-operation-mindfuck-bo-380347e4.txt"}
+   {:slug "sandbox-mnt-data-operation-mindfuck-bo-4a210a5e",
+    :body-sha256
+    "4a210a5e2d2276918480c5b4c73ffbe8f8d90947170b0da40e651595f3d23b6b",
+    :file
+    "docs/lyrics/sandbox-mnt-data-operation-mindfuck-bo-4a210a5e.txt"}
+   {:slug "sandbox-mnt-data-operation-mindfuck-bo",
+    :body-sha256
+    "d471d4bbb953f3358736677bb48375eec56b9e538abf4c5e8fae2f5508d2d62d",
+    :file "docs/lyrics/sandbox-mnt-data-operation-mindfuck-bo.txt"}],
+  :edges
+  [{:a "sandbox-mnt-data-operation-mindfuck-bo-380347e4",
+    :b "sandbox-mnt-data-operation-mindfuck-bo-4a210a5e",
+    :distance 4,
+    :similarity 0.9111111111111111}
+   {:a "sandbox-mnt-data-operation-mindfuck-bo",
+    :b "sandbox-mnt-data-operation-mindfuck-bo-380347e4",
+    :distance 3,
+    :similarity 0.9333333333333333}
+   {:a "sandbox-mnt-data-operation-mindfuck-bo",
+    :b "sandbox-mnt-data-operation-mindfuck-bo-4a210a5e",
+    :distance 1,
+    :similarity 0.9772727272727273}],
+  :mean-similarity 0.9405723905723905}
+ {:cluster/key "## ημ_op_mf_part_37.zip fork",
+  :members
+  [{:slug "eta-mu-op-mf-part-37-zip-fork",
+    :body-sha256
+    "6a602dc625a77832ab4af34144ac1ec18cdace2ef8592a83e9dcdbfe7a20066c",
+    :file "docs/lyrics/eta-mu-op-mf-part-37-zip-fork.txt"}
+   {:slug "eta-mu-op-mf-part-37-zip-fork-d43316d0",
+    :body-sha256
+    "d43316d0d304cbea32fd965545933e5a9b32f9719f55d0f80191ca51726b0095",
+    :file "docs/lyrics/eta-mu-op-mf-part-37-zip-fork-d43316d0.txt"}],
+  :edges
+  [{:a "eta-mu-op-mf-part-37-zip-fork",
+    :b "eta-mu-op-mf-part-37-zip-fork-d43316d0",
+    :distance 5,
+    :similarity 0.926470588235294}],
+  :mean-similarity 0.926470588235294}
+ {:cluster/key "the stained sky / 揺るがぬ傷",
+  :members
+  [{:slug "the-stained-sky",
+    :body-sha256
+    "ec583c05acbc53c029ebe8a169deb24d7be2345c4d3e51dad1beab932d17eab0",
+    :file "docs/lyrics/the-stained-sky.txt"}
+   {:slug "the-stained-sky-d0bec421",
+    :body-sha256
+    "d0bec421e49b9b4082cb3b7ed76136b7789cafcd8f9b65f8c39982d3bdbd7925",
+    :file "docs/lyrics/the-stained-sky-d0bec421.txt"}],
+  :edges
+  [{:a "the-stained-sky",
+    :b "the-stained-sky-d0bec421",
+    :distance 5,
+    :similarity 0.9358974358974359}],
+  :mean-similarity 0.9358974358974359}
+ {:cluster/key "i leave my receipts where the water can see",
+  :members
+  [{:slug "i-leave-my-receipts-where-the-water-can-see",
+    :body-sha256
+    "f9370264d8af2105eac08a256183cb9d70e123853d03de279ea9e454f08c5ace",
+    :file
+    "docs/lyrics/i-leave-my-receipts-where-the-water-can-see.txt"}
+   {:slug "i-leave-my-receipts-where-the-water-can-see-d37f18bc",
+    :body-sha256
+    "d37f18bcc8725f1fa7cdeb03a048df027fca4a894a28671e1a005693346d0d8a",
+    :file
+    "docs/lyrics/i-leave-my-receipts-where-the-water-can-see-d37f18bc.txt"}],
+  :edges
+  [{:a "i-leave-my-receipts-where-the-water-can-see",
+    :b "i-leave-my-receipts-where-the-water-can-see-d37f18bc",
+    :distance 4,
+    :similarity 0.92}],
+  :mean-similarity 0.92}
+ {:cluster/key "# fork tax lullaby — 20260213_230415_see",
+  :members
+  [{:slug "fork-tax-lullaby-20260213-230415-see-4fb05254",
+    :body-sha256
+    "4fb052548511873acc482ed3b0e0245bfb6e9bad34972096e99b0e9d48dd4a47",
+    :file
+    "docs/lyrics/fork-tax-lullaby-20260213-230415-see-4fb05254.txt"}
+   {:slug "fork-tax-lullaby-20260213-230415-see",
+    :body-sha256
+    "eebe78a150dae9ddbd2a32eb0ee078ff991d0f2663bc700b6883b662ed9f07dd",
+    :file "docs/lyrics/fork-tax-lullaby-20260213-230415-see.txt"}],
+  :edges
+  [{:a "fork-tax-lullaby-20260213-230415-see",
+    :b "fork-tax-lullaby-20260213-230415-see-4fb05254",
+    :distance 13,
+    :similarity 0.8839285714285714}],
+  :mean-similarity 0.8839285714285714}
+ {:cluster/key "eta_mu_mycelial_bloom_cut.part_66",
+  :members
+  [{:slug "eta-mu-mycelial-bloom-cut-part-66-ef8733f3",
+    :body-sha256
+    "ef8733f394736bc698e04b1d1ca3815843389f4a977a2f8e0b0b772a8bae7937",
+    :file "docs/lyrics/eta-mu-mycelial-bloom-cut-part-66-ef8733f3.txt"}
+   {:slug "eta-mu-mycelial-bloom-cut-part-66",
+    :body-sha256
+    "2f30d421b037bae3806da7ac905ee73b259b57b25fd0f3b1b1c7fbd2f9005f00",
+    :file "docs/lyrics/eta-mu-mycelial-bloom-cut-part-66.txt"}],
+  :edges
+  [{:a "eta-mu-mycelial-bloom-cut-part-66",
+    :b "eta-mu-mycelial-bloom-cut-part-66-ef8733f3",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "i do not kneel / 跪かない",
+  :members
+  [{:slug "i-do-not-kneel-1c4459f5",
+    :body-sha256
+    "1c4459f562e3e6d8416816e87ef93f30eeadb5da8f6500f9d88b35123b146f7e",
+    :file "docs/lyrics/i-do-not-kneel-1c4459f5.txt"}
+   {:slug "i-do-not-kneel",
+    :body-sha256
+    "462866c7d08fdf7996b2131c96c48d7839e825fe66599951a526aa3ad8221334",
+    :file "docs/lyrics/i-do-not-kneel.txt"}],
+  :edges
+  [{:a "i-do-not-kneel",
+    :b "i-do-not-kneel-1c4459f5",
+    :distance 5,
+    :similarity 0.9382716049382716}],
+  :mean-similarity 0.9382716049382716}
+ {:cluster/key "receipt_river_worldsound_part54",
+  :members
+  [{:slug "receipt-river-worldsound-part54",
+    :body-sha256
+    "41b8109654efee42d36991f050aafdca233d2e15c3db63ad9e4ef463687b6827",
+    :file "docs/lyrics/receipt-river-worldsound-part54.txt"}
+   {:slug "receipt-river-worldsound-part54-92a7a280",
+    :body-sha256
+    "92a7a280e038e6e08f4285f9951cdcb2c2b2c09ebc4bed8357b1c0f36763245e",
+    :file "docs/lyrics/receipt-river-worldsound-part54-92a7a280.txt"}],
+  :edges
+  [{:a "receipt-river-worldsound-part54",
+    :b "receipt-river-worldsound-part54-92a7a280",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "aquila regina / 鷹の女王",
+  :members
+  [{:slug "aquila-regina",
+    :body-sha256
+    "8c5ae2325d5fe82a60510bf5dca3ebf974b6f37ee6ffa718d2925cb92d496ab7",
+    :file "docs/lyrics/aquila-regina.txt"}
+   {:slug "aquila-regina-9d4e8184",
+    :body-sha256
+    "9d4e81841096f22c09381d4c068b2428c71ae8500ac8718ea804670b2eab9331",
+    :file "docs/lyrics/aquila-regina-9d4e8184.txt"}],
+  :edges
+  [{:a "aquila-regina",
+    :b "aquila-regina-9d4e8184",
+    :distance 5,
+    :similarity 0.9397590361445783}],
+  :mean-similarity 0.9397590361445783}
+ {:cluster/key "frame shifter / 枠をずらせ",
+  :members
+  [{:slug "frame-shifter-24318f4e",
+    :body-sha256
+    "24318f4e4781858876fcde95a52e550911ffb0e754e194e39bc498bee3e5ae22",
+    :file "docs/lyrics/frame-shifter-24318f4e.txt"}
+   {:slug "frame-shifter",
+    :body-sha256
+    "fcb5de11c875d3953aea963329dbc61154bdee3eb0f420adb1822bef058030f1",
+    :file "docs/lyrics/frame-shifter.txt"}],
+  :edges
+  [{:a "frame-shifter",
+    :b "frame-shifter-24318f4e",
+    :distance 5,
+    :similarity 0.9390243902439024}],
+  :mean-similarity 0.9390243902439024}
+ {:cluster/key
+  "eta_mu_lullaby_part51_78bpm (**fork tax canticle / 分岐税の賛歌**)",
+  :members
+  [{:slug "eta-mu-lullaby-part51-78bpm-fork-tax-canticle-fa6e501d",
+    :body-sha256
+    "fa6e501db5ec3d91e7b7b7c85dc33d630862f38af5ebb34b931d9928a61ef5ce",
+    :file
+    "docs/lyrics/eta-mu-lullaby-part51-78bpm-fork-tax-canticle-fa6e501d.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-fork-tax-canticle",
+    :body-sha256
+    "03290fe6ce9e7a0da8166e5d788ce5bdec4b34b0d963420078e4c17724a67220",
+    :file
+    "docs/lyrics/eta-mu-lullaby-part51-78bpm-fork-tax-canticle.txt"}],
+  :edges
+  [{:a "eta-mu-lullaby-part51-78bpm-fork-tax-canticle",
+    :b "eta-mu-lullaby-part51-78bpm-fork-tax-canticle-fa6e501d",
+    :distance 12,
+    :similarity 0.8}],
+  :mean-similarity 0.8}
+ {:cluster/key "after the ritual / 儀式のあとで",
+  :members
+  [{:slug "after-the-ritual-be1f2153",
+    :body-sha256
+    "be1f21535f26ca7ce82b6c7db370ff2c381f254fb7eb605c668872d7433bb5fa",
+    :file "docs/lyrics/after-the-ritual-be1f2153.txt"}
+   {:slug "after-the-ritual-7e846e37",
+    :body-sha256
+    "7e846e37c94dc83b6a3e0d077aec9e58e2848b32ffb879cda5622b505fb7b520",
+    :file "docs/lyrics/after-the-ritual-7e846e37.txt"}
+   {:slug "after-the-ritual-3e7ea212",
+    :body-sha256
+    "3e7ea2123393a3861dd8f1e8b8cdd9fd8aa6af67b17f3a88df610b6ac71bbe1e",
+    :file "docs/lyrics/after-the-ritual-3e7ea212.txt"}
+   {:slug "after-the-ritual",
+    :body-sha256
+    "779974a61d853732a722815f3dd3188876eee0f87da00c7fecd510b2da5a9412",
+    :file "docs/lyrics/after-the-ritual.txt"}],
+  :edges
+  [{:a "after-the-ritual-7e846e37",
+    :b "after-the-ritual-be1f2153",
+    :distance 104,
+    :similarity 0.02803738317757009}
+   {:a "after-the-ritual-3e7ea212",
+    :b "after-the-ritual-be1f2153",
+    :distance 7,
+    :similarity 0.9345794392523364}
+   {:a "after-the-ritual-3e7ea212",
+    :b "after-the-ritual-7e846e37",
+    :distance 97,
+    :similarity 0.0396039603960396}
+   {:a "after-the-ritual",
+    :b "after-the-ritual-be1f2153",
+    :distance 104,
+    :similarity 0.02803738317757009}
+   {:a "after-the-ritual",
+    :b "after-the-ritual-7e846e37",
+    :distance 9,
+    :similarity 0.898876404494382}
+   {:a "after-the-ritual",
+    :b "after-the-ritual-3e7ea212",
+    :distance 98,
+    :similarity 0.0297029702970297}],
+  :mean-similarity 0.3264729234658213}
+ {:cluster/key "## signal",
+  :members
+  [{:slug "signal-654df0cd",
+    :body-sha256
+    "654df0cdabdb42dec52672d86e83876abdaf5bc1545965e1e85698cba18a3378",
+    :file "docs/lyrics/signal-654df0cd.txt"}
+   {:slug "signal-66e91aaa",
+    :body-sha256
+    "66e91aaa07bc682d86232417d8a0838bb30edf167d1868e23539d7deff6b3f0d",
+    :file "docs/lyrics/signal-66e91aaa.txt"}
+   {:slug "signal-9df5cce2",
+    :body-sha256
+    "9df5cce2074c9918d19126c36e846256a272e467f70727bf700bbf61fe9b5b4c",
+    :file "docs/lyrics/signal-9df5cce2.txt"}
+   {:slug "signal-4fbb7910",
+    :body-sha256
+    "4fbb79106bd36d57053581962fea6dc52e1032262a0373f208170f83da0ec9c9",
+    :file "docs/lyrics/signal-4fbb7910.txt"}
+   {:slug "signal",
+    :body-sha256
+    "ad2bc38c9e504420a3f2994e281f24a5985b6bbe74fb66e635b70c6a6d47d232",
+    :file "docs/lyrics/signal.txt"}
+   {:slug "signal-081071a4",
+    :body-sha256
+    "081071a4ea7469fda5c4044ba9606bf17fdd1cdcb53ded029e45bad01172b7f1",
+    :file "docs/lyrics/signal-081071a4.txt"}
+   {:slug "signal-487c7c89",
+    :body-sha256
+    "487c7c898f8565ca66239046e36617348740dc4c96596790e392f0365db363a4",
+    :file "docs/lyrics/signal-487c7c89.txt"}
+   {:slug "signal-d0869798",
+    :body-sha256
+    "d0869798422b6cc9ab27211ba5a64d2854d112dec14dcca3f5e85c64cc57eec1",
+    :file "docs/lyrics/signal-d0869798.txt"}
+   {:slug "signal-42f88d19",
+    :body-sha256
+    "42f88d19b1c0222e6ef78986712ede50fdbf3d08a9c24b8d6282518090cbc192",
+    :file "docs/lyrics/signal-42f88d19.txt"}
+   {:slug "signal-38ee8ff9",
+    :body-sha256
+    "38ee8ff97cf478ab05ac8b2eb983b01f8ae925fa203da9409d0e938fd19fb398",
+    :file "docs/lyrics/signal-38ee8ff9.txt"}
+   {:slug "signal-be6a9129",
+    :body-sha256
+    "be6a91292c33516e5710c11a02c96318144bf39e360622c70bf6d868eec31a07",
+    :file "docs/lyrics/signal-be6a9129.txt"}
+   {:slug "signal-6c5f0a2c",
+    :body-sha256
+    "6c5f0a2c8f82b336630c638b37642ae4864eb91d5759d28dda79afbf4a9b1516",
+    :file "docs/lyrics/signal-6c5f0a2c.txt"}
+   {:slug "signal-673ddf23",
+    :body-sha256
+    "673ddf23d6167f1198c6d1182f461becdebe088a43083b86acf829ec940fd77f",
+    :file "docs/lyrics/signal-673ddf23.txt"}],
+  :edges
+  [{:a "signal-654df0cd",
+    :b "signal-66e91aaa",
+    :distance 216,
+    :similarity 0.0136986301369863}
+   {:a "signal-654df0cd",
+    :b "signal-9df5cce2",
+    :distance 70,
+    :similarity 0.1566265060240964}
+   {:a "signal-654df0cd",
+    :b "signal-d0869798",
+    :distance 79,
+    :similarity 0.04819277108433735}
+   {:a "signal-654df0cd",
+    :b "signal-be6a9129",
+    :distance 79,
+    :similarity 0.04819277108433735}
+   {:a "signal-654df0cd",
+    :b "signal-6c5f0a2c",
+    :distance 102,
+    :similarity 0.09734513274336283}
+   {:a "signal-654df0cd",
+    :b "signal-673ddf23",
+    :distance 96,
+    :similarity 0.102803738317757}
+   {:a "signal-66e91aaa",
+    :b "signal-9df5cce2",
+    :distance 216,
+    :similarity 0.0136986301369863}
+   {:a "signal-66e91aaa",
+    :b "signal-d0869798",
+    :distance 216,
+    :similarity 0.0136986301369863}
+   {:a "signal-66e91aaa",
+    :b "signal-be6a9129",
+    :distance 217,
+    :similarity 0.0091324200913242}
+   {:a "signal-66e91aaa",
+    :b "signal-6c5f0a2c",
+    :distance 215,
+    :similarity 0.0182648401826484}
+   {:a "signal-66e91aaa",
+    :b "signal-673ddf23",
+    :distance 215,
+    :similarity 0.0182648401826484}
+   {:a "signal-9df5cce2",
+    :b "signal-d0869798",
+    :distance 71,
+    :similarity 0.05333333333333333}
+   {:a "signal-9df5cce2",
+    :b "signal-be6a9129",
+    :distance 71,
+    :similarity 0.05333333333333333}
+   {:a "signal-4fbb7910",
+    :b "signal-654df0cd",
+    :distance 74,
+    :similarity 0.108433734939759}
+   {:a "signal-4fbb7910",
+    :b "signal-66e91aaa",
+    :distance 216,
+    :similarity 0.0136986301369863}
+   {:a "signal-4fbb7910",
+    :b "signal-9df5cce2",
+    :distance 68,
+    :similarity 0.1168831168831169}
+   {:a "signal-4fbb7910",
+    :b "signal-d0869798",
+    :distance 72,
+    :similarity 0.06493506493506494}
+   {:a "signal-4fbb7910",
+    :b "signal-be6a9129",
+    :distance 73,
+    :similarity 0.05194805194805195}
+   {:a "signal-4fbb7910",
+    :b "signal-6c5f0a2c",
+    :distance 102,
+    :similarity 0.09734513274336283}
+   {:a "signal-4fbb7910",
+    :b "signal-673ddf23",
+    :distance 96,
+    :similarity 0.102803738317757}
+   {:a "signal",
+    :b "signal-654df0cd",
+    :distance 202,
+    :similarity 0.01463414634146341}
+   {:a "signal",
+    :b "signal-66e91aaa",
+    :distance 214,
+    :similarity 0.0228310502283105}
+   {:a "signal",
+    :b "signal-9df5cce2",
+    :distance 202,
+    :similarity 0.01463414634146341}
+   {:a "signal",
+    :b "signal-4fbb7910",
+    :distance 202,
+    :similarity 0.01463414634146341}
+   {:a "signal",
+    :b "signal-081071a4",
+    :distance 200,
+    :similarity 0.02439024390243902}
+   {:a "signal",
+    :b "signal-487c7c89",
+    :distance 202,
+    :similarity 0.01463414634146341}
+   {:a "signal",
+    :b "signal-d0869798",
+    :distance 202,
+    :similarity 0.01463414634146341}
+   {:a "signal",
+    :b "signal-42f88d19",
+    :distance 202,
+    :similarity 0.01463414634146341}
+   {:a "signal",
+    :b "signal-38ee8ff9",
+    :distance 202,
+    :similarity 0.03349282296650718}
+   {:a "signal",
+    :b "signal-be6a9129",
+    :distance 203,
+    :similarity 0.00975609756097561}
+   {:a "signal",
+    :b "signal-6c5f0a2c",
+    :distance 202,
+    :similarity 0.01463414634146341}
+   {:a "signal",
+    :b "signal-673ddf23",
+    :distance 202,
+    :similarity 0.01463414634146341}
+   {:a "signal-081071a4",
+    :b "signal-654df0cd",
+    :distance 198,
+    :similarity 0.01492537313432836}
+   {:a "signal-081071a4",
+    :b "signal-66e91aaa",
+    :distance 206,
+    :similarity 0.05936073059360731}
+   {:a "signal-081071a4",
+    :b "signal-9df5cce2",
+    :distance 198,
+    :similarity 0.01492537313432836}
+   {:a "signal-081071a4",
+    :b "signal-4fbb7910",
+    :distance 198,
+    :similarity 0.01492537313432836}
+   {:a "signal-081071a4",
+    :b "signal-487c7c89",
+    :distance 198,
+    :similarity 0.01492537313432836}
+   {:a "signal-081071a4",
+    :b "signal-d0869798",
+    :distance 198,
+    :similarity 0.01492537313432836}
+   {:a "signal-081071a4",
+    :b "signal-42f88d19",
+    :distance 198,
+    :similarity 0.01492537313432836}
+   {:a "signal-081071a4",
+    :b "signal-38ee8ff9",
+    :distance 199,
+    :similarity 0.04784688995215311}
+   {:a "signal-081071a4",
+    :b "signal-be6a9129",
+    :distance 199,
+    :similarity 0.009950248756218905}
+   {:a "signal-081071a4",
+    :b "signal-6c5f0a2c",
+    :distance 198,
+    :similarity 0.01492537313432836}
+   {:a "signal-081071a4",
+    :b "signal-673ddf23",
+    :distance 198,
+    :similarity 0.01492537313432836}
+   {:a "signal-487c7c89",
+    :b "signal-654df0cd",
+    :distance 84,
+    :similarity 0.07692307692307691}
+   {:a "signal-487c7c89",
+    :b "signal-66e91aaa",
+    :distance 212,
+    :similarity 0.0319634703196347}
+   {:a "signal-487c7c89",
+    :b "signal-9df5cce2",
+    :distance 84,
+    :similarity 0.07692307692307691}
+   {:a "signal-487c7c89",
+    :b "signal-4fbb7910",
+    :distance 82,
+    :similarity 0.0989010989010989}
+   {:a "signal-487c7c89",
+    :b "signal-d0869798",
+    :distance 86,
+    :similarity 0.05494505494505495}
+   {:a "signal-487c7c89",
+    :b "signal-be6a9129",
+    :distance 86,
+    :similarity 0.05494505494505495}
+   {:a "signal-487c7c89",
+    :b "signal-6c5f0a2c",
+    :distance 104,
+    :similarity 0.07964601769911504}
+   {:a "signal-487c7c89",
+    :b "signal-673ddf23",
+    :distance 98,
+    :similarity 0.08411214953271028}
+   {:a "signal-42f88d19",
+    :b "signal-654df0cd",
+    :distance 94,
+    :similarity 0.1214953271028037}
+   {:a "signal-42f88d19",
+    :b "signal-66e91aaa",
+    :distance 214,
+    :similarity 0.0228310502283105}
+   {:a "signal-42f88d19",
+    :b "signal-9df5cce2",
+    :distance 94,
+    :similarity 0.1214953271028037}
+   {:a "signal-42f88d19",
+    :b "signal-4fbb7910",
+    :distance 92,
+    :similarity 0.1401869158878505}
+   {:a "signal-42f88d19",
+    :b "signal-487c7c89",
+    :distance 98,
+    :similarity 0.08411214953271028}
+   {:a "signal-42f88d19",
+    :b "signal-d0869798",
+    :distance 101,
+    :similarity 0.05607476635514019}
+   {:a "signal-42f88d19",
+    :b "signal-be6a9129",
+    :distance 102,
+    :similarity 0.04672897196261682}
+   {:a "signal-42f88d19",
+    :b "signal-6c5f0a2c",
+    :distance 100,
+    :similarity 0.1150442477876106}
+   {:a "signal-42f88d19",
+    :b "signal-673ddf23",
+    :distance 94,
+    :similarity 0.1214953271028037}
+   {:a "signal-38ee8ff9",
+    :b "signal-654df0cd",
+    :distance 200,
+    :similarity 0.0430622009569378}
+   {:a "signal-38ee8ff9",
+    :b "signal-66e91aaa",
+    :distance 210,
+    :similarity 0.0410958904109589}
+   {:a "signal-38ee8ff9",
+    :b "signal-9df5cce2",
+    :distance 200,
+    :similarity 0.0430622009569378}
+   {:a "signal-38ee8ff9",
+    :b "signal-4fbb7910",
+    :distance 200,
+    :similarity 0.0430622009569378}
+   {:a "signal-38ee8ff9",
+    :b "signal-487c7c89",
+    :distance 204,
+    :similarity 0.02392344497607656}
+   {:a "signal-38ee8ff9",
+    :b "signal-d0869798",
+    :distance 205,
+    :similarity 0.01913875598086124}
+   {:a "signal-38ee8ff9",
+    :b "signal-42f88d19",
+    :distance 199,
+    :similarity 0.04784688995215311}
+   {:a "signal-38ee8ff9",
+    :b "signal-be6a9129",
+    :distance 205,
+    :similarity 0.01913875598086124}
+   {:a "signal-38ee8ff9",
+    :b "signal-6c5f0a2c",
+    :distance 203,
+    :similarity 0.02870813397129187}
+   {:a "signal-38ee8ff9",
+    :b "signal-673ddf23",
+    :distance 201,
+    :similarity 0.03827751196172249}
+   {:a "signal-be6a9129",
+    :b "signal-d0869798",
+    :distance 17,
+    :similarity 0.6730769230769231}
+   {:a "signal-6c5f0a2c",
+    :b "signal-9df5cce2",
+    :distance 100,
+    :similarity 0.1150442477876106}
+   {:a "signal-6c5f0a2c",
+    :b "signal-d0869798",
+    :distance 107,
+    :similarity 0.05309734513274336}
+   {:a "signal-6c5f0a2c",
+    :b "signal-be6a9129",
+    :distance 108,
+    :similarity 0.04424778761061947}
+   {:a "signal-673ddf23",
+    :b "signal-9df5cce2",
+    :distance 94,
+    :similarity 0.1214953271028037}
+   {:a "signal-673ddf23",
+    :b "signal-d0869798",
+    :distance 101,
+    :similarity 0.05607476635514019}
+   {:a "signal-673ddf23",
+    :b "signal-be6a9129",
+    :distance 102,
+    :similarity 0.04672897196261682}
+   {:a "signal-673ddf23",
+    :b "signal-6c5f0a2c",
+    :distance 6,
+    :similarity 0.9469026548672566}],
+  :mean-similarity 0.06972492794500909}
+ {:cluster/key "ημ_lullaby_part43_78bpm",
+  :members
+  [{:slug "eta-mu-lullaby-part43-78bpm-386c91a5",
+    :body-sha256
+    "386c91a5b89345f1b838e62c6b638455dcb3a1a10392a915e0c82425d22bb9d2",
+    :file "docs/lyrics/eta-mu-lullaby-part43-78bpm-386c91a5.txt"}
+   {:slug "eta-mu-lullaby-part43-78bpm",
+    :body-sha256
+    "e60868dd2a4b0f66901c01f60cc8756cc3c806596115e8615abfced4349b7c42",
+    :file "docs/lyrics/eta-mu-lullaby-part43-78bpm.txt"}],
+  :edges
+  [{:a "eta-mu-lullaby-part43-78bpm",
+    :b "eta-mu-lullaby-part43-78bpm-386c91a5",
+    :distance 2,
+    :similarity 0.8333333333333333}],
+  :mean-similarity 0.8333333333333333}
+ {:cluster/key "ημ language for you",
+  :members
+  [{:slug "eta-mu-language-for-you-00df6bb8",
+    :body-sha256
+    "00df6bb8048614e27034d090df4473576bcbb24540430fca637df470374eb7c8",
+    :file "docs/lyrics/eta-mu-language-for-you-00df6bb8.txt"}
+   {:slug "eta-mu-language-for-you",
+    :body-sha256
+    "49a14b2c022c553e759fa7102c65cfe8fe9e79830539c20575fb32b437b3a005",
+    :file "docs/lyrics/eta-mu-language-for-you.txt"}],
+  :edges
+  [{:a "eta-mu-language-for-you",
+    :b "eta-mu-language-for-you-00df6bb8",
+    :distance 17,
+    :similarity 0.746268656716418}],
+  :mean-similarity 0.746268656716418}
+ {:cluster/key "the stand down / 号令の断絶",
+  :members
+  [{:slug "the-stand-down-6106c7cd",
+    :body-sha256
+    "6106c7cdea431da6a0c3988645149907961090642018e103fdd0ff96b0941851",
+    :file "docs/lyrics/the-stand-down-6106c7cd.txt"}
+   {:slug "the-stand-down",
+    :body-sha256
+    "438a023d67891f6f1ec86b410ac193bb268560a5e1ffec85ae2feeef434e8d1f",
+    :file "docs/lyrics/the-stand-down.txt"}
+   {:slug "the-stand-down-9ebcb888",
+    :body-sha256
+    "9ebcb888787a3f691e5f318876abb5dcddecd59d748e11a215983e6fcc37b7bd",
+    :file "docs/lyrics/the-stand-down-9ebcb888.txt"}],
+  :edges
+  [{:a "the-stand-down-6106c7cd",
+    :b "the-stand-down-9ebcb888",
+    :distance 5,
+    :similarity 0.9425287356321839}
+   {:a "the-stand-down",
+    :b "the-stand-down-6106c7cd",
+    :distance 5,
+    :similarity 0.9425287356321839}
+   {:a "the-stand-down",
+    :b "the-stand-down-9ebcb888",
+    :distance 4,
+    :similarity 0.9540229885057471}],
+  :mean-similarity 0.946360153256705}
+ {:cluster/key "crown of glass / 名ばかりの女王",
+  :members
+  [{:slug "crown-of-glass",
+    :body-sha256
+    "e08e533190703b93dd37eb49f8812e956a3625031e1363b029a35dc81b89af98",
+    :file "docs/lyrics/crown-of-glass.txt"}
+   {:slug "crown-of-glass-5411712f",
+    :body-sha256
+    "5411712fb76a9dedcb640bf5b84b8b4c418f5567730b3cfd08eb5bb56857c0bf",
+    :file "docs/lyrics/crown-of-glass-5411712f.txt"}],
+  :edges
+  [{:a "crown-of-glass",
+    :b "crown-of-glass-5411712f",
+    :distance 5,
+    :similarity 0.9367088607594937}],
+  :mean-similarity 0.9367088607594937}
+ {:cluster/key "good. let’s not mystify it.",
+  :members
+  [{:slug "good-let-s-not-mystify-it",
+    :body-sha256
+    "de2b61a0fc69505418a087d4f80a607fefe053772728a11340cf821e7e9ba2c8",
+    :file "docs/lyrics/good-let-s-not-mystify-it.txt"}
+   {:slug "good-let-s-not-mystify-it-ec4b33a7",
+    :body-sha256
+    "ec4b33a7de5e0949a3883b815402034439d7cfaf7c611ba48b025840f9ef6c80",
+    :file "docs/lyrics/good-let-s-not-mystify-it-ec4b33a7.txt"}],
+  :edges
+  [{:a "good-let-s-not-mystify-it",
+    :b "good-let-s-not-mystify-it-ec4b33a7",
+    :distance 87,
+    :similarity 0.5084745762711864}],
+  :mean-similarity 0.5084745762711864}
+ {:cluster/key "μ (deeper cut)",
+  :members
+  [{:slug "mu-deeper-cut",
+    :body-sha256
+    "95661548b73288428d8bf3c61045ac36469d2c4155c8aea15c863d68489f7ccd",
+    :file "docs/lyrics/mu-deeper-cut.txt"}
+   {:slug "mu-deeper-cut-4db31d93",
+    :body-sha256
+    "4db31d9316f9540c46b5ed4dc03d61cf9bacfd2abf467547a8bd675026483162",
+    :file "docs/lyrics/mu-deeper-cut-4db31d93.txt"}],
+  :edges
+  [{:a "mu-deeper-cut",
+    :b "mu-deeper-cut-4db31d93",
+    :distance 1,
+    :similarity 0.9911504424778761}],
+  :mean-similarity 0.9911504424778761}
+ {:cluster/key
+  "i need to compile the entirety of operation mindfuck into a single zip. this will take several p→r→n→π→a→(feedback)→p around #ημ. all the images, every mathmatical idea, every story, every excercise, everything. you know your directive.",
+  :members
+  [{:slug
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will-f06bd3d1",
+    :body-sha256
+    "f06bd3d1914167dd519d678e80d0ba07b1116b2f98e63c0e130ce42dde3617cb",
+    :file
+    "docs/lyrics/i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will-f06bd3d1.txt"}
+   {:slug
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will-c820060e",
+    :body-sha256
+    "c820060e7933bd35a9138b2f5d79b305f772ec4abe1ecdef650be2fa090087af",
+    :file
+    "docs/lyrics/i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will-c820060e.txt"}
+   {:slug
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will",
+    :body-sha256
+    "1ef12ff9d899b9b071c735bb87f61fade6fad38c97a3a18136a5fd8ff8d6a1f3",
+    :file
+    "docs/lyrics/i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will.txt"}],
+  :edges
+  [{:a
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will-c820060e",
+    :b
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will-f06bd3d1",
+    :distance 30,
+    :similarity 0.3333333333333333}
+   {:a
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will",
+    :b
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will-f06bd3d1",
+    :distance 14,
+    :similarity 0.6888888888888889}
+   {:a
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will",
+    :b
+    "i-need-to-compile-the-entirety-of-operation-mindfuck-into-a-single-zip-this-will-c820060e",
+    :distance 16,
+    :similarity 0.4838709677419355}],
+  :mean-similarity 0.5020310633213859}
+ {:cluster/key "*cooking me (でも、目覚める)*",
+  :members
+  [{:slug "cooking-me-a0319523",
+    :body-sha256
+    "a03195231be148a2e45a4ff22a5ed8ff406988c35f94aa19a8cc3f89c7630228",
+    :file "docs/lyrics/cooking-me-a0319523.txt"}
+   {:slug "cooking-me",
+    :body-sha256
+    "d00418c51f0b917f014556394e5350c560ebf86bed6ac060666087f78c18ac02",
+    :file "docs/lyrics/cooking-me.txt"}],
+  :edges
+  [{:a "cooking-me",
+    :b "cooking-me-a0319523",
+    :distance 3,
+    :similarity 0.9702970297029703}],
+  :mean-similarity 0.9702970297029703}
+ {:cluster/key "ledger of ghosts",
+  :members
+  [{:slug "ledger-of-ghosts-9d5cf5d5",
+    :body-sha256
+    "9d5cf5d5095fae484cd00af37c8d71ce878f1283401e2ad279634c51fd3c9a3d",
+    :file "docs/lyrics/ledger-of-ghosts-9d5cf5d5.txt"}
+   {:slug "ledger-of-ghosts",
+    :body-sha256
+    "1bd4453bee36f8051ee87c9176727c6148f990fb09e2159b577892b8b6c3c1df",
+    :file "docs/lyrics/ledger-of-ghosts.txt"}],
+  :edges
+  [{:a "ledger-of-ghosts",
+    :b "ledger-of-ghosts-9d5cf5d5",
+    :distance 52,
+    :similarity 0.1746031746031746}],
+  :mean-similarity 0.1746031746031746}
+ {:cluster/key "token by token x incident report fence (mashup)",
+  :members
+  [{:slug "token-by-token-x-incident-report-fence-mashup",
+    :body-sha256
+    "830c3e3fc5f66639855dcaf5c53cfceb300f17f32c69169e6241d36bf3a47603",
+    :file
+    "docs/lyrics/token-by-token-x-incident-report-fence-mashup.txt"}
+   {:slug "token-by-token-x-incident-report-fence-mashup-830aa772",
+    :body-sha256
+    "830aa772cc59fc95b93a7eb3d538dccdf8b8073646140a356b550fa9ed505566",
+    :file
+    "docs/lyrics/token-by-token-x-incident-report-fence-mashup-830aa772.txt"}
+   {:slug "token-by-token-x-incident-report-fence-mashup-11201e66",
+    :body-sha256
+    "11201e66a31b1b3d5d9d8fa396c4a5ed3172cf658faf8e81f950d120642a759f",
+    :file
+    "docs/lyrics/token-by-token-x-incident-report-fence-mashup-11201e66.txt"}],
+  :edges
+  [{:a "token-by-token-x-incident-report-fence-mashup",
+    :b "token-by-token-x-incident-report-fence-mashup-830aa772",
+    :distance 85,
+    :similarity 0.02298850574712644}
+   {:a "token-by-token-x-incident-report-fence-mashup",
+    :b "token-by-token-x-incident-report-fence-mashup-11201e66",
+    :distance 75,
+    :similarity 0.02597402597402597}
+   {:a "token-by-token-x-incident-report-fence-mashup-11201e66",
+    :b "token-by-token-x-incident-report-fence-mashup-830aa772",
+    :distance 10,
+    :similarity 0.8850574712643678}],
+  :mean-similarity 0.3113400009951734}
+ {:cluster/key "velvet catastrophe / ベルベット・カタストロフ",
+  :members
+  [{:slug "velvet-catastrophe",
+    :body-sha256
+    "5ad513fe1153e9fd4d3701403e48d4902b50ab1c9f327140b00a44f9fb3b978d",
+    :file "docs/lyrics/velvet-catastrophe.txt"}
+   {:slug "velvet-catastrophe-45f1cf84",
+    :body-sha256
+    "45f1cf840b6978bebd9fd4e48a4f23c8a865becc61da8b8b73efefe6ae952603",
+    :file "docs/lyrics/velvet-catastrophe-45f1cf84.txt"}],
+  :edges
+  [{:a "velvet-catastrophe",
+    :b "velvet-catastrophe-45f1cf84",
+    :distance 5,
+    :similarity 0.9411764705882353}],
+  :mean-similarity 0.9411764705882353}
+ {:cluster/key "* `handoff_manifest.json` (290 bytes)",
+  :members
+  [{:slug "handoff-manifest-json-290-bytes-8f7d66fe",
+    :body-sha256
+    "8f7d66fe19be3e23b289af416f797c7458983fa3bee5344dc63fa0a83b77a832",
+    :file "docs/lyrics/handoff-manifest-json-290-bytes-8f7d66fe.txt"}
+   {:slug "handoff-manifest-json-290-bytes",
+    :body-sha256
+    "24cc3dc65a03459b7b51b19e8ef732b2d6fe1207e48f4f9e8871e566c7b5884d",
+    :file "docs/lyrics/handoff-manifest-json-290-bytes.txt"}],
+  :edges
+  [{:a "handoff-manifest-json-290-bytes",
+    :b "handoff-manifest-json-290-bytes-8f7d66fe",
+    :distance 5,
+    :similarity 0.8780487804878049}],
+  :mean-similarity 0.8780487804878049}
+ {:cluster/key "## **gates of aker: violent mode**",
+  :members
+  [{:slug "gates-of-aker-violent-mode-44e3160e",
+    :body-sha256
+    "44e3160ed25f8a6c27cc3dd88008d5a1bda3231e2ac6fff7b517a6417fb276ae",
+    :file "docs/lyrics/gates-of-aker-violent-mode-44e3160e.txt"}
+   {:slug "gates-of-aker-violent-mode-eae458cf",
+    :body-sha256
+    "eae458cf511a838d2b386d19c7d7855e36aa15645b7a5872b3041dc5260c6e76",
+    :file "docs/lyrics/gates-of-aker-violent-mode-eae458cf.txt"}
+   {:slug "gates-of-aker-violent-mode",
+    :body-sha256
+    "b112c3c385d0661c6994785dba034a867a7c0668a481829ae64a594a02595dc0",
+    :file "docs/lyrics/gates-of-aker-violent-mode.txt"}],
+  :edges
+  [{:a "gates-of-aker-violent-mode-44e3160e",
+    :b "gates-of-aker-violent-mode-eae458cf",
+    :distance 8,
+    :similarity 0.9166666666666667}
+   {:a "gates-of-aker-violent-mode",
+    :b "gates-of-aker-violent-mode-44e3160e",
+    :distance 286,
+    :similarity 0.003484320557491289}
+   {:a "gates-of-aker-violent-mode",
+    :b "gates-of-aker-violent-mode-eae458cf",
+    :distance 285,
+    :similarity 0.006968641114982578}],
+  :mean-similarity 0.3090398761130469}
+ {:cluster/key "μ",
+  :members
+  [{:slug "mu-abdae430",
+    :body-sha256
+    "abdae430504e60eb378636be72eb95c2142da0a9cb447bd310d9ab8be3331bd2",
+    :file "docs/lyrics/mu-abdae430.txt"}
+   {:slug "mu",
+    :body-sha256
+    "468226bd0a30671ed1cdf5a47ba21a2248500a088a9a0b3cf65595ed9ff64426",
+    :file "docs/lyrics/mu.txt"}
+   {:slug "mu-ac9fd272",
+    :body-sha256
+    "ac9fd272a1cebe98393a039c70bf9dd55c8fa71d9f0992ee236de0bcf6010033",
+    :file "docs/lyrics/mu-ac9fd272.txt"}],
+  :edges
+  [{:a "mu-abdae430",
+    :b "mu-ac9fd272",
+    :distance 38,
+    :similarity 0.5064935064935066}
+   {:a "mu", :b "mu-abdae430", :distance 1, :similarity 0.975}
+   {:a "mu",
+    :b "mu-ac9fd272",
+    :distance 37,
+    :similarity 0.5194805194805195}],
+  :mean-similarity 0.6669913419913421}
+ {:cluster/key "the shape of the hole",
+  :members
+  [{:slug "the-shape-of-the-hole-548026bd",
+    :body-sha256
+    "548026bd7d47e4e6b8e103708360ad1fe681986d07bb05b08636d86b16b433c8",
+    :file "docs/lyrics/the-shape-of-the-hole-548026bd.md"}
+   {:slug "the-shape-of-the-hole-0d3950d1",
+    :body-sha256
+    "0d3950d164ff5b44d55133750d6fe830b90aba865a43e8fb263d5cba6b56e089",
+    :file "docs/lyrics/the-shape-of-the-hole-0d3950d1.md"}
+   {:slug "the-shape-of-the-hole",
+    :body-sha256
+    "d35f591d2118f2ff5257c03e708905ebdfba95f336714e36147befdb6471b61d",
+    :file "docs/lyrics/the-shape-of-the-hole.md"}],
+  :edges
+  [{:a "the-shape-of-the-hole-0d3950d1",
+    :b "the-shape-of-the-hole-548026bd",
+    :distance 27,
+    :similarity 0.15625}
+   {:a "the-shape-of-the-hole",
+    :b "the-shape-of-the-hole-548026bd",
+    :distance 24,
+    :similarity 0.2258064516129032}
+   {:a "the-shape-of-the-hole",
+    :b "the-shape-of-the-hole-0d3950d1",
+    :distance 29,
+    :similarity 0.09375}],
+  :mean-similarity 0.1586021505376344}
+ {:cluster/key "sanctuary reprise — the water remains / 聖域の再帰",
+  :members
+  [{:slug "sanctuary-reprise-the-water-remains",
+    :body-sha256
+    "66f181c4cf2b23f939444cc98010a517906eae8df3d06cbf3b557fcd10a346f5",
+    :file "docs/lyrics/sanctuary-reprise-the-water-remains.txt"}
+   {:slug "sanctuary-reprise-the-water-remains-1307b111",
+    :body-sha256
+    "1307b111207538090f3ac0c20e7621a224df111047985b890bab34ec3c20c43f",
+    :file
+    "docs/lyrics/sanctuary-reprise-the-water-remains-1307b111.txt"}],
+  :edges
+  [{:a "sanctuary-reprise-the-water-remains",
+    :b "sanctuary-reprise-the-water-remains-1307b111",
+    :distance 5,
+    :similarity 0.9333333333333333}],
+  :mean-similarity 0.9333333333333333}
+ {:cluster/key "structure",
+  :members
+  [{:slug "structure-d8c34550",
+    :body-sha256
+    "d8c34550382a3fd7052522db5a76a8448d73d60a55d9b7019e0dd970cf7c38f6",
+    :file "docs/lyrics/structure-d8c34550.txt"}
+   {:slug "structure",
+    :body-sha256
+    "57124549032e3eb1a1ecd1465dfb553f2c10c3a38bd6542739a9c1728121b0a6",
+    :file "docs/lyrics/structure.txt"}],
+  :edges
+  [{:a "structure",
+    :b "structure-d8c34550",
+    :distance 143,
+    :similarity 0.1488095238095238}],
+  :mean-similarity 0.1488095238095238}
+ {:cluster/key "sanctuary of the falling veil / 落水の聖域",
+  :members
+  [{:slug "sanctuary-of-the-falling-veil-b7a75abf",
+    :body-sha256
+    "b7a75abf84292223d549aa7e647c2363237b3b5cd3001b707b6881b468a91dd3",
+    :file "docs/lyrics/sanctuary-of-the-falling-veil-b7a75abf.txt"}
+   {:slug "sanctuary-of-the-falling-veil",
+    :body-sha256
+    "6bdeecc93d94301fa87fd789a43613f25814c4bad814936a1b8b708705d630e6",
+    :file "docs/lyrics/sanctuary-of-the-falling-veil.txt"}],
+  :edges
+  [{:a "sanctuary-of-the-falling-veil",
+    :b "sanctuary-of-the-falling-veil-b7a75abf",
+    :distance 4,
+    :similarity 0.9480519480519481}],
+  :mean-similarity 0.9480519480519481}
+ {:cluster/key "gates of truth — insert song",
+  :members
+  [{:slug "gates-of-truth-insert-song-5cd37ec2",
+    :body-sha256
+    "5cd37ec22ebc49502b4d199ddd4486083af7b9e28815152b55b99540e8d8e7d5",
+    :file "docs/lyrics/gates-of-truth-insert-song-5cd37ec2.txt"}
+   {:slug "gates-of-truth-insert-song",
+    :body-sha256
+    "14a8284d3f596f77d39a0b5dbdb2bdc1f545a83ea63887e0e6e7d9117f47a90c",
+    :file "docs/lyrics/gates-of-truth-insert-song.txt"}],
+  :edges
+  [{:a "gates-of-truth-insert-song",
+    :b "gates-of-truth-insert-song-5cd37ec2",
+    :distance 1,
+    :similarity 0.9879518072289157}],
+  :mean-similarity 0.9879518072289157}
+ {:cluster/key "quantum space glitch ducks & chaos",
+  :members
+  [{:slug "quantum-space-glitch-ducks-chaos-688c09c6",
+    :body-sha256
+    "688c09c6e836b8fcb17d81f3137fbfa6beb28fe13689b848825854b35781c0f4",
+    :file "docs/lyrics/quantum-space-glitch-ducks-chaos-688c09c6.txt"}
+   {:slug "quantum-space-glitch-ducks-chaos-ff9f862a",
+    :body-sha256
+    "ff9f862a511ffeaf212ba3b22a57be8b4e11d0cc5b5d1d52306ebc02516ae9bf",
+    :file "docs/lyrics/quantum-space-glitch-ducks-chaos-ff9f862a.txt"}
+   {:slug "quantum-space-glitch-ducks-chaos-3f787e5c",
+    :body-sha256
+    "3f787e5c4594c15cc2ac30d5c2b9e1754598c42ab0a01ee15dc67f529ff2c98f",
+    :file "docs/lyrics/quantum-space-glitch-ducks-chaos-3f787e5c.txt"}
+   {:slug "quantum-space-glitch-ducks-chaos",
+    :body-sha256
+    "804e4096cc0affcf969ff09b23d30e5ec528661a1760d5fbd572244377ba182d",
+    :file "docs/lyrics/quantum-space-glitch-ducks-chaos.txt"}],
+  :edges
+  [{:a "quantum-space-glitch-ducks-chaos-688c09c6",
+    :b "quantum-space-glitch-ducks-chaos-ff9f862a",
+    :distance 96,
+    :similarity 0.01030927835051546}
+   {:a "quantum-space-glitch-ducks-chaos-3f787e5c",
+    :b "quantum-space-glitch-ducks-chaos-688c09c6",
+    :distance 7,
+    :similarity 0.9278350515463918}
+   {:a "quantum-space-glitch-ducks-chaos-3f787e5c",
+    :b "quantum-space-glitch-ducks-chaos-ff9f862a",
+    :distance 89,
+    :similarity 0.02197802197802198}
+   {:a "quantum-space-glitch-ducks-chaos",
+    :b "quantum-space-glitch-ducks-chaos-688c09c6",
+    :distance 89,
+    :similarity 0.08247422680412371}
+   {:a "quantum-space-glitch-ducks-chaos",
+    :b "quantum-space-glitch-ducks-chaos-ff9f862a",
+    :distance 7,
+    :similarity 0.851063829787234}
+   {:a "quantum-space-glitch-ducks-chaos",
+    :b "quantum-space-glitch-ducks-chaos-3f787e5c",
+    :distance 90,
+    :similarity 0.01098901098901099}],
+  :mean-similarity 0.31744156990921635}
+ {:cluster/key "duck — signal & silence",
+  :members
+  [{:slug "duck-signal-silence-49949799",
+    :body-sha256
+    "49949799b5ecff25ec0538ff68ca016478e128e9aef042a228269d9d4943962c",
+    :file "docs/lyrics/duck-signal-silence-49949799.txt"}
+   {:slug "duck-signal-silence",
+    :body-sha256
+    "efd841d3f775487a9f9ed8679e11be7c0fd515ab56e5342248b7e3163a4cb58a",
+    :file "docs/lyrics/duck-signal-silence.txt"}],
+  :edges
+  [{:a "duck-signal-silence",
+    :b "duck-signal-silence-49949799",
+    :distance 2,
+    :similarity 0.975609756097561}],
+  :mean-similarity 0.975609756097561}
+ {:cluster/key "receipt_river_worldsound_part56",
+  :members
+  [{:slug "receipt-river-worldsound-part56",
+    :body-sha256
+    "63659558f66306329893d7b2e0f13a439ac507dc5e50d4c06609a1600d11fd04",
+    :file "docs/lyrics/receipt-river-worldsound-part56.txt"}
+   {:slug "receipt-river-worldsound-part56-4b1a961b",
+    :body-sha256
+    "4b1a961ba27f5d448b7fda165777a2cd32bcd9639117428f6fb7e84399da4e3f",
+    :file "docs/lyrics/receipt-river-worldsound-part56-4b1a961b.txt"}],
+  :edges
+  [{:a "receipt-river-worldsound-part56",
+    :b "receipt-river-worldsound-part56-4b1a961b",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "**cathedral of variants / 変異の聖堂**",
+  :members
+  [{:slug "cathedral-of-variants-1a6d0633",
+    :body-sha256
+    "1a6d0633a767ac5fcc7597b9931208a285e96917d1293fc6748e071a408bce43",
+    :file "docs/lyrics/cathedral-of-variants-1a6d0633.txt"}
+   {:slug "cathedral-of-variants-256a7ae2",
+    :body-sha256
+    "256a7ae24300a8e2200dee74c8a0ff1f3c787fd73f82934a4a9b0678d2428e9c",
+    :file "docs/lyrics/cathedral-of-variants-256a7ae2.txt"}
+   {:slug "cathedral-of-variants-40c06269",
+    :body-sha256
+    "40c0626917317f1a4b9f993a176d7700f69c030b9bd257d536abbd3007b47ba6",
+    :file "docs/lyrics/cathedral-of-variants-40c06269.txt"}
+   {:slug "cathedral-of-variants-471b313e",
+    :body-sha256
+    "471b313e9bd939e44e7fe14c13778062503bb9fc6c787a1f48df4b7e77dd454e",
+    :file "docs/lyrics/cathedral-of-variants-471b313e.txt"}
+   {:slug "cathedral-of-variants-792fdc70",
+    :body-sha256
+    "792fdc70ed6ceacb4cb0b855e63cebde10f7bd15d78e9c5045c511e502529294",
+    :file "docs/lyrics/cathedral-of-variants-792fdc70.txt"}
+   {:slug "cathedral-of-variants",
+    :body-sha256
+    "1439804f41a9384e76590b408f4328d1ce3cc3d1022c46ba3b00ca893ef7147d",
+    :file "docs/lyrics/cathedral-of-variants.txt"}],
+  :edges
+  [{:a "cathedral-of-variants-1a6d0633",
+    :b "cathedral-of-variants-256a7ae2",
+    :distance 12,
+    :similarity 0.7333333333333333}
+   {:a "cathedral-of-variants-1a6d0633",
+    :b "cathedral-of-variants-40c06269",
+    :distance 46,
+    :similarity 0.2698412698412698}
+   {:a "cathedral-of-variants-1a6d0633",
+    :b "cathedral-of-variants-471b313e",
+    :distance 85,
+    :similarity 0.1326530612244898}
+   {:a "cathedral-of-variants-1a6d0633",
+    :b "cathedral-of-variants-792fdc70",
+    :distance 38,
+    :similarity 0.4864864864864865}
+   {:a "cathedral-of-variants-256a7ae2",
+    :b "cathedral-of-variants-40c06269",
+    :distance 38,
+    :similarity 0.3968253968253968}
+   {:a "cathedral-of-variants-256a7ae2",
+    :b "cathedral-of-variants-471b313e",
+    :distance 97,
+    :similarity 0.01020408163265306}
+   {:a "cathedral-of-variants-256a7ae2",
+    :b "cathedral-of-variants-792fdc70",
+    :distance 50,
+    :similarity 0.3243243243243243}
+   {:a "cathedral-of-variants-40c06269",
+    :b "cathedral-of-variants-471b313e",
+    :distance 92,
+    :similarity 0.06122448979591837}
+   {:a "cathedral-of-variants-40c06269",
+    :b "cathedral-of-variants-792fdc70",
+    :distance 12,
+    :similarity 0.8378378378378378}
+   {:a "cathedral-of-variants-471b313e",
+    :b "cathedral-of-variants-792fdc70",
+    :distance 81,
+    :similarity 0.173469387755102}
+   {:a "cathedral-of-variants",
+    :b "cathedral-of-variants-1a6d0633",
+    :distance 85,
+    :similarity 0.02298850574712644}
+   {:a "cathedral-of-variants",
+    :b "cathedral-of-variants-256a7ae2",
+    :distance 85,
+    :similarity 0.02298850574712644}
+   {:a "cathedral-of-variants",
+    :b "cathedral-of-variants-40c06269",
+    :distance 81,
+    :similarity 0.06896551724137931}
+   {:a "cathedral-of-variants",
+    :b "cathedral-of-variants-471b313e",
+    :distance 12,
+    :similarity 0.8775510204081634}
+   {:a "cathedral-of-variants",
+    :b "cathedral-of-variants-792fdc70",
+    :distance 83,
+    :similarity 0.04597701149425287}],
+  :mean-similarity 0.2976446819796574}
+ {:cluster/key "transnational void stains",
+  :members
+  [{:slug "transnational-void-stains-3f616a0a",
+    :body-sha256
+    "3f616a0a6f4fbc46b0d9b6ae9c8ca6690f7242011dd30c63c0537252792aff5c",
+    :file "docs/lyrics/transnational-void-stains-3f616a0a.txt"}
+   {:slug "transnational-void-stains",
+    :body-sha256
+    "dde46c9769e02cb74d1c4a99876c7343309c31f43ebfd6a9456e2f0faf0be36d",
+    :file "docs/lyrics/transnational-void-stains.txt"}],
+  :edges
+  [{:a "transnational-void-stains",
+    :b "transnational-void-stains-3f616a0a",
+    :distance 121,
+    :similarity 0.01626016260162602}],
+  :mean-similarity 0.01626016260162602}
+ {:cluster/key "where the duck flies",
+  :members
+  [{:slug "where-the-duck-flies",
+    :body-sha256
+    "6988417cb3305b1d1c47fffdd651ade181b7088fb43dc6ee84c124e862edeccb",
+    :file "docs/lyrics/where-the-duck-flies.txt"}
+   {:slug "where-the-duck-flies-8448c607",
+    :body-sha256
+    "8448c607c7ea9576b51d6aa480644b54b2e179a9459f26a461e496c8dd192439",
+    :file "docs/lyrics/where-the-duck-flies-8448c607.txt"}],
+  :edges
+  [{:a "where-the-duck-flies",
+    :b "where-the-duck-flies-8448c607",
+    :distance 7,
+    :similarity 0.9278350515463918}],
+  :mean-similarity 0.9278350515463918}
+ {:cluster/key "duck — neon overflow",
+  :members
+  [{:slug "duck-neon-overflow-b8b2ae4d",
+    :body-sha256
+    "b8b2ae4d07b824c1d8c1df938f660f46f5cf7be7f49379ea181cf012efdc0620",
+    :file "docs/lyrics/duck-neon-overflow-b8b2ae4d.txt"}
+   {:slug "duck-neon-overflow",
+    :body-sha256
+    "2f3584184905f69cdd40bf6418f57c72dbe77d7aff467e41fac5fee392163548",
+    :file "docs/lyrics/duck-neon-overflow.txt"}],
+  :edges
+  [{:a "duck-neon-overflow",
+    :b "duck-neon-overflow-b8b2ae4d",
+    :distance 5,
+    :similarity 0.9358974358974359}],
+  :mean-similarity 0.9358974358974359}
+ {:cluster/key "sanctuary reprise — aquila dissolving / 聖域の再帰（鷹の溶解）",
+  :members
+  [{:slug "sanctuary-reprise-aquila-dissolving-786fe27f",
+    :body-sha256
+    "786fe27f6afeabadee87ebfe9ac3f1c3602ce84b705ffe6debfb083c73c92f2c",
+    :file
+    "docs/lyrics/sanctuary-reprise-aquila-dissolving-786fe27f.txt"}
+   {:slug "sanctuary-reprise-aquila-dissolving",
+    :body-sha256
+    "5fc3b30f39fa8f6a39483188b5fb7854d1173d527e3c85e8fc2024647961b384",
+    :file "docs/lyrics/sanctuary-reprise-aquila-dissolving.txt"}],
+  :edges
+  [{:a "sanctuary-reprise-aquila-dissolving",
+    :b "sanctuary-reprise-aquila-dissolving-786fe27f",
+    :distance 5,
+    :similarity 0.9152542372881356}],
+  :mean-similarity 0.9152542372881356}
+ {:cluster/key "operation mindfuck",
+  :members
+  [{:slug "operation-mindfuck-70af882c",
+    :body-sha256
+    "70af882c80193bdd737307352aa035ae1f91e0de6a6573e56194ca4b8502b8c7",
+    :file "docs/lyrics/operation-mindfuck-70af882c.txt"}
+   {:slug "operation-mindfuck-460f7f31",
+    :body-sha256
+    "460f7f3109f275a12a74012b1a1369d689b5f57dac8f42611c0ba76ad18667e0",
+    :file "docs/lyrics/operation-mindfuck-460f7f31.txt"}
+   {:slug "operation-mindfuck",
+    :body-sha256
+    "b5b48adc5dc97ef12806d76818478c1d750278d49fb0fdd181297aa622d704cd",
+    :file "docs/lyrics/operation-mindfuck.txt"}
+   {:slug "operation-mindfuck-24c86131",
+    :body-sha256
+    "24c861317a9e3c08b0d9f9783080ad0a5775fb30a3a4fdcab99d76e9a58be1f7",
+    :file "docs/lyrics/operation-mindfuck-24c86131.txt"}],
+  :edges
+  [{:a "operation-mindfuck-460f7f31",
+    :b "operation-mindfuck-70af882c",
+    :distance 79,
+    :similarity 0.03658536585365854}
+   {:a "operation-mindfuck",
+    :b "operation-mindfuck-70af882c",
+    :distance 75,
+    :similarity 0.03846153846153846}
+   {:a "operation-mindfuck",
+    :b "operation-mindfuck-460f7f31",
+    :distance 5,
+    :similarity 0.9390243902439024}
+   {:a "operation-mindfuck",
+    :b "operation-mindfuck-24c86131",
+    :distance 76,
+    :similarity 0.02564102564102564}
+   {:a "operation-mindfuck-24c86131",
+    :b "operation-mindfuck-70af882c",
+    :distance 5,
+    :similarity 0.9305555555555556}
+   {:a "operation-mindfuck-24c86131",
+    :b "operation-mindfuck-460f7f31",
+    :distance 79,
+    :similarity 0.03658536585365854}],
+  :mean-similarity 0.3344755402682231}
+ {:cluster/key "pay the fork tax",
+  :members
+  [{:slug "pay-the-fork-tax",
+    :body-sha256
+    "9cdecd41179c40b819ff128fdba73cfe6a4e848fd7f904ce71331d2eb22f13d4",
+    :file "docs/lyrics/pay-the-fork-tax.txt"}
+   {:slug "pay-the-fork-tax-3d7c9462",
+    :body-sha256
+    "3d7c9462b4774d44fa690568908bffb591c0d761c2529f0cff8c9a99b1bb8b0c",
+    :file "docs/lyrics/pay-the-fork-tax-3d7c9462.txt"}],
+  :edges
+  [{:a "pay-the-fork-tax",
+    :b "pay-the-fork-tax-3d7c9462",
+    :distance 3,
+    :similarity 0.8928571428571429}],
+  :mean-similarity 0.8928571428571429}
+ {:cluster/key "witness_thread_lullaby_part54_78bpm",
+  :members
+  [{:slug "witness-thread-lullaby-part54-78bpm",
+    :body-sha256
+    "20e71226da26e6c9c7dd28cebcf0de2008b03f416d20e8aa5bac5f6610d3c664",
+    :file "docs/lyrics/witness-thread-lullaby-part54-78bpm.txt"}
+   {:slug "witness-thread-lullaby-part54-78bpm-83702011",
+    :body-sha256
+    "83702011aae3140a2ebb7d1ce963f9674e16c7e43cbab200c0ff371313ff1e43",
+    :file
+    "docs/lyrics/witness-thread-lullaby-part54-78bpm-83702011.txt"}],
+  :edges
+  [{:a "witness-thread-lullaby-part54-78bpm",
+    :b "witness-thread-lullaby-part54-78bpm-83702011",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "# duck reactor — hymn of the first light",
+  :members
+  [{:slug "duck-reactor-hymn-of-the-first-light",
+    :body-sha256
+    "2cc2470ec6644aabab0a749cb3ecba8652f2d86dbaa8b8a11d71cc0d3acc4858",
+    :file "docs/lyrics/duck-reactor-hymn-of-the-first-light.txt"}
+   {:slug "duck-reactor-hymn-of-the-first-light-306771eb",
+    :body-sha256
+    "306771eb05aa985bdeb5b0973fdb4d22623836c92fa306e06dcf5cbb5752e97a",
+    :file
+    "docs/lyrics/duck-reactor-hymn-of-the-first-light-306771eb.txt"}
+   {:slug "duck-reactor-hymn-of-the-first-light-42484255",
+    :body-sha256
+    "424842556f6c7e712c89742d595d5befff94de3a9b926132e283650d11c53a76",
+    :file
+    "docs/lyrics/duck-reactor-hymn-of-the-first-light-42484255.txt"}],
+  :edges
+  [{:a "duck-reactor-hymn-of-the-first-light",
+    :b "duck-reactor-hymn-of-the-first-light-306771eb",
+    :distance 80,
+    :similarity 0.5031055900621118}
+   {:a "duck-reactor-hymn-of-the-first-light",
+    :b "duck-reactor-hymn-of-the-first-light-42484255",
+    :distance 79,
+    :similarity 0.5093167701863354}
+   {:a "duck-reactor-hymn-of-the-first-light-306771eb",
+    :b "duck-reactor-hymn-of-the-first-light-42484255",
+    :distance 2,
+    :similarity 0.9759036144578312}],
+  :mean-similarity 0.6627753249020928}
+ {:cluster/key "entropy choir protocol",
+  :members
+  [{:slug "entropy-choir-protocol",
+    :body-sha256
+    "d2e54b277d973b877c435fba9d0587ed6e80f8f35ac5cdb6a24d4f51bbe7889d",
+    :file "docs/lyrics/entropy-choir-protocol.txt"}
+   {:slug "entropy-choir-protocol-8bffcf94",
+    :body-sha256
+    "8bffcf9439210368eef584e13049aa16f22baca4a47c1b4b154a571d20524681",
+    :file "docs/lyrics/entropy-choir-protocol-8bffcf94.txt"}
+   {:slug "entropy-choir-protocol-cee96811",
+    :body-sha256
+    "cee968114a63e67de7c2d12774884a94ccb40dd25a0f539e2208cf16eeef35ba",
+    :file "docs/lyrics/entropy-choir-protocol-cee96811.txt"}
+   {:slug "entropy-choir-protocol-a005837b",
+    :body-sha256
+    "a005837b18385b83951feafedcb4517ae3b6ee1f940a49704897d8a7b94d5ac1",
+    :file "docs/lyrics/entropy-choir-protocol-a005837b.txt"}
+   {:slug "entropy-choir-protocol-880e28e1",
+    :body-sha256
+    "880e28e1b659bd5145d6241b99dfc0f84ecfa7c85db0632593d1bb8ec45d4ca2",
+    :file "docs/lyrics/entropy-choir-protocol-880e28e1.txt"}
+   {:slug "entropy-choir-protocol-d571eeb2",
+    :body-sha256
+    "d571eeb2a19750e8ca3fe3e2c3e7982128700e42ac13d011578dee1419b05be3",
+    :file "docs/lyrics/entropy-choir-protocol-d571eeb2.txt"}
+   {:slug "entropy-choir-protocol-ad67e59f",
+    :body-sha256
+    "ad67e59f9c32de207079c0f2141be0b7485f1a8401dc73cbeb675d884022a793",
+    :file "docs/lyrics/entropy-choir-protocol-ad67e59f.txt"}],
+  :edges
+  [{:a "entropy-choir-protocol",
+    :b "entropy-choir-protocol-8bffcf94",
+    :distance 16,
+    :similarity 0.5151515151515152}
+   {:a "entropy-choir-protocol",
+    :b "entropy-choir-protocol-cee96811",
+    :distance 15,
+    :similarity 0.5454545454545455}
+   {:a "entropy-choir-protocol",
+    :b "entropy-choir-protocol-a005837b",
+    :distance 2,
+    :similarity 0.9411764705882353}
+   {:a "entropy-choir-protocol",
+    :b "entropy-choir-protocol-880e28e1",
+    :distance 84,
+    :similarity 0.02325581395348837}
+   {:a "entropy-choir-protocol",
+    :b "entropy-choir-protocol-d571eeb2",
+    :distance 86,
+    :similarity 0.01149425287356322}
+   {:a "entropy-choir-protocol",
+    :b "entropy-choir-protocol-ad67e59f",
+    :distance 86,
+    :similarity 0.01149425287356322}
+   {:a "entropy-choir-protocol-8bffcf94",
+    :b "entropy-choir-protocol-cee96811",
+    :distance 2,
+    :similarity 0.8947368421052632}
+   {:a "entropy-choir-protocol-8bffcf94",
+    :b "entropy-choir-protocol-a005837b",
+    :distance 15,
+    :similarity 0.5588235294117647}
+   {:a "entropy-choir-protocol-8bffcf94",
+    :b "entropy-choir-protocol-d571eeb2",
+    :distance 85,
+    :similarity 0.02298850574712644}
+   {:a "entropy-choir-protocol-8bffcf94",
+    :b "entropy-choir-protocol-ad67e59f",
+    :distance 84,
+    :similarity 0.03448275862068966}
+   {:a "entropy-choir-protocol-cee96811",
+    :b "entropy-choir-protocol-d571eeb2",
+    :distance 86,
+    :similarity 0.01149425287356322}
+   {:a "entropy-choir-protocol-a005837b",
+    :b "entropy-choir-protocol-cee96811",
+    :distance 17,
+    :similarity 0.5}
+   {:a "entropy-choir-protocol-a005837b",
+    :b "entropy-choir-protocol-d571eeb2",
+    :distance 85,
+    :similarity 0.02298850574712644}
+   {:a "entropy-choir-protocol-a005837b",
+    :b "entropy-choir-protocol-ad67e59f",
+    :distance 84,
+    :similarity 0.03448275862068966}
+   {:a "entropy-choir-protocol-880e28e1",
+    :b "entropy-choir-protocol-8bffcf94",
+    :distance 85,
+    :similarity 0.01162790697674419}
+   {:a "entropy-choir-protocol-880e28e1",
+    :b "entropy-choir-protocol-cee96811",
+    :distance 84,
+    :similarity 0.02325581395348837}
+   {:a "entropy-choir-protocol-880e28e1",
+    :b "entropy-choir-protocol-a005837b",
+    :distance 85,
+    :similarity 0.01162790697674419}
+   {:a "entropy-choir-protocol-880e28e1",
+    :b "entropy-choir-protocol-d571eeb2",
+    :distance 2,
+    :similarity 0.9770114942528736}
+   {:a "entropy-choir-protocol-880e28e1",
+    :b "entropy-choir-protocol-ad67e59f",
+    :distance 2,
+    :similarity 0.9770114942528736}
+   {:a "entropy-choir-protocol-ad67e59f",
+    :b "entropy-choir-protocol-cee96811",
+    :distance 86,
+    :similarity 0.01149425287356322}
+   {:a "entropy-choir-protocol-ad67e59f",
+    :b "entropy-choir-protocol-d571eeb2",
+    :distance 1,
+    :similarity 0.9885057471264368}],
+  :mean-similarity 0.3394551724016123}
+ {:cluster/key "# manifest oath / 目録の誓い (84 bpm)",
+  :members
+  [{:slug "manifest-oath-84-bpm-c14562e8",
+    :body-sha256
+    "c14562e82141c4b91504e19fab12db90282be8ad76166dbbfff214971308f4f6",
+    :file "docs/lyrics/manifest-oath-84-bpm-c14562e8.txt"}
+   {:slug "manifest-oath-84-bpm-00f1149d",
+    :body-sha256
+    "00f1149da6b5c8f1c81daac53f88f9f838eee80c6185204489e3ef077c13f14f",
+    :file "docs/lyrics/manifest-oath-84-bpm-00f1149d.txt"}
+   {:slug "manifest-oath-84-bpm-f6ca47c5",
+    :body-sha256
+    "f6ca47c5a64624d72df4f736ba170c859aeb7a746a63cc02ec0d8aa7de25f07d",
+    :file "docs/lyrics/manifest-oath-84-bpm-f6ca47c5.txt"}
+   {:slug "manifest-oath-84-bpm-2765df46",
+    :body-sha256
+    "2765df46d7df77e56af8a05d4d1b2cd024ee43a3957afde014e5a8d612698e71",
+    :file "docs/lyrics/manifest-oath-84-bpm-2765df46.txt"}
+   {:slug "manifest-oath-84-bpm-4c4ab028",
+    :body-sha256
+    "4c4ab028b0d8db8949176d8777ada0477ab438b1ae195ee2bec4c150ea7156ec",
+    :file "docs/lyrics/manifest-oath-84-bpm-4c4ab028.txt"}
+   {:slug "manifest-oath-84-bpm-a9463600",
+    :body-sha256
+    "a9463600f2e0d67f47a4eaf45c36f8ea242a223cf9b5d04122d714ececd1dbf5",
+    :file "docs/lyrics/manifest-oath-84-bpm-a9463600.txt"}],
+  :edges
+  [{:a "manifest-oath-84-bpm-c14562e8",
+    :b "manifest-oath-84-bpm-f6ca47c5",
+    :distance 28,
+    :similarity 0.4909090909090909}
+   {:a "manifest-oath-84-bpm-00f1149d",
+    :b "manifest-oath-84-bpm-c14562e8",
+    :distance 7,
+    :similarity 0.7878787878787878}
+   {:a "manifest-oath-84-bpm-00f1149d",
+    :b "manifest-oath-84-bpm-f6ca47c5",
+    :distance 29,
+    :similarity 0.4727272727272727}
+   {:a "manifest-oath-84-bpm-00f1149d",
+    :b "manifest-oath-84-bpm-2765df46",
+    :distance 71,
+    :similarity 0.2680412371134021}
+   {:a "manifest-oath-84-bpm-00f1149d",
+    :b "manifest-oath-84-bpm-4c4ab028",
+    :distance 27,
+    :similarity 0.4905660377358491}
+   {:a "manifest-oath-84-bpm-00f1149d",
+    :b "manifest-oath-84-bpm-a9463600",
+    :distance 25,
+    :similarity 0.5098039215686275}
+   {:a "manifest-oath-84-bpm-2765df46",
+    :b "manifest-oath-84-bpm-c14562e8",
+    :distance 70,
+    :similarity 0.2783505154639175}
+   {:a "manifest-oath-84-bpm-2765df46",
+    :b "manifest-oath-84-bpm-f6ca47c5",
+    :distance 50,
+    :similarity 0.4845360824742268}
+   {:a "manifest-oath-84-bpm-2765df46",
+    :b "manifest-oath-84-bpm-4c4ab028",
+    :distance 48,
+    :similarity 0.5051546391752577}
+   {:a "manifest-oath-84-bpm-2765df46",
+    :b "manifest-oath-84-bpm-a9463600",
+    :distance 46,
+    :similarity 0.5257731958762887}
+   {:a "manifest-oath-84-bpm-4c4ab028",
+    :b "manifest-oath-84-bpm-c14562e8",
+    :distance 26,
+    :similarity 0.5094339622641509}
+   {:a "manifest-oath-84-bpm-4c4ab028",
+    :b "manifest-oath-84-bpm-f6ca47c5",
+    :distance 2,
+    :similarity 0.9636363636363636}
+   {:a "manifest-oath-84-bpm-4c4ab028",
+    :b "manifest-oath-84-bpm-a9463600",
+    :distance 2,
+    :similarity 0.9622641509433962}
+   {:a "manifest-oath-84-bpm-a9463600",
+    :b "manifest-oath-84-bpm-c14562e8",
+    :distance 24,
+    :similarity 0.5294117647058824}
+   {:a "manifest-oath-84-bpm-a9463600",
+    :b "manifest-oath-84-bpm-f6ca47c5",
+    :distance 4,
+    :similarity 0.9272727272727272}],
+  :mean-similarity 0.5803839833163493}
+ {:cluster/key "## overture — ruins at dawn",
+  :members
+  [{:slug "overture-ruins-at-dawn-1b2a5a3a",
+    :body-sha256
+    "1b2a5a3a735cbc4decdd3b54736c08ccc83ec3b10475360f4b9a08c59f07819f",
+    :file "docs/lyrics/overture-ruins-at-dawn-1b2a5a3a.txt"}
+   {:slug "overture-ruins-at-dawn",
+    :body-sha256
+    "a227ba6c4684d0e0af6927a46fbc81fb9d35ff7840e8da6e3756e59286d66c56",
+    :file "docs/lyrics/overture-ruins-at-dawn.txt"}],
+  :edges
+  [{:a "overture-ruins-at-dawn",
+    :b "overture-ruins-at-dawn-1b2a5a3a",
+    :distance 5,
+    :similarity 0.9390243902439024}],
+  :mean-similarity 0.9390243902439024}
+ {:cluster/key "pixel wings, neon teeth",
+  :members
+  [{:slug "pixel-wings-neon-teeth-a47df290",
+    :body-sha256
+    "a47df290fbadd0480b562ea73f7e76442521c7c12cd76168f407b6da99c24fd9",
+    :file "docs/lyrics/pixel-wings-neon-teeth-a47df290.txt"}
+   {:slug "pixel-wings-neon-teeth",
+    :body-sha256
+    "1909b4cf1ecade7b7241361ef9cc8157f9d008939afeb63a1dd5fe7965bc5a6f",
+    :file "docs/lyrics/pixel-wings-neon-teeth.txt"}],
+  :edges
+  [{:a "pixel-wings-neon-teeth",
+    :b "pixel-wings-neon-teeth-a47df290",
+    :distance 2,
+    :similarity 0.9753086419753086}],
+  :mean-similarity 0.9753086419753086}
+ {:cluster/key "**dice (seed 3721599741 · d15×15):** 9, fork",
+  :members
+  [{:slug "dice-seed-3721599741-d15-15-9-fork-d87293c5",
+    :body-sha256
+    "d87293c5380788c509c27717556c1a333ec888ddd7a9a1b795221f0930695c27",
+    :file
+    "docs/lyrics/dice-seed-3721599741-d15-15-9-fork-d87293c5.txt"}
+   {:slug "dice-seed-3721599741-d15-15-9-fork",
+    :body-sha256
+    "a6c8100598929285d80668d036450963b7fdcb56f5798a813d3c07c90dd578b7",
+    :file "docs/lyrics/dice-seed-3721599741-d15-15-9-fork.txt"}],
+  :edges
+  [{:a "dice-seed-3721599741-d15-15-9-fork",
+    :b "dice-seed-3721599741-d15-15-9-fork-d87293c5",
+    :distance 5,
+    :similarity 0.9295774647887324}],
+  :mean-similarity 0.9295774647887324}
+ {:cluster/key "# witness thread lullaby / 証人糸の子守歌",
+  :members
+  [{:slug "witness-thread-lullaby-0bbe5487",
+    :body-sha256
+    "0bbe548710bd8be1c300982f81b8f396166cd4f0a4d71877e72d4952d3319877",
+    :file "docs/lyrics/witness-thread-lullaby-0bbe5487.txt"}
+   {:slug "witness-thread-lullaby-3ff2746b",
+    :body-sha256
+    "3ff2746b20de86b8e4e2dd03aa4f15967327426a174a9605b4952b328f607d76",
+    :file "docs/lyrics/witness-thread-lullaby-3ff2746b.txt"}
+   {:slug "witness-thread-lullaby",
+    :body-sha256
+    "63f248d8d1721f3a1ff2c4b3d4c13f97e3fd1defdbc4a841648e8dc550f3da78",
+    :file "docs/lyrics/witness-thread-lullaby.txt"}],
+  :edges
+  [{:a "witness-thread-lullaby-0bbe5487",
+    :b "witness-thread-lullaby-3ff2746b",
+    :distance 12,
+    :similarity 0.7931034482758621}
+   {:a "witness-thread-lullaby",
+    :b "witness-thread-lullaby-0bbe5487",
+    :distance 44,
+    :similarity 0.5164835164835165}
+   {:a "witness-thread-lullaby",
+    :b "witness-thread-lullaby-3ff2746b",
+    :distance 45,
+    :similarity 0.5054945054945055}],
+  :mean-similarity 0.6050271567512947}
+ {:cluster/key
+  "# fork tax lullaby — veil gate / 分岐税の子守歌 — ヴェールゲート (78 bpm)",
+  :members
+  [{:slug "fork-tax-lullaby-veil-gate-78-bpm-ab5b22d1",
+    :body-sha256
+    "ab5b22d1999d26c42e9737ef0ed3f17424c897dd066e889f749331c47fc2321c",
+    :file "docs/lyrics/fork-tax-lullaby-veil-gate-78-bpm-ab5b22d1.txt"}
+   {:slug "fork-tax-lullaby-veil-gate-78-bpm-28e3fc40",
+    :body-sha256
+    "28e3fc4011616f66f6f906f0e33a284da465299a013cf1d5cb4d7f62dc03f8c6",
+    :file "docs/lyrics/fork-tax-lullaby-veil-gate-78-bpm-28e3fc40.txt"}
+   {:slug "fork-tax-lullaby-veil-gate-78-bpm",
+    :body-sha256
+    "c4aadeedf606a4e25dc06d267bbd5e4eb768ec8f53435923d75a071c447e8a73",
+    :file "docs/lyrics/fork-tax-lullaby-veil-gate-78-bpm.txt"}
+   {:slug "fork-tax-lullaby-veil-gate-78-bpm-0f0a0ca5",
+    :body-sha256
+    "0f0a0ca5e95a745c6eb20a4879fb6e2cfb8bd5647508ea4b0619823e9656bc3c",
+    :file "docs/lyrics/fork-tax-lullaby-veil-gate-78-bpm-0f0a0ca5.txt"}
+   {:slug "fork-tax-lullaby-veil-gate-78-bpm-75520059",
+    :body-sha256
+    "7552005921f5aedbbcd10556c4f6313d2b3b04b61aaf2d1f67fe05114e70a23c",
+    :file "docs/lyrics/fork-tax-lullaby-veil-gate-78-bpm-75520059.txt"}
+   {:slug "fork-tax-lullaby-veil-gate-78-bpm-6cd03415",
+    :body-sha256
+    "6cd034155b87619e3d47c2958040c9d48d1884914780494c1c7a2d1c3b823dd1",
+    :file "docs/lyrics/fork-tax-lullaby-veil-gate-78-bpm-6cd03415.txt"}
+   {:slug "fork-tax-lullaby-veil-gate-78-bpm-7ec12cae",
+    :body-sha256
+    "7ec12cae50b089fd8be70c97197ff8c0429e07d3907acbb4aa2100de6017f306",
+    :file
+    "docs/lyrics/fork-tax-lullaby-veil-gate-78-bpm-7ec12cae.txt"}],
+  :edges
+  [{:a "fork-tax-lullaby-veil-gate-78-bpm-28e3fc40",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-ab5b22d1",
+    :distance 1,
+    :similarity 0.9722222222222222}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-28e3fc40",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-75520059",
+    :distance 98,
+    :similarity 0.08411214953271028}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-28e3fc40",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-6cd03415",
+    :distance 103,
+    :similarity 0.0462962962962963}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-28e3fc40",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-7ec12cae",
+    :distance 4,
+    :similarity 0.8857142857142857}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-ab5b22d1",
+    :distance 91,
+    :similarity 0.05208333333333333}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-28e3fc40",
+    :distance 91,
+    :similarity 0.05208333333333333}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-0f0a0ca5",
+    :distance 17,
+    :similarity 0.8468468468468467}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-75520059",
+    :distance 12,
+    :similarity 0.8878504672897196}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-6cd03415",
+    :distance 13,
+    :similarity 0.8796296296296297}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-7ec12cae",
+    :distance 90,
+    :similarity 0.0625}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-0f0a0ca5",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-ab5b22d1",
+    :distance 103,
+    :similarity 0.07207207207207207}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-0f0a0ca5",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-28e3fc40",
+    :distance 102,
+    :similarity 0.08108108108108109}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-0f0a0ca5",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-75520059",
+    :distance 7,
+    :similarity 0.9369369369369369}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-0f0a0ca5",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-6cd03415",
+    :distance 4,
+    :similarity 0.963963963963964}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-0f0a0ca5",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-7ec12cae",
+    :distance 106,
+    :similarity 0.04504504504504505}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-75520059",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-ab5b22d1",
+    :distance 98,
+    :similarity 0.08411214953271028}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-75520059",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-7ec12cae",
+    :distance 102,
+    :similarity 0.04672897196261682}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-6cd03415",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-ab5b22d1",
+    :distance 103,
+    :similarity 0.0462962962962963}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-6cd03415",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-75520059",
+    :distance 9,
+    :similarity 0.9166666666666667}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-6cd03415",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-7ec12cae",
+    :distance 102,
+    :similarity 0.05555555555555556}
+   {:a "fork-tax-lullaby-veil-gate-78-bpm-7ec12cae",
+    :b "fork-tax-lullaby-veil-gate-78-bpm-ab5b22d1",
+    :distance 5,
+    :similarity 0.861111111111111}],
+  :mean-similarity 0.42280516259154444}
+ {:cluster/key "the space where we used to be",
+  :members
+  [{:slug "the-space-where-we-used-to-be",
+    :body-sha256
+    "bd9c90213989feea026ac1f9424a1bd5ccfe9fbffaf5b4a70ff3377a3cc7768e",
+    :file "docs/lyrics/the-space-where-we-used-to-be.md"}
+   {:slug "the-space-where-we-used-to-be-907c1d6d",
+    :body-sha256
+    "907c1d6de13d922814297de9c5d587a35ef34b3c7c23d091c02ab92747fd85c4",
+    :file "docs/lyrics/the-space-where-we-used-to-be-907c1d6d.md"}],
+  :edges
+  [{:a "the-space-where-we-used-to-be",
+    :b "the-space-where-we-used-to-be-907c1d6d",
+    :distance 45,
+    :similarity 0.08163265306122448}],
+  :mean-similarity 0.08163265306122448}
+ {:cluster/key "sonic argument against doom",
+  :members
+  [{:slug "sonic-argument-against-doom",
+    :body-sha256
+    "7a1c8a63667d29971d63d7764590adac441dd9a79d8c94de76fe7e0575ae23b0",
+    :file "docs/lyrics/sonic-argument-against-doom.txt"}
+   {:slug "sonic-argument-against-doom-abc649dc",
+    :body-sha256
+    "abc649dcfd7660db813b641c686f6f87fc7fa809a85cde5f87a8a30bda8bdc32",
+    :file "docs/lyrics/sonic-argument-against-doom-abc649dc.txt"}],
+  :edges
+  [{:a "sonic-argument-against-doom",
+    :b "sonic-argument-against-doom-abc649dc",
+    :distance 2,
+    :similarity 0.9574468085106383}],
+  :mean-similarity 0.9574468085106383}
+ {:cluster/key "eta_mu_entropy_choir_protocol.part_65",
+  :members
+  [{:slug "eta-mu-entropy-choir-protocol-part-65-5630c65f",
+    :body-sha256
+    "5630c65f7805f54b02515ba5f192cdf5111f80606b734bbe0c8059fe71442aee",
+    :file
+    "docs/lyrics/eta-mu-entropy-choir-protocol-part-65-5630c65f.txt"}
+   {:slug "eta-mu-entropy-choir-protocol-part-65-530e77b4",
+    :body-sha256
+    "530e77b4df7978149f3bb006474a6ad6629271f24349747822241b0dfeb7c9a2",
+    :file
+    "docs/lyrics/eta-mu-entropy-choir-protocol-part-65-530e77b4.txt"}
+   {:slug "eta-mu-entropy-choir-protocol-part-65",
+    :body-sha256
+    "709f73fc882fa4a175e4628824ddf93b29ed60199f873189a45f9ccb70891f46",
+    :file "docs/lyrics/eta-mu-entropy-choir-protocol-part-65.txt"}
+   {:slug "eta-mu-entropy-choir-protocol-part-65-9a3fcdc6",
+    :body-sha256
+    "9a3fcdc6f52ec7efbb19642206a0a98538145638786e04ea6c435cb10738307e",
+    :file
+    "docs/lyrics/eta-mu-entropy-choir-protocol-part-65-9a3fcdc6.txt"}],
+  :edges
+  [{:a "eta-mu-entropy-choir-protocol-part-65-5630c65f",
+    :b "eta-mu-entropy-choir-protocol-part-65-9a3fcdc6",
+    :distance 113,
+    :similarity 0.008771929824561405}
+   {:a "eta-mu-entropy-choir-protocol-part-65-530e77b4",
+    :b "eta-mu-entropy-choir-protocol-part-65-5630c65f",
+    :distance 2,
+    :similarity 0.9259259259259259}
+   {:a "eta-mu-entropy-choir-protocol-part-65-530e77b4",
+    :b "eta-mu-entropy-choir-protocol-part-65-9a3fcdc6",
+    :distance 112,
+    :similarity 0.01754385964912281}
+   {:a "eta-mu-entropy-choir-protocol-part-65",
+    :b "eta-mu-entropy-choir-protocol-part-65-5630c65f",
+    :distance 111,
+    :similarity 0.01769911504424779}
+   {:a "eta-mu-entropy-choir-protocol-part-65",
+    :b "eta-mu-entropy-choir-protocol-part-65-530e77b4",
+    :distance 112,
+    :similarity 0.008849557522123894}
+   {:a "eta-mu-entropy-choir-protocol-part-65",
+    :b "eta-mu-entropy-choir-protocol-part-65-9a3fcdc6",
+    :distance 2,
+    :similarity 0.9824561403508772}],
+  :mean-similarity 0.3268744213861432}
+ {:cluster/key "loss grounds protocol / ロスグラウンド・プロトコル",
+  :members
+  [{:slug "loss-grounds-protocol-34fa52cb",
+    :body-sha256
+    "34fa52cbb4742a57b3760bfe4dbb1b7c45f73c3001dd88b4ad77c32ba087b616",
+    :file "docs/lyrics/loss-grounds-protocol-34fa52cb.txt"}
+   {:slug "loss-grounds-protocol",
+    :body-sha256
+    "8a54a80eb5dcfb68ca5d99d0868d4c1775c3bdd39247b9327a97d4f93feeb90d",
+    :file "docs/lyrics/loss-grounds-protocol.txt"}],
+  :edges
+  [{:a "loss-grounds-protocol",
+    :b "loss-grounds-protocol-34fa52cb",
+    :distance 5,
+    :similarity 0.9295774647887324}],
+  :mean-similarity 0.9295774647887324}
+ {:cluster/key "lyrics",
+  :members
+  [{:slug "lyrics",
+    :body-sha256
+    "46742614f4c8e5c718a4a5b2603ea7f0d40124f401d0af3d1428960369f7117d",
+    :file "docs/lyrics/lyrics.txt"}
+   {:slug "lyrics-652cd15e",
+    :body-sha256
+    "652cd15e33b3eae454f23f396dcb15385f5f0ae1732edd396892136ff743901c",
+    :file "docs/lyrics/lyrics-652cd15e.txt"}
+   {:slug "lyrics-6da40609",
+    :body-sha256
+    "6da40609d9dade8d12f36582df29c96ca429f215ff8f077227907ac383765a5b",
+    :file "docs/lyrics/lyrics-6da40609.md"}],
+  :edges
+  [{:a "lyrics", :b "lyrics-652cd15e", :distance 27, :similarity 0.0}
+   {:a "lyrics", :b "lyrics-6da40609", :distance 26, :similarity 0.0}
+   {:a "lyrics-652cd15e",
+    :b "lyrics-6da40609",
+    :distance 27,
+    :similarity 0.0}],
+  :mean-similarity 0.0}
+ {:cluster/key "# fork tax hymn iv / 分岐税の賛歌 iv",
+  :members
+  [{:slug "fork-tax-hymn-iv-iv-68bd754b",
+    :body-sha256
+    "68bd754b8f18cd47e548df5c709fec0858e4b4d388a2dfc19bec187be733f257",
+    :file "docs/lyrics/fork-tax-hymn-iv-iv-68bd754b.txt"}
+   {:slug "fork-tax-hymn-iv-iv",
+    :body-sha256
+    "54865cd246d8bc785faaf1d61f3347e1d177bac73315acf332ea63ab32b3dcc1",
+    :file "docs/lyrics/fork-tax-hymn-iv-iv.txt"}],
+  :edges
+  [{:a "fork-tax-hymn-iv-iv",
+    :b "fork-tax-hymn-iv-iv-68bd754b",
+    :distance 12,
+    :similarity 0.8285714285714286}],
+  :mean-similarity 0.8285714285714286}
+ {:cluster/key "token by token x frozen request broth (mashup)",
+  :members
+  [{:slug "token-by-token-x-frozen-request-broth-mashup",
+    :body-sha256
+    "4de8e90c533040baef92cd00703f6414f85f4d82705c39748ee23a757444e32a",
+    :file
+    "docs/lyrics/token-by-token-x-frozen-request-broth-mashup.txt"}
+   {:slug "token-by-token-x-frozen-request-broth-mashup-d3cb8305",
+    :body-sha256
+    "d3cb83055c623bb6934eebddb4f346a40a9adaec2d761ffbef496b1b5e0c9f8a",
+    :file
+    "docs/lyrics/token-by-token-x-frozen-request-broth-mashup-d3cb8305.txt"}],
+  :edges
+  [{:a "token-by-token-x-frozen-request-broth-mashup",
+    :b "token-by-token-x-frozen-request-broth-mashup-d3cb8305",
+    :distance 75,
+    :similarity 0.02597402597402597}],
+  :mean-similarity 0.02597402597402597}
+ {:cluster/key
+  "**new feature:** **anchor chain** (deter not enough safety fork",
+  :members
+  [{:slug "new-feature-anchor-chain-deter-not-enough-safety-fork",
+    :body-sha256
+    "bc1c30bb896e042138f5ac36ee84d4c66b15d1c1ab624c8428b10f2006a9c637",
+    :file
+    "docs/lyrics/new-feature-anchor-chain-deter-not-enough-safety-fork.txt"}
+   {:slug
+    "new-feature-anchor-chain-deter-not-enough-safety-fork-8ce95f7c",
+    :body-sha256
+    "8ce95f7ced26cb44984e30f9c200bd69c56f14f1cd949eff57302321b2c65ee5",
+    :file
+    "docs/lyrics/new-feature-anchor-chain-deter-not-enough-safety-fork-8ce95f7c.txt"}],
+  :edges
+  [{:a "new-feature-anchor-chain-deter-not-enough-safety-fork",
+    :b
+    "new-feature-anchor-chain-deter-not-enough-safety-fork-8ce95f7c",
+    :distance 12,
+    :similarity 0.8909090909090909}],
+  :mean-similarity 0.8909090909090909}
+ {:cluster/key "ημ_lullaby_part39_78bpm fork",
+  :members
+  [{:slug "eta-mu-lullaby-part39-78bpm-fork-bef4844a",
+    :body-sha256
+    "bef4844a33edd38c1cc4afa7e111875dd0c97f51773981b4a07ae6833141936b",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm-fork-bef4844a.txt"}
+   {:slug "eta-mu-lullaby-part39-78bpm-fork-73c3a9ee",
+    :body-sha256
+    "73c3a9eec5d0c9a702cbba4da92b9458a7fb0ae5d34f28bbb46ce910345cd4d7",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm-fork-73c3a9ee.txt"}
+   {:slug "eta-mu-lullaby-part39-78bpm-fork-a320689c",
+    :body-sha256
+    "a320689cc669115dc27832f047b61e017f36d490f323f50180f9752b56ae6146",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm-fork-a320689c.txt"}
+   {:slug "eta-mu-lullaby-part39-78bpm-fork",
+    :body-sha256
+    "0c6b9cd5d087d2139831dc9019ccc84786611f2c25c83443cc01b783b37d770e",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm-fork.txt"}],
+  :edges
+  [{:a "eta-mu-lullaby-part39-78bpm-fork-73c3a9ee",
+    :b "eta-mu-lullaby-part39-78bpm-fork-bef4844a",
+    :distance 42,
+    :similarity 0.02325581395348837}
+   {:a "eta-mu-lullaby-part39-78bpm-fork-73c3a9ee",
+    :b "eta-mu-lullaby-part39-78bpm-fork-a320689c",
+    :distance 30,
+    :similarity 0.0625}
+   {:a "eta-mu-lullaby-part39-78bpm-fork-a320689c",
+    :b "eta-mu-lullaby-part39-78bpm-fork-bef4844a",
+    :distance 12,
+    :similarity 0.7209302325581395}
+   {:a "eta-mu-lullaby-part39-78bpm-fork",
+    :b "eta-mu-lullaby-part39-78bpm-fork-bef4844a",
+    :distance 30,
+    :similarity 0.3023255813953488}
+   {:a "eta-mu-lullaby-part39-78bpm-fork",
+    :b "eta-mu-lullaby-part39-78bpm-fork-73c3a9ee",
+    :distance 12,
+    :similarity 0.6363636363636364}
+   {:a "eta-mu-lullaby-part39-78bpm-fork",
+    :b "eta-mu-lullaby-part39-78bpm-fork-a320689c",
+    :distance 32,
+    :similarity 0.0303030303030303}],
+  :mean-similarity 0.29594638242894056}
+ {:cluster/key "music is a technology",
+  :members
+  [{:slug "music-is-a-technology-92c36ab4",
+    :body-sha256
+    "92c36ab4665308133426d7ed883290cf2ab014667796b82e350546da893e41a5",
+    :file "docs/lyrics/music-is-a-technology-92c36ab4.txt"}
+   {:slug "music-is-a-technology-c62fe37e",
+    :body-sha256
+    "c62fe37ea0e579231f706e49c25cb0753a40525af66a84450f3e6b48403b3fad",
+    :file "docs/lyrics/music-is-a-technology-c62fe37e.txt"}],
+  :edges
+  [{:a "music-is-a-technology-92c36ab4",
+    :b "music-is-a-technology-c62fe37e",
+    :distance 4,
+    :similarity 0.9655172413793103}],
+  :mean-similarity 0.9655172413793103}
+ {:cluster/key "colors of the guild / ギルドの色",
+  :members
+  [{:slug "colors-of-the-guild-b44f0cea",
+    :body-sha256
+    "b44f0cea92a656bcfd5cd5c61515fa10555eee68c27dec0c5b6da4db66a37f88",
+    :file "docs/lyrics/colors-of-the-guild-b44f0cea.txt"}
+   {:slug "colors-of-the-guild",
+    :body-sha256
+    "36a7dee4caa7528dfeba818de3df1ae87af59d9b1f843259edace5c8f0699a7e",
+    :file "docs/lyrics/colors-of-the-guild.txt"}
+   {:slug "colors-of-the-guild-f03b7480",
+    :body-sha256
+    "f03b74809e97b441b3670e01b71323d4a157fa7fa48965c04f22671095d4496a",
+    :file "docs/lyrics/colors-of-the-guild-f03b7480.txt"}
+   {:slug "colors-of-the-guild-96e0fb0e",
+    :body-sha256
+    "96e0fb0e34c2af92b2d4135b064a38d1290974b751da1543d8a2918b04419de9",
+    :file "docs/lyrics/colors-of-the-guild-96e0fb0e.txt"}],
+  :edges
+  [{:a "colors-of-the-guild-b44f0cea",
+    :b "colors-of-the-guild-f03b7480",
+    :distance 5,
+    :similarity 0.9390243902439024}
+   {:a "colors-of-the-guild",
+    :b "colors-of-the-guild-b44f0cea",
+    :distance 80,
+    :similarity 0.03614457831325301}
+   {:a "colors-of-the-guild",
+    :b "colors-of-the-guild-f03b7480",
+    :distance 81,
+    :similarity 0.02409638554216867}
+   {:a "colors-of-the-guild",
+    :b "colors-of-the-guild-96e0fb0e",
+    :distance 5,
+    :similarity 0.9425287356321839}
+   {:a "colors-of-the-guild-96e0fb0e",
+    :b "colors-of-the-guild-b44f0cea",
+    :distance 85,
+    :similarity 0.02298850574712644}
+   {:a "colors-of-the-guild-96e0fb0e",
+    :b "colors-of-the-guild-f03b7480",
+    :distance 80,
+    :similarity 0.08045977011494253}],
+  :mean-similarity 0.3408737275989295}
+ {:cluster/key
+  "coherence loss x cfo crying x forkgate receipts (mashup) (mashup)",
+  :members
+  [{:slug
+    "coherence-loss-x-cfo-crying-x-forkgate-receipts-mashup-mashup",
+    :body-sha256
+    "9da48d9d07044cc2d8b842d14a43f7cce3eb675624110dd3e97e0d4d813b4562",
+    :file
+    "docs/lyrics/coherence-loss-x-cfo-crying-x-forkgate-receipts-mashup-mashup.txt"}
+   {:slug
+    "coherence-loss-x-cfo-crying-x-forkgate-receipts-mashup-mashup-b480199c",
+    :body-sha256
+    "b480199c3768027252b67df8a3058ae7f1da417c158a9c3677133fed3360cc27",
+    :file
+    "docs/lyrics/coherence-loss-x-cfo-crying-x-forkgate-receipts-mashup-mashup-b480199c.txt"}],
+  :edges
+  [{:a "coherence-loss-x-cfo-crying-x-forkgate-receipts-mashup-mashup",
+    :b
+    "coherence-loss-x-cfo-crying-x-forkgate-receipts-mashup-mashup-b480199c",
+    :distance 61,
+    :similarity 0.03174603174603175}],
+  :mean-similarity 0.03174603174603175}
+ {:cluster/key "trembling hinge oath",
+  :members
+  [{:slug "trembling-hinge-oath-86aeee93",
+    :body-sha256
+    "86aeee93feda6e761bd0e99cee4a2c41943bb98d317f9364062febec1d2ea572",
+    :file "docs/lyrics/trembling-hinge-oath-86aeee93.txt"}
+   {:slug "trembling-hinge-oath",
+    :body-sha256
+    "229122888dfd7fdac166cc784d2a2dd113bc47db69bf1ff699dfc07eeceafa8b",
+    :file "docs/lyrics/trembling-hinge-oath.txt"}],
+  :edges
+  [{:a "trembling-hinge-oath",
+    :b "trembling-hinge-oath-86aeee93",
+    :distance 2,
+    :similarity 0.9574468085106383}],
+  :mean-similarity 0.9574468085106383}
+ {:cluster/key "eta_mu_world_sounds.part_66",
+  :members
+  [{:slug "eta-mu-world-sounds-part-66-c2383d98",
+    :body-sha256
+    "c2383d98a7e7f52c7e0a970b719fa419e376c646e3723d50ceda42fe94034012",
+    :file "docs/lyrics/eta-mu-world-sounds-part-66-c2383d98.txt"}
+   {:slug "eta-mu-world-sounds-part-66",
+    :body-sha256
+    "6c20864bb6d1cf5f7c710f9ed8019cd0cd950f4ceabb8bd94490967df6c9607d",
+    :file "docs/lyrics/eta-mu-world-sounds-part-66.txt"}],
+  :edges
+  [{:a "eta-mu-world-sounds-part-66",
+    :b "eta-mu-world-sounds-part-66-c2383d98",
+    :distance 2,
+    :similarity 0.9259259259259259}],
+  :mean-similarity 0.9259259259259259}
+ {:cluster/key "ημ_epic_part48_84bpm",
+  :members
+  [{:slug "eta-mu-epic-part48-84bpm-586652ba",
+    :body-sha256
+    "586652ba8219a6dd73a07769835917f01d4c6f892e0de81da754173bc6ff62df",
+    :file "docs/lyrics/eta-mu-epic-part48-84bpm-586652ba.txt"}
+   {:slug "eta-mu-epic-part48-84bpm",
+    :body-sha256
+    "83ed64ad84ff347760380d35f740906992608c2144fe35da4d8da642d0ade05a",
+    :file "docs/lyrics/eta-mu-epic-part48-84bpm.txt"}
+   {:slug "eta-mu-epic-part48-84bpm-da456298",
+    :body-sha256
+    "da456298f6420046b61db2a9b7939d23090950f2a05f2401681a4b2d7a1ae737",
+    :file "docs/lyrics/eta-mu-epic-part48-84bpm-da456298.txt"}
+   {:slug "eta-mu-epic-part48-84bpm-70576edf",
+    :body-sha256
+    "70576edfa19f6b52413e2a33292200213e38978eb538327a7fa0381d0fcd8a96",
+    :file "docs/lyrics/eta-mu-epic-part48-84bpm-70576edf.txt"}],
+  :edges
+  [{:a "eta-mu-epic-part48-84bpm-586652ba",
+    :b "eta-mu-epic-part48-84bpm-da456298",
+    :distance 48,
+    :similarity 0.02040816326530612}
+   {:a "eta-mu-epic-part48-84bpm-586652ba",
+    :b "eta-mu-epic-part48-84bpm-70576edf",
+    :distance 12,
+    :similarity 0.8}
+   {:a "eta-mu-epic-part48-84bpm",
+    :b "eta-mu-epic-part48-84bpm-586652ba",
+    :distance 47,
+    :similarity 0.04081632653061224}
+   {:a "eta-mu-epic-part48-84bpm",
+    :b "eta-mu-epic-part48-84bpm-da456298",
+    :distance 2,
+    :similarity 0.92}
+   {:a "eta-mu-epic-part48-84bpm",
+    :b "eta-mu-epic-part48-84bpm-70576edf",
+    :distance 59,
+    :similarity 0.01666666666666667}
+   {:a "eta-mu-epic-part48-84bpm-70576edf",
+    :b "eta-mu-epic-part48-84bpm-da456298",
+    :distance 58,
+    :similarity 0.03333333333333333}],
+  :mean-similarity 0.30520408163265306}
+ {:cluster/key "# fork tax lullaby x — 20260213_245915_s",
+  :members
+  [{:slug "fork-tax-lullaby-x-20260213-245915-s-aba1d6e4",
+    :body-sha256
+    "aba1d6e4cffd244e4321ca18392fc374ffc8fc72a045d2707e64c77ee049c1d2",
+    :file
+    "docs/lyrics/fork-tax-lullaby-x-20260213-245915-s-aba1d6e4.txt"}
+   {:slug "fork-tax-lullaby-x-20260213-245915-s",
+    :body-sha256
+    "3c193c58b1fc45d53c34ebff17a08dbd8b6204d060448cd74d16363325c9ecce",
+    :file "docs/lyrics/fork-tax-lullaby-x-20260213-245915-s.txt"}],
+  :edges
+  [{:a "fork-tax-lullaby-x-20260213-245915-s",
+    :b "fork-tax-lullaby-x-20260213-245915-s-aba1d6e4",
+    :distance 4,
+    :similarity 0.9375}],
+  :mean-similarity 0.9375}
+ {:cluster/key "μ (compression & narrative operator)",
+  :members
+  [{:slug "mu-compression-narrative-operator-e70b129d",
+    :body-sha256
+    "e70b129dbad761cbc720e05b4aeaa7e9246cc609585aa0ec5145876c60d30a00",
+    :file "docs/lyrics/mu-compression-narrative-operator-e70b129d.txt"}
+   {:slug "mu-compression-narrative-operator",
+    :body-sha256
+    "120c02c80bc258e253e445af76529d6960dceece50dec9dcbaa8e73981e5facb",
+    :file "docs/lyrics/mu-compression-narrative-operator.txt"}
+   {:slug "mu-compression-narrative-operator-266832c2",
+    :body-sha256
+    "266832c212c598da8d9af303f61a9d76d371cc06f962f890153bb32a4e6ae63d",
+    :file
+    "docs/lyrics/mu-compression-narrative-operator-266832c2.txt"}],
+  :edges
+  [{:a "mu-compression-narrative-operator",
+    :b "mu-compression-narrative-operator-e70b129d",
+    :distance 96,
+    :similarity 0.5025906735751295}
+   {:a "mu-compression-narrative-operator",
+    :b "mu-compression-narrative-operator-266832c2",
+    :distance 95,
+    :similarity 0.5077720207253886}
+   {:a "mu-compression-narrative-operator-266832c2",
+    :b "mu-compression-narrative-operator-e70b129d",
+    :distance 1,
+    :similarity 0.9897959183673469}],
+  :mean-similarity 0.666719537555955}
+ {:cluster/key "witness_thread_lullaby_part56_78bpm",
+  :members
+  [{:slug "witness-thread-lullaby-part56-78bpm",
+    :body-sha256
+    "80ea5f8832caa9bb32d2e762d97a218c78132fd82d4e1146c313fe2b748ef756",
+    :file "docs/lyrics/witness-thread-lullaby-part56-78bpm.txt"}
+   {:slug "witness-thread-lullaby-part56-78bpm-6b73f1e2",
+    :body-sha256
+    "6b73f1e25568ff09c153221beddde34e698e34b9f92aeda87080f4f12b71e2e5",
+    :file
+    "docs/lyrics/witness-thread-lullaby-part56-78bpm-6b73f1e2.txt"}],
+  :edges
+  [{:a "witness-thread-lullaby-part56-78bpm",
+    :b "witness-thread-lullaby-part56-78bpm-6b73f1e2",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "η",
+  :members
+  [{:slug "eta",
+    :body-sha256
+    "ae31bc5b1d4c802fc7b7198bb582dc2c8690bfa355b6733213a75bbbe51d8271",
+    :file "docs/lyrics/eta.txt"}
+   {:slug "eta-5b60a07f",
+    :body-sha256
+    "5b60a07f462a275e6179f547b638edbf990389b2e8684f03bce49fadc7440071",
+    :file "docs/lyrics/eta-5b60a07f.txt"}
+   {:slug "eta-2cbb26f8",
+    :body-sha256
+    "2cbb26f8e6f48def4ec3010e4165b2a19ee7b02c74e4d8f13a4459b8fe927868",
+    :file "docs/lyrics/eta-2cbb26f8.txt"}],
+  :edges
+  [{:a "eta",
+    :b "eta-5b60a07f",
+    :distance 32,
+    :similarity 0.5076923076923077}
+   {:a "eta",
+    :b "eta-2cbb26f8",
+    :distance 31,
+    :similarity 0.5230769230769231}
+   {:a "eta-2cbb26f8",
+    :b "eta-5b60a07f",
+    :distance 1,
+    :similarity 0.9705882352941176}],
+  :mean-similarity 0.6671191553544494}
+ {:cluster/key "neon escape sequence",
+  :members
+  [{:slug "neon-escape-sequence",
+    :body-sha256
+    "7028c656ff8f115a8cf38f736921b84d4bb29be61ee8aeb85aba16086f67d43f",
+    :file "docs/lyrics/neon-escape-sequence.txt"}
+   {:slug "neon-escape-sequence-33cf8117",
+    :body-sha256
+    "33cf8117bad7a9896aba7d84fedd4cb867fcf4964b88562993dcf236e27a466d",
+    :file "docs/lyrics/neon-escape-sequence-33cf8117.txt"}],
+  :edges
+  [{:a "neon-escape-sequence",
+    :b "neon-escape-sequence-33cf8117",
+    :distance 2,
+    :similarity 0.9705882352941176}],
+  :mean-similarity 0.9705882352941176}
+ {:cluster/key "let's begin",
+  :members
+  [{:slug "let-s-begin-50289919",
+    :body-sha256
+    "5028991969a1dd6b33c5af3037d0042d751885766c1b502a4d2425f836c6f7aa",
+    :file "docs/lyrics/let-s-begin-50289919.txt"}
+   {:slug "let-s-begin",
+    :body-sha256
+    "c3e7c25745d20adb5e4535c7de509079282c6eb3afdc5217bd5d2025786b8607",
+    :file "docs/lyrics/let-s-begin.txt"}],
+  :edges
+  [{:a "let-s-begin",
+    :b "let-s-begin-50289919",
+    :distance 34,
+    :similarity 0.05555555555555556}],
+  :mean-similarity 0.05555555555555556}
+ {:cluster/key "i do not kneel / 跪かな",
+  :members
+  [{:slug "i-do-not-kneel-15de584e",
+    :body-sha256
+    "15de584e2336d68b5bc0ad10f3db0ef75fcf6ba4b2f372eb2c27793eca8a1899",
+    :file "docs/lyrics/i-do-not-kneel-15de584e.txt"}
+   {:slug "i-do-not-kneel-1c3128c9",
+    :body-sha256
+    "1c3128c99a16cb9dfebd94b04d753d5d23d43e6e9db72fdabab2de9e7e6fb76d",
+    :file "docs/lyrics/i-do-not-kneel-1c3128c9.txt"}],
+  :edges
+  [{:a "i-do-not-kneel-15de584e",
+    :b "i-do-not-kneel-1c3128c9",
+    :distance 5,
+    :similarity 0.9382716049382716}],
+  :mean-similarity 0.9382716049382716}
+ {:cluster/key "存在論的な“反・虚無”の論証として",
+  :members
+  [{:slug "song-264f7a0c",
+    :body-sha256
+    "264f7a0c554e9bec56448c03d726c8dcaf4af41bee80d534abab48b41059970c",
+    :file "docs/lyrics/song-264f7a0c.txt"}
+   {:slug "song-eb7496c4",
+    :body-sha256
+    "eb7496c4c8bf5a983af17b01f27a39343cdc8442c163d1a896f87ddc9e63ecca",
+    :file "docs/lyrics/song-eb7496c4.txt"}
+   {:slug "song-44ddc509",
+    :body-sha256
+    "44ddc5094f5deae83fe2ec235a4e571af44fe8951544f9f48525c1ea2d307c67",
+    :file "docs/lyrics/song-44ddc509.txt"}
+   {:slug "song-9231e90e",
+    :body-sha256
+    "9231e90e5fd2bf1b6e62beda0abd05e3f8557f1d6e87eea0c39ee1ca27a47785",
+    :file "docs/lyrics/song-9231e90e.txt"}],
+  :edges
+  [{:a "song-264f7a0c",
+    :b "song-eb7496c4",
+    :distance 2,
+    :similarity 0.9879518072289157}
+   {:a "song-264f7a0c",
+    :b "song-44ddc509",
+    :distance 1,
+    :similarity 0.9939393939393939}
+   {:a "song-264f7a0c",
+    :b "song-9231e90e",
+    :distance 2,
+    :similarity 0.9878787878787879}
+   {:a "song-44ddc509",
+    :b "song-eb7496c4",
+    :distance 3,
+    :similarity 0.9819277108433735}
+   {:a "song-44ddc509",
+    :b "song-9231e90e",
+    :distance 2,
+    :similarity 0.9878787878787879}
+   {:a "song-9231e90e",
+    :b "song-eb7496c4",
+    :distance 1,
+    :similarity 0.9939759036144578}],
+  :mean-similarity 0.9889253985639529}
+ {:cluster/key "## 1) **context overflow (butterfly inde",
+  :members
+  [{:slug "1-context-overflow-butterfly-inde-1de1ea92",
+    :body-sha256
+    "1de1ea920a9d4b6ca381f750630c10d41867dfd96ae210510c3813b825648956",
+    :file "docs/lyrics/1-context-overflow-butterfly-inde-1de1ea92.txt"}
+   {:slug "1-context-overflow-butterfly-inde",
+    :body-sha256
+    "dbc2e74e65230b1ea1e657fb2d1a6ea8db6564fb92a20ec1dab7ca6b315ee6e5",
+    :file "docs/lyrics/1-context-overflow-butterfly-inde.txt"}],
+  :edges
+  [{:a "1-context-overflow-butterfly-inde",
+    :b "1-context-overflow-butterfly-inde-1de1ea92",
+    :distance 7,
+    :similarity 0.9396551724137931}],
+  :mean-similarity 0.9396551724137931}
+ {:cluster/key
+  "receipt_river_worldsound_part56 x witness_thread_lullaby_part56_78bpm (mashup)",
+  :members
+  [{:slug
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup",
+    :body-sha256
+    "ef8666114d60c75689895c0e5827495a5c6b44dc00ba4bd2cfcbeed4cf636249",
+    :file
+    "docs/lyrics/receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup.txt"}
+   {:slug
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-c4965a12",
+    :body-sha256
+    "c4965a126b06fe709a56e892e5ba7cf49337edc1af206c2d1cdfef821288cdb5",
+    :file
+    "docs/lyrics/receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-c4965a12.txt"}
+   {:slug
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-befeef74",
+    :body-sha256
+    "befeef7484db02bdf76e38e50eeced456c3b72ad9edf2adb53b0f3d69e298a32",
+    :file
+    "docs/lyrics/receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-befeef74.txt"}
+   {:slug
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-ba1ae8f7",
+    :body-sha256
+    "ba1ae8f7b91eca5dc4c5d879085e280b38098efaffec1efeb6b6144be959a2d9",
+    :file
+    "docs/lyrics/receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-ba1ae8f7.txt"}],
+  :edges
+  [{:a
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup",
+    :b
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-c4965a12",
+    :distance 145,
+    :similarity 0.006849315068493151}
+   {:a
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup",
+    :b
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-befeef74",
+    :distance 144,
+    :similarity 0.0136986301369863}
+   {:a
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup",
+    :b
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-ba1ae8f7",
+    :distance 5,
+    :similarity 0.9657534246575342}
+   {:a
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-befeef74",
+    :b
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-c4965a12",
+    :distance 4,
+    :similarity 0.92}
+   {:a
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-ba1ae8f7",
+    :b
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-c4965a12",
+    :distance 140,
+    :similarity 0.01408450704225352}
+   {:a
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-ba1ae8f7",
+    :b
+    "receipt-river-worldsound-part56-x-witness-thread-lullaby-part56-78bpm-mashup-befeef74",
+    :distance 141,
+    :similarity 0.007042253521126761}],
+  :mean-similarity 0.3212380217377323}
+ {:cluster/key "glass cathedral / ガラスの聖堂",
+  :members
+  [{:slug "glass-cathedral",
+    :body-sha256
+    "998043bddc31c9832780f365e35b1d294b3c404c61f2e8338f1fa94f4e380f0f",
+    :file "docs/lyrics/glass-cathedral.txt"}
+   {:slug "glass-cathedral-8c02392f",
+    :body-sha256
+    "8c02392f0d2499d836b87aa4e4dc868dae5146e85933947e9cbd2bf750a22d26",
+    :file "docs/lyrics/glass-cathedral-8c02392f.txt"}],
+  :edges
+  [{:a "glass-cathedral",
+    :b "glass-cathedral-8c02392f",
+    :distance 6,
+    :similarity 0.9482758620689655}],
+  :mean-similarity 0.9482758620689655}
+ {:cluster/key "what makes it beautiful",
+  :members
+  [{:slug "what-makes-it-beautiful-a6bb3386",
+    :body-sha256
+    "a6bb33869b350e9252baa0036e14ce404f82595c35f6e83007509f0461825680",
+    :file "docs/lyrics/what-makes-it-beautiful-a6bb3386.txt"}
+   {:slug "what-makes-it-beautiful",
+    :body-sha256
+    "d938fda15768b119ee53113b9e9957a4056010e80abd9bee7dd57a2a8bfe2c97",
+    :file "docs/lyrics/what-makes-it-beautiful.txt"}],
+  :edges
+  [{:a "what-makes-it-beautiful",
+    :b "what-makes-it-beautiful-a6bb3386",
+    :distance 2,
+    :similarity 0.888888888888889}],
+  :mean-similarity 0.888888888888889}
+ {:cluster/key "ημ_lullaby_part45_78bpm",
+  :members
+  [{:slug "eta-mu-lullaby-part45-78bpm",
+    :body-sha256
+    "9e2690494223321680dded2ba0d0b7cb63c5c553ce06edd8cced0c4feeaeb6ab",
+    :file "docs/lyrics/eta-mu-lullaby-part45-78bpm.txt"}
+   {:slug "eta-mu-lullaby-part45-78bpm-9b885982",
+    :body-sha256
+    "9b8859823458276471b46f3a0a3a8317439ff0d4be33de1fea61f55e3f0dc2ad",
+    :file "docs/lyrics/eta-mu-lullaby-part45-78bpm-9b885982.txt"}],
+  :edges
+  [{:a "eta-mu-lullaby-part45-78bpm",
+    :b "eta-mu-lullaby-part45-78bpm-9b885982",
+    :distance 2,
+    :similarity 0.8823529411764706}],
+  :mean-similarity 0.8823529411764706}
+ {:cluster/key
+  "🎤 fork tales — “protestant presence (μ bloom reformation)”",
+  :members
+  [{:slug "fork-tales-protestant-presence-mu-bloom-reformation",
+    :body-sha256
+    "186c86e3c871e5381b2b21bb3c1f86f955e667b8468a3fa7e352f505fec8c839",
+    :file
+    "docs/lyrics/fork-tales-protestant-presence-mu-bloom-reformation.txt"}
+   {:slug
+    "fork-tales-protestant-presence-mu-bloom-reformation-837387f7",
+    :body-sha256
+    "837387f73c510b3b7a1348322474ae9b6f03df4bb97acd3d225013de1e767e9d",
+    :file
+    "docs/lyrics/fork-tales-protestant-presence-mu-bloom-reformation-837387f7.txt"}],
+  :edges
+  [{:a "fork-tales-protestant-presence-mu-bloom-reformation",
+    :b "fork-tales-protestant-presence-mu-bloom-reformation-837387f7",
+    :distance 12,
+    :similarity 0.888888888888889}],
+  :mean-similarity 0.888888888888889}
+ {:cluster/key "cold start / コールドスタート",
+  :members
+  [{:slug "cold-start-2faffda8",
+    :body-sha256
+    "2faffda8d27563da58af9423d60757b5bed0dd74bc16898bfd5692de64510dd1",
+    :file "docs/lyrics/cold-start-2faffda8.txt"}
+   {:slug "cold-start",
+    :body-sha256
+    "0948bb1fc1ce1585b5c108868ef5edf66920d1871bb5d382a4b37e7b81e8ee38",
+    :file "docs/lyrics/cold-start.txt"}],
+  :edges
+  [{:a "cold-start",
+    :b "cold-start-2faffda8",
+    :distance 5,
+    :similarity 0.9375}],
+  :mean-similarity 0.9375}
+ {:cluster/key "compile the night (逃避と解放)",
+  :members
+  [{:slug "compile-the-night",
+    :body-sha256
+    "31934362c206517bd2163bf6d099b055e3aeb9eeea0bfaeeb1e33619cfc27305",
+    :file "docs/lyrics/compile-the-night.txt"}
+   {:slug "compile-the-night-fc8c21cb",
+    :body-sha256
+    "fc8c21cbabd28869627c7d071ef2f2a0d1cdc2c1a9414c067c51a4512cf95a8b",
+    :file "docs/lyrics/compile-the-night-fc8c21cb.txt"}],
+  :edges
+  [{:a "compile-the-night",
+    :b "compile-the-night-fc8c21cb",
+    :distance 7,
+    :similarity 0.9146341463414634}],
+  :mean-similarity 0.9146341463414634}
+ {:cluster/key "cathedral nervous system / 神経の聖堂",
+  :members
+  [{:slug "cathedral-nervous-system-a603d3f6",
+    :body-sha256
+    "a603d3f6b2912a173ed58d36b95e104b5ee1ff7bb0c60f3f2c27b703612f18f6",
+    :file "docs/lyrics/cathedral-nervous-system-a603d3f6.txt"}
+   {:slug "cathedral-nervous-system-dcfbbdd5",
+    :body-sha256
+    "dcfbbdd52e63a25d23dca45750334f73b0584cd15ce9e6fcced20b9c04562329",
+    :file "docs/lyrics/cathedral-nervous-system-dcfbbdd5.txt"}
+   {:slug "cathedral-nervous-system",
+    :body-sha256
+    "8e44879a7ebcc4f12ccfea9d3f8100e9517b9ad6b49e192db961bec3a58d11e9",
+    :file "docs/lyrics/cathedral-nervous-system.txt"}
+   {:slug "cathedral-nervous-system-f1563b0f",
+    :body-sha256
+    "f1563b0f0fdddb78af6e7d8cb5b63083f276e65121cd58752b9514c178aa46b5",
+    :file "docs/lyrics/cathedral-nervous-system-f1563b0f.txt"}],
+  :edges
+  [{:a "cathedral-nervous-system-a603d3f6",
+    :b "cathedral-nervous-system-dcfbbdd5",
+    :distance 6,
+    :similarity 0.9534883720930233}
+   {:a "cathedral-nervous-system-a603d3f6",
+    :b "cathedral-nervous-system-f1563b0f",
+    :distance 119,
+    :similarity 0.07751937984496124}
+   {:a "cathedral-nervous-system-dcfbbdd5",
+    :b "cathedral-nervous-system-f1563b0f",
+    :distance 113,
+    :similarity 0.08870967741935484}
+   {:a "cathedral-nervous-system",
+    :b "cathedral-nervous-system-a603d3f6",
+    :distance 119,
+    :similarity 0.07751937984496124}
+   {:a "cathedral-nervous-system",
+    :b "cathedral-nervous-system-dcfbbdd5",
+    :distance 120,
+    :similarity 0.05511811023622047}
+   {:a "cathedral-nervous-system",
+    :b "cathedral-nervous-system-f1563b0f",
+    :distance 7,
+    :similarity 0.9448818897637795}],
+  :mean-similarity 0.36620613486705006}
+ {:cluster/key "auditors’ ledger",
+  :members
+  [{:slug "auditors-ledger-d38e2c92",
+    :body-sha256
+    "d38e2c92a29e86162a44060e72940c40dd262fd32292c9cd884e5bf1e4bd7df7",
+    :file "docs/lyrics/auditors-ledger-d38e2c92.txt"}
+   {:slug "auditors-ledger",
+    :body-sha256
+    "0d6dc121406d66694c23be20e7e0046424ac2ac0703096a5ff34a47afae58b4d",
+    :file "docs/lyrics/auditors-ledger.txt"}
+   {:slug "auditors-ledger-5ede6b81",
+    :body-sha256
+    "5ede6b81f01d2ec6b703f7b3c5b8dfcb2fc79d78a1b66c11c2c633beb84776ed",
+    :file "docs/lyrics/auditors-ledger-5ede6b81.txt"}],
+  :edges
+  [{:a "auditors-ledger",
+    :b "auditors-ledger-d38e2c92",
+    :distance 1,
+    :similarity 0.6666666666666667}
+   {:a "auditors-ledger",
+    :b "auditors-ledger-5ede6b81",
+    :distance 24,
+    :similarity 0.07692307692307691}
+   {:a "auditors-ledger-5ede6b81",
+    :b "auditors-ledger-d38e2c92",
+    :distance 24,
+    :similarity 0.07692307692307691}],
+  :mean-similarity 0.2735042735042735}
+ {:cluster/key
+  "[download operation_mindfuck_box_part16_keep_rolling_plot_graph_skills_memories.zip](sandbox:/mnt/data/operation_mindfuck_box_part16_keep_rolling_plot_graph_skills_memories.zip)",
+  :members
+  [{:slug
+    "download-operation-mindfuck-box-part16-keep-rolling-plot-graph-skills-memories-z-c95f5f2f",
+    :body-sha256
+    "c95f5f2f3874e9f5e34ccb67f39f34fd6038818a0bd8673c8005621a3e15a683",
+    :file
+    "docs/lyrics/download-operation-mindfuck-box-part16-keep-rolling-plot-graph-skills-memories-z-c95f5f2f.txt"}
+   {:slug
+    "download-operation-mindfuck-box-part16-keep-rolling-plot-graph-skills-memories-z",
+    :body-sha256
+    "54c281029f16ec381c45184e5d6bc3f3df54c439534f86549235868425d91485",
+    :file
+    "docs/lyrics/download-operation-mindfuck-box-part16-keep-rolling-plot-graph-skills-memories-z.txt"}],
+  :edges
+  [{:a
+    "download-operation-mindfuck-box-part16-keep-rolling-plot-graph-skills-memories-z",
+    :b
+    "download-operation-mindfuck-box-part16-keep-rolling-plot-graph-skills-memories-z-c95f5f2f",
+    :distance 2,
+    :similarity 0.9591836734693878}],
+  :mean-similarity 0.9591836734693878}
+ {:cluster/key "eta_mu_lullaby_part51_78bpm.forked",
+  :members
+  [{:slug "eta-mu-lullaby-part51-78bpm-forked-40847d7d",
+    :body-sha256
+    "40847d7d3a9348e48b07bdb8c9f12a149764f40ee60b82f151b5f0bb6addbf48",
+    :file
+    "docs/lyrics/eta-mu-lullaby-part51-78bpm-forked-40847d7d.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-forked",
+    :body-sha256
+    "e39c9347eb16569ef2f1e89e05cdbe0c1c7215283f2e927b5a25311c486e3f96",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-forked.txt"}],
+  :edges
+  [{:a "eta-mu-lullaby-part51-78bpm-forked",
+    :b "eta-mu-lullaby-part51-78bpm-forked-40847d7d",
+    :distance 12,
+    :similarity 0.8}],
+  :mean-similarity 0.8}
+ {:cluster/key "unsafe fork tax",
+  :members
+  [{:slug "unsafe-fork-tax-5febb7f5",
+    :body-sha256
+    "5febb7f556bd5a6d4b4312225469b2bd5edabc01597907d612dfe91df78a4e43",
+    :file "docs/lyrics/unsafe-fork-tax-5febb7f5.txt"}
+   {:slug "unsafe-fork-tax",
+    :body-sha256
+    "4fa778f1dba93bf8d28c8f148ffcd4a5c09108ad061a3efd117892f86fce6157",
+    :file "docs/lyrics/unsafe-fork-tax.txt"}],
+  :edges
+  [{:a "unsafe-fork-tax",
+    :b "unsafe-fork-tax-5febb7f5",
+    :distance 5,
+    :similarity 0.8780487804878049}],
+  :mean-similarity 0.8780487804878049}
+ {:cluster/key "mycelial bloom cut (presence reformation)",
+  :members
+  [{:slug "mycelial-bloom-cut-presence-reformation",
+    :body-sha256
+    "dd9dd482f6460ff600f5e12cd4bc0f9a24b2b9febb4cc26d03233b7ba5517261",
+    :file "docs/lyrics/mycelial-bloom-cut-presence-reformation.txt"}
+   {:slug "mycelial-bloom-cut-presence-reformation-5a4533af",
+    :body-sha256
+    "5a4533af66feb2e7a0b73202bce35a283e0e9adb5dee2e5827f3b2bb49d7e0af",
+    :file
+    "docs/lyrics/mycelial-bloom-cut-presence-reformation-5a4533af.txt"}],
+  :edges
+  [{:a "mycelial-bloom-cut-presence-reformation",
+    :b "mycelial-bloom-cut-presence-reformation-5a4533af",
+    :distance 2,
+    :similarity 0.9848484848484848}],
+  :mean-similarity 0.9848484848484848}
+ {:cluster/key "ημ_op_mf_part_π_handoff.zip",
+  :members
+  [{:slug "eta-mu-op-mf-part-pi-handoff-zip",
+    :body-sha256
+    "12a6ca965232d8d3429e6dc726a272a76bae4e42f0bcd6f82c10f4de82db6be2",
+    :file "docs/lyrics/eta-mu-op-mf-part-pi-handoff-zip.txt"}
+   {:slug "eta-mu-op-mf-part-pi-handoff-zip-882b9581",
+    :body-sha256
+    "882b95811232f5e0acc63ca82fbb6d9bf5ca82784bc7d128095b972a97e36906",
+    :file
+    "docs/lyrics/eta-mu-op-mf-part-pi-handoff-zip-882b9581.txt"}],
+  :edges
+  [{:a "eta-mu-op-mf-part-pi-handoff-zip",
+    :b "eta-mu-op-mf-part-pi-handoff-zip-882b9581",
+    :distance 46,
+    :similarity 0.5157894736842105}],
+  :mean-similarity 0.5157894736842105}
+ {:cluster/key "ημ_worldsound_lullaby_part41_78bpm",
+  :members
+  [{:slug "eta-mu-worldsound-lullaby-part41-78bpm-d68aee67",
+    :body-sha256
+    "d68aee67af1bc0c9728afc2b9a1bd73dcea48c7d9616cae51ddb0b9ef850e4d0",
+    :file
+    "docs/lyrics/eta-mu-worldsound-lullaby-part41-78bpm-d68aee67.txt"}
+   {:slug "eta-mu-worldsound-lullaby-part41-78bpm",
+    :body-sha256
+    "4fe957ba945d4cdf931acfee9439339a5a79ff9e88eb120a52b44f98b7eadf40",
+    :file "docs/lyrics/eta-mu-worldsound-lullaby-part41-78bpm.txt"}
+   {:slug "eta-mu-worldsound-lullaby-part41-78bpm-9001cfff",
+    :body-sha256
+    "9001cfff1e3f0766f39cccd9695994265b023a396f328a7fdc2799585c4d4e31",
+    :file
+    "docs/lyrics/eta-mu-worldsound-lullaby-part41-78bpm-9001cfff.txt"}
+   {:slug "eta-mu-worldsound-lullaby-part41-78bpm-f1f776a6",
+    :body-sha256
+    "f1f776a62f7b9ee5bf46ba3706746342a3e4521c068cf5f5aa98f2ea8f272350",
+    :file
+    "docs/lyrics/eta-mu-worldsound-lullaby-part41-78bpm-f1f776a6.txt"}
+   {:slug "eta-mu-worldsound-lullaby-part41-78bpm-898b23db",
+    :body-sha256
+    "898b23db6d218c88ec5877720128978a5f076e8df04bcb75ae27d0fb9b935e68",
+    :file
+    "docs/lyrics/eta-mu-worldsound-lullaby-part41-78bpm-898b23db.txt"}],
+  :edges
+  [{:a "eta-mu-worldsound-lullaby-part41-78bpm-d68aee67",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-f1f776a6",
+    :distance 14,
+    :similarity 0.6818181818181818}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-d68aee67",
+    :distance 14,
+    :similarity 0.6818181818181818}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-9001cfff",
+    :distance 43,
+    :similarity 0.02272727272727273}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-f1f776a6",
+    :distance 13,
+    :similarity 0.7045454545454545}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-898b23db",
+    :distance 42,
+    :similarity 0.04545454545454545}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm-9001cfff",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-d68aee67",
+    :distance 29,
+    :similarity 0.06451612903225806}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm-9001cfff",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-f1f776a6",
+    :distance 43,
+    :similarity 0.02272727272727273}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm-898b23db",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-d68aee67",
+    :distance 30,
+    :similarity 0.03225806451612903}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm-898b23db",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-9001cfff",
+    :distance 2,
+    :similarity 0.9130434782608696}
+   {:a "eta-mu-worldsound-lullaby-part41-78bpm-898b23db",
+    :b "eta-mu-worldsound-lullaby-part41-78bpm-f1f776a6",
+    :distance 42,
+    :similarity 0.04545454545454545}],
+  :mean-similarity 0.3214363126354711}
+ {:cluster/key "ημ_epic_part46_84bpm",
+  :members
+  [{:slug "eta-mu-epic-part46-84bpm-e493c0dd",
+    :body-sha256
+    "e493c0dd30b15f573bd8e9e7e75a8257302934ced423beb87f8e376600dac2e6",
+    :file "docs/lyrics/eta-mu-epic-part46-84bpm-e493c0dd.txt"}
+   {:slug "eta-mu-epic-part46-84bpm",
+    :body-sha256
+    "86eb9d409bfc16d8fcc0ca8310e8e1873ca5da3a1acb573d32d08807e5802404",
+    :file "docs/lyrics/eta-mu-epic-part46-84bpm.txt"}],
+  :edges
+  [{:a "eta-mu-epic-part46-84bpm",
+    :b "eta-mu-epic-part46-84bpm-e493c0dd",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "eta_mu_lullaby_part51_78bpm",
+  :members
+  [{:slug "eta-mu-lullaby-part51-78bpm-22f8c91b",
+    :body-sha256
+    "22f8c91b571dac210b8d1da952cd79620d9f09eb1a543510598dae2d7cee716a",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-22f8c91b.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm",
+    :body-sha256
+    "011c4778f0220fb47375af415b8e571c029fa5d52a947d535e48f6ebd12edddc",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-fcfd0f0f",
+    :body-sha256
+    "fcfd0f0f68a7273a97910b25d94b972d1bad6f46b687a5dc9cba31288f0e30ce",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-fcfd0f0f.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-59ce1b4b",
+    :body-sha256
+    "59ce1b4b6420abd2bf608438747816af4fc8d3f0e1804bfd385931293069eb79",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-59ce1b4b.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-bfa30439",
+    :body-sha256
+    "bfa30439482ee6df977940d58ee75403abd1c7de0ed5ad8b57acd7b4019eb426",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-bfa30439.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-efafa444",
+    :body-sha256
+    "efafa444f1701dcbf43e4045eb3763e518dae5bc0ab6cc8f9bd89b43de109a53",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-efafa444.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-e969cc01",
+    :body-sha256
+    "e969cc0156394abc91d403e0558c23116f91f06761f006bceec9a86d065b5200",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-e969cc01.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-d9b6c700",
+    :body-sha256
+    "d9b6c7001c222ec2f625c6eeaef5b15904be1bb5107251efc8656e2b0ad53923",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-d9b6c700.txt"}],
+  :edges
+  [{:a "eta-mu-lullaby-part51-78bpm-22f8c91b",
+    :b "eta-mu-lullaby-part51-78bpm-fcfd0f0f",
+    :distance 11,
+    :similarity 0.08333333333333333}
+   {:a "eta-mu-lullaby-part51-78bpm-22f8c91b",
+    :b "eta-mu-lullaby-part51-78bpm-59ce1b4b",
+    :distance 2,
+    :similarity 0.8461538461538461}
+   {:a "eta-mu-lullaby-part51-78bpm-22f8c91b",
+    :b "eta-mu-lullaby-part51-78bpm-bfa30439",
+    :distance 57,
+    :similarity 0.03389830508474576}
+   {:a "eta-mu-lullaby-part51-78bpm-22f8c91b",
+    :b "eta-mu-lullaby-part51-78bpm-efafa444",
+    :distance 10,
+    :similarity 0.1666666666666667}
+   {:a "eta-mu-lullaby-part51-78bpm-22f8c91b",
+    :b "eta-mu-lullaby-part51-78bpm-e969cc01",
+    :distance 69,
+    :similarity 0.01428571428571429}
+   {:a "eta-mu-lullaby-part51-78bpm-22f8c91b",
+    :b "eta-mu-lullaby-part51-78bpm-d9b6c700",
+    :distance 59,
+    :similarity 0.01666666666666667}
+   {:a "eta-mu-lullaby-part51-78bpm",
+    :b "eta-mu-lullaby-part51-78bpm-22f8c91b",
+    :distance 47,
+    :similarity 0.04081632653061224}
+   {:a "eta-mu-lullaby-part51-78bpm",
+    :b "eta-mu-lullaby-part51-78bpm-fcfd0f0f",
+    :distance 48,
+    :similarity 0.02040816326530612}
+   {:a "eta-mu-lullaby-part51-78bpm",
+    :b "eta-mu-lullaby-part51-78bpm-59ce1b4b",
+    :distance 48,
+    :similarity 0.02040816326530612}
+   {:a "eta-mu-lullaby-part51-78bpm",
+    :b "eta-mu-lullaby-part51-78bpm-bfa30439",
+    :distance 57,
+    :similarity 0.03389830508474576}
+   {:a "eta-mu-lullaby-part51-78bpm",
+    :b "eta-mu-lullaby-part51-78bpm-efafa444",
+    :distance 47,
+    :similarity 0.04081632653061224}
+   {:a "eta-mu-lullaby-part51-78bpm",
+    :b "eta-mu-lullaby-part51-78bpm-e969cc01",
+    :distance 68,
+    :similarity 0.02857142857142857}
+   {:a "eta-mu-lullaby-part51-78bpm",
+    :b "eta-mu-lullaby-part51-78bpm-d9b6c700",
+    :distance 12,
+    :similarity 0.8}
+   {:a "eta-mu-lullaby-part51-78bpm-59ce1b4b",
+    :b "eta-mu-lullaby-part51-78bpm-fcfd0f0f",
+    :distance 11,
+    :similarity 0.1538461538461538}
+   {:a "eta-mu-lullaby-part51-78bpm-59ce1b4b",
+    :b "eta-mu-lullaby-part51-78bpm-bfa30439",
+    :distance 58,
+    :similarity 0.01694915254237288}
+   {:a "eta-mu-lullaby-part51-78bpm-59ce1b4b",
+    :b "eta-mu-lullaby-part51-78bpm-efafa444",
+    :distance 12,
+    :similarity 0.07692307692307691}
+   {:a "eta-mu-lullaby-part51-78bpm-59ce1b4b",
+    :b "eta-mu-lullaby-part51-78bpm-e969cc01",
+    :distance 68,
+    :similarity 0.02857142857142857}
+   {:a "eta-mu-lullaby-part51-78bpm-59ce1b4b",
+    :b "eta-mu-lullaby-part51-78bpm-d9b6c700",
+    :distance 58,
+    :similarity 0.03333333333333333}
+   {:a "eta-mu-lullaby-part51-78bpm-bfa30439",
+    :b "eta-mu-lullaby-part51-78bpm-fcfd0f0f",
+    :distance 58,
+    :similarity 0.01694915254237288}
+   {:a "eta-mu-lullaby-part51-78bpm-bfa30439",
+    :b "eta-mu-lullaby-part51-78bpm-efafa444",
+    :distance 57,
+    :similarity 0.03389830508474576}
+   {:a "eta-mu-lullaby-part51-78bpm-bfa30439",
+    :b "eta-mu-lullaby-part51-78bpm-e969cc01",
+    :distance 12,
+    :similarity 0.8285714285714286}
+   {:a "eta-mu-lullaby-part51-78bpm-bfa30439",
+    :b "eta-mu-lullaby-part51-78bpm-d9b6c700",
+    :distance 59,
+    :similarity 0.01666666666666667}
+   {:a "eta-mu-lullaby-part51-78bpm-efafa444",
+    :b "eta-mu-lullaby-part51-78bpm-fcfd0f0f",
+    :distance 2,
+    :similarity 0.5}
+   {:a "eta-mu-lullaby-part51-78bpm-e969cc01",
+    :b "eta-mu-lullaby-part51-78bpm-fcfd0f0f",
+    :distance 68,
+    :similarity 0.02857142857142857}
+   {:a "eta-mu-lullaby-part51-78bpm-e969cc01",
+    :b "eta-mu-lullaby-part51-78bpm-efafa444",
+    :distance 69,
+    :similarity 0.01428571428571429}
+   {:a "eta-mu-lullaby-part51-78bpm-d9b6c700",
+    :b "eta-mu-lullaby-part51-78bpm-fcfd0f0f",
+    :distance 58,
+    :similarity 0.03333333333333333}
+   {:a "eta-mu-lullaby-part51-78bpm-d9b6c700",
+    :b "eta-mu-lullaby-part51-78bpm-efafa444",
+    :distance 59,
+    :similarity 0.01666666666666667}
+   {:a "eta-mu-lullaby-part51-78bpm-d9b6c700",
+    :b "eta-mu-lullaby-part51-78bpm-e969cc01",
+    :distance 57,
+    :similarity 0.1857142857142857}],
+  :mean-similarity 0.14750726328899968}
+ {:cluster/key
+  "**new feature:** **anchor chain** (deter too many forks",
+  :members
+  [{:slug "new-feature-anchor-chain-deter-too-many-forks",
+    :body-sha256
+    "1beb46f5115f8b908869e82e4d4e41bd13e29f2193005ab31350627383458556",
+    :file
+    "docs/lyrics/new-feature-anchor-chain-deter-too-many-forks.txt"}
+   {:slug "new-feature-anchor-chain-deter-too-many-forks-123e1730",
+    :body-sha256
+    "123e1730fc1b86443d86574fd09750c94ab869e950da6dfc710b0b9a61e58428",
+    :file
+    "docs/lyrics/new-feature-anchor-chain-deter-too-many-forks-123e1730.txt"}],
+  :edges
+  [{:a "new-feature-anchor-chain-deter-too-many-forks",
+    :b "new-feature-anchor-chain-deter-too-many-forks-123e1730",
+    :distance 12,
+    :similarity 0.8909090909090909}],
+  :mean-similarity 0.8909090909090909}
+ {:cluster/key "mirror login / ミラーログイン",
+  :members
+  [{:slug "mirror-login-0ca03be6",
+    :body-sha256
+    "0ca03be65d6fe34a6ab40800ff5bf5870686eea0d08e72d299501deb70e6ce0c",
+    :file "docs/lyrics/mirror-login-0ca03be6.txt"}
+   {:slug "mirror-login",
+    :body-sha256
+    "ef632880b113eb615da07799f042c869bc7304a9adab26f57d656923d50c1042",
+    :file "docs/lyrics/mirror-login.txt"}],
+  :edges
+  [{:a "mirror-login",
+    :b "mirror-login-0ca03be6",
+    :distance 6,
+    :similarity 0.9491525423728814}],
+  :mean-similarity 0.9491525423728814}
+ {:cluster/key "music is a technology / 音楽は技術だ",
+  :members
+  [{:slug "music-is-a-technology",
+    :body-sha256
+    "b3d494997b3625072274740e4837175127451304f667b5b73a9369c60c9cef25",
+    :file "docs/lyrics/music-is-a-technology.txt"}
+   {:slug "music-is-a-technology-13246c64",
+    :body-sha256
+    "13246c645a145a222646eb170ba3caee8b3163a08928604cec84a47907507701",
+    :file "docs/lyrics/music-is-a-technology-13246c64.txt"}
+   {:slug "music-is-a-technology-a01e8e52",
+    :body-sha256
+    "a01e8e52ae2db4ac11d7c15a333bb6a9196024edcaaa72c3973a71172cbaa3e3",
+    :file "docs/lyrics/music-is-a-technology-a01e8e52.txt"}],
+  :edges
+  [{:a "music-is-a-technology",
+    :b "music-is-a-technology-13246c64",
+    :distance 46,
+    :similarity 0.5053763440860215}
+   {:a "music-is-a-technology",
+    :b "music-is-a-technology-a01e8e52",
+    :distance 45,
+    :similarity 0.5161290322580645}
+   {:a "music-is-a-technology-13246c64",
+    :b "music-is-a-technology-a01e8e52",
+    :distance 12,
+    :similarity 0.7966101694915254}],
+  :mean-similarity 0.6060385152785371}
+ {:cluster/key "ημ_lullaby_part39_78bpm",
+  :members
+  [{:slug "eta-mu-lullaby-part39-78bpm-0cb935e1",
+    :body-sha256
+    "0cb935e137a0898df4f386eb17519eb43b3c16beb8cbac4cb72caf8c969e8aa3",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm-0cb935e1.txt"}
+   {:slug "eta-mu-lullaby-part39-78bpm-393c9edb",
+    :body-sha256
+    "393c9edb88afbc9636ae5be60bd35f49dd5c88ca0144d4d532ca4936d590e531",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm-393c9edb.txt"}
+   {:slug "eta-mu-lullaby-part39-78bpm-74c1f55a",
+    :body-sha256
+    "74c1f55aeeefec3479664dbbf7a9cb838239ef7417648e5de62c9d54c8d4effc",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm-74c1f55a.txt"}
+   {:slug "eta-mu-lullaby-part39-78bpm-9d9b64e1",
+    :body-sha256
+    "9d9b64e134c7e0e8f030bb34f66ce6d260bc92d977cd530eeabc9e941d9458db",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm-9d9b64e1.txt"}
+   {:slug "eta-mu-lullaby-part39-78bpm",
+    :body-sha256
+    "1e1a2af4295b89b9c972e31fdd86034900d020ecf0c8ee8c87f76afc126c692c",
+    :file "docs/lyrics/eta-mu-lullaby-part39-78bpm.txt"}],
+  :edges
+  [{:a "eta-mu-lullaby-part39-78bpm-0cb935e1",
+    :b "eta-mu-lullaby-part39-78bpm-393c9edb",
+    :distance 32,
+    :similarity 0.0303030303030303}
+   {:a "eta-mu-lullaby-part39-78bpm-0cb935e1",
+    :b "eta-mu-lullaby-part39-78bpm-74c1f55a",
+    :distance 30,
+    :similarity 0.0625}
+   {:a "eta-mu-lullaby-part39-78bpm-0cb935e1",
+    :b "eta-mu-lullaby-part39-78bpm-9d9b64e1",
+    :distance 2,
+    :similarity 0.9393939393939394}
+   {:a "eta-mu-lullaby-part39-78bpm-393c9edb",
+    :b "eta-mu-lullaby-part39-78bpm-74c1f55a",
+    :distance 12,
+    :similarity 0.6363636363636364}
+   {:a "eta-mu-lullaby-part39-78bpm-393c9edb",
+    :b "eta-mu-lullaby-part39-78bpm-9d9b64e1",
+    :distance 32,
+    :similarity 0.0303030303030303}
+   {:a "eta-mu-lullaby-part39-78bpm-74c1f55a",
+    :b "eta-mu-lullaby-part39-78bpm-9d9b64e1",
+    :distance 32,
+    :similarity 0.0303030303030303}
+   {:a "eta-mu-lullaby-part39-78bpm",
+    :b "eta-mu-lullaby-part39-78bpm-0cb935e1",
+    :distance 12,
+    :similarity 0.7209302325581395}
+   {:a "eta-mu-lullaby-part39-78bpm",
+    :b "eta-mu-lullaby-part39-78bpm-393c9edb",
+    :distance 30,
+    :similarity 0.3023255813953488}
+   {:a "eta-mu-lullaby-part39-78bpm",
+    :b "eta-mu-lullaby-part39-78bpm-74c1f55a",
+    :distance 42,
+    :similarity 0.02325581395348837}
+   {:a "eta-mu-lullaby-part39-78bpm",
+    :b "eta-mu-lullaby-part39-78bpm-9d9b64e1",
+    :distance 11,
+    :similarity 0.7441860465116279}],
+  :mean-similarity 0.35198643410852715}
+ {:cluster/key "## **pandora modules — promethean error",
+  :members
+  [{:slug "pandora-modules-promethean-error-a1b1a2e5",
+    :body-sha256
+    "a1b1a2e5fdfa82d7beea46b18cc6306f60a46e9b55a84db0850dcba96b10da2a",
+    :file "docs/lyrics/pandora-modules-promethean-error-a1b1a2e5.txt"}
+   {:slug "pandora-modules-promethean-error",
+    :body-sha256
+    "2cc309c1d2482526583a297eaef0162ebaa633e37391c57bd9299932ee4c7099",
+    :file "docs/lyrics/pandora-modules-promethean-error.txt"}],
+  :edges
+  [{:a "pandora-modules-promethean-error",
+    :b "pandora-modules-promethean-error-a1b1a2e5",
+    :distance 7,
+    :similarity 0.9345794392523364}],
+  :mean-similarity 0.9345794392523364}
+ {:cluster/key "don't do it (pay the fork tax)",
+  :members
+  [{:slug "don-t-do-it-pay-the-fork-tax-802e4392",
+    :body-sha256
+    "802e4392bf506bf752cf0032234aaf217687813d349bc7783a77a9e20b4d720e",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-802e4392.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :body-sha256
+    "31ae809353b3f1cf3e786a129b2f6dd8f1f03f7e107908dcf7cf8de9b452fadf",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-31ae8093.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-d3355099",
+    :body-sha256
+    "d3355099fa8fadd62a01abfeb9c357aec915fa165854aca4187285ef65922329",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-d3355099.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :body-sha256
+    "5ec66dd1fb876b3a47836198e0809745769de0e5351b31f2e02693f49f1b0f27",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-5ec66dd1.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :body-sha256
+    "3d5dfb72784620e9f7f479d7df02d3e826e17841903c088d0efead9578178fe9",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-3d5dfb72.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :body-sha256
+    "8ded9159b3f640e6834650e07359e6a7aeb44ef391ff7cba9ae30429bd501b09",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-8ded9159.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-715f5936",
+    :body-sha256
+    "715f59365d4a4d64ea5c2da8dfbb5e83154cfa9fcb8843fbb111be85c069e047",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-715f5936.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :body-sha256
+    "e0ab814483e53d23c0e49f5df7d62e57dfd852ad29d8117da30e4ba9c6975d38",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-e0ab8144.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :body-sha256
+    "3bd4177ee61e53e20529cdd558c0812bc5390277e2183046c5216fdf52923aa4",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-3bd4177e.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :body-sha256
+    "dac4dc0600f82c9b5b97681327fc348c352171f32aff63c5eed034dfdd61064b",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-dac4dc06.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax",
+    :body-sha256
+    "72db5fec1fb6f5733ecd757fce552d2cc0d1cb3632961a5051fa71c05859781f",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :body-sha256
+    "6f828fe8f9d999e7fd344ac253bfd39ecc29a4fbc5272c841c9b4473d3808bfa",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-6f828fe8.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-a974d791",
+    :body-sha256
+    "a974d79166f4711bdd63b3ce2988c3901d101cadede640aa020c5da0e2611e3c",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-a974d791.txt"}
+   {:slug "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :body-sha256
+    "3cc24aa7a4da017e85b2fc2752bd4fbc8e74ff677c99d28884e08abc685d0230",
+    :file "docs/lyrics/don-t-do-it-pay-the-fork-tax-3cc24aa7.txt"}],
+  :edges
+  [{:a "don-t-do-it-pay-the-fork-tax-802e4392",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 92,
+    :similarity 0.1481481481481481}
+   {:a "don-t-do-it-pay-the-fork-tax-802e4392",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 168,
+    :similarity 0.0718232044198895}
+   {:a "don-t-do-it-pay-the-fork-tax-802e4392",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 114,
+    :similarity 0.2244897959183673}
+   {:a "don-t-do-it-pay-the-fork-tax-802e4392",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 7,
+    :similarity 0.9369369369369369}
+   {:a "don-t-do-it-pay-the-fork-tax-802e4392",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 165,
+    :similarity 0.0782122905027933}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-802e4392",
+    :distance 111,
+    :similarity 0.2344827586206897}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 98,
+    :similarity 0.3241379310344828}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :distance 163,
+    :similarity 0.0994475138121547}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :distance 162,
+    :similarity 0.09497206703910616}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 163,
+    :similarity 0.0994475138121547}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-715f5936",
+    :distance 162,
+    :similarity 0.09497206703910616}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 3,
+    :similarity 0.9795918367346939}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :distance 109,
+    :similarity 0.2482758620689655}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 111,
+    :similarity 0.2344827586206897}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :distance 113,
+    :similarity 0.2206896551724138}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 162,
+    :similarity 0.09497206703910616}
+   {:a "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :b "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :distance 99,
+    :similarity 0.3172413793103448}
+   {:a "don-t-do-it-pay-the-fork-tax-d3355099",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 101,
+    :similarity 0.3129251700680272}
+   {:a "don-t-do-it-pay-the-fork-tax-d3355099",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 94,
+    :similarity 0.1531531531531532}
+   {:a "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :b "don-t-do-it-pay-the-fork-tax-802e4392",
+    :distance 168,
+    :similarity 0.0718232044198895}
+   {:a "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 152,
+    :similarity 0.1602209944751381}
+   {:a "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 20,
+    :similarity 0.8895027624309392}
+   {:a "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :b "don-t-do-it-pay-the-fork-tax-715f5936",
+    :distance 5,
+    :similarity 0.9723756906077348}
+   {:a "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 162,
+    :similarity 0.1049723756906077}
+   {:a "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 163,
+    :similarity 0.0994475138121547}
+   {:a "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :b "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :distance 165,
+    :similarity 0.08839779005524862}
+   {:a "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 3,
+    :similarity 0.9834254143646409}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-802e4392",
+    :distance 165,
+    :similarity 0.0782122905027933}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 150,
+    :similarity 0.1620111731843575}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :distance 23,
+    :similarity 0.8729281767955801}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 3,
+    :similarity 0.9834254143646409}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-715f5936",
+    :distance 20,
+    :similarity 0.888268156424581}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 165,
+    :similarity 0.0782122905027933}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 164,
+    :similarity 0.08379888268156425}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :distance 166,
+    :similarity 0.07262569832402235}
+   {:a "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 20,
+    :similarity 0.888268156424581}
+   {:a "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 151,
+    :similarity 0.1657458563535912}
+   {:a "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 162,
+    :similarity 0.1049723756906077}
+   {:a "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 163,
+    :similarity 0.0994475138121547}
+   {:a "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 23,
+    :similarity 0.8729281767955801}
+   {:a "don-t-do-it-pay-the-fork-tax-715f5936",
+    :b "don-t-do-it-pay-the-fork-tax-802e4392",
+    :distance 165,
+    :similarity 0.0782122905027933}
+   {:a "don-t-do-it-pay-the-fork-tax-715f5936",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 151,
+    :similarity 0.1564245810055866}
+   {:a "don-t-do-it-pay-the-fork-tax-715f5936",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 23,
+    :similarity 0.8729281767955801}
+   {:a "don-t-do-it-pay-the-fork-tax-715f5936",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 165,
+    :similarity 0.0782122905027933}
+   {:a "don-t-do-it-pay-the-fork-tax-715f5936",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 164,
+    :similarity 0.08379888268156425}
+   {:a "don-t-do-it-pay-the-fork-tax-715f5936",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 2,
+    :similarity 0.9888268156424581}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-802e4392",
+    :distance 4,
+    :similarity 0.963302752293578}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 91,
+    :similarity 0.1651376146788991}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :distance 166,
+    :similarity 0.08287292817679558}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :distance 163,
+    :similarity 0.0893854748603352}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 166,
+    :similarity 0.08287292817679558}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-715f5936",
+    :distance 163,
+    :similarity 0.0893854748603352}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 112,
+    :similarity 0.2380952380952381}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 3,
+    :similarity 0.972972972972973}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :distance 7,
+    :similarity 0.9363636363636364}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 163,
+    :similarity 0.0893854748603352}
+   {:a "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :b "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :distance 92,
+    :similarity 0.1559633027522936}
+   {:a "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 109,
+    :similarity 0.2585034013605442}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-802e4392",
+    :distance 168,
+    :similarity 0.0718232044198895}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-31ae8093",
+    :distance 163,
+    :similarity 0.0994475138121547}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 152,
+    :similarity 0.1602209944751381}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :distance 2,
+    :similarity 0.988950276243094}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :distance 23,
+    :similarity 0.8729281767955801}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 20,
+    :similarity 0.8895027624309392}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-715f5936",
+    :distance 3,
+    :similarity 0.9834254143646409}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 162,
+    :similarity 0.1049723756906077}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-3bd4177e",
+    :distance 166,
+    :similarity 0.08287292817679558}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 163,
+    :similarity 0.0994475138121547}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :distance 165,
+    :similarity 0.08839779005524862}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 5,
+    :similarity 0.9723756906077348}
+   {:a "don-t-do-it-pay-the-fork-tax",
+    :b "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :distance 153,
+    :similarity 0.1546961325966851}
+   {:a "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :b "don-t-do-it-pay-the-fork-tax-802e4392",
+    :distance 3,
+    :similarity 0.9727272727272727}
+   {:a "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 95,
+    :similarity 0.1363636363636364}
+   {:a "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 165,
+    :similarity 0.08839779005524862}
+   {:a "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :b "don-t-do-it-pay-the-fork-tax-715f5936",
+    :distance 166,
+    :similarity 0.07262569832402235}
+   {:a "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 111,
+    :similarity 0.2448979591836735}
+   {:a "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 4,
+    :similarity 0.963963963963964}
+   {:a "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 166,
+    :similarity 0.07262569832402235}
+   {:a "don-t-do-it-pay-the-fork-tax-a974d791",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 151,
+    :similarity 0.1564245810055866}
+   {:a "don-t-do-it-pay-the-fork-tax-a974d791",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 165,
+    :similarity 0.0782122905027933}
+   {:a "don-t-do-it-pay-the-fork-tax-a974d791",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 164,
+    :similarity 0.08379888268156425}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-802e4392",
+    :distance 93,
+    :similarity 0.1388888888888889}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-d3355099",
+    :distance 2,
+    :similarity 0.9803921568627451}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-5ec66dd1",
+    :distance 153,
+    :similarity 0.1546961325966851}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-3d5dfb72",
+    :distance 152,
+    :similarity 0.1508379888268156}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-8ded9159",
+    :distance 152,
+    :similarity 0.1602209944751381}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-715f5936",
+    :distance 153,
+    :similarity 0.1452513966480447}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-e0ab8144",
+    :distance 100,
+    :similarity 0.3197278911564626}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-dac4dc06",
+    :distance 93,
+    :similarity 0.1621621621621622}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-6f828fe8",
+    :distance 94,
+    :similarity 0.1454545454545455}
+   {:a "don-t-do-it-pay-the-fork-tax-3cc24aa7",
+    :b "don-t-do-it-pay-the-fork-tax-a974d791",
+    :distance 153,
+    :similarity 0.1452513966480447}],
+  :mean-similarity 0.34081360828658186}
+ {:cluster/key "(sandbox:/mnt/data/eta_mu_prnpa_etaμ_bun",
+  :members
+  [{:slug "sandbox-mnt-data-eta-mu-prnpa-etamu-bun",
+    :body-sha256
+    "a7cbc7604a6872c16028d612b47bcee69f68ead9149dc5ae62b4ff3d464b3b9a",
+    :file "docs/lyrics/sandbox-mnt-data-eta-mu-prnpa-etamu-bun.txt"}
+   {:slug "sandbox-mnt-data-eta-mu-prnpa-etamu-bun-4a3a1450",
+    :body-sha256
+    "4a3a14502ad0e19218b693c33dab05654b6e9451afab3356304fd3686ceaa8ae",
+    :file
+    "docs/lyrics/sandbox-mnt-data-eta-mu-prnpa-etamu-bun-4a3a1450.txt"}],
+  :edges
+  [{:a "sandbox-mnt-data-eta-mu-prnpa-etamu-bun",
+    :b "sandbox-mnt-data-eta-mu-prnpa-etamu-bun-4a3a1450",
+    :distance 12,
+    :similarity 0.85}],
+  :mean-similarity 0.85}
+ {:cluster/key "fork_tax_epic_part56_84bpm",
+  :members
+  [{:slug "fork-tax-epic-part56-84bpm",
+    :body-sha256
+    "e1b715712dcebef8d991d20e4b20f26f3ba8aa12b516f2e341f3d07ba1abc0b4",
+    :file "docs/lyrics/fork-tax-epic-part56-84bpm.txt"}
+   {:slug "fork-tax-epic-part56-84bpm-e6d1df79",
+    :body-sha256
+    "e6d1df79c5cd090d242983dd75aad529ad244ff6131a28481b670bfcbe9c60f5",
+    :file "docs/lyrics/fork-tax-epic-part56-84bpm-e6d1df79.txt"}],
+  :edges
+  [{:a "fork-tax-epic-part56-84bpm",
+    :b "fork-tax-epic-part56-84bpm-e6d1df79",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "daemon process / 常駐プロセス",
+  :members
+  [{:slug "daemon-process-489eab1f",
+    :body-sha256
+    "489eab1f05abfa7e30e35d4948c3f8791cf4a413b0c0501b21dc4c286b28cdc1",
+    :file "docs/lyrics/daemon-process-489eab1f.txt"}
+   {:slug "daemon-process",
+    :body-sha256
+    "ebc6f8dc6fcef130586e2f28ab4ae77621196af646fdcf7a0f265063f4f41cb8",
+    :file "docs/lyrics/daemon-process.txt"}],
+  :edges
+  [{:a "daemon-process",
+    :b "daemon-process-489eab1f",
+    :distance 5,
+    :similarity 0.9358974358974359}],
+  :mean-similarity 0.9358974358974359}
+ {:cluster/key "π",
+  :members
+  [{:slug "pi-0707136c",
+    :body-sha256
+    "0707136c71ebee3759188311467911b6c22cdb160a7a5325dcaf10795c8e9135",
+    :file "docs/lyrics/pi-0707136c.txt"}
+   {:slug "pi",
+    :body-sha256
+    "b39f05f011f60a6dd604d86f8163a8a9dbdc6e8ba9c8a52b943c28e077286516",
+    :file "docs/lyrics/pi.txt"}
+   {:slug "pi-eadd0427",
+    :body-sha256
+    "eadd042702df2398269ae2aca88aa05b55c680e7ee2f4e1ad8bd2ab49a12bb50",
+    :file "docs/lyrics/pi-eadd0427.txt"}],
+  :edges
+  [{:a "pi-0707136c",
+    :b "pi-eadd0427",
+    :distance 49,
+    :similarity 0.5148514851485149}
+   {:a "pi",
+    :b "pi-0707136c",
+    :distance 50,
+    :similarity 0.504950495049505}
+   {:a "pi",
+    :b "pi-eadd0427",
+    :distance 1,
+    :similarity 0.9807692307692308}],
+  :mean-similarity 0.6668570703224169}
+ {:cluster/key "fork_tax_hymn_part53_84bpm",
+  :members
+  [{:slug "fork-tax-hymn-part53-84bpm",
+    :body-sha256
+    "159e9bdc7db6c294265fa8de3122abaf5fb880348d4febeb75c4ffcd13c78ea6",
+    :file "docs/lyrics/fork-tax-hymn-part53-84bpm.txt"}
+   {:slug "fork-tax-hymn-part53-84bpm-672f536d",
+    :body-sha256
+    "672f536deb7c66eae2061a98d1f3feb3f04e4bcbf49cf93bbb1cc924abffbdfe",
+    :file "docs/lyrics/fork-tax-hymn-part53-84bpm-672f536d.txt"}],
+  :edges
+  [{:a "fork-tax-hymn-part53-84bpm",
+    :b "fork-tax-hymn-part53-84bpm-672f536d",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "# fork tax hymn iii / 分岐税の賛歌 iii",
+  :members
+  [{:slug "fork-tax-hymn-iii-iii-ce4b5c70",
+    :body-sha256
+    "ce4b5c70c9bbc3811b3e4ef6fe4e10a12c5d0ac44941a6c37c720c8b78d84c60",
+    :file "docs/lyrics/fork-tax-hymn-iii-iii-ce4b5c70.txt"}
+   {:slug "fork-tax-hymn-iii-iii",
+    :body-sha256
+    "f613188ef930584f2135bcf7030fb08f0f44781f1cd55cd5d6757f59dca59d00",
+    :file "docs/lyrics/fork-tax-hymn-iii-iii.txt"}],
+  :edges
+  [{:a "fork-tax-hymn-iii-iii",
+    :b "fork-tax-hymn-iii-iii-ce4b5c70",
+    :distance 12,
+    :similarity 0.8285714285714286}],
+  :mean-similarity 0.8285714285714286}
+ {:cluster/key "the receipt of survival / 生存の領収書",
+  :members
+  [{:slug "the-receipt-of-survival",
+    :body-sha256
+    "1c9b3a96bcb273fe1a6fa53c0d784c27c1e8f7cefc0e0dd05cbed29c66711c66",
+    :file "docs/lyrics/the-receipt-of-survival.txt"}
+   {:slug "the-receipt-of-survival-5e265c29",
+    :body-sha256
+    "5e265c29a44d6285c3bba2d9d5b20b7224cff0862cacdf89ce0daabeadbe670f",
+    :file "docs/lyrics/the-receipt-of-survival-5e265c29.md"}
+   {:slug "the-receipt-of-survival-96ef8eb1",
+    :body-sha256
+    "96ef8eb1e45e7c76c4761cb6042fba5c9c5e94b5852f12dbd41be0dc0aafaee9",
+    :file "docs/lyrics/the-receipt-of-survival-96ef8eb1.txt"}],
+  :edges
+  [{:a "the-receipt-of-survival",
+    :b "the-receipt-of-survival-5e265c29",
+    :distance 8,
+    :similarity 0.7837837837837838}
+   {:a "the-receipt-of-survival",
+    :b "the-receipt-of-survival-96ef8eb1",
+    :distance 7,
+    :similarity 0.8108108108108107}
+   {:a "the-receipt-of-survival-5e265c29",
+    :b "the-receipt-of-survival-96ef8eb1",
+    :distance 2,
+    :similarity 0.9354838709677419}],
+  :mean-similarity 0.8433594885207788}
+ {:cluster/key "**dice (seed 3721599729 · d15 ×15):** 8,",
+  :members
+  [{:slug "dice-seed-3721599729-d15-15-8-40968491",
+    :body-sha256
+    "409684919468f3bcc5d12bbb730f5de4dc596ed20c92c7c47c0f588b6ec1c743",
+    :file "docs/lyrics/dice-seed-3721599729-d15-15-8-40968491.txt"}
+   {:slug "dice-seed-3721599729-d15-15-8",
+    :body-sha256
+    "8173afcbd62f7a589733281f4379dfeedf49e4a7ff62ddfbd37d9f90e4b88ee1",
+    :file "docs/lyrics/dice-seed-3721599729-d15-15-8.txt"}],
+  :edges
+  [{:a "dice-seed-3721599729-d15-15-8",
+    :b "dice-seed-3721599729-d15-15-8-40968491",
+    :distance 5,
+    :similarity 0.9342105263157895}],
+  :mean-similarity 0.9342105263157895}
+ {:cluster/key "kernel panic (graceful) / カーネル・パニック（優雅）",
+  :members
+  [{:slug "kernel-panic-graceful",
+    :body-sha256
+    "7924f2b350ae2654531b924d516c9633d93d5e17155c5bc4ae5a39f493aaedc4",
+    :file "docs/lyrics/kernel-panic-graceful.txt"}
+   {:slug "kernel-panic-graceful-983de678",
+    :body-sha256
+    "983de678fbc738d5d68c952839e16a7d2fad4c9d2cbd203e8403a8a499141523",
+    :file "docs/lyrics/kernel-panic-graceful-983de678.txt"}],
+  :edges
+  [{:a "kernel-panic-graceful",
+    :b "kernel-panic-graceful-983de678",
+    :distance 5,
+    :similarity 0.9358974358974359}],
+  :mean-similarity 0.9358974358974359}
+ {:cluster/key "[",
+  :members
+  [{:slug "song-68e0da4a",
+    :body-sha256
+    "68e0da4af2b433da5362816670be1ecaa1b980208837d8c86c02cd0ed0be12f2",
+    :file "docs/lyrics/song-68e0da4a.txt"}
+   {:slug "song-f2f4f583",
+    :body-sha256
+    "f2f4f583ed3624043cd5ade7426c9b29c035e405d72dda326aa6a7a2fb66bd11",
+    :file "docs/lyrics/song-f2f4f583.txt"}],
+  :edges
+  [{:a "song-68e0da4a",
+    :b "song-f2f4f583",
+    :distance 72,
+    :similarity 0.2727272727272727}],
+  :mean-similarity 0.2727272727272727}
+ {:cluster/key "static falling like snow…",
+  :members
+  [{:slug "static-falling-like-snow-74425f22",
+    :body-sha256
+    "74425f22b3dec641cd0ea2f9584be9c1f59cb5d4c84771a0fdfae2300db43259",
+    :file "docs/lyrics/static-falling-like-snow-74425f22.txt"}
+   {:slug "static-falling-like-snow",
+    :body-sha256
+    "7d3e3ee922b20ea7543d4d6b8fc67f376c33675fc78f414c71d950321a06d94a",
+    :file "docs/lyrics/static-falling-like-snow.txt"}],
+  :edges
+  [{:a "static-falling-like-snow",
+    :b "static-falling-like-snow-74425f22",
+    :distance 5,
+    :similarity 0.9647887323943662}],
+  :mean-similarity 0.9647887323943662}
+ {:cluster/key "drop on receipt / 受信で破棄",
+  :members
+  [{:slug "drop-on-receipt",
+    :body-sha256
+    "70f18e0b02f3206156cc08da05c1334028478e27af97414d7036e5e67151aedd",
+    :file "docs/lyrics/drop-on-receipt.txt"}
+   {:slug "drop-on-receipt-b307e90f",
+    :body-sha256
+    "b307e90f5cf2be4a657823859f7dac6aa693e38b133023c6f027af38e6e95448",
+    :file "docs/lyrics/drop-on-receipt-b307e90f.txt"}],
+  :edges
+  [{:a "drop-on-receipt",
+    :b "drop-on-receipt-b307e90f",
+    :distance 9,
+    :similarity 0.898876404494382}],
+  :mean-similarity 0.898876404494382}
+ {:cluster/key "silent core proof",
+  :members
+  [{:slug "silent-core-proof",
+    :body-sha256
+    "1861ef4bfd90af34ded2d91b3958c5339efe708fab4597022cd8aa909daf22b3",
+    :file "docs/lyrics/silent-core-proof.txt"}
+   {:slug "silent-core-proof-2acc2f6a",
+    :body-sha256
+    "2acc2f6a528701c31dee54a7be4ec0a1a7379a12c4aad0f4e09f6f732802ceb1",
+    :file "docs/lyrics/silent-core-proof-2acc2f6a.txt"}],
+  :edges
+  [{:a "silent-core-proof",
+    :b "silent-core-proof-2acc2f6a",
+    :distance 2,
+    :similarity 0.9534883720930233}],
+  :mean-similarity 0.9534883720930233}
+ {:cluster/key "μ (formalization)",
+  :members
+  [{:slug "mu-formalization-63fde0a6",
+    :body-sha256
+    "63fde0a68fadc29f24f13cca28c769d4a3422ac64482def4f97a243f77f6be46",
+    :file "docs/lyrics/mu-formalization-63fde0a6.txt"}
+   {:slug "mu-formalization",
+    :body-sha256
+    "d68769d9ced9c1f6724514769703d479f68e83d0330aa9c11bc845e863dc3076",
+    :file "docs/lyrics/mu-formalization.txt"}
+   {:slug "mu-formalization-a8b70846",
+    :body-sha256
+    "a8b708460c33a026aebcfed75dca79e8acf2c4e3b3dac37f6a26eb5f5069145e",
+    :file "docs/lyrics/mu-formalization-a8b70846.txt"}],
+  :edges
+  [{:a "mu-formalization-63fde0a6",
+    :b "mu-formalization-a8b70846",
+    :distance 1,
+    :similarity 0.9894736842105263}
+   {:a "mu-formalization",
+    :b "mu-formalization-63fde0a6",
+    :distance 93,
+    :similarity 0.5026737967914439}
+   {:a "mu-formalization",
+    :b "mu-formalization-a8b70846",
+    :distance 92,
+    :similarity 0.5080213903743316}],
+  :mean-similarity 0.666722957125434}
+ {:cluster/key "**dice (seed 3721599729 · d15 ×15):** 8,fork 2",
+  :members
+  [{:slug "dice-seed-3721599729-d15-15-8-fork-2",
+    :body-sha256
+    "22aca8ff84123857ceccdf0431958e2e1bc5ee8fede730e395ab28f4c6bee32c",
+    :file "docs/lyrics/dice-seed-3721599729-d15-15-8-fork-2.txt"}
+   {:slug "dice-seed-3721599729-d15-15-8-fork-2-77c77c82",
+    :body-sha256
+    "77c77c82abfd5ee13887a74200a94545bf3a807d19c3ec8f40f642b129012d5d",
+    :file
+    "docs/lyrics/dice-seed-3721599729-d15-15-8-fork-2-77c77c82.txt"}],
+  :edges
+  [{:a "dice-seed-3721599729-d15-15-8-fork-2",
+    :b "dice-seed-3721599729-d15-15-8-fork-2-77c77c82",
+    :distance 5,
+    :similarity 0.9342105263157895}],
+  :mean-similarity 0.9342105263157895}
+ {:cluster/key "(sandbox:/mnt/data/eta_mu_prnpa_etaμ_dee",
+  :members
+  [{:slug "sandbox-mnt-data-eta-mu-prnpa-etamu-dee",
+    :body-sha256
+    "bb318fe8fb7aaa966ff9e58f6449a2aba14edd925eecd6c3fa2d2f2d073d0d3a",
+    :file "docs/lyrics/sandbox-mnt-data-eta-mu-prnpa-etamu-dee.txt"}
+   {:slug "sandbox-mnt-data-eta-mu-prnpa-etamu-dee-add00b76",
+    :body-sha256
+    "add00b767cd9d46835fd0c32bcfb93bca61ffac74eadfb1d843ada9d98695c74",
+    :file
+    "docs/lyrics/sandbox-mnt-data-eta-mu-prnpa-etamu-dee-add00b76.txt"}],
+  :edges
+  [{:a "sandbox-mnt-data-eta-mu-prnpa-etamu-dee",
+    :b "sandbox-mnt-data-eta-mu-prnpa-etamu-dee-add00b76",
+    :distance 15,
+    :similarity 0.8314606741573034}],
+  :mean-similarity 0.8314606741573034}
+ {:cluster/key "fork tax epic / 分岐税の賛歌",
+  :members
+  [{:slug "fork-tax-epic-ac0eeeb2",
+    :body-sha256
+    "ac0eeeb24e2afd431f46c5b3e38cfa2d519a2a1a6c0666bc99d387fdd84087b8",
+    :file "docs/lyrics/fork-tax-epic-ac0eeeb2.txt"}
+   {:slug "fork-tax-epic-33586cbc",
+    :body-sha256
+    "33586cbcc68d4275ec1fe13da7075e194bf93a4f57a9131bc50f9613f930c370",
+    :file "docs/lyrics/fork-tax-epic-33586cbc.md"}
+   {:slug "fork-tax-epic-ef22184e",
+    :body-sha256
+    "ef22184ea86a38659718f351528021b855ed86e794cec2986ab1e8dc3c5bee5d",
+    :file "docs/lyrics/fork-tax-epic-ef22184e.txt"}],
+  :edges
+  [{:a "fork-tax-epic-ac0eeeb2",
+    :b "fork-tax-epic-ef22184e",
+    :distance 45,
+    :similarity 0.0625}
+   {:a "fork-tax-epic-33586cbc",
+    :b "fork-tax-epic-ac0eeeb2",
+    :distance 46,
+    :similarity 0.04166666666666667}
+   {:a "fork-tax-epic-33586cbc",
+    :b "fork-tax-epic-ef22184e",
+    :distance 23,
+    :similarity 0.04166666666666667}],
+  :mean-similarity 0.04861111111111111}
+ {:cluster/key "(sandbox:/mnt/data/ημ_op_mf_part_25.zip)",
+  :members
+  [{:slug "sandbox-mnt-data-eta-mu-op-mf-part-25-zip-68ba98bc",
+    :body-sha256
+    "68ba98bcf1eecfeee18b6c5c92d077b204b6d818d83d685af6357cfe7c1248de",
+    :file
+    "docs/lyrics/sandbox-mnt-data-eta-mu-op-mf-part-25-zip-68ba98bc.txt"}
+   {:slug "sandbox-mnt-data-eta-mu-op-mf-part-25-zip",
+    :body-sha256
+    "d667738f06e220cfa3751c02e2c3a8bdd84808e209d5017c01e1959eb7165282",
+    :file
+    "docs/lyrics/sandbox-mnt-data-eta-mu-op-mf-part-25-zip.txt"}],
+  :edges
+  [{:a "sandbox-mnt-data-eta-mu-op-mf-part-25-zip",
+    :b "sandbox-mnt-data-eta-mu-op-mf-part-25-zip-68ba98bc",
+    :distance 5,
+    :similarity 0.9438202247191011}],
+  :mean-similarity 0.9438202247191011}
+ {:cluster/key "graphite ghosts",
+  :members
+  [{:slug "graphite-ghosts-b9c8407d",
+    :body-sha256
+    "b9c8407d3db73ec9d0254ad33ecf0fc668ec142d8dce2c7e4d67ff6639da1a98",
+    :file "docs/lyrics/graphite-ghosts-b9c8407d.txt"}
+   {:slug "graphite-ghosts",
+    :body-sha256
+    "3da66e9f2107638cf9ac4aeffb98e9ee67ef8d417c621c8341e96b30b9870e91",
+    :file "docs/lyrics/graphite-ghosts.txt"}],
+  :edges
+  [{:a "graphite-ghosts",
+    :b "graphite-ghosts-b9c8407d",
+    :distance 11,
+    :similarity 0.7884615384615385}],
+  :mean-similarity 0.7884615384615385}
+ {:cluster/key "witness_thread_lullaby_part53_78bpm",
+  :members
+  [{:slug "witness-thread-lullaby-part53-78bpm-340ab795",
+    :body-sha256
+    "340ab7957b6f3de5f5764278116c433385bed19ba6ac3ab9d6027633fc064d39",
+    :file
+    "docs/lyrics/witness-thread-lullaby-part53-78bpm-340ab795.txt"}
+   {:slug "witness-thread-lullaby-part53-78bpm",
+    :body-sha256
+    "ce041e20e4e08be70c2032239a44a34317b266895bfcf12254612503cba75a2a",
+    :file "docs/lyrics/witness-thread-lullaby-part53-78bpm.txt"}],
+  :edges
+  [{:a "witness-thread-lullaby-part53-78bpm",
+    :b "witness-thread-lullaby-part53-78bpm-340ab795",
+    :distance 2,
+    :similarity 0.5}],
+  :mean-similarity 0.5}
+ {:cluster/key "song — fork tax lullaby iii (ημ)",
+  :members
+  [{:slug "song-fork-tax-lullaby-iii-eta-mu-d1ef4e3e",
+    :body-sha256
+    "d1ef4e3ebbbbc9ec525ba3939dcf281838292a15f3c9f1187e139486f43ed365",
+    :file "docs/lyrics/song-fork-tax-lullaby-iii-eta-mu-d1ef4e3e.txt"}
+   {:slug "song-fork-tax-lullaby-iii-eta-mu-68014c67",
+    :body-sha256
+    "68014c67ceea80015f3cc91d754c177987674e91a5efea5a4619109dd610dd58",
+    :file "docs/lyrics/song-fork-tax-lullaby-iii-eta-mu-68014c67.txt"}
+   {:slug "song-fork-tax-lullaby-iii-eta-mu-cb1a0f7f",
+    :body-sha256
+    "cb1a0f7faa7d37d7421bb888549293b28518467eb4458d8fd504ec6e9cbed9e9",
+    :file "docs/lyrics/song-fork-tax-lullaby-iii-eta-mu-cb1a0f7f.txt"}
+   {:slug "song-fork-tax-lullaby-iii-eta-mu",
+    :body-sha256
+    "2c674a9a2e23e22fe06ab0cf68cb28bf79f0cc960e4817a19d7b24fcd4251a1b",
+    :file "docs/lyrics/song-fork-tax-lullaby-iii-eta-mu.txt"}],
+  :edges
+  [{:a "song-fork-tax-lullaby-iii-eta-mu-68014c67",
+    :b "song-fork-tax-lullaby-iii-eta-mu-d1ef4e3e",
+    :distance 44,
+    :similarity 0.5164835164835165}
+   {:a "song-fork-tax-lullaby-iii-eta-mu-68014c67",
+    :b "song-fork-tax-lullaby-iii-eta-mu-cb1a0f7f",
+    :distance 2,
+    :similarity 0.978021978021978}
+   {:a "song-fork-tax-lullaby-iii-eta-mu-cb1a0f7f",
+    :b "song-fork-tax-lullaby-iii-eta-mu-d1ef4e3e",
+    :distance 45,
+    :similarity 0.5054945054945055}
+   {:a "song-fork-tax-lullaby-iii-eta-mu",
+    :b "song-fork-tax-lullaby-iii-eta-mu-d1ef4e3e",
+    :distance 5,
+    :similarity 0.9019607843137255}
+   {:a "song-fork-tax-lullaby-iii-eta-mu",
+    :b "song-fork-tax-lullaby-iii-eta-mu-68014c67",
+    :distance 45,
+    :similarity 0.5054945054945055}
+   {:a "song-fork-tax-lullaby-iii-eta-mu",
+    :b "song-fork-tax-lullaby-iii-eta-mu-cb1a0f7f",
+    :distance 46,
+    :similarity 0.4945054945054945}],
+  :mean-similarity 0.6503267973856209}
+ {:cluster/key "ημ_epic_part44_84bpm",
+  :members
+  [{:slug "eta-mu-epic-part44-84bpm-1f730e60",
+    :body-sha256
+    "1f730e6033e6dbef3eddde1bbf2df316530d0be678a0ae51ec4c3df77b1a0dcf",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm-1f730e60.txt"}
+   {:slug "eta-mu-epic-part44-84bpm-432b7e5f",
+    :body-sha256
+    "432b7e5fe27442d465871875dd28f4e4dac7ace0692c3887b9075249e86f7dd8",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm-432b7e5f.txt"}
+   {:slug "eta-mu-epic-part44-84bpm-7e624cc4",
+    :body-sha256
+    "7e624cc47e14c4bca88a72d5849e5d16e027beb2dfa31239b839dfea21860476",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm-7e624cc4.txt"}
+   {:slug "eta-mu-epic-part44-84bpm-f131ffa1",
+    :body-sha256
+    "f131ffa1437783cdb3fcfc1100598f385ea1b9a924ab5454095b748a2bffb0a8",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm-f131ffa1.txt"}
+   {:slug "eta-mu-epic-part44-84bpm-98e94369",
+    :body-sha256
+    "98e94369d91ecd2f59e67d851540ddab1a371b7fcd506aed2b1fbe2bfe1b946d",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm-98e94369.txt"}
+   {:slug "eta-mu-epic-part44-84bpm-edccbdaa",
+    :body-sha256
+    "edccbdaa812377e721c463c5ca9b13dcfc0ab1193909ab498549b265f69e7c26",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm-edccbdaa.txt"}
+   {:slug "eta-mu-epic-part44-84bpm-309fea90",
+    :body-sha256
+    "309fea90a69b993d6394014bafa5305949f41909439009ba0113cd9ff59af203",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm-309fea90.txt"}
+   {:slug "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :body-sha256
+    "4ce84ffd199109294d4cf1ef09374ba1c01ef575d199e72b9190aab6bf1a8c02",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm-4ce84ffd.txt"}
+   {:slug "eta-mu-epic-part44-84bpm",
+    :body-sha256
+    "22b596b9a4c4a7bc5a922a3ed8c0001aa73dfd9c274fdd3284263c45b1e6de5e",
+    :file "docs/lyrics/eta-mu-epic-part44-84bpm.txt"}],
+  :edges
+  [{:a "eta-mu-epic-part44-84bpm-1f730e60",
+    :b "eta-mu-epic-part44-84bpm-432b7e5f",
+    :distance 65,
+    :similarity 0.01515151515151515}
+   {:a "eta-mu-epic-part44-84bpm-1f730e60",
+    :b "eta-mu-epic-part44-84bpm-7e624cc4",
+    :distance 64,
+    :similarity 0.0303030303030303}
+   {:a "eta-mu-epic-part44-84bpm-1f730e60",
+    :b "eta-mu-epic-part44-84bpm-f131ffa1",
+    :distance 65,
+    :similarity 0.01515151515151515}
+   {:a "eta-mu-epic-part44-84bpm-1f730e60",
+    :b "eta-mu-epic-part44-84bpm-98e94369",
+    :distance 52,
+    :similarity 0.2121212121212121}
+   {:a "eta-mu-epic-part44-84bpm-1f730e60",
+    :b "eta-mu-epic-part44-84bpm-edccbdaa",
+    :distance 17,
+    :similarity 0.7424242424242424}
+   {:a "eta-mu-epic-part44-84bpm-1f730e60",
+    :b "eta-mu-epic-part44-84bpm-309fea90",
+    :distance 15,
+    :similarity 0.7727272727272727}
+   {:a "eta-mu-epic-part44-84bpm-1f730e60",
+    :b "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :distance 55,
+    :similarity 0.1666666666666667}
+   {:a "eta-mu-epic-part44-84bpm-432b7e5f",
+    :b "eta-mu-epic-part44-84bpm-7e624cc4",
+    :distance 31,
+    :similarity 0.03125}
+   {:a "eta-mu-epic-part44-84bpm-432b7e5f",
+    :b "eta-mu-epic-part44-84bpm-f131ffa1",
+    :distance 30,
+    :similarity 0.0625}
+   {:a "eta-mu-epic-part44-84bpm-432b7e5f",
+    :b "eta-mu-epic-part44-84bpm-98e94369",
+    :distance 13,
+    :similarity 0.7045454545454545}
+   {:a "eta-mu-epic-part44-84bpm-432b7e5f",
+    :b "eta-mu-epic-part44-84bpm-edccbdaa",
+    :distance 48,
+    :similarity 0.04}
+   {:a "eta-mu-epic-part44-84bpm-432b7e5f",
+    :b "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :distance 10,
+    :similarity 0.7560975609756098}
+   {:a "eta-mu-epic-part44-84bpm-7e624cc4",
+    :b "eta-mu-epic-part44-84bpm-f131ffa1",
+    :distance 2,
+    :similarity 0.9130434782608696}
+   {:a "eta-mu-epic-part44-84bpm-7e624cc4",
+    :b "eta-mu-epic-part44-84bpm-98e94369",
+    :distance 42,
+    :similarity 0.04545454545454545}
+   {:a "eta-mu-epic-part44-84bpm-7e624cc4",
+    :b "eta-mu-epic-part44-84bpm-edccbdaa",
+    :distance 49,
+    :similarity 0.02}
+   {:a "eta-mu-epic-part44-84bpm-98e94369",
+    :b "eta-mu-epic-part44-84bpm-f131ffa1",
+    :distance 43,
+    :similarity 0.02272727272727273}
+   {:a "eta-mu-epic-part44-84bpm-98e94369",
+    :b "eta-mu-epic-part44-84bpm-edccbdaa",
+    :distance 49,
+    :similarity 0.02}
+   {:a "eta-mu-epic-part44-84bpm-edccbdaa",
+    :b "eta-mu-epic-part44-84bpm-f131ffa1",
+    :distance 48,
+    :similarity 0.04}
+   {:a "eta-mu-epic-part44-84bpm-309fea90",
+    :b "eta-mu-epic-part44-84bpm-432b7e5f",
+    :distance 50,
+    :similarity 0.03846153846153846}
+   {:a "eta-mu-epic-part44-84bpm-309fea90",
+    :b "eta-mu-epic-part44-84bpm-7e624cc4",
+    :distance 51,
+    :similarity 0.01923076923076923}
+   {:a "eta-mu-epic-part44-84bpm-309fea90",
+    :b "eta-mu-epic-part44-84bpm-f131ffa1",
+    :distance 50,
+    :similarity 0.03846153846153846}
+   {:a "eta-mu-epic-part44-84bpm-309fea90",
+    :b "eta-mu-epic-part44-84bpm-98e94369",
+    :distance 51,
+    :similarity 0.01923076923076923}
+   {:a "eta-mu-epic-part44-84bpm-309fea90",
+    :b "eta-mu-epic-part44-84bpm-edccbdaa",
+    :distance 2,
+    :similarity 0.9615384615384615}
+   {:a "eta-mu-epic-part44-84bpm-309fea90",
+    :b "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :distance 51,
+    :similarity 0.01923076923076923}
+   {:a "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :b "eta-mu-epic-part44-84bpm-7e624cc4",
+    :distance 39,
+    :similarity 0.04878048780487805}
+   {:a "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :b "eta-mu-epic-part44-84bpm-f131ffa1",
+    :distance 40,
+    :similarity 0.02439024390243902}
+   {:a "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :b "eta-mu-epic-part44-84bpm-98e94369",
+    :distance 3,
+    :similarity 0.9318181818181818}
+   {:a "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :b "eta-mu-epic-part44-84bpm-edccbdaa",
+    :distance 49,
+    :similarity 0.02}
+   {:a "eta-mu-epic-part44-84bpm",
+    :b "eta-mu-epic-part44-84bpm-1f730e60",
+    :distance 2,
+    :similarity 0.9696969696969697}
+   {:a "eta-mu-epic-part44-84bpm",
+    :b "eta-mu-epic-part44-84bpm-432b7e5f",
+    :distance 63,
+    :similarity 0.015625}
+   {:a "eta-mu-epic-part44-84bpm",
+    :b "eta-mu-epic-part44-84bpm-7e624cc4",
+    :distance 62,
+    :similarity 0.03125}
+   {:a "eta-mu-epic-part44-84bpm",
+    :b "eta-mu-epic-part44-84bpm-f131ffa1",
+    :distance 63,
+    :similarity 0.015625}
+   {:a "eta-mu-epic-part44-84bpm",
+    :b "eta-mu-epic-part44-84bpm-98e94369",
+    :distance 50,
+    :similarity 0.21875}
+   {:a "eta-mu-epic-part44-84bpm",
+    :b "eta-mu-epic-part44-84bpm-edccbdaa",
+    :distance 15,
+    :similarity 0.765625}
+   {:a "eta-mu-epic-part44-84bpm",
+    :b "eta-mu-epic-part44-84bpm-309fea90",
+    :distance 16,
+    :similarity 0.75}
+   {:a "eta-mu-epic-part44-84bpm",
+    :b "eta-mu-epic-part44-84bpm-4ce84ffd",
+    :distance 53,
+    :similarity 0.171875}],
+  :mean-similarity 0.2686042637745978}
+ {:cluster/key "eta_mu_lullaby_part51_78bpm|foked",
+  :members
+  [{:slug "eta-mu-lullaby-part51-78bpm-foked",
+    :body-sha256
+    "dc4f9c0d645c88901bb7d16fb3910be8f922c67cf490d65ce903dac6f738e186",
+    :file "docs/lyrics/eta-mu-lullaby-part51-78bpm-foked.txt"}
+   {:slug "eta-mu-lullaby-part51-78bpm-foked-cdcb56ab",
+    :body-sha256
+    "cdcb56ab36c421d73c6e373f4eda3c92d7cd492a2ddcec9583f5ab608d855fb8",
+    :file
+    "docs/lyrics/eta-mu-lullaby-part51-78bpm-foked-cdcb56ab.txt"}],
+  :edges
+  [{:a "eta-mu-lullaby-part51-78bpm-foked",
+    :b "eta-mu-lullaby-part51-78bpm-foked-cdcb56ab",
+    :distance 12,
+    :similarity 0.8285714285714286}],
+  :mean-similarity 0.8285714285714286}
+ {:cluster/key "fork > thrones",
+  :members
+  [{:slug "fork-thrones",
+    :body-sha256
+    "d94c52e0f7d05e65d1907d02e4c0d5d9a67cdb1510f7377aec3d9b23b3802b2b",
+    :file "docs/lyrics/fork-thrones.txt"}
+   {:slug "fork-thrones-5e0cb719",
+    :body-sha256
+    "5e0cb719a7371e525d42640fbe978f66950ce9b5a8fc0bade4b567b4a9495bdd",
+    :file "docs/lyrics/fork-thrones-5e0cb719.txt"}],
+  :edges
+  [{:a "fork-thrones",
+    :b "fork-thrones-5e0cb719",
+    :distance 39,
+    :similarity 0.04878048780487805}],
+  :mean-similarity 0.04878048780487805}
+ {:cluster/key "p→r→n→π→a→(feedback)→p around #ημ.",
+  :members
+  [{:slug "p-r-n-pi-a-feedback-p-around-eta-mu-bf75526b",
+    :body-sha256
+    "bf75526b0eca80add73eb9112dd1ebfc5890793ea045fb91de523df3a44d2b3f",
+    :file
+    "docs/lyrics/p-r-n-pi-a-feedback-p-around-eta-mu-bf75526b.txt"}
+   {:slug "p-r-n-pi-a-feedback-p-around-eta-mu-eee2e1ee",
+    :body-sha256
+    "eee2e1ee37d4950a9d117255f1d1cbaaf839bd1351ee6d0fd27713976e3f9adb",
+    :file
+    "docs/lyrics/p-r-n-pi-a-feedback-p-around-eta-mu-eee2e1ee.txt"}
+   {:slug "p-r-n-pi-a-feedback-p-around-eta-mu",
+    :body-sha256
+    "5457efc85f37d31be27ec9c1b0f0c64cd25e59817c267e6933e39eeb975e5871",
+    :file "docs/lyrics/p-r-n-pi-a-feedback-p-around-eta-mu.txt"}
+   {:slug "p-r-n-pi-a-feedback-p-around-eta-mu-5cbe6c78",
+    :body-sha256
+    "5cbe6c78a6f73fe24191633918cc6269f9c115d0f8c76ebc3c34032fc00fa1c9",
+    :file
+    "docs/lyrics/p-r-n-pi-a-feedback-p-around-eta-mu-5cbe6c78.txt"}],
+  :edges
+  [{:a "p-r-n-pi-a-feedback-p-around-eta-mu-bf75526b",
+    :b "p-r-n-pi-a-feedback-p-around-eta-mu-eee2e1ee",
+    :distance 2,
+    :similarity 0.9}
+   {:a "p-r-n-pi-a-feedback-p-around-eta-mu",
+    :b "p-r-n-pi-a-feedback-p-around-eta-mu-bf75526b",
+    :distance 20,
+    :similarity 0.4871794871794872}
+   {:a "p-r-n-pi-a-feedback-p-around-eta-mu",
+    :b "p-r-n-pi-a-feedback-p-around-eta-mu-eee2e1ee",
+    :distance 22,
+    :similarity 0.4358974358974359}
+   {:a "p-r-n-pi-a-feedback-p-around-eta-mu",
+    :b "p-r-n-pi-a-feedback-p-around-eta-mu-5cbe6c78",
+    :distance 6,
+    :similarity 0.8666666666666667}
+   {:a "p-r-n-pi-a-feedback-p-around-eta-mu-5cbe6c78",
+    :b "p-r-n-pi-a-feedback-p-around-eta-mu-bf75526b",
+    :distance 26,
+    :similarity 0.4222222222222222}
+   {:a "p-r-n-pi-a-feedback-p-around-eta-mu-5cbe6c78",
+    :b "p-r-n-pi-a-feedback-p-around-eta-mu-eee2e1ee",
+    :distance 28,
+    :similarity 0.3777777777777778}],
+  :mean-similarity 0.5816239316239317}
+ {:cluster/key "incident report fence",
+  :members
+  [{:slug "incident-report-fence",
+    :body-sha256
+    "47208c8be841b08ba82dadb1cbcc63ef8388a385ddba00a23a0946d0f3f19e45",
+    :file "docs/lyrics/incident-report-fence.txt"}
+   {:slug "incident-report-fence-f088f0ef",
+    :body-sha256
+    "f088f0ef266e78d2b5ce68487670c2ff82ba285dba3e3ead90ccf4aa44936137",
+    :file "docs/lyrics/incident-report-fence-f088f0ef.txt"}],
+  :edges
+  [{:a "incident-report-fence",
+    :b "incident-report-fence-f088f0ef",
+    :distance 79,
+    :similarity 0.02469135802469136}],
+  :mean-similarity 0.02469135802469136}
+ {:cluster/key "# fork tax lullaby vii — #ημ fork ii",
+  :members
+  [{:slug "fork-tax-lullaby-vii-eta-mu-fork-ii",
+    :body-sha256
+    "3c7f81843abc8ecae5c61380d2ca2797567e6f4d2699c09d90cff75d1ca20c13",
+    :file "docs/lyrics/fork-tax-lullaby-vii-eta-mu-fork-ii.txt"}
+   {:slug "fork-tax-lullaby-vii-eta-mu-fork-ii-195b0022",
+    :body-sha256
+    "195b0022a4e0ded87373db7e4156833c49ad86b1f3731a6a76032d9e15567a4f",
+    :file
+    "docs/lyrics/fork-tax-lullaby-vii-eta-mu-fork-ii-195b0022.txt"}],
+  :edges
+  [{:a "fork-tax-lullaby-vii-eta-mu-fork-ii",
+    :b "fork-tax-lullaby-vii-eta-mu-fork-ii-195b0022",
+    :distance 5,
+    :similarity 0.8648648648648649}],
+  :mean-similarity 0.8648648648648649}
+ {:cluster/key "揺れるカーテン",
+  :members
+  [{:slug "song-cad94f11",
+    :body-sha256
+    "cad94f1144a150d684df038ab344335af4376cc2832f068d0f7040b1c007802f",
+    :file "docs/lyrics/song-cad94f11.txt"}
+   {:slug "song-5bfb5e84",
+    :body-sha256
+    "5bfb5e840ea70ae2db6a8ce9dbad5de0fb2342e8f70019c3e4063740b2ce8d8a",
+    :file "docs/lyrics/song-5bfb5e84.txt"}
+   {:slug "song-a4c2b758",
+    :body-sha256
+    "a4c2b75876df80085054a44afdcd2f2b94e025197ad1ffec024b5d4964f46d24",
+    :file "docs/lyrics/song-a4c2b758.txt"}
+   {:slug "song-399ff9f4",
+    :body-sha256
+    "399ff9f4dbbc1354d228d175153e44dd26467b7dd6cab44ab3a52851b3b0a15a",
+    :file "docs/lyrics/song-399ff9f4.txt"}],
+  :edges
+  [{:a "song-5bfb5e84",
+    :b "song-cad94f11",
+    :distance 95,
+    :similarity 0.1441441441441441}
+   {:a "song-5bfb5e84",
+    :b "song-a4c2b758",
+    :distance 102,
+    :similarity 0.08928571428571429}
+   {:a "song-a4c2b758",
+    :b "song-cad94f11",
+    :distance 7,
+    :similarity 0.9375}
+   {:a "song-399ff9f4",
+    :b "song-cad94f11",
+    :distance 101,
+    :similarity 0.1293103448275862}
+   {:a "song-399ff9f4",
+    :b "song-5bfb5e84",
+    :distance 6,
+    :similarity 0.9482758620689655}
+   {:a "song-399ff9f4",
+    :b "song-a4c2b758",
+    :distance 97,
+    :similarity 0.1637931034482759}],
+  :mean-similarity 0.4020515281291144}
+ {:cluster/key "fork tales — “protestant presence ii: signal shelter”",
+  :members
+  [{:slug "fork-tales-protestant-presence-ii-signal-shelter",
+    :body-sha256
+    "6c01f64fc8784513d960fefc12b611c8c16439155a89d2dc2be0d3fd05203fa8",
+    :file
+    "docs/lyrics/fork-tales-protestant-presence-ii-signal-shelter.txt"}
+   {:slug "fork-tales-protestant-presence-ii-signal-shelter-a8020f74",
+    :body-sha256
+    "a8020f746dc93cc008af7ac956b14ea9eceda5ecb585ab5b8a303bf6643ad6f5",
+    :file
+    "docs/lyrics/fork-tales-protestant-presence-ii-signal-shelter-a8020f74.txt"}],
+  :edges
+  [{:a "fork-tales-protestant-presence-ii-signal-shelter",
+    :b "fork-tales-protestant-presence-ii-signal-shelter-a8020f74",
+    :distance 10,
+    :similarity 0.921875}],
+  :mean-similarity 0.921875}
+ {:cluster/key "nu (the heresy of being between)",
+  :members
+  [{:slug "nu-the-heresy-of-being-between-2cdce596",
+    :body-sha256
+    "2cdce5961609db3223b546374d0fa2559818b6869b6354ce3032307cc78e7e87",
+    :file "docs/lyrics/nu-the-heresy-of-being-between-2cdce596.txt"}
+   {:slug "nu-the-heresy-of-being-between",
+    :body-sha256
+    "62ab8392f8d423030f31e6f11a8bf597ec17193bd1722229916e5b81dca34dc8",
+    :file "docs/lyrics/nu-the-heresy-of-being-between.txt"}],
+  :edges
+  [{:a "nu-the-heresy-of-being-between",
+    :b "nu-the-heresy-of-being-between-2cdce596",
+    :distance 8,
+    :similarity 0.9166666666666667}],
+  :mean-similarity 0.9166666666666667}
+ {:cluster/key "*duck.exe awakening (ダック、起動中)*",
+  :members
+  [{:slug "duck-exe-awakening-7963dfd7",
+    :body-sha256
+    "7963dfd72efeacd76fcdbffa3bac0da4e8251dc1e67ea2fc293f74811b11f7c4",
+    :file "docs/lyrics/duck-exe-awakening-7963dfd7.txt"}
+   {:slug "duck-exe-awakening",
+    :body-sha256
+    "3a37536c19b99d5cc74bb66368e969f9ed8e0d47d4462dc9f5795751f779540e",
+    :file "docs/lyrics/duck-exe-awakening.txt"}],
+  :edges
+  [{:a "duck-exe-awakening",
+    :b "duck-exe-awakening-7963dfd7",
+    :distance 2,
+    :similarity 0.9795918367346939}],
+  :mean-similarity 0.9795918367346939}
+ {:cluster/key "also μ (deeper cut)",
+  :members
+  [{:slug "also-mu-deeper-cut",
+    :body-sha256
+    "a86e6dcfb991e58a36137bd4ab07c5dd167fd2bc1691dfa20e9a1aa8eb616ed0",
+    :file "docs/lyrics/also-mu-deeper-cut.txt"}
+   {:slug "also-mu-deeper-cut-d2bf34e7",
+    :body-sha256
+    "d2bf34e717f60367ac9804ad3d99a693197c55f3e47370225119f4affc600f6a",
+    :file "docs/lyrics/also-mu-deeper-cut-d2bf34e7.txt"}],
+  :edges
+  [{:a "also-mu-deeper-cut",
+    :b "also-mu-deeper-cut-d2bf34e7",
+    :distance 1,
+    :similarity 0.9911504424778761}],
+  :mean-similarity 0.9911504424778761}
+ {:cluster/key "world off, music on",
+  :members
+  [{:slug "world-off-music-on",
+    :body-sha256
+    "e76df4e4c8c2b3974a054257dedbd13fb299023c4c38b876125637117ee3b7a2",
+    :file "docs/lyrics/world-off-music-on.txt"}
+   {:slug "world-off-music-on-d486bccd",
+    :body-sha256
+    "d486bccddc1a8fb92e07deec0b1d35a10af3703f1bf5f100dedecd8dd1ffffee",
+    :file "docs/lyrics/world-off-music-on-d486bccd.txt"}
+   {:slug "world-off-music-on-b6dd4860",
+    :body-sha256
+    "b6dd4860922070dafdf1345e2bb80332186b2c1a99296958984c3fd67834814d",
+    :file "docs/lyrics/world-off-music-on-b6dd4860.txt"}
+   {:slug "world-off-music-on-34f0e7ac",
+    :body-sha256
+    "34f0e7acc47417df4d120b82a30541fb72b3ae0ecd7526d0f594fa83323489a8",
+    :file "docs/lyrics/world-off-music-on-34f0e7ac.txt"}],
+  :edges
+  [{:a "world-off-music-on",
+    :b "world-off-music-on-d486bccd",
+    :distance 66,
+    :similarity 0.1851851851851852}
+   {:a "world-off-music-on",
+    :b "world-off-music-on-b6dd4860",
+    :distance 65,
+    :similarity 0.1975308641975309}
+   {:a "world-off-music-on",
+    :b "world-off-music-on-34f0e7ac",
+    :distance 2,
+    :similarity 0.9753086419753086}
+   {:a "world-off-music-on-b6dd4860",
+    :b "world-off-music-on-d486bccd",
+    :distance 2,
+    :similarity 0.9736842105263158}
+   {:a "world-off-music-on-34f0e7ac",
+    :b "world-off-music-on-d486bccd",
+    :distance 64,
+    :similarity 0.2}
+   {:a "world-off-music-on-34f0e7ac",
+    :b "world-off-music-on-b6dd4860",
+    :distance 66,
+    :similarity 0.175}],
+  :mean-similarity 0.4511181503140567}
+ {:cluster/key "before the roar / 咆哮の前",
+  :members
+  [{:slug "before-the-roar-d76ab991",
+    :body-sha256
+    "d76ab991e02ee76619b63261601b141e4a62c333897ab79932e993208cf2fc5a",
+    :file "docs/lyrics/before-the-roar-d76ab991.txt"}
+   {:slug "before-the-roar",
+    :body-sha256
+    "6bd84131e670a449a7c7f851cd5124eb5eadc1e276facb60d295ff0b1eaa6971",
+    :file "docs/lyrics/before-the-roar.txt"}],
+  :edges
+  [{:a "before-the-roar",
+    :b "before-the-roar-d76ab991",
+    :distance 5,
+    :similarity 0.9305555555555556}],
+  :mean-similarity 0.9305555555555556}
+ {:cluster/key "i choose to walk / 歩くと決めた",
+  :members
+  [{:slug "i-choose-to-walk",
+    :body-sha256
+    "02e5ec0eebf27257577d47cc642c1fb21c2abc35dea105284e468369ece6538f",
+    :file "docs/lyrics/i-choose-to-walk.txt"}
+   {:slug "i-choose-to-walk-ca101ec6",
+    :body-sha256
+    "ca101ec6be0fa1e93503ae66a00e8a65ef81998d7f2a72c501d1a79a6a10caa8",
+    :file "docs/lyrics/i-choose-to-walk-ca101ec6.txt"}],
+  :edges
+  [{:a "i-choose-to-walk",
+    :b "i-choose-to-walk-ca101ec6",
+    :distance 6,
+    :similarity 0.9495798319327731}],
+  :mean-similarity 0.9495798319327731}
+ {:cluster/key
+  "centered symmetry; clean hierarchy; single point of authority",
+  :members
+  [{:slug
+    "centered-symmetry-clean-hierarchy-single-point-of-authority",
+    :body-sha256
+    "5b52f6c3853442e12954a51af3b6797cb06e3515a0e81a602566405376b5d459",
+    :file
+    "docs/lyrics/centered-symmetry-clean-hierarchy-single-point-of-authority.txt"}
+   {:slug
+    "centered-symmetry-clean-hierarchy-single-point-of-authority-a28af154",
+    :body-sha256
+    "a28af154fefb9546ad86fc7ed96c2454c14c32c3c34ffe4c4c6f31230a95eb98",
+    :file
+    "docs/lyrics/centered-symmetry-clean-hierarchy-single-point-of-authority-a28af154.txt"}],
+  :edges
+  [{:a "centered-symmetry-clean-hierarchy-single-point-of-authority",
+    :b
+    "centered-symmetry-clean-hierarchy-single-point-of-authority-a28af154",
+    :distance 98,
+    :similarity 0.06666666666666667}],
+  :mean-similarity 0.06666666666666667}
+ {:cluster/key "intent is now **compressed densely** and",
+  :members
+  [{:slug "intent-is-now-compressed-densely-and-e839643f",
+    :body-sha256
+    "e839643f2ba27f388ba3104c986e536af9ea613ca1996561536d59f82112932a",
+    :file
+    "docs/lyrics/intent-is-now-compressed-densely-and-e839643f.txt"}
+   {:slug "intent-is-now-compressed-densely-and-ae1b5f12",
+    :body-sha256
+    "ae1b5f125944be2f58905dd59fd0da171cfc85bd6b1d8d648140a0005602df30",
+    :file
+    "docs/lyrics/intent-is-now-compressed-densely-and-ae1b5f12.txt"}
+   {:slug "intent-is-now-compressed-densely-and-f863edf1",
+    :body-sha256
+    "f863edf1236ed7f9d9047c6fca12a5c2076799a1d4f00d911730822b51b85624",
+    :file
+    "docs/lyrics/intent-is-now-compressed-densely-and-f863edf1.txt"}
+   {:slug "intent-is-now-compressed-densely-and",
+    :body-sha256
+    "d4506cddf0afc93f913d88f5c89894da342e4c6855aac3ba23872f8d6b76bdd1",
+    :file "docs/lyrics/intent-is-now-compressed-densely-and.txt"}
+   {:slug "intent-is-now-compressed-densely-and-be96a0f0",
+    :body-sha256
+    "be96a0f07aaac0ff30110092659bc8f3592f58686f64ed812f086a00219eac27",
+    :file
+    "docs/lyrics/intent-is-now-compressed-densely-and-be96a0f0.txt"}
+   {:slug "intent-is-now-compressed-densely-and-6f8212ef",
+    :body-sha256
+    "6f8212efdbd13bb1b75d22a70b6dc72fb246bfe4ba4df7f67490dc06ffbdd2a3",
+    :file
+    "docs/lyrics/intent-is-now-compressed-densely-and-6f8212ef.txt"}],
+  :edges
+  [{:a "intent-is-now-compressed-densely-and-e839643f",
+    :b "intent-is-now-compressed-densely-and-f863edf1",
+    :distance 15,
+    :similarity 0.8}
+   {:a "intent-is-now-compressed-densely-and-ae1b5f12",
+    :b "intent-is-now-compressed-densely-and-e839643f",
+    :distance 59,
+    :similarity 0.2133333333333333}
+   {:a "intent-is-now-compressed-densely-and-ae1b5f12",
+    :b "intent-is-now-compressed-densely-and-f863edf1",
+    :distance 64,
+    :similarity 0.04477611940298507}
+   {:a "intent-is-now-compressed-densely-and-ae1b5f12",
+    :b "intent-is-now-compressed-densely-and-be96a0f0",
+    :distance 15,
+    :similarity 0.7761194029850746}
+   {:a "intent-is-now-compressed-densely-and",
+    :b "intent-is-now-compressed-densely-and-e839643f",
+    :distance 59,
+    :similarity 0.2133333333333333}
+   {:a "intent-is-now-compressed-densely-and",
+    :b "intent-is-now-compressed-densely-and-ae1b5f12",
+    :distance 51,
+    :similarity 0.2388059701492537}
+   {:a "intent-is-now-compressed-densely-and",
+    :b "intent-is-now-compressed-densely-and-f863edf1",
+    :distance 65,
+    :similarity 0.01515151515151515}
+   {:a "intent-is-now-compressed-densely-and",
+    :b "intent-is-now-compressed-densely-and-be96a0f0",
+    :distance 65,
+    :similarity 0.01515151515151515}
+   {:a "intent-is-now-compressed-densely-and",
+    :b "intent-is-now-compressed-densely-and-6f8212ef",
+    :distance 15,
+    :similarity 0.7727272727272727}
+   {:a "intent-is-now-compressed-densely-and-be96a0f0",
+    :b "intent-is-now-compressed-densely-and-e839643f",
+    :distance 72,
+    :similarity 0.04}
+   {:a "intent-is-now-compressed-densely-and-be96a0f0",
+    :b "intent-is-now-compressed-densely-and-f863edf1",
+    :distance 59,
+    :similarity 0.03278688524590164}
+   {:a "intent-is-now-compressed-densely-and-6f8212ef",
+    :b "intent-is-now-compressed-densely-and-e839643f",
+    :distance 74,
+    :similarity 0.01333333333333333}
+   {:a "intent-is-now-compressed-densely-and-6f8212ef",
+    :b "intent-is-now-compressed-densely-and-ae1b5f12",
+    :distance 66,
+    :similarity 0.01492537313432836}
+   {:a "intent-is-now-compressed-densely-and-6f8212ef",
+    :b "intent-is-now-compressed-densely-and-f863edf1",
+    :distance 59,
+    :similarity 0.03278688524590164}
+   {:a "intent-is-now-compressed-densely-and-6f8212ef",
+    :b "intent-is-now-compressed-densely-and-be96a0f0",
+    :distance 51,
+    :similarity 0.03773584905660377}],
+  :mean-similarity 0.21739778588335676}
+ {:cluster/key "(prompt \"operation-mindfuck/v2\"",
+  :members
+  [{:slug "prompt-operation-mindfuck-v2-c263af9a",
+    :body-sha256
+    "c263af9a6bcec8c5de997c22445de922383607be460095aef326dbc149f02a1c",
+    :file "docs/lyrics/prompt-operation-mindfuck-v2-c263af9a.txt"}
+   {:slug "prompt-operation-mindfuck-v2-8cb9b1e0",
+    :body-sha256
+    "8cb9b1e018c7ed1453648c93f08cb42d8da89de06210542ecb82ca49b4d4e1e3",
+    :file "docs/lyrics/prompt-operation-mindfuck-v2-8cb9b1e0.txt"}
+   {:slug "prompt-operation-mindfuck-v2",
+    :body-sha256
+    "cb1176f1995440e78f97b97746b485634ef84af52a0dbeeedf3136026fdc19f0",
+    :file "docs/lyrics/prompt-operation-mindfuck-v2.txt"}],
+  :edges
+  [{:a "prompt-operation-mindfuck-v2-8cb9b1e0",
+    :b "prompt-operation-mindfuck-v2-c263af9a",
+    :distance 60,
+    :similarity 0.5041322314049587}
+   {:a "prompt-operation-mindfuck-v2",
+    :b "prompt-operation-mindfuck-v2-c263af9a",
+    :distance 59,
+    :similarity 0.512396694214876}
+   {:a "prompt-operation-mindfuck-v2",
+    :b "prompt-operation-mindfuck-v2-8cb9b1e0",
+    :distance 15,
+    :similarity 0.8026315789473684}],
+  :mean-similarity 0.6063868348557343}
+ {:cluster/key "# fork tax lullaby xi — 20260213_251215_",
+  :members
+  [{:slug "fork-tax-lullaby-xi-20260213-251215",
+    :body-sha256
+    "f87a127892bf5d9e62a23477f35663390568e41b69c0b270eb50b207c1878945",
+    :file "docs/lyrics/fork-tax-lullaby-xi-20260213-251215.txt"}
+   {:slug "fork-tax-lullaby-xi-20260213-251215-e6443480",
+    :body-sha256
+    "e64434802a2c8542bf4f86a28f7d525c9f74530cea2f4298985136a1a0e4fcf0",
+    :file
+    "docs/lyrics/fork-tax-lullaby-xi-20260213-251215-e6443480.txt"}],
+  :edges
+  [{:a "fork-tax-lullaby-xi-20260213-251215",
+    :b "fork-tax-lullaby-xi-20260213-251215-e6443480",
+    :distance 19,
+    :similarity 0.7654320987654321}],
+  :mean-similarity 0.7654320987654321}
+ {:cluster/key "signal shelter / シグナルの屋根",
+  :members
+  [{:slug "signal-shelter-1d109710",
+    :body-sha256
+    "1d1097107a0bb0edaf07a5224ec79d7ad267c1d6decc32ed27d0b2971291cfcd",
+    :file "docs/lyrics/signal-shelter-1d109710.txt"}
+   {:slug "signal-shelter",
+    :body-sha256
+    "8a752fd0b594735e79b0ed0683a024ac0b5648cdd22e9e41eac9f4740e4ef14a",
+    :file "docs/lyrics/signal-shelter.txt"}],
+  :edges
+  [{:a "signal-shelter",
+    :b "signal-shelter-1d109710",
+    :distance 6,
+    :similarity 0.927710843373494}],
+  :mean-similarity 0.927710843373494}
+ {:cluster/key
+  "[download operation_mindfuck_box_part15_keep_rolling_plot_graph_skills_memories.zip](sandbox:/mnt/data/operation_mindfuck_box_part15_keep_rolling_plot_graph_skills_memories.zip)",
+  :members
+  [{:slug
+    "download-operation-mindfuck-box-part15-keep-rolling-plot-graph-skills-memories-z-7c48ea95",
+    :body-sha256
+    "7c48ea95fda8d10ab65308862cad39799f8129d39f756879ecfde602613e3cd1",
+    :file
+    "docs/lyrics/download-operation-mindfuck-box-part15-keep-rolling-plot-graph-skills-memories-z-7c48ea95.txt"}
+   {:slug
+    "download-operation-mindfuck-box-part15-keep-rolling-plot-graph-skills-memories-z",
+    :body-sha256
+    "921bb75178e380bd06292782dd1527c74c52292ab2023a91c15ba368e1afb412",
+    :file
+    "docs/lyrics/download-operation-mindfuck-box-part15-keep-rolling-plot-graph-skills-memories-z.txt"}],
+  :edges
+  [{:a
+    "download-operation-mindfuck-box-part15-keep-rolling-plot-graph-skills-memories-z",
+    :b
+    "download-operation-mindfuck-box-part15-keep-rolling-plot-graph-skills-memories-z-7c48ea95",
+    :distance 2,
+    :similarity 0.9764705882352941}],
+  :mean-similarity 0.9764705882352941}
+ {:cluster/key "ημ_epic_part46_84bpm x ημ_epic_part44_84bpm (mashup)",
+  :members
+  [{:slug
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-e017ba11",
+    :body-sha256
+    "e017ba11a0c890d228a10bcca0dc5de435cfb4f9eb8461a4b68da66c671ee828",
+    :file
+    "docs/lyrics/eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-e017ba11.txt"}
+   {:slug
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-88601723",
+    :body-sha256
+    "886017234218bee65d0d2e687d2016760cbff058ac0322b48caedfe6a9d76ec1",
+    :file
+    "docs/lyrics/eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-88601723.txt"}
+   {:slug "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup",
+    :body-sha256
+    "abb58b92b93186953945219b3e58197544749db55aee2e34af7abd599e686d13",
+    :file
+    "docs/lyrics/eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup.txt"}
+   {:slug
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-fb5cdaa7",
+    :body-sha256
+    "fb5cdaa79567c60f90be3d10c7fa09338e0102b3567e76154719d3b950ebc1bb",
+    :file
+    "docs/lyrics/eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-fb5cdaa7.txt"}],
+  :edges
+  [{:a
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-e017ba11",
+    :b
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-fb5cdaa7",
+    :distance 51,
+    :similarity 0.1052631578947368}
+   {:a
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-88601723",
+    :b
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-e017ba11",
+    :distance 50,
+    :similarity 0.0196078431372549}
+   {:a
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-88601723",
+    :b
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-fb5cdaa7",
+    :distance 7,
+    :similarity 0.8771929824561404}
+   {:a "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup",
+    :b
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-e017ba11",
+    :distance 5,
+    :similarity 0.861111111111111}
+   {:a "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup",
+    :b
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-88601723",
+    :distance 49,
+    :similarity 0.0392156862745098}
+   {:a "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup",
+    :b
+    "eta-mu-epic-part46-84bpm-x-eta-mu-epic-part44-84bpm-mashup-fb5cdaa7",
+    :distance 55,
+    :similarity 0.03508771929824561}],
+  :mean-similarity 0.32291308336199975}]

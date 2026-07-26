@@ -26,6 +26,7 @@ Lore/fork-tales, gates-of-aker).
 bb scripts/corpus.clj ingest    # scan roots, append :doc/discovered events
 bb scripts/corpus.clj project   # rebuild docs/lyrics from latest run
 bb scripts/corpus.clj stats     # summarize latest run
+bb scripts/corpus.clj variants  # pass 2: cluster same-title variants by edit distance
 ```
 
 ## Ledger discipline (epiphany rules)
@@ -42,9 +43,13 @@ bb scripts/corpus.clj stats     # summarize latest run
 
 - [x] Pass 1: sha256 + normalized body-sha256 (strip Suno `ID:` line,
       whitespace) — done, 1,522 files → 690 songs.
-- [ ] Pass 2: edit-distance clustering for same-title/different-body variants
-      (Suno re-renders, mashups) — candidates visible as shared-slug
-      hash-suffixed files in `docs/lyrics/`.
+- [x] Pass 2: edit-distance clustering for same-title/different-body variants
+      (Suno re-renders, mashups) — done, `bb scripts/corpus.clj variants`:
+      148 same-title clusters / 413 songs, line-level Levenshtein, recorded
+      as `:doc/variant-cluster` events + `ledgers/projections/variants-v1.edn`
+      (graded signals with per-edge similarity, never merged). Caveat:
+      title-extraction artifacts (e.g. the "## signal" cluster, mean-sim
+      0.07) group unrelated songs — use mean-similarity to filter.
 - [ ] Pass 3: embedding similarity + named-entity/theme extraction
       (epiphany's intended territory; see `~/spaces/epiphany`).
 

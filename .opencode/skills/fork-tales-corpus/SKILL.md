@@ -17,6 +17,7 @@ songbook, change the pipeline or the sources — then re-project.
 bb scripts/corpus.clj ingest    # append :doc/discovered events (latest run wins for projection)
 bb scripts/corpus.clj project   # rebuild docs/lyrics + ledgers/projections/songs-v1.edn
 bb scripts/corpus.clj stats     # classification counts for latest run
+bb scripts/corpus.clj variants  # pass 2: same-title clusters → :doc/variant-cluster events
 ```
 
 ## Event shapes
@@ -41,7 +42,14 @@ verbatim to `docs/lyrics/<slug>.<ext>`.
 
 - 690 unique songs from 1,522 lyric files (832 duplicates collapsed).
 - Same-title hash-suffixed siblings (e.g. `manifest-oath-84-bpm-<hash8>.txt`)
-  are Suno re-render variants — pass 2 (edit distance) territory, NOT bugs.
+  are Suno re-render variants — pass 2 has clustered them (148 same-title
+  clusters, 413 songs): see `:doc/variant-cluster` ledger events and
+  `ledgers/projections/variants-v1.edn`. Each edge carries a line-level
+  Levenshtein `:similarity` (0..1) — a graded signal, never a merge.
+- Pass-2 caveat: title-extraction artifacts create false clusters. Docs whose
+  "title" is a generic markdown header (e.g. `## signal`, 13 members,
+  mean-sim 0.07) are unrelated songs. Treat `:mean-similarity` < ~0.3 as
+  "shared title only", ≥ ~0.8 as true re-render variants.
 - `:pasted-artifact` flags = Suno "songs" whose body is a pasted chat log or
   zip manifest. Kept (they were rendered), but filter them for lore analysis.
 

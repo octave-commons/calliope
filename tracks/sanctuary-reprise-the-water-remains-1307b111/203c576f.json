@@ -1,0 +1,51 @@
+{
+  "id": "de4f1df4-cfa3-4d4b-8536-c4c7874c11ef",
+  "title": "Sanctuary Reprise — The Water Remains / 聖域の再帰",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/de4f1df4-cfa3-4d4b-8536-c4c7874c11ef.mp3",
+  "image_url": "https://cdn2.suno.ai/image_de4f1df4-cfa3-4d4b-8536-c4c7874c11ef.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Baroque orchestral reprise × gothic opera × mythic ambient resolution. 118 BPM (slightly slower than prior duels), flowing 4/4 that occasionally feels like 12/8 swell. Harpsichord motif from \"Sanctuary of the Falling Veil\" returns, now softened. Sweeping strings, pipe organ warmth (less attack), layered choir, distant waterfall ambience throughout. No aggressive snare—use rolling timpani and suspended cymbals.\n\n**Vocal Direction:** Operatic soprano but warmer, less blade. Choir prominent. Occasional call-and-response between soloist and chorus. Emotional but controlled—resolution through magnitude, not collapse.\n\n**Mood:** Sublime integration. Vastness absorbing conflict. Awe without menace.\n\n**Structure:** Water Overture → Verse 1 → Pre-Chorus (ascending recall motif) → Grand Chorus (theme return) → Verse 2 (duel echoes soften) → Bridge (choir-only cascade) → Final Chorus (full orchestral bloom) → Mist Coda.\n",
+    "prompt": "## OVERTURE — The Water Was Listening\n\n*(waterfall roar; soft organ; strings shimmer)*\n\nWhile crowns were lifted,\nWhile spines were steel,\nThe water listened—\nAnd did not kneel.\n\n霧は覚えている。\n\n## VERSE 1 — After the Duel\n\nVelvet burned and frost was bright,\nVoices carved the trembling night.\n\nHigh above the shattered nave,\nNeither bowed and none were saved.\n\nBut here—\n\nThe cliffs do not applaud.\nThe mist does not divide.\n\n## PRE-CHORUS — Return of the Motif\n\n*(harpsichord motif from original Sanctuary theme returns softly)*\n\nTurquoise pulse beneath the stone,\nEvery roar a monotone\nOlder than the crown or cry,\nOlder than the will to fly.\n\n## CHORUS — The Water Remains\n\n*(full orchestral swell; choir layered)*\n\nSanctuary—falling veil—\nAll our triumphs turn to hail.\n\n落水の聖域\nStill the same.\n\nCrown and rebel,\nblade and flame,\n\nIn the torrent lose their name.\n\nSanctuary—vast and wide—\nAll our duels dissolve inside.\n\n息は水に帰る。\n\n## VERSE 2 — Softening\n\nThe falcon’s wing, the grounded stand—\nBoth are small in ancient land.\n\nThreads of pride and threads of grace\nDrift like mist from every face.\n\nYou were right.\n\nYou were strong.\n\nYou were only passing through.\n\n## BRIDGE — Choir Cascade\n\n*(choir only; waterfall louder; no percussion)*\n\nLux in aqua.\nLux in fall.\n\nNo one conquers.\nWater calls.\n\n天上も地上も\n同じ霧。\n\nBreath becomes the rising sea.\n\n## FINAL CHORUS — Integration\n\n*(orchestra blooms fully; soprano sustained over choir)*\n\nSanctuary—falling veil—\nAll our certainties grow pale.\n\nNot defeated.\nNot enthroned.\n\nJust returning\nwhat was loaned.\n\n落水の聖域\n抱きしめる。\n\nCrown of frost and spine of steel—\nBoth were ways to try to feel.\n\nNow the torrent takes the role—\nVastness singing through the whole.\n\n## CODA — Mist & Continuance\n\n*(music thins; waterfall fades to steady hum)*\n\nThe duel was fire.\n\nThe water remains.\n\n息。\n",
+    "type": "gen",
+    "duration": 239.88,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

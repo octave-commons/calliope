@@ -1,0 +1,51 @@
+{
+  "id": "a450cd87-5c96-45a7-8f55-bd364563b25c",
+  "title": "Chorus of the Guild Above / 天上ギルドの合唱",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/a450cd87-5c96-45a7-8f55-bd364563b25c.mp3",
+  "image_url": "https://cdn2.suno.ai/image_a450cd87-5c96-45a7-8f55-bd364563b25c.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "\n**Genre/Style:** Fast baroque-pop opera × gothic choral spectacle × MMO mythic commentary. 126 BPM driving 4/4. Rapid harpsichord ostinatos, racing strings, cathedral organ swells, militant snare, rolling timpani. Large mixed choir (SATB) with call-and-response passages. Subtle glitch shimmer under transitions.\n\n**Vocal Direction:** Primarily choral narration (Greek chorus energy). Alternating male and female leads. Occasional soaring soprano descants above the choir. Crisp diction, percussive consonants, dramatic dynamic shifts.\n\n**Mood:** Regal observation. Ironic reverence. Awe without allegiance.\n\n**Structure:** Orchestral Overture → Chorus Verse I (narration) → Pre-Chorus (rising tension) → Grand Refrain → Chorus Verse II → Bridge (whispered guild counsel) → Final Refrain (full blaze) → Echoing coda.\n",
+    "prompt": "## OVERTURE — Balcony of Light\n\n*(organ swell; choir hum; strings racing beneath)*\n\nFrom the ramparts of reflected sky,\nWe watch the velvet falcon fly.\n\nAnd on the marble, unbowed flame,\nStands the one who will not claim.\n\n天上より見守る。\n\n## CHORUS VERSE I — Witness\n\nSopranos:\nCrown of frost and silver decree—\n\nTenors:\nSpine of steel in defiant key—\n\nAltos:\nBlade of song in satin air—\n\nBasses:\nGrounded pulse that does not care—\n\nAll:\nThus begins the sacred duel,\nPride as scepter, breath as rule.\n\n## PRE-CHORUS — Divided Air\n\n*(strings ascending; timpani rumble)*\n\nHigh above the shattering nave,\nNo one kneels and none are saved.\n\nTick—tock—\nthreads align.\n\nIs this fate?\nOr design?\n\n## GRAND REFRAIN — We Bear No Banner\n\n*(full orchestral surge; choir in harmony)*\n\nWe bear no banner—\nWe cast no stone.\n\nWe witness fire\nagainst the throne.\n\n鷹の女王\n跪かない\n\nTwo bright notes in mirrored sky,\nNeither willing yet to die.\n\nWe bear no banner—\nWe take no side.\n\nIn spectacle,\nwe do not hide.\n\n## CHORUS VERSE II — The Measure\n\nSopranos:\nHear the aria cut like glass—\n\nTenors:\nHear the answer—steady, brass—\n\nAltos:\nVelocity and vertical flame—\n\nBasses:\nContinuance without a name—\n\nAll:\nWhat is power without a crown?\nWhat is rising without down?\n\n## BRIDGE — Guild Counsel\n\n*(music drops; whispering choir; faint glitch shimmer)*\n\nObserve.\n\nDo not inherit the rage.\n\nRemember:\nEvery queen was once a page.\n\nRemember:\nEvery rebel risks a throne.\n\nRemember:\nBreath is never owned.\n\n息は借り物。\n\n## FINAL REFRAIN — Vast Arena\n\n*(orchestra blazing; choir at full force; soprano descant above)*\n\nWe bear no banner—\nbut we ascend\nIn understanding\nwithout end.\n\nCrown and spine,\nblade and ground—\n\nBoth are bound\nby common sound.\n\n天上ギルド\n静かに歌う。\n\nWe bear no banner—\nwe remain.\n\nWitness to glory.\nWitness to flame.\n\n## CODA — Echo in the Heights\n\n*(choir fades; organ softens)*\n\nIn every duel of frost and will,\nThe sky is watching—\n\nStill.\n\n息。\n",
+    "type": "gen",
+    "duration": 366.32,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

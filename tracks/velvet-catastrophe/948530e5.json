@@ -1,0 +1,52 @@
+{
+  "id": "ac61ec24-02ba-4eac-8f7f-6350fd1719a0",
+  "title": "Velvet Catastrophe / ベルベット・カタストロフ",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/ac61ec24-02ba-4eac-8f7f-6350fd1719a0.mp3",
+  "image_url": "https://cdn2.suno.ai/image_ac61ec24-02ba-4eac-8f7f-6350fd1719a0.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** High-drama baroque pop × gothic cabaret × cyber-glitch undertone. 148 BPM driving waltz-feel (3/4 with urgent propulsion). Harpsichord arpeggios, rapid staccato strings, pipe organ swells, dramatic timpani, theatrical snare rolls, subtle industrial sub pulses underneath. Occasional granular glitch fractures in transitions.\n\n**Vocal Direction:** Razor-bright soprano lead with operatic vibrato and crisp diction. The vocal performs a role—commanding, seductive, almost antagonistic. Dramatic peaks, whispered asides, layered choral responses (female soprano + low male chant texture).\n\n**Mood:** Seductive menace. Triumph laced with corruption. A theatrical invitation into beautiful disaster.\n\n**Structure:** Harpsichord Overture → Verse 1 → Pre-Chorus (rising tension) → Grand Chorus → Verse 2 → Cabaret Bridge (tempo drop + whispered seduction) → Final Chorus (full orchestral blaze) → Sharp Stinger End.\n",
+    "prompt": "## OVERTURE — Crimson Curtain\n\n*(harpsichord racing; strings tremolo)*\n\nWelcome, my darling,\nto velvet decay.\n\n赤い幕が上がる。\n\nThe stage is immaculate—\nthe ending pre-paid.\n\n## VERSE 1 — Luxury of Loss\n\nI sell you salvation in crystal and lace,\nperfumed catastrophe dressed up as grace.\n\nMisfortune gilded in glitter and wine,\ntragedy posed like it’s fate by design.\n\nDrink from the chalice—\nforget what you knew.\n\n忘れて。\n\n## PRE-CHORUS — Invitation\n\n*(strings climbing; timpani rumble)*\n\nHush now, hush now,\nthe orchestra swells.\n\nEvery paradise\ncomes with a bell.\n\nOne toll for wonder,\none toll for sin—\n\nOpen the door.\nStep in.\n\n## CHORUS — Velvet Catastrophe\n\n*(full orchestral surge; soprano at peak)*\n\nVelvet catastrophe—\nbow to the queen!\n\nGolden disaster in porcelain sheen.\n\nClap for the ruin,\ncheer for the fall—\n\nIsn’t it beautiful?\nIsn’t it all?\n\nベルベットの破滅\n甘く囁く。\n\nVelvet catastrophe—\nkneel if you please.\n\nYour chains are roses,\nyour cage is keys.\n\n## VERSE 2 — Commodity Heaven\n\nHappiness packaged in ribbons and fear,\nbuy one illusion—regret disappears.\n\nMorality melts in theatrical light,\nwrong becomes dazzling, dark becomes bright.\n\nI whisper: “Dream.”\nI murmur: “Stay.”\n\n夢を見て。\n\n## BRIDGE — Cabaret of Consent\n\n*(tempo dips; harpsichord solo; whisper)*\n\nBe quiet now.\nBe good.\n\nLet the spectacle decide what it should.\n\nYou wanted a myth?\nYou wanted a throne?\n\nEvery empire\neats its own.\n\n*(choir enters, low chant beneath soprano sustain)*\n\nLux in corruptione—\ntruth in disguise.\n\n## FINAL CHORUS — Exalted Collapse\n\n*(strings frantic; organ blazing; glitch fracture accents)*\n\nVelvet catastrophe—\nrise and applaud!\n\nCathedral fire with mechanical god.\n\nSalvation lacquered,\nhollow inside—\n\nDance on the edge\nwhere angels lied.\n\nベルベットの破滅\n美しく燃える。\n\nVelvet catastrophe—\nbelieve what you see.\n\nIf you call it destiny,\nit can’t be me.\n\n## STINGER — Curtain Drop\n\n*(orchestra cuts sharply; single harpsichord note)*\n\nApplause.\n\n息。\n\n",
+    "type": "gen",
+    "duration": 268.2,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

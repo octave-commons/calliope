@@ -362,10 +362,135 @@
                    (reduce + (map (comp count :members) clusters)) "songs involved."
                    "Index:" out))))))
 
+;; ------------------------------------------------------------ tracks
+;; Pass 3: ingest audio assets (MP3 + JSON + artwork) from Suno Downloads
+;; into tracks/<slug>/<sha8>.* with git LFS. Links audio to the corpus index.
+
+(def tracks-dir (str (fs/path repo-root "tracks")))
+
+(defn load-songs-index []
+  (let [f (str (fs/path projections-dir "songs-v1.edn"))]
+    (when (fs/exists? f)
+      (edn/read-string (slurp f)))))
+
+(defn build-source→slug [idx]
+  (into {} (for [[slug v] idx
+                 src (:sources v)]
+             [src slug])))
+
+(defn sha8-hex ^String [^bytes bs]
+  (let [md (.getInstance MessageDigest "SHA-256")]
+    (.update md bs)
+    (subs (format "%064x" (BigInteger. 1 (.digest md))) 0 8)))
+
+(defn suno-dirs []
+  (let [root "/home/err/Downloads/Suno Downloads"]
+    (->> (fs/list-dir root)
+         (filter fs/directory?)
+         (map str)
+         sort)))
+
+(defn dir-files [dir]
+  (->> (fs/list-dir dir)
+       (filter fs/regular-file?)
+       (map str)
+       sort))
+
+(defn classify-asset [^String path]
+  (cond
+    (str/ends-with? path ".mp3")  :mp3
+    (str/ends-with? path ".json") :json
+    (str/ends-with? path ".jpeg") :jpeg
+    :else nil))
+
+(defn tracks! []
+  (let [idx (load-songs-index)]
+    (when-not idx
+      (println "ERROR: songs-v1.edn missing — run `bb scripts/corpus.clj project` first.")
+      (System/exit 1))
+    (let [source->slug (build-source→slug idx)
+          dirs (suno-dirs)
+          run-id (uuid)
+          ts (now-iso)]
+      (fs/create-dirs tracks-dir)
+      (append-event! {:event/id (uuid) :event/type :tracks/run-started
+                      :run/id run-id :ts ts :dirs-planned (count dirs)})
+      (println "Scanning" (count dirs) "Suno directories…")
+      (let [stats (loop [remaining dirs
+                         slug-counts {}
+                         unmatched 0
+                         total-files 0
+                         total-copied 0]
+                    (if-let [dir (first remaining)]
+                      (let [files (dir-files dir)
+                            assets (keep classify-asset files)
+                            mp3s (filter #(= :mp3 %) assets)
+                            ;; match any file in this dir to a slug
+                            matched-slug (first
+                                          (for [f files
+                                                :let [slug (get source->slug f)]
+                                                :when slug]
+                                            slug))]
+                        (if matched-slug
+                          (let [dest-base (str (fs/path tracks-dir matched-slug))
+                                copied (atom 0)]
+                            (fs/create-dirs dest-base)
+                            (doseq [f files
+                                    :let [asset (classify-asset f)]
+                                    :when asset]
+                              (let [bs (fs/read-all-bytes f)
+                                    h (sha8-hex bs)
+                                    ext (name asset)
+                                    dest (str (fs/path dest-base (str h "." ext)))]
+                                (when-not (fs/exists? dest)
+                                  (fs/copy f dest))
+                                (swap! copied inc)
+                                (append-event!
+                                 {:event/id (uuid)
+                                  :event/type :track/discovered
+                                  :run/id run-id :ts (now-iso)
+                                  :slug matched-slug
+                                  :asset asset
+                                  :sha8 h
+                                  :src f
+                                  :dest (str "tracks/" matched-slug "/" h "." ext)
+                                  :bytes (alength bs)})))
+                            (recur (rest remaining)
+                                   (update slug-counts matched-slug (fnil inc 0))
+                                   unmatched
+                                   (+ total-files (count assets))
+                                   (+ total-copied @copied)))
+                          (do (when (seq mp3s)
+                                (println "  UNMATCHED:" (fs/file-name dir)
+                                         "(" (count mp3s) "mp3s)"))
+                              (recur (rest remaining)
+                                     slug-counts
+                                     (if (seq mp3s) (inc unmatched) unmatched)
+                                     (+ total-files (count assets))
+                                     total-copied))))
+                      {:slug-counts slug-counts
+                       :unmatched unmatched
+                       :total-files total-files
+                       :total-copied total-copied}))]
+        (append-event! {:event/id (uuid) :event/type :tracks/run-completed
+                        :run/id run-id :ts (now-iso)
+                        :slug-counts (:slug-counts stats)
+                        :unmatched-dirs (:unmatched stats)
+                        :total-files (:total-files stats)
+                        :total-copied (:total-copied stats)})
+        ;; write tracks index
+        (let [idx-out (str (fs/path projections-dir "tracks-v1.edn"))]
+          (spit idx-out (with-out-str (pprint/pprint (:slug-counts stats))))
+          (println "Tracks:" (:total-copied stats) "assets copied,"
+                   (count (:slug-counts stats)) "songs matched,"
+                   (:unmatched stats) "unmatched dirs.")
+          (println "Index:" idx-out))))))
+
 (let [cmd (first *command-line-args*)]
   (case cmd
     "ingest" (ingest!)
     "project" (project!)
     "stats" (stats!)
     "variants" (variants!)
-    (println "usage: bb scripts/corpus.clj [ingest|project|stats|variants]")))
+    "tracks" (tracks!)
+    (println "usage: bb scripts/corpus.clj [ingest|project|stats|variants|tracks]")))

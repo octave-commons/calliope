@@ -1,0 +1,52 @@
+{
+  "id": "3f73a3d6-ff97-4ec3-adc0-8a1d7f935f0f",
+  "title": "Sanctuary Reprise — Aquila Dissolving / 聖域の再帰（鷹の溶解）",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/3f73a3d6-ff97-4ec3-adc0-8a1d7f935f0f.mp3",
+  "image_url": "https://cdn2.suno.ai/image_3f73a3d6-ff97-4ec3-adc0-8a1d7f935f0f.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Genre/Style: Baroque orchestral reprise × gothic opera × mythic ambient integration. 116–118 BPM, flowing 4/4 with 12/8 undertow. Harpsichord motif from \"Aquila Regina\" appears briefly in sharp minor key, then slowly reharmonizes into the waterfall theme from \"Sanctuary of the Falling Veil.\" Sweeping legato strings, pipe organ warmth, layered choir, constant distant waterfall ambience. No sharp snare—use timpani swells and suspended cymbal washes.\nMotivic Direction: Quote a short melodic fragment from \"Aquila Regina\" (the high ascending leap phrase) in diminished harmony. Gradually soften articulation, lower register, stretch note values, and dissolve it into the flowing Sanctuary motif.\nVocal Direction: Soprano begins bright and dagger-like, then transitions to warmer, breath-forward tone. Choir absorbs and sustains the line as the solo fades into texture.\nMood: Majesty surrendering to vastness. Pride dissolving without defeat. Integration rather than collapse.\n",
+    "prompt": "## OVERTURE — Memory in the Mist\n\n*(waterfall roar; low organ; strings shimmer)*\n\nThe water kept the echo\nof a wing against the sky.\n\n霧は覚えている。\n\n## AQUILA MOTIF — Fragment Returns\n\n*(harpsichord sharp; soprano bright)*\n\nAquila—\nRegi—\n\n*(ascending leap, cut short)*\n\nThe note that split the firmament\nreturns—\n\nUnbent.\n\n## REHARMONIZATION — Softening the Crown\n\n*(harpsichord slows; strings legato; key shifts warmer)*\n\nBut frost melts thin in turquoise air.\n\nThe blade becomes\njust breath laid bare.\n\n鷹の声は\n水に触れる。\n\nHigh tone stretches—\nlengthened—\nlowered—\n\nNo longer striking.\n\nFlowing.\n\n## GRAND INTEGRATION CHORUS\n\n*(full orchestra; choir wide and luminous)*\n\nSanctuary—falling veil—\nCrown and cry grow quiet, pale.\n\n落水の聖域\nStill the same.\n\nWhat once cut the open dome\nfinds another, deeper home.\n\nAquila—\nnot undone—\n\nJust begun\nas undertone.\n\n## CHOIR CASCADE — Dissolution\n\n*(choir only; waterfall louder)*\n\nLux in aqua,\nlux in fall—\n\nEvery sovereign,\nwater calls.\n\n天上より\n地上より\n\n声は霧に帰る。\n\n## CODA — Undertone\n\n*(music thins; soprano hum merges into choir; waterfall steady)*\n\nThe queen was never shattered.\n\nShe was widened.\n\nThe aria remains—\n\nAs current.\n\n息。\n",
+    "type": "gen",
+    "duration": 167.64,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

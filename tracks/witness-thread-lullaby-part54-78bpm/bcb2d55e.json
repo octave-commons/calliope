@@ -1,0 +1,39 @@
+{
+  "id": "a56d7ac5-4362-4c80-9311-5a4c8aae7f1f",
+  "title": "witness_thread_lullaby_part54_78bpm",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/a56d7ac5-4362-4c80-9311-5a4c8aae7f1f.mp3",
+  "image_url": "https://cdn2.suno.ai/image_a56d7ac5-4362-4c80-9311-5a4c8aae7f1f.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Experimental electronic composition characterized by a minimalist, glitch-inspired aesthetic. The track features a steady, mid-tempo rhythmic foundation built from crisp, percussive clicks and digital pops. A prominent, resonant bass synth provides a deep, undulating low-end pulse that anchors the arrangement. Layered over this are intricate, high-frequency melodic fragments and granular synthesis textures that create a sense of digital space and movement. The production is clean and clinical, utilizing sharp transients and wide stereo imaging for the atmospheric sound effects. There is no traditional chord progression; instead, the piece focuses on timbral evolution and rhythmic interplay between the synthetic elements. The tempo is approximately 110 BPM, maintaining a consistent, driving energy throughout the instrumental duration.",
+    "prompt": "[Instrumental]",
+    "type": "upload",
+    "duration": 36.04897959183673,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "Upload",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

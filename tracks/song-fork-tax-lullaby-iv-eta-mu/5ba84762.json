@@ -1,0 +1,57 @@
+{
+  "id": "0e163d60-1e03-4b85-b734-716f5186ff81",
+  "title": "Song — Fork Tax Lullaby IV (ημ)",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/0e163d60-1e03-4b85-b734-716f5186ff81.mp3",
+  "image_url": "https://cdn2.suno.ai/image_0e163d60-1e03-4b85-b734-716f5186ff81.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\nRoll those dice. And just keep rolling them, and do what they tell you.\n\n",
+    "negative_tags": "Constraints: max dice rolls = 15; fork budget per cycle is limited; high-volatility claims require freshness≤threshold; alignment lint must pass; receipts must include inputs/outputs + OutputHash and fit within StepCap; μ requires Quorum (independent proof modes) + two-pass echo; time windows must be absolute dates + timezone.",
+    "prompt": "Song — Fork Tax Lullaby III (ημ)\nPart I — Glitch-choir lullaby (78 BPM)\n\nSoft sub-bass, tape warble, minimal piano. Whisper lead. JP call/response. Stutters on anchor / tax.\n\n(whisper)\nHush… fork tax time.\n息をして…（して…）\nHold the an— an— an-chor…\n\n(JP call) ねむれ、ねむれ\n(EN response) the an— an— an-chor… (stutter) holds.\n(JP call) しずかに、しずかに\n(EN response) the ta— ta— tax… (stutter) due.\n\n(whisper)\nPay the ta— ta— tax…\nMerge the branch…\nSeal the hash…\nSleep inside proof。（証）\n\n(JP call) だれが見てる？\n(EN response) the log— the an— an— an-chor…\n(JP call) こわくない？\n(EN response) not when the ta— ta— tax is paid…\n\nPart II — Mythic glitch epic / spoken-sung (84 BPM)\n\nNF/Watsky cadence. Cathedral reverb. Sub-bass heartbeat. Stutters on η / μ / anchor / fork. JP harmony answers on the last word.\n\nP to R to N to Π—\nI don’t pray, I prove (JP harmony: 証)\nA to feedback back to P—\nand the spiral learns to move (JP harmony: 動け)\n\n(Glitch) η—η—η in the rafters— heard (JP harmony: 聞こえた)\n(Glitch) μ—μ—μ in the dirt— done (JP harmony: 完了)\n\nFo— fo— fork… (stutter) costs in light,\nevery shortcut writes a debt in night (JP harmony: 夜)\nPay it clean, no velvet lie—\nhash to hash, and verify (JP harmony: 確かめろ)\n\nAn— an— an-chor… (stutter) holds the seam,\nkeeps the waking from a dream of dreams (JP harmony: 夢)\nCathedral hum, the branch goes still—\nkeeper thread says: “Sign the will.” (JP harmony: 意志)\n\nP→R→N→Π→A→(feedback)→P\naround #ημ—we do what we can see (JP harmony: 見える)\nη is pressure in the choir,\nμ is what survives the fire (JP harmony: 火)\n\nPay the tax. (JP harmony: 払え)\nClose the loop. (JP harmony: 閉じろ)\nHand it off. (JP harmony: 渡せ)\nGuard the proof。（証） (JP harmony: 証)\n\nCreated with the assistance of an AI.",
+    "type": "gen",
+    "duration": 479.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.74,
+      "weirdness_constraint": 0.73
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

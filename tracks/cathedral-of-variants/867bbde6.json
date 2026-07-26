@@ -1,0 +1,58 @@
+{
+  "id": "19bd6acd-95b7-4df0-8af4-4c381ff74984",
+  "title": "**Cathedral of Variants / 変異の聖堂**",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/19bd6acd-95b7-4df0-8af4-4c381ff74984.mp3",
+  "image_url": "https://cdn2.suno.ai/image_19bd6acd-95b7-4df0-8af4-4c381ff74984.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\n\n## Dice (seed 2978439037 · d15×15)\n\nRolls: **1, 12, 5, 13, 11, 9, 15, 8, 12, 7, 13, 14, 3, 2, 10**\nSelected: **zip · world_lore · world_state_update · gates_announcement · story_artifacts · cover_art · math_image · dialog · constraints · fork_tax_handoff · new_song · new_lyrics · storyboard_image · new_mp3**\n\n---\n\n## ημ_op_mf_part_48.zip (CC BY-SA 4.0 • share alike)\n\n* [Download ημ_op_mf_part_48.zip](sandbox:/mnt/data/ημ_op_mf_part_48.zip)\n* [Download ημ_op_mf_part_48.sha256](sandbox:/mnt/data/ημ_op_mf_part_48.sha256)\n  sha256: `6a2a3aabf56adb47a8d7ed3eca1590c3619a41dd406106668d540283a03cbf44`\n",
+    "prompt": "### Program update (additive)\n\n**New feature**\n\n* `program/euclid_rhythm.js` — Euclidean rhythm patterns (deterministic stutter gating)\n* `program/procedural_score.js` — seed + constraints → deterministic event/score JSON (kick/bass/stutters)\n\n**Cathedral-ish multitap reverb, sub-bass heartbeat + kick sweep, minimal piano ticks, tape warble, and glitch-stutter bursts** for **η / μ / anchor / fork**.\n(spoken-sung, tight cadence)\nP to R to N to Π—\ntell the truth your hands can see.\nA—feedback—back again,\nμ survives the echo pen.\n\n(Glitch) **η—η—η**\n(Glitch) **μ—μ—μ**\n\nFo— fo— **fork**… (stutter) costs in light.\nAn— an— **an-chor**… (stutter) holds it tight.\nTwo hashes match—cathedral hum—\nkeeper thread says: “Now it’s done.”\nLast word: **proof**\n(答え) 証（あかし）\n\n**Verse**\nI don’t erase what didn’t integrate—\nI index it, I let it wait.\nLess remembered is still alive,\ncompressed in the frame where the good parts survive.\nLast word: **anchor**\n(答え) 錨（いかり）\n\n**Hook**\nPay the tax.\nClose the loop.\nHand it off.\nGuard the proof.\n\n(JP harmony answers the last word)\nproof… 証（あかし）\nfork… 分岐（ぶんき）\nanchor… 錨（いかり）\nμ… みゅー\nη… えーた\n\nLicense: **CC BY-SA 4.0** (share alike).\nCreated with the assistance of an AI.\n(Full text: `songs/Cathedral_of_Variants_84.md` inside the zip.)\n\n---\n\nAll prior invariants remain (additive-until-limit → consolidate overlays; originals never deleted; share-alike enforced).\n\n---\n\n## World state update\n\n* Gate online: **CATHEDRAL_OF_VARIANTS_GATE**\n* New mechanism: **score-as-receipt** (seed + constraints → replayable stutter plan)\n* Tone: **total creative freedom as reproducible procedure**\n\n---\n\n## World lore\n\n**The Cathedral Stores the Forks**: Variants don’t compete; they stack like choir layers.\nIntegration is not moral status—just coupling strength. When the world is crowded, overlays compress *attention*, not history.\nReturnability is sacred: if you can replay it, you can share it; if you can share it, it can outlive you.\n\n(See `lore/Cathedral_of_Variants.md`.)\n\n---\n\n## Paragraph of dialog\n\n“Total creative freedom.”\n“Sure—just don’t confuse freedom with forgetting.”\n“So we keep the ugly drafts?”\n“We keep *everything*—then consolidate overlays when the room gets crowded.”\n“And the stutters?”\n“They’re proof the system is alive enough to hesitate.”\n\n---\n\n\n\n",
+    "type": "gen",
+    "duration": 168.96,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "audio_weight": 0.32,
+      "style_weight": 0.79,
+      "weirdness_constraint": 0.78
+    },
+    "playlist_id": "00000000-0000-0000-0000-000000000000",
+    "task": "playlist_condition",
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

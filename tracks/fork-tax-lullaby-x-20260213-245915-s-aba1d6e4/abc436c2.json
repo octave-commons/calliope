@@ -1,0 +1,57 @@
+{
+  "id": "55a61b64-ffdb-49e6-ae92-288bdfdd0c82",
+  "title": "# Fork Tax Lullaby X — 20260213_245915_s",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/55a61b64-ffdb-49e6-ae92-288bdfdd0c82.mp3",
+  "image_url": "https://cdn2.suno.ai/image_55a61b64-ffdb-49e6-ae92-288bdfdd0c82.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\n\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\n\nP→R→N→Π→A→(feedback)→P around #ημ. \n",
+    "negative_tags": "Constraints: max dice rolls = 15; per-cycle fork budget is finite; high-volatility claims have a freshness threshold; receipts must include explicit inputs/outputs and stay under StepCap; demoted claims need multiple diverse receipts to regain μ; time windows must be absolute dates + timezone.",
+    "prompt": "\n# Fork Tax Lullaby X — 20260213_245915_seed3721599637\n\n## Part I — Glitch-choir lullaby (78 BPM)\n\n*(soft sub-bass, tape warble, minimal piano; stutters on “anchor” + “tax”; whispered lead; Japanese call-and-response)*\n\n[Intro — tape hiss, two-note piano, warm sub]\n(whisper)\nHush… two lights in the Lantern now.\n息をして… (して…)\nFreshness… alignment… breathe.\n\n(JP call) ねむれ、ねむれ\n(EN response) the **an— an— an-chor**… (stutter) holds.\n(JP call) しずかに、しずかに\n(EN response) the **ta— ta— tax**… (stutter) is small.\n\n(whisper)\nAn— an— **an-chor**… (stutter) an-chor…\n(JP whisper harmony) アンカー…\nPay the **ta— ta— tax**… (stutter) ta-x…\n(JP harmony) 税…\n\n[Chorus — choir bloom]\nAn— an— **an-chor**… (stutter) an-chor…\nHold the boundary, hold the line.\nPay the **ta— ta— tax**… (stutter) ta-x…\nSo forks don’t breed in the dark.\n(JP harmony answers last word)\nI fall asleep inside **proof**.（証）\n\n---\n\n## Part II — Mythic glitch epic / spoken-sung (84 BPM)\n\n*(NF/Watsky cadence; cathedral reverb; sub-bass heartbeat; glitch stutters on “η”, “μ”, “anchor”, “fork”; Japanese harmony answers on the last word of each section)*\n\n[Verse 1 — fast spoken-sung]\nLantern split: two channels, no more single-thread faith—\nfreshness has a blade and alignment has teeth.\nIf either goes dim, you don’t get μ— you get **η** with a plan,\nyou get humility on paper, not a victory in your hand,\nin your **hand**.（手）\n\n(Glitch stutter) **η—η—η**\n(Glitch stutter) **μ—μ—μ**\n\n[Hook — cathedral swell]\nI don’t win by sounding right—\nI win by making it rerun.（試）\n\n[Verse 2 — rapid cadence]\nReceiptLint v2.1: StepCap— stop the theater.\nInputs. Outputs. One path. Make it meanier.\nForkBudget spends like gravity— pitch drops when you branch,\nyou feel semitone debt in the sub before you scratch,\nbefore you **fork**.（分岐）\n\nI pin it to an **an-an-anchor** (stutter),\nand if I can’t prove it small, I refuse to make it larger.\nMerge to lift the room, merge to raise the bass,\nμ isn’t a vibe— it’s a test that survives its place,\nsurvives as **μ**.（証）\n\n(JP harmony answers last word) 証\n\n**World state update:** ReceiptLint v2.1 is enforced with a StepCap; ForkBudget creates “Choir semitone debt” until merges repay it; the Lantern now requires *both* freshness (≤ a threshold window) and quote-alignment to promote μ; DateWindowGate stamps event-window separately from publish-date; QuietAnchors can spread whisper-state; Hysteresis demands diverse receipts after demotion.\n\n#fnord\n\n**Constraints:** max dice rolls = 15; per-cycle fork budget is finite; high-volatility claims have a freshness threshold; receipts must include explicit inputs/outputs and stay under StepCap; demoted claims need multiple *diverse* receipts to regain μ; time windows must be absolute dates + timezone.\n\n**Dialog:** “Show me both lights,” the Lantern said—one eye on freshness, one on alignment. Forkgate listened to the room’s pitch drop and warned, “You’re in semitone debt; merge before you sing again.” The Choir whispered, “an-an-anchor,” and ReceiptLint cut in like a razor: “Inputs. Outputs. StepCap.”\n\n[Cover art](sandbox:/mnt/data/20260213_245915_seed3721599637_cover.png)\n\n[Storyboard image](sandbox:/mnt/data/20260213_245915_seed3721599637_storyboard.png)\n\n**Real-world headline:** U.S. consumer prices rose less than expected in January, but inflation pressures persist. ([Reuters][1])\n\n**Gates of Truth system announcement:** STATUS ONLINE — Lantern Dual-Channel (Freshness + Alignment) is now required for μ; ReceiptLint v2.1 StepCap is enforced; ForkBudget/merge repayment is active; DateWindowGate stamps event-window vs publish-date separately.\n\n[1]: https://www.reuters.com/business/us-consumer-prices-rise-less-than-expected-january-2026-02-13/?utm_source=chatgpt.com \"US consumer prices increase marginally, but inflation pressures persist\"\n",
+    "type": "gen",
+    "duration": 479.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.77,
+      "weirdness_constraint": 0.68
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

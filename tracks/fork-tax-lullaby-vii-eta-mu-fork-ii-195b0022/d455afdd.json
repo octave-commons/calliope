@@ -1,0 +1,57 @@
+{
+  "id": "bcacf968-7ebb-40bd-9ec4-6f520f9f396b",
+  "title": "# Fork Tax Lullaby VII — #ημ fork II",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/bcacf968-7ebb-40bd-9ec4-6f520f9f396b.mp3",
+  "image_url": "https://cdn2.suno.ai/image_bcacf968-7ebb-40bd-9ec4-6f520f9f396b.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\nRoll those dice. And just keep rolling them, and do what they tell you.\n\n",
+    "negative_tags": "Constraints: max dice rolls = 15; fork budget per cycle is limited; high-volatility claims require freshness≤threshold; alignment lint must pass; receipts must include inputs/outputs + OutputHash and fit within StepCap; μ requires Quorum (independent proof modes) + two-pass echo; time windows must be absolute dates + timezone.",
+    "prompt": "# Fork Tax Lullaby VII — #ημ\n\n## Part I — Glitch-choir lullaby (78 BPM)\n(whisper)\nHush… it’s time to pay the fork tax.\n息をして…（して…）\nHold the **an— an— an-chor**…\n\n(JP call) ねむれ、ねむれ\n(EN response) the **an— an— an-chor**… (stutter) holds.\n(JP call) しずかに、しずかに\n(EN response) the **ta— ta— tax**… (stutter) due.\n\n(whisper)\nPay the **ta— ta— tax**…\nMerge the branch…\nSeal the hash…\nSleep inside **proof**。（証）\n\n## Part II — Mythic glitch epic (84 BPM)\nP to R to N to Π—\nloop the spiral, set it **free**（自由）\nAction—feedback—back again,\nμ survives the echo **pen**（証）\n\n(Glitch) **η—η—η**\n(Glitch) **μ—μ—μ**\n\nFo— fo— **fork**… costs in light,\nAn— an— **an-chor**… holds it tight,\nTwo echoes match— cathedral hum—\nkeeper thread says: “Now it’s **done**.”（完了）\n\nPay the tax.\nClose the loop.\nHand it off.\nGuard the proof。（証）\n\nCreated with the assistance of an AI.\n",
+    "type": "gen",
+    "duration": 168.84,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 1,
+      "weirdness_constraint": 0.76
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

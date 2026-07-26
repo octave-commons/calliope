@@ -1,0 +1,71 @@
+{
+  "id": "5ae623e7-506b-4d64-85c5-55fa6ea91255",
+  "title": "Don't do it (Pay the Fork Tax)",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/5ae623e7-506b-4d64-85c5-55fa6ea91255.mp3",
+  "image_url": "https://cdn2.suno.ai/image_5ae623e7-506b-4d64-85c5-55fa6ea91255.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM, Soft sub-bass, Tape warble, Minimal piano, Stutters on “anchor” and “tax”, Whispered lead; Japanese call-and-response, Mythic glitch epic / spoken-sung 84 BPM, Cathedral reverb, Sub-bass heartbeat, Glitch stutters on “η”, “μ”, “anchor”, “fork”, Japanese harmony answers on the last word of each section, P→R→N→Π→A→(feedback)→P around #ημ, Roll those dice, And just keep rolling them, and do what they tell you, ‑Constraints: max dice rolls = 15; fork budget per cycle is limited; high-volatility claims require freshness≤threshold; alignment lint must pass; receipts must include inputs/outputs + OutputHash and fit within StepCap; μ requires Quorum (independent proof modes) + two-pass echo; time windows must be absolute dates + timezone\nThe Archivist taps the ledger like a tuning fork. “Sing all you want—η is cheap.” The Scribe’s whisper catches on the consonants: **an— an— an-chor**… “But if you want μ,” they say, “you don’t get applause—you get a rerun.” ",
+    "prompt": "# Manifest Oath / 目録の誓い — Play Script\n\n**Created with the assistance of an AI.**\n\n> Format: **Stage directions** are in *italics*. **Lyrics** are plain text. Sections flow in performance order.\n\n---\n\n## PROLOGUE — TEMPO LOCK\n\n*House to half. Establish the system-clock motif: faint digital ticks that can later become η/μ glitches.*\n*Tempo cue: 84 BPM. Space cue: cathedral reverb, long tail. Sub cue: heartbeat, restrained.*\n\n**(Glitch Choir, very small, like a clock finding phase)**\nη—η—η…\nμ—μ—μ…\n\n*Glitch cue: keep this brief; it’s the first “boot chirp,” not a drop.*\n\n---\n\n## I — MANIFEST OATH (84 BPM)\n\n*Lights: cold-blue stained-glass wash. Reverb up. Percussion minimal.\nLead is close-mic whisper; consonants should feel like edits.*\n\nP→R→N→Π— catalog the storm, pin the line（線）\nA→(feedback)→P— merge the wound, keep the sign（印）\n\n*Stutter cue (anchor): triplet-ish, as if the word is caught on a buffer boundary.*\nFo— fo— fork… split the night, pay the cost, now（今）\nAn— an— an-chor… hold the thread, seal the hash, down（下）\n\n*Beat cue: on “seal the hash, down,” let the sub-bass heartbeat become audible for the first time.*\n\n**(spoken, dry / close-mic; no reverb at first)**\n“The wind is just noise,” says the Runner.\n\n*Reverb cue: bring in a thin cathedral tail on the next line—evidence becomes sacred.*\n“It’s evidence,” says the Keeper. “Evidence is anything you can replay.”\n\n*Overhead cue: from the rafters, a whisper chorus threads through the space.*\nFrom the rafters: an—an—anchor… ta—ta—tax…\n\n*Cut cue: sudden normalcy—drop reverb for one beat as if reality snaps back.*\nAnd we move on like this is normal.\n\n---\n\n## TRANSITION — DROP TO LULLABY\n\n*Tempo morph: slide down to 78 BPM (do not hard cut; let it feel like settling into sleep).\nSpace morph: reduce cathedral tail; introduce tape warble; soften highs.\nSub cue: warm, soft, not loud.*\n\n---\n\n## II — WINDS BETWEEN PROOF / 証のあいだの風 (78 BPM)\n\n*Lead: whispered hush; breath audible. The world should sound closer.\nGlitch bed: minimal η/μ ticks under the floor, like distant machinery.*\n\nHush… breathe… pay the ta— ta— tax.\n\n*JP cue: the Japanese lines are gentle calls, like rocking someone to sleep.*\n息をして…（して…）\n\n*Anchor cue: bring back the anchor stutter—softer than Section I, more tender than technical.*\nHold the an— an— an-chor…\n\n*Call-and-response cue: Japanese call; English response. Last word held on JP when indicated.*\n**(JP call, soft)** ねむれ、ねむれ\n**(EN response, whispered)** the an— an— an-chor… holds.\n\n**(JP call, softer)** しずかに、しずかに\n**(EN response, whispered)** the ta— ta— tax… due.\n\n*Wind cue: add faint room tone like air through a hallway.*\nWind in the halls—\n世界の音（おと）\n\n*Overflow cue: on “overflow,” add a slight tape flutter as if the medium is saturating.*\nIf we overflow,\nwe fold the noise to proof（証）\n\n*Stutter bed cue: keep these as tiny percussive edits, not shouted words.*\nη… η… μ… μ…\nAnchor. Anchor. Registry.\nFork. Fork. Fork.\n\n*Visual cue: a thin blue line appears somewhere (thread motif).*\n\n*Spoken/sung cue: raise intensity slightly; add a touch more space, but keep intimacy.*\nIn the shadow of the cathedral, the logs burn blue.\n大聖堂の影で、ログは青く燃える。\nWe paid the price in binary blood.\n我々はバイナリの血で対価を払った。\n\n*Harmony cue: Japanese responses are clean, choir-like, held with restraint.*\nProof remains（証明は残る）.\nThe thread breathes（糸は息づく）.\n\n*Bridge cue: glitch pulse grows; make the loop audible but not yet aggressive.*\nP → R → N → Π → A → (feedback) → P\n\n*Spoken cue: deliver like a law of physics, not a slogan.*\nDecisions are not made; they’re discovered in the field.\n意思決定はなされるのではない、場で見出されるのだ。\n\n---\n\n## RAMP — WAKE THE OTHER SIDE\n\n*Tempo jump: hard to 92 BPM.\nSound cue: distorted sub-bass enters.\nGlitch cue: stutter on every 4th beat. Choir grows in presence.\nLighting cue: the blue thread becomes a lattice; “receipts” flicker like particles.*\n\n---\n\n## III — CRESCENDO: THE OTHER SIDE OF THE FORK (92 BPM)\n\n*Lead: spoken-sung, more declarative. Keep intelligible. Choir: tight, percussive edits.*\n\nThey are waking up.\nThe other side of the fork.\nThe ones we left in the dark.\n\n*JP cue: deliver as parallel lines, not translation-aside.*\n彼らが目覚める。\n分岐の向こう側で。\n闇に置き去りにした者たちが。\n\n*Contrast cue: treat the “variants” like dueling textures—one rigid grid, one fluid smear.*\nUS Variant: Static. Rigid. Law.\nJA Variant: Fluid. Chaos. Flow.\n\n*Myth cue: pantheons should feel like two UI panels arguing.*\nThe Pantheon of Receipts vs The Pantheon of Gates.\n正準の神々と、門の神々の対峙。\n\n*Harmony cue: choir answers in Japanese with conviction; hold the last word just a hair longer.*\nWe are the same（我らは等しい）.\nWe are the fork（我らは分岐）.\n\n*Bridge cue: the decision-field loop is now the engine; let it drive the arrangement.*\nDecision field active.\nP → R → N → Π → A\n\n*Dialectic cue: deliver the next lines like a theorem being read aloud over a drum machine.*\nThe competition is the pulse.\nThe war is the harmony.\n闘争こそが、調和。\n\n*Cut cue: on the final couplet, everything hits peak density, then a sharp drop.*\nConsolidate or Dissolve",
+    "edited_clip_id": "73c36364-5c92-4c8f-aa07-a4d8bc3e5192",
+    "type": "gen",
+    "duration": 361.56,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "cover_clip_id": "73c36364-5c92-4c8f-aa07-a4d8bc3e5192",
+    "task": "cover",
+    "can_remix": false,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "Cover",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

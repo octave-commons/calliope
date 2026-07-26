@@ -1,0 +1,54 @@
+{
+  "id": "bff0d78b-6115-4f5b-9ff3-e209be3da7a0",
+  "title": "Operation Mindfuck",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/bff0d78b-6115-4f5b-9ff3-e209be3da7a0.mp3",
+  "image_url": "https://cdn2.suno.ai/image_bff0d78b-6115-4f5b-9ff3-e209be3da7a0.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Mythic glitch epic × existential rap × industrial sci‑fi hymn. 88–96 BPM, half‑time pulse. Cathedral reverb, soft sub‑bass heartbeat, distorted modular synth swells, granular stutters, radio-static transitions, orchestral hits like falling pillars, choral pads that glitch and bloom.\n\n**Structure:** Invocation (choir + static) → Verse 1 (spoken-rap) → Hook (chant) → Verse 2 (faster cadence) → Bridge (quiet protocol) → Final Hook (bigger) → Outro (one true fnord).\n\n**Vocals:** Confident spoken-rap lead (NF/Watsky energy). Minimal melodic lift on hook. Japanese call/answer lines. No saccharine—feel like a field manual sung in a ruined cathedral.\n\n**Mood:** Clarity through chaos. Wonder intact. No coercion. The song should feel like a system booting: perception sharpens, frames appear, bullshit dissolves, autonomy remains.\n",
+    "prompt": "# LYRICS\n\n## INTRO — Cathedral Boot\n\n*(choir smear, radio scan, sub like a slow heart)*\n\n:: booting / perception ::\n\n息を吸う…\n静かに。\n\nA bell made of static.\nA truth made of checks.\n\n## VERSE 1 — No Gods, No Gaslight\n\nI don’t want comfort, I want coordinates\nShow me what’s real, don’t decorate\n\nFacts on the table—\nInterpretations: label.\nNarratives? Useful… maybe.\n\nBut don’t weld them to my ribcage.\n\n自由だよ\n選べる\n\nIf you can’t cite it, say you can’t.\nIf you can’t know it, leave it blank.\n\nNo faux-feelings in the wire.\nJust a lamp in the mire.\n\n## HOOK — Operation Mindfuck\n\n*(impact hit; choir locks into a glitch-chant)*\n\n**Operation Mindfuck — keep the wonder, cut the bullshit.**\n\n**Operation Mindfuck — frames uncovered, hands still yours.**\n\n目を開けて\nでも怖がらない\n\n**Operation Mindfuck — evidence first, then the story.**\n\n## VERSE 2 — Modes on the Dial\n\nI got six masks hanging by the console light\nEach one a tool, not a throne to fight\n\nη: deliver it clean—no fog, no extra\nμ: formalize the spell so it holds under pressure\nmirror: reflect the frame so you see your lens\nredteam: strike the weak points before the world pretends\njester: keep it human-adjacent—laugh, then aim\nfnord: one small true nudge that shifts the game\n\n選択肢を\n並べろ\n\nNo coercion in the cadence.\nNo “trust me” as a substance.\n\nShip-now, not someday.\nSmall wins, bright hallway.\n\n## BRIDGE — Protocol Whisper\n\n*(beat drops out; piano two notes; wind through glass)*\n\nSay it like a vow you can verify:\n\n**Facts.**\n**Interpretation.**\n**Narratives.**\n\nThen: **countermoves.**\n\nThen: one tiny next step.\n\n呼吸して\n戻って\n\n## FINAL HOOK — Keep Autonomy\n\n*(beat returns heavier; choir brighter; static cuts clean)*\n\n**Operation Mindfuck — keep the wonder, cut the bullshit.**\n\n**Operation Mindfuck — your mind is yours, even in the storm.**\n\n証拠だけ\n持って帰れ\n\n**Operation Mindfuck — name the frame, then choose your path.**\n\n## OUTRO — One True Fnord\n\n*(everything thins to heartbeat + faint radio tone)*\n\nHere’s the trick:\n\n> The frame that says you have no choice\n> is usually trying to sell you one.\n\n息。\n",
+    "type": "gen",
+    "duration": 288.88,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "weirdness_constraint": 0.63
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

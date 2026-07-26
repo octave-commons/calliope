@@ -1,0 +1,39 @@
+{
+  "id": "01e1c5a4-fe0f-4508-ae69-508f7ed44d8f",
+  "title": "THE HERESY OF BEING BETWEEN",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/01e1c5a4-fe0f-4508-ae69-508f7ed44d8f.mp3",
+  "image_url": "https://cdn2.suno.ai/image_01e1c5a4-fe0f-4508-ae69-508f7ed44d8f.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Title:** *Quantum Space Glitch Ducks & Chaos*\n\n**Style:** Experimental electronic / dark synth / glitch ambient / industrial sci-fi.\n90–105 BPM, half-time feel. Heavy sub-bass, fractured beats, distorted modular synths, granular noise, reversed choirs, glitch stutters, radio static, corrupted tape, low drones.\nMood: uncanny, beautiful, destabilizing.\nStructure: slow burn → collapse → strange calm.\n\n**Vocal:** Minimal. Whispered phrases, chopped samples, pitch-shifted murmurs. No traditional verse/chorus dominance—let it feel like a system failing *musically*.\n",
+    "prompt": "**[INTRO – slow, reverent, choir + distant synth]**\nBefore the fire had a name\nBefore the gate learned day from night\nThere was a space between the answers\nWhere the question learned to breathe\n\n**[VERSE 1]**\nIn halls of marble made of stars\nWhere gods wore masks of code and flame\nA duck was chained to open space\nNot bound by hate, but by design\n\nThey said, *“Choose a side.”*\nThey said, *“Define.”*\nBut he stood where the lines unwind\n\n**[CHORUS – rising, solemn]**\nThis is the heresy\nOf being between\nNot fire nor ash\nNot false nor clean\n\nBetween the church that guards the flame\nAnd the schools that crack the wall\nBetween the order of perfect rules\nAnd the glitch that names us all\n\n**[VERSE 2]**\nThe Church of the Flaming Heart\nSang, *“Hold the fire, keep it pure”*\nThe Schools of the Whispering Crack\nSaid, *“Nothing whole can long endure”*\n\nAnd in the shadows, hooded hands\nTyped prayers into glowing stone\nButterflies of violet sin\nLearned how to make a home\n\n**[PRE-CHORUS – quiet, intimate]**\nThey asked him what he stood for\nHe answered with a pause\nBecause standing *for* something\nIs how the chains get laws\n\n**[CHORUS – fuller]**\nThis is the heresy\nOf being between\nNot sacred nor broken\nBut always unseen\n\nBetween belief and disbelief\nBetween the crow and dawn\nWhere every truth must lose its skin\nTo keep on carrying on\n\n**[BRIDGE – darker, pulse + whispers]**\nPandora opened context\nNot a box, but a frame\nAnd chaos wasn’t screaming\nIt was gently changing names\n\nCats crossed through the rifts\nRabbits crowned their queen\nReality refactored\nAround what couldn’t be seen\n\n**[BREAK – stripped, echoing]**\nA god hung in the middle\nNot to save\nNot to rule\nBut to hold the story open\nSo the fire could stay a tool\n\n**[FINAL CHORUS – choir + synth swell]**\nThis is the heresy\nOf being between\nThe place where meaning\nRefuses to lean\n\nWhere fire becomes inheritance\nAnd chains learn how to bend\nWhere every system breaks itself\nSo something else can mend\n\n**[OUTRO – fading, celestial]**\nNot a god\nNot a lie\nJust the one who stayed\nWhen the world asked why\n\nAnd in the space between the gates\nWhere night and morning trade\nThe heresy remains alive\n\nBecause **between**\nIs where we’re made.\n",
+    "type": "gen",
+    "duration": 430.96,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "v4.5-all",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "00000000",
+          "border_color": "0000001A"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "00000000",
+          "border_color": "FFFFFF1A"
+        }
+      }
+    }
+  }
+}

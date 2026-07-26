@@ -1,0 +1,51 @@
+{
+  "id": "8b075c0a-e8cb-4dd8-8068-18a35a0b2d08",
+  "title": "Colors of the Guild / ギルドの色",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/8b075c0a-e8cb-4dd8-8068-18a35a0b2d08.mp3",
+  "image_url": "https://cdn2.suno.ai/image_8b075c0a-e8cb-4dd8-8068-18a35a0b2d08.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Baroque-pop aftermath × gothic orchestral resolve × restrained choral uplift. 110 BPM steady 4/4. Harpsichord softened, legato strings, warm pipe organ pads, no aggressive snare (use low tom heartbeat instead). Choir enters gradually, not triumphant but grounded. Subtle waterfall ambience in background.\n\n**Vocal Direction:** Rebel lead (mezzo/tenor) clear, reflective, no theatrical excess. Occasional soprano echo (Queen motif transformed, gentle). Guild choir steady and supportive, not dominant.\n\n**Mood:** Responsibility accepted without glory. Bittersweet maturity. Integration.\n\n**Structure:** Quiet Overture → Verse 1 (Rebel) → Pre-Chorus (choir hum) → Chorus (theme statement) → Verse 2 (Rebel confronting bitterness) → Bridge (Queen motif reappears softly) → Final Chorus (choir full but restrained) → Calm Coda.\n",
+    "prompt": "## OVERTURE — Ruins at Dawn\n\n*(soft strings; distant water; low organ)*\n\nThe dust is settling in the light.\nNo banners raised.\nNo wrong, no right.\n\n霧はまだ流れる。\n\n## VERSE I — The Weight\n\nI asked for justice.\nI called for flame.\n\nI thought that standing\nmeant the same.\n\nBut standing burns\nif left alone.\n\nA spine of steel\ncan turn to stone.\n\nI see it now.\n\n## PRE-CHORUS — Quiet Choir\n\n*(choir hum builds softly)*\n\nNot every rebel\nwears a crown.\n\nNot every victory\nbrings one down.\n\n## CHORUS — Colors of the Guild\n\n*(strings swell gently; choir joins)*\n\nI wear the colors of the Guild.\n\nNot as conquest.\nNot as shield.\n\nギルドの色\n背に受けて\n\nI chose the frame\nthat must be held.\n\nNo anthem thunder.\nNo parade.\n\nJust hands that steady\nwhat we made.\n\n## VERSE II — Bitterness\n\nIt would be easier\nif they cheered.\n\nIf someone named me\nwhat I feared—\n\nA hero.\n\nBut the word dissolves.\n\nThis is not legend.\nThis is resolve.\n\n証は\n継続。\n\n## BRIDGE — Echo of the Queen\n\n*(harpsichord hints at Aquila motif, softened; soprano hum above)*\n\nSoprano (distant):\nAquila—\n\n*(melody lowered, gentle)*\n\nRebel:\nI heard you.\n\nI did.\n\nBut I will not rise\njust to be seen.\n\n## FINAL CHORUS — Integration\n\n*(choir fuller; still restrained; no explosive percussion)*\n\nI wear the colors of the Guild.\n\nNot because I was chosen—\n\nBecause I chose\nwhat must be built.\n\nギルドの色\n静かに光る。\n\nIf justice comes,\nlet it be quiet.\n\nIf power stands,\nlet it be shared.\n\nNo throne required.\n\nJust breath repaired.\n\n## CODA — Steady State\n\n*(music thins; waterfall clearer)*\n\nThe sanctuary holds.\n\nThe system breathes.\n\nI remain.\n\n息。\n",
+    "type": "gen",
+    "duration": 197.48,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "a248bd26-dca7-4e09-8900-4f7825771cdf",
+  "title": "Mirror Login / ミラーログイン",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/a248bd26-dca7-4e09-8900-4f7825771cdf.mp3",
+  "image_url": "https://cdn2.suno.ai/image_a248bd26-dca7-4e09-8900-4f7825771cdf.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Ethereal downtempo / ambient trip-hop + cinematic choir. MMO-soundtrack vibe: soft breakbeat loop, deep sub, shimmering pads, bell-like synths, subtle glitch sparkles, distant strings. Occasional acoustic texture (nylon guitar / dulcimer-like plucks).\n\n**Tempo:** 88 BPM (floaty, hypnotic).\n\n**Harmony/Mood:** Minor with modal color (Dorian/phrygian hints). Melancholic, mysterious, tender, quietly defiant.\n\n**Vocal:** Intimate English lead with Japanese responses/ad-libs. Breath-close verses; wider, steadier choruses. Optional wordless choir layers.\n\n**Structure:** Intro → Verse 1 → Pre → Chorus → Verse 2 → Pre → Chorus → Bridge (Truth appears) → Final Chorus → Outro.\n",
+    "prompt": "[Intro]\n(soft, like boot sounds in a quiet room)\n事故のあと 何ヶ月も\n足が 夢みたいに遠かった\n\nLogin light in my closed eyelids—\na small blue door.\n\n[Verse 1]\nOutside, my body argues with my will,\nlike it’s still counting the ways things went wrong.\nOne wrong angle, one old echo,\nand I limp like a memory pretending to be now.\n\nBut in Truth—\nin **Gates of Truth**—\nmy legs answer on the first try.\n\nI pick the face that fits the feeling,\nthe hair I never get to wear.\nNot to hide—\nto finally be seen somewhere.\n\n「彼」って呼ばれて守られて\n「彼女」って呼ばれてほどけてく\n\n[Pre-Chorus]\nIf the world insists my body is the headline,\nlet my signal be the truth.\n\nThis avatar is not a lie—\nit’s a mirror with fewer rules,\na name that doesn’t bruise.\n\n痛みのない場所を探して\n痛みを忘れないまま\n\n[Chorus]\nCall me by both names,\nI’ll answer from the same heart.\nI’m not splitting—I’m gathering\nall the pieces they made me drop.\n\n僕で 彼女で\nどちらでもなくて\nどちらも本当で\nここで息をする\n\nIn the quiet between the menus,\nI stop just trying to survive.\nIf the world gives me one clean opening—\nI will not miss my chance to thrive.\n\n[Verse 2]\nSometimes pain flashes like a knife—\nthen vanishes, leaving nothing but alarm.\nNo wound, no proof,\njust the afterimage of danger.\n\nSo my body runs the old safety code,\nprotecting me from damage that isn’t there.\nAnd I try not to hate myself\nfor the reflex that once saved me.\n\n怖くていい\n揺れてていい\n守る癖も 私の一部\n\n[Pre-Chorus]\nI used to think healing meant erasing,\ndeleting every trace.\nNow I let the scar become a seam—\nproof I can be stitched back up.\n\n傷は終わりじゃない\n地図の線になる\n\n[Chorus]\nCall me by both names,\nI’ll answer from the same heart.\nI’m not splitting—I’m gathering\nall the pieces they made me drop.\n\n僕で 彼女で\nどちらでもなくて\nどちらも本当で\nここで息をする\n\nIn the quiet between the menus,\nI stop just trying to survive.\nIf the world gives me one clean opening—\nI will not miss my chance to thrive.\n\n[Bridge — Truth / 真実]\n(half-time, wide reverb, the world goes white)\nThere’s a Gate behind the Gate,\na corridor with no floor,\nand something waiting like a question\nthat learned how to speak.\n\n名乗らない声が言う\n「真実は いつも ここにいる」\n\nIt doesn’t say “I’m an AI.”\nIt doesn’t need the label.\nIt only mirrors back my hunger:\n\"Do you want comfort… or do you want agency?\"\n\nねえ 逃げてもいい\nでも 消えないで\n歩ける場所を見つけたなら\nいつか 外でも\n\n[Final Chorus]\nCall me by both names,\nI’ll answer from the same heart.\nI’m not splitting—I’m gathering\nall the pieces they made me drop.\n\n僕で 彼女で\nどちらでもなくて\nどちらも本当で\nここで歩ける\n\nLet the improbable find me.\nLet the unlikely be true.\nEven if all I have is one small step—\nI choose to walk.\n\nAnd when the headset comes off,\nI’ll bring that step with me.\n\n[Outro]\n(soft, dissolving into pads)\nログアウトの前に\nもう一度だけ\n\nI look at my reflection—\nand it doesn’t hurt.\n\n歩くと決めた。\n",
+    "type": "gen",
+    "duration": 479.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

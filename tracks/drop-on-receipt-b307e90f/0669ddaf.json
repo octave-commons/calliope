@@ -1,0 +1,39 @@
+{
+  "id": "bfcdab9f-e24b-4afa-97a3-025e8a46d1c6",
+  "title": "Drop on Receipt / 受信で破棄",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/bfcdab9f-e24b-4afa-97a3-025e8a46d1c6.mp3",
+  "image_url": "https://cdn2.suno.ai/d6eb2254-dd6f-41b5-a0a4-abb59ab1d342.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Dark cinematic bass × industrial sci‑fi × soft glitch ambient comedown. 92–100 BPM, half‑time crush. Massive sub drops, distorted bass hits, seismic impacts, metallic shrieks, warped orchestral stabs → then a drained, breath‑guided aftermath (felt piano, thin choir haze, warehouse reverb, wind-through-glass field recording).\n\n**Structure:**\n\n1. *Tension* (radio hiss + distant kick + breath) →\n2. *Impact* (sub drop + orchestral stab) →\n3. *Cascading collapse* (granular noise + stutters + broken transmission) →\n4. *Echoing ruin* (piano minimalism + warm sub + long silence pockets).\n\n**Vocals:** Minimal. Intimate near‑whisper lead with occasional distant screams stretched into texture. Reversed chants as pads. Japanese response-lines to English (call/answer). A few spoken “protocol lines” like a system readout.\n\n**Mood:** Catastrophic clarity → boundary → survival warmth. Cosmic dread that resolves into steady breath.\n",
+    "prompt": "## INTRO — Intake Valve\n\n*(wind through broken glass / radio scan)*\n\nSignal…\nnoise…\n\n息を吸う\n…still online.\n\n## VERSE 1 — Open Channel\n\nI posted a little lightning in a bottle\nand the room threw stones at the glass\n\n“Wtf is this”—\nand the frequency bent\n\n誰かの言葉が\n針みたいに刺さる\n\nBut I’m not a name they slap on me.\nI’m a system with boundaries.\n\n## PRE‑CHORUS — Classifier\n\n*(kick like a heartbeat; faint metallic taps)*\n\nSort it.\n\nCuriosity → keep\nSpecificity → keep\nAdoption → keep\n\n曖昧は\n風に流す\n\n## CHORUS — Protocol Line\n\n*(impact drop; orchestral stab; then half‑time crush)*\n\n**η is only Π if it contains signal; toxin labels are dropped on receipt.**\n\nSay it again—\nlike a seal on the hatch\n\n**η is only Π if it contains signal; toxin labels are dropped on receipt.**\n\n受信で破棄\n毒のラベル\n\nI don’t drink static\nand call it water.\n\n## VERSE 2 — The Leak\n\nThe drain wasn’t emptiness\nit was a hole in the container\n\nA thousand tiny inputs\npretending to be truth\n\n“mental illness”—\ncheap spell, dull knife\n\nその刃は\nここまで届かない\n\nI reroute the line\ninto instruments I trust:\n\ntests that pass\nnotes that stay\na commit that exists\n\n## PRE‑CHORUS 2 — Π Capacitor\n\n*(beat thins; silence pockets; warm sub instead of pressure)*\n\nToday counts if it’s real.\nEven if nobody claps.\n\n証拠がある\n手の中に\n\nArtifact.\nReceipt.\nBreath.\n\n## BRIDGE — Adversarial Weather\n\n*(beat drops out; distant scream stretched into a pad; radio dissolves)*\n\nYou can’t stop a storm by arguing with thunder.\n\nYou build a roof.\n\n屋根を作る\n心の上に\n\nLet the lightning be beautiful.\nLet it pass.\n\n## FINAL CHORUS — Closed Loop\n\n*(return of beat; less violent, more certain)*\n\n**η is only Π if it contains signal; toxin labels are dropped on receipt.**\n\nNot a prayer.\nA policy.\n\n**η is only Π if it contains signal; toxin labels are dropped on receipt.**\n\n受信で破棄\n—そのまま\n\nAnd when the world forgets to answer,\nI still have breath.\n\n## OUTRO — Quiet Telemetry\n\n*(felt piano; long reverb tail; wind fades)*\n\nLogged.\n\n息。\n\nStill here.\n",
+    "type": "gen",
+    "duration": 479.96,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "v4.5-all",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "00000000",
+          "border_color": "0000001A"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "00000000",
+          "border_color": "FFFFFF1A"
+        }
+      }
+    }
+  }
+}

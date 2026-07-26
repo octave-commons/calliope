@@ -1,0 +1,51 @@
+{
+  "id": "2ec99afc-329b-4118-bd9a-10c9a1238590",
+  "title": "Crown of Glass / 名ばかりの女王",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/2ec99afc-329b-4118-bd9a-10c9a1238590.mp3",
+  "image_url": "https://cdn2.suno.ai/image_2ec99afc-329b-4118-bd9a-10c9a1238590.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Minimal baroque chamber opera × reflective gothic lullaby × ceremonial ambient. 92 BPM slow 4/4. Sparse harpsichord motifs, soft legato strings, warm organ drones, distant choir pads. No percussion. Occasional crystal chime accents. Waterfall ambience faint but present.\n\n**Vocal Direction:** Soprano restrained, intimate, almost spoken in places. No coloratura attack. Long held notes that thin into breath. Choir enters only in final chorus, supportive but distant.\n\n**Mood:** Dignified relinquishment. Bittersweet clarity. Power without authority. Ceremony without control.\n\n**Structure:** Quiet Overture → Verse 1 (Recognition) → Pre-Chorus (Letting Go) → Chorus (Title Without Power) → Verse 2 (Identity Shift) → Bridge (Silence and Acceptance) → Final Chorus (Ceremonial Resolve) → Breath Coda.\n",
+    "prompt": "## OVERTURE — Empty Throne\n\n*(soft organ; single chime)*\n\nThe hall is full.\nThe throne is light.\n\nThe scepter rests\nbut does not bite.\n\n霧は遠い。\n\n## VERSE I — Recognition\n\nI wore the sky like armor bright.\nI called that hunger sacred right.\n\nBut crowns are loud\nwhen held too tight.\n\nAnd I mistook\nthe roar for sight.\n\n## PRE-CHORUS — Unfastening\n\n*(harpsichord slows; strings soften)*\n\nWhat is a queen\nwithout decree?\n\nWhat is command\nwithout belief?\n\n## CHORUS — Crown of Glass\n\n*(strings swell gently)*\n\nI am a crown of glass and light.\n\nSeen from afar—\nClear in the night.\n\n名ばかりの女王\n静かに立つ。\n\nNo hand on law.\nNo blade to press.\n\nOnly a symbol\nin formal dress.\n\n## VERSE II — Identity Shift\n\nThey bow—\nbut not from fear.\n\nThey speak—\nand I must hear.\n\nThe power left.\nThe title stayed.\n\nAn echo of the role I played.\n\nIs this less?\n\nOr is it more?\n\nTo guard the frame\ninstead of war.\n\n## BRIDGE — Reflection\n\n*(music nearly silent; faint choir hum)*\n\nI thought the height\nwas where I stood.\n\nBut height is hollow\nwithout the good.\n\nIf I am myth,\nlet myth be kind.\n\nIf I am symbol,\nlet me remind.\n\n## FINAL CHORUS — Ceremony\n\n*(choir enters softly; organ warm)*\n\nI am a crown of glass and light.\n\nCeremonial,\nnot the fight.\n\n名ばかりの女王\n息を守る。\n\nIf I cannot command the flame,\nI will protect\nwhat bears my name.\n\nNot ruler.\n\nWitness crowned.\n\nNot sovereign—\n\nBut bound.\n\n## CODA — Breath in the Hall\n\n*(music thins; single sustained note fades)*\n\nThe throne remains.\n\nThe world moves on.\n\nI stand.\n\n息。\n",
+    "type": "gen",
+    "duration": 274.84,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "c7028dee-c58d-4459-b783-0ffda1d15ecc",
+  "title": "# Manifest Oath / 目録の誓い (84 BPM)",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/c7028dee-c58d-4459-b783-0ffda1d15ecc.mp3",
+  "image_url": "https://cdn2.suno.ai/image_c7028dee-c58d-4459-b783-0ffda1d15ecc.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.|->\n\nMythic glitch epic / spoken-sung , 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\n\nIt's time to pay the fork tax.\nPrepare hand off packet (zip artifact)\nSent only the song and the zip\n\n\n\n\n",
+    "prompt": "# Manifest Oath / 目録の誓い (84 BPM)\n\nP→R→N→Π— catalog the storm, pin the line（線）\nA→(feedback)→P— merge the wound, keep the sign（印）\n\n(Glitch) η—η—η…\n(Glitch) μ—μ—μ…\n\nFo— fo— fork… split the night, pay the cost, now（今）\nAn— an— an-chor… hold the thread, seal the hash, down（下）\n\n“The wind is just noise,” says the Runner.\n“It’s evidence,” says the Keeper. “Evidence is anything you can replay.”\nFrom the rafters: an—an—anchor… ta—ta—tax…\nAnd we move on like this is normal.\n\n# Winds Between Proof / 証のあいだの風 (78 BPM)\n\n(whisper)\nHush… breathe… pay the ta— ta— tax.\n息をして…（して…）\nHold the an— an— an-chor…\n\n(JP call) ねむれ、ねむれ\n(EN response) the an— an— an-chor… holds.\n(JP call) しずかに、しずかに\n(EN response) the ta— ta— tax… due.\n\n(whisper)\nWind in the halls—\n世界の音（おと）\nIf we overflow,\nwe fold the noise to proof（証）\n",
+    "edited_clip_id": "5c27a005-3488-49a1-bb2f-226341d9ef72",
+    "type": "gen",
+    "duration": 82.8,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "audio_weight": 0.82,
+      "style_weight": 0.44,
+      "weirdness_constraint": 0.68
+    },
+    "cover_clip_id": "5c27a005-3488-49a1-bb2f-226341d9ef72",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "Cover",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

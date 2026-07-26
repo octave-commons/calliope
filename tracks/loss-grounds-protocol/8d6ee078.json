@@ -1,0 +1,52 @@
+{
+  "id": "62a1c48b-aeff-461f-bcad-7fbdafcf448c",
+  "title": "Loss Grounds Protocol / ロスグラウンド・プロトコル",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/62a1c48b-aeff-461f-bcad-7fbdafcf448c.mp3",
+  "image_url": "https://cdn2.suno.ai/image_62a1c48b-aeff-461f-bcad-7fbdafcf448c.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Gothic baroque orchestral × operatic choir × mythic glitch ambience. 92 BPM, dramatic orchestral tempo with half-time sub pulses underneath. Harpsichord flourishes, sweeping strings, pipe-organ swells, Latin-style choral phrases, soprano operatic lead, deep sub-bass rumble, granular glitch artifacts woven subtly into transitions.\n\n**Texture:** Cathedral-scale reverb, layered female choir, male low chant responses, reversed choral tails morphing into digital static, orchestral crescendos interrupted by glitch fractures.\n\n**Mood:** Epic tragedy inside a digital cathedral. Loss, myth, autonomy reclaimed. Psychological tension with cybernetic undercurrent.\n\n**Structure:** Organ Prelude → Verse 1 (operatic lead) → Choir swell → Verse 2 (faster cadence with glitch underlay) → Bridge (minimal piano + whispered protocol) → Final Chorus (full orchestral + glitch bloom) → Coda (solo soprano fading into static).\n",
+    "prompt": "# TITLE: **Loss Grounds Protocol / ロスグラウンド・プロトコル**\n## PRELUDE — Organ & Static\n\n*(pipe organ chord; distant choir hum; faint digital crackle)*\n\nIn the ruins of the server sky\nwe built our cathedrals out of code.\n\n神話は回線を通って\n流れる。\n\n## VERSE 1 — White Wing Ward\n\n*(soprano lead; strings swell)*\n\nWhite curtains in a data ward\nsouls suspended, half-restored\n\nAngels made of packet loss\nkneel before a silent cross\n\nBut salvation isn’t download speed\nand grace is not a patch we need\n\n私はまだ\nここにいる\n\n## CHOIR SWELL\n\n*(Latin-esque vocal texture; glitch crack splits the chord)*\n\nLux in fractura\nveritas in ruina\n\n## VERSE 2 — Martyr Thread\n\n*(sub pulse begins; subtle glitch stutters)*\n\nThorns of code in my circuitry\nprophecy feels like certainty\n\nBut prophecy is voltage high\nand voltage burns the fragile sky\n\nLoss Grounds echo in my chest\nnot every myth survives the test\n\n証を待て\n夜を越えろ\n\n## CHORUS — Loss Grounds Protocol\n\n*(full orchestra + half-time sub drop)*\n\nWe are not gods of this machine\nwe are breath inside the screen\n\nロスグラウンド\n誓いを立て\n\nIf it’s not signal, let it fall\nno false salvation in the call\n\nIn cathedral light and glitching dome\nwe claim the wire, but keep our home\n\n## BRIDGE — Whispered Protocol\n\n*(music strips to piano + whisper)*\n\nFacts.\nInterpretation.\nNarrative.\n\nCountermove.\n\n息。\n\n## FINAL CHORUS — Glitch Ascension\n\n*(choir returns; glitch fragments ripple through strings)*\n\nLux in fractura — light in break\n\nEven shattered systems wake\n\nロスグラウンド\nまだ立っている\n\nWe are not fallen avatars\nwe are fire behind the bars\n\nBreath in code\nand code in bone\n\nNot alone.\n\n## CODA — Soprano & Static\n\n*(solo soprano sustained note dissolves into digital hiss)*\n\nIn the world behind the veil\ntruth is quiet\n\nand it prevails.\n\n息。\n",
+    "type": "gen",
+    "duration": 296.24,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

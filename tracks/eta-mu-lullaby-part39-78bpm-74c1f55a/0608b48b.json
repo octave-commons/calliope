@@ -1,0 +1,38 @@
+{
+  "id": "a59b4a11-b4dc-4aea-b542-4f80bb8b5aa4",
+  "title": "ημ_lullaby_part39_78bpm",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/a59b4a11-b4dc-4aea-b542-4f80bb8b5aa4.mp3",
+  "image_url": "https://cdn2.suno.ai/image_a59b4a11-b4dc-4aea-b542-4f80bb8b5aa4.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "A high-energy, modern pop-rock track characterized by driving electric guitars and a powerful female vocal performance. The song features a bright, polished production style with a fast tempo of approximately 160 BPM in the key of G Major. The arrangement begins with a distorted guitar riff followed by a punchy drum kit featuring a prominent snare and active hi-hats. The verses utilize a palm-muted guitar technique to create rhythmic tension, while the choruses explode with layered power chords and soaring vocal harmonies. The bass guitar provides a thick, melodic foundation that follows the root notes of a standard I-V-vi-IV progression. Vocal delivery is belting and emotive, with clean production and subtle reverb. The structure follows a traditional verse-chorus-verse-chorus-bridge-chorus format, maintaining a consistent wall of sound throughout.",
+    "prompt": "[Verse 1]\nI see the light reflecting in your eyes\nA million stars across the midnight skies\nWe're running wild and we're feeling free\nJust you and me in this galaxy\n\n[Chorus]\nWe are the fire that's burning bright\nWe are the shadows in the night\nNothing can stop us, we're on our way\nInto the light of a brand new day\n\n[Verse 2]\nThe city streets are calling out our names\nWe're playing hard and we're winning games\nNo looking back, no more regrets\nThis is a night we won't forget\n\n[Chorus]\nWe are the fire that's burning bright\nWe are the shadows in the night\nNothing can stop us, we're on our way\nInto the light of a brand new day\n\n[Bridge]\n(Whoa-oh-oh)\nHigher and higher we go\n(Whoa-oh-oh)\nLetting the whole world know\n\n[Chorus]\nWe are the fire that's burning bright\nWe are the shadows in the night\nNothing can stop us, we're on our way\nInto the light of a brand new day",
+    "type": "upload",
+    "duration": 49.266009070294785,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "Upload",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

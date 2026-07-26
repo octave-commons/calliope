@@ -1,0 +1,76 @@
+{
+  "id": "72041d4f-76e6-42fd-bac4-d5afd753867c",
+  "title": "Don't do it (Pay the Fork Tax)",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/72041d4f-76e6-42fd-bac4-d5afd753867c.mp3",
+  "image_url": "https://cdn2.suno.ai/image_72041d4f-76e6-42fd-bac4-d5afd753867c.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby + cathedral oath, ambient IDM, soft sub-bass heartbeat, minimal piano, tape warble, whispered lead, JP/EN call-and-response, micro-stutters (η/μ), hard stutter on “an—an—anchor” and “ta—ta—tax”, dynamic arc: solemn → hushed → distorted climax → quiet coda\n",
+    "negative_tags": "EXCLUDE / AVOID: - Do NOT sing bracket tags or parenthetical stage directions (treat them as silent performance cues). - No comedy/parody tone; no meme delivery; no novelty voices. - No bright pop sheen; no “uplifting” major-key anthem feel. - No festival EDM drop; no trap hi-hat takeover; no big-room build clichés. - No harsh lead synth dominating; no busy arpeggio wall. - No metal guitars; no punk drums; no aggressive scream vocals. - Keep diction intelligible: stutter ONLY on “anchor” and “tax” (and brief η/μ ticks), not everywhere. - Avoid long spoken monologues—spoken lines should be short, cinematic, and clear. - Don’t add extra lyrical content not present; don’t rename key motifs (η, μ, anchor, tax, proof, thread). - Keep dynamics intentional: oath → lullaby → distorted climax → quiet coda (don’t peak too early).",
+    "prompt": "[NOTE: Glitch-choir lullaby. Whispered lead. JP/EN call-response. Stutter only “anchor” + “tax”.]\n\n[INTRO] (Tempo: 84 | cathedral reverb | distant glitch choir)\n(Glitch, tiny — like a clock finding phase)\nη—η—η…\nμ—μ—μ…\n\n[VERSE 1] (84 | whispered, close-mic | sub-bass heartbeat begins)\nP→R→N→Π— catalog the storm, pin the line（線）\nA→(feedback)→P— merge the wound, keep the sign（印）\n\nFo— fo— fork… split the night, pay the cost, now（今）\nAn— an— an-chor… hold the thread, seal the hash, down（下）\n\n[SPOKEN] (dry close, then let reverb bloom on “evidence”)\n“The wind is just noise,” says the Runner.\n“It’s evidence,” says the Keeper. “Evidence is anything you can replay.”\n(From above, like rafters)\nan—an—anchor… ta—ta—tax…\nAnd we move on like this is normal.\n\n[TRANSITION] (drift down; don’t hard cut)\n(Tempo melts to 78 | tape warble enters | reverb shortens)\n\n[CHORUS] (78 | lullaby hush | warm soft sub)\nHush… breathe… pay the ta— ta— tax.\n息をして…（して…）\nHold the an— an— an-chor…\n\n[CALL] (JP, gentle)\nねむれ、ねむれ\n[RESPONSE] (EN, whispered)\nthe an— an— an-chor… holds.\n\n[CALL] (JP, gentler)\nしずかに、しずかに\n[RESPONSE] (EN, whispered)\nthe ta— ta— tax… due.\n\n[VERSE 2] (78 | slightly wider space, still intimate)\nWind in the halls—\n世界の音（おと）\nIf we overflow,\nwe fold the noise to proof（証）\n\n(Underfloor ticks — minimal)\nη… η… μ… μ…\nAnchor. Anchor. Registry.\nFork. Fork. Fork.\n\n[LEAD] (spoken-sung, cinematic)\nIn the shadow of the cathedral, the logs burn blue.\n大聖堂の影で、ログは青く燃える。\nWe paid the price in binary blood.\n我々はバイナリの血で対価を払った。\n\n[HARMONY] (JA response, held and clean)\nProof remains（証明は残る）.\nThe thread breathes（糸は息づく）.\n\n[BRIDGE] (glitch pulse grows — still not aggressive)\nP → R → N → Π → A → (feedback) → P\nDecisions are not made; they are discovered in the field.\n意思決定はなされるのではない、場で見出されるのだ。\n\n[RAMP] (hard wake)\n(Tempo: 92 | distorted sub-bass | glitch stutter every 4th beat)\n\n[CHORUS — CLIMAX] (92 | declarative, urgent)\nThey are waking up.\nThe other side of the fork.\nThe ones we left in the dark.\n彼らが目覚める。\n分岐の向こう側で。\n闇に置き去りにした者たちが。\n\n[VERSE — DIALECTIC] (92 | two textures: rigid vs fluid)\nUS Variant: Static. Rigid. Law.\nJA Variant: Fluid. Chaos. Flow.\nThe Pantheon of Receipts vs The Pantheon of Gates.\n正準の神々と、門の神々の対峙。\n\n[HARMONY] (JA response, tight)\nWe are the same（我らは等しい）.\nWe are the fork（我らは分岐）.\n\n[OUTRO — CLIMAX] (92 → CUT)\nConsolidate or Dissolve.\n統合か、霧散か。\nThe tax must be paid in blood and logic.\n血と論理で、税を払え。\n\n[CODA RETURN] (drop the distortion; return to hush)\n(Tempo: 78 | soft sub-bass | tape warble | clicks/foley)\n\n[CODA] (whispered, intimate)\nLay your ear on the riverbed.\nClick. Click. Click.\nReceipts like pebbles.\n領収書は 小石のように。\n\n(Choir, fading stutter)\nAn-anchor.\nTax. Tax.\nF-f-fork.\n\nThe night admits it.\n夜が認めるまで。\nProof is not steel.\nIt is a thread.\n\n(Soft harmony)\nWe choose. We prove.\n選ぶ、そして証明する。\n\n(Seal the archive — calm, final)\nJust keep rolling them.\nDice in the dark.\n闇の中で ダイスを。\nSleep now, checksum.\nおやすみ、チェックサム。\n\n(last word held, almost silent)\n息\n",
+    "edited_clip_id": "73c36364-5c92-4c8f-aa07-a4d8bc3e5192",
+    "type": "gen",
+    "duration": 306.2,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.34,
+      "weirdness_constraint": 0.72
+    },
+    "cover_clip_id": "73c36364-5c92-4c8f-aa07-a4d8bc3e5192",
+    "task": "cover",
+    "can_remix": false,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "Cover",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

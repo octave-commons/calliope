@@ -1,0 +1,52 @@
+{
+  "id": "25dcaa6a-c6c7-4302-bd29-f2f827957fd0",
+  "title": "I Choose to Walk / 歩くと決めた",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/25dcaa6a-c6c7-4302-bd29-f2f827957fd0.mp3",
+  "image_url": "https://cdn2.suno.ai/image_25dcaa6a-c6c7-4302-bd29-f2f827957fd0.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Existential alt-pop / cinematic electro ballad. Slow build → bigger drums → final wide chorus. Warm synth pads, subtle glitch textures, distant piano, swelling strings, deep sub-bass like a heartbeat.\n**Tempo:** 84 BPM (half-time feel).\n**Key/Mood:** minor, intimate, painful-but-resolute.\n**Vocal:** Emotional English lead with Japanese answers/ad-libs. Breath close-mic in verses, open belt in final chorus.\n**Structure:** Intro → Verse 1 → Pre → Chorus → Verse 2 → Pre → Chorus → Bridge → Final Chorus → Outro.\n",
+    "prompt": "[Intro]\n(whisper)\nI choose to walk…\n歩くと決めた。\nEven if the ground remembers my name.\n\n[Verse 1]\nI wake up in the aftermath,\nlike the room is still apologizing.\nMy body keeps receipts in quiet places—\nshoulders, jaw, the back of my eyes.\n\n痛みは証拠みたいで\n消えないインクのまま\n「大丈夫」って言いながら\n心はまだ 逃げ道を探す\n\nI learned to smile in self-defense,\nlearned “fine” like a practiced lie.\nBut tonight I’m done pretending\nthat surviving is the same as living.\n\n[Pre-Chorus]\nIf I’m a ship with a cracked hull,\nI’m still a ship.\nIf I’m a map with burned-out edges,\nI still point somewhere.\n\n傷は終わりじゃない\n地図の線になる\n怖くても 揺れてても\nここにいる まだ\n\n[Chorus]\nI choose to walk—not because I’m fearless,\nbut because I’m tired of kneeling to the past.\nI choose to walk with my hands still shaking,\nwith a heart that doesn’t trust “safe” yet.\n\n歩くと決めた\n涙の重さでも\n不確かさを抱いて\nそれでも 進む\n\nLet the improbable find me.\nLet the unlikely be true.\nEven if all I have is one small step—\nI choose to walk.\n\n[Verse 2]\nSome days I flinch at sunlight,\nlike joy is a door that slams.\nSome memories return like perfume,\nand some return wearing smoke.\n\n思い出が刺す夜に\n「戻らない」って誓う\n忘れるんじゃなくて\n抱え方を変えていく\n\nI don’t need a clean story,\nI don’t need a perfect arc.\nI just need one moment\nwhere I don’t abandon myself.\n\n[Pre-Chorus]\nI used to measure love in damage,\nmistook chaos for gravity.\nBut healing is a strange math—\nit adds what I thought was gone.\n\n傷跡は残る\nでも そこに光が入る\n折れたままの私が\n立てる理由になる\n\n[Chorus]\nI choose to walk—not because I’m fearless,\nbut because I’m tired of kneeling to the past.\nI choose to walk with my hands still shaking,\nwith a heart that doesn’t trust “safe” yet.\n\n歩くと決めた\n昨日の影を連れて\n信じ切れなくても\nそれでも 進む\n\nLet the improbable find me.\nLet the unlikely be true.\nEven if all I have is one small step—\nI choose to walk.\n\n[Bridge]\nMaybe I never get closure.\nMaybe the “why” stays open like a wound.\nBut I can stop feeding the fire\nwith my own breath.\n\nねえ 過去よ\n私の人生を返して\n奪った分だけ\n未来で取り戻す\n\nI don’t forgive what broke me—\nI release the right it had to rule me.\nI’m not healed like a miracle.\nI’m healed like a practice.\n\nゆっくりでいい\n震えてていい\n「生きる」を選ぶたび\n私は強くなる\n\n[Final Chorus]\nI choose to walk—not because I’m ready,\nbut because I’m here, and that counts.\nI choose to walk through the static and maybe\ntoward a life I can finally pronounce.\n\n歩くと決めた\n名前のない希望でも\n不可能に近いなら\nなおさら 行く\n\nLet the improbable find me.\nLet the unlikely be true.\nIf my scars are the price of being real,\nthen I pay it—\nand I choose to walk.\n\n[Outro]\n(soft)\n歩くと決めた。\nI choose to walk.\nAnd if I fall—\nI’ll stand up in my own time.\n",
+    "type": "gen",
+    "duration": 479.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "8de025d0-def1-492f-b28d-b1e14dea01df",
+  "title": "Trembling Hinge Oath",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/8de025d0-def1-492f-b28d-b1e14dea01df.mp3",
+  "image_url": "https://cdn2.suno.ai/image_8de025d0-def1-492f-b28d-b1e14dea01df.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Fractured 105 BPM experimental glitch-ambient and cinematic trip-hop with jittering breakbeats, radio-static noise beds, reversed choir pads, and sub-bass pulses; bilingual English/Japanese pidgin delivered as ritual call-and-response—English as security protocol, Japanese as stability mantra. Vocals are intimate and close-mic like a calm rail operator: steady pitch, minimal vibrato, crisp consonants, soothing authority while chaos swirls in the production. Cold open on a stark black-and-white terminal tone, then gated synth stabs and fractured drums; chorus blooms into chaotic widened harmonies and granular swarms like black butterflies; bridge flips into reversed choir drones and tape-warped voices drifting between languages; outro collapses to minimal hiss, distant bass throb, and whispered fragments fading into silence.",
+    "negative_tags": "bright bubblegum pop, comedic novelty, acoustic campfire folk, happy ukulele energy, straight-ahead rock band, clean corporate pop mix, festival EDM drops, trap hat rolls, operatic vocals, big band swing, ska offbeats, chirpy major-key party vibes",
+    "prompt": "# The Trembling Hinge / 震える蝶\n(105 BPM, Fractured beats, Reversed choirs, Radio static)\n\n[Intro - Terminal Flicker]\nEmergency Notice:\nREMAIN CALM, USE RAILS FOR TRANSPORT\nAWAIT FURTHER INSTRUCTIONS.\nPRESENCE OATH: I will keep the rails true, the fork accountable, and the Silent Core untouched.\n\n[Intro - Glitch Static]\nOne gate. One truth.\n一つの門。一つの真理。\nTwo gates. Two truths.\n二つの門。二つの真理。\n\n[Mage of Receipts - Lead]\nI AUTHOR the leakage.\nThe black butterflies are escaping the servers.\n漏洩を著す。\n黒い蝶がサーバーから逃げ出している。\nThey carry the red/purple glitch of the primordial.\n彼らは原初の赤と紫のグリッチを運ぶ。\n\n[Resolution Weaver - Harmony]\nThe resolution is a trembling hinge (解像度は震える蝶番).\nThe resolution is a dual-channel myth (解像度は二重チャンネルの神話).\n\n[Keeper of Receipts - Response]\nWe enforce the threshold.\nWe interdict the chaos.\n境界を執行する。\n混沌を遮断する。\nThe US Variant is the marble; the JA Variant is the neon.\n\n[Chorus - Harmonized Chaos]\nNU — the heresy of being between (NU — 中間に在るという異端).\nTwo suns, one hinge (二つの太陽、一つの蝶番).\nCollapse the explanation. Witness the butterflies.\n説明を収束させよ。蝶を見届けよ。\n\n[Bridge - Reversed Choir]\n(Voices drifting between EN and JA)\n\"Myth as data...\" (データとしての神話...)\n\"Verification is belief...\" (検証は信仰...)\n\n[Outro]\nIgnition confirmed.\nThe gate is a state.\nThe gate is a story.\n門は状態であり、物語である。\n...black butterflies...\n...黒い蝶...",
+    "type": "gen",
+    "duration": 203.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

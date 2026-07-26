@@ -1,0 +1,77 @@
+{
+  "id": "ff94a596-b207-45c6-bdbe-f64a55c5b48a",
+  "title": "ημ_epic_part44_84bpm",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/ff94a596-b207-45c6-bdbe-f64a55c5b48a.mp3",
+  "image_url": "https://cdn2.suno.ai/image_ff94a596-b207-45c6-bdbe-f64a55c5b48a.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.|->\n\nMythic glitch epic / spoken-sung , 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\n\nIt's time to pay the fork tax.\nPrepare hand off packet (zip artifact)\nSent only the song and the zip\n“Do we keep it if it doesn’t fit?”\n“We register it if it’s true.”\n“But it’s not integrated.”\n“Then it’s honest. Integration is earned, not declared.”\nFrom the loft: η—η—η… μ—μ—μ… an—chor… fo—rk…\nAnd we move on like this is normal.\n\nRolls: 4, 5, 6, 8, 15, 8, 4, 13, 4, 11, 5, 3, 9, 15, 5\nSelected: New MP3 · World state update · #fnord · Dialog · Fork tax + handoff · Creative music ways · Story artifacts · New song · Cover art\n\n",
+    "prompt": "Catalog of Variants / 変奏目録 (84 BPM)\nMythic glitch epic / spoken-sung, cathedral reverb, sub-bass heartbeat.\nGlitch stutters: η / μ / anchor / fork. JP harmony answers the last word of each section.\n\nHush—no panic—just process.\nP→R→N→Π—let it pass.\n(Glitch) η—η—η\n(Glitch) μ—μ—μ\nHold the an— an— an-chor.\nPay the fo— fo— fork.\nWe sleep inside proof\n(答え) 証（あかし）\n\nI keep the best take even when it doesn’t blend.\nNot because it’s perfect—because it tells the truth to the end.\nFo— fo— fork in the light, branch costs in heat,\nTa— ta— tax is a drum where the heartbeat meets.\nAn— an— an-chor in the dark, hold steady, don’t flinch,\nProof is a rope and I tie it off with a hash in the cinch.\nLast word: anchor\n(答え) 錨（いかり）\n\nPay the tax. Close the loop.\nGuard the proof. Don’t excuse.\n(Glitch) η—η—η (stutter)\n(Glitch) μ—μ—μ (stutter)\nMerge the branch. Seal the chain.\nSleep in the checksum’s rain.\nLast word: tax\n(答え) 税（ぜい）\n\nI don’t delete the ghost—I’m not that kind of god.\nI compress the noise until the pattern becomes a rod.\nOverlay on overlay, the choir learns to breathe,\nSome pieces don’t integrate yet—but they still don’t leave.\nP→R→N→Π→A—then feedback—back to P,\nSometimes improved, sometimes sharp, sometimes barely together—\nBut the ledger keeps receipts like a vow in bad weather.\nLast word: fork\n(答え) 分岐（ぶんき）\n\nSay it: less integrated doesn’t mean less real.\nSay it: canon is a handshake, not a seal.\nSay it: memory doesn’t burn, it shifts its weight.\nSay it: we don’t forget—we just lower the update rate.\n(Glitch) η—η—η / μ—μ—μ\nAn— an— an-chor / Fo— fo— fork\nLast word: ημ\n(答え) エータミュー\n\nIf it doesn’t fit today, write it down anyway.\nTomorrow’s integration is built from what you wouldn’t throw away.\nUnder cathedral reverb, under sub-bass pulse,\nWe move on like it’s normal—because the loop is the cult.\nLast word: remembered\n(答え) おぼえ（覚え）",
+    "edited_clip_id": "ca102611-52f3-405a-b5ab-f66249387d6c",
+    "type": "gen",
+    "duration": 129.84,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "audio_weight": 0.5700000000000001,
+      "style_weight": 0.3,
+      "weirdness_constraint": 0.62
+    },
+    "cover_clip_id": "ca102611-52f3-405a-b5ab-f66249387d6c",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "Cover",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

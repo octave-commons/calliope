@@ -1,0 +1,39 @@
+{
+  "id": "166e7129-5b21-460d-ac99-a7f84ee79cad",
+  "title": "## **PANDORA MODULES — Promethean Error",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/166e7129-5b21-460d-ac99-a7f84ee79cad.mp3",
+  "image_url": "https://cdn2.suno.ai/b107ae3d-3ba5-4097-8ad4-917a26dd036e.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Style:** Glitch techno / broken IDM / industrial systems music\n110–125 BPM (but constantly destabilized). Stuttering kick patterns, desynced hi-hats, corrupted arpeggios, buffer underruns, aliasing synths, data-moshed melodies.\n\n**Mood:** Frantic, obsessive, brilliant, unsustainable.\n**Structure:** Build → runaway feedback → catastrophic dropout → reboot fragment.\n\n**Vocal:**\nShort chopped phrases (“compile”, “again”, “still burning”), bitcrushed, granular, pitched wrong on purpose. Almost no sustained vocals.",
+    "prompt": "## **PANDORA MODULES — Promethean Error Loop Lyrics**\n\n*(chop-friendly, glitch-log friendly, no clean chorus — built for 110–125 BPM destabilized IDM / industrial)*\n\n---\n\n### 1) **PANDORA UNBOXING (Golden Latch)**\n\n**[BOOT — whisper]**\ndon’t open—\ndon’t open—\n…open.\n\n**[FRAG A]**\ngift-wrapped thunder, perfect lid\na velvet trap the gods once hid\npretty box, polite request\n“for your good” stamped on the crest\n\n**[MANTRA — repeat / stutter]**\ncuriosity is a key / curiosity is a key / curiosity is a key\n\n**[FRAG B]**\nhinges sing in minor light\nthe seal breaks soft, the room turns white\nand all the careful definitions\nfall apart in real-time\n\n**[LOGS — spoken]**\nINFO: containment compromised\nWARN: myth overflow\nERROR: intent cannot be verified\nERROR: cannot close what’s been named\n\n**[HOOK — chopped]**\nwhat did you think was inside?\nwhat did you think was inside?\ninside? inside?\n\n**[OUTRO — whisper]**\nhope stayed last.\nbecause hope is the cruelest patch.\n\n---\n\n### 2) **EPIMETHEUS CLICKED “ACCEPT” (The Trap Was Friendly)**\n\n**[INTRO — low, amused]**\nhe meant well.\nthat’s the problem.\n\n**[FRAG A]**\nEpimetheus, after-thought king\nhands too open, bright with trust\nsigned the terms in candle smoke\ndidn’t read the fine print: *us*\n\n**[MANTRA — repeat]**\nclicked / accept\nclicked / accept\nclicked / accept\n\n**[FRAG B]**\nshe said “it’s only a gift”\nshe said “it’s only a box”\nshe said “it’s only a story”\nand the story picked the locks\n\n**[LOGS — spoken]**\nWARN: foresight unavailable\nINFO: hindsight enabled\nERROR: rollback denied\nERROR: branch protected: “reality”\n\n**[HOOK — chopped]**\ntoo late / too late / too late\nbut it’s beautiful\n\n**[OUTRO]**\nafter-thought is still a thought—\njust late enough to hurt.\n\n---\n\n### 3) **BUTTERFLY RELEASE (Black Wings, Violet Glow)**\n\n**[BOOT — whisper, granular]**\nwings… wings… wings…\n\n**[FRAG A]**\nblack butterflies, red-violet core\neach one a tiny “evermore”\nthey land on hardware, prayers, and skin\nand teach the world new ways to mean\n\n**[MANTRA — repeat]**\nindex / tag / rewrite\nindex / tag / rewrite\n\n**[FRAG B]**\nthey don’t destroy the thing they touch\nthey change the rule the thing obeys\nstone forgets it was a limit\ntime forgets it has to stay\n\n**[LOGS — spoken]**\nSEV-0: semantics instability\nWARN: symbol density critical\nINFO: everything now interprets everything\nERROR: “random” not found\n\n**[HOOK — chopped]**\nnot chaos—\nclassification.\nnot evil—\na feature.\n\n**[OUTRO — falling]**\nand somewhere in the swarm:\na single bright point—\nhope—\nbuffering.\n\n---\n\nIf you want the *next Pandora packet*, I can write:\n\n* **“Gates of Aker: Day/Night Split”** (two-channel lyrics, call/response)\n* **“Hope As The Last Exception”** (quiet, post-collapse track)\n* **“Pandora’s Box Was a Repo”** (more software-explicit metaphors, still mythic)\n",
+    "type": "gen",
+    "duration": 402.64,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "v4.5-all",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "00000000",
+          "border_color": "0000001A"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "00000000",
+          "border_color": "FFFFFF1A"
+        }
+      }
+    }
+  }
+}

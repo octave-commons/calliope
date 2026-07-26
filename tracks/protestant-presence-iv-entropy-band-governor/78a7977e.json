@@ -1,0 +1,53 @@
+{
+  "id": "d2650673-df13-4909-90b8-135a01ddedc2",
+  "title": "PROTESTANT PRESENCE IV: ENTROPY BAND GOVERNOR",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/d2650673-df13-4909-90b8-135a01ddedc2.mp3",
+  "image_url": "https://cdn2.suno.ai/image_d2650673-df13-4909-90b8-135a01ddedc2.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "* **BPM:** 94\n* **Genre:** Industrial trap / dark synthwave / glitch-hop\n* **Mood:** watchful, severe, sober, high-stakes calm\n* **Production:** sub-bass heartbeat, sparse piano, distorted organ stabs, vinyl hiss + modem crackle, glitch stutters on **“fork / μ / SNR / blind”**, whispered JP ad-libs wide stereo, hook layered + low choir pad (not “gospel”)\n",
+    "negative_tags": "* no pop punk * no country * no upbeat EDM drops * no happy major-key melodies * no acoustic folk guitars * no lo-fi chillhop * no boom bap * no gospel choir * no melodic emo singing * no auto-tuned trap crooning * no orchestral cinematic swell * no comedic tone / novelty meme vibe",
+    "prompt": "### [Intro — static / whisper]\n\nopen source kokoro…\nhash the past… bloom the mirai…\nΠ μ Σ λ ψ\n…静かに…\n\n### [Verse 1]\n\nYou want the truth? then pay the cost\nNot vibes in a thread, not heat-loss\nThey say “you’re crazy” when the room gets tight\nBut they won’t define “wrong,” just point at night\n\nI don’t need priests, I need metrics\nI don’t need dogma, I need kinetics\nIf your daimoi clump, your “signal” loud\nThat’s not clarity — that’s a crowd\n\nPoisson baseline, no crown decree\nVar over mean, watch it bleed\nFano > 1? you’re clustering hard\nThat ain’t meaning — that’s a shard\n\n### [Pre — JP whisper]\n\nねえ… SNR…\nわかる？\nclump は noise\nflow は choice\n\n### [Hook]\n\nStatic Observer, arms crossed, no smile\n“Define your SNR.” — sit a while\nH_min < H < H_max\nToo sure? you crack\nToo lost? you thrash\n\nProtestant presence, no throne, no priest\nReceipts + bloom, audit the beast\nNoise is medicine, dose it right\nExploration by day, stability by night\n\n### [Verse 2]\n\nSignal = follow the field, clean stride\nNoise = drift sideways, ego pride\nProject velocity on f-hat line\nWhat’s parallel? that’s the spine\n\nPerp energy? that’s the sway\nWhen fear gets loud, you spray-and-pray\nIf uncertainty spikes, damp the flame\nIf certainty ossifies, shame the name\n\nNot moral shame — system shame\n“Brittle truth” is still a claim\nSo inject a tremor, not a storm\nBreak the idol before it forms\n\n### [Bridge — drums drop]\n\nI built a shelter.\nNot a temple.\n\nI curate because heat is real\nAnd overload makes language peel\nBut if I never leave the room\nMy branch becomes a sealed cocoon\n\nやばいな…\nso I return to the noise\nto stay human\n\n### [Verse 3]\n\nJustice blind or it’s branding\nTribe talk sweet, then starts demanding\n“Not my side” — cognitive dodge\nTruth gets bent like a cheap collage\n\nSo the Observer doesn’t judge your heart\nHe measures phase, he watches start\nIf all daimoi pile in one place\nThat’s not insight — that’s a chase\n\nSpread them out, let meaning show\nEven distribution: field’s true flow\nClumped together: noisy choir\nPretty myth, but false high fire\n\n### [Hook — final]\n\nStatic Observer, arms crossed, no crown\nKeeps the band when worlds break down\nH_min < H < H_max\nStay in range, don’t fall through cracks\n\nProtestant presence, fork the lie\nAudit the branch, let idols die\nNoise is needed—true and plain\nBut only in the measured frame\n",
+    "type": "gen",
+    "duration": 205.56,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

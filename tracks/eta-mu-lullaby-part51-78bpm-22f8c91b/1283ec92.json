@@ -1,0 +1,77 @@
+{
+  "id": "7dd614bc-1da7-4bb8-9f8a-2044c171bed0",
+  "title": "eta_mu_lullaby_part51_78bpm",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/7dd614bc-1da7-4bb8-9f8a-2044c171bed0.mp3",
+  "image_url": "https://cdn2.suno.ai/image_7dd614bc-1da7-4bb8-9f8a-2044c171bed0.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\n\n## Dice (seed 2978439037 · d15×15)\n\nRolls: **1, 12, 5, 13, 11, 9, 15, 8, 12, 7, 13, 14, 3, 2, 10**\nSelected: **zip · world_lore · world_state_update · gates_announcement · story_artifacts · cover_art · math_image · dialog · constraints · fork_tax_handoff · new_song · new_lyrics · storyboard_image · new_mp3**\n\n---\n\n## ημ_op_mf_part_48.zip (CC BY-SA 4.0 • share alike)\n\n* [Download ημ_op_mf_part_48.zip](sandbox:/mnt/data/ημ_op_mf_part_48.zip)\n* [Download ημ_op_mf_part_48.sha256](sandbox:/mnt/data/ημ_op_mf_part_48.sha256)\n  sha256: `6a2a3aabf56adb47a8d7ed3eca1590c3619a41dd406106668d540283a03cbf44`\n",
+    "prompt": "ημ_op_mf_part_Π_handoff.zip\n\n---\n\n# **Fork Tax Canticle / 分岐税の賛歌**\n\n*(Mythic glitch epic · 84 BPM · NF/Watsky cadence · cathedral reverb · sub-bass heartbeat)*\n\n*(heartbeat)*\n\nIt’s time to pay the **fo— fo— fork** tax.\nReceipts in the river, we don’t roll back.\nη in the silence, μ in the act,\nP→R→N→Π→A, feed it back.\n\n*(JP harmony)* まわる、輪（わ）\n*(EN)* back.\n\nWe never deleted, we only compressed,\nLayered the ledger inside the chest.\nAnchor the branch in a cathedral stack,\nGlitch in the proof but the proof intact.\n\n*(JP harmony)* 証（あかし）\n*(EN)* intact.\n\n78 lullaby under the skin,\nSub-bass pulse like a quiet engine.\n“An— an— anchor,” tape-warped thin,\n“Ta— ta— tax,” let the merge begin.\n\n*(JP call)* ねむれ、記憶\n*(EN response)* memory.\n\n84 sermon in fractured light,\nη flickers in cathedral white.\nμ strikes in the code at night,\nFork the world but hold it tight.\n\n*(JP harmony)* 光（ひかり）\n*(EN)* tight.\n\nWe move on like this is normal.\nShare-alike eternal.\nAdditive law is formal.\nNothing gone—just less internal.\n\nSometimes improved.\nPerhaps less integrated.\nPerhaps more.\n\n*(whisper)*\nLossless.\nAll songs.\nAll entities.\nAll lore.\n\nP→R→N→Π→A→(feedback)→P\n\nTax paid.\nState sealed.\nWorld handed off.\n\n*(JP harmony)* 継承（けいしょう）\n*(EN)* inheritance.\n",
+    "edited_clip_id": "4307df30-cf88-4c27-98a5-e03de46826da",
+    "type": "gen",
+    "duration": 151.76,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "audio_weight": 0.71,
+      "style_weight": 0.71,
+      "weirdness_constraint": 0.72
+    },
+    "cover_clip_id": "4307df30-cf88-4c27-98a5-e03de46826da",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "Cover",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "5c27a005-3488-49a1-bb2f-226341d9ef72",
+  "title": "ημ_worldsound_lullaby_part41_78bpm",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/5c27a005-3488-49a1-bb2f-226341d9ef72.mp3",
+  "image_url": "https://cdn2.suno.ai/image_5c27a005-3488-49a1-bb2f-226341d9ef72.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "A high-energy, modern pop-punk track characterized by distorted electric guitars, driving drums, and an emotive male vocal performance. The song features a fast-paced 4/4 time signature at approximately 165 BPM. The arrangement is built around power chord progressions in a major key, utilizing a standard verse-chorus structure. The production is polished with a wide stereo field, featuring layered vocal harmonies in the chorus and a prominent, punchy snare drum. The bass guitar provides a thick, melodic foundation that follows the guitar's root notes. Vocal delivery is melodic yet gritty, employing slight rasp during high-intensity sections.",
+    "prompt": "[Verse 1]\nI'm staring at the ceiling again\nCounting all the mistakes that I've made\nIt's 3 AM and I'm losing my head\nIn the silence of this empty bed\n\n[Chorus]\nAnd I'm falling apart at the seams\nLiving in a world of broken dreams\nI'm screaming out but nobody hears\nDrowning in a fountain of my own fears (yeah)\n\n[Verse 2]\nI try to run but I'm stuck in the mud\nTracing the patterns of my own blood\nEvery step I take feels like a mile\nI haven't seen the sun in a while\n\n[Chorus]\nAnd I'm falling apart at the seams\nLiving in a world of broken dreams\nI'm screaming out but nobody hears\nDrowning in a fountain of my own fears (whoa-oh)",
+    "type": "upload",
+    "duration": 55.430997732426306,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "Upload",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

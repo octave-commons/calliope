@@ -1,0 +1,39 @@
+{
+  "id": "0c1adf96-4c17-45e6-a312-6d3dfcdc8822",
+  "title": "ημ_epic_part44_84bpm",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/0c1adf96-4c17-45e6-a312-6d3dfcdc8822.mp3",
+  "image_url": "https://cdn2.suno.ai/image_ca102611-52f3-405a-b5ab-f66249387d6c.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Upbeat and energetic pop-rock track characterized by a driving rhythm and bright instrumentation. The song features a prominent electric guitar playing rhythmic power chords and melodic riffs, supported by a punchy drum kit with a steady four-on-the-floor kick drum and crisp snare hits. A melodic bassline provides a solid foundation, locking in with the percussion. The vocals are delivered by a clear, youthful male voice with a moderate range, utilizing a straightforward and catchy melodic structure. The tempo is approximately 128 BPM in the key of G major. Production is clean and polished, with light reverb on the vocals and a balanced mix that emphasizes the interplay between the guitars and the vocal melody. The structure follows a standard verse-chorus-verse format with a brief instrumental bridge.",
+    "prompt": "[Verse 1]\nI'm walking down the street today\nWatching all the people play\nThe sun is shining bright and blue\nI'm feeling like I'm someone new\n\n[Chorus]\nOh oh oh\nIt's a beautiful day\nOh oh oh\nEverything's going my way\n\n[Verse 2]\nI see the birds up in the trees\nI feel the cooling summer breeze\nThere's nothing that can bring me down\nI'm the happiest man in town\n\n[Chorus]\nOh oh oh\nIt's a beautiful day\nOh oh oh\nEverything's going my way",
+    "type": "upload",
+    "duration": 51.46099773242631,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "Upload",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "bf574689-41d1-41a8-bc30-eb5ff9ce6875",
+  "title": "ημ_lullaby_part39_78bpm",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/bf574689-41d1-41a8-bc30-eb5ff9ce6875.mp3",
+  "image_url": "https://cdn2.suno.ai/image_bf574689-41d1-41a8-bc30-eb5ff9ce6875.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\nRoll those dice. And just keep rolling them, and do what they tell you.\n\nAnd we move on like this is normal\n\nUpdate the program to add a new feature\nCreate tests to ensure stability over time\nAll changes are additive until the world is over the limit\nThen documents get consolidated\nThings are never really forgotten.\nJust less remembered\n",
+    "negative_tags": "Constraints (current)  lullaby_bpm: 78  epic_bpm: 84  stutter_on: anchor,tax,η,μ,fork  vocal_style: whisper_lead,jp_call_response,jp_harmony_last_word  proof_rule: constraints_gate + two_echoes + golden_registry  sigil: #ημ  cycle_model: P→R→N→Π→A→(feedback)→P",
+    "prompt": "Less-Remembered Lullaby — #ημ (78 BPM)\n(whispered lead; JP call-and-response; soft sub-bass; tape warble; minimal piano)\n\n(whisper)\nHush… it’s time to pay the fork tax.\n息をして…（して…）\nHold the an— an— an-chor…\n\n(JP call) ねむれ、ねむれ\n(EN response) the an— an— an-chor… holds.\n(JP call) しずかに、しずかに\n(EN response) the ta— ta— tax… due.\n\n(whisper)\nAdd it… add it… don’t erase—\n枝は折れても、消えない（きえない）\nFold the page… keep the trace—\n忘れない、ただ…薄れる（うすれる）\n\n(JP call) こぼれた名前（なまえ）\n(EN response) goes down— not gone.\n(JP call) 証（あかし）を抱いて\n(EN response) I sleep inside proof… (証)\n\nCreated with the assistance of an AI.",
+    "edited_clip_id": "a59b4a11-b4dc-4aea-b542-4f80bb8b5aa4",
+    "type": "gen",
+    "duration": 84.52,
+    "refund_credits": false,
+    "stream": true,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 1,
+      "weirdness_constraint": 0.76
+    },
+    "cover_clip_id": "a59b4a11-b4dc-4aea-b542-4f80bb8b5aa4",
+    "task": "cover",
+    "can_remix": true,
+    "is_remix": true,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "Cover",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

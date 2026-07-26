@@ -1,0 +1,39 @@
+{
+  "id": "019a1f8d-7e1e-4c2b-8552-92b713807a44",
+  "title": "fork_tax_hymn_part53_84bpm",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/019a1f8d-7e1e-4c2b-8552-92b713807a44.mp3",
+  "image_url": "https://cdn2.suno.ai/image_019a1f8d-7e1e-4c2b-8552-92b713807a44.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Experimental dark ambient soundscape characterized by a heavy, distorted low-frequency drone and industrial textures. The piece features a continuous, oscillating bass synth with a gritty, overdriven quality that creates a sense of tension and unease. Layered over the foundation are metallic, resonant echoes and high-frequency digital artifacts that shimmer and fade. The tempo is slow and atmospheric, lacking a traditional rhythmic pulse or percussion. The harmonic structure is static, focusing on a single deep root note with evolving overtones. Production is dense with heavy reverb and spatial processing, creating a vast, cavernous sonic environment. The dynamic range is narrow, maintaining a consistent level of intensity throughout the duration.",
+    "prompt": "[Instrumental]",
+    "type": "upload",
+    "duration": 52.03501133786848,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "Upload",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

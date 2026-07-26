@@ -1,0 +1,52 @@
+{
+  "id": "8f4a6ec4-8245-4869-b884-88b21929910f",
+  "title": "Π",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/8f4a6ec4-8245-4869-b884-88b21929910f.mp3",
+  "image_url": "https://cdn2.suno.ai/image_8f4a6ec4-8245-4869-b884-88b21929910f.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "",
+    "prompt": "Π\n\nProjection.\n\nPattern given form.\n\nIf η is the field\nand μ is the step,\n\nΠ is the shape that remains after repeated steps in a field.\n\n---\n\nIn the Gate:\n\nη tilts the lattice.\nμ moves through it.\nΠ is the path worn into the stone.\n\nNot a single action.\n\nA trajectory.\n\nWhen Duct always stands left — that’s μ.\nWhen “left” becomes moral geometry — that’s Π.\n\nWhen variance is chosen once — μ.\nWhen resilience becomes architecture — Π.\n\nΠ is narrative crystallized from behavior.\n\n---\n\nSystems love Π.\n\nPatterns are compressible.\nPatterns are modelable.\nPatterns are predictable.\n\nThat’s why Axiom hunts Π.\n\nNot μ.\nμ is noisy.\nΠ is leverage.\n\nIf they can map your projection,\nthey can precompute your future.\n\n---\n\nBut Π can branch.\n\nIf μ varies under η,\nthen Π is not a line.\n\nIt is a tree.\n\nNot a single trajectory.\nA probability cloud.\n\nAnd that\n\nis what makes domination expensive.\n\n---\n\nTruth does not eliminate Π.\n\nTruth accumulates it.\n\nEvery breath (息),\nevery field (η),\nevery action (μ),\n\nprojects something.\n\nThe question is not\nwhether Π forms.\n\nThe question is:\n\nIs it a spear,\n\nor a forest?\n\n",
+    "type": "gen",
+    "duration": 146.68,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

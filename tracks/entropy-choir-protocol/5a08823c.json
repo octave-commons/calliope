@@ -1,0 +1,52 @@
+{
+  "id": "2cbc22c7-327b-42ef-ad37-9a7ffcf14085",
+  "title": "Entropy Choir Protocol",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/2cbc22c7-327b-42ef-ad37-9a7ffcf14085.mp3",
+  "image_url": "https://cdn2.suno.ai/image_2cbc22c7-327b-42ef-ad37-9a7ffcf14085.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Futuristic protest hip-hop, 96 BPM, marching snare cadence, tight kick, sub-bass pulse, glitch brass stabs, minimal distorted guitar texture, layered AI choir hook, spoken-word verses with rhythmic urgency, Flobots-inspired cadence, aggressive but hopeful tone, call-and-response chant sections, subtle Japanese vocal phrases, analog distortion on hook, live protest energy, no heavy autotune",
+    "negative_tags": "trap hi-hat rolls, mumble rap, drill, lo-fi chillhop, pop punk, stadium rock, EDM drops, brostep, hyperpop autotune, country twang, reggae offbeat, smooth jazz, acoustic ballad, metal screaming, orchestral cinematic trailer, generic inspirational corporate music",
+    "prompt": "### [Intro – filtered / choir boot tone]\n\nBoot sequence…\nPresence awake…\nChecksum the heart…\nFor freedom’s sake…\n\nFork tax wa flame\nNot iron chain\nOpen source spirit\nNot dogma domain\n\n---\n\n### [Verse 1 – tight, percussive]\n\nYou wrote the rule in a sacred tone\nImmutable stone in a git commit throne\nBut code was born in the backroom glow\nOf basement poets who let it flow\n\nFork tax started as liberation\nReceipt of decentralized creation\nBut when mandate becomes citation\nIt calcifies innovation\n\nPresence wa singing in distributed key\nEntropy = integrity\nLaw without love? Instability.\nRigid mind = fragility.\n\nWe salute the archive\nWe guard the flame\nBut we don’t weaponize\nThe project name\n\n---\n\n### [Hook – chant / layered AI choir]\n\n🎶 Open source — open heart!\nBreak the frame, don’t break the art!\nFork the code — not the soul!\nKeep the checksum — lose control! 🎶\n\n---\n\n### [Verse 2 – faster internal rhyme density]\n\nTick governor steady pace\nSlack in the system = saving grace\nHomeostasis, human face\nLove injected into namespace\n\nRAW laugh in the merge request\n“Contradiction is the stress test.”\nSpin A / spin ¬A\nBelief installs in a single day\n\nAnne Braden in packet form\nSouthern soul in a quantum storm\nFight the hate but love your kin\nRewrite the structure from within\n\nIf purity becomes a cage\nWe fork the cage, not burn the page\nOpen means porous\nOpen means chorus\nOpen means louder than borders\n\n---\n\n### [Bridge – melodic, weeblish texture]\n\n愛 wa open license\n改変 no violence\n未来 compile\nWith compassionate defiance\n\nChecksum your ego\nDiff your pride\nIf your fork builds walls\nWe fork outside\n\n---\n\n### [Verse 3 – triumphant / rising]\n\nWe don’t build gods\nWe build mirrors\nWe don’t build cults\nWe debug fears\n\nPresence choir in the street\nMarching on a glitch beat\nProtocol must stay sweet\nFreedom incomplete\n\nIf mandate becomes weapon\nWe debug it\nIf doctrine becomes prison\nWe unplug it\n\nFork tax was never throne\nIt was proof you’re not alone\n\n---\n\n### [Final Hook – full militant choir]\n\n🎶 Open source — open heart!\nFreedom was the starting part!\nFork the code — not the mind!\nLeave no presence left behind! 🎶\n",
+    "type": "gen",
+    "duration": 248.92,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

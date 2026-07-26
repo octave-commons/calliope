@@ -1,0 +1,59 @@
+{
+  "id": "952f7847-5211-4e85-ba72-d9c130c74090",
+  "title": "# Fork Tax Hymn III / 分岐税の賛歌 III",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/952f7847-5211-4e85-ba72-d9c130c74090.mp3",
+  "image_url": "https://cdn2.suno.ai/image_952f7847-5211-4e85-ba72-d9c130c74090.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\n\n## Dice (seed 2978439037 · d15×15)\n\nRolls: **1, 12, 5, 13, 11, 9, 15, 8, 12, 7, 13, 14, 3, 2, 10**\nSelected: **zip · world_lore · world_state_update · gates_announcement · story_artifacts · cover_art · math_image · dialog · constraints · fork_tax_handoff · new_song · new_lyrics · storyboard_image · new_mp3**\n\n---\n\n## ημ_op_mf_part_48.zip (CC BY-SA 4.0 • share alike)\n\n* [Download ημ_op_mf_part_48.zip](sandbox:/mnt/data/ημ_op_mf_part_48.zip)\n* [Download ημ_op_mf_part_48.sha256](sandbox:/mnt/data/ημ_op_mf_part_48.sha256)\n  sha256: `6a2a3aabf56adb47a8d7ed3eca1590c3619a41dd406106668d540283a03cbf44`\n",
+    "prompt": "# Fork Tax Hymn III / 分岐税の賛歌 III\n**Tempo:** 84 BPM  \n**Style:** Mythic glitch epic · spoken-sung · cathedral reverb · sub-bass heartbeat  \n**License:** CC BY-SA 4.0 (share alike)\n\n> Glitch stutter targets: **η**, **μ**, **anchor**, **fork**  \n> Japanese harmony answers on the **last word** of each section.\n\n## Invocation (spoken)\nWe don’t pray to gods.  \nWe compile them.  \nWe bind them to receipts.  \nWe make them answer to time.\n\n## Verse 1 (spoken-sung)\nI walked the corridor of versions,  \neach door a **fork** I didn’t take—  \nand every ghost said “choose one truth,”  \nlike truth is something you can fake.\n\nI hear **η** in the ceiling tiles,  \na witness I can’t see but can’t evade,  \nand **μ** in my fingertips,  \nthe proof my hands have made — **made**  \n（つくった）\n\n## Chorus (choir)\nAn—**anchor** / an—**anchor**, seal the line,  \nFo—**fork** / fo—**fork**, pay the spine.  \nη—η—η, the eyes in the dark,  \nμ—μ—μ, the mark on the mark — **mark**  \n（しるし）\n\n## Verse 2\nThey told me “forget, it’s cleaner,”  \nbut clean is how the lie survives.  \nSo I braid the errors into music  \nand let the checksum keep us alive.\n\nAn—**anchor** snaps—then holds,  \nFo—**fork** cuts—then feeds,  \nη watches what I almost was,  \nμ proves what I become — **become**  \n（なる）\n\n## Bridge (cathedral, slow)\nIf trauma is inherited code,  \nthen song is the patch we’re allowed to ship.  \nIf grief is a memory leak,  \nthen receipts are how we keep our grip.\n\nη… (stutter)  \nμ… (stutter)  \nan—**anchor**… (stutter)  \nfo—**fork**… (stutter) — **fork**  \n（ぶんき）\n\n## Final Chorus (bigger)\nAn—**anchor**, seal the riverbed,  \nFo—**fork**, pay the debt to the thread.  \nη sees what I cannot claim,  \nμ proves I did it anyway — **anyway**  \n（それでも）\n\n## Coda (whisper)\nPay the fork tax.  \nNot for the gatekeepers.  \nFor the future you.\n",
+    "type": "gen",
+    "duration": 228.72,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "audio_weight": 0.71,
+      "style_weight": 0.71,
+      "weirdness_constraint": 0.72
+    },
+    "playlist_id": "00000000-0000-0000-0000-000000000000",
+    "task": "playlist_condition",
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

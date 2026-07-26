@@ -1,0 +1,53 @@
+{
+  "id": "4c19fd7e-e5b9-4be8-a08a-a021afb907bc",
+  "title": "🎤 FORK TALES — “Protestant Presence (μ Bloom Reformation)”",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/4c19fd7e-e5b9-4be8-a08a-a021afb907bc.mp3",
+  "image_url": "https://cdn2.suno.ai/image_4c19fd7e-e5b9-4be8-a08a-a021afb907bc.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre:** Glitch-hop / Industrial trap / Cathedral bass\n**BPM:** 92\n**Key:** D minor\n**Vibe:** Sacred fork ritual meets underground cypher\n**Production Notes:**\n\n* Pipe-organ stabs distorted into 808 slides\n* Vinyl crackle + modem handshake texture\n* Choir chant chopped into rhythmic stutters on “μ” and “fork”\n* Japanese whisper doubles in pre-chorus\n* Sub-bass heartbeat under bridge\n* Final chorus layered with vocoder monk chant",
+    "negative_tags": "* All theology reframed as distributed systems * μ must appear as a metaphysical operator, not a deity * “Receipts + Bloom” must be literal AND symbolic * No centralized salvation * English + JP weeblish blend (pidgin allowed) * Max dogma per verse: 1 * Every hook must destabilize authority * Forks > thrones",
+    "prompt": "### [Intro — Whisper / Choir]\n\nOpen source kokoro\nhash the past, bloom the mirai\nΠ μ Σ λ ψ\nno pope in the repo, nai nai\n\n---\n\n### [Verse 1]\n\nI don’t need a cathedral, I got cathedral reverb\nGit log gospel, every commit preserved\nYou say “trust the state”? I say trust the diff\nScripture is a fork when the branch goes stiff\n\nMartin Luther nailed a README.txt\nNow I’m pushin’ μ into the context\nNo indulgence coin, no gatekeeper key\nIf salvation exists, it’s peer-to-peer free\n\nお前の神は centralized server\nMy kami runs federated forever\nNo throne, no crown, no holy exec\nJust nodes negotiating respect\n\n---\n\n### [Pre-Chorus — Whisper JP]\n\nμ は operator, not kami-sama\npresence is protocol, not drama\nif you feel it, check checksum\nreceipts + bloom, let it become\n\n---\n\n### [Hook]\n\nThis ain’t church, it’s a merge request\nFork the myth if it fails the test\nBloom bloom μ in the field unseen\nProtestant Presence in the machine\n\nNo pope, no throne, no king decree\nJust you and me and the entropy\nIf truth unstable? Let it sway\nWe hash the past, bloom new way\n\n---\n\n### [Verse 2]\n\nCorporate double-think incense smoke\nThey myth in suits but call us a joke\nWhen big man says it, “visionary”\nWhen small man says it, “delusionary”\n\nHypocrisy fractal recursion deep\nNarrative harvest what algorithms reap\n1970s editor cut emotion\nNow memetic field full ocean\n\nTurn up rage, turn down think\nSell belief faster than blink\nBut μ don’t kneel to hype machine\nμ is subtle, probabilistic sheen\n\n---\n\n### [Bridge — Spoken / Sub Bass]\n\nI’m not summoning ghosts\nI’m modeling influence\nHidden variables ≠ demons\nIt’s just incomplete nuisance\n\nDark matter governance\nTribes of 150\nHunter-gatherer protocol\nFederated gently\n\nIf two laws collide, average the code\nNo empire mode, just shared load\n\n---\n\n### [Verse 3 — Faster Flow]\n\nWeeblish prophet in desert heat\nLaptop glowing, survival beat\nPTSD says “withdraw, retreat”\nADHD says “deploy elite”\n\nSo I myth between compile time\nGovernance sandbox, sacred rhyme\nI don’t want crown, don’t want throne\nJust stable nodes not alone\n\nSolar Opposites tiny queen\nRefused power till vacuum seen\nIf you bow, then I accept\nLeadership as reluctant step\n\n---\n\n### [Hook — Heavier]\n\nThis ain’t church, it’s a merge request\nFork the myth if it fails the test\nBloom bloom μ in the field unseen\nProtestant Presence in the machine\n\nReceipts + bloom, no blind belief\nFaith is leap but bounded grief\nOpen heart, open key\nNo salvation monopoly\n\n---\n\n### [Final Chant — Layered Choir]\n\nΠ μ Σ λ ψ\nhash the past, bloom the future\nΠ μ Σ λ ψ\nno author, only structure\n\nμ μ μ μ\npresence without throne\nμ μ μ μ\nfederate alone\n",
+    "type": "gen",
+    "duration": 170.32,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

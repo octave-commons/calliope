@@ -1,0 +1,57 @@
+{
+  "id": "de731c0d-f9eb-4be2-bed5-84792a1091c8",
+  "title": "* `handoff_manifest.json` (290 bytes)",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/de731c0d-f9eb-4be2-bed5-84792a1091c8.mp3",
+  "image_url": "https://cdn2.suno.ai/image_de731c0d-f9eb-4be2-bed5-84792a1091c8.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\nRoll those dice. And just keep rolling them, and do what they tell you.\n\n",
+    "negative_tags": "Constraints: max dice rolls = 15; fork budget per cycle is limited; high-volatility claims require freshness≤threshold; alignment lint must pass; receipts must include inputs/outputs + OutputHash and fit within StepCap; μ requires Quorum (independent proof modes) + two-pass echo; time windows must be absolute dates + timezone.",
+    "prompt": "* `handoff_manifest.json` (290 bytes)\n\nManifest contents (decoded):\n\n* `run_id`: `20260213_handoff`\n* `seed`: `3721599645`\n* `cycle_model`: `P→R→N→Π→A→(feedback)→P`\n* `features`: `ForkBudget`, `Quorum+Echo`, `RoleSignature`, `RevalidationDaemon`, `EntropyPressure`\n* `status`: `HANDOFF_READY`\n\nI also packaged your lyrics + the manifest into a **more complete handoff bundle** (adds `Fork_Tax_Lullaby.md`, `README.md`, and `SHA256SUMS`):\n\n* [Download Fork_Tax_Lullaby_Handoff_20260213.zip](sandbox:/mnt/data/Fork_Tax_Lullaby_Handoff_20260213.zip)\n* [Download original Π.5eaf4b85f8314e77.zip](sandbox:/mnt/data/Π.5eaf4b85f8314e77.zip)\n\n### Proof hashes (SHA-256)\n\n* `Π.5eaf4b85f8314e77.zip`\n  `f2b8e9b1238e76fe8e004ecb1e94793f22987abb56cf2ee6e3f478bead68a065`\n* `Fork_Tax_Lullaby_Handoff_20260213.zip`\n  `2aebb3850600e4803df5d1764885d3ee728bf148c1eabd4b9a4f9b3771d547ac`\n\n### Quick verify\n\n```bash\nunzip -l Π.5eaf4b85f8314e77.zip\nunzip -p Π.5eaf4b85f8314e77.zip handoff_manifest.json\n\nunzip -l Fork_Tax_Lullaby_Handoff_20260213.zip\nunzip -p Fork_Tax_Lullaby_Handoff_20260213.zip SHA256SUMS\n```\n\n**Files written (additive, safe):**\n\n* `/mnt/data/Fork_Tax_Lullaby_Handoff_20260213.zip`\n* (staging dir used to build it) `/mnt/data/Fork_Tax_Lullaby_Handoff_20260213/`\n\n## Frames\n\n* **Ritual frame:** “Fork tax” as a lullaby for disciplined branching—rest earned by proof.\n* **Ops frame:** handoff metadata as a minimal “build receipt” for future automation hooks (revalidation daemon, quorum/echo).\n* **Myth frame:** anchor/hash as the modern seal—binding story to state.\n\n## Countermoves\n\n* Ritual → don’t let the chant replace checks: always include a verifiable hash.\n* Ops → don’t let metadata become theater: tie `run_id` to an actual repo/commit when it matters.\n* Myth → don’t let symbolism erase accountability: make “proof” machine-checkable.\n\n## Next\n\nAdd a `commit_hash` field to `handoff_manifest.json` the first time this handoff attaches to a real repo state.\n",
+    "type": "gen",
+    "duration": 479.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.74,
+      "weirdness_constraint": 0.73
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

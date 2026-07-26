@@ -1,0 +1,56 @@
+{
+  "id": "1c542acf-a06f-4466-91ae-3a6e16860480",
+  "title": "Aquila Regina / 鷹の女王",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/1c542acf-a06f-4466-91ae-3a6e16860480.mp3",
+  "image_url": "https://cdn2.suno.ai/image_1c542acf-a06f-4466-91ae-3a6e16860480.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Fast baroque-pop opera × gothic cabaret × razor soprano assault. 124–128 BPM driving 4/4 (urgent march feel). Rapid harpsichord ostinatos, staccato strings, pipe-organ hits, timpani rolls, sharp snare accents, low male chant undercurrent. Occasional glitch fractures in transitions.\n\n**Vocal Direction:** Queen-of-the-Night–inspired soprano. Dagger-bright high notes, dramatic leaps, crisp consonants (k/t/s as percussive edges). Aristocratic, commanding, predatory. Micro-pauses between lines like a fencer resetting stance.\n\n**Mood:** Regal menace. Seductive dominance. Ceremony as threat.\n\n**Structure:** Orchestral Strike → Verse 1 (tight articulation) → Pre-Chorus (ascending strings) → Chorus (high leap + full orchestra) → Verse 2 (faster diction bursts) → Bridge (operatic high run) → Final Chorus (maximum blaze) → Sharp stinger.\n",
+    "prompt": "## OVERTURE — Fanfares & Knives\n\n*(organ stab; rapid harpsichord run; snare snap)*\n\nBow.\n\nThe velvet is not mercy—\nIt is a throne.\n\n跪け。\n\n## VERSE 1 — Blade in Silk\n\nCrimson lacquer, porcelain grin,\nIvory choir humming sin.\n\nEach syllable a silver dart,\nCrown of frost around my heart.\n\nDo you tremble? Good.\n\nI prefer my audience\naware of blood.\n\n## PRE-CHORUS — Ascension\n\n*(strings climbing chromatically; timpani rolling)*\n\nTick—tock—\nhearts align.\n\nYour breath is late.\nMine is divine.\n\n来なさい。\n\n## CHORUS — Aquila Regina\n\n*(full orchestral surge; soprano high leap)*\n\nAquila Regina—\nspread the wing!\n\nCut the sky\nwith the note I sing.\n\nGlass cathedral,\ncrack and gleam—\n\nKneel to the blade\nof the velvet dream.\n\n鷹の女王\n空を裂く。\n\nAquila Regina—\nbright and cold!\n\nGold is fragile.\nIce is bold.\n\n## VERSE 2 — Commerce of Salvation\n\nBuy your grace in jeweled despair,\nPerfumed chains for those who care.\n\nHappiness in ribboned lies,\nTithe your doubt and close your eyes.\n\nSnap—snap—\nconsonants fall.\n\nA kiss like venom\nat the ball.\n\n## BRIDGE — Dagger Aria\n\n*(music strips to harpsichord + low chant; soprano rapid run upward)*\n\nHa—ha—hallelujah—\nHeaven bends to will!\n\nReine des éclairs—\nShatter the still!\n\n*(operatic leap; sustained high note over rising orchestra)*\n\nI ascend—\nI rend—\nI reign—\nI end—\n\n## FINAL CHORUS — Crown of Frost\n\n*(orchestra blazing; snare driving; choir layered)*\n\nAquila Regina—\nhear the cry!\n\nVelvet burns\nbut ice won’t die.\n\nBow to the tempest\nin satin skin—\n\nI am the spectacle.\nYou step in.\n\n鷹の女王\n高く舞う。\n\nAquila Regina—\nfear the tone!\n\nThe aria cuts.\nThe throne is stone.\n\n## STINGER\n\n*(orchestra cuts; single sharp chord)*\n\nApplause.\n\n息。\n",
+    "type": "gen",
+    "duration": 187.8,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.8,
+      "weirdness_constraint": 0.65
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

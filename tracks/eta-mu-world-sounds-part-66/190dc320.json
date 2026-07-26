@@ -1,0 +1,39 @@
+{
+  "id": "1d687b8b-8e5f-45e9-8462-a4370e021f99",
+  "title": "eta_mu_world_sounds.part_66",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/1d687b8b-8e5f-45e9-8462-a4370e021f99.mp3",
+  "image_url": "https://cdn2.suno.ai/image_1d687b8b-8e5f-45e9-8462-a4370e021f99.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Upbeat and energetic synth-pop track characterized by a driving four-on-the-floor kick drum and a prominent, syncopated bassline. The arrangement features bright, shimmering polyphonic synthesizers and rhythmic electronic percussion. The tempo is approximately 124 BPM in a major key. The male vocals are processed with light compression and subtle reverb, delivered with a rhythmic, melodic flow. The structure follows a standard verse-chorus-bridge format with a focus on a catchy, repetitive hook. Production is clean and polished, utilizing sidechain compression on the pads to create a pumping effect that aligns with the kick drum. High-frequency synth leads provide melodic counterpoints during the transitions and choruses.",
+    "prompt": "[Verse 1]\nI've been waiting for the moment to arrive\nFeeling like I'm finally coming alive\nThe lights are flashing and the music is loud\nI'm lost in the rhythm and the energy of the crowd\n\n[Chorus]\nOh oh oh\nWe're dancing through the night\nOh oh oh\nEverything's gonna be alright\nJust let go and feel the beat\nMoving your body and moving your feet\n\n[Verse 2]\nNo more worries and no more care\nJust the magic that's in the air\nWe're soaring high like a bird in the sky\nNo limits now we're ready to fly\n\n[Chorus]\nOh oh oh\nWe're dancing through the night\nOh oh oh\nEverything's gonna be alright\nJust let go and feel the beat\nMoving your body and moving your feet",
+    "type": "upload",
+    "duration": 22,
+    "has_vocal": true,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "Upload",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

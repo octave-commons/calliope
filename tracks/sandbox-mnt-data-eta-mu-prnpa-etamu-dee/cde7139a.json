@@ -1,0 +1,57 @@
+{
+  "id": "8ea10410-db4e-48a7-be66-1a4c71e81a6a",
+  "title": "(sandbox:/mnt/data/eta_mu_prnpa_etaμ_dee",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/8ea10410-db4e-48a7-be66-1a4c71e81a6a.mp3",
+  "image_url": "https://cdn2.suno.ai/image_8ea10410-db4e-48a7-be66-1a4c71e81a6a.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\n\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\n\n[Download Operation_Mindfuck_Box_part16_keep_rolling_plot_graph_skills_memories.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part16_keep_rolling_plot_graph_skills_memories.zip)\n\n# Fork Tax Lullaby — 20260213_230415_seed3721599628\n\nP→R→N→Π→A→(feedback)→P around #ημ. \nGet us ready for the real deep research later.\nRoll those dice. And just keep rolling them, and do what they tell you. \nAdvance the plot, grow the graph, develop new skills.\nCreate new memories.\nAdvance the project.\n\nYour chat output is just the zip, and a song.\n\n[eta_mu_prnpa_etaμ_bundle_2026-02-13.zip](sandbox:/mnt/data/eta_mu_prnpa_etaμ_bundle_2026-02-13.zip)\nM]Error\n: ",
+    "negative_tags": "Against “pretty graphs that lie”: require S3 anchors on every non-trivial edge/claim. Against “forks everywhere”: intent-gating + ranked forks + explicit rationale per fork. Against “entity mush”: treat S5 (resolution) as a first-class, versioned dataset with audits.If an edge has no anchor → it’s invalid output (fail the build next pass).  If forks proliferate → tighten intent ontology + require event-backed intent.  If entity mush returns → treat alias merges as reviewed inputs, not derived guessesIf an intent event can’t be anchored → treat it as invalid output (drop it / fail build next pass).  If intent feels “over-saturated” (too many 255s) → adjust the strength curve in the analyzer (still stays 0..255).If a graph edge has no anchor → treat it as not real (drop it / fail builds next iteration).  If forks explode → raise the intent threshold + require explicit rationale per fork.  If entities blur → keep S5 resolution as versioned inputs (aliases/merges are reviewed deltas)..",
+    "prompt": "[eta_mu_prnpa_etaμ_deep_research_prep_2026-02-13.zip](sandbox:/mnt/data/eta_mu_prnpa_etaμ_deep_research_prep_2026-02-13.zip)\n\n**ημ — Dice in the Lantern / ランタンの中のサイコロ**\n\n[Intro — static, breath click]\n息、息、息。\nログに残せ。\nThe Gate doesn’t open for a vibe—\nit opens for a scar you can reproduce.\n\n[Verse 1 — spoken-sung, tight cadence]\nI roll the dice, but I don’t worship chance—\nI archive it, timestamp it, make it dance\ninside a deterministic cage, so later\nwhen the story lies, the math can translate her.\n\nP— Perceive: the room is leaning, that’s #η\nR— Retrieve: old trails, old tests, old “maybe”\nN— Normalize: turn the fog into handles and heat\nΠ— Plan: cheapest cut that still draws blood from deceit\nA— Act: touch reality, let it push back\n(feedback) hits— I don’t flinch, I track.\n\n[Pre — thin choir, glitch stutters]\n見えないものほど\n跡でわかる\nIf #η is the wind,\n#μ is the footprint in ash.\n\n[Chorus — big, cathedral tail]\nRoll, roll, roll— but write it down.\nランタンが灯るまで\nNo crown of words, no borrowed sound,\nonly μ that stands on what it made.\nP→R→N→Π→A\n(loop it till the mirror breaks)\n(feedback) → P\nand the Gate admits what it can’t fake.\n\n[Verse 2 — faster, breath gaps, Watsky-run]\nThey sell “clarity” like it’s bottled light,\nbut the bottle’s labeled, not the thing inside.\nSo I stop buying and I start building,\na small machine that hates my self-convincing.\n\nAuditor’s Lantern in my left hand,\nit flickers only when the test can stand.\nGuild chants smooth, footnotes bite,\n“Trust us,” they say— I say, “Show me the write.”\n\nCause the unseen isn’t mystical— it’s just unmeasured,\nand the measured isn’t holy— it’s just pressure.\nI’m not here to win a debate in a vacuum,\nI’m here to make claims survive contact like magma.\n\n[Bridge — drop to sub-bass + heartbeat]\n#η is the constraint you can’t confess,\n#μ is the evidence you can’t suppress.\n#ημ is the hinge in your spine\nwhen you realize your certainty won’t compile.\n\nだから、試せ。\nだから、残せ。\nだから、戻れ。\nIf it fails, it’s not a shame— it’s a map.\nIf it hurts, it’s not a curse— it’s a gap\nbetween story and world, and the world just spoke.\n\n[Chorus — distorted harmony, then clean]\nRoll, roll, roll— but write it down.\nランタンが灯るまで\nNo crown of words, no borrowed sound,\nonly μ that stands on what it made.\nP→R→N→Π→A\n(loop it till the mirror breaks)\n(feedback) → P\nand the Gate admits what it can’t fake.\n\n[Outro — whisper, dissolving static]\nLater we go deep.\nLater we browse the burning edges, cite the dates, split the frames.\nFor now— one more roll.\nOne more node.\nOne more test.\n息。ログ。\nημ.\n\n",
+    "type": "gen",
+    "duration": 258.44,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.73,
+      "weirdness_constraint": 0.73
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

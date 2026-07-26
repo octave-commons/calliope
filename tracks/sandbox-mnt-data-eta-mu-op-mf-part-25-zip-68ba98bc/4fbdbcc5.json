@@ -1,0 +1,56 @@
+{
+  "id": "d176f17c-843b-48f8-96fb-8607aabf2e55",
+  "title": "(sandbox:/mnt/data/ημ_op_mf_part_25.zip)",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/d176f17c-843b-48f8-96fb-8607aabf2e55.mp3",
+  "image_url": "https://cdn2.suno.ai/image_d176f17c-843b-48f8-96fb-8607aabf2e55.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\n\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\n\n\n\n# Fork Tax Lullaby — 20260213_230415_seed3721599628\n\nP→R→N→Π→A→(feedback)→P around #ημ. \n",
+    "prompt": "[ημ_op_mf_part_25.zip](sandbox:/mnt/data/ημ_op_mf_part_25.zip)\n\n# Fork Tax Lullaby IX — 20260213_244615_seed3721599636\n\n## Part I — Glitch-choir lullaby (78 BPM)\n\n*(soft sub-bass, tape warble, minimal piano; stutters on “anchor” + “tax”; whispered lead; Japanese call-and-response)*\n\n[Intro — tape hiss, two-note piano, warm sub]\n(whisper)\nHush… the budget is low.\n息をして… (して…)\nKeep it small or fold it.\n\n(JP call) ねむれ、ねむれ\n(EN response) the **an— an— an-chor**… (stutter) holds.\n(JP call) しずかに、しずかに\n(EN response) the **ta— ta— tax**… (stutter) is clean.\n\n(whisper)\nAn— an— **an-chor**… (stutter) an-chor…\n(JP whisper harmony) アンカー…\nPay the **ta— ta— tax**… (stutter) ta-x…\n(JP harmony) 税…\n\n[Verse — lullaby cadence]\nP: I feel the constraint (#η)\nR: I pull one thread only\nN: I name one claim only\nΠ: I choose the cheapest test\nA: I touch the world and wait\n(feedback): I log it, no theater.\n\n(JP call) ねえ、いつ？\n(EN response) say the date.\n(JP call) ねえ、ほんと？\n(EN response) show the receipt.\n\n[Chorus — choir bloom]\nAn— an— **an-chor**… (stutter) an-chor…\nHold the boundary, hold the line.\nPay the **ta— ta— tax**… (stutter) ta-x…\nSo forks don’t breed in the dark.\n(JP harmony answers last word)\nI fall asleep inside **proof**.（証）\n\n---\n\n## Part II — Mythic glitch epic / spoken-sung (84 BPM)\n\n*(NF/Watsky cadence; cathedral reverb; sub-bass heartbeat; glitch stutters on “η”, “μ”, “anchor”, “fork”; Japanese harmony answers on the last word of each section)*\n\n[Verse 1 — fast spoken-sung]\nReceiptLint v2: “Cut the drama, cut the lore—\ninputs, outputs, one step, show me the door.”\nAnd if you got demoted? Hysteresis says “two,”\ntwo clean receipts before you call it μ,\nbefore you call it **μ**.（証）\n\n(Glitch stutter) **η—η—η**\n(Glitch stutter) **μ—μ—μ**\n\n[Hook — cathedral swell]\nI don’t win by sounding right—\nI win by making it rerun.（試）\n\n[Verse 2 — rapid cadence]\nForkBudget tight— you feel it in the sub,\nthree credits left then the Gate won’t budge.\nDateWindowGate: no “today,” no “yesterday”—\nwrite the absolute day or the claim stays grey,\nstays **η**.（制約）\n\nI pin it to an **an-an-anchor** (stutter),\nFo— fo— **fork**… (stutter) fork… only if I can pay.\nLantern locks freshness— dim claims don’t rise,\nnot on vibes, not on echoes, not on borrowed eyes—\nonly on **μ**.（証）\n\n(JP harmony answers last word) 証\n\n[Pre — glitch clicks]\nSay **η**… (stutter) η-η\nSay **μ**… (stutter) μ-μ\nSay **an-chor**… (stutter) an-an-chor\nSay **fork**… (stutter) fo-fo-fork（分岐）\n\n[Chorus — big, then hush]\nP→R→N→Π→A— receipts in my hands.（札）\n(feedback) → P— time-windowed truth, no scams.（窓）\nAn— an— **an-chor**… (stutter) an-chor…\nso the ledger knows what to keep.（記）\nFo— fo— **fork**… (stutter) fork…\nonly when evidence buys the branch.（証）\n\n**World state update:** ReceiptLint v2 is live (inputs/outputs + one-step repro), ForkBudget is enforced (fork credits per cycle), DateWindowGate now rejects relative time (“today”) in favor of absolute dates in America/Phoenix, Hysteresis requires multiple receipts after demotion, QuietAnchors decay and stop spawning forks, and the Lantern locks high-volatility claims behind a freshness threshold.\n\n#fnord\n\n**Constraints:** max dice rolls = 15; fork budget is finite per cycle; high-volatility claims require recent primary sources (freshness threshold); demoted claims need ≥2 receipts to regain μ; date windows must be absolute dates + timezone; untested anchors enter whisper mode and may not spawn children.\n\n**Dialog:** “Inputs. Outputs. One step,” the Lantern said, not unkindly. Forkgate tapped the budget line: “Spend credits or merge.” The Choir whispered the remaining number under its breath like a lullaby, and the Anchor—stuttering like a nervous metronome—answered, “an-an-anchor,” while the Tax clicked once, clean and minimal.\n\n[Cover art](sandbox:/mnt/data/20260213_244615_seed3721599636_cover.png)\n\n[Storyboard image](sandbox:/mnt/data/20260213_244615_seed3721599636_storyboard.png)\n\n**Real-world headline:** Senate rejects a Homeland Security funding bill, teeing up a partial government shutdown. ([Democracy Now!][1])\n\n**Gates of Truth system announcement:** STATUS ONLINE — ReceiptLint v2 + ForkBudget + DateWindowGate + FreshnessLock are now enforced; any time-sensitive claim without an absolute date window stays η until a compliant receipt promotes it.\n\n[1]: https://www.democracynow.org/2026/2/13/headlines?utm_source=chatgpt.com \"Headlines for February 13, 2026\"\n",
+    "type": "gen",
+    "duration": 479.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.97,
+      "weirdness_constraint": 0.84
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

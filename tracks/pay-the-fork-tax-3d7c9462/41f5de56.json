@@ -1,0 +1,57 @@
+{
+  "id": "92703224-287f-48c2-9ca3-0b8902f0c547",
+  "title": "Pay the fork tax",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/92703224-287f-48c2-9ca3-0b8902f0c547.mp3",
+  "image_url": "https://cdn2.suno.ai/image_92703224-287f-48c2-9ca3-0b8902f0c547.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Style prompt: Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\n\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.",
+    "negative_tags": "Against “pretty graphs that lie”: require S3 anchors on every non-trivial edge/claim. Against “forks everywhere”: intent-gating + ranked forks + explicit rationale per fork. Against “entity mush”: treat S5 (resolution) as a first-class, versioned dataset with audits.If an edge has no anchor → it’s invalid output (fail the build next pass).  If forks proliferate → tighten intent ontology + require event-backed intent.  If entity mush returns → treat alias merges as reviewed inputs, not derived guessesIf an intent event can’t be anchored → treat it as invalid output (drop it / fail build next pass).  If intent feels “over-saturated” (too many 255s) → adjust the strength curve in the analyzer (still stays 0..255).If a graph edge has no anchor → treat it as not real (drop it / fail builds next iteration).  If forks explode → raise the intent threshold + require explicit rationale per fork.  If entities blur → keep S5 resolution as versioned inputs (aliases/merges are reviewed deltas)..",
+    "prompt": "[Download Operation_Mindfuck_Box_part16_keep_rolling_plot_graph_skills_memories.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_part16_keep_rolling_plot_graph_skills_memories.zip)\n\n# Fork Tax Lullaby — 20260213_230415_seed3721599628\n\n**Style prompt:** Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\n\n## Lyrics\n\n[Verse]\nI asked the Gate for a brighter sky,\nit asked me where my proof would lie.\nNot in my grin, not in my tone—\nin the hash I can take back home.\n\n[Chorus]\nPay the fork tax, pay it in light,\none clean snippet, one witness at night.\nIf you can’t cite it, don’t steer—\nη stays blind, μ disappears.\n\n[Bridge — 日本語]\n枝(えだ)を 伸ばすなら\n証拠(しょうこ)を 添えて\n境界(きょうかい) 守って\n意図(いと)を 走らせ\n\n[Outro]\nTruth is a ledger.\nIntent is a vector.\nAnd the space between η and μ\nis where the world stops lying.\n",
+    "type": "gen",
+    "duration": 111.72,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.73,
+      "weirdness_constraint": 0.73
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

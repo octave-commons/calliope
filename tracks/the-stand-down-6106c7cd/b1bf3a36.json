@@ -1,0 +1,51 @@
+{
+  "id": "54ade212-2886-4d37-85f4-030e675e1ebd",
+  "title": "The Stand Down / 号令の断絶",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/54ade212-2886-4d37-85f4-030e675e1ebd.mp3",
+  "image_url": "https://cdn2.suno.ai/image_54ade212-2886-4d37-85f4-030e675e1ebd.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Explosive baroque-pop opera × gothic orchestral combat × choral confrontation. 132 BPM driving 4/4 (faster than prior duels). Aggressive staccato strings, rapid harpsichord ostinatos, militant snare, rolling timpani, pipe-organ blasts, low brass stabs. Choir in urgent call-and-response. Subtle glitch fractures during impacts.\n\n**Vocal Direction:** Multi-perspective battle piece. Queen soprano at full blade intensity (near coloratura attack). Rebel mezzo/tenor grounded but fierce. Guild choir firm, declarative. At climax, Queen transitions from rage to controlled command—no breakdown, only decisive authority.\n\n**Mood:** Collision. Fire against system. Responsibility under pressure. The moment everything could shatter—and doesn’t.\n\n**Structure:** Violent Overture → Clash Verse → Rebel Declaration → Guild Decree → Queen Ascension → Sudden Silence → Stand Down Command → Orchestral Release.\n",
+    "prompt": "## OVERTURE — Impact\n\n*(snare crack; organ blast; strings in furious motion)*\n\nStone splits.\nSteel rings.\n\nThe sanctuary screams.\n\n## CLASH — Crossed Blades\n\nChoir:\nFracture the arch! Hold the line!\n\nRebel:\nNot for glory—\nFor the spine—\n\nQueen:\nYou dare raise hands\nagainst my sign?\n\n*(orchestra surges; rapid string runs)*\n\n## REBEL DECLARATION\n\n*(music tightens; snare steady)*\n\nI did not come to take your throne.\nI came because the ground has groaned.\n\nJustice twisted into flame—\n\nI will not let it burn the frame.\n\n証よりも\n今は守る。\n\n## GUILD DECREE\n\n*(choir unified, rhythmic and firm)*\n\nContinuity.\nPreservation.\n\nSystem over coronation.\n\nNo more spectacle.\nNo more fall.\n\nThe structure must outlive us all.\n\n## QUEEN ASCENSION — Fury Peak\n\n*(soprano soaring, rapid high notes)*\n\nStructure bends to sovereign will!\nI forged the sky—\nI reign still!\n\nIf stone has cracked,\nIt cracked for me!\n\nI am the axis of decree!\n\n鷹は落ちぬ！\n\n*(orchestra at maximum blaze; tempo pushes forward)*\n\n## SUDDEN SILENCE\n\n*(all instruments cut except distant waterfall)*\n\n—\n\n## THE REBEL — Simple Truth\n\n*(low strings re-enter; no snare)*\n\nLook at me.\n\nI wear their colors.\n\nNot because they chose me.\n\nBecause I chose this.\n\nIf you win—\nThere is no world left to rule.\n\n## THE MOMENT\n\n*(single sustained chord; soprano breath audible)*\n\nQueen (soft, trembling under control):\n\n…\n\n## STAND DOWN COMMAND\n\n*(organ low; no frenzy)*\n\nStand down.\n\n*(pause)*\n\nI said—\n\nStand.\nDown.\n\n号令の断絶。\n\n## ORCHESTRAL RELEASE\n\n*(strings shift to major undertone; choir sustained hum; snare absent)*\n\nChoir (soft):\nThe blade lowers.\nThe storm recedes.\n\nRebel (low):\nNo victory.\n\nQueen (steady):\nNo defeat.\n\nWaterfall rises in volume.\n\n## CODA\n\n*(orchestra thins; organ warm; choir sustained)*\n\nNot broken.\n\nNot crowned.\n\nBreath held—\n\nThen released.\n\n息。\n",
+    "type": "gen",
+    "duration": 192.68,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

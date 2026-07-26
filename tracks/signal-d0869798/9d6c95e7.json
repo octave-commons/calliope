@@ -1,0 +1,51 @@
+{
+  "id": "ecf6d476-b76a-4efe-accb-241c495fb417",
+  "title": "## Signal",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/ecf6d476-b76a-4efe-accb-241c495fb417.mp3",
+  "image_url": "https://cdn2.suno.ai/image_ecf6d476-b76a-4efe-accb-241c495fb417.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Π := **Synthesis → Plan → Program**\n\nFormally:\n\n* Inputs: (N) (normalized signals), constraints (C), goal (G)\n* Output: a *candidate policy/plan* (\\pi) (sequence of actions + decision rules)\n\n[\n\\Pi(N, C, G) \\to \\pi\n]\n\nWhere a plan/policy can be modeled as:\n\n[\n\\pi := \\langle \\text{Steps }(a_1,\\dots,a_k),\\ \\text{StopConditions},\\ \\text{Fallbacks},\\ \\text{SuccessMetrics}\\rangle\n]\n\nIn your loop:\n\n[\nP \\rightarrow R \\rightarrow N \\rightarrow \\Pi \\rightarrow A \\rightarrow (feedback) \\rightarrow P\n]\n\nΠ is the moment raw/cleaned understanding becomes *an executable intent* (what to do, in what order, under what guardrails).\n",
+    "prompt": "## Signal\n\nYep — **parts** is the right move. Here’s the **Operation Mindfuck Box v3** split into sane downloads. Unzip them into the same folder and they merge under `operation-mindfuck/`.\n\n### Download (required)\n\n1. **Core (index + schema + tools + books + non-image corpus)**\n   [Operation_Mindfuck_Box_v3_part00_core.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v3_part00_core.zip)\n\n2. **Images part 1**\n   [Operation_Mindfuck_Box_v3_part01_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v3_part01_images.zip)\n\n3. **Images part 2**\n   [Operation_Mindfuck_Box_v3_part02_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v3_part02_images.zip)\n\n4. **Images part 3**\n   [Operation_Mindfuck_Box_v3_part03_images.zip](sandbox:/mnt/data/Operation_Mindfuck_Box_v3_part03_images.zip)\n\n### Optional provenance (raw original archive)\n\nIf you want the original `images.zip` preserved at `operation-mindfuck/source_archives/images.zip`, download this and place it there:\n[images.zip](sandbox:/mnt/data/images.zip)\n\n### Included in v3 (new)\n\nYour uploaded PDFs are inside `operation-mindfuck/content/books/`:\n\n* `Principia_Discordia.pdf`\n* `Quantum_Psychology_PDF.pdf`\n* `Robert-Anton-Wilson-Prometheus-Rising.pdf`\n\n## Reassemble\n\nUnzip **part00_core** first, then unzip **part01–part03** into the same location.\n\n## Search it (Python)\n\nFrom inside the extracted `operation-mindfuck/` folder:\n\n```bash\npython tools/search.py \"ημ\" --limit 25\npython tools/search.py \"gates of truth\"\npython tools/search.py \"protocol\" --circuit \"Protocol/Law\"\n\npython tools/nearest.py --query \"space between η and μ\" --top 15\n```\n\n## What’s still missing for literal “entirety”\n\nAnything that only exists in-chat (canvases/transcripts) but isn’t exported as files yet. Checklist is in:\n`operation-mindfuck/meta/MISSING.md`\n\n## Next\n\nExport your chat/canvas history to **markdown or json**, drop it under `operation-mindfuck/content/exports/`, and I’ll re-run the **P→R→N→Π→A** loop and ship the next set of parts.\n",
+    "type": "gen",
+    "duration": 258.24,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

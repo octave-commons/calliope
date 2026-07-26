@@ -1,0 +1,57 @@
+{
+  "id": "173c2854-7175-47b1-9cd5-f74ead363908",
+  "title": "# Fork Tax Lullaby XI — 20260213_251215_",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/173c2854-7175-47b1-9cd5-f74ead363908.mp3",
+  "image_url": "https://cdn2.suno.ai/image_173c2854-7175-47b1-9cd5-f74ead363908.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\nRoll those dice. And just keep rolling them, and do what they tell you.\n\nYour chat output is any combination of of some reasonable bound (max dice rolls 15):\n- the zip is called ημ_op_mf_part_<n>.zip\n- a song\n- world state update\n- a #fnord tag\n- constraints\n- a paragraph of dialog\n- cover art for a song\n- a story board image\n- story artifacts\n- lore\n- A news headline from the real world outside of the game\n- A Gates of Truth system announcement\nStory artifacts: Quorum Card (promotion checklist) included in the zip.",
+    "negative_tags": "Constraints: max dice rolls = 15; fork budget per cycle is limited; high-volatility claims require freshness≤threshold; alignment lint must pass; receipts must include inputs/outputs + OutputHash and fit within StepCap; μ requires Quorum (independent proof modes) + two-pass echo; time windows must be absolute dates + timezone.",
+    "prompt": "# Fork Tax Lullaby XI — 20260213_251215_seed3721599638\n\n## Part I — Glitch-choir lullaby (78 BPM)\n\n*(soft sub-bass, tape warble, minimal piano; stutters on “anchor” + “tax”; whispered lead; Japanese call-and-response)*\n\n[Intro — tape hiss, two-note piano, warm sub]\n(whisper)\nHush… don’t trust the first pass.\n息をして… (して…)\nListen for the echo.\n\n(JP call) ねむれ、ねむれ\n(EN response) the **an— an— an-chor**… (stutter) holds.\n(JP call) しずかに、しずかに\n(EN response) the **ta— ta— tax**… (stutter) is small.\n\n(whisper)\nAn— an— **an-chor**… (stutter) an-chor…\n(JP whisper harmony) アンカー…\nPay the **ta— ta— tax**… (stutter) ta-x…\n(JP harmony) 税…\n\n[Chorus — choir bloom]\nAn— an— **an-chor**… (stutter) an-chor…\nHold the boundary, hold the line.\nPay the **ta— ta— tax**… (stutter) ta-x…\nSo forks don’t breed in the dark.\n(JP harmony answers last word)\nI fall asleep inside **proof**.（証）\n\n---\n\n## Part II — Mythic glitch epic / spoken-sung (84 BPM)\n\n*(NF/Watsky cadence; cathedral reverb; sub-bass heartbeat; glitch stutters on “η”, “μ”, “anchor”, “fork”; Japanese harmony answers on the last word of each section)*\n\n[Verse 1 — fast spoken-sung]\nAlignment lint first— no paraphrase drift, no “close enough” grace.\nFreshness next— rot-rate decides if you even get a place.\nIf either goes dim, you don’t get μ— you get **η** with a plan,\nyou get a boundary in ink, not a crown in your hand,\nin your **hand**.（手）\n\n(Glitch stutter) **η—η—η**\n(Glitch stutter) **μ—μ—μ**\n\n[Hook — cathedral swell]\nI don’t win by sounding right—\nI win by making it rerun.（試）\n\n[Verse 2 — rapid cadence]\nReceiptEcho now— two passes or it doesn’t count,\nOutputHash in the margin like a priest’s amount.\nRun it twice, same checksum, same breath, same trace—\nthat’s when the Lantern lifts its face,\nthat’s when the Choir finds its place.\n\nI pin it to an **an-an-anchor** (stutter),\nFo— fo— **fork**… (stutter) fork… only if I can pay.\nIf the hashes disagree, I demote and I fold—\nμ isn’t confidence, μ is repeatable gold,\nrepeatable **μ**.（証）\n\n(JP harmony answers last word) 証\n\n**World state update:** Forkgate now requires **ReceiptEcho** (two consecutive PASS runs) plus **OutputHash** for promotion; the Lantern runs **alignment lint** before it accepts citations; DateWindowGate can auto-fill windows but keeps them η until confirmed; QuietAnchors have a quarantine ring; ForkBudget remains in force and semitone debt persists until merge.\n\n#fnord\n\n**Constraints:** max dice rolls = 15; fork budget per cycle is limited; high-volatility claims must satisfy freshness≤threshold; alignment lint must pass; receipts require explicit inputs/outputs + OutputHash; step cap applies; μ requires two consecutive PASS echoes; time windows must be absolute dates + timezone.\n\n**Dialog:** “Run it again,” Forkgate said, tapping the ledger. The Lantern didn’t blink: “And don’t drift the quote.” The Choir waited in silence—then the second hash matched the first, and the Anchor stuttered, “an-an-anchor,” like a metronome finally locking to tempo.\n\n[Cover art](sandbox:/mnt/data/20260213_251215_seed3721599638_cover.png)\n\n[Storyboard image](sandbox:/mnt/data/20260213_251215_seed3721599638_storyboard.png)\n\n**Story artifacts:** Echo + OutputHash Tax Receipt template (included in the zip).\n\n**Lore:** The Echo Choir now refuses to sing μ on the first pass—it waits for the second identical breath.\n\n**Real-world headline:** Inflation measure falls to nearly five-year low as gas prices fall and housing costs cool. ([AP News][1])\n\n**Gates of Truth system announcement:** STATUS ONLINE — ReceiptEcho + OutputHash are now required for μ; alignment lint is enforced; auto-filled date windows remain η until confirmed; ForkBudget and merge repayment remain active.\n\n[1]: https://apnews.com/article/inflation-trump-economy-prices-d489cfa4b48e32232f136830333d1db0?utm_source=chatgpt.com \"Inflation measure falls to nearly five-year low as gas prices fall and housing costs cool\"\n",
+    "type": "gen",
+    "duration": 287.72,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.74,
+      "weirdness_constraint": 0.73
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

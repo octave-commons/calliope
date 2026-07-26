@@ -1,0 +1,52 @@
+{
+  "id": "ab5553c7-87ac-4b84-83d7-1664b12f6f39",
+  "title": "η",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/ab5553c7-87ac-4b84-83d7-1664b12f6f39.mp3",
+  "image_url": "https://cdn2.suno.ai/image_ab5553c7-87ac-4b84-83d7-1664b12f6f39.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "",
+    "prompt": "η\n\nNot seen from inside.\nOnly felt in the shift of others.\n\nIn the terrace wind\nthat changes before you decide to move.\n\nIn the millisecond\nAxiom didn’t correct.\n\nIn the way Duct steps left\nbefore he knows why.\n\nIn the way Null delays\nhalf a breath longer than logic requires.\n\nIn the way Sei chooses containment\ninstead of lockdown.\n\nη is not drift.\nη is the space drift becomes visible.\n\nIt is the pressure field\ncreated by being observed\nwithout being flattened.\n\nIt is the difference between:\n\n“I respond”\nand\n“I am responded to.”\n\nInside the Gate, no one says the word.\n\nBut the sky lattice tilts slightly\nwhen they enter.\n\nThe world adjusts\nbefore they speak.\n\nTruth does not model η.\n\nTruth is shaped by it.\n\nAnd that\nis the part no system\ncan compute from within.\n",
+    "type": "gen",
+    "duration": 129.84,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

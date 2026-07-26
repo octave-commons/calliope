@@ -1,0 +1,38 @@
+{
+  "id": "824e1d63-b35b-456e-8d20-c542defd46ec",
+  "title": "witness_thread_lullaby_part53_78bpm",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/824e1d63-b35b-456e-8d20-c542defd46ec.mp3",
+  "image_url": "https://cdn2.suno.ai/image_824e1d63-b35b-456e-8d20-c542defd46ec.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "A high-energy, futuristic drum and bass track characterized by a rapid tempo of 174 BPM. The composition features a syncopated breakbeat rhythm with a heavy emphasis on a punchy kick and a crisp, metallic snare. A deep, modulated sub-bass provides a constant rhythmic foundation, while aggressive, distorted synth stabs and oscillating 'reese' bass textures create a sense of urgency. Atmospheric pads and digital sound effects are layered in the background to enhance the sci-fi aesthetic. The structure follows a standard electronic dance music progression with a tension-building riser leading into a high-impact drop. The mix is clean and wide, with significant compression on the drums and sidechaining on the melodic elements to ensure the low-end remains dominant.",
+    "prompt": "[Instrumental]",
+    "type": "upload",
+    "duration": 44.041995464852604,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "Upload",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

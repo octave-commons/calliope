@@ -1,0 +1,55 @@
+{
+  "id": "034d6559-7d09-4542-8e0a-dfcd8792fd8b",
+  "title": "Sanctuary of the Falling Veil / 落水の聖域",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/034d6559-7d09-4542-8e0a-dfcd8792fd8b.mp3",
+  "image_url": "https://cdn2.suno.ai/image_034d6559-7d09-4542-8e0a-dfcd8792fd8b.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** High-drama baroque pop × gothic orchestral waltz × mythic cabaret intensity. 144 BPM driving 3/4 waltz pulse. Rapid harpsichord ostinatos, sweeping strings, cathedral organ swells, rolling timpani, choral Latin textures, bright operatic soprano lead. Subtle ambient water roar and crystalline chimes woven beneath the orchestra.\n\n**Mood:** Sublime awe with seductive melancholy. Vastness, reverence, theatrical tragedy wrapped in beauty. Grandeur without safety.\n\n**Structure:** Organ & Water Overture → Verse 1 → Pre-Chorus (ascending strings) → Grand Chorus → Verse 2 → Bridge (whispered echo + water ambience) → Final Chorus (full orchestral blaze) → Luminous Coda.\n",
+    "prompt": "## OVERTURE — The Mist Ascends\n\n*(pipe organ + distant waterfall roar)*\n\nBeneath the falling silver veil,\nthe cliffs confess what gods conceal.\n\n霧の向こうで\n時が揺れる。\n\n## VERSE 1 — Runed Stone\n\nHarpsichords flicker like scattered rain,\nstrings carve light through turquoise pain.\n\nAncient runes in moss and bone\nwhisper: you are not alone—\n\nand yet you are.\n\nSmall against the endless roar,\nyet tethered to the sacred core.\n\n## PRE-CHORUS — Tremor\n\n*(timpani rolling; soprano climbing)*\n\nHear the thunder in your chest—\nNature’s choir will grant no rest.\n\nLux in aqua,\nlux in fall—\n\nStep to the edge.\nRisk it all.\n\n## CHORUS — Sanctuary of the Falling Veil\n\n*(full orchestral surge; soprano peaks)*\n\nSanctuary of the falling veil—\nbow to the tide that cannot fail!\n\nTurquoise abyss in radiant bloom,\ncathedral carved in living doom.\n\n落水の聖域\n抱きしめて。\n\nSanctuary of the falling veil—\nlet the fragile heart grow pale.\n\nYou are dust,\nand you are flame—\n\nBoth are holy.\nBoth the same.\n\n## VERSE 2 — Suspended Bridges\n\nBridges tremble over churning grace,\nvines like fingers trace your face.\n\nCrystals pulse with distant ache,\nevery silence poised to break.\n\nYou linger there in trembling trance,\na waltz with depth, a fatal dance.\n\n証もなく\nただ感じる。\n\n## BRIDGE — Whisper in the Cavern\n\n*(music strips to harp + water echo)*\n\nBe still.\n\nLet the roar erase your name.\n\nBe small.\n\nLet eternity take blame.\n\nIn the mist where rainbows die,\nyou will not dissolve—\nyou will multiply.\n\n## FINAL CHORUS — Glorious Descent\n\n*(orchestra blazing; choir layered; water roar intensifies)*\n\nSanctuary of the falling veil—\nheaven cracked by liquid hail!\n\nCrash and shimmer,\nshatter and rise,\n\nFind your truth in drowned-out cries.\n\n落水の聖域\n燃える霧。\n\nSanctuary of the falling veil—\nbeyond the map, beyond the tale.\n\nIf you fall into the blue,\nthe vastness falls inside of you.\n\n## CODA — Mist & Breath\n\n*(organ fades; waterfall softens; soprano sustained note dissolves)*\n\nWater remembers.\nStone forgives.\n\n息。\n",
+    "type": "gen",
+    "duration": 219.92,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.8,
+      "weirdness_constraint": 0.65
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

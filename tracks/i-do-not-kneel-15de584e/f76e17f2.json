@@ -1,0 +1,52 @@
+{
+  "id": "b033b466-f113-4424-bdc2-b511c0383b6c",
+  "title": "I Do Not Kneel / 跪かな",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/b033b466-f113-4424-bdc2-b511c0383b6c.mp3",
+  "image_url": "https://cdn2.suno.ai/image_b033b466-f113-4424-bdc2-b511c0383b6c.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Fast baroque-pop opera × gothic cabaret duel energy. 125–128 BPM driving 4/4. Rapid harpsichord ostinatos, aggressive staccato strings, pipe-organ hits, sharp snare on 2 & 4, timpani surges. Subtle industrial bass undercurrent for weight.\n\n**Vocal Direction:** Powerful operatic soprano (or mezzo with edge). Crisp percussive consonants, sharp articulation, dramatic leaps. Defiant, controlled fury. Micro-pauses like a fencer resetting stance. Occasional low choir chant responding to the lead.\n\n**Mood:** Defiance under spectacle. Regal refusal. Standing upright in the face of theatrical dominance.\n\n**Structure:** Orchestral Strike → Verse 1 → Pre-Chorus (rising tension) → Chorus (high leap) → Verse 2 (faster diction bursts) → Bridge (aria confrontation) → Final Chorus (max intensity) → Stinger.\n",
+    "prompt": "## OVERTURE — Steel and Silence\n\n*(organ strike; harpsichord flurry; snare snap)*\n\nNo.\n\nThat is my first word.\n\n跪かない。\n\n## VERSE 1 — Eye to Eye\n\nYou crown yourself in lacquered frost,\nCall every fall a sacred cost.\n\nYou raise the velvet like a blade—\nI see the threads the throne was made.\n\nYour consonants like silver rain—\nImpressive.\n\nStill just rain.\n\n## PRE-CHORUS — Alignment\n\n*(strings climbing; timpani rumble)*\n\nTick—tock—\nI feel the beat.\n\nNot yours.\nMine.\n\nMy pulse does not retreat.\n\n来い。\n\n## CHORUS — I Do Not Kneel\n\n*(full orchestral surge; high vocal leap)*\n\nI do not kneel beneath your wing!\n\nYour aria cuts—\nI still sing.\n\nGlass cathedral,\nlet it break—\n\nMy spine is steel\nthat will not shake.\n\n跪かない\n風の中。\n\nI do not kneel before your crown!\n\nIf you rise high,\nI stand my ground.\n\n## VERSE 2 — Refusal in Silk\n\nSell me heaven wrapped in gold,\nDress up fear and call it bold.\n\nBuy my silence? Name your price.\n\nI prefer the edge of ice.\n\nSnap—snap—\nyour cadence falls.\n\nI answer back\nthrough shattered halls.\n\n## BRIDGE — Duel Aria\n\n*(harpsichord + low chant; rapid ascending run)*\n\nYou reign in spectacle and flame—\n\nI reign in choosing not your game.\n\nReine des éclairs?\nKeep the sky.\n\nI claim the ground\nwhere truths don’t lie.\n\n*(operatic sustained high note in counterpoint)*\n\nI rise—\nnot to rule—\nnot to end—\n\nBut to remain.\n\n## FINAL CHORUS — Upright\n\n*(orchestra blazing; snare driving; choir layered)*\n\nI do not kneel beneath your gaze!\n\nYour velvet burns—\nI walk through blaze.\n\nCrown of frost or crown of fire,\n\nNeither bends\nmy spine to choir.\n\n跪かない\n息のまま。\n\nI do not kneel—\nnot now, not then.\n\nYou are spectacle.\n\nI am when.\n\n## STINGER\n\n*(orchestra cuts sharply; single chord)*\n\nStand.\n\n息。\n",
+    "type": "gen",
+    "duration": 173.72,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

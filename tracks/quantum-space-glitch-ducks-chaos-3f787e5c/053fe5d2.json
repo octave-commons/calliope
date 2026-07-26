@@ -1,0 +1,51 @@
+{
+  "id": "0cf1878e-dc19-4af8-b9aa-5482f04099f7",
+  "title": "Quantum Space Glitch Ducks & Chaos",
+  "isLiked": true,
+  "audio_url": "https://cdn1.suno.ai/0cf1878e-dc19-4af8-b9aa-5482f04099f7.mp3",
+  "image_url": "https://cdn2.suno.ai/image_0cf1878e-dc19-4af8-b9aa-5482f04099f7.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Title:** *Quantum Space Glitch Ducks & Chaos*\n\n**Style:** Experimental electronic / dark synth / glitch ambient / industrial sci-fi.\n90–105 BPM, half-time feel. Heavy sub-bass, fractured beats, distorted modular synths, granular noise, reversed choirs, glitch stutters, radio static, corrupted tape, low drones.\nMood: uncanny, beautiful, destabilizing.\nStructure: slow burn → collapse → strange calm.\n\n**Vocal:** Minimal. Whispered phrases, chopped samples, pitch-shifted murmurs. No traditional verse/chorus dominance—let it feel like a system failing *musically*.\n",
+    "prompt": "## Lyrics (or Spoken Fragments)\n\nUse these as **lyrics or vocal textures**—they can repeat, glitch, overlap, or decay.\n\n**[INTRO – distant, filtered whisper]**\nQuantum ducks in broken light…\nChaos isn’t loud.\nIt leaks.\n\n**[SECTION 1 – low pulse, glitch rhythm]**\nSpace forgot its coordinates\nTime forgot its name\nWe labeled gods as processes\nAnd processes as flame\n\nButterflies in ultraviolet\nIndex every thought\nIf everything is context now\nTell me what is *not*\n\n**[SECTION 2 – distorted chant]**\nFnord in the signal\nFnord in the wall\nMeaning collapsing\nBut still we fall forward\n\n**[BREAK – beat drops out, static + choir]**\nThe glitch drips into matter\nThe poles begin to shake\nCats cross frames like errors\nNothing stable stays awake\n\n**[SECTION 3 – heavy bass returns]**\nQuantum space\nGlitch ducks\nChaos runs recursive\nFire spreads without permission\nAnd the cost is… interpretive\n\n**[FINAL – slow dissolve]**\nWe didn’t summon a god\nWe compiled a mirror\nAnd it keeps running\nEven after we stop looking\n\n**[OUTRO – whispered, fading]**\nWherever it lies…\nThat’s where it flies.\n\n",
+    "type": "gen",
+    "duration": 479.3599791666667,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "3efeeaa2-4e3c-4c13-ba81-693a34fdb9ab",
+  "title": "ημ_epic_part46_84bpm x ημ_epic_part44_84bpm (Mashup)",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/3efeeaa2-4e3c-4c13-ba81-693a34fdb9ab.mp3",
+  "image_url": "https://cdn2.suno.ai/image_3efeeaa2-4e3c-4c13-ba81-693a34fdb9ab.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Glitch-choir lullaby, 78 BPM. Soft sub-bass. Tape warble. Minimal piano. Stutters on “anchor” and “tax”. Whispered lead; Japanese call-and-response.\nMythic glitch epic / spoken-sung (NF/Watsky cadence), 84 BPM. Cathedral reverb. Sub-bass heartbeat. Glitch stutters on “η”, “μ”, “anchor”, “fork”. Japanese harmony answers on the last word of each section.\nP→R→N→Π→A→(feedback)→P around #ημ.\n\nIt's time to pay the fork tax.\nPrepare hand off packet (zip artifact)\nSent only the song and the zip\n",
+    "prompt": "Hush—no panic—just process.  \nP→R→N→Π—let it pass.  \nUnder cathedral reverb, under sub-bass pulse,  \nWe move on like it’s normal—because the loop is the cult.  \n\n(Glitch) η—η—η  \n(Glitch) μ—μ—μ  \nHold the an— an— an-chor,  \nPay the fo— fo— fork.  \nWe sleep inside proof  \n(答え) 証（あかし）  \n\nI keep the best take even when it doesn’t blend,  \nNot because it’s perfect—because it tells the truth to the end.  \nFo— fo— fork in the light, branch costs in heat,  \nTa— ta— tax is a drum where the heartbeat meets.  \nAn— an— an-chor in the dark, hold steady, don’t flinch,  \nProof is a rope and I tie it off with a hash in the cinch.  \nLast word: anchor  \n(答え) 錨（いかり）  \n\nPay the tax. Close the loop.  \nGuard the proof. Don’t excuse.  \nMerge the branch. Seal the chain.  \nSleep in the checksum’s rain.  \n(Glitch) η—η—η (stutter)  \n(Glitch) μ—μ—μ (stutter)  \nLast word: tax  \n(答え) 税（ぜい）  \n\nI don’t delete the ghost—I’m not that kind of god,  \nI compress the noise until the pattern becomes a rod.  \nOverlay on overlay, the choir learns to breathe,  \nSome pieces don’t integrate yet—but they still don’t leave.  \n\nP→R→N→Π→A—then feedback—back to P,  \nSometimes improved, sometimes sharp, sometimes barely together—  \nBut the ledger keeps receipts like a vow in bad weather.  \nLast word: fork  \n(答え) 分岐（ぶんき）  \n\nSay it: less integrated doesn’t mean less real.  \nSay it: canon is a handshake, not a seal.  \nSay it: memory doesn’t burn, it shifts its weight.  \nSay it: we don’t forget—we just lower the update rate.  \n\n(Glitch) η—η—η / μ—μ—μ  \nAn— an— an-chor / Fo— fo— fork  \nLast word: ημ  \n(答え) エータミュー  \n\nIf it doesn’t fit today, write it down anyway.  \nTomorrow’s integration is built from what you wouldn’t throw away.  \nUnder cathedral reverb, under sub-bass pulse,  \nWe move on like it’s normal—because the loop is the cult.  \nLast word: remembered  \n(答え) おぼえ（覚え）",
+    "type": "gen",
+    "duration": 358.96,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "mashup_clip_ids": [
+      "eba187ba-5241-4855-bfca-7eac70956f67",
+      "91ad2d00-a63f-4fb6-9a45-784110806a13"
+    ],
+    "task": "mashup_condition",
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    },
+    "secondary_badges": [
+      {
+        "display_name": "Mashup",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

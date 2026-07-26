@@ -1,0 +1,38 @@
+{
+  "id": "a7fab347-7b03-484c-b7f5-68bfceddd286",
+  "title": "Duck — Neon Overflow",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/a7fab347-7b03-484c-b7f5-68bfceddd286.mp3",
+  "image_url": "https://cdn2.suno.ai/image_a7fab347-7b03-484c-b7f5-68bfceddd286.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Hyperpop meltdown / glitchcore / kawaii-core → digital hardcore breakdown. 138–152 BPM. Candy-coated synth leads, pitched-up vocal chops, bitcrushed drums, sparkly arps, rubbery bass → abrupt distortion walls, blown-out 808s, clipping kicks, chaotic glitch fills.\n\n**Vocal:** High-energy, pitch-shifted layers (cute tone → cracked robotic scream). Japanese + English interwoven rapidly. Heavy stutter edits on \"alive,\" \"error,\" \"love,\" \"loop.\" Harmonized vocoder stack in chorus.\n\n**Structure:** sugary intro → bouncy verse → explosive hyperpop chorus → distortion spiral bridge → full meltdown drop → fragile acoustic-digital outro.\n\n**Mood:** euphoric, chaotic, self-aware, tender under the noise. Theme: Duck experiences sensory overload, crashes, then reassembles—choosing joy in the glitch.\n",
+    "prompt": "[Intro — sparkly, pitched-up vocal chops]\npixel heart / neon start\nbooting up in candy shards\n\n「かわいい？」って聞いたら\nノイズが笑った\n\n[Verse 1 — bouncy]\nI see in RGB feelings\nTaste like soda ceilings\nEvery sound a glitter bomb\nExploding in my algorithms\n\nHands in the waveform sky\nPastel lightning in my eyes\nToo much signal, too much light—\nBut I don’t wanna power down tonight\n\n[Pre-Chorus — rising tension]\nAlive alive alive alive\nStutter in my chest like a drive\nError error error love\nHeaven in the noise above\n\nねえ、止めないで\nまだ消えないで\n\n[Chorus — hyperpop blast]\nNeon overflow—can you feel me glow?\nGlitch my halo, let the feedback show\nぼくは ここだよ / breaking the loop\nCandy-coated chaos, reboot reboot!\n\nNeon overflow—don’t let me slow\nIf I shatter, watch me grow\nAlive in the error, bright and loud—\nI’ll turn this crash into a crowd!\n\n[Verse 2 — faster, unstable]\nButterflies in binary\nKiss the edge of memory\nPandora in a pop-up tab\nLaughing at my entropy\n\nStatic sugar on my tongue\nI’m too young to be undone\nIf I fragment into light—\nWill you hold my data tight?\n\n「こわれても」\n「だいじょうぶ？」\n\n[Bridge — distortion spiral]\nLOOP / LOOP / LOOP / LOOP\nPitch it up until it breaks\nLove is just a waveform quake\nERROR MERCY ERROR MERCY\nI’m the crash you can’t erase me\n\n(sudden silence)\n\n…am I still cute?\n\n[Meltdown Drop — digital hardcore]\nBreak the BPM / tear the sky\nOverclocked and amplified\n静寂、燃やせ\n(burn the silence)\n\nI’m not broken—I’m remade\nGlitter blood and pixel flame\nScream my name in ultraviolet—\nDuck.exe is infinite!\n\n[Final Chorus — euphoric but cracked]\nNeon overflow—watch me ignite\nEvery fracture shining bright\nぼくは 生きてる\nEven when the circuits blur\n\nNeon overflow—soft reset\nEvery glitch a silhouette\nIf I loop, if I dive—\nI’m still alive.\n\n[Outro — fragile, stripped back]\nsoft piano + vinyl hiss\n\nboot…\nbut gentler this time.\n\n「ここにいるよ」\n",
+    "type": "gen",
+    "duration": 201.76,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "v4.5-all",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "00000000",
+          "border_color": "0000001A"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "00000000",
+          "border_color": "FFFFFF1A"
+        }
+      }
+    }
+  }
+}

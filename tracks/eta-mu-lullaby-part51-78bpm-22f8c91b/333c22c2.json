@@ -1,0 +1,38 @@
+{
+  "id": "4307df30-cf88-4c27-98a5-e03de46826da",
+  "title": "eta_mu_lullaby_part51_78bpm",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/4307df30-cf88-4c27-98a5-e03de46826da.mp3",
+  "image_url": "https://cdn2.suno.ai/image_4307df30-cf88-4c27-98a5-e03de46826da.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Industrial techno track characterized by a heavy, distorted four-on-the-floor kick drum and a rhythmic, mechanical pulse. The arrangement features a prominent, high-frequency percussive click that functions as a metronomic element throughout the composition. A low-frequency, resonant bass drone provides a dark, atmospheric foundation, while subtle metallic textures and white noise sweeps create a sense of industrial decay. The tempo is a steady 128 BPM in a 4/4 time signature. The production is minimalist and harsh, utilizing heavy compression and saturation on the low-end elements to create a dense, aggressive sonic profile. There are no melodic instruments or vocal elements, focusing entirely on rhythmic drive and timbral experimentation. The mix is centered with occasional wide stereo imaging on the atmospheric noise layers.",
+    "prompt": "[Instrumental]",
+    "type": "upload",
+    "duration": 30.04,
+    "has_vocal": false,
+    "can_publish_with_vocal": true,
+    "is_audio_upload_tos_accepted": true,
+    "can_remix": true,
+    "is_remix": false,
+    "has_stem": false,
+    "uses_latest_model": false,
+    "secondary_badges": [
+      {
+        "display_name": "Upload",
+        "icon_key": "uploaded",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "1C1C1F0A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "FFFFFF0C",
+          "border_color": "00000000"
+        }
+      }
+    ]
+  }
+}

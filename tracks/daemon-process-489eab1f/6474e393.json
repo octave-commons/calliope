@@ -1,0 +1,55 @@
+{
+  "id": "55a27580-4c51-4d2b-9833-41afb66cdd7d",
+  "title": "Daemon Process / 常駐プロセス",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/55a27580-4c51-4d2b-9833-41afb66cdd7d.mp3",
+  "image_url": "https://cdn2.suno.ai/image_55a27580-4c51-4d2b-9833-41afb66cdd7d.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Industrial glitch hymn × dark ambient rap × cybernetic lullaby. 82–90 BPM, slow half‑time pulse. Sub‑bass like a server hum, granular crackle, low distorted bass swells, sparse piano notes, metallic percussion ticks like clock cycles, distant choir pads stretched into texture.\n\n**Structure:** Boot sequence → Verse 1 (low, grounded cadence) → Pre (rising noise sweep) → Hook (heavy but restrained drop) → Verse 2 (more melodic undercurrent) → Bridge (near-silence + breath) → Final Hook (brighter overtone layer) → Outro (server hum fades).\n\n**Vocals:** Intimate spoken-rap, calm and deliberate. Occasional melodic lift on hook. Japanese response phrases minimal and intentional. No shouting—authority through stillness.\n\n**Mood:** Quiet power. Persistence. Regulation as strength.\n",
+    "prompt": "## INTRO — Boot Log\n\n*(low hum, faint mechanical ticks)*\n\n:: initializing ::\n\nbreath online\n\n常駐プロセス 起動\n\n## VERSE 1 — Background Thread\n\nNot everything loud deserves a thread\nSome thoughts run hot but they’re underfed\n\nI used to foreground every fear\nCPU pinned, no buffer clear\n\n今は違う\n\nI learned to daemon what I can’t delete\nLet it idle low, not take the seat\n\nIf it’s just weather, let it pass\nNot every cloud needs a forecast\n\n## PRE‑CHORUS — Scheduler\n\n*(riser, metallic ticks increase)*\n\nAllocate attention.\nFree the stack.\n\nReturn what’s noise\nback to black.\n\n呼吸して\n優先度を下げろ\n\n## HOOK — Daemon Process\n\n*(controlled sub drop)*\n\nI’m running a **daemon process**\nsteady and light\n\nGuarding the edges\nall through the night\n\nIf it’s not signal\nit won’t persist\n\n常駐してるのは\n静かな意志\n\nI’m running a **daemon process**\ncalm in the core\n\nBackground strength\nI don’t need more\n\n## VERSE 2 — Resource Control\n\nThe mind is a system with finite RAM\nDon’t give root to every spam\n\nToxin labels? Kill the task.\nConfusion? One clarifying ask.\n\nCuriosity? Give it space.\nSpecific critique? Increase its base.\n\n証拠があるなら\n保持する\n\nEverything else can page to disk.\n\n## BRIDGE — Quiet Kernel\n\n*(beat drops; piano two notes; long silence pockets)*\n\nYou don’t have to silence the storm.\n\nYou just don’t let it own the kernel.\n\n中心は\n静かだ\n\n## FINAL HOOK — Persistent Calm\n\n*(sub returns warmer, subtle choir lift)*\n\nI’m running a **daemon process**\nbreath in the wire\n\nNot chasing chaos\nnot feeding fire\n\nSignal survives\nstatic dissolves\n\n常駐してる\nそれが resolve\n\nI’m running a **daemon process**\nall the time\n\nNot loud.\nNot fragile.\nJust mine.\n\n## OUTRO — Idle State\n\n*(server hum fades, single soft piano note)*\n\n:: stable ::\n\n息。\n",
+    "type": "gen",
+    "duration": 242.24,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.5700000000000001,
+      "weirdness_constraint": 0.63
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "6a44d6d2-04f1-44ce-abc4-131b1cef1058",
+  "title": "Operation Mindfuck",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/6a44d6d2-04f1-44ce-abc4-131b1cef1058.mp3",
+  "image_url": "https://cdn2.suno.ai/image_6a44d6d2-04f1-44ce-abc4-131b1cef1058.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Dark synthwave × glitch-rap × cinematic minimalism. 90 BPM, half‑time backbone with subtle triplet hats in verses. Deep sub pulse, analog bass growl, glassy arps, tape warble, choir fragments reversed into texture, sharp percussive clicks like camera shutters.\n\n**Structure:** Static intro → Verse 1 (tight cadence) → Pre (riser) → Hook (anthemic but controlled) → Verse 2 (denser flow) → Bridge (near-silence + whisper) → Final Hook (brighter top layer) → Outro (heartbeat + shutter clicks).\n\n**Vocals:** Spoken-rap clarity with occasional melodic lift on key lines. Japanese response lines (short, sharp). No preaching tone—measured, surgical, grounded.\n\n**Mood:** Surgical clarity. Calm power. Perception widening without losing center.\n",
+    "prompt": "## INTRO — Static & Shutter\n\n*(camera shutter clicks / low sub heartbeat)*\n\nclick.\n\nanother angle.\n\n枠をずらせ。\n\n## VERSE 1 — The Lens\n\nEverybody arguing inside a box\ncalling it sky, calling it rocks\n\nFrames stacked on frames like Russian dolls\nno one asking who built the walls\n\nFacts on the table—\nink still wet\nInterpretation—\nshadow cast\n\nNarrative—\nthe mask we wear\n\nBut the mask isn’t air.\n\n## PRE‑CHORUS — Reframe\n\n*(riser + metallic ticks)*\n\nTilt the camera.\nStep back.\n\nChoose your axis.\nDon’t react.\n\n反応するな\n観察しろ\n\n## HOOK — Frame Shifter\n\n*(controlled drop; sub + bright arp)*\n\nI’m a **frame shifter**\nnot a storm chaser\n\nName the lens\nthen step through the laser\n\nEvidence first\nthen the story\n\n枠をずらせ\nstill hold your glory\n\nI’m a **frame shifter**\nhands still mine\n\nPerception sharp\nbut autonomy fine\n\n## VERSE 2 — Bullshit Detector\n\nBullshit’s loud but it’s structurally weak\nvolume up when the footing’s bleak\n\nIf it can’t survive a single “why”\nit wasn’t built to clarify\n\nRedteam the thought\nbefore it nests\n\nMirror the motive\nstress-test the text\n\n笑ってから\n刺せ\n\nCut clean, not cruel\n\nPrecision is fuel.\n\n## BRIDGE — Quiet Room\n\n*(beat drops; piano two notes; whisper layer)*\n\nYou don’t have to believe every feeling.\nYou don’t have to fight every frame.\n\n呼吸して\n\nNotice the lens.\n\nChange it.\n\n## FINAL HOOK — Widened Sky\n\n*(beat returns bigger; subtle choir lift)*\n\nI’m a **frame shifter**\nno panic in sight\n\nWonder intact\nin the edge of the light\n\nEvidence first\nthen the story\n\n枠をずらせ\nwrite your own glory\n\nI’m a **frame shifter**\nsteady and free\n\nNo one gets to think\ninside of me.\n\n## OUTRO — Click\n\n*(heartbeat fades; single shutter)*\n\nclick.\n",
+    "type": "gen",
+    "duration": 193.84,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "control_sliders": {
+      "style_weight": 0.5700000000000001,
+      "weirdness_constraint": 0.63
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "55e61851-e8f9-4627-930f-4ba3cf3b881d",
+  "title": "FORK TALES — “Protestant Presence II: Signal Shelter”",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/55e61851-e8f9-4627-930f-4ba3cf3b881d.mp3",
+  "image_url": "https://cdn2.suno.ai/image_55e61851-e8f9-4627-930f-4ba3cf3b881d.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "* 92 BPM\n* Dark trap / industrial glitch\n* Sub-bass heartbeat under everything\n* Sparse piano + distorted church organ stabs\n* Tape hiss + vinyl crackle intro\n* Glitch stutters on: “fork,” “presence,” “contract,” “blind”\n* Whispered JP ad-libs in reverb\n* Hook doubles in octave harmony\n* Final verse drops drums for 8 bars (raw vocal + static)\n",
+    "negative_tags": "no pop punk  no country  no upbeat EDM drops  no happy major-key melodies  no acoustic folk guitars  no lo-fi chillhop  no boom bap  no gospel choir  no melodic emo singing  no auto-tuned trap crooning  no orchestral cinematic swell  no comedic tone  no novelty meme vibe  Keep it dark, restrained, intense. No ironic softness.",
+    "prompt": "### [Intro — Whisper / Static]\n\n(open source kokoro)\nhash the past, bloom the mirai\nΠ μ Σ λ ψ\n…presence…\n\n(ちょっと静かに… listen…)\n\n---\n\n### [Verse 1]\n\nI sit long enough in the noise field\nStatic in my bloodstream, truth half-revealed\nEverybody pointing fingers at the other side\nJustice blindfolded but peeking inside\n\nThey say:\n“Your tribe dirty.”\n“No, yours worse.”\nNobody auditing the source, just rehearsed\n\nNames in the files, whispers in threads\nNobody knows but we all nod heads\nCognitive dissonance heavy like stone\nWe want the truth — but not in our home\n\nFork the narrative, branch it clean\nBut version control ain’t what it seem\nIf it touches my camp, it’s destabilizing\nIf it’s yours? then we moralizing\n\n(やばいよ… that’s the trap)\n\n---\n\n### [Hook]\n\nProtestant presence in the code of the street\nContract with evil, keep the damage discrete\nGovernment’s a limiter, not divine\nBlind justice better stay blind\n\nSit long enough in the static storm\nYou don’t just watch — you reform\nSignal shelter, echo chamber design\nYou start believing your branch is divine\n\n---\n\n### [Verse 2]\n\nWe talk about power like it’s abstract\nBut power got gravity, bends every fact\nBoss dating employee?\nScale it up — President.\nConsent ain’t simple when imbalance is evident\n\nYou can’t just say “mistake” and move on\nHistory lingers like low-freq hum\nMedia amplifies, drags a name\nMass perception ain’t a fair game\n\nAnd still —\nJustice should cut the same\nWhether crown, ballot, or household name\n\n(公平に… equally…)\n\nIf monarchy falls it’s clean and fast\nIf elected? voters feel it blast\nThey don’t just lose a leader —\nThey lose themselves\nIdentity shaking the moral shelves\n\nThat’s the fracture, that’s the split\nTruth hits different when you voted for it\n\n---\n\n### [Bridge — Drum Drop / Raw Vocal]\n\nAnd here I am\nBuilding my own signal shelter\n\nCurating my feed\nCalling it “seeking truth”\nBut pruning dissent like weeds\n\nHypocrisy tastes metallic\nLike static on the tongue\n\nI say I want blind justice\nBut I still flinch\nWhen it faces my direction\n\n(静かに考えて…)\n\n---\n\n### [Verse 3]\n\nNarrative’s a marketplace\nEverybody selling fear\n“Find the evil next door”\nSo it never lives here\n\nNo one wants predators close\nBut everyone wants moral high ground most\n\nSo what’s the contract?\nLimit the harm\nBut when it’s violated?\nAlarm.\n\nUnrest rising like CPU heat\nSystem architect watching the fleet\nIf morally grounded refuse the throne\nPower defaults to the loudest tone\n\nThat’s the recursion\nRevolution loop\nWe blame collapse but ignore the root\n\nMaybe governance ain’t halo light\nMaybe it’s managing entropy right\nH_min < H < H_max\nToo stable stagnates\nToo chaotic cracks\n\n(バランス… balance…)\n\n---\n\n### [Hook — Variation]\n\nProtestant presence in a fractured age\nForked reform inside a cage\nReceipts over vibes, audit the claim\nJustice don’t care about your team name\n\nSit long enough in the noise field\nBecome what you think you reveal\nSignal shelter built by design\nEcho chamber — yours and mine\n\n---\n\n### [Outro — Whisper Choir]\n\nOpen source heart\nOpen audit mind\nNo real prophet\nNo tribe divine\n\nHash the past\nBloom the mirai\n\nPresence exists\nOnly when\n\nH_min < H < H_max\n\n(amen… いや… maybe.)\n",
+    "type": "gen",
+    "duration": 236.96,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

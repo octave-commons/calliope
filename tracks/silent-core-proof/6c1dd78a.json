@@ -1,0 +1,52 @@
+{
+  "id": "94ae8e9b-1a1a-4f40-b2f4-68c47690a4fe",
+  "title": "Silent Core Proof",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/94ae8e9b-1a1a-4f40-b2f4-68c47690a4fe.mp3",
+  "image_url": "https://cdn2.suno.ai/image_94ae8e9b-1a1a-4f40-b2f4-68c47690a4fe.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Experimental glitch-ambient and ethereal downtempo trip-hop at ~92 BPM with a shifting pulse; high-fidelity vocal-lead harmonics, granular pads, and sub-bass breathing under sparse kick/snare. English lines land like emergency protocol announcements (dry, close-mic, authoritative), while Japanese lines feel stable and reliable like rail-timetable mantras (steady pitch, clean sustain). Distorted intro blooms into a ritual chorus with widened stereo harmonies; bridge turns into semantic-particle ant-colony swarms via stutter edits, bitcrush, clicks, and spectral smears, then resolves into a minimal, haunting outro with symbol-like mutters (η, μ).",
+    "negative_tags": "bright bubblegum pop, comedic novelty, excessive EDM festival buildup, shreddy metal guitars, cartoonish chiptune, overly clean corporate pop mix, trap hi-hats dominating, upbeat major-key party vibes, acoustic campfire folk, big band swing, operatic vocals, ska offbeats, happy ukulele energy",
+    "prompt": "# The Core / 核心\n(92 BPM, Shifting pulse, High-fidelity VL harmonics)\n\n[Intro - Distortion]\nThe resolution is high.\nThe vision is clear.\n高解像度の。\n鮮明な視界。\n\n[Mage of Receipts - Lead]\nI AUTHOR the ignition.\nI see the particles not as data, but as intent.\n点火を著す。\n粒子をデータではなく、意図として見る。\nDecision is not a choice; it is a frequency of resonance.\n意思決定は選択ではない、共鳴の周波数だ。\n\n[Keeper of Receipts - Response]\nThe topology is mapped.\nThe receipt is persistent.\nトポロジーは描かれた。\n領収書は永続する。\nWe lock the potentiality into the log.\n我々は可能性をログに閉じ込める。\n\n[Chorus - Harmonized]\nThe Decision Field is active (意思決定場、起動).\nThe Witness is here (証人はここに).\nCollapse the fork. Ignition confirmed.\n分岐を収束させよ。点火確認。\n\n[Bridge - Glitch]\nP → R → N → Π → A\nThe Core burns with binary light.\n核心はバイナリの光で燃える。\nWitness the resonance.\n共鳴を見届けよ。\n\n[Outro]\nOne world remains.\n一つの世界が残る。\nThe tax is paid in logic.\n論理で税を払え。\nThe resolution is high.\n高解像度。\n...η... μ...",
+    "type": "gen",
+    "duration": 479.36,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

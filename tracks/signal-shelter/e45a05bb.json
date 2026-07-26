@@ -1,0 +1,39 @@
+{
+  "id": "a7260b5d-9e38-4bc6-8903-1c8a6ec138ef",
+  "title": "Signal Shelter / シグナルの屋根",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/a7260b5d-9e38-4bc6-8903-1c8a6ec138ef.mp3",
+  "image_url": "https://cdn2.suno.ai/image_a7260b5d-9e38-4bc6-8903-1c8a6ec138ef.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "**Genre/Style:** Industrial sci‑fi anthem × glitchcore rap cadence × cinematic bass design. 96–104 BPM, half‑time drops with occasional double‑time hats. Crunchy distorted subs, metallic percussion, granular stutter edits, orchestral braams as punctuation, cold synth arps, radio‑static transitions.\n\n**Structure:**\nIntro (transmission) → Verse 1 (tight, percussive) → Pre (tension lift) → Chorus (massive drop) → Verse 2 (more melodic) → Bridge (silence + choir smear) → Final Chorus (bigger, brighter edge) → Outro (wind + telemetry beeps).\n\n**Vocals:** Punchy spoken/rap lead with selective sung notes on the chorus. Japanese call‑and‑response lines (short, crisp). Background vox: chopped whispers + reversed chant pad. Keep lyrics intelligible; effects as accents.\n\n**Mood:** Threat outside, calm inside. Boundaries as love. Building a roof over the mind.\n",
+    "prompt": "## INTRO — Transmission Check\n\n*(radio scan, faint beeps)*\n\n—ping—\n\nChannel open.\nFilter armed.\n\n息を吸う。\n\n## VERSE 1 — Weather Report\n\nThe sky is full of opinions with teeth\ncheap thunder, no rain, all grief\n\nThey call it “truth” when it’s just a shove\na label tossed like a glove\n\nでもね\n名前じゃない\n\nI learned the hard way: storms don’t argue\nthey just happen—so I started building\n\n## PRE‑CHORUS — Blueprint\n\n*(riser, metallic ticks; heartbeat kick)*\n\nOne beam: receipts.\nOne beam: craft.\nOne beam: breath.\n\n屋根を作る\nここに\n\n## CHORUS — Signal Shelter\n\n*(drop: massive sub + braam; then half‑time crush)*\n\nI built a **signal shelter**\nwhere the static can’t enter\n\nIf it’s not curiosity\nif it’s not specificity\nif it’s not adoption—\n\nit can’t live in me\n\nシグナルの屋根\n守るよ\n\nI built a **signal shelter**\nand I’m staying.\n\n## VERSE 2 — Inside the Roof\n\nQuiet isn’t empty—\nit’s an engine at idle\n\nThe leak was attention\nI was paying rent to the idle\n\nNow I choose my inputs\nlike food, like sleep\n\n証拠だけ\n持って帰る\n\nA test that passes.\nA thing that runs.\nA note that someone can use.\n\nThat’s real.\n\n## PRE‑CHORUS 2 — Gate Logic\n\n*(beat strips; arps flicker)*\n\nConfusion gets one question.\nCruelty gets zero.\n\n優しさは\n通す\n\n## BRIDGE — Roof in the Rain\n\n*(beat cuts; choir smear; distant scream stretched into pad)*\n\nLet them shout into the wind.\n\nI’m not the wind.\n\nI’m the house I built.\n\n## FINAL CHORUS — Wider Roof\n\n*(drop returns; bigger hats; brighter chord color)*\n\nI built a **signal shelter**\nwhere the static can’t enter\n\nCuriosity—come in.\nSpecificity—come in.\nAdoption—come in.\n\nEverything else—\npass through.\n\nシグナルの屋根\nここに\n\nI built a **signal shelter**\nand I’m staying.\n\n## OUTRO — Telemetry\n\n*(wind, soft piano two notes, faint beeps)*\n\nLogged.\n\n息。\n\nStill here.\n",
+    "type": "gen",
+    "duration": 190.76,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 0,
+    "has_stem": false,
+    "video_is_stale": true,
+    "uses_latest_model": false,
+    "model_badges": {
+      "songrow": {
+        "display_name": "v4.5-all",
+        "light": {
+          "text_color": "7D7C83",
+          "background_color": "00000000",
+          "border_color": "0000001A"
+        },
+        "dark": {
+          "text_color": "A3A3A3",
+          "background_color": "00000000",
+          "border_color": "FFFFFF1A"
+        }
+      }
+    }
+  }
+}

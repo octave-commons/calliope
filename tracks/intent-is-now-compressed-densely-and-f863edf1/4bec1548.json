@@ -1,0 +1,52 @@
+{
+  "id": "a8f577e1-8472-46a2-982e-6edcbaf00807",
+  "title": "Intent is now **compressed densely** and",
+  "isLiked": false,
+  "audio_url": "https://cdn1.suno.ai/a8f577e1-8472-46a2-982e-6edcbaf00807.mp3",
+  "image_url": "https://cdn2.suno.ai/image_a8f577e1-8472-46a2-982e-6edcbaf00807.jpeg",
+  "isCover": false,
+  "isRemaster": false,
+  "metadata": {
+    "tags": "Reproducible archive: every mutation becomes a new, hashed snapshot.\n\nAuditable narrative science: graphs are allowed only when anchored.\n\nScale-ready ops: manifest + index + split-zips = infinite corpus, finite friction.Intent as signal compression: keep it dense enough to stream through cephalon loops.\n\nIntent as fork fuel: forks only happen where intent-energy crosses gates.\n\nIntent as audit object: binary for speed; anchors for truth.\nP→R→N→Π→A→(feedback)→P\nremember ημ\n\nCompression frame: intent becomes a low-latency signal stream (binary) with anchors as the “truth membrane.”\n\nFork frame: forks are allowed only when intent-energy clears a gate; everything else is noise.\n\nAudit frame: “pretty graphs that lie” are disallowed because every edge/claim must cite an anchor snippet.\nHow to use (minimal)\n\nUnzip all v4 parts into the same directory (order doesn’t matter).\n\nUnzip the patch over the same directory (adds helper scripts + docs).\n\nNow you have an extracted operation-mindfuck/ c",
+    "negative_tags": "Against “pretty graphs that lie”: require S3 anchors on every non-trivial edge/claim. Against “forks everywhere”: intent-gating + ranked forks + explicit rationale per fork. Against “entity mush”: treat S5 (resolution) as a first-class, versioned dataset with audits.If an edge has no anchor → it’s invalid output (fail the build next pass).  If forks proliferate → tighten intent ontology + require event-backed intent.  If entity mush returns → treat alias merges as reviewed inputs, not derived guessesIf an intent event can’t be anchored → treat it as invalid output (drop it / fail build next pass).  If intent feels “over-saturated” (too many 255s) → adjust the strength curve in the analyzer (still stays 0..255).If a graph edge has no anchor → treat it as not real (drop it / fail builds next iteration).  If forks explode → raise the intent threshold + require explicit rationale per fork.  If entities blur → keep S5 resolution as versioned inputs (aliases/merges are reviewed deltas)..",
+    "prompt": "# songbook — ημ (intent compression you can feel)\n\nthese are **original** songs written to encode the box constraints as music:\nanchors over vibes, forks gated by intent, and s5 resolution as ritual.\n\neach song includes:\n- a production prompt (suno-friendly)\n- lyrics\n- an “anchor refrain” (a line you can cite as the song’s thesis)\n\n---\n\n## 1) between η and μ\n\n**style prompt:** mythic glitch-choral synth ballad. 84 bpm. cathedral reverb. soft sub-bass heartbeat. sparse drums that arrive late. whispered english + japanese harmony. glitch-stutters on “η” and “μ”.\n\n**anchor refrain:** *no claim without anchor.*\n\n**lyrics**\n\n[verse]\ni said a word and the world left a tail,\nreverb made of things i cannot tell.\nη in the muscle, hidden in the bone,\nμ in the motion, the proof in the stone.\n\n[pre]\nif it can’t be pointed to,\nit can’t be used to move you.\n\n[chorus]\nno claim without anchor,\nno crown without weight.\nbetween η and μ\nis where liars congregate.\nso i sing the checksum,\ni sing the gate:\nno claim without anchor,\nno claim without anchor.\n\n[bridge — 日本語]\n見えない状態(η) 震える胸\n行動の証(μ) 石の上へ\n曖昧を捨てて 立つよ ここで\n「根拠(アンカー)なし」じゃ 進めないって\n\n---\n\n## 2) pretty graphs lie\n\n**style prompt:** industrial glitch-rap. 96 bpm half-time. distorted bass, clipped snares, harsh hi-hats. spoken delivery with sharp pauses. crowd-chant hook.\n\n**anchor refrain:** *edges are claims. claims need receipts.*\n\n**lyrics**\n\n[verse]\nyou drew me a graph with a halo of nodes,\nbut where’s the bolt that broke the road?\nwhere’s the sentence, where’s the scene,\nwhere’s the witness in between?\n\n[hook]\nedges are claims—(say it)\nclaims need receipts—(prove it)\npretty graphs lie—(burn it)\nanchors, or sleep.\n\n\n\n(see songbook_eta_mu.md for full set.)\n",
+    "type": "gen",
+    "duration": 159.72,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "v5",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "FD429C1A",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "FD429C40",
+          "border_color": "00000000"
+        }
+      }
+    }
+  }
+}

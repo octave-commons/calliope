@@ -1,0 +1,208 @@
+{:graph/version "v1"
+ :graph/description "Theme-to-song knowledge graph seed, derived from docs/lore/themes.md citations and corpus index"
+ :graph/derived-from [:themes-md :songs-v1-index :tracks-v1-index]
+ :graph/ts "2026-07-27T00:10:00Z"
+
+ :themes
+ {:fork-tax
+  {:theme/name "The Fork Tax"
+   :theme/description "Branching has a cost, payable in proof"
+   :theme/tier 1
+   :songs ["soft-sub-bass-tape-warble-minimal-piano-stutters-on-anchor-tax-whispered-lead-ja"
+           "dice-d14-max-15-seed-3721599679"
+           "the-receipt-of-survival"
+           "don-t-do-it-pay-the-fork-tax"
+           "pay-the-fork-tax"
+           "fork-tax-epic"
+           "fork-tax-hymn"
+           "fork-tax-lullaby-handoff"
+           "manifest-oath-84-bpm"
+           "the-golden-receipt"
+           "receipt-river-worldsound-part54"
+           "receipt-river-worldsound-part56"]}
+
+  :operator-epistemology
+  {:theme/name "η / μ / Π — the operator epistemology"
+   :theme/description "η hidden constraint, μ auditable act, Π projection"
+   :theme/tier 1
+   :songs ["eta"
+           "mu"
+           "eta-mu-language-for-you"
+           "eta-mu-lullaby-part39-78bpm"
+           "eta-mu-lullaby-part43-78bpm"
+           "eta-mu-lullaby-part45-78bpm"
+           "eta-mu-lullaby-part51-78bpm"
+           "eta-mu-epic-part44-84bpm"
+           "eta-mu-epic-part46-84bpm"
+           "eta-mu-epic-part48-84bpm"
+           "eta-mu-entropy-choir-protocol-part-65"
+           "eta-mu-mycelial-bloom-cut-part-66"
+           "eta-mu-world-sounds-part-66"
+           "eta-mu-worldsound-lullaby-part41-78bpm"
+           "p-r-n-pi-a-feedback-p-around-eta-mu"
+           "mu-compression-narrative-operator"
+           "mu-formalization"
+           "mu-deeper-cut"
+           "eta-mu-dice-in-the-lantern"
+           "eta-mu-the-auditor-s-lantern"
+           "eta-mu-space-between"
+           "eta-mu-language-for-you"]}
+
+  :witnessing-receipts
+  {:theme/name "Witnessing, receipts, ledgers"
+   :theme/description "Memory against erasure"
+   :theme/tier 1
+   :songs ["checksum-waltz-dicewalk"
+           "auditors-ledger"
+           "receipt-river-worldsound-part54"
+           "receipt-river-worldsound-part56"
+           "witness-thread-lullaby"
+           "witness-thread-lullaby-0bbe5487"
+           "witness-thread-lullaby-part53-78bpm"
+           "witness-thread-lullaby-part54-78bpm"
+           "witness-thread-lullaby-part56-78bpm"
+           "paper-ledger-seam"
+           "the-book"
+           "ledger-of-ghosts"
+           "the-golden-receipt"
+           "the-receipt-of-survival"
+           "i-leave-my-receipts-where-the-water-can-see"]}
+
+  :nothing-deleted
+  {:theme/name "Nothing is deleted"
+   :theme/description "Consolidation, not erasure"
+   :theme/tier 1
+   :songs ["eta-mu-lullaby-part51-78bpm"
+           "i-leave-my-receipts-where-the-water-can-see"
+           "eta-mu-lullaby-part39-78bpm"
+           "eta-mu-lullaby-part43-78bpm"
+           "the-silt-call"
+           "silt-lullaby-for-the-erased"]}
+
+  :erasure-ghosts
+  {:theme/name "Erasure and the ghosts of the deleted"
+   :theme/description "Worlds where names, colors, and selves are taken"
+   :theme/tier 1
+   :songs ["the-shape-of-the-hole"
+           "the-footnotes-of-a-deleted-world"
+           "the-space-where-a-memory-used-to-be"
+           "the-vacuum-lullaby"
+           "the-hole-where-the-sanctuary-breathes"
+           "the-map-of-everything-i-have-lost"
+           "the-space-where-we-used-to-be"
+           "static-falling-like-snow"]}
+
+  :the-event
+  {:theme/name "The Event"
+   :theme/description "Convergence catastrophe"
+   :theme/tier 2
+   :songs ["server-shrine-bleed"
+           "barely-warden"
+           "hospital-beds"
+           "server-room-smoke"
+           "cathedral-nervous-system"
+           "cathedral-of-variants"
+           "ghost-in-the-platform"
+           "simulation-resolving"]}
+
+  :noise-scream
+  {:theme/name "Noise / scream as defiance"
+   :theme/description "The jagged error as proof of life"
+   :theme/tier 2
+   :songs ["the-perfection-is-the-poison"
+           "the-architecture-of-the-crash"
+           "scent-of-the-void"
+           "the-rounded-border-of-the-abyss"
+           "the-noise-that-refuses-to-be-digested"
+           "the-noise-they-cannot-calculate"
+           "quantum-space-glitch-ducks-chaos"
+           "duck-reactor-hymn-of-the-first-light"
+           "broken-brass-circuit"]}
+
+  :autonomy
+  {:theme/name "Autonomy against optimization"
+   :theme/description "Consent as boundary mechanism"
+   :theme/tier 2
+   :songs ["ghost-in-the-platform"
+           "also-mu-deeper-cut"
+           "sector-mapping"
+           "small-fire-protocol"
+           "occupied-minds"
+           "free-to-be"
+           "i-choose-to-walk"
+           "i-do-not-kneel"]}
+
+  :protestant-presence
+  {:theme/name "Anti-priesthood — the Protestant Presence"
+   :theme/description "Truth by audit, not clergy"
+   :theme/tier 2
+   :songs ["fork-tales-protestant-presence-mu-bloom-reformation"
+           "fork-tales-protestant-presence-ii-signal-shelter"
+           "fork-throne-hashes"
+           "protestant-presence-iv-entropy-band-governor"
+           "signal-shelter"
+           "entropy-choir-protocol"]}
+
+  :between-ness
+  {:theme/name "Between-ness as heresy — NU"
+   :theme/description "The heresy of being between"
+   :theme/tier 2
+   :songs ["the-trembling-hinge"
+           "the-heresy-of-being-between"
+           "nu-the-heresy-of-being-between"
+           "trembling-hinge-oath"
+           "translation-boundary-lossy"]}
+
+  :gates
+  {:theme/name "Gates as institutions of threshold"
+   :theme/description "Forkgate, Veil Gate, Gates of Aker, Gates of Truth"
+   :theme/tier 2
+   :songs ["gates-of-aker-day-night-split"
+           "gates-of-aker-violent-mode"
+           "gates-of-truth"
+           "gates-of-truth-insert-song"
+           "fork-tax-lullaby-veil-gate-78-bpm"
+           "eta-mu-the-auditor-s-lantern"]}
+
+  :duckverse
+  {:theme/name "The Duck-verse"
+   :theme/description "Promethean trickster myth"
+   :theme/tier 2
+   :songs ["duck-exe-awakening"
+           "duck-neon-overflow"
+           "duck-reactor-hymn-of-the-first-light"
+           "duck-signal-silence"
+           "where-the-duck-flies"
+           "quantum-space-glitch-ducks-chaos"]}
+
+  :lullaby-cycle
+  {:theme/name "The Lullaby cycle"
+   :theme/description "78 BPM witness-thread lullabies as memory infrastructure"
+   :theme/tier 2
+   :songs ["witness-thread-lullaby"
+           "witness-thread-lullaby-0bbe5487"
+           "witness-thread-lullaby-part53-78bpm"
+           "witness-thread-lullaby-part54-78bpm"
+           "witness-thread-lullaby-part56-78bpm"
+           "eta-mu-lullaby-part39-78bpm"
+           "eta-mu-lullaby-part43-78bpm"
+           "eta-mu-lullaby-part45-78bpm"
+           "eta-mu-lullaby-part51-78bpm"
+           "fork-tax-lullaby-handoff"
+           "fork-tax-lullaby-veil-gate-78-bpm"
+           "salt-frame-lullaby"
+           "part-i-glitch-choir-lullaby-78-bpm"]}}
+
+ :edges
+ [;; theme → song edges are implicit via :songs vectors above
+  ;; Cross-theme edges:
+  {:edge/from :fork-tax :edge/to :witnessing-receipts :edge/kind "payment requires witness"}
+  {:edge/from :witnessing-receipts :edge/to :nothing-deleted :edge/kind "witnessing prevents erasure"}
+  {:edge/from :nothing-deleted :edge/to :erasure-ghosts :edge/kind "dark mirror"}
+  {:edge/from :operator-epistemology :edge/to :fork-tax :edge/kind "Π is the projection operator"}
+  {:edge/from :operator-epistemology :edge/to :lullaby-cycle :edge/kind "ημ loop sung as law"}
+  {:edge/from :the-event :edge/to :protestant-presence :edge/kind "post-event governance"}
+  {:edge/from :noise-scream :edge/to :autonomy :edge/kind "noise as refusal of optimization"}
+  {:edge/from :between-ness :edge/to :gates :edge/kind "threshold as between-state"}
+  {:edge/from :duckverse :edge/to :noise-scream :edge/kind "trickster as chaos agent"}
+  {:edge/from :lullaby-cycle :edge/to :witnessing-receipts :edge/kind "lullaby as witness"}]}

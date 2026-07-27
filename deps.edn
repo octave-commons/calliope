@@ -1,0 +1,10 @@
+{:paths ["src" "resources"]
+
+ :deps
+ {org.clojure/clojure {:mvn/version "1.12.2"}
+  metosin/malli {:mvn/version "0.16.4"}}
+
+ :aliases
+ {:test
+  {:extra-paths ["test"]
+   :main-opts ["-m" "fork-tales.test-runner"]}}}

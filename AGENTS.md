@@ -17,6 +17,12 @@ Lore/fork-tales, gates-of-aker).
 - `docs/lyrics/index.edn` + `ledgers/projections/songs-v1.edn` — slug →
   `{:title :body-sha256 :sha256s :sources :classification :flags}`.
 - `docs/lore/` — theme, style, and world-building synthesis (agent-written).
+- `resources/classifiers/` — pure-data LLM classifier programs. Definitions
+  separate sources, selectors, context generators, prompts, model profiles,
+  output contracts, and emitted ledger events.
+- `src/fork_tales/law/classifier.cljc` — closed Malli contracts for classifier
+  data; `src/fork_tales/classifier/dsl.cljc` validates cross-references and
+  resolves a classifier into a pure execution plan.
 - `receipts.edn` — muse receipt-river ledger for this repo (use the global
   `receipt_river` tool, do not hand-edit).
 
@@ -27,6 +33,7 @@ bb scripts/corpus.clj ingest    # scan roots, append :doc/discovered events
 bb scripts/corpus.clj project   # rebuild docs/lyrics from latest run
 bb scripts/corpus.clj stats     # summarize latest run
 bb scripts/corpus.clj variants  # pass 2: cluster same-title variants by edit distance
+clojure -M:test                 # validate classifier contracts and example programs
 ```
 
 ## Ledger discipline (epiphany rules)
@@ -38,6 +45,9 @@ bb scripts/corpus.clj variants  # pass 2: cluster same-title variants by edit di
 3. Provenance forever: a projected song always links back to every source
    path and hash it was derived from.
 4. Observed → derived → provisional → accepted. `docs/lyrics` is `derived`.
+5. Classifier output is validated before append. Record selection seed, object
+   IDs and hashes, prompt version, model profile, and validation disposition.
+   A model-proposed concept or relationship is never accepted implicitly.
 
 ## Dedup roadmap
 

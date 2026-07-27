@@ -4,8 +4,12 @@ on:
   pull_request:
     paths:
       - "AGENTS.md"
+      - "PROCESS.md"
       - "deps.edn"
       - "docs/classifier-dsl.md"
+      - "docs/harnesses/**"
+      - ".opencode/AGENTS.md"
+      - ".opencode/skills/fork-tales-corpus/SKILL.md"
       - "src/fork_tales/**"
       - "resources/classifiers/**"
       - "test/fork_tales/**"
@@ -14,8 +18,12 @@ on:
     branches: [main]
     paths:
       - "AGENTS.md"
+      - "PROCESS.md"
       - "deps.edn"
       - "docs/classifier-dsl.md"
+      - "docs/harnesses/**"
+      - ".opencode/AGENTS.md"
+      - ".opencode/skills/fork-tales-corpus/SKILL.md"
       - "src/fork_tales/**"
       - "resources/classifiers/**"
       - "test/fork_tales/**"

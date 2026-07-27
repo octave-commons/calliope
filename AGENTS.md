@@ -18,11 +18,14 @@ Lore/fork-tales, gates-of-aker).
   `{:title :body-sha256 :sha256s :sources :classification :flags}`.
 - `docs/lore/` — theme, style, and world-building synthesis (agent-written).
 - `resources/classifiers/` — pure-data LLM classifier programs. Definitions
-  separate sources, selectors, context generators, prompts, model profiles,
-  output contracts, and emitted ledger events.
-- `src/fork_tales/law/classifier.cljc` — closed Malli contracts for classifier
-  data; `src/fork_tales/classifier/dsl.cljc` validates cross-references and
-  resolves a classifier into a pure execution plan.
+  separate sources, selectors, feature extractors, context generators, prompts,
+  model profiles, output contracts, and emitted ledger events.
+- `src/fork_tales/law/classifier.cljc` and `law/feature.cljc` — closed Malli
+  contracts; `src/fork_tales/classifier/dsl.cljc` validates cross-references and
+  resolves pure execution plans.
+- `src/fork_tales/classifier/runtime.clj` — JVM interpreter for filesystem
+  sources, seeded selection, context execution, Ollama/llama.cpp calls, exact
+  feature caching, output validation, and append-only event emission.
 - `receipts.edn` — muse receipt-river ledger for this repo (use the global
   `receipt_river` tool, do not hand-edit).
 
@@ -33,8 +36,15 @@ bb scripts/corpus.clj ingest    # scan roots, append :doc/discovered events
 bb scripts/corpus.clj project   # rebuild docs/lyrics from latest run
 bb scripts/corpus.clj stats     # summarize latest run
 bb scripts/corpus.clj variants  # pass 2: cluster same-title variants by edit distance
-clojure -M:test                 # validate classifier contracts and example programs
+clojure -M:test                 # validate DSL and interpreter behavior
+clojure -M:classify -- --seed 3721599729 --dry-run
+clojure -M:classify -- --seed 3721599729
 ```
+
+The dry run resolves the seeded sample and builds prompts without calling a
+model or appending a final classification event. A normal run uses the model
+profiles declared by the selected classifier program and appends validated
+feature and concept events to the declared ledger.
 
 ## Ledger discipline (epiphany rules)
 
@@ -46,8 +56,9 @@ clojure -M:test                 # validate classifier contracts and example prog
    path and hash it was derived from.
 4. Observed → derived → provisional → accepted. `docs/lyrics` is `derived`.
 5. Classifier output is validated before append. Record selection seed, object
-   IDs and hashes, prompt version, model profile, and validation disposition.
-   A model-proposed concept or relationship is never accepted implicitly.
+   IDs and hashes, extractor and prompt versions, model profile, cache key, and
+   validation disposition. A model-proposed concept or relationship is never
+   accepted implicitly.
 
 ## Dedup roadmap
 

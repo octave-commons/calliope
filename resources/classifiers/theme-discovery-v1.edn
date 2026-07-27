@@ -296,7 +296,7 @@
        [:vector
         [:map {:closed true}
          [:source [:enum :style-prompt :lyrics :metadata :artwork :audio]]
-         [:quote-or-description [:string {:min 1}]]]]]]]}
+         [:quote-or-description [:string {:min 1}]]]]]]]]}
 
   :fork-tales/theme-discovery-result-v1
   {:output/id :fork-tales/theme-discovery-result-v1

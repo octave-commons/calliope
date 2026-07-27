@@ -126,7 +126,8 @@
     [:step/op [:= :limit]]
     [:step/input :keyword]
     [:step/max-chars-per-object [:ref "dsl/positive-int"]]
-    [:step/overflow [:enum :truncate-tail :truncate-middle :drop-object]]]
+    [:step/overflow [:enum :truncate-tail :truncate-middle :drop-object]]
+    [:step/as :keyword]]
 
    "context/step-render-v1"
    [:map {:closed true}
@@ -167,6 +168,9 @@
     [:prompt/version [:ref "dsl/positive-int"]]
     [:prompt/messages [:vector {:min 1} [:ref "prompt/message-v1"]]]
     [:prompt/variables [:set :keyword]]
+    ;; :inline-schema appends the exact output Malli form to the prompt;
+    ;; :provider-native delegates structured output to the model adapter.
+    [:prompt/output-contract [:enum :inline-schema :provider-native :none]]
     [:prompt/response-format [:enum :edn :json]]]
 
    "output/definition-v1"

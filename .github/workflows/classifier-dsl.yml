@@ -1,0 +1,29 @@
+name: Classifier DSL
+
+on:
+  pull_request:
+    paths:
+      - "deps.edn"
+      - "src/fork_tales/**"
+      - "resources/classifiers/**"
+      - "test/fork_tales/**"
+      - ".github/workflows/classifier-dsl.yml"
+  push:
+    branches: [main]
+    paths:
+      - "deps.edn"
+      - "src/fork_tales/**"
+      - "resources/classifiers/**"
+      - "test/fork_tales/**"
+      - ".github/workflows/classifier-dsl.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeLaGuardo/setup-clojure@13.0
+        with:
+          cli: 1.12.2.1565
+      - name: Run classifier DSL tests
+        run: clojure -M:test

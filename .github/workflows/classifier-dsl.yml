@@ -41,7 +41,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: classifier-test-output
-          path: classifier-test.log
+          path: |
+            classifier-test.log
+            /tmp/clojure-*.edn
       - name: Enforce classifier test result
         if: steps.classifier-tests.outputs.status != '0'
         run: |

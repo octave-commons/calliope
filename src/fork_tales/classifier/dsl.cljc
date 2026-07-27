@@ -15,19 +15,34 @@
 (def registry
   (mr/composite-registry m/default-registry schemas))
 
+(defn program-registry
+  "Extend the DSL registry with this program's feature value contracts.
+
+  A feature id is also a schema name inside its program. Output contracts may
+  therefore use `[:ref :feature/id]` without moving discovered feature
+  vocabularies into Clojure source."
+  [program]
+  (let [feature-schemas
+        (into {}
+              (keep (fn [[feature-id feature]]
+                      (when-let [value-schema (:feature/value-schema feature)]
+                        [feature-id value-schema])))
+              (:features program))]
+    (mr/composite-registry registry feature-schemas)))
+
 (defn schema
-  "Resolve a named classifier contract."
+  "Resolve a named core DSL contract."
   [schema-name]
   (m/schema [:ref schema-name] {:registry registry}))
 
 (def validator
-  "Schema name -> memoized predicate."
+  "Core schema name -> memoized predicate."
   (memoize
    (fn [schema-name]
      (m/validator (schema schema-name)))))
 
 (defn valid?
-  "Does value satisfy a named classifier contract?"
+  "Does value satisfy a named core DSL contract?"
   ([value]
    (valid? "classifier/program-v1" value))
   ([schema-name value]
@@ -39,6 +54,17 @@
    (explain "classifier/program-v1" value))
   ([schema-name value]
    (m/explain (schema schema-name) value)))
+
+(defn feature-value-schema
+  "Compile the value contract for one program-defined feature."
+  [program feature-id]
+  (m/schema [:ref feature-id] {:registry (program-registry program)}))
+
+(defn output-schema
+  "Compile one output contract, including refs to program-defined features."
+  [program output-id]
+  (let [schema-data (get-in program [:outputs output-id :output/schema])]
+    (m/schema schema-data {:registry (program-registry program)})))
 
 (defn- issue
   ([code path message]
@@ -228,9 +254,9 @@
        (:extractor/prompt extractor))))))
 
 (defn- schema-data-issue
-  [path schema-data message]
+  [registry* path schema-data message]
   (try
-    (m/schema schema-data {:registry registry})
+    (m/schema schema-data {:registry registry*})
     nil
     (catch #?(:clj Exception :cljs :default) error
       (issue :schema/invalid
@@ -241,23 +267,27 @@
 
 (defn- output-schema-issues
   [program]
-  (keep
-   (fn [[output-id output]]
-     (schema-data-issue
-      [:outputs output-id :output/schema]
-      (:output/schema output)
-      "Output contract does not contain a compilable Malli schema."))
-   (:outputs program)))
+  (let [registry* (program-registry program)]
+    (keep
+     (fn [[output-id output]]
+       (schema-data-issue
+        registry*
+        [:outputs output-id :output/schema]
+        (:output/schema output)
+        "Output contract does not contain a compilable Malli schema."))
+     (:outputs program))))
 
 (defn- feature-schema-issues
   [program]
-  (keep
-   (fn [[feature-id feature]]
-     (schema-data-issue
-      [:features feature-id :feature/value-schema]
-      (:feature/value-schema feature)
-      "Feature definition does not contain a compilable Malli value schema."))
-   (:features program)))
+  (let [registry* (program-registry program)]
+    (keep
+     (fn [[feature-id _]]
+       (schema-data-issue
+        registry*
+        [:features feature-id :feature/value-schema]
+        [:ref feature-id]
+        "Feature definition does not contain a compilable Malli value schema."))
+     (:features program))))
 
 (defn lint
   "Return semantic issues not expressible as local Malli shape constraints.
@@ -330,7 +360,8 @@
      {:extractor extractor
       :features
       (select-keys (:features program) (:extractor/produces extractor))
-      :output (get-in program [:outputs (:extractor/output extractor)])}
+      :output (get-in program [:outputs (:extractor/output extractor)])
+      :output-schema (output-schema program (:extractor/output extractor))}
       (= :llm (:extractor/type extractor))
       (assoc
        :model (get-in program [:models (:extractor/model extractor)])
@@ -366,5 +397,6 @@
        :context context
        :prompt (get-in program [:prompts (:classifier/prompt classifier)])
        :output (get-in program [:outputs (:classifier/output classifier)])
+       :output-schema (output-schema program (:classifier/output classifier))
        :features (select-keys (:features program) required-features)
        :feature-producers (select-keys producers required-features)})))

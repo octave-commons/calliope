@@ -2,8 +2,9 @@
   "Pure-data Malli contracts for describing LLM classifiers.
 
   The DSL separates source selection, context construction, prompting, model
-  transport, output validation, and emitted ledger events. Runtime adapters
-  interpret these records; classifier definitions contain no executable code.")
+  transport, output validation, feature extraction, and emitted ledger events.
+  Runtime adapters interpret these records; definitions contain no executable
+  code.")
 
 (def schemas
   {"dsl/non-empty-string" [:string {:min 1}]
@@ -87,6 +88,15 @@
     [:selector/object-ids
      [:vector {:min 1} [:ref "dsl/non-empty-string"]]]]
 
+   "selector/provided-v1"
+   [:map {:closed true}
+    [:selector/id :keyword]
+    [:selector/type [:= :provided]]
+    [:selector/source :keyword]
+    [:selector/input-key :keyword]
+    [:selector/max-count [:ref "dsl/positive-int"]]
+    [:selector/where {:optional true} [:ref "filter/expression-v1"]]]
+
    "selector/anchor-neighbors-v1"
    [:map {:closed true}
     [:selector/id :keyword]
@@ -104,6 +114,7 @@
     [:random [:ref "selector/random-v1"]]
     [:stratified-random [:ref "selector/stratified-random-v1"]]
     [:explicit [:ref "selector/explicit-v1"]]
+    [:provided [:ref "selector/provided-v1"]]
     [:anchor-neighbors [:ref "selector/anchor-neighbors-v1"]]]
 
    "context/step-hydrate-v1"
@@ -141,6 +152,7 @@
     [:hydrate [:ref "context/step-hydrate-v1"]]
     [:segment [:ref "context/step-segment-v1"]]
     [:limit [:ref "context/step-limit-v1"]]
+    [:attach-features [:ref "context/step-attach-features-v1"]]
     [:render [:ref "context/step-render-v1"]]]
 
    "context/token-budget-v1"
@@ -210,6 +222,7 @@
     [:classifier/context :keyword]
     [:classifier/prompt :keyword]
     [:classifier/output :keyword]
+    [:classifier/requires-features {:optional true} [:set :keyword]]
     [:classifier/emits [:ref "classifier/emission-v1"]]
     [:classifier/runtime [:ref "classifier/runtime-v1"]]]
 
@@ -220,8 +233,10 @@
     [:program/description {:optional true} [:ref "dsl/non-empty-string"]]
     [:sources [:map-of :keyword [:ref "source/definition-v1"]]]
     [:models [:map-of :keyword [:ref "model/definition-v1"]]]
+    [:features [:map-of :keyword [:ref "feature/definition-v1"]]]
     [:selectors [:map-of :keyword [:ref "selector/definition-v1"]]]
     [:contexts [:map-of :keyword [:ref "context/definition-v1"]]]
     [:prompts [:map-of :keyword [:ref "prompt/definition-v1"]]]
     [:outputs [:map-of :keyword [:ref "output/definition-v1"]]]
+    [:extractors [:map-of :keyword [:ref "extractor/definition-v1"]]]
     [:classifiers [:map-of :keyword [:ref "classifier/definition-v1"]]]]})

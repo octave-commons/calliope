@@ -5,6 +5,9 @@ description: Work with the fork_tales_v2 lyric corpus — the event-sourced inge
 
 # fork_tales corpus
 
+This is an OpenCode-local skill. Root `PROCESS.md` remains authoritative for
+harness-neutral process, receipts, evidence, and fallback behavior.
+
 ## The one rule
 
 `docs/lyrics/` is a **projection**, never a source. All truth lives in
@@ -38,6 +41,9 @@ minus the Suno `ID:` line, whitespace-normalized), picks a canonical source
 (`~/Music` > octave-commons/fork_tales > Lore > devel > Downloads), copies it
 verbatim to `docs/lyrics/<slug>.<ext>`.
 
+Treat those local paths as available only after checking the active machine.
+They are historical source preferences, not portable harness capabilities.
+
 ## Known corpus facts (pass 1, 2026-07-24)
 
 - 690 unique songs from 1,522 lyric files (832 duplicates collapsed).
@@ -49,11 +55,17 @@ verbatim to `docs/lyrics/<slug>.<ext>`.
 - Pass-2 caveat: title-extraction artifacts create false clusters. Docs whose
   "title" is a generic markdown header (e.g. `## signal`, 13 members,
   mean-sim 0.07) are unrelated songs. Treat `:mean-similarity` < ~0.3 as
-  "shared title only", ≥ ~0.8 as true re-render variants.
+  "shared title only", ≥ ~0.8 as true re-render candidates.
 - `:pasted-artifact` flags = Suno "songs" whose body is a pasted chat log or
   zip manifest. Kept (they were rendered), but filter them for lore analysis.
 
 ## Working with ledgers
 
-Use the global `edn_ledger` muse tool (append/tail/query/count/filter) for
-ad-hoc reads and writes of `ledgers/*.edn` — never `echo >>` by hand.
+When the configured OpenCode environment exposes the global `edn_ledger` Muse
+tool, use it for governed `ledgers/*.edn` reads and appends. Use
+`receipt_river` for root `receipts.edn` after substantive work.
+
+If either tool is unavailable, follow the exact append-only fallback in
+`PROCESS.md` and record the unavailability. Never use ad-hoc `echo >>` writes,
+never edit prior events, and never claim a global plugin was used merely because
+this skill mentions it.

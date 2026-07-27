@@ -3,7 +3,9 @@ name: Classifier DSL
 on:
   pull_request:
     paths:
+      - "AGENTS.md"
       - "deps.edn"
+      - "docs/classifier-dsl.md"
       - "src/fork_tales/**"
       - "resources/classifiers/**"
       - "test/fork_tales/**"
@@ -11,7 +13,9 @@ on:
   push:
     branches: [main]
     paths:
+      - "AGENTS.md"
       - "deps.edn"
+      - "docs/classifier-dsl.md"
       - "src/fork_tales/**"
       - "resources/classifiers/**"
       - "test/fork_tales/**"

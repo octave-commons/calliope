@@ -43,6 +43,7 @@ jobs:
           name: classifier-test-output
           path: |
             classifier-test.log
+            resources/classifiers/theme-discovery-v1.edn
             /tmp/clojure-*.edn
       - name: Enforce classifier test result
         if: steps.classifier-tests.outputs.status != '0'

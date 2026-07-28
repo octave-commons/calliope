@@ -116,7 +116,7 @@ blocked     -> breakdown | ready
 ready       -> todo | breakdown
 todo        -> in_progress            (WIP check)
 in_progress -> testing | todo | breakdown
-in_progress -> review                 (build gate)
+in_progress -> review                 (build gate; the ONLY gated edge)
 testing     -> review | in_progress | todo
 review      -> document | in_progress | todo
 document    -> done | review
@@ -138,7 +138,8 @@ state.
 - **todo** — selected for execution.
 - **in_progress** — one actor owns an active bounded commitment.
 - **testing** — engine-supported verification hop between `in_progress` and
-  `review`. Fork Tales does not currently use it.
+  `review`. Fork Tales does not currently use it, but it is the ungated route
+  around the `in_progress -> review` build gate.
 - **review** — result and evidence await evaluation.
 - **document** — durable documentation or acceptance evidence is being completed.
 - **done** — accepted for the card's declared scope.
@@ -148,11 +149,23 @@ state.
 States describe process position, not truth. A merged PR or green check does not
 make a card done without acceptance evidence.
 
-The engine's `in_progress -> review` build gate runs `pnpm build`. Fork Tales is a
-Clojure/JVM repository with no pnpm project, so that gate always fails here and
-the CLI cannot advance a card past `in_progress`. Move cards by editing card
-Markdown and re-running `eta-mu kanban count` plus
-`scripts/validate_rheos_board.py`; the governing evidence gate for this
+The engine's build gate sits on exactly one edge: the direct
+`in_progress -> review` transition. Its check spec runs `pnpm build`,
+`pnpm lint`, and `pnpm test`; Fork Tales is a Clojure/JVM repository with no
+pnpm project, so the first command fails and the CLI rejects that edge with
+``transition rejected: Build gate failed: `pnpm build` exited with code 1``.
+
+That gate does **not** prevent the CLI from reaching `done`. `in_progress ->
+testing` and `testing -> review` are both `always_allow`, so the gate is
+bypassable by routing through `testing`. Verified on a throwaway board copy with
+`eta-mu kanban frontmatter <uuid> status <state>`: `ready -> todo ->
+in_progress -> testing -> review -> document -> done` succeeded at every step.
+Do not read the gate as a hard stop; it only makes the shortcut edge unusable.
+
+Fork Tales still moves cards by editing card Markdown, because the CLI write path
+corrupts the card contract (see the write-path caution below) — not because the
+build gate blocks it. After any status edit, re-run `eta-mu kanban count` plus
+`scripts/validate_rheos_board.py`. The governing evidence gate for this
 repository is `clojure -M:test` and the Repository Contracts workflow, not
 `pnpm build`.
 
@@ -171,7 +184,12 @@ repository is `clojure -M:test` and the Repository Contracts workflow, not
 7. WIP limit: at most 2 `in_progress` and 1 `review` unless an explicit process
    experiment changes it. This is a repository rule enforced by
    `scripts/validate_rheos_board.py`; the installed engine's own limits are far
-   looser (`in_progress=10`, `review=5`) and must not be treated as permission.
+   looser and must not be treated as permission. The `promethean` FSM this
+   repository selects sets `in_progress=50`, `review=40`, `todo=75`,
+   `ready=100`, `blocked=15`, `breakdown=50`, `testing=40`, `accepted=40`,
+   `document=40`, `done=500`, and `9999` for `icebox`/`incoming`/`rejected`/
+   `archived`. (The commonly quoted `in_progress=10`/`review=5` pair belongs to
+   the engine's `default_fsm`, which this repository does not use.)
 8. Work, render, clip, arrangement, export, and release identities may not be
    collapsed for implementation convenience.
 9. Export, handoff, upload, processing, and published states remain distinct.

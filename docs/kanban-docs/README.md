@@ -18,8 +18,9 @@ publication adapters.
 prose lives here in `docs/kanban-docs/` so Rheos does not ingest it as phantom
 work.
 
-ADR-001 is accepted and Media Workbench v1 is approved. FT-000A and the review
-reconciliation chores are done. The first ready slices are:
+ADR-001 is accepted and Media Workbench v1 is approved. FT-000A, the review
+reconciliation chores, and the FT-OPS-001 local board verification are done. The
+first ready slices are:
 
 - FT-000B — media-workbench domain laws;
 - FT-000D — native UI, real playback, read-model, and application topology.
@@ -37,5 +38,12 @@ python3 scripts/validate_rheos_board.py
 
 Use `--tasks-dir` only for an intentional override or configuration diagnostic.
 
+Verified with eta-mu 1.1.1 on 2026-07-28: 27 cards, no phantom prose cards, and a
+passing validator. See `../kanban/chores/ft-ops-001-generate-rheos-board-snapshot.md`
+for the recorded output and the FSM/write-path drift found in that version.
+
 The current Rheos `board snapshot` drops rich card fields and is not committed.
 Markdown card files plus the repository validator are the inspectable board source.
+The CLI is the authoritative reader; card Markdown in Git is the authoritative
+writer, because `eta-mu kanban frontmatter`/`comment` rewrite frontmatter in a way
+the repository validator rejects.

@@ -40,11 +40,25 @@ python3 scripts/validate_rheos_board.py
 ```
 
 Use `--tasks-dir` only to operate a different board or diagnose configuration
-discovery.
+discovery. Config discovery walks upward from the working directory, so read
+commands also work from `docs/` or `scripts/`. Run from a path outside the
+repository and the tool silently falls back to its built-in default and reports
+zero tasks.
 
 The current `board snapshot` is useful for display diagnostics but discards rich
 frontmatter fields. It is not committed and is not dependency or acceptance
 authority.
+
+### Write-path caution
+
+Verified against eta-mu 1.1.1: `eta-mu kanban frontmatter` and
+`eta-mu kanban comment` rewrite the entire frontmatter block. They reorder keys,
+re-quote every scalar, inject a `write-id` field, and drop the file's trailing
+newline, which fails `scripts/validate_rheos_board.py`. Until that is fixed
+upstream, edit card Markdown directly for status changes and durable notes, then
+re-run `eta-mu kanban count` and the validator to confirm the board still reads.
+Treat the CLI as the authoritative *reader* and Git as the authoritative
+*writer*.
 
 ## Frontmatter contract
 
@@ -89,28 +103,58 @@ Required before leaving `incoming`:
 
 ## Status FSM
 
+`openhax.kanban.json` selects the `promethean` FSM. These are the transitions the
+installed engine actually enforces, read from eta-mu 1.1.1 and confirmed by
+rejected probe transitions:
+
 ```text
-icebox -> incoming -> accepted -> breakdown -> ready -> todo
-       -> in_progress -> blocked -> review -> document -> done
+icebox      -> incoming
+incoming    -> icebox | accepted
+accepted    -> breakdown | incoming
+breakdown   -> ready | accepted | blocked
+blocked     -> breakdown | ready
+ready       -> todo | breakdown
+todo        -> in_progress            (WIP check)
+in_progress -> testing | todo | breakdown
+in_progress -> review                 (build gate)
+testing     -> review | in_progress | todo
+review      -> document | in_progress | todo
+document    -> done | review
+done        -> icebox | review
 ```
 
-`rejected` is reachable from any state.
+`rejected` is reachable from `accepted`, `breakdown`, `blocked`, `ready`, `todo`,
+`in_progress`, `review`, and `document`. `archived` is reachable from every other
+state.
 
 - **icebox** — real work intentionally deferred.
 - **incoming** — captured but not fully triaged.
 - **accepted** — worth planning; authority and rough dependencies are known.
 - **breakdown** — being decomposed or a decomposed parent.
+- **blocked** — planned work that cannot proceed on named evidence. The engine
+  only allows entering it from `breakdown`, so a stalled `in_progress` card
+  returns to `breakdown` first.
 - **ready** — another qualified actor can begin without inventing scope.
 - **todo** — selected for execution.
 - **in_progress** — one actor owns an active bounded commitment.
-- **blocked** — started or selected but unable to proceed on named evidence.
+- **testing** — engine-supported verification hop between `in_progress` and
+  `review`. Fork Tales does not currently use it.
 - **review** — result and evidence await evaluation.
 - **document** — durable documentation or acceptance evidence is being completed.
 - **done** — accepted for the card's declared scope.
 - **rejected** — deliberately not pursued in the stated form.
+- **archived** — removed from active board consideration.
 
 States describe process position, not truth. A merged PR or green check does not
 make a card done without acceptance evidence.
+
+The engine's `in_progress -> review` build gate runs `pnpm build`. Fork Tales is a
+Clojure/JVM repository with no pnpm project, so that gate always fails here and
+the CLI cannot advance a card past `in_progress`. Move cards by editing card
+Markdown and re-running `eta-mu kanban count` plus
+`scripts/validate_rheos_board.py`; the governing evidence gate for this
+repository is `clojure -M:test` and the Repository Contracts workflow, not
+`pnpm build`.
 
 ## Hard rules
 
@@ -125,7 +169,9 @@ make a card done without acceptance evidence.
    history.
 6. `board.json` is lossy diagnostic output, never hand-edited or authoritative.
 7. WIP limit: at most 2 `in_progress` and 1 `review` unless an explicit process
-   experiment changes it.
+   experiment changes it. This is a repository rule enforced by
+   `scripts/validate_rheos_board.py`; the installed engine's own limits are far
+   looser (`in_progress=10`, `review=5`) and must not be treated as permission.
 8. Work, render, clip, arrangement, export, and release identities may not be
    collapsed for implementation convenience.
 9. Export, handoff, upload, processing, and published states remain distinct.
@@ -142,8 +188,11 @@ make a card done without acceptance evidence.
 4. Confirm governing ADR/design status and local capability.
 5. Move the card through `todo` and `in_progress` before acting.
 6. Record material evidence as it occurs.
-7. Return to `breakdown` or `blocked` when scope or evidence is insufficient.
+7. Return to `breakdown` when scope or evidence is insufficient, and to `blocked`
+   from there when the obstruction is named and external.
 8. Move through `review` and `document`; only accepted work reaches `done`.
+9. Confirm every status change with `eta-mu kanban count` and
+   `scripts/validate_rheos_board.py`.
 
 ## Current phase map
 

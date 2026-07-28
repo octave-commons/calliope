@@ -80,12 +80,14 @@ confusing export, upload, processing, and published states.
 
 | Card | Outcome | State |
 |---|---|---|
-| FT-OPS-001 | Re-run installed Rheos against the corrected card corpus and record count/list/find evidence | ready |
+| FT-OPS-001 | Re-run installed Rheos against the corrected card corpus and record count/list/find evidence | done |
 | FT-OPS-002 | Reconcile ADR, design, process, and card statuses after review | done |
 | FT-OPS-003 | Record independent Claude design/board review disposition | done |
 
 `board.json` is intentionally not a committed acceptance artifact because the
-current snapshot loses rich frontmatter. FT-OPS-001 validates the installed tool;
+current snapshot loses rich frontmatter. FT-OPS-001 validated the installed tool
+against the corrected corpus on 2026-07-28 with eta-mu 1.1.1 and recorded the
+resulting FSM and write-path drift in its card;
 `scripts/validate_rheos_board.py` validates the complete relationship contract.
 
 ## Critical path
@@ -113,5 +115,7 @@ FT-000A ─┬─> FT-000B ─┐
 
 ## Current first move
 
-Run FT-OPS-001 locally to verify the corrected board against the installed Rheos.
-Then FT-000B and FT-000D are the parallel product implementation fronts.
+FT-OPS-001 is done: the corrected board was verified locally against installed
+eta-mu 1.1.1 (27 cards, no phantom prose cards, UUID identity resolving, repository
+validator passing). FT-000B and FT-000D are now the parallel product
+implementation fronts.

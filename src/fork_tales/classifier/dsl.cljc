@@ -4,7 +4,8 @@
   This namespace deliberately does not call Ollama, llama.cpp, the filesystem,
   or an event ledger. It validates a program and resolves classifiers and
   feature extractors into pure plans for adapter layers to interpret."
-  (:require [fork-tales.law.classifier :as classifier-law]
+  (:require [clojure.set :as set]
+            [fork-tales.law.classifier :as classifier-law]
             [fork-tales.law.feature :as feature-law]
             [malli.core :as m]
             [malli.registry :as mr]))
@@ -161,6 +162,8 @@
       (map-indexed vector (:context/steps context))))
    (:contexts program)))
 
+(declare producer-index)
+
 (defn- classifier-reference-issues
   [program]
   (mapcat
@@ -190,6 +193,21 @@
         (:classifier/requires-features classifier)))))
    (:classifiers program)))
 
+(defn- unproducible-feature-issues
+  [program]
+  (let [producers (producer-index program)]
+    (mapcat
+     (fn [[classifier-id classifier]]
+       (keep
+        (fn [feature-id]
+          (when (empty? (get producers feature-id))
+            (issue :feature/unproducible
+                   [:classifiers classifier-id :classifier/requires-features feature-id]
+                   "Required feature has no extractor that produces it."
+                   {:feature feature-id})))
+        (:classifier/requires-features classifier)))
+     (:classifiers program))))
+
 (defn- extractor-reference-issues
   [program]
   (mapcat
@@ -218,6 +236,30 @@
                           [:extractors extractor-id
                            :extractor/fallback-models index]))
            (:extractor/fallback-models extractor)))))))
+   (:extractors program)))
+
+(defn- required-cache-key-parts
+  [extractor]
+  (cond-> #{:object-content-sha256 :extractor-version}
+    (= :llm (:extractor/type extractor))
+    (into #{:model-digest :prompt-version :context-version})))
+
+(defn- extractor-cache-issues
+  [program]
+  (mapcat
+   (fn [[extractor-id extractor]]
+     (let [cache (:extractor/cache extractor)]
+       (when (= :exact-only (:cache/reuse cache))
+         (for [part (sort-by name
+                            (set/difference
+                             (required-cache-key-parts extractor)
+                             (:cache/key cache)))]
+           (issue :cache/key-incomplete
+                  [:extractors extractor-id :extractor/cache :cache/key part]
+                  "Exact cache reuse is missing an identity component required by the extractor type."
+                  {:extractor/id extractor-id
+                   :extractor/type (:extractor/type extractor)
+                   :missing-part part})))))
    (:extractors program)))
 
 (defn- prompt-context-issue
@@ -312,7 +354,9 @@
     (context-dataflow-issues program)
     (context-feature-reference-issues program)
     (classifier-reference-issues program)
+    (unproducible-feature-issues program)
     (extractor-reference-issues program)
+    (extractor-cache-issues program)
     (prompt-context-issues program)
     (output-schema-issues program)
     (feature-schema-issues program))))

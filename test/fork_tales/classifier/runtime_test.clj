@@ -261,3 +261,70 @@
         (is (not (str/includes? instruction "EDN")))))
     (testing ":none leaves the prompt alone"
       (is (nil? (runtime/contract-instruction :none output))))))
+
+(deftest explicit-selector-rejects-unresolved-ids
+  (let [selector {:selector/id :test/explicit
+                  :selector/type :explicit
+                  :selector/object-ids ["present" "missing"]}
+        objects [{:object/id "present"}]
+        error (try
+                (runtime/execute-selector objects selector {})
+                nil
+                (catch clojure.lang.ExceptionInfo error error))]
+    (is (some? error))
+    (is (= :test/explicit (:selector/id (ex-data error))))
+    (is (= "missing" (:object/id (ex-data error))))))
+
+(deftest hydrate-consumes-the-declared-input-binding
+  (let [state {:runtime
+               {:resolvers
+                {:test/first (fn [_ object] (assoc object :stage 1))
+                 :test/second (fn [_ object] (update object :stage inc))}}}
+        context {:context/steps
+                 [{:step/op :hydrate
+                   :step/input :selected
+                   :step/resolver :test/first
+                   :step/as :first}
+                  {:step/op :hydrate
+                   :step/input :first
+                   :step/resolver :test/second
+                   :step/as :second}]
+                 :context/output-key :second
+                 :context/token-budget {:max-tokens 100 :overflow :fail}}
+        result (runtime/execute-context state context [{:object/id "song"}])]
+    (is (= 2 (get-in result [:second 0 :stage])))))
+
+(deftest missing-requested-feature-fails-at-the-extractor-boundary
+  (let [state {:runtime {}
+               :program program
+               :producer-index
+               {:fork-tales/production-style-v1
+                [:fork-tales/production-style-v1]}
+               :cache (atom {})
+               :dry-run? false}
+        context {:context/steps
+                 [{:step/op :attach-features
+                   :step/input :selected
+                   :step/features #{:fork-tales/production-style-v1}
+                   :step/status-policy :derived-or-better
+                   :step/missing :extract
+                   :step/as :enriched}]
+                 :context/output-key :enriched
+                 :context/token-budget {:max-tokens 100 :overflow :fail}}
+        object {:object/id "song"
+                :object/type :work
+                :object/content-sha256 (apply str (repeat 64 "a"))}
+        error
+        (with-redefs [runtime/run-extractor!
+                      (fn [_ _ _]
+                        [{:feature/id :fork-tales/unrelated-feature-v1}])]
+          (try
+            (runtime/execute-context state context [object])
+            nil
+            (catch clojure.lang.ExceptionInfo error error)))]
+    (is (some? error))
+    (is (= :fork-tales/production-style-v1
+           (:feature/id (ex-data error))))
+    (is (= :fork-tales/production-style-v1
+           (:extractor/id (ex-data error))))
+    (is (= "song" (:object/id (ex-data error))))))

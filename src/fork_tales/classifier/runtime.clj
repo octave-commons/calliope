@@ -179,7 +179,14 @@
 
       :explicit
       (let [by-id (into {} (map (juxt :object/id identity)) filtered)]
-        (mapv by-id (:selector/object-ids selector)))
+        (mapv
+         (fn [object-id]
+           (or (get by-id object-id)
+               (throw
+                (ex-info "Explicit selector references an unknown or filtered-out object."
+                         {:selector/id (:selector/id selector)
+                          :object/id object-id}))))
+         (:selector/object-ids selector)))
 
       :provided
       (->> (get inputs (:selector/input-key selector) [])
@@ -782,7 +789,14 @@
 
         :else
         (let [events (run-extractor! state producer-id object)
-              event (first (filter #(= feature-id (:feature/id %)) events))]
+              event
+              (or (first (filter #(= feature-id (:feature/id %)) events))
+                  (throw
+                   (ex-info "Extractor ran but did not produce the requested feature."
+                            {:feature/id feature-id
+                             :extractor/id producer-id
+                             :object/id (:object/id object)
+                             :produced-feature-ids (mapv :feature/id events)})))]
           {:feature/id feature-id
            :feature/value (:feature/value event)
            :feature/status (:event/status event)
@@ -801,7 +815,7 @@
                  (case (:step/op step)
                    :hydrate
                    (mapv #((resolver runtime (:step/resolver step)) runtime %)
-                         (get bindings :selected))
+                         input)
 
                    :segment
                    (case (:step/strategy step)

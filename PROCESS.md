@@ -116,7 +116,7 @@ the available capabilities and follow this charter directly.
 
 ### Activation
 
-Any substantive repository write activates the receipt obligation for that
+Any substantive repository work activates the receipt obligation for that
 repository. Multi-repository work requires a receipt in every substantively
 touched repository.
 

@@ -133,7 +133,9 @@ rather than requiring a Clojure source edit for every new feature.
 
 ## Cache semantics
 
-Feature cache keys are explicit. An exact reusable observation may depend on:
+Feature cache keys are explicit. Exact reuse is accepted only when the declared
+identity covers every dependency required by the extractor type. A reusable
+observation may depend on:
 
 - object content hash;
 - extractor version;
@@ -141,8 +143,11 @@ Feature cache keys are explicit. An exact reusable observation may depend on:
 - prompt version; and
 - context-generator version.
 
-A changed lyric, extractor, model, prompt, or context policy therefore produces
-a new derived observation instead of silently reusing stale features.
+For deterministic extractors, exact reuse requires object content and extractor
+version. For LLM extractors it additionally requires model identity, prompt
+version, and a stable hash of the context generator. A changed dependency
+therefore produces a new derived observation instead of silently reusing stale
+features.
 
 ## Selection is not context construction
 

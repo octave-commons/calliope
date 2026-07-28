@@ -122,3 +122,38 @@
   (is (some? (dsl/output-schema
               program
               :fork-tales/song-sections-result-v1))))
+
+(deftest lint-rejects-required-features-without-producers
+  (let [broken (update program :extractors dissoc
+                       :fork-tales/production-style-v1)
+        issues (dsl/lint broken)]
+    (is (some #(and (= :feature/unproducible (:issue/code %))
+                    (= :fork-tales/production-style-v1
+                       (get-in % [:issue/data :feature])))
+              issues))
+    (is (false? (dsl/runnable? broken)))))
+
+(deftest exact-cache-keys-cover-extractor-dependencies
+  (testing "deterministic extraction includes its implementation version"
+    (let [broken (assoc-in
+                  program
+                  [:extractors :fork-tales/song-sections-v1
+                   :extractor/cache :cache/key]
+                  #{:object-content-sha256})
+          issues (dsl/lint broken)]
+      (is (some #(and (= :cache/key-incomplete (:issue/code %))
+                      (= :extractor-version
+                         (get-in % [:issue/data :missing-part])))
+                issues))))
+  (testing "LLM extraction includes model, prompt, and context identity"
+    (let [broken (update-in
+                  program
+                  [:extractors :fork-tales/production-style-v1
+                   :extractor/cache :cache/key]
+                  disj
+                  :context-version)
+          issues (dsl/lint broken)]
+      (is (some #(and (= :cache/key-incomplete (:issue/code %))
+                      (= :context-version
+                         (get-in % [:issue/data :missing-part])))
+                issues)))))

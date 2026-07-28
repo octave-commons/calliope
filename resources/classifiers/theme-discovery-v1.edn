@@ -28,8 +28,7 @@
    :model/name "gemma4:e4b"
    :model/endpoint "http://127.0.0.1:8080/v1/chat/completions"
    :model/modalities #{:text :image :audio}
-   :model/options {:n_ctx 32768
-                   :temperature 0.2}}
+   :model/options {:temperature 0.2}}
 
   :fork-tales/gemma4-e2b-ollama
   {:model/id :fork-tales/gemma4-e2b-ollama
@@ -177,6 +176,7 @@
    :context/selector :fork-tales/provided-work-v1
    :context/steps
    [{:step/op :hydrate
+     :step/input :selected
      :step/resolver :fork-tales/lyric-and-production-metadata-v1
      :step/modalities #{:text}
      :step/as :work-material}
@@ -199,6 +199,7 @@
    :context/selector :fork-tales/random-ten-works-v1
    :context/steps
    [{:step/op :hydrate
+     :step/input :selected
      :step/resolver :fork-tales/canonical-lyric-v1
      :step/modalities #{:text}
      :step/as :lyrics}
@@ -277,26 +278,7 @@
     [:object/id [:string {:min 1}]]
     [:feature/id [:= :fork-tales/production-style-v1]]
     [:feature/value
-     [:map {:closed true}
-      [:tempo
-       [:map {:closed true}
-        [:bpm-min {:optional true} [:int {:min 1 :max 400}]]
-        [:bpm-max {:optional true} [:int {:min 1 :max 400}]]
-        [:feel {:optional true}
-         [:enum :straight :half-time :double-time :rubato :destabilized :unknown]]]]
-      [:genres [:vector :string]]
-      [:moods [:vector :string]]
-      [:rhythm [:vector :string]]
-      [:texture [:vector :string]]
-      [:vocals [:vector :string]]
-      [:structure [:vector :string]]
-      [:negative-constraints [:vector :string]]
-      [:production-notes [:vector :string]]
-      [:evidence
-       [:vector
-        [:map {:closed true}
-         [:source [:enum :style-prompt :lyrics :metadata :artwork :audio]]
-         [:quote-or-description [:string {:min 1}]]]]]]]]}
+     [:ref :fork-tales/production-style-v1]]]}
 
   :fork-tales/theme-discovery-result-v1
   {:output/id :fork-tales/theme-discovery-result-v1
@@ -359,7 +341,7 @@
    :extractor/output :fork-tales/production-style-result-v1
    :extractor/cache {:cache/reuse :exact-only
                      :cache/key #{:object-content-sha256 :extractor-version
-                                  :model-digest :prompt-version}}
+                                  :model-digest :prompt-version :context-version}}
    :extractor/emits {:event/type :feature/extracted
                      :event/ledger "ledgers/classification.edn"
                      :event/status :derived}

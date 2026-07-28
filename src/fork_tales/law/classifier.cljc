@@ -120,6 +120,7 @@
    "context/step-hydrate-v1"
    [:map {:closed true}
     [:step/op [:= :hydrate]]
+    [:step/input :keyword]
     [:step/resolver :keyword]
     [:step/modalities [:set {:min 1} [:ref "model/modality-v1"]]]
     [:step/as :keyword]]

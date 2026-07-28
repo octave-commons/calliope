@@ -1,111 +1,48 @@
 name: Classifier DSL
 
+permissions:
+  contents: read
+
 on:
   pull_request:
     paths:
-      - "**"
-
-permissions:
-  contents: write
+      - "AGENTS.md"
+      - "PROCESS.md"
+      - "deps.edn"
+      - "docs/classifier-dsl.md"
+      - "docs/harnesses/**"
+      - ".opencode/AGENTS.md"
+      - ".opencode/skills/fork-tales-corpus/SKILL.md"
+      - "src/fork_tales/**"
+      - "resources/classifiers/**"
+      - "test/fork_tales/**"
+      - ".github/workflows/classifier-dsl.yml"
+      - ".github/workflows/apply-coderabbit-fixes.yml"
+  push:
+    branches: [main]
+    paths:
+      - "AGENTS.md"
+      - "PROCESS.md"
+      - "deps.edn"
+      - "docs/classifier-dsl.md"
+      - "docs/harnesses/**"
+      - ".opencode/AGENTS.md"
+      - ".opencode/skills/fork-tales-corpus/SKILL.md"
+      - "src/fork_tales/**"
+      - "resources/classifiers/**"
+      - "test/fork_tales/**"
+      - ".github/workflows/classifier-dsl.yml"
 
 jobs:
-  patch-test-commit:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: design/classifier-dsl-v1
-          fetch-depth: 0
           show-progress: false
-
+          persist-credentials: false
       - uses: DeLaGuardo/setup-clojure@13.0
         with:
           cli: 1.12.2.1565
-
-      - name: Apply verified review fixes
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          path = Path("scripts/apply-classifier-review-fixes.py")
-          text = path.read_text()
-          old = '''replace_once(
-              "src/fork_tales/classifier/runtime.clj",
-              "(get bindings :selected)",
-              "input",
-              "hydrate declared input")'''
-          new = '''regex_once(
-              "src/fork_tales/classifier/runtime.clj",
-              r"\\(get bindings :selected\\)",
-              "input",
-              "hydrate declared input")'''
-          if text.count(old) != 1:
-              raise SystemExit("hydrate migration block not found exactly once")
-          path.write_text(text.replace(old, new, 1))
-          PY
-          python3 scripts/apply-classifier-review-fixes.py
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-
-          law = Path("src/fork_tales/law/classifier.cljc")
-          text = law.read_text()
-          pattern = r'(\[:step/op \[:= :hydrate\]\]\n)(\s*)(\[:step/resolver :keyword\])'
-          replacement = r'\1\2[:step/input :keyword]\n\2\3'
-          text, count = re.subn(pattern, replacement, text, count=1)
-          if count != 1:
-              raise SystemExit(f"hydrate schema insertion expected once, found {count}")
-          law.write_text(text)
-
-          program = Path("resources/classifiers/theme-discovery-v1.edn")
-          text = program.read_text()
-          pattern = r'(\{:step/op :hydrate\n)(\s*)(:step/resolver)'
-          replacement = r'\1\2:step/input :selected\n\2\3'
-          text, count = re.subn(pattern, replacement, text)
-          if count != 2:
-              raise SystemExit(f"expected two hydrate program steps, found {count}")
-          program.write_text(text)
-          PY
-
-      - name: Run expanded classifier DSL tests
+      - name: Run classifier DSL tests
         run: clojure -M:test
-
-      - name: Record receipt and commit tested repository changes
-        env:
-          SOURCE_SHA: ${{ github.event.pull_request.head.sha }}
-        run: |
-          python3 - <<'PY'
-          from datetime import datetime, timezone
-          import os
-          from pathlib import Path
-          ts = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-          line = (
-              '{:ts "' + ts + '", :kind :build, '
-              ':repo "https://github.com/octave-commons/fork_tales_v2", '
-              ':origin "github-actions", :owner "gpt-5.6-thinking", '
-              ':dod "Address verified CodeRabbit findings with fail-fast runtime boundaries, explicit hydrate dataflow, producer/cache lint, schema deduplication, provider-profile correction, workflow hardening, and regression tests.", '
-              ':pi "eta-mu/receipt-river-v1", :host "github-actions/ubuntu-latest", '
-              ':manifest "PR #1 CodeRabbit review threads; classifier DSL/runtime/tests", '
-              ':refs "source head ' + os.environ.get("SOURCE_SHA", "unknown") + '; design/classifier-dsl-v1", '
-              ':tests "clojure -M:test passed in GitHub Actions before commit", '
-              ':decisions "Hydrate steps now declare :step/input explicitly; rejected the track-ingest false positive because completed track projections and assets exist; retained per-substantive-work receipt semantics rather than per-file-write receipts."}\n'
-          )
-          with Path("receipts.edn").open("a") as f:
-              f.write(line)
-          PY
-
-          rm -f scripts/apply-classifier-review-fixes.py
-          git config user.name "fork-tales-review-fixer[bot]"
-          git config user.email "fork-tales-review-fixer[bot]@users.noreply.github.com"
-          git add PROCESS.md \
-            .opencode/skills/fork-tales-corpus/SKILL.md \
-            resources/classifiers/theme-discovery-v1.edn \
-            src/fork_tales/classifier/dsl.cljc \
-            src/fork_tales/classifier/runtime.clj \
-            src/fork_tales/law/classifier.cljc \
-            docs/classifier-dsl.md \
-            test/fork_tales/classifier/dsl_test.clj \
-            test/fork_tales/classifier/runtime_test.clj \
-            receipts.edn \
-            scripts/apply-classifier-review-fixes.py
-          git commit -m "fix: address classifier DSL review findings"
-          git push origin HEAD:design/classifier-dsl-v1

@@ -45,21 +45,16 @@ jobs:
           python3 scripts/apply-classifier-review-fixes.py
           python3 - <<'PY'
           from pathlib import Path
+          import re
 
           law = Path("src/fork_tales/law/classifier.cljc")
           text = law.read_text()
-          old = '''   "context/step-hydrate-v1"
-             [:map {:closed true}
-              [:step/op [:= :hydrate]]
-              [:step/resolver :keyword]'''
-          new = '''   "context/step-hydrate-v1"
-             [:map {:closed true}
-              [:step/op [:= :hydrate]]
-              [:step/input :keyword]
-              [:step/resolver :keyword]'''
-          if text.count(old) != 1:
-              raise SystemExit("hydrate schema block not found exactly once")
-          law.write_text(text.replace(old, new, 1))
+          pattern = r'(\[:step/op \[:= :hydrate\]\]\n)(\s*)(\[:step/resolver :keyword\])'
+          replacement = r'\1\2[:step/input :keyword]\n\2\3'
+          text, count = re.subn(pattern, replacement, text, count=1)
+          if count != 1:
+              raise SystemExit(f"hydrate schema insertion expected once, found {count}")
+          law.write_text(text)
 
           program = Path("resources/classifiers/theme-discovery-v1.edn")
           text = program.read_text()

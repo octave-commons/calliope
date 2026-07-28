@@ -5,7 +5,7 @@ status: done
 type: chore
 priority: P1
 phase: 0
-owner: unassigned
+owner: claude-local
 points: 2
 labels: review, media-workbench, governance
 category: chores
@@ -17,23 +17,32 @@ process: "docs/process/product-design-and-delivery.md"
 
 # FT-OPS-003: Record first independent design review disposition
 
-## Outcome
+## Disposition
 
-A reviewer other than the drafting actor evaluates the media-workbench package
-against the user's stated daily-player, salvage, ownership, and distribution
-goals.
+**Design authority: APPROVE. Board mechanics: REQUEST CHANGES.**
 
-## Review focus
+Review: `https://github.com/octave-commons/fork_tales_v2/pull/3#pullrequestreview-4793817603`
 
-- Does the playable model make partial-value renders workable?
-- Are work/render/clip/arrangement/export/release identities separated enough?
-- Is the daily-driver player genuinely first, or merely infrastructure prelude?
-- Are workspaces useful application objects rather than vague folders?
-- Is publication capability modeled honestly for direct and manual targets?
-- Are any high-risk open decisions hidden inside implementation cards?
+## Accepted findings
 
-## Acceptance criteria
+- Rheos recursively ingests every Markdown file below `tasksDir`; prose created
+  phantom cards.
+- `id:` was inert; explicit `uuid:` is operational identity.
+- Dependency and epic references must use that same UUID namespace.
+- Current snapshots are lossy and cannot be acceptance authority.
+- Decomposed epic statuses, blocked-state documentation, empty dependencies,
+  ignored event paths, and trailing newlines required correction.
+- Native UI, real playback, read-model, and application-boundary decisions lacked
+  explicit ownership.
 
-- The card contains an explicit APPROVE, REQUEST-CHANGES, or REJECT disposition.
-- Findings cite the research, ADR, design, or board artifact they affect.
-- Material changes become revisions or follow-up cards rather than silent edits.
+## Resolution
+
+- Prose moved to `docs/kanban-docs/`.
+- 27 cards use explicit UUID identity and resolved relationships.
+- Snapshot output is ignored and documented as diagnostic.
+- The repository validator enforces rich card invariants.
+- FT-000D owns native UI, real audio backend, read model, and application topology.
+- Gate 1 requires real corpus MP3 evidence.
+- FT-003B limits v1 sibling comparison to manual independent playheads.
+
+No finding was dismissed as merely stylistic.

@@ -17,7 +17,7 @@
 (def default-grade-script "scripts/reconstruction/audio_grade.py")
 (def default-rubric-file "resources/reconstruction/rubrics.json")
 (def default-image-judge-script "scripts/reconstruction/spectrogram_image_judge.py")
-(def default-handoff-validate-script "scripts/reconstruction/handoff_validate.py")
+(def default-handoff-validate-script "scripts/reconstruction/validate.clj")
 
 (defn now-iso [] (.toISOString (js/Date.)))
 (defn exists? [p] (.existsSync fs p))

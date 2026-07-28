@@ -29,13 +29,18 @@ engineering practice; it does not imply access to Err's local machine.
   `README.md`.
 - `resources/reconstruction/` — rubric weights, handoff schemas, and agent
   contracts as pure data.
-- `scripts/reconstruction/` — reconstruction runner and graders. The canonical
-  runner is `audio_agent.cljs`; the Python tools grade and judge, they are not
-  the pipeline.
+- `scripts/reconstruction/` — reconstruction lanes. `validate.clj` runs the
+  μ1-μ6 handoff invariants under babashka; `audio_agent.cljs` drives Gemma
+  Check. Remaining Python graders are being ported. The DSP lane cannot run
+  under bb — see `docs/reconstruction/runtime-split.md`.
 - `references/` — per-song reconstruction evidence: f0 contours, note fixtures,
   alignment JSON, USTX plans, coverage diagnostics. Renders are untracked and
   recorded by hash in each song's `RENDERS-MANIFEST.edn`. Artifacts are
   historical records; never rewrite one to correct a stale path.
+- `ledgers/reconstruction.edn` — append-only reconstruction event ledger. Every
+  stage appends an event carrying an epistemic tier and artifact hashes; grades
+  and coverage reports are projections rebuilt from it. It is also the only
+  channel between the babashka and JVM lanes.
 - `receipts.edn` — append-only Receipt River accountability ledger.
 
 ## Commands

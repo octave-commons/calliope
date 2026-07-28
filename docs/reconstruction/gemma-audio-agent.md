@@ -2,9 +2,9 @@
 
 This is the canonical devel-level prototype for the audio reconstruction loop. Knoxx may reference or delegate to it, but it is not an eta-mu extension and is not a replacement Knoxx workflow until proven.
 
-Contract-shaped interface notes live in [`fork-tales-audio-reconstruction-contract.md`](./fork-tales-audio-reconstruction-contract.md).
+Contract-shaped interface notes live in [`reconstruction-contract.md`](./reconstruction-contract.md).
 
-The higher-level role and handoff model lives in [`fork-tales-audio-agent-operating-model.md`](./fork-tales-audio-agent-operating-model.md). Machine-readable handoff definitions live in [`fork-tales-audio-handoff-schemas.json`](./fork-tales-audio-handoff-schemas.json).
+The higher-level role and handoff model lives in [`operating-model.md`](./operating-model.md). Machine-readable handoff definitions live in [`handoff-schemas.json`](../../resources/reconstruction/handoff-schemas.json).
 
 The harness lives at:
 
@@ -179,7 +179,7 @@ nbb scripts/fork_tales_audio_agent.cljs grade \
   --profile suno_reverse_accuracy
 ```
 
-`grade` uses [`fork-tales-audio-rubrics.json`](./fork-tales-audio-rubrics.json) and `scripts/reconstruction/audio_grade.py`. It outputs a weighted grade JSON beside the evidence bundle. The grade is not authoritative; it reports feature score, evidence confidence, evidence coverage, critical gate status, missing judges, and promotion eligibility.
+`grade` uses [`rubrics.json`](../../resources/reconstruction/rubrics.json) and `scripts/reconstruction/audio_grade.py`. It outputs a weighted grade JSON beside the evidence bundle. The grade is not authoritative; it reports feature score, evidence confidence, evidence coverage, critical gate status, missing judges, and promotion eligibility.
 
 Prepare a spectrogram/f0 image-judge prompt:
 

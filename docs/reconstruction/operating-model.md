@@ -9,7 +9,7 @@ This applies to both Fork Tales loops:
 1. **Scribe Mode**: derive trusted reference artifacts from owned source audio.
 2. **Composition Mode**: create new original work from a prompt plus accepted references.
 
-The rubric weights live in [`fork-tales-audio-rubrics.json`](./fork-tales-audio-rubrics.json). Handoff schema definitions live in [`fork-tales-audio-handoff-schemas.json`](./fork-tales-audio-handoff-schemas.json). Malli μ schemas live in [`fork-tales-audio-pipeline-schema.clj`](./fork-tales-audio-pipeline-schema.clj). The categorical formulation lives in [`fork-tales-validated-reference-category.md`](./fork-tales-validated-reference-category.md).
+The rubric weights live in [`rubrics.json`](../../resources/reconstruction/rubrics.json). Handoff schema definitions live in [`handoff-schemas.json`](../../resources/reconstruction/handoff-schemas.json). Malli μ schemas live in [`law/audio.cljc`](../../src/fork_tales/law/audio.cljc). The categorical formulation lives in [`validated-reference-category.md`](./validated-reference-category.md).
 
 ## Role Names
 
@@ -373,7 +373,7 @@ Human rejection must be structured by domain and span, not only free text:
 
 ## Executable Specs
 
-These specs are validated by `scripts/reconstruction/handoff_validate.py`.
+These specs are validated by `scripts/reconstruction/validate.clj`.
 
 - **μ1**: Every accepted artifact must include provenance, source span, and unresolved-issue list.
 - **μ2**: Reviewer rejection/revision must contain at least one actionable required action.

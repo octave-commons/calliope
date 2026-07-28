@@ -5,9 +5,9 @@ This document defines the evidence-weighted rubric for two related workflows:
 1. **Suno reverse-engineering / reconstruction**: recover what an owned Suno audio file actually sings and plays, then rebuild it as stems, MIDI, OpenUTAU, USTX, and reference renders.
 2. **Curated original generation**: use the best reverse-engineered Suno references as a dataset/style compass for creating new original Fork Tales tracks, where quality and instruction-following matter more than exact reconstruction.
 
-The machine-readable rubric lives in [`fork-tales-audio-rubrics.json`](./fork-tales-audio-rubrics.json).
+The machine-readable rubric lives in [`rubrics.json`](../../resources/reconstruction/rubrics.json).
 
-The cross-agent role/handoff model that wraps this rubric lives in [`fork-tales-audio-agent-operating-model.md`](./fork-tales-audio-agent-operating-model.md).
+The cross-agent role/handoff model that wraps this rubric lives in [`operating-model.md`](./operating-model.md).
 
 ## Core Principle
 
@@ -302,7 +302,7 @@ Implemented:
 
 - `audit` evidence bundle in `scripts/fork_tales_audio_agent.cljs`
 - deterministic f0/mel metrics in `scripts/fork_tales_audio_metrics.py`
-- machine-readable rubric in `docs/fork-tales-audio-rubrics.json`
+- machine-readable rubric in `resources/reconstruction/rubrics.json`
 - first-pass grade aggregator in `scripts/fork_tales_audio_grade.py`
 - calibrated spectrogram/f0 image-judge prompt + response normalizer in `scripts/fork_tales_spectrogram_image_judge.py`
 

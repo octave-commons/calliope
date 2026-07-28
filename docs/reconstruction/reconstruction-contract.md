@@ -6,7 +6,7 @@ This is the contract-shaped interface for the local audio reconstruction workflo
 nbb scripts/reconstruction/audio_agent.cljs <command> [--key value]
 ```
 
-The role-level Scribe/Composition operating model is defined in [`fork-tales-audio-agent-operating-model.md`](./fork-tales-audio-agent-operating-model.md).
+The role-level Scribe/Composition operating model is defined in [`operating-model.md`](./operating-model.md).
 
 ## Purpose
 
@@ -96,7 +96,7 @@ Use for single-audio model turns and local STT checks when A/B contamination or 
 
 ### `grade`
 
-Feature-specific evidence weighting. Reads an `evidence.json`, applies a rubric profile from [`fork-tales-audio-rubrics.json`](./fork-tales-audio-rubrics.json), and writes score/confidence/coverage/gate results.
+Feature-specific evidence weighting. Reads an `evidence.json`, applies a rubric profile from [`rubrics.json`](../../resources/reconstruction/rubrics.json), and writes score/confidence/coverage/gate results.
 
 ```bash
 nbb scripts/reconstruction/audio_agent.cljs grade \
@@ -139,7 +139,7 @@ nbb scripts/reconstruction/audio_agent.cljs handoff-validate \
   --catalog approved-reference-catalog.json
 ```
 
-This wraps `scripts/reconstruction/handoff_validate.py` and schema definitions from [`fork-tales-audio-handoff-schemas.json`](./fork-tales-audio-handoff-schemas.json).
+This wraps `scripts/reconstruction/validate.clj` and schema definitions from [`handoff-schemas.json`](../../resources/reconstruction/handoff-schemas.json).
 
 ## Gemma vs Smart Reviewer
 

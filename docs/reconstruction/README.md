@@ -61,12 +61,15 @@ Two rules that are easy to get wrong, both from `operating-model.md`:
 | Separator survey | [`audio-separation-tools.md`](./audio-separation-tools.md) |
 | Agent contracts | [`../../resources/reconstruction/contracts/`](../../resources/reconstruction/contracts/) |
 | Programs | [`../../scripts/reconstruction/`](../../scripts/reconstruction/) |
+| Runtime boundary (bb vs JVM) | [`runtime-split.md`](./runtime-split.md) |
+| Event ledger law | [`../../src/fork_tales/law/reconstruction.cljc`](../../src/fork_tales/law/reconstruction.cljc) |
 | Evidence artifacts | [`../../references/heresy-between/`](../../references/heresy-between/) |
 
-The canonical runner is `scripts/reconstruction/audio_agent.cljs` (NBB
-ClojureScript). The Python tools are graders and judges, not the pipeline:
-`audio_grade.py`, `audio_metrics.py`, `spectrogram_image_judge.py`,
-`handoff_validate.py`.
+Handoff validation is Clojure: `scripts/reconstruction/validate.clj` over the
+pure interpreter in `src/fork_tales/reconstruction/handoff.cljc`. The remaining
+Python tools are graders and judges, not the pipeline — `audio_grade.py`,
+`audio_metrics.py`, `spectrogram_image_judge.py` — and are being ported. The
+NBB runner `audio_agent.cljs` drives the Gemma Check lane.
 
 ## Artifacts: what is tracked and what is not
 
@@ -140,10 +143,19 @@ Require a harness with a local shell, a JVM/NBB toolchain, and the declared
 endpoints. Their presence here does not prove the current harness can run them.
 
 ```bash
-bb scripts/reconstruction/audio_agent.cljs gemma-check   # local pre-review lane
-python3 scripts/reconstruction/audio_grade.py            # rubric scoring
-python3 scripts/reconstruction/handoff_validate.py       # handoff-schema check
+bb scripts/reconstruction/validate.clj PACKET...   # μ1-μ6 handoff invariants
+clojure -M:test                                    # law + interpreter tests
+clojure -M:metrics ...                             # DSP lane (librosa via libpython-clj)
 ```
+
+The pipeline is event-sourced: each lane appends to `ledgers/reconstruction.edn`
+rather than returning a value, and the babashka and JVM lanes communicate only
+through that file. See [`runtime-split.md`](./runtime-split.md) — in particular,
+libpython-clj cannot run under babashka, and no pod is needed to work around it.
+
+Still Python, not yet ported: `audio_grade.py`, `spectrogram_image_judge.py`
+(both pure stdlib, direct translations) and `audio_metrics.py` (librosa +
+matplotlib, belongs behind `-M:metrics`).
 
 ## Still elsewhere
 

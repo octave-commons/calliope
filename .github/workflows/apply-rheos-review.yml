@@ -1,16 +1,27 @@
-name: Archived Rheos Review Migration
+name: Verify Rheos Review Reconciliation
 
 permissions:
   contents: read
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [design/media-workbench-v1]
+    paths:
+      - ".github/workflows/apply-rheos-review.yml"
 
 jobs:
-  archived:
+  verify:
     runs-on: ubuntu-latest
     steps:
-      - name: Explain archived workflow
-        run: |
-          echo "This one-shot migration has completed."
-          echo "Use the Repository Contracts workflow for ongoing validation."
+      - uses: actions/checkout@v4
+        with:
+          ref: design/media-workbench-v1
+          show-progress: false
+          persist-credentials: false
+      - name: Validate Rheos card graph
+        run: python3 scripts/validate_rheos_board.py
+      - uses: DeLaGuardo/setup-clojure@13.0
+        with:
+          cli: 1.12.2.1565
+      - name: Run Clojure tests
+        run: clojure -M:test

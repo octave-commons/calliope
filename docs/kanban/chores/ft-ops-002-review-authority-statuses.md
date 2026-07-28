@@ -21,7 +21,20 @@ dependency: ["ft-000a-review-and-accept-or-revise-media-workbench-authority"]
 
 The authority documents and board now reflect the same explicit disposition.
 
-## Completed reconciliation
+## Scope
+
+- Reconcile ADR-001, Media Workbench v1, and the delivery process statuses.
+- Align FT-000A, FT-000B, FT-000C, and FT-000D with the accepted authority state.
+- Keep board prose outside `tasksDir` and preserve explicit UUID relationships.
+- Record the reconciliation through Receipt River.
+
+## Non-goals
+
+- Accepting implementation work that has not been executed or reviewed.
+- Advancing dependency-gated cards without their prerequisites.
+- Treating generated board snapshots as durable authority.
+
+## Acceptance criteria
 
 - ADR-001 is `accepted` with Err as decider.
 - Media Workbench v1 is `approved`.
@@ -29,7 +42,10 @@ The authority documents and board now reflect the same explicit disposition.
 - FT-000A is `done` with the acceptance basis.
 - FT-000B and FT-000D are `ready`.
 - FT-000C and player work remain dependency-gated.
-- Board prose moved to `docs/kanban-docs/` and no longer becomes phantom cards.
-- Receipt River records the review and mechanics correction.
+- Board prose resides outside `docs/kanban/`.
 
-Merging the PR remains distinct from accepting future implementation cards.
+## Verification
+
+Run `python3 scripts/validate_rheos_board.py` and `clojure -M:test`. Confirm the
+accepted authority files resolve, the reconciled card statuses match their
+recorded dependencies, and Receipt River preserves the review disposition.

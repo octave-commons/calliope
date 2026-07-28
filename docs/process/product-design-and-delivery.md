@@ -1,10 +1,11 @@
 ---
 title: "Product Design and Delivery Process"
 kind: process-policy
-status: proposed
+status: accepted
 implements: [PROCESS.md]
-operational-guide: docs/kanban/AGENTS.md
+operational-guide: docs/kanban-docs/AGENTS.md
 created: "2026-07-27"
+accepted: "2026-07-28"
 ---
 
 # Product Design and Delivery Process
@@ -23,7 +24,7 @@ It follows the Epiphany separation of responsibilities:
 - implementation and tests provide review evidence;
 - explicit acceptance closes the declared scope.
 
-The board is not the architecture and a merged implementation is not human
+The board is not the architecture, and a merged implementation is not human
 acceptance.
 
 ## Authority chain
@@ -34,8 +35,11 @@ Apply product guidance in this order:
 2. Accepted ADRs in `docs/adrs/` — durable architectural decisions.
 3. Approved designs in `docs/designs/` — intended user experience and behavior.
 4. Process policies in `docs/process/` — revisable delivery rules.
-5. Rheos board cards in `docs/kanban/` — bounded work and current coordination.
+5. Rheos cards in `docs/kanban/` — bounded work and current coordination.
 6. Implementation details and task-local instructions.
+
+Board prose and delivery maps live under `docs/kanban-docs/`, outside Rheos's
+card-scanning `tasksDir`.
 
 A card may expose a design problem. It may not silently solve one by overriding an
 ADR or design in code.
@@ -44,29 +48,16 @@ ADR or design in code.
 
 ### Research
 
-Research belongs under `docs/research/` and records:
-
-- the question and scope;
-- source evidence and access dates where material;
-- corpus observations;
-- competing interpretations;
-- constraints and unknowns;
-- implications for a decision or design.
-
-Research is derived evidence. It does not decide architecture by itself.
+Research belongs under `docs/research/` and records the question, scope, sources,
+corpus observations, competing interpretations, constraints, unknowns, and
+implications. Research is derived evidence; it does not decide architecture by
+itself.
 
 ### ADR
 
-An ADR belongs under `docs/adrs/` and records:
-
-- context and forces;
-- the decision;
-- consequences and risks;
-- rejected alternatives;
-- acceptance conditions;
-- links to grounding research and affected designs.
-
-Status vocabulary:
+An ADR belongs under `docs/adrs/` and records context, the decision, consequences,
+risks, rejected alternatives, acceptance conditions, and links to research and
+affected designs.
 
 ```text
 proposed -> accepted -> superseded
@@ -74,39 +65,32 @@ proposed -> accepted -> superseded
 ```
 
 Only an accepted ADR is architecturally authoritative. Rejection and
-supersession preserve the original decision record.
+supersession preserve the original record.
 
 ### Design
 
-A design belongs under `docs/designs/` and records:
-
-- outcome and non-goals;
-- user workflows and interaction model;
-- domain concepts and state boundaries;
-- command/query expectations;
-- interface behavior and failure handling;
-- accessibility;
-- delivery slices;
-- open questions and required ADRs.
-
-Status vocabulary:
+A design belongs under `docs/designs/` and records outcome, non-goals, workflows,
+domain concepts, command/query expectations, interface behavior, failure
+handling, accessibility, delivery slices, open questions, and required ADRs.
 
 ```text
 open -> approved -> implemented
      -> rejected | superseded
 ```
 
-A design cannot become `approved` while a required ADR remains proposed.
-Implementation may discover new design evidence; material changes return the
-design or ADR to review rather than being hidden in a card.
+A design cannot become approved while a required ADR remains proposed. Material
+implementation discoveries return the design or ADR to review rather than being
+hidden in a card.
 
 ### Board card
 
-A Rheos card coordinates one bounded outcome. It links to the governing ADR,
-design, research, dependencies, acceptance criteria, and expected evidence.
+A Rheos card coordinates one bounded outcome. It links to governing authority,
+dependencies, acceptance criteria, and expected evidence. Cards preserve progress
+and review history but do not duplicate entire research reports or designs.
 
-Cards preserve implementation history through comments/progress records. They do
-not copy entire research reports or designs into card bodies.
+Only actual card Markdown belongs under `docs/kanban/{stories,epics,chores}`.
+Rheos identity is the explicit `uuid:` value. `epic`, `parent`, and `dependency`
+use that same namespace.
 
 ## Lifecycle
 
@@ -115,7 +99,7 @@ capture desire
   -> research facts and corpus reality
   -> propose ADR where boundaries are architectural
   -> draft design
-  -> human review / acceptance of ADR and design
+  -> human review / acceptance
   -> decompose into Rheos epics and stories
   -> implement contracts before adapters
   -> review evidence
@@ -124,7 +108,7 @@ capture desire
 ```
 
 Research, ADR, design, board setup, implementation, review, and documentation may
-be separate cards when the work is material.
+be separate cards when material.
 
 ## Readiness gates
 
@@ -132,19 +116,34 @@ A product implementation story may enter `ready` only when:
 
 - its outcome is bounded and at most 5 points;
 - applicable ADRs are accepted;
-- the governing design is approved or the card explicitly produces that design;
-- dependencies are explicit;
+- the governing design is approved or the card produces that design;
+- dependencies use resolvable Rheos UUIDs;
 - acceptance criteria are observable;
 - expected tests, fixtures, or review evidence are named;
 - open questions do not require the implementer to invent product policy.
 
-Contract and schema stories precede runtime adapters. Runtime services precede UI
-adapters. Publication adapters depend on release and credential boundaries, not
-only on a button design.
+Contracts and schemas precede adapters. Application services precede UI adapters.
+Publication adapters depend on release, export, and credential boundaries.
+
+The native-player work has an additional gate: FT-000D must choose and verify the
+first Clojure/JVM UI, real audio playback backend, rebuildable read model, and
+application topology before downstream cards can assume those choices.
+
+## Rheos mechanics
+
+- Repository-root config discovery through `openhax.kanban.json` is normal.
+- `--tasks-dir` is only an explicit override or diagnostic.
+- `uuid:` is canonical task identity; title-derived identity is not accepted for
+  this board.
+- Empty dependency fields are omitted rather than encoded as `[]`.
+- Labels use the parser-compatible comma-separated scalar form.
+- `board.json` is a lossy diagnostic projection and is ignored by Git.
+- `scripts/validate_rheos_board.py` validates repository-specific relationship and
+  readiness invariants that the current snapshot does not preserve.
 
 ## Design review questions
 
-A reviewer should ask:
+A reviewer asks:
 
 1. Does the design model the user's actual unit of value?
 2. Does it preserve source material and provenance?
@@ -156,47 +155,43 @@ A reviewer should ask:
 8. Can derived indexes and media artifacts be rebuilt?
 9. Does the interface remain useful without future model automation?
 10. Has external platform capability been verified rather than assumed?
+11. Does the daily-driver gate include real audio evidence, not only fakes?
+12. Are native UI and application topology choices owned by an explicit decision?
 
 ## Change handling
 
-A material change discovered during implementation is recorded on the card and
-classified:
+A material change discovered during implementation is classified as:
 
-- **implementation detail** — remains within accepted design and card scope;
+- **implementation detail** — within accepted design and card scope;
 - **design revision** — changes user-visible behavior or domain semantics;
-- **ADR revision** — changes an architectural boundary or authority split;
-- **new research need** — material fact is unknown or unstable;
-- **follow-up** — valuable but outside the current acceptance scope.
+- **ADR revision** — changes architecture or authority;
+- **new research need** — a material fact is unknown or unstable;
+- **follow-up** — valuable but outside current acceptance scope.
 
-Design/ADR revisions stop the affected implementation slice until reviewed.
-Follow-ups become new cards; they are not smuggled into the current card.
+Design or ADR revisions stop the affected slice until reviewed. Follow-ups become
+new cards rather than hidden scope.
 
 ## Completion
 
-A card enters `review` with inspectable artifacts and actual evidence. A card
-enters `document` when durable docs, migration notes, or acceptance records still
-need completion. A card enters `done` only when the declared outcome is accepted
-for its scope.
+A card enters `review` with inspectable artifacts and actual evidence. It enters
+`document` when durable docs or acceptance evidence remain. It enters `done` only
+when the declared outcome is accepted.
 
-Completion records identify:
+Completion records identify changed artifacts, verification actually run,
+limitations, governing authority versions, follow-ups, Receipt River reference,
+and accepting actor.
 
-- changed artifacts;
-- tests or verification actually run;
-- limitations and unavailable checks;
-- governing ADR/design versions;
-- follow-up cards;
-- Receipt River reference;
-- accepting actor or authority.
-
-## Current media-workbench design wave
+## Current media-workbench wave
 
 The current authority set is:
 
 - research: `docs/research/media-workbench-interface-and-publishing.md`;
-- proposed ADR: `docs/adrs/adr-001-local-first-media-workbench.md`;
-- open design: `docs/designs/media-workbench-v1.md`;
-- delivery map: `docs/kanban/BOARD-BREAKDOWN.md`.
+- accepted ADR: `docs/adrs/adr-001-local-first-media-workbench.md`;
+- approved design: `docs/designs/media-workbench-v1.md`;
+- delivery map: `docs/kanban-docs/BOARD-BREAKDOWN.md`;
+- board contract: `docs/kanban-docs/AGENTS.md`.
 
-Until ADR-001 is accepted and the design approved, implementation stories remain
-`incoming`, `accepted`, or `breakdown`; they are not ready merely because this
-board exists.
+FT-000A, FT-OPS-002, and FT-OPS-003 are complete. FT-000B and FT-000D are the
+first ready implementation/decision slices. FT-000C and player cards remain
+blocked by their explicit dependencies rather than by unresolved product
+acceptance.

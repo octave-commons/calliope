@@ -46,7 +46,7 @@ clojure -M:classify -- --seed 3721599729
 # Rheos discovers openhax.kanban.json from the repository root.
 eta-mu kanban count
 eta-mu kanban list
-python3 scripts/validate_rheos_board.py
+eta-mu kanban find ft-000b-define-media-workbench-domain-laws
 ```
 
 Use `--tasks-dir` only for an intentional override or discovery diagnostic.
@@ -102,18 +102,26 @@ playback, curation, or salvage.
 
 ## Rheos board discipline
 
-- `docs/kanban/` contains cards only; every nested Markdown file is scanned.
+- **Rheos is the sole implementation and operational authority for the board.**
+- Never create a repository-local parser, validator, migration script, sidecar,
+  workflow implementation, or alternate command surface for Rheos semantics.
+- CI and agents invoke eta-mu/Rheos directly. A check that cannot be expressed by
+  Rheos is an upstream Rheos gap, not permission to duplicate it in this repository.
+- Fix missing board behavior in `open-hax/eta-mu` / `@eta-mu/rheos`, then consume
+  that behavior here.
+- Use Rheos CLI, API, MCP, or UI operations for board reads, writes, comments, and
+  transitions. Do not establish a second Git/Markdown write protocol around it.
+- A harness without Rheos may inspect board artifacts but must not mutate board
+  state or claim board validation.
+- `docs/kanban/` contains cards only; Rheos decides how its configured `tasksDir`
+  is interpreted.
 - Explicit `uuid:` is canonical task identity.
 - `epic`, `parent`, and `dependency` use that UUID namespace.
 - Omit empty dependency fields.
 - Use comma-separated scalar labels for compatibility with the current parser.
-- The generated `board.json` is lossy diagnostic output and is ignored by Git.
-- Run `scripts/validate_rheos_board.py` for complete relationship validation.
-- Active decomposed epics remain `breakdown`; deferred epics may remain `icebox`.
-- Read board state with the CLI; write board state by editing card Markdown. In
-  eta-mu 1.1.1 the `frontmatter` and `comment` subcommands rewrite frontmatter and
-  drop the trailing newline, which the validator rejects. See
-  `docs/kanban-docs/AGENTS.md` for the verified FSM and write-path drift.
+- The generated `board.json` is a lossy diagnostic output and is ignored by Git.
+- Configure lifecycle, transition, and WIP behavior in Rheos/FSM configuration;
+  never shadow those rules with repository code.
 
 ## Ledger discipline
 
@@ -150,7 +158,8 @@ access from repository references.
 ## Ecosystem relationships
 
 - Epiphany supplies evidence-first archaeology and research/ADR/design discipline.
-- Eta-mu/Rheos supplies the Markdown-backed board when installed.
+- Eta-mu/Rheos supplies the Markdown-backed board and is its sole operational
+  implementation.
 - Muse may supply local compatibility extensions; remote harnesses do not assume
   them.
 - Knoxx/OpenPlanner studio work is historical interaction reference, not product

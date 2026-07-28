@@ -14,7 +14,7 @@ research: "docs/reconstruction/README.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["ft-001a-index-playable-media", "ft-003d-preserve-render-to-release-derivation-graph"]
+dependency: ["ft-001a-index-playable-media-metadata-and-waveform-jobs", "ft-003d-preserve-render-to-release-derivation-graph"]
 ---
 
 # FT-003E: Index reconstruction evidence and auditions

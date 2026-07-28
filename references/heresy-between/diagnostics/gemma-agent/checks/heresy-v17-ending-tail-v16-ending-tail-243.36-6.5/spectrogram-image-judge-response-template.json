@@ -1,0 +1,127 @@
+{
+  "schema_version": "fork-tales-spectrogram-image-judge/v1",
+  "audit_id": "heresy-v17-ending-tail-v16-ending-tail-243.36-6.5",
+  "check_id": "heresy-v17-ending-tail-v16-ending-tail-243.36-6.5",
+  "profile": "suno_reverse_accuracy",
+  "judge": "spectrogram_image_judge",
+  "image_refs": [
+    {
+      "role": "f0_overlay",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.f0-overlay.png"
+    },
+    {
+      "role": "mel_diff",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.mel-diff.png"
+    },
+    {
+      "role": "original_f0",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.original.f0.png"
+    },
+    {
+      "role": "candidate_f0",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.candidate.f0.png"
+    },
+    {
+      "role": "original_mel",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.original.mel.png"
+    },
+    {
+      "role": "candidate_mel",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.candidate.mel.png"
+    }
+  ],
+  "global_observations": [],
+  "feature_judgments": [
+    {
+      "feature": "pitch_notes",
+      "score": null,
+      "confidence": null,
+      "observations": [],
+      "failure_modes": [],
+      "image_roles_used": [
+        "f0_overlay",
+        "original_f0",
+        "candidate_f0"
+      ]
+    },
+    {
+      "feature": "pitch_expression",
+      "score": null,
+      "confidence": null,
+      "observations": [],
+      "failure_modes": [],
+      "image_roles_used": [
+        "f0_overlay",
+        "original_f0",
+        "candidate_f0"
+      ]
+    },
+    {
+      "feature": "delivery_inflection",
+      "score": null,
+      "confidence": null,
+      "observations": [],
+      "failure_modes": [],
+      "image_roles_used": [
+        "original_mel",
+        "candidate_mel",
+        "mel_diff",
+        "f0_overlay"
+      ]
+    },
+    {
+      "feature": "timbre_spectral",
+      "score": null,
+      "confidence": null,
+      "observations": [],
+      "failure_modes": [],
+      "image_roles_used": [
+        "original_mel",
+        "candidate_mel",
+        "mel_diff"
+      ]
+    },
+    {
+      "feature": "rhythm_grid",
+      "score": null,
+      "confidence": null,
+      "observations": [],
+      "failure_modes": [],
+      "image_roles_used": [
+        "original_mel",
+        "candidate_mel",
+        "mel_diff",
+        "f0_overlay"
+      ]
+    },
+    {
+      "feature": "lyric_timing",
+      "score": null,
+      "confidence": null,
+      "observations": [],
+      "failure_modes": [],
+      "image_roles_used": [
+        "original_mel",
+        "candidate_mel",
+        "mel_diff"
+      ]
+    },
+    {
+      "feature": "lyric_identity",
+      "score": null,
+      "confidence": null,
+      "observations": [],
+      "failure_modes": [],
+      "image_roles_used": [
+        "original_mel",
+        "candidate_mel",
+        "mel_diff"
+      ]
+    }
+  ],
+  "do_not_score": [
+    "Do not claim exact lyric transcription from images.",
+    "Do not override f0 numeric metrics; image reading is additional visual evidence.",
+    "Use null score and 0 confidence when the image does not support judging a feature."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "original": {
+    "audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/tmp-metrics-test/orig.wav",
+    "sha256": "ce3329ea33f2d9562345bb420eb9546f490a20e8dc5f00d68a25820377e1e1f7",
+    "sample_rate": 22050,
+    "duration_seconds": 6.0,
+    "analysis_settings": {
+      "hop_length": 256,
+      "n_fft": 2048,
+      "n_mels": 128,
+      "fmin_hz": 65.0,
+      "fmax_hz": 1046.5
+    },
+    "outputs": {
+      "f0_csv": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.f0.csv",
+      "f0_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.f0.png",
+      "mel_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.mel.png"
+    },
+    "f0_hz": {
+      "count": 417,
+      "mean": 343.4933268361023,
+      "median": 314.5984631970161,
+      "min": 228.9731271349986,
+      "max": 1010.3932187997502,
+      "p05": 232.97550689710764,
+      "p95": 885.7188432530932
+    },
+    "voiced_ratio": 0.8065764023210832,
+    "voiced_probability": {
+      "count": 517,
+      "mean": 0.32639352387883636,
+      "median": 0.20650679911775224,
+      "min": 0.0,
+      "max": 0.9848789761259924,
+      "p05": 0.01,
+      "p95": 0.9459302094659092
+    },
+    "rms": {
+      "count": 517,
+      "mean": 0.03464803844690323,
+      "median": 0.030753593891859055,
+      "min": 0.00030394591158255935,
+      "max": 0.09258463233709335,
+      "p05": 0.0004136741627007723,
+      "p95": 0.077168308198452
+    },
+    "spectral_centroid_hz": {
+      "count": 517,
+      "mean": 2311.5994073942684,
+      "median": 1836.4326101175159,
+      "min": 913.0648858780455,
+      "max": 5903.029634984533,
+      "p05": 996.5686327634946,
+      "p95": 4808.976684888873
+    }
+  },
+  "candidate": {
+    "audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/tmp-metrics-test/cand.wav",
+    "sha256": "c66257d934fc1403b6349a42bb2e59611fb7f8e0430eb3f2a03f19246b44c486",
+    "sample_rate": 22050,
+    "duration_seconds": 6.0,
+    "analysis_settings": {
+      "hop_length": 256,
+      "n_fft": 2048,
+      "n_mels": 128,
+      "fmin_hz": 65.0,
+      "fmax_hz": 1046.5
+    },
+    "outputs": {
+      "f0_csv": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.f0.csv",
+      "f0_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.f0.png",
+      "mel_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.mel.png"
+    },
+    "f0_hz": {
+      "count": 499,
+      "mean": 307.0983359074562,
+      "median": 310.98499165172495,
+      "min": 232.97550689710764,
+      "max": 391.81653718338976,
+      "p05": 232.97550689710764,
+      "p95": 349.06885072286843
+    },
+    "voiced_ratio": 0.965183752417795,
+    "voiced_probability": {
+      "count": 517,
+      "mean": 0.7923478753403488,
+      "median": 0.9459302094659092,
+      "min": 0.01,
+      "max": 1.0,
+      "p05": 0.010160413498160588,
+      "p95": 0.9999999999999999
+    },
+    "rms": {
+      "count": 517,
+      "mean": 0.10012523829936981,
+      "median": 0.10666925460100174,
+      "min": 0.0009722135146148503,
+      "max": 0.19246366620063782,
+      "p05": 0.027882274240255356,
+      "p95": 0.14167046546936035
+    },
+    "spectral_centroid_hz": {
+      "count": 517,
+      "mean": 2014.8994468885842,
+      "median": 1893.0861852533303,
+      "min": 579.1112655320266,
+      "max": 5980.572359221955,
+      "p05": 938.01882101149,
+      "p95": 3980.718905575709
+    }
+  },
+  "duration_compared_seconds": 6.0,
+  "outputs": {
+    "mel_diff_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.mel-diff.png",
+    "f0_overlay_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.f0-overlay.png"
+  },
+  "pitch": {
+    "voiced_overlap_ratio": 0.781431334622824,
+    "cents_error": {
+      "count": 404,
+      "mean": -110.81683168316832,
+      "median": -9.999999999999678,
+      "min": -2040.0000000000005,
+      "max": 469.99999999999994,
+      "p05": -1818.5000000000002,
+      "p95": 270.0
+    },
+    "mean_abs_cents": 215.02475247524757,
+    "f0_hz_correlation": 0.29132877888006053
+  },
+  "spectrogram": {
+    "mel_db_mean_abs_diff": 15.020068168640137,
+    "mel_db_rmse": 19.738473892211914,
+    "mel_db_correlation": 0.38525917663642056
+  },
+  "waveform": {
+    "normalized_correlation": -0.027558011558948887
+  },
+  "command": "compare",
+  "out_json": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/metrics/opening-smoke.json"
+}

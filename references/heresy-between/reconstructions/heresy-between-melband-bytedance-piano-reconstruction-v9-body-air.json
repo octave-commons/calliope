@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-05-13T23:39:37.271489+00:00",
+  "kind": "v9 body/air-enhanced reconstruction from v7 MelBand/ByteDance piano branch",
+  "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v9-body-air.wav",
+  "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v9-body-air-master.wav",
+  "duration_seconds": 303.32,
+  "sample_rate": 44100,
+  "inputs": {
+    "piano": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst-fluidr3-rmsmatched.wav",
+    "vocal": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-vocals-openutau-v1.wav",
+    "drums": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-drums-v1.wav",
+    "bass": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-bass-v1.wav",
+    "texture": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-pyin-energy-reconstruction-v1.wav"
+  },
+  "base_weights": {
+    "piano": 1.0,
+    "vocal": 0.58,
+    "drums": 0.42,
+    "bass": 0.4,
+    "texture": 0.16
+  },
+  "layer_weights": {
+    "piano_body_parallel": 1.35,
+    "piano_presence_parallel": 0.58,
+    "piano_air_exciter": 0.42,
+    "piano_transient_click": 0.28
+  },
+  "parallel_layers": {
+    "piano_body_parallel": "220-2600 Hz bandpass, saturation, RMS-normalized; fills body gap",
+    "piano_presence_parallel": "1800-6500 Hz bandpass, stronger saturation; fills attack/presence gap",
+    "piano_air_exciter": "5500 Hz highpass, harmonic saturation; fills air gap",
+    "piano_transient_click": "first-difference highband transient layer; improves hammer definition without retiming notes"
+  },
+  "method": [
+    "Preserve v7 note timing/transients from original MP3 -> MelBand Inst V2 -> ByteDance -> FluidSynth",
+    "Add parallel body, presence, air, and click layers derived only from the v7 piano render",
+    "Mix with regenerated OpenUTAU vocal, drums, bass, and restrained texture bed",
+    "Soft-limit for listening master without overwriting v8"
+  ],
+  "levels": {
+    "mix_peak": 0.9799999594688416,
+    "mix_rms": 0.07440289855003357,
+    "master_peak": 0.7614700198173523,
+    "master_rms": 0.08619993180036545
+  },
+  "interpretation_note": "v9 targets the v8 full-mix spectral deficits while preserving the v7 piano/transient backbone."
+}

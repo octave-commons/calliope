@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-05-14T02:48:33.023Z",
+  "kind": "Gesture-derived OpenUTAU audition v3",
+  "vocal_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-gesture-openutau-v3.wav",
+  "source_gesture_layer": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/auditions/gesture-layer-v2-dense-legato.json",
+  "source_word_layer": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/word-timing-layer-v2-large-turbo-gated-cleaned.json",
+  "source_f0": "/home/err/devel/Music/fork-tales/references/heresy-between/vocal/vocals.pyin.f0-narrow-c3-a4.json",
+  "target_duration_seconds": 303.32,
+  "singer": "波音リツ連続音Ver1.5.1",
+  "phonemizer": "OpenUtau.Plugin.Builtin.JapaneseVCVPhonemizer",
+  "renderer": "WORLDLINE-R",
+  "total_note_count": 944,
+  "total_note_seconds": 220.279,
+  "note_coverage_percent": 72.623,
+  "chunks": [
+    {
+      "id": "chunk-01",
+      "start": 0,
+      "end": 58,
+      "duration_seconds": 58,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-01.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-01.wav",
+      "note_count": 250
+    },
+    {
+      "id": "chunk-02",
+      "start": 58,
+      "end": 106,
+      "duration_seconds": 48,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-02.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-02.wav",
+      "note_count": 215
+    },
+    {
+      "id": "chunk-03",
+      "start": 106,
+      "end": 174,
+      "duration_seconds": 68,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-03.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-03.wav",
+      "note_count": 258
+    },
+    {
+      "id": "chunk-04",
+      "start": 174,
+      "end": 244,
+      "duration_seconds": 70,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-04.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-04.wav",
+      "note_count": 98
+    },
+    {
+      "id": "chunk-05",
+      "start": 244,
+      "end": 303.32,
+      "duration_seconds": 59.32,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-05.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v3-gesture-chunks/heresy-between-gesture-openutau-v3-chunk-05.wav",
+      "note_count": 123
+    }
+  ],
+  "note_strategy": "Use gesture-layer syllable-ish events and f0 tones; kana is sourced from ASR segment text when available, otherwise safe kana pool. This is an audition of timing/gesture through Ritsu, not final lyrics.",
+  "render_status": {
+    "method": "five chunk USTX files rendered sequentially with patched OpenUTAU exporter, then concatenated/padded with ffmpeg",
+    "duration_seconds": 303.319864,
+    "sample_rate": 44100,
+    "channels": 2,
+    "format": "WAV PCM 16-bit stereo",
+    "mean_volume_db": -23.1,
+    "max_volume_db": -4.5
+  }
+}

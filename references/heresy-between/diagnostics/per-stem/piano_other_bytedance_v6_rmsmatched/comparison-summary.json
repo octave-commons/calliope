@@ -1,0 +1,30 @@
+{
+  "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+  "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6-fluidr3-rmsmatched.wav",
+  "duration_seconds": 303.32,
+  "candidate_rms": 0.04954081028699875,
+  "original_rms": 0.04954079911112785,
+  "candidate_peak": 0.936431884765625,
+  "mean_chroma_similarity": 0.67379230260849,
+  "median_chroma_similarity": 0.7205158472061157,
+  "mean_onset_delta": -0.04259736090898514,
+  "mean_rms_gap_db": -4.869939804077148,
+  "median_rms_gap_db": -0.9920768737792969,
+  "min_rms_gap_db": -54.67158889770508,
+  "max_rms_gap_db": 15.717090606689453,
+  "band_deltas_db": {
+    "sub_20_80": -2.488457441329956,
+    "bass_80_250": -4.339080333709717,
+    "low_mid_250_800": -9.973958969116211,
+    "piano_body_800_2500": -4.711858749389648,
+    "presence_2500_6000": 0.57310950756073,
+    "air_6000_12000": -4.266229152679443
+  },
+  "plots": {
+    "original_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/original-other-spectrogram.png",
+    "candidate_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/piano_other_bytedance_v6_rmsmatched-spectrogram.png",
+    "diff_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/piano_other_bytedance_v6_rmsmatched-minus-original-other-spectrogram-diff.png",
+    "onset": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/onset-strength-original-other-vs-piano_other_bytedance_v6_rmsmatched.png",
+    "rms": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/rms-piano_other_bytedance_v6_rmsmatched-minus-original-other.png"
+  }
+}

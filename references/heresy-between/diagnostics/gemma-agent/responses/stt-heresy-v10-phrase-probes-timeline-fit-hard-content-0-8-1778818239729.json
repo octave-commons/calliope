@@ -1,0 +1,48 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 15.240581615000357,
+  "words": [
+    {
+      "end_s": 4.659999847412109,
+      "start_s": 0,
+      "word": "タイムラインに走れない誰かの笑顔"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 4.659999847412109,
+      "start_s": 0,
+      "text": "タイムラインに走れない誰かの笑顔"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 4.659999847412109,
+          "start_s": 0,
+          "text": "タイムラインに走れない誰かの笑顔"
+        }
+      ],
+      "text": "タイムラインに走れない誰かの笑顔",
+      "words": [
+        {
+          "end_s": 4.659999847412109,
+          "start_s": 0,
+          "word": "タイムラインに走れない誰かの笑顔"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 4.6800625,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "タイムラインに走れない誰かの笑顔"
+}

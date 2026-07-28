@@ -1,0 +1,23 @@
+{
+  "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+  "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst-fluidr3-rmsmatched.wav",
+  "duration_seconds": 303.32,
+  "candidate_rms": 0.04103267192840576,
+  "original_rms": 0.04954079911112785,
+  "candidate_peak": 0.97998046875,
+  "mean_chroma_similarity": 0.630410373210907,
+  "median_chroma_similarity": 0.6723032593727112,
+  "mean_onset_delta": -0.05715307965874672,
+  "mean_rms_gap_db": -20.8927059173584,
+  "median_rms_gap_db": -14.737083435058594,
+  "min_rms_gap_db": -60.01158142089844,
+  "max_rms_gap_db": 36.247928619384766,
+  "band_deltas_db": {
+    "sub_20_80": -13.254448890686035,
+    "bass_80_250": -22.381162643432617,
+    "low_mid_250_800": -25.0427188873291,
+    "piano_body_800_2500": -15.705452919006348,
+    "presence_2500_6000": -8.150640487670898,
+    "air_6000_12000": -5.992858409881592
+  }
+}

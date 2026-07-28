@@ -1,0 +1,68 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 3.673619134085519,
+  "words": [
+    {
+      "end_s": 13.979999542236328,
+      "start_s": 0,
+      "word": "タイムラインに走らない誰かの笑顔強がってスクロールして心だけ取り残す打ち明けの言葉が震えて消えてくタイム"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 5,
+      "start_s": 0,
+      "text": "タイムラインに走らない誰かの笑顔"
+    },
+    {
+      "end_s": 9.639999389648438,
+      "start_s": 5,
+      "text": "強がってスクロールして心だけ取り残す"
+    },
+    {
+      "end_s": 14.039999961853027,
+      "start_s": 9.639999389648438,
+      "text": "打ち明けの言葉が震えて消えてくタイム"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 5,
+          "start_s": 0,
+          "text": "タイムラインに走らない誰かの笑顔"
+        },
+        {
+          "end_s": 9.639999389648438,
+          "start_s": 5,
+          "text": "強がってスクロールして心だけ取り残す"
+        },
+        {
+          "end_s": 14.039999961853027,
+          "start_s": 9.639999389648438,
+          "text": "打ち明けの言葉が震えて消えてくタイム"
+        }
+      ],
+      "text": "タイムラインに走らない誰かの笑顔強がってスクロールして心だけ取り残す打ち明けの言葉が震えて消えてくタイム",
+      "words": [
+        {
+          "end_s": 13.979999542236328,
+          "start_s": 0,
+          "word": "タイムラインに走らない誰かの笑顔強がってスクロールして心だけ取り残す打ち明けの言葉が震えて消えてくタイム"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 14,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "タイムラインに走らない誰かの笑顔強がってスクロールして心だけ取り残す打ち明けの言葉が震えて消えてくタイム"
+}

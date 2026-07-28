@@ -1,0 +1,448 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 1.8744951287905376,
+  "words": [
+    {
+      "end_s": 1.1399999856948853,
+      "start_s": 0,
+      "word": "I'm"
+    },
+    {
+      "end_s": 1.1399999856948853,
+      "start_s": 1.1399999856948853,
+      "word": "gonna"
+    },
+    {
+      "end_s": 2.319999933242798,
+      "start_s": 1.1399999856948853,
+      "word": "be"
+    },
+    {
+      "end_s": 2.3399999141693115,
+      "start_s": 2.319999933242798,
+      "word": "a"
+    },
+    {
+      "end_s": 2.3399999141693115,
+      "start_s": 2.3399999141693115,
+      "word": "good"
+    },
+    {
+      "end_s": 2.3399999141693115,
+      "start_s": 2.3399999141693115,
+      "word": "boy."
+    },
+    {
+      "end_s": 3.8399999141693115,
+      "start_s": 3.3599984645843506,
+      "word": "I'm"
+    },
+    {
+      "end_s": 6.559999942779541,
+      "start_s": 3.8399999141693115,
+      "word": "gonna"
+    },
+    {
+      "end_s": 8.699999809265137,
+      "start_s": 6.559999942779541,
+      "word": "be"
+    },
+    {
+      "end_s": 8.699999809265137,
+      "start_s": 8.699999809265137,
+      "word": "a"
+    },
+    {
+      "end_s": 8.699999809265137,
+      "start_s": 8.699999809265137,
+      "word": "good"
+    },
+    {
+      "end_s": 8.720000267028809,
+      "start_s": 8.699999809265137,
+      "word": "boy."
+    },
+    {
+      "end_s": 9.679999351501465,
+      "start_s": 9.199997901916504,
+      "word": "I'm"
+    },
+    {
+      "end_s": 9.679999351501465,
+      "start_s": 9.679999351501465,
+      "word": "gonna"
+    },
+    {
+      "end_s": 9.960000038146973,
+      "start_s": 9.679999351501465,
+      "word": "be"
+    },
+    {
+      "end_s": 9.960000038146973,
+      "start_s": 9.960000038146973,
+      "word": "a"
+    },
+    {
+      "end_s": 9.960000038146973,
+      "start_s": 9.960000038146973,
+      "word": "good"
+    },
+    {
+      "end_s": 9.960000038146973,
+      "start_s": 9.960000038146973,
+      "word": "boy."
+    },
+    {
+      "end_s": 10.059999465942383,
+      "start_s": 9.960000038146973,
+      "word": "I'm"
+    },
+    {
+      "end_s": 10.09999942779541,
+      "start_s": 10.059999465942383,
+      "word": "gonna"
+    },
+    {
+      "end_s": 10.09999942779541,
+      "start_s": 10.09999942779541,
+      "word": "be"
+    },
+    {
+      "end_s": 10.09999942779541,
+      "start_s": 10.09999942779541,
+      "word": "a"
+    },
+    {
+      "end_s": 10.09999942779541,
+      "start_s": 10.09999942779541,
+      "word": "good"
+    },
+    {
+      "end_s": 10.09999942779541,
+      "start_s": 10.09999942779541,
+      "word": "boy."
+    },
+    {
+      "end_s": 10.09999942779541,
+      "start_s": 10.09999942779541,
+      "word": "I'm"
+    },
+    {
+      "end_s": 10.34000015258789,
+      "start_s": 10.09999942779541,
+      "word": "gonna"
+    },
+    {
+      "end_s": 10.34000015258789,
+      "start_s": 10.34000015258789,
+      "word": "be"
+    },
+    {
+      "end_s": 10.34000015258789,
+      "start_s": 10.34000015258789,
+      "word": "a"
+    },
+    {
+      "end_s": 10.34000015258789,
+      "start_s": 10.34000015258789,
+      "word": "good"
+    },
+    {
+      "end_s": 10.34000015258789,
+      "start_s": 10.34000015258789,
+      "word": "boy."
+    },
+    {
+      "end_s": 10.34000015258789,
+      "start_s": 10.34000015258789,
+      "word": "I'm"
+    },
+    {
+      "end_s": 11.359999656677246,
+      "start_s": 10.34000015258789,
+      "word": "gonna"
+    },
+    {
+      "end_s": 11.359999656677246,
+      "start_s": 11.359999656677246,
+      "word": "be"
+    },
+    {
+      "end_s": 11.5,
+      "start_s": 11.359999656677246,
+      "word": "a"
+    },
+    {
+      "end_s": 11.679999351501465,
+      "start_s": 11.5,
+      "word": "good"
+    },
+    {
+      "end_s": 11.699999809265137,
+      "start_s": 11.679999351501465,
+      "word": "boy."
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 2,
+      "start_s": 0,
+      "text": "I'm gonna be a good boy."
+    },
+    {
+      "end_s": 4,
+      "start_s": 2,
+      "text": "I'm gonna be a good boy."
+    },
+    {
+      "end_s": 6,
+      "start_s": 4,
+      "text": "I'm gonna be a good boy."
+    },
+    {
+      "end_s": 8,
+      "start_s": 6,
+      "text": "I'm gonna be a good boy."
+    },
+    {
+      "end_s": 10,
+      "start_s": 8,
+      "text": "I'm gonna be a good boy."
+    },
+    {
+      "end_s": 12,
+      "start_s": 10,
+      "text": "I'm gonna be a good boy."
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 2,
+          "start_s": 0,
+          "text": "I'm gonna be a good boy."
+        },
+        {
+          "end_s": 4,
+          "start_s": 2,
+          "text": "I'm gonna be a good boy."
+        },
+        {
+          "end_s": 6,
+          "start_s": 4,
+          "text": "I'm gonna be a good boy."
+        },
+        {
+          "end_s": 8,
+          "start_s": 6,
+          "text": "I'm gonna be a good boy."
+        },
+        {
+          "end_s": 10,
+          "start_s": 8,
+          "text": "I'm gonna be a good boy."
+        },
+        {
+          "end_s": 12,
+          "start_s": 10,
+          "text": "I'm gonna be a good boy."
+        }
+      ],
+      "text": "I'm gonna be a good boy. I'm gonna be a good boy. I'm gonna be a good boy. I'm gonna be a good boy. I'm gonna be a good boy. I'm gonna be a good boy.",
+      "words": [
+        {
+          "end_s": 1.1399999856948853,
+          "start_s": 0,
+          "word": "I'm"
+        },
+        {
+          "end_s": 1.1399999856948853,
+          "start_s": 1.1399999856948853,
+          "word": "gonna"
+        },
+        {
+          "end_s": 2.319999933242798,
+          "start_s": 1.1399999856948853,
+          "word": "be"
+        },
+        {
+          "end_s": 2.3399999141693115,
+          "start_s": 2.319999933242798,
+          "word": "a"
+        },
+        {
+          "end_s": 2.3399999141693115,
+          "start_s": 2.3399999141693115,
+          "word": "good"
+        },
+        {
+          "end_s": 2.3399999141693115,
+          "start_s": 2.3399999141693115,
+          "word": "boy."
+        },
+        {
+          "end_s": 3.8399999141693115,
+          "start_s": 3.3599984645843506,
+          "word": "I'm"
+        },
+        {
+          "end_s": 6.559999942779541,
+          "start_s": 3.8399999141693115,
+          "word": "gonna"
+        },
+        {
+          "end_s": 8.699999809265137,
+          "start_s": 6.559999942779541,
+          "word": "be"
+        },
+        {
+          "end_s": 8.699999809265137,
+          "start_s": 8.699999809265137,
+          "word": "a"
+        },
+        {
+          "end_s": 8.699999809265137,
+          "start_s": 8.699999809265137,
+          "word": "good"
+        },
+        {
+          "end_s": 8.720000267028809,
+          "start_s": 8.699999809265137,
+          "word": "boy."
+        },
+        {
+          "end_s": 9.679999351501465,
+          "start_s": 9.199997901916504,
+          "word": "I'm"
+        },
+        {
+          "end_s": 9.679999351501465,
+          "start_s": 9.679999351501465,
+          "word": "gonna"
+        },
+        {
+          "end_s": 9.960000038146973,
+          "start_s": 9.679999351501465,
+          "word": "be"
+        },
+        {
+          "end_s": 9.960000038146973,
+          "start_s": 9.960000038146973,
+          "word": "a"
+        },
+        {
+          "end_s": 9.960000038146973,
+          "start_s": 9.960000038146973,
+          "word": "good"
+        },
+        {
+          "end_s": 9.960000038146973,
+          "start_s": 9.960000038146973,
+          "word": "boy."
+        },
+        {
+          "end_s": 10.059999465942383,
+          "start_s": 9.960000038146973,
+          "word": "I'm"
+        },
+        {
+          "end_s": 10.09999942779541,
+          "start_s": 10.059999465942383,
+          "word": "gonna"
+        },
+        {
+          "end_s": 10.09999942779541,
+          "start_s": 10.09999942779541,
+          "word": "be"
+        },
+        {
+          "end_s": 10.09999942779541,
+          "start_s": 10.09999942779541,
+          "word": "a"
+        },
+        {
+          "end_s": 10.09999942779541,
+          "start_s": 10.09999942779541,
+          "word": "good"
+        },
+        {
+          "end_s": 10.09999942779541,
+          "start_s": 10.09999942779541,
+          "word": "boy."
+        },
+        {
+          "end_s": 10.09999942779541,
+          "start_s": 10.09999942779541,
+          "word": "I'm"
+        },
+        {
+          "end_s": 10.34000015258789,
+          "start_s": 10.09999942779541,
+          "word": "gonna"
+        },
+        {
+          "end_s": 10.34000015258789,
+          "start_s": 10.34000015258789,
+          "word": "be"
+        },
+        {
+          "end_s": 10.34000015258789,
+          "start_s": 10.34000015258789,
+          "word": "a"
+        },
+        {
+          "end_s": 10.34000015258789,
+          "start_s": 10.34000015258789,
+          "word": "good"
+        },
+        {
+          "end_s": 10.34000015258789,
+          "start_s": 10.34000015258789,
+          "word": "boy."
+        },
+        {
+          "end_s": 10.34000015258789,
+          "start_s": 10.34000015258789,
+          "word": "I'm"
+        },
+        {
+          "end_s": 11.359999656677246,
+          "start_s": 10.34000015258789,
+          "word": "gonna"
+        },
+        {
+          "end_s": 11.359999656677246,
+          "start_s": 11.359999656677246,
+          "word": "be"
+        },
+        {
+          "end_s": 11.5,
+          "start_s": 11.359999656677246,
+          "word": "a"
+        },
+        {
+          "end_s": 11.679999351501465,
+          "start_s": 11.5,
+          "word": "good"
+        },
+        {
+          "end_s": 11.699999809265137,
+          "start_s": 11.679999351501465,
+          "word": "boy."
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "I'm gonna be a good boy. I'm gonna be a good boy. I'm gonna be a good boy. I'm gonna be a good boy. I'm gonna be a good boy. I'm gonna be a good boy."
+}

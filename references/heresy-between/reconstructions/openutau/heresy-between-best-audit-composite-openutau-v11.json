@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-05-14T23:20:00Z",
+  "kind": "best-audit composite OpenUTAU v11",
+  "target_duration_seconds": 303.32,
+  "output_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-best-audit-composite-openutau-v11.wav",
+  "composition_strategy": "Audio-level composite from audited OpenUTAU chunks and phrase probes. This is a best-heard reference canvas, not a single USTX project branch. It preserves v10 full duration and uses phrase-probe renders where full-chunk OpenUTAU context degraded ASR recognition.",
+  "parts": [
+    {
+      "span_seconds": [0.0, 55.26],
+      "source": "v10-microphrase chunk-01 aligned",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-01-000.00-055.26-v10-chunk01.wav"
+    },
+    {
+      "span_seconds": [55.26, 59.44],
+      "source": "v9 audited-hybrid chunk-02 first segment for timeline anchor",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-02a-055.26-059.44-v9-timeline.wav"
+    },
+    {
+      "span_seconds": [59.44, 60.28],
+      "source": "timeline gap silence",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-02b-059.44-060.28-silence.wav"
+    },
+    {
+      "span_seconds": [60.28, 64.82],
+      "source": "v10 phrase probe: literal small-tsu + long-vowel 強がってスクロールして心だけ取り残す",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-02c-060.28-064.82-v10-tsuyogatte-phrase.wav"
+    },
+    {
+      "span_seconds": [64.82, 69.22],
+      "source": "v10-microphrase chunk-02a tail for 打ち明けの言葉が...",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-02d-064.82-069.22-v10-uchikake.wav"
+    },
+    {
+      "span_seconds": [69.22, 103.64],
+      "source": "v10-microphrase chunk-02b aligned",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-03-069.22-103.64-v10-chunk02b.wav"
+    },
+    {
+      "span_seconds": [103.64, 113.86],
+      "source": "v10 phrase probe: それでも一行だけで世界に参加していたい... with extra render tail then aligned",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-04-103.64-113.86-v10-phrase-sekai.wav"
+    },
+    {
+      "span_seconds": [113.86, 173.44],
+      "source": "v10-microphrase chunk-03b aligned",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-05-113.86-173.44-v10-chunk03b.wav"
+    },
+    {
+      "span_seconds": [173.44, 243.36],
+      "source": "v10-microphrase chunk-04 aligned",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-06-173.44-243.36-v10-chunk04.wav"
+    },
+    {
+      "span_seconds": [243.36, 303.32],
+      "source": "v10-microphrase chunk-05 aligned",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v11-best-audit-composite/part-07-243.36-303.32-v10-chunk05.wav"
+    }
+  ],
+  "audited_anchors": [
+    {
+      "span": "0.00+12s",
+      "stt_text": "元気だよって一行だけのメッセージ 既読のアイガネおそこたいてういえかだご",
+      "assessment": "opening anchor pass"
+    },
+    {
+      "span": "55.26+14s",
+      "stt_text": "タイムラインに走らない誰かの笑顔強がってスクロールして心だけ取り残す打ち明けの言葉が震えて消えてくタイム",
+      "assessment": "segment 11/12 improved; timeline line still has ASR ambiguity 知らない→走らない"
+    },
+    {
+      "span": "103.64+12s",
+      "stt_text": "それでも一行だけで世界に参加していたいもしも明日ただの友達で笑えたらそれだでいいや",
+      "assessment": "world/sekai anchor fixed versus v9/v10 full chunks"
+    },
+    {
+      "span": "173.44+8s",
+      "stt_text": "それで十分だ",
+      "assessment": "pass"
+    },
+    {
+      "span": "243.36+12s",
+      "stt_text": "返事なんてもう来なくてもするよ一部消せ",
+      "assessment": "closing anchor pass; trailing phrase degraded"
+    }
+  ]
+}

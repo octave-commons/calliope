@@ -1,0 +1,111 @@
+{
+  "request_summary": {
+    "model": "gemma4:e4b",
+    "mode": "transcribe-original",
+    "layout": "serial"
+  },
+  "raw_response": {
+    "id": "chatcmpl-309",
+    "object": "chat.completion",
+    "created": 1778776572,
+    "model": "gemma4:e4b",
+    "system_fingerprint": "fp_ollama",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"summary\": \"The audio contains Japanese vocals, which seem to be singing a song. There is no discernible lyrics or specific topic from the short snippets, but the overall feel is that of a song's sing-along or vocal performance.\",\n  \"sections\": [\n    {\n      \"start_s\": 180.0,\n      \"end_s\": 210.0,\n      \"heard_japanese\": \"そう繋がるなら、君が隣にいる。そうなることの前を生きる。ただ進んでいくだけ。きっとまた、こうなるって、そうなるって思うよ。ずっと繋がって、君だけを愛してる。\",\n      \"heard_kana_or_romaji\": \"Sou tsunagaru nara, kimi ga tonari ni iru. Sou naru koto no mae wo ikiru. Tada susunde iku dake. Kitto mata, kou naru tte, sou naru tte omou yo. Zutto tsunagatte, kimi dake wo aishiteru.\",\n      \"confidence\": 0.9,\n      \"notes\": \"\"\n    },\n    {\n      \"start_s\": 210.0,\n      \"end_s\": 240.0,\n      \"heard_japanese\": \"繋がるなら、君が隣にいる。そうなることの前を生きる。ただ進んでいくだけ。きっとまた、こうなるって、そうなるって思うよ。ずっと繋がって、君だけを愛してる。\",\n      \"heard_kana_or_romaji\": \"Tsunagaru nara, kimi ga tonari ni iru. Sou naru koto no mae wo ikiru. Tada susunde iku dake. Kitto mata, kou naru tte, sou naru tte omou yo. Zutto tsunagatte, kimi dake wo aishiteru.\",\n      \"confidence\": 0.9,\n      \"notes\": \"\"\n    },\n    {\n      \"start_s\": 240.0,\n      \"end_s\": 270.0,\n      \"heard_japanese\": \"繋がるなら、君が隣にいる。そうなることの前を生きる。ただ進んでいくだけ。きっとまた、こうなるって、そうなるって思うよ。ずっと繋がって、君だけを愛してる。\",\n      \"heard_kana_or_romaji\": \"Tsunagaru nara, kimi ga tonari ni iru. Sou naru koto no mae wo ikiru. Tada susunde iku dake. Kitto mata, kou naru tte, sou naru tte omou yo. Zutto tsunagatte, kimi dake wo aishiteru.\",\n      \"confidence\": 0.9,\n      \"notes\": \"\"\n    },\n    {\n      \"start_s\": 270.0,\n      \"end_s\": 300.0,\n      \"heard_japanese\": \"繋がるなら、君が隣にいる。そうなることの前を生きる。ただ進んでいくだけ。きっとまた、こうなるって、そうなるって思うよ。ずっと繋がって、君だけを愛してる。\",\n      \"heard_kana_or_romaji\": \"Tsunagaru nara, kimi ga tonari ni iru. Sou naru ka. Ki ga tsunagaru. Ki ga tsunagaru. Tsumetai. Kizuku. Ki ga tsunagaru. Ki ga tsunagaru. Kiseki. Kiseki. Ki ga tsunagaru. Ki ga tsunagaru. Kudasareru. Kudasareru. Ki ga tsunagaru. Ki ga tsunagaru. Kirei. Kirei. Ki ga tsunagaru. Ki ga tsunagaru. Shiawase. Shiawase. Ki ga tsunagaru. Ki ga tsunagaru.\",\n      \"notes\": \"The transcription changed significantly from the first segment, suggesting a possible different part of the song or a more complex emotional passage.\"\n    },\n    {\n      \"start\": \"300.0\",\n      \"end\": \"315.0\",\n      \"text\": \"The sound fades out or changes abruptly.\"\n    }\n  ]\n}\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3363,
+      "completion_tokens": 954,
+      "total_tokens": 4317
+    }
+  },
+  "chunks": {
+    "original": [
+      {
+        "label": "original-isolated-vocal",
+        "index": 1,
+        "start_s": 0.0,
+        "end_s": 30.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-01-000.00-030.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 2,
+        "start_s": 30.0,
+        "end_s": 60.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-02-030.00-060.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 3,
+        "start_s": 60.0,
+        "end_s": 90.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-03-060.00-090.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 4,
+        "start_s": 90.0,
+        "end_s": 120.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-04-090.00-120.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 5,
+        "start_s": 120.0,
+        "end_s": 150.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-05-120.00-150.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 6,
+        "start_s": 150.0,
+        "end_s": 180.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-06-150.00-180.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 7,
+        "start_s": 180.0,
+        "end_s": 210.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-07-180.00-210.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 8,
+        "start_s": 210.0,
+        "end_s": 240.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-08-210.00-240.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 9,
+        "start_s": 240.0,
+        "end_s": 270.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-09-240.00-270.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 10,
+        "start_s": 270.0,
+        "end_s": 300.0,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-10-270.00-300.00.wav"
+      },
+      {
+        "label": "original-isolated-vocal",
+        "index": 11,
+        "start_s": 300.0,
+        "end_s": 303.32,
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-audio/audit-chunks/gemma4-e4b-original-full-transcript-v1/original/original-isolated-vocal-chunk-11-300.00-303.32.wav"
+      }
+    ],
+    "candidate": []
+  }
+}

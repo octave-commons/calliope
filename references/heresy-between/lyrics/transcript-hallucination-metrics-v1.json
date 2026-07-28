@@ -1,0 +1,4048 @@
+{
+  "kind": "transcript unsupported and hallucinated content metrics",
+  "reference_lyrics_path": "/home/err/devel/Music/heresy_between/存在論的な“反・虚無”の論証として/存在論的な“反・虚無”の論証として.txt",
+  "method": "Content-only transcript segment support against lyric reference. supported>=0.72, partial>=0.50, unsupported<0.50; known meta/repetition patterns counted as hallucination. No timing inferred from lyrics.",
+  "best_by_lowest_hallucination_then_unsupported_duration": "medium_denoise_norm",
+  "results": {
+    "large_v3_turbo_gated_cpu_int8": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.faster-whisper-large-v3-turbo-gated-cpu-int8-20260514.json",
+      "totals": {
+        "segments": 58,
+        "supported": 39,
+        "partial": 6,
+        "unsupported": 6,
+        "hallucination": 7,
+        "duration_s": 246.82,
+        "unsupported_duration_s": 72.83999999999997,
+        "hallucination_duration_s": 62.53999999999999,
+        "chars": 1227,
+        "unsupported_chars": 575,
+        "hallucination_chars": 525,
+        "unsupported_segment_rate": 0.2241,
+        "hallucination_segment_rate": 0.1207,
+        "unsupported_duration_rate": 0.2951,
+        "hallucination_duration_rate": 0.2534,
+        "unsupported_char_rate": 0.4686,
+        "hallucination_char_rate": 0.4279
+      },
+      "entries": [
+        {
+          "index": 0,
+          "start_s": 0.0,
+          "end_s": 5.54,
+          "duration_s": 5.54,
+          "text": "元気だよって一語だけのメッセージ",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "げんきだよっていちぎょうだけのめっせじ"
+        },
+        {
+          "index": 1,
+          "start_s": 5.54,
+          "end_s": 10.24,
+          "duration_s": 4.7,
+          "text": "既読の明かりが胸の底を叩いてる",
+          "support_score": 0.903,
+          "status": "supported",
+          "best_reference_match": "既読の灯りがむねの底を叩いてる"
+        },
+        {
+          "index": 2,
+          "start_s": 10.24,
+          "end_s": 15.2,
+          "duration_s": 4.959999999999999,
+          "text": "言えなかったごめんねよりもっと可愛いのは",
+          "support_score": 0.923,
+          "status": "supported",
+          "best_reference_match": "言えなかったごめんねよりもっと怖いのは"
+        },
+        {
+          "index": 3,
+          "start_s": 15.2,
+          "end_s": 21.14,
+          "duration_s": 5.940000000000001,
+          "text": "何も送らないっていう静かな選択",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "何も送らないっていう静かな選択"
+        },
+        {
+          "index": 4,
+          "start_s": 22.54,
+          "end_s": 26.62,
+          "duration_s": 4.080000000000002,
+          "text": "理由はいつも後から並べれる",
+          "support_score": 0.857,
+          "status": "supported",
+          "best_reference_match": "理由はいつもあとから並べられる"
+        },
+        {
+          "index": 5,
+          "start_s": 27.26,
+          "end_s": 32.86,
+          "duration_s": 5.599999999999998,
+          "text": "でも指先は先に 生き方を知ってしまう",
+          "support_score": 0.882,
+          "status": "supported",
+          "best_reference_match": "でも指先は先に生き方を押してしまう"
+        },
+        {
+          "index": 6,
+          "start_s": 32.86,
+          "end_s": 37.98,
+          "duration_s": 5.119999999999997,
+          "text": "一行だけのメッセージ この夜のカタツが決まるなら",
+          "support_score": 0.902,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじでこのよるの形が決まるなら"
+        },
+        {
+          "index": 7,
+          "start_s": 37.98,
+          "end_s": 43.68,
+          "duration_s": 5.700000000000003,
+          "text": "僕は逃げ道の言い訳より 小さな責任を選びたいね",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくは逃げ道の言い訳より小さなせきにんを選びたいね"
+        },
+        {
+          "index": 8,
+          "start_s": 43.68,
+          "end_s": 49.94,
+          "duration_s": 6.259999999999998,
+          "text": "さよならの続きかけなくて 食わへくばかり増えてゆくけど",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "さよならの続き書けなくて空白ばかり増えていくけど"
+        },
+        {
+          "index": 9,
+          "start_s": 49.94,
+          "end_s": 55.26,
+          "duration_s": 5.32,
+          "text": "一行だけのメッセージで 意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじでいみを置いて帰るよ"
+        },
+        {
+          "index": 10,
+          "start_s": 55.26,
+          "end_s": 59.44,
+          "duration_s": 4.18,
+          "text": "タイムラインには知らない誰かの笑顔",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "タイムラインには知らない誰かの笑顔"
+        },
+        {
+          "index": 11,
+          "start_s": 60.28,
+          "end_s": 64.82,
+          "duration_s": 4.539999999999992,
+          "text": "強がってスクロールして心だけ取り残す",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "強がってスクロルして心だけ取り残す"
+        },
+        {
+          "index": 12,
+          "start_s": 64.82,
+          "end_s": 69.22,
+          "duration_s": 4.400000000000006,
+          "text": "打ちかけの言葉が震えて消えてくたび",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "打ちかけの言葉が震えて消えてくたび"
+        },
+        {
+          "index": 13,
+          "start_s": 69.22,
+          "end_s": 75.26,
+          "duration_s": 6.040000000000006,
+          "text": "どうせの物語がまたお前をかぶる",
+          "support_score": 0.788,
+          "status": "supported",
+          "best_reference_match": "どうせ...の物語がまた王冠をかぶる"
+        },
+        {
+          "index": 14,
+          "start_s": 75.26,
+          "end_s": 80.52,
+          "duration_s": 5.259999999999991,
+          "text": "きっと決まってるって口にした瞬間",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "きっと決まってるって口にした瞬間"
+        },
+        {
+          "index": 15,
+          "start_s": 81.28,
+          "end_s": 85.98,
+          "duration_s": 4.700000000000003,
+          "text": "僕の手のひらから明日が落ちていく",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくの手のひらからあしたが落ちていく"
+        },
+        {
+          "index": 16,
+          "start_s": 86.91999999999999,
+          "end_s": 91.26,
+          "duration_s": 4.340000000000018,
+          "text": "一行だけのメッセージで戻れる場所を探す",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで戻れる場所を探す"
+        },
+        {
+          "index": 17,
+          "start_s": 91.26,
+          "end_s": 94.66,
+          "duration_s": 3.3999999999999915,
+          "text": "僕ただしさは外に落ちてなくて",
+          "support_score": 0.815,
+          "status": "supported",
+          "best_reference_match": "正しさは外に落ちてなくて"
+        },
+        {
+          "index": 18,
+          "start_s": 94.66,
+          "end_s": 97.32,
+          "duration_s": 2.6599999999999966,
+          "text": "選んだ後に立ち上がる",
+          "support_score": 0.818,
+          "status": "supported",
+          "best_reference_match": "選んだ跡に立ち上がるああ"
+        },
+        {
+          "index": 19,
+          "start_s": 98.1,
+          "end_s": 100.86,
+          "duration_s": 2.760000000000005,
+          "text": "言えなかったこと数えたら",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 20,
+          "start_s": 100.86,
+          "end_s": 103.64,
+          "duration_s": 2.780000000000001,
+          "text": "仮面に入りきらないほど",
+          "support_score": 0.909,
+          "status": "supported",
+          "best_reference_match": "画面に入りきらないほど"
+        },
+        {
+          "index": 21,
+          "start_s": 103.64,
+          "end_s": 108.9,
+          "duration_s": 5.260000000000005,
+          "text": "それでも一行だけで世界に参加してたい",
+          "support_score": 0.978,
+          "status": "supported",
+          "best_reference_match": "それでもいちぎょうだけでせかいに参加していたい"
+        },
+        {
+          "index": 22,
+          "start_s": 108.9,
+          "end_s": 113.86,
+          "duration_s": 4.959999999999994,
+          "text": "もしも明日 ただの友達で笑えたら",
+          "support_score": 0.909,
+          "status": "supported",
+          "best_reference_match": "もしもあしたただの友だちで笑えたら"
+        },
+        {
+          "index": 23,
+          "start_s": 113.86,
+          "end_s": 118.0,
+          "duration_s": 4.140000000000001,
+          "text": "それだけでいい そう言い聞かせて",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "それだけでいいそう言い聞かせて"
+        },
+        {
+          "index": 24,
+          "start_s": 119.06,
+          "end_s": 125.32,
+          "duration_s": 6.259999999999991,
+          "text": "でも本当は知ってる 沈黙もまた誰かの夜を",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも本当は知ってるちんもくもまた誰かのよるを"
+        },
+        {
+          "index": 25,
+          "start_s": 125.32,
+          "end_s": 129.1,
+          "duration_s": 3.780000000000001,
+          "text": "増やしてしまうって",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "増やしてしまうって"
+        },
+        {
+          "index": 26,
+          "start_s": 131.44,
+          "end_s": 135.0,
+          "duration_s": 3.5600000000000023,
+          "text": "ああ 打ち直す人気の三本心",
+          "support_score": 0.522,
+          "status": "partial",
+          "best_reference_match": "打ち直すげんきの三文字"
+        },
+        {
+          "index": 27,
+          "start_s": 135.0,
+          "end_s": 137.64,
+          "duration_s": 2.6399999999999864,
+          "text": "飛ぶのは真顔じゃなくて",
+          "support_score": 0.727,
+          "status": "supported",
+          "best_reference_match": "跳ぶのは信仰じゃなくて"
+        },
+        {
+          "index": 28,
+          "start_s": 137.64,
+          "end_s": 140.04,
+          "duration_s": 2.4000000000000057,
+          "text": "投げ出さないというケース",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "投げ出さないというけつい"
+        },
+        {
+          "index": 29,
+          "start_s": 140.66,
+          "end_s": 143.3,
+          "duration_s": 2.640000000000015,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 30,
+          "start_s": 143.3,
+          "end_s": 145.72,
+          "duration_s": 2.4199999999999875,
+          "text": "繋がる理由があるのなら",
+          "support_score": 0.696,
+          "status": "partial",
+          "best_reference_match": "つながるよるがあるのなら"
+        },
+        {
+          "index": 31,
+          "start_s": 145.72,
+          "end_s": 148.56,
+          "duration_s": 2.8400000000000034,
+          "text": "返事なんてもう起きなくても",
+          "support_score": 0.88,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 32,
+          "start_s": 148.56,
+          "end_s": 151.24,
+          "duration_s": 2.680000000000007,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 33,
+          "start_s": 152.06,
+          "end_s": 154.7,
+          "duration_s": 2.6399999999999864,
+          "text": "どうせの続きがけなくて",
+          "support_score": 0.909,
+          "status": "supported",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 34,
+          "start_s": 154.7,
+          "end_s": 157.44,
+          "duration_s": 2.740000000000009,
+          "text": "それでも送信をしてみる",
+          "support_score": 0.963,
+          "status": "supported",
+          "best_reference_match": "それでもそうしんを押してみる"
+        },
+        {
+          "index": 35,
+          "start_s": 157.44,
+          "end_s": 160.08,
+          "duration_s": 2.640000000000015,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 36,
+          "start_s": 160.08,
+          "end_s": 163.14,
+          "duration_s": 3.059999999999974,
+          "text": "僕は明日を肯定する",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくはあしたをこうていする"
+        },
+        {
+          "index": 37,
+          "start_s": 173.44,
+          "end_s": 176.88,
+          "duration_s": 3.4399999999999977,
+          "text": "一生だけそれで十分だ",
+          "support_score": 0.818,
+          "status": "supported",
+          "best_reference_match": "それでじゅうぶんだ"
+        },
+        {
+          "index": 38,
+          "start_s": 184.48,
+          "end_s": 189.76,
+          "duration_s": 5.280000000000001,
+          "text": "必要なならこれはあなたの受ける気候より",
+          "support_score": 0.279,
+          "status": "hallucination",
+          "best_reference_match": "このよるの形が決まるならぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 39,
+          "start_s": 190.52,
+          "end_s": 194.5,
+          "duration_s": 3.9799999999999898,
+          "text": "いつらに同じ骨格のまま言い回しだけ",
+          "support_score": 0.25,
+          "status": "hallucination",
+          "best_reference_match": "いちぎょうだけ"
+        },
+        {
+          "index": 40,
+          "start_s": 195.4,
+          "end_s": 199.36,
+          "duration_s": 3.960000000000008,
+          "text": "寄せた差分も作れる良いスタイルプロンプト",
+          "support_score": 0.216,
+          "status": "hallucination",
+          "best_reference_match": "いみを置いて帰るよタイムラインには"
+        },
+        {
+          "index": 41,
+          "start_s": 199.88,
+          "end_s": 200.5,
+          "duration_s": 0.6200000000000045,
+          "text": "おー",
+          "support_score": 0.0,
+          "status": "unsupported",
+          "best_reference_match": ""
+        },
+        {
+          "index": 42,
+          "start_s": 201.38,
+          "end_s": 203.22,
+          "duration_s": 1.8400000000000034,
+          "text": "つこわなすなるティア",
+          "support_score": 0.273,
+          "status": "unsupported",
+          "best_reference_match": "つながるよるがあるのなら"
+        },
+        {
+          "index": 43,
+          "start_s": 203.22,
+          "end_s": 232.8,
+          "duration_s": 29.580000000000013,
+          "text": "ハーパーパーパーチュレッグリッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチ",
+          "support_score": 0.037,
+          "status": "hallucination",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 44,
+          "start_s": 232.8,
+          "end_s": 247.78,
+          "duration_s": 14.97999999999999,
+          "text": "タタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタ",
+          "support_score": 0.009,
+          "status": "hallucination",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 45,
+          "start_s": 247.78,
+          "end_s": 248.86,
+          "duration_s": 1.0800000000000125,
+          "text": "するよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "するよ"
+        },
+        {
+          "index": 46,
+          "start_s": 251.9,
+          "end_s": 254.12,
+          "duration_s": 2.219999999999999,
+          "text": "意志向だけのメッセージ",
+          "support_score": 0.636,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 47,
+          "start_s": 254.12,
+          "end_s": 256.88,
+          "duration_s": 2.759999999999991,
+          "text": "で手の持った時が決まるのは",
+          "support_score": 0.4,
+          "status": "unsupported",
+          "best_reference_match": "このよるの形が決まるなら"
+        },
+        {
+          "index": 48,
+          "start_s": 256.88,
+          "end_s": 258.88,
+          "duration_s": 2.0,
+          "text": "トピアニキャの地霊で",
+          "support_score": 0.19,
+          "status": "unsupported",
+          "best_reference_match": "ただの友だちで笑えたら"
+        },
+        {
+          "index": 49,
+          "start_s": 258.88,
+          "end_s": 262.24,
+          "duration_s": 3.3600000000000136,
+          "text": "身を落ちるさら先にも選びて",
+          "support_score": 0.273,
+          "status": "hallucination",
+          "best_reference_match": "あしたが落ちていく"
+        },
+        {
+          "index": 50,
+          "start_s": 263.1,
+          "end_s": 265.86,
+          "duration_s": 2.759999999999991,
+          "text": "さよならの続きが当てなくて",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "さよならの続き書けなくて"
+        },
+        {
+          "index": 51,
+          "start_s": 265.86,
+          "end_s": 267.96,
+          "duration_s": 2.099999999999966,
+          "text": "ゲイヤハクタタイクルで",
+          "support_score": 0.211,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 52,
+          "start_s": 267.96,
+          "end_s": 268.94,
+          "duration_s": 0.9800000000000182,
+          "text": "出来上げる",
+          "support_score": 0.25,
+          "status": "unsupported",
+          "best_reference_match": "げんき"
+        },
+        {
+          "index": 53,
+          "start_s": 268.94,
+          "end_s": 271.84,
+          "duration_s": 2.8999999999999773,
+          "text": "意志向だけのメッセージで",
+          "support_score": 0.667,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 54,
+          "start_s": 271.84,
+          "end_s": 274.3,
+          "duration_s": 2.4600000000000364,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 55,
+          "start_s": 274.3,
+          "end_s": 275.3,
+          "duration_s": 1.0,
+          "text": "Ahh...",
+          "support_score": 0.6,
+          "status": "partial",
+          "best_reference_match": "息..."
+        },
+        {
+          "index": 56,
+          "start_s": 275.3,
+          "end_s": 280.48,
+          "duration_s": 5.180000000000007,
+          "text": "Ahh...",
+          "support_score": 0.6,
+          "status": "partial",
+          "best_reference_match": "息..."
+        },
+        {
+          "index": 57,
+          "start_s": 301.90000000000003,
+          "end_s": 303.3,
+          "duration_s": 1.3999999999999773,
+          "text": "ご視聴ありがとうございました",
+          "support_score": 0.3,
+          "status": "hallucination",
+          "best_reference_match": "もしもあした"
+        }
+      ]
+    },
+    "medium_gated": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-gated-20260514.json",
+      "totals": {
+        "segments": 80,
+        "supported": 45,
+        "partial": 12,
+        "unsupported": 12,
+        "hallucination": 11,
+        "duration_s": 276.92000007629395,
+        "unsupported_duration_s": 81.31999969482422,
+        "hallucination_duration_s": 35.65999889373779,
+        "chars": 2112,
+        "unsupported_chars": 1419,
+        "hallucination_chars": 1323,
+        "unsupported_segment_rate": 0.2875,
+        "hallucination_segment_rate": 0.1375,
+        "unsupported_duration_rate": 0.2937,
+        "hallucination_duration_rate": 0.1288,
+        "unsupported_char_rate": 0.6719,
+        "hallucination_char_rate": 0.6264
+      },
+      "entries": [
+        {
+          "index": 0,
+          "start_s": 0.0,
+          "end_s": 5.21999979019165,
+          "duration_s": 5.21999979019165,
+          "text": "現形だよって 一個だけのメッセージ",
+          "support_score": 0.686,
+          "status": "partial",
+          "best_reference_match": "げんきだよっていちぎょうだけのめっせじ"
+        },
+        {
+          "index": 1,
+          "start_s": 5.21999979019165,
+          "end_s": 10.619999885559082,
+          "duration_s": 5.400000095367432,
+          "text": "非毒の灯が 胸の底を叩いてる",
+          "support_score": 0.828,
+          "status": "supported",
+          "best_reference_match": "既読の灯りがむねの底を叩いてる"
+        },
+        {
+          "index": 2,
+          "start_s": 10.619999885559082,
+          "end_s": 14.979999542236328,
+          "duration_s": 4.359999656677246,
+          "text": "言えなかった ごめんねよりもっと可愛いのは",
+          "support_score": 0.923,
+          "status": "supported",
+          "best_reference_match": "言えなかったごめんねよりもっと怖いのは"
+        },
+        {
+          "index": 3,
+          "start_s": 14.979999542236328,
+          "end_s": 21.31999969482422,
+          "duration_s": 6.340000152587891,
+          "text": "何も贈らないっていう 静かな洗濯",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "何も送らないっていう静かな選択"
+        },
+        {
+          "index": 4,
+          "start_s": 21.31999969482422,
+          "end_s": 24.979999542236328,
+          "duration_s": 3.6599998474121094,
+          "text": "理由はいつも 後悔",
+          "support_score": 0.857,
+          "status": "supported",
+          "best_reference_match": "理由はいつも"
+        },
+        {
+          "index": 5,
+          "start_s": 24.0,
+          "end_s": 27.0,
+          "duration_s": 3.0,
+          "text": "夢は後からなら選べれる",
+          "support_score": 0.5,
+          "status": "partial",
+          "best_reference_match": "あとから並べられる"
+        },
+        {
+          "index": 6,
+          "start_s": 27.0,
+          "end_s": 30.0,
+          "duration_s": 3.0,
+          "text": "でも指先は先に",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも指先は先に"
+        },
+        {
+          "index": 7,
+          "start_s": 30.0,
+          "end_s": 33.0,
+          "duration_s": 3.0,
+          "text": "生き方を知ってしまう",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "生き方を押してしまう"
+        },
+        {
+          "index": 8,
+          "start_s": 33.0,
+          "end_s": 35.0,
+          "duration_s": 2.0,
+          "text": "一行だけのメッセージ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 9,
+          "start_s": 35.0,
+          "end_s": 38.0,
+          "duration_s": 3.0,
+          "text": "この世の形が決まるなら",
+          "support_score": 0.87,
+          "status": "supported",
+          "best_reference_match": "このよるの形が決まるなら"
+        },
+        {
+          "index": 10,
+          "start_s": 38.0,
+          "end_s": 41.0,
+          "duration_s": 3.0,
+          "text": "僕は逃げ道の言い訳より",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 11,
+          "start_s": 41.0,
+          "end_s": 44.0,
+          "duration_s": 3.0,
+          "text": "小さな責任を選びたいね",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "小さなせきにんを選びたいね"
+        },
+        {
+          "index": 12,
+          "start_s": 44.0,
+          "end_s": 47.0,
+          "duration_s": 3.0,
+          "text": "さよならの続きかけなくて",
+          "support_score": 0.917,
+          "status": "supported",
+          "best_reference_match": "さよならの続き書けなくて"
+        },
+        {
+          "index": 13,
+          "start_s": 47.0,
+          "end_s": 49.0,
+          "duration_s": 2.0,
+          "text": "くわへくばかり増えて",
+          "support_score": 0.545,
+          "status": "partial",
+          "best_reference_match": "空白ばかり増えていくけど"
+        },
+        {
+          "index": 14,
+          "start_s": 48.0,
+          "end_s": 50.0,
+          "duration_s": 2.0,
+          "text": "ばかり増えていくけど",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ばかり増えていくけど"
+        },
+        {
+          "index": 15,
+          "start_s": 50.0,
+          "end_s": 53.0,
+          "duration_s": 3.0,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 16,
+          "start_s": 53.0,
+          "end_s": 56.0,
+          "duration_s": 3.0,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 17,
+          "start_s": 56.0,
+          "end_s": 60.0,
+          "duration_s": 4.0,
+          "text": "タイムラインには知らない誰かの笑顔",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "タイムラインには知らない誰かの笑顔"
+        },
+        {
+          "index": 18,
+          "start_s": 60.0,
+          "end_s": 65.0,
+          "duration_s": 5.0,
+          "text": "強がってスクロールして心だけ取り残す",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "強がってスクロルして心だけ取り残す"
+        },
+        {
+          "index": 19,
+          "start_s": 65.0,
+          "end_s": 69.0,
+          "duration_s": 4.0,
+          "text": "打ち掛けの言葉が震えて消えてくたび",
+          "support_score": 0.941,
+          "status": "supported",
+          "best_reference_match": "打ちかけの言葉が震えて消えてくたび"
+        },
+        {
+          "index": 20,
+          "start_s": 69.0,
+          "end_s": 73.0,
+          "duration_s": 4.0,
+          "text": "どうせの物語がまたオープン",
+          "support_score": 0.636,
+          "status": "partial",
+          "best_reference_match": "どうせ...の物語が"
+        },
+        {
+          "index": 21,
+          "start_s": 72.0,
+          "end_s": 75.5,
+          "duration_s": 3.5,
+          "text": "青くないよカブル",
+          "support_score": 0.3,
+          "status": "unsupported",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 22,
+          "start_s": 76.0,
+          "end_s": 81.0,
+          "duration_s": 5.0,
+          "text": "きっと決まってるって口にした瞬間",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "きっと決まってるって口にした瞬間"
+        },
+        {
+          "index": 23,
+          "start_s": 81.5,
+          "end_s": 87.0,
+          "duration_s": 5.5,
+          "text": "僕の手のひらから明日が落ちていく",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくの手のひらからあしたが落ちていく"
+        },
+        {
+          "index": 24,
+          "start_s": 87.0,
+          "end_s": 92.0,
+          "duration_s": 5.0,
+          "text": "一行だけのメッセージで戻れる場所を探す僕",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで戻れる場所を探すぼく"
+        },
+        {
+          "index": 25,
+          "start_s": 92.0,
+          "end_s": 97.0,
+          "duration_s": 5.0,
+          "text": "ただいさを外に落ちてなくて選んだ後に立ち上がる",
+          "support_score": 0.766,
+          "status": "supported",
+          "best_reference_match": "正しさは外に落ちてなくて選んだ跡に立ち上がるああ"
+        },
+        {
+          "index": 26,
+          "start_s": 96.0,
+          "end_s": 98.0,
+          "duration_s": 2.0,
+          "text": "立ち上がる",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "立ち上がる"
+        },
+        {
+          "index": 27,
+          "start_s": 98.0,
+          "end_s": 101.0,
+          "duration_s": 3.0,
+          "text": "言えなかったこと数えたら",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 28,
+          "start_s": 101.0,
+          "end_s": 104.0,
+          "duration_s": 3.0,
+          "text": "仮面に入りきらないほど",
+          "support_score": 0.909,
+          "status": "supported",
+          "best_reference_match": "画面に入りきらないほど"
+        },
+        {
+          "index": 29,
+          "start_s": 104.0,
+          "end_s": 106.0,
+          "duration_s": 2.0,
+          "text": "それでも一挙だけで",
+          "support_score": 0.667,
+          "status": "partial",
+          "best_reference_match": "それでもいちぎょうだけで"
+        },
+        {
+          "index": 30,
+          "start_s": 106.0,
+          "end_s": 109.0,
+          "duration_s": 3.0,
+          "text": "世界に参加してたい",
+          "support_score": 0.952,
+          "status": "supported",
+          "best_reference_match": "せかいに参加していたい"
+        },
+        {
+          "index": 31,
+          "start_s": 109.0,
+          "end_s": 111.0,
+          "duration_s": 2.0,
+          "text": "もしも明日",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "もしもあした"
+        },
+        {
+          "index": 32,
+          "start_s": 111.0,
+          "end_s": 114.0,
+          "duration_s": 3.0,
+          "text": "ただの友達で笑えたら",
+          "support_score": 0.857,
+          "status": "supported",
+          "best_reference_match": "ただの友だちで笑えたら"
+        },
+        {
+          "index": 33,
+          "start_s": 114.0,
+          "end_s": 116.0,
+          "duration_s": 2.0,
+          "text": "それだけでいい",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "それだけでいい"
+        },
+        {
+          "index": 34,
+          "start_s": 116.0,
+          "end_s": 119.0,
+          "duration_s": 3.0,
+          "text": "そう言い聞かせて",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "そう言い聞かせて"
+        },
+        {
+          "index": 35,
+          "start_s": 119.0,
+          "end_s": 121.0,
+          "duration_s": 2.0,
+          "text": "でも本当は知って",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも本当は知って"
+        },
+        {
+          "index": 36,
+          "start_s": 120.0,
+          "end_s": 123.43999981880188,
+          "duration_s": 3.43999981880188,
+          "text": "本当は知ってる 真のもまた",
+          "support_score": 0.714,
+          "status": "partial",
+          "best_reference_match": "でも本当は知ってるちんもくもまた"
+        },
+        {
+          "index": 37,
+          "start_s": 123.43999981880188,
+          "end_s": 131.7799997329712,
+          "duration_s": 8.339999914169312,
+          "text": "誰かの夜を 増やしてしまうって",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "誰かのよるを増やしてしまうって"
+        },
+        {
+          "index": 38,
+          "start_s": 131.7799997329712,
+          "end_s": 135.4399995803833,
+          "duration_s": 3.6599998474121094,
+          "text": "嗚呼 打ち直す 人気の三本字",
+          "support_score": 0.609,
+          "status": "partial",
+          "best_reference_match": "打ち直すげんきの三文字"
+        },
+        {
+          "index": 39,
+          "start_s": 135.4399995803833,
+          "end_s": 138.0399990081787,
+          "duration_s": 2.59999942779541,
+          "text": "飛ぶのは進行じゃなくて",
+          "support_score": 0.727,
+          "status": "supported",
+          "best_reference_match": "跳ぶのは信仰じゃなくて"
+        },
+        {
+          "index": 40,
+          "start_s": 138.0399990081787,
+          "end_s": 141.0399990081787,
+          "duration_s": 3.0,
+          "text": "投げ出さないという決意",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "投げ出さないというけつい"
+        },
+        {
+          "index": 41,
+          "start_s": 141.0399990081787,
+          "end_s": 145.07999992370605,
+          "duration_s": 4.040000915527344,
+          "text": "一秒だけのメッセージで繋がる理由がある",
+          "support_score": 0.605,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら"
+        },
+        {
+          "index": 42,
+          "start_s": 144.0,
+          "end_s": 146.0,
+          "duration_s": 2.0,
+          "text": "理由があるのなら",
+          "support_score": 0.6,
+          "status": "partial",
+          "best_reference_match": "つながるよるがあるのなら"
+        },
+        {
+          "index": 43,
+          "start_s": 146.0,
+          "end_s": 148.59999990463257,
+          "duration_s": 2.5999999046325684,
+          "text": "返事なんてもう来なくても",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 44,
+          "start_s": 148.59999990463257,
+          "end_s": 152.30000019073486,
+          "duration_s": 3.700000286102295,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 45,
+          "start_s": 152.30000019073486,
+          "end_s": 154.80000019073486,
+          "duration_s": 2.5,
+          "text": "どうせの続きが消えなくて",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 46,
+          "start_s": 154.80000019073486,
+          "end_s": 157.5999994277954,
+          "duration_s": 2.799999237060547,
+          "text": "それでも送信をしてみる",
+          "support_score": 0.963,
+          "status": "supported",
+          "best_reference_match": "それでもそうしんを押してみる"
+        },
+        {
+          "index": 47,
+          "start_s": 157.5999994277954,
+          "end_s": 160.19999885559082,
+          "duration_s": 2.59999942779541,
+          "text": "一興だけのメッセージで",
+          "support_score": 0.846,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 48,
+          "start_s": 160.19999885559082,
+          "end_s": 163.60000038146973,
+          "duration_s": 3.4000015258789062,
+          "text": "僕は明日を肯定する",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくはあしたをこうていする"
+        },
+        {
+          "index": 49,
+          "start_s": 168.0,
+          "end_s": 178.0,
+          "duration_s": 10.0,
+          "text": "一丁だけそれで十分だ",
+          "support_score": 0.818,
+          "status": "supported",
+          "best_reference_match": "それでじゅうぶんだ"
+        },
+        {
+          "index": 50,
+          "start_s": 178.0,
+          "end_s": 188.0,
+          "duration_s": 10.0,
+          "text": "必要のならこれはまたのゲルケゴールより",
+          "support_score": 0.333,
+          "status": "hallucination",
+          "best_reference_match": "このよるの形が決まるならぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 51,
+          "start_s": 188.0,
+          "end_s": 193.0,
+          "duration_s": 5.0,
+          "text": "いつもに同じ価格のものを",
+          "support_score": 0.333,
+          "status": "hallucination",
+          "best_reference_match": "理由はいつも"
+        },
+        {
+          "index": 52,
+          "start_s": 192.0,
+          "end_s": 195.0,
+          "duration_s": 3.0,
+          "text": "顔書くのまま言い回しただけ",
+          "support_score": 0.32,
+          "status": "hallucination",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 53,
+          "start_s": 195.0,
+          "end_s": 197.0,
+          "duration_s": 2.0,
+          "text": "寄せたサブも作れるよ",
+          "support_score": 0.286,
+          "status": "hallucination",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 54,
+          "start_s": 197.0,
+          "end_s": 201.0,
+          "duration_s": 4.0,
+          "text": "I start the romp door",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        },
+        {
+          "index": 55,
+          "start_s": 201.0,
+          "end_s": 203.0,
+          "duration_s": 2.0,
+          "text": "Skull on us now to the heart",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        },
+        {
+          "index": 56,
+          "start_s": 203.0,
+          "end_s": 205.0,
+          "duration_s": 2.0,
+          "text": "パパリッチ リクリッチ ベッチ",
+          "support_score": 0.25,
+          "status": "hallucination",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 57,
+          "start_s": 205.0,
+          "end_s": 207.0,
+          "duration_s": 2.0,
+          "text": "レクリクリ カーランベッチ",
+          "support_score": 0.273,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 58,
+          "start_s": 207.0,
+          "end_s": 208.0,
+          "duration_s": 1.0,
+          "text": "ヌーランジャスペック",
+          "support_score": 0.235,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 59,
+          "start_s": 208.0,
+          "end_s": 211.0,
+          "duration_s": 3.0,
+          "text": "ルミアフソン ザリノーツ ベッチ",
+          "support_score": 0.167,
+          "status": "hallucination",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 60,
+          "start_s": 211.0,
+          "end_s": 213.0,
+          "duration_s": 2.0,
+          "text": "ウンモノロンジョーネン",
+          "support_score": 0.111,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 61,
+          "start_s": 213.0,
+          "end_s": 215.0,
+          "duration_s": 2.0,
+          "text": "チョドシュワクテ",
+          "support_score": 0.111,
+          "status": "unsupported",
+          "best_reference_match": "強がってスクロルして"
+        },
+        {
+          "index": 62,
+          "start_s": 216.0,
+          "end_s": 238.0,
+          "duration_s": 22.0,
+          "text": "Ahhhhh",
+          "support_score": 0.0,
+          "status": "unsupported",
+          "best_reference_match": ""
+        },
+        {
+          "index": 63,
+          "start_s": 238.0,
+          "end_s": 241.0,
+          "duration_s": 3.0,
+          "text": "一行だけのメッセージで繋がる",
+          "support_score": 0.897,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 64,
+          "start_s": 240.0,
+          "end_s": 243.35999989509583,
+          "duration_s": 3.359999895095825,
+          "text": "メッセージで繋がる揺竜があるのなら",
+          "support_score": 0.634,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら"
+        },
+        {
+          "index": 65,
+          "start_s": 243.35999989509583,
+          "end_s": 246.1399998664856,
+          "duration_s": 2.7799999713897705,
+          "text": "返事なんてろーかなくても",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 66,
+          "start_s": 246.1399998664856,
+          "end_s": 249.42000007629395,
+          "duration_s": 3.2800002098083496,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 67,
+          "start_s": 249.42000007629395,
+          "end_s": 252.17999935150146,
+          "duration_s": 2.7599992752075195,
+          "text": "oh",
+          "support_score": 0.0,
+          "status": "unsupported",
+          "best_reference_match": ""
+        },
+        {
+          "index": 68,
+          "start_s": 252.17999935150146,
+          "end_s": 254.19999980926514,
+          "duration_s": 2.020000457763672,
+          "text": "一挙だけのメッセージ",
+          "support_score": 0.667,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 69,
+          "start_s": 254.19999980926514,
+          "end_s": 256.85999870300293,
+          "duration_s": 2.659998893737793,
+          "text": "出て物を持った時が決まるの",
+          "support_score": 0.348,
+          "status": "hallucination",
+          "best_reference_match": "きっと決まってるって"
+        },
+        {
+          "index": 70,
+          "start_s": 256.85999870300293,
+          "end_s": 258.95999908447266,
+          "duration_s": 2.1000003814697266,
+          "text": "ah 僕が逃げ出しないで",
+          "support_score": 0.417,
+          "status": "unsupported",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 71,
+          "start_s": 258.95999908447266,
+          "end_s": 260.42000007629395,
+          "duration_s": 1.460000991821289,
+          "text": "雨を落ちるさ",
+          "support_score": 0.286,
+          "status": "unsupported",
+          "best_reference_match": "また王冠をかぶる"
+        },
+        {
+          "index": 72,
+          "start_s": 260.42000007629395,
+          "end_s": 263.26000022888184,
+          "duration_s": 2.8400001525878906,
+          "text": "先に僕を選びて",
+          "support_score": 0.381,
+          "status": "unsupported",
+          "best_reference_match": "ぼくはあしたをこうていする"
+        },
+        {
+          "index": 73,
+          "start_s": 263.26000022888184,
+          "end_s": 265.26000022888184,
+          "duration_s": 2.0,
+          "text": "でもなぁの続きが",
+          "support_score": 0.4,
+          "status": "unsupported",
+          "best_reference_match": "さよならの続き書けなくて"
+        },
+        {
+          "index": 74,
+          "start_s": 264.0,
+          "end_s": 266.0,
+          "duration_s": 2.0,
+          "text": "続きがあってなくて",
+          "support_score": 0.5,
+          "status": "partial",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 75,
+          "start_s": 266.0,
+          "end_s": 268.0,
+          "duration_s": 2.0,
+          "text": "ヒアハクだったいこめてる",
+          "support_score": 0.316,
+          "status": "hallucination",
+          "best_reference_match": "げんきだよって"
+        },
+        {
+          "index": 76,
+          "start_s": 268.0,
+          "end_s": 270.0,
+          "duration_s": 2.0,
+          "text": "気分は一向だけの",
+          "support_score": 0.3,
+          "status": "unsupported",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 77,
+          "start_s": 270.0,
+          "end_s": 272.0,
+          "duration_s": 2.0,
+          "text": "メッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "めっせじで"
+        },
+        {
+          "index": 78,
+          "start_s": 272.0,
+          "end_s": 274.0,
+          "duration_s": 2.0,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 79,
+          "start_s": 288.0,
+          "end_s": 287.0,
+          "duration_s": 0.0,
+          "text": "I'm so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        }
+      ]
+    },
+    "medium_denoise_norm": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-denoise-norm-20260514.json",
+      "totals": {
+        "segments": 87,
+        "supported": 48,
+        "partial": 12,
+        "unsupported": 20,
+        "hallucination": 7,
+        "duration_s": 252.4799988269806,
+        "unsupported_duration_s": 52.6999990940094,
+        "hallucination_duration_s": 17.65999698638916,
+        "chars": 2673,
+        "unsupported_chars": 1989,
+        "hallucination_chars": 1846,
+        "unsupported_segment_rate": 0.3103,
+        "hallucination_segment_rate": 0.0805,
+        "unsupported_duration_rate": 0.2087,
+        "hallucination_duration_rate": 0.0699,
+        "unsupported_char_rate": 0.7441,
+        "hallucination_char_rate": 0.6906
+      },
+      "entries": [
+        {
+          "index": 0,
+          "start_s": 0.0,
+          "end_s": 5.21999979019165,
+          "duration_s": 5.21999979019165,
+          "text": "原型太陽で一個だけのメッセージ",
+          "support_score": 0.593,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 1,
+          "start_s": 5.21999979019165,
+          "end_s": 10.619999885559082,
+          "duration_s": 5.400000095367432,
+          "text": "非毒の灯が胸の底を叩いてる",
+          "support_score": 0.828,
+          "status": "supported",
+          "best_reference_match": "既読の灯りがむねの底を叩いてる"
+        },
+        {
+          "index": 2,
+          "start_s": 10.619999885559082,
+          "end_s": 15.019999504089355,
+          "duration_s": 4.399999618530273,
+          "text": "言えなかったごめんねよりもっと可愛いのは",
+          "support_score": 0.923,
+          "status": "supported",
+          "best_reference_match": "言えなかったごめんねよりもっと怖いのは"
+        },
+        {
+          "index": 3,
+          "start_s": 15.019999504089355,
+          "end_s": 21.31999969482422,
+          "duration_s": 6.300000190734863,
+          "text": "何も贈らないっていう静かな洗濯",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "何も送らないっていう静かな選択"
+        },
+        {
+          "index": 4,
+          "start_s": 21.31999969482422,
+          "end_s": 25.219999313354492,
+          "duration_s": 3.8999996185302734,
+          "text": "理由はいつも後悔",
+          "support_score": 0.857,
+          "status": "supported",
+          "best_reference_match": "理由はいつも"
+        },
+        {
+          "index": 5,
+          "start_s": 24.0,
+          "end_s": 27.0,
+          "duration_s": 3.0,
+          "text": "夢は後からなら選べれる",
+          "support_score": 0.5,
+          "status": "partial",
+          "best_reference_match": "あとから並べられる"
+        },
+        {
+          "index": 6,
+          "start_s": 27.0,
+          "end_s": 30.0,
+          "duration_s": 3.0,
+          "text": "でも指先は先に",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも指先は先に"
+        },
+        {
+          "index": 7,
+          "start_s": 30.0,
+          "end_s": 33.0,
+          "duration_s": 3.0,
+          "text": "生き方を知ってしまう",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "生き方を押してしまう"
+        },
+        {
+          "index": 8,
+          "start_s": 33.0,
+          "end_s": 35.0,
+          "duration_s": 2.0,
+          "text": "一行だけのメッセージ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 9,
+          "start_s": 35.0,
+          "end_s": 38.0,
+          "duration_s": 3.0,
+          "text": "この夜の形が決まるなら",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "このよるの形が決まるなら"
+        },
+        {
+          "index": 10,
+          "start_s": 38.0,
+          "end_s": 41.0,
+          "duration_s": 3.0,
+          "text": "僕は逃げ道の言い訳より",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 11,
+          "start_s": 41.0,
+          "end_s": 44.0,
+          "duration_s": 3.0,
+          "text": "小さな責任を選びたいね",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "小さなせきにんを選びたいね"
+        },
+        {
+          "index": 12,
+          "start_s": 44.0,
+          "end_s": 47.0,
+          "duration_s": 3.0,
+          "text": "さよならの続きかけなくて",
+          "support_score": 0.917,
+          "status": "supported",
+          "best_reference_match": "さよならの続き書けなくて"
+        },
+        {
+          "index": 13,
+          "start_s": 47.0,
+          "end_s": 49.0,
+          "duration_s": 2.0,
+          "text": "くわへくばかり増えて",
+          "support_score": 0.545,
+          "status": "partial",
+          "best_reference_match": "空白ばかり増えていくけど"
+        },
+        {
+          "index": 14,
+          "start_s": 48.0,
+          "end_s": 50.0,
+          "duration_s": 2.0,
+          "text": "ばかり増えていくけど",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ばかり増えていくけど"
+        },
+        {
+          "index": 15,
+          "start_s": 50.0,
+          "end_s": 53.0,
+          "duration_s": 3.0,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 16,
+          "start_s": 53.0,
+          "end_s": 56.0,
+          "duration_s": 3.0,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 17,
+          "start_s": 56.0,
+          "end_s": 60.0,
+          "duration_s": 4.0,
+          "text": "タイムラインには知らない誰かの笑顔",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "タイムラインには知らない誰かの笑顔"
+        },
+        {
+          "index": 18,
+          "start_s": 60.0,
+          "end_s": 65.0,
+          "duration_s": 5.0,
+          "text": "強がってスクロールした心だけ取り残す",
+          "support_score": 0.941,
+          "status": "supported",
+          "best_reference_match": "強がってスクロルして心だけ取り残す"
+        },
+        {
+          "index": 19,
+          "start_s": 65.0,
+          "end_s": 69.0,
+          "duration_s": 4.0,
+          "text": "打ち掛けの言葉が震えて消えてくたび",
+          "support_score": 0.941,
+          "status": "supported",
+          "best_reference_match": "打ちかけの言葉が震えて消えてくたび"
+        },
+        {
+          "index": 20,
+          "start_s": 69.0,
+          "end_s": 73.0,
+          "duration_s": 4.0,
+          "text": "どうせの物語がまたオープン",
+          "support_score": 0.636,
+          "status": "partial",
+          "best_reference_match": "どうせ...の物語が"
+        },
+        {
+          "index": 21,
+          "start_s": 72.0,
+          "end_s": 75.39999985694885,
+          "duration_s": 3.3999998569488525,
+          "text": "青が絵を被る",
+          "support_score": 0.286,
+          "status": "unsupported",
+          "best_reference_match": "また王冠をかぶる"
+        },
+        {
+          "index": 22,
+          "start_s": 76.19999980926514,
+          "end_s": 78.89999961853027,
+          "duration_s": 2.6999998092651367,
+          "text": "きっと決まっているって",
+          "support_score": 0.952,
+          "status": "supported",
+          "best_reference_match": "きっと決まってるって"
+        },
+        {
+          "index": 23,
+          "start_s": 78.89999961853027,
+          "end_s": 81.09999942779541,
+          "duration_s": 2.1999998092651367,
+          "text": "口にした瞬間",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "口にした瞬間"
+        },
+        {
+          "index": 24,
+          "start_s": 81.59999942779541,
+          "end_s": 83.89999961853027,
+          "duration_s": 2.3000001907348633,
+          "text": "僕の手のひらから",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくの手のひらから"
+        },
+        {
+          "index": 25,
+          "start_s": 83.89999961853027,
+          "end_s": 87.09999942779541,
+          "duration_s": 3.1999998092651367,
+          "text": "明日が落ちていく",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "あしたが落ちていく"
+        },
+        {
+          "index": 26,
+          "start_s": 87.09999942779541,
+          "end_s": 89.39999961853027,
+          "duration_s": 2.3000001907348633,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 27,
+          "start_s": 89.39999961853027,
+          "end_s": 92.0,
+          "duration_s": 2.6000003814697266,
+          "text": "戻れる場所を探す僕",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "戻れる場所を探すぼく"
+        },
+        {
+          "index": 28,
+          "start_s": 92.0,
+          "end_s": 94.79999923706055,
+          "duration_s": 2.799999237060547,
+          "text": "ただしさは外に落ちてなくて",
+          "support_score": 0.88,
+          "status": "supported",
+          "best_reference_match": "正しさは外に落ちてなくて"
+        },
+        {
+          "index": 29,
+          "start_s": 94.79999923706055,
+          "end_s": 97.0,
+          "duration_s": 2.200000762939453,
+          "text": "ランダートに立ち上がる",
+          "support_score": 0.545,
+          "status": "partial",
+          "best_reference_match": "選んだ跡に立ち上がるああ"
+        },
+        {
+          "index": 30,
+          "start_s": 96.0,
+          "end_s": 98.0,
+          "duration_s": 2.0,
+          "text": "立ち上がる",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "立ち上がる"
+        },
+        {
+          "index": 31,
+          "start_s": 98.0,
+          "end_s": 101.0,
+          "duration_s": 3.0,
+          "text": "言えなかったこと数えたら",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 32,
+          "start_s": 101.0,
+          "end_s": 104.0,
+          "duration_s": 3.0,
+          "text": "仮面に入りきらないほど",
+          "support_score": 0.909,
+          "status": "supported",
+          "best_reference_match": "画面に入りきらないほど"
+        },
+        {
+          "index": 33,
+          "start_s": 104.0,
+          "end_s": 106.0,
+          "duration_s": 2.0,
+          "text": "それでも一興だけで",
+          "support_score": 0.833,
+          "status": "supported",
+          "best_reference_match": "それでもいちぎょうだけで"
+        },
+        {
+          "index": 34,
+          "start_s": 106.0,
+          "end_s": 109.0,
+          "duration_s": 3.0,
+          "text": "世界に参加してたい",
+          "support_score": 0.952,
+          "status": "supported",
+          "best_reference_match": "せかいに参加していたい"
+        },
+        {
+          "index": 35,
+          "start_s": 109.0,
+          "end_s": 111.0,
+          "duration_s": 2.0,
+          "text": "もしも明日",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "もしもあした"
+        },
+        {
+          "index": 36,
+          "start_s": 111.0,
+          "end_s": 114.0,
+          "duration_s": 3.0,
+          "text": "ただの友達で笑えたら",
+          "support_score": 0.857,
+          "status": "supported",
+          "best_reference_match": "ただの友だちで笑えたら"
+        },
+        {
+          "index": 37,
+          "start_s": 114.0,
+          "end_s": 116.0,
+          "duration_s": 2.0,
+          "text": "それだけでいい",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "それだけでいい"
+        },
+        {
+          "index": 38,
+          "start_s": 116.0,
+          "end_s": 119.0,
+          "duration_s": 3.0,
+          "text": "そう言い聞かせて",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "そう言い聞かせて"
+        },
+        {
+          "index": 39,
+          "start_s": 119.0,
+          "end_s": 121.0,
+          "duration_s": 2.0,
+          "text": "でも本当は知って",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも本当は知って"
+        },
+        {
+          "index": 40,
+          "start_s": 120.0,
+          "end_s": 123.43999981880188,
+          "duration_s": 3.43999981880188,
+          "text": "本当は知ってる 真のもまた",
+          "support_score": 0.714,
+          "status": "partial",
+          "best_reference_match": "でも本当は知ってるちんもくもまた"
+        },
+        {
+          "index": 41,
+          "start_s": 123.43999981880188,
+          "end_s": 131.67999935150146,
+          "duration_s": 8.239999532699585,
+          "text": "誰かの夜を 震いだしてしまうって",
+          "support_score": 0.839,
+          "status": "supported",
+          "best_reference_match": "誰かのよるを増やしてしまうって"
+        },
+        {
+          "index": 42,
+          "start_s": 131.67999935150146,
+          "end_s": 135.4399995803833,
+          "duration_s": 3.760000228881836,
+          "text": "母は打ち直す右の三本字",
+          "support_score": 0.636,
+          "status": "partial",
+          "best_reference_match": "打ち直すげんきの三文字"
+        },
+        {
+          "index": 43,
+          "start_s": 135.4399995803833,
+          "end_s": 137.92000007629395,
+          "duration_s": 2.4800004959106445,
+          "text": "飛ぶのは進行じゃなくて",
+          "support_score": 0.727,
+          "status": "supported",
+          "best_reference_match": "跳ぶのは信仰じゃなくて"
+        },
+        {
+          "index": 44,
+          "start_s": 137.92000007629395,
+          "end_s": 140.8799991607666,
+          "duration_s": 2.9599990844726562,
+          "text": "投げ出さないという決意",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "投げ出さないというけつい"
+        },
+        {
+          "index": 45,
+          "start_s": 140.8799991607666,
+          "end_s": 144.95999908447266,
+          "duration_s": 4.079999923706055,
+          "text": "一興だけのメッセージで繋がる理由がある",
+          "support_score": 0.696,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら"
+        },
+        {
+          "index": 46,
+          "start_s": 144.0,
+          "end_s": 146.0,
+          "duration_s": 2.0,
+          "text": "言うがあるのなら",
+          "support_score": 0.6,
+          "status": "partial",
+          "best_reference_match": "つながるよるがあるのなら"
+        },
+        {
+          "index": 47,
+          "start_s": 146.0,
+          "end_s": 148.59999990463257,
+          "duration_s": 2.5999999046325684,
+          "text": "返事なんてもう来なくても",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 48,
+          "start_s": 148.59999990463257,
+          "end_s": 152.30000019073486,
+          "duration_s": 3.700000286102295,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 49,
+          "start_s": 152.30000019073486,
+          "end_s": 154.80000019073486,
+          "duration_s": 2.5,
+          "text": "どうせの続きが消えなくて",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 50,
+          "start_s": 154.80000019073486,
+          "end_s": 157.5999994277954,
+          "duration_s": 2.799999237060547,
+          "text": "それでも送信をしてみる",
+          "support_score": 0.963,
+          "status": "supported",
+          "best_reference_match": "それでもそうしんを押してみる"
+        },
+        {
+          "index": 51,
+          "start_s": 157.5999994277954,
+          "end_s": 160.19999885559082,
+          "duration_s": 2.59999942779541,
+          "text": "一興だけのメッセージで",
+          "support_score": 0.846,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 52,
+          "start_s": 160.19999885559082,
+          "end_s": 163.60000038146973,
+          "duration_s": 3.4000015258789062,
+          "text": "僕は明日を肯定する",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくはあしたをこうていする"
+        },
+        {
+          "index": 53,
+          "start_s": 168.0,
+          "end_s": 185.26000022888184,
+          "duration_s": 17.260000228881836,
+          "text": "一丁だけ それで十分だ",
+          "support_score": 0.818,
+          "status": "supported",
+          "best_reference_match": "それでじゅうぶんだ"
+        },
+        {
+          "index": 54,
+          "start_s": 185.26000022888184,
+          "end_s": 190.5399990081787,
+          "duration_s": 5.279998779296875,
+          "text": "必要のならこれはまたの ゲルケゴールより",
+          "support_score": 0.333,
+          "status": "hallucination",
+          "best_reference_match": "このよるの形が決まるならぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 55,
+          "start_s": 190.5399990081787,
+          "end_s": 193.3400001525879,
+          "duration_s": 2.8000011444091797,
+          "text": "いつもに同じ価格のまま",
+          "support_score": 0.353,
+          "status": "unsupported",
+          "best_reference_match": "理由はいつも"
+        },
+        {
+          "index": 56,
+          "start_s": 192.0,
+          "end_s": 195.59999990463257,
+          "duration_s": 3.5999999046325684,
+          "text": "顔書くのまま言い回しだけ",
+          "support_score": 0.333,
+          "status": "hallucination",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 57,
+          "start_s": 195.59999990463257,
+          "end_s": 197.71999979019165,
+          "duration_s": 2.119999885559082,
+          "text": "寄せたサブも作れるよ",
+          "support_score": 0.286,
+          "status": "hallucination",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 58,
+          "start_s": 197.71999979019165,
+          "end_s": 201.7199993133545,
+          "duration_s": 3.999999523162842,
+          "text": "I start the romp door",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        },
+        {
+          "index": 59,
+          "start_s": 201.7199993133545,
+          "end_s": 203.11999988555908,
+          "duration_s": 1.4000005722045898,
+          "text": "ずこわなスナルティー",
+          "support_score": 0.214,
+          "status": "unsupported",
+          "best_reference_match": "知らない誰かの笑顔強がってスクロルして"
+        },
+        {
+          "index": 60,
+          "start_s": 203.11999988555908,
+          "end_s": 204.11999988555908,
+          "duration_s": 1.0,
+          "text": "アルパパリッチ",
+          "support_score": 0.222,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 61,
+          "start_s": 204.11999988555908,
+          "end_s": 204.88000011444092,
+          "duration_s": 0.7600002288818359,
+          "text": "リクリッチ",
+          "support_score": 0.375,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 62,
+          "start_s": 204.88000011444092,
+          "end_s": 205.2799997329712,
+          "duration_s": 0.39999961853027344,
+          "text": "ベッチ",
+          "support_score": 0.143,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 63,
+          "start_s": 205.2799997329712,
+          "end_s": 206.51999950408936,
+          "duration_s": 1.239999771118164,
+          "text": "レクリクリカー",
+          "support_score": 0.353,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 64,
+          "start_s": 206.51999950408936,
+          "end_s": 207.2799997329712,
+          "duration_s": 0.7600002288818359,
+          "text": "ランベッチ",
+          "support_score": 0.308,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 65,
+          "start_s": 207.2799997329712,
+          "end_s": 208.52000045776367,
+          "duration_s": 1.2400007247924805,
+          "text": "ヌーランジャースペック",
+          "support_score": 0.235,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 66,
+          "start_s": 208.52000045776367,
+          "end_s": 209.60000038146973,
+          "duration_s": 1.0799999237060547,
+          "text": "ルミアフソン",
+          "support_score": 0.143,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 67,
+          "start_s": 209.60000038146973,
+          "end_s": 210.52000045776367,
+          "duration_s": 0.9200000762939453,
+          "text": "ザリノーツ",
+          "support_score": 0.133,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 68,
+          "start_s": 210.52000045776367,
+          "end_s": 211.7199993133545,
+          "duration_s": 1.1999988555908203,
+          "text": "ベッチウン",
+          "support_score": 0.154,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 69,
+          "start_s": 211.7199993133545,
+          "end_s": 213.07999992370605,
+          "duration_s": 1.3600006103515625,
+          "text": "モノロンジョーネン",
+          "support_score": 0.125,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 70,
+          "start_s": 213.07999992370605,
+          "end_s": 215.68000030517578,
+          "duration_s": 2.6000003814697266,
+          "text": "チョドシュワクテ",
+          "support_score": 0.111,
+          "status": "unsupported",
+          "best_reference_match": "強がってスクロルして"
+        },
+        {
+          "index": 71,
+          "start_s": 216.0,
+          "end_s": 215.0,
+          "duration_s": 0.0,
+          "text": "آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه آه",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        },
+        {
+          "index": 72,
+          "start_s": 240.0,
+          "end_s": 243.35999989509583,
+          "duration_s": 3.359999895095825,
+          "text": "メッセージで繋がる余裕があるのなら",
+          "support_score": 0.634,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら"
+        },
+        {
+          "index": 73,
+          "start_s": 243.35999989509583,
+          "end_s": 246.1399998664856,
+          "duration_s": 2.7799999713897705,
+          "text": "返事なんて動かなくても",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 74,
+          "start_s": 246.1399998664856,
+          "end_s": 249.42000007629395,
+          "duration_s": 3.2800002098083496,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 75,
+          "start_s": 249.42000007629395,
+          "end_s": 252.17999935150146,
+          "duration_s": 2.7599992752075195,
+          "text": "Oh",
+          "support_score": 0.0,
+          "status": "unsupported",
+          "best_reference_match": ""
+        },
+        {
+          "index": 76,
+          "start_s": 252.17999935150146,
+          "end_s": 254.19999980926514,
+          "duration_s": 2.020000457763672,
+          "text": "一挙だけのメッセージ",
+          "support_score": 0.667,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 77,
+          "start_s": 254.19999980926514,
+          "end_s": 256.85999870300293,
+          "duration_s": 2.659998893737793,
+          "text": "だって喉を持った時が決まるの",
+          "support_score": 0.32,
+          "status": "hallucination",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 78,
+          "start_s": 256.85999870300293,
+          "end_s": 259.1000003814697,
+          "duration_s": 2.240001678466797,
+          "text": "ハートが逃げられしないで",
+          "support_score": 0.3,
+          "status": "unsupported",
+          "best_reference_match": "知らない誰かの笑顔"
+        },
+        {
+          "index": 79,
+          "start_s": 259.1000003814697,
+          "end_s": 263.3799991607666,
+          "duration_s": 4.279998779296875,
+          "text": "見下ろしさ先にを選びて",
+          "support_score": 0.4,
+          "status": "unsupported",
+          "best_reference_match": "小さなせきにんを選びたいねえ"
+        },
+        {
+          "index": 80,
+          "start_s": 263.3799991607666,
+          "end_s": 264.9799995422363,
+          "duration_s": 1.6000003814697266,
+          "text": "でもなのと時が",
+          "support_score": 0.308,
+          "status": "unsupported",
+          "best_reference_match": "既読の灯りが"
+        },
+        {
+          "index": 81,
+          "start_s": 264.0,
+          "end_s": 266.0,
+          "duration_s": 2.0,
+          "text": "続きがあったなくて",
+          "support_score": 0.5,
+          "status": "partial",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 82,
+          "start_s": 266.0,
+          "end_s": 268.0,
+          "duration_s": 2.0,
+          "text": "気合はくだだいこめてる",
+          "support_score": 0.3,
+          "status": "unsupported",
+          "best_reference_match": "むねの底を叩いてる"
+        },
+        {
+          "index": 83,
+          "start_s": 268.0,
+          "end_s": 270.0,
+          "duration_s": 2.0,
+          "text": "気明けの意志向けの",
+          "support_score": 0.235,
+          "status": "unsupported",
+          "best_reference_match": "打ちかけの言葉が"
+        },
+        {
+          "index": 84,
+          "start_s": 270.0,
+          "end_s": 272.0,
+          "duration_s": 2.0,
+          "text": "メッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "めっせじで"
+        },
+        {
+          "index": 85,
+          "start_s": 272.0,
+          "end_s": 274.0,
+          "duration_s": 2.0,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 86,
+          "start_s": 288.0,
+          "end_s": 287.0,
+          "duration_s": 0.0,
+          "text": "Chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant, chant",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        }
+      ]
+    },
+    "medium_compressed": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-compressed-20260514.json",
+      "totals": {
+        "segments": 80,
+        "supported": 46,
+        "partial": 10,
+        "unsupported": 16,
+        "hallucination": 8,
+        "duration_s": 253.2199993133545,
+        "unsupported_duration_s": 58.34000015258789,
+        "hallucination_duration_s": 26.5,
+        "chars": 2208,
+        "unsupported_chars": 1519,
+        "hallucination_chars": 1384,
+        "unsupported_segment_rate": 0.3,
+        "hallucination_segment_rate": 0.1,
+        "unsupported_duration_rate": 0.2304,
+        "hallucination_duration_rate": 0.1047,
+        "unsupported_char_rate": 0.688,
+        "hallucination_char_rate": 0.6268
+      },
+      "entries": [
+        {
+          "index": 0,
+          "start_s": 0.0,
+          "end_s": 5.21999979019165,
+          "duration_s": 5.21999979019165,
+          "text": "玄関だよね 一個だけのメッセージ",
+          "support_score": 0.593,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 1,
+          "start_s": 5.21999979019165,
+          "end_s": 10.15999984741211,
+          "duration_s": 4.940000057220459,
+          "text": "非毒の灯が 胸の底を叩いてる",
+          "support_score": 0.828,
+          "status": "supported",
+          "best_reference_match": "既読の灯りがむねの底を叩いてる"
+        },
+        {
+          "index": 2,
+          "start_s": 10.15999984741211,
+          "end_s": 14.960000038146973,
+          "duration_s": 4.800000190734863,
+          "text": "言えなかった ごめんねよりもっと可愛いのは",
+          "support_score": 0.923,
+          "status": "supported",
+          "best_reference_match": "言えなかったごめんねよりもっと怖いのは"
+        },
+        {
+          "index": 3,
+          "start_s": 14.960000038146973,
+          "end_s": 21.03999900817871,
+          "duration_s": 6.079998970031738,
+          "text": "何も贈らないっていう 静かな洗濯",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "何も送らないっていう静かな選択"
+        },
+        {
+          "index": 4,
+          "start_s": 21.03999900817871,
+          "end_s": 25.0,
+          "duration_s": 3.960000991821289,
+          "text": "理由はいつも 後悔",
+          "support_score": 0.857,
+          "status": "supported",
+          "best_reference_match": "理由はいつも"
+        },
+        {
+          "index": 5,
+          "start_s": 24.0,
+          "end_s": 27.0,
+          "duration_s": 3.0,
+          "text": "夢は後からなら選べれる",
+          "support_score": 0.5,
+          "status": "partial",
+          "best_reference_match": "あとから並べられる"
+        },
+        {
+          "index": 6,
+          "start_s": 27.0,
+          "end_s": 30.0,
+          "duration_s": 3.0,
+          "text": "でも指先は先に",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも指先は先に"
+        },
+        {
+          "index": 7,
+          "start_s": 30.0,
+          "end_s": 33.0,
+          "duration_s": 3.0,
+          "text": "生き方を知ってしまう",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "生き方を押してしまう"
+        },
+        {
+          "index": 8,
+          "start_s": 33.0,
+          "end_s": 35.0,
+          "duration_s": 2.0,
+          "text": "一行だけのメッセージ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 9,
+          "start_s": 35.0,
+          "end_s": 38.0,
+          "duration_s": 3.0,
+          "text": "この夜の形が決まんなら",
+          "support_score": 0.917,
+          "status": "supported",
+          "best_reference_match": "このよるの形が決まるなら"
+        },
+        {
+          "index": 10,
+          "start_s": 38.0,
+          "end_s": 41.0,
+          "duration_s": 3.0,
+          "text": "僕は逃げ道の言い訳より",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 11,
+          "start_s": 41.0,
+          "end_s": 44.0,
+          "duration_s": 3.0,
+          "text": "小さな責任を選びたいね",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "小さなせきにんを選びたいね"
+        },
+        {
+          "index": 12,
+          "start_s": 44.0,
+          "end_s": 47.0,
+          "duration_s": 3.0,
+          "text": "さよならの続きかけなくて",
+          "support_score": 0.917,
+          "status": "supported",
+          "best_reference_match": "さよならの続き書けなくて"
+        },
+        {
+          "index": 13,
+          "start_s": 47.0,
+          "end_s": 49.0,
+          "duration_s": 2.0,
+          "text": "くわひくばかり増えて",
+          "support_score": 0.545,
+          "status": "partial",
+          "best_reference_match": "空白ばかり増えていくけど"
+        },
+        {
+          "index": 14,
+          "start_s": 48.0,
+          "end_s": 50.0,
+          "duration_s": 2.0,
+          "text": "ばかり増えていくけど",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ばかり増えていくけど"
+        },
+        {
+          "index": 15,
+          "start_s": 50.0,
+          "end_s": 53.0,
+          "duration_s": 3.0,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 16,
+          "start_s": 53.0,
+          "end_s": 56.0,
+          "duration_s": 3.0,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 17,
+          "start_s": 56.0,
+          "end_s": 60.0,
+          "duration_s": 4.0,
+          "text": "タイムラインには知らない誰かの笑顔",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "タイムラインには知らない誰かの笑顔"
+        },
+        {
+          "index": 18,
+          "start_s": 60.0,
+          "end_s": 65.0,
+          "duration_s": 5.0,
+          "text": "強がってスクロールして心だけ取り残す",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "強がってスクロルして心だけ取り残す"
+        },
+        {
+          "index": 19,
+          "start_s": 65.0,
+          "end_s": 69.0,
+          "duration_s": 4.0,
+          "text": "打ち掛けの言葉が震えて消えてくたび",
+          "support_score": 0.941,
+          "status": "supported",
+          "best_reference_match": "打ちかけの言葉が震えて消えてくたび"
+        },
+        {
+          "index": 20,
+          "start_s": 69.0,
+          "end_s": 73.0,
+          "duration_s": 4.0,
+          "text": "どうせの物語がまたオープン",
+          "support_score": 0.636,
+          "status": "partial",
+          "best_reference_match": "どうせ...の物語が"
+        },
+        {
+          "index": 21,
+          "start_s": 72.0,
+          "end_s": 75.5,
+          "duration_s": 3.5,
+          "text": "青くないよカブル",
+          "support_score": 0.3,
+          "status": "unsupported",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 22,
+          "start_s": 76.0,
+          "end_s": 81.0,
+          "duration_s": 5.0,
+          "text": "きっと決まってるって口にした瞬間",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "きっと決まってるって口にした瞬間"
+        },
+        {
+          "index": 23,
+          "start_s": 81.5,
+          "end_s": 87.0,
+          "duration_s": 5.5,
+          "text": "僕の手のひらから明日が落ちていく",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくの手のひらからあしたが落ちていく"
+        },
+        {
+          "index": 24,
+          "start_s": 87.0,
+          "end_s": 92.0,
+          "duration_s": 5.0,
+          "text": "一行だけのメッセージで戻れる場所を探す僕",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで戻れる場所を探すぼく"
+        },
+        {
+          "index": 25,
+          "start_s": 92.0,
+          "end_s": 97.0,
+          "duration_s": 5.0,
+          "text": "ただしさは外に落ちてなくて選んだ後に立ち上がる",
+          "support_score": 0.851,
+          "status": "supported",
+          "best_reference_match": "正しさは外に落ちてなくて選んだ跡に立ち上がるああ"
+        },
+        {
+          "index": 26,
+          "start_s": 96.0,
+          "end_s": 98.0,
+          "duration_s": 2.0,
+          "text": "立ち上がる",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "立ち上がる"
+        },
+        {
+          "index": 27,
+          "start_s": 98.0,
+          "end_s": 101.0,
+          "duration_s": 3.0,
+          "text": "言えなかったこと数えたら",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 28,
+          "start_s": 101.0,
+          "end_s": 104.0,
+          "duration_s": 3.0,
+          "text": "仮面に入りきらないほど",
+          "support_score": 0.909,
+          "status": "supported",
+          "best_reference_match": "画面に入りきらないほど"
+        },
+        {
+          "index": 29,
+          "start_s": 104.0,
+          "end_s": 106.0,
+          "duration_s": 2.0,
+          "text": "それでも一興だけで",
+          "support_score": 0.833,
+          "status": "supported",
+          "best_reference_match": "それでもいちぎょうだけで"
+        },
+        {
+          "index": 30,
+          "start_s": 106.0,
+          "end_s": 109.0,
+          "duration_s": 3.0,
+          "text": "世界に参加していたい",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "せかいに参加していたい"
+        },
+        {
+          "index": 31,
+          "start_s": 109.0,
+          "end_s": 111.0,
+          "duration_s": 2.0,
+          "text": "もしも明日",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "もしもあした"
+        },
+        {
+          "index": 32,
+          "start_s": 111.0,
+          "end_s": 114.0,
+          "duration_s": 3.0,
+          "text": "ただの友達で笑えたら",
+          "support_score": 0.857,
+          "status": "supported",
+          "best_reference_match": "ただの友だちで笑えたら"
+        },
+        {
+          "index": 33,
+          "start_s": 114.0,
+          "end_s": 116.0,
+          "duration_s": 2.0,
+          "text": "それだけでいい",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "それだけでいい"
+        },
+        {
+          "index": 34,
+          "start_s": 116.0,
+          "end_s": 119.0,
+          "duration_s": 3.0,
+          "text": "そう言い聞かせて",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "そう言い聞かせて"
+        },
+        {
+          "index": 35,
+          "start_s": 119.0,
+          "end_s": 121.0,
+          "duration_s": 2.0,
+          "text": "でも本当は知って",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも本当は知って"
+        },
+        {
+          "index": 36,
+          "start_s": 120.0,
+          "end_s": 123.43999981880188,
+          "duration_s": 3.43999981880188,
+          "text": "本当は知ってる 沈黙もまた",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "本当は知ってるちんもくもまた"
+        },
+        {
+          "index": 37,
+          "start_s": 123.43999981880188,
+          "end_s": 131.67999935150146,
+          "duration_s": 8.239999532699585,
+          "text": "誰かの夜を 増やしてしまうって",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "誰かのよるを増やしてしまうって"
+        },
+        {
+          "index": 38,
+          "start_s": 131.67999935150146,
+          "end_s": 135.4399995803833,
+          "duration_s": 3.760000228881836,
+          "text": "嗚呼 打ち直す日記の三本字",
+          "support_score": 0.609,
+          "status": "partial",
+          "best_reference_match": "打ち直すげんきの三文字"
+        },
+        {
+          "index": 39,
+          "start_s": 135.4399995803833,
+          "end_s": 137.92000007629395,
+          "duration_s": 2.4800004959106445,
+          "text": "飛ぶのは進行じゃなくて",
+          "support_score": 0.727,
+          "status": "supported",
+          "best_reference_match": "跳ぶのは信仰じゃなくて"
+        },
+        {
+          "index": 40,
+          "start_s": 137.92000007629395,
+          "end_s": 140.8799991607666,
+          "duration_s": 2.9599990844726562,
+          "text": "投げ出さない無言決意",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "投げ出さないというけつい"
+        },
+        {
+          "index": 41,
+          "start_s": 140.8799991607666,
+          "end_s": 144.95999908447266,
+          "duration_s": 4.079999923706055,
+          "text": "一秒だけのメッセージで繋がる理由がある",
+          "support_score": 0.605,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら"
+        },
+        {
+          "index": 42,
+          "start_s": 144.0,
+          "end_s": 146.0,
+          "duration_s": 2.0,
+          "text": "理由があるのなら",
+          "support_score": 0.6,
+          "status": "partial",
+          "best_reference_match": "つながるよるがあるのなら"
+        },
+        {
+          "index": 43,
+          "start_s": 146.0,
+          "end_s": 148.59999990463257,
+          "duration_s": 2.5999999046325684,
+          "text": "返事なんてもう起きなくても",
+          "support_score": 0.88,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 44,
+          "start_s": 148.59999990463257,
+          "end_s": 152.30000019073486,
+          "duration_s": 3.700000286102295,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 45,
+          "start_s": 152.30000019073486,
+          "end_s": 154.80000019073486,
+          "duration_s": 2.5,
+          "text": "どうせの続きが消えなくて",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 46,
+          "start_s": 154.80000019073486,
+          "end_s": 157.5999994277954,
+          "duration_s": 2.799999237060547,
+          "text": "それでも送信をしてみる",
+          "support_score": 0.963,
+          "status": "supported",
+          "best_reference_match": "それでもそうしんを押してみる"
+        },
+        {
+          "index": 47,
+          "start_s": 157.5999994277954,
+          "end_s": 160.19999885559082,
+          "duration_s": 2.59999942779541,
+          "text": "一興だけのメッセージで",
+          "support_score": 0.846,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 48,
+          "start_s": 160.19999885559082,
+          "end_s": 164.0,
+          "duration_s": 3.8000011444091797,
+          "text": "僕は明日を肯定する",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくはあしたをこうていする"
+        },
+        {
+          "index": 49,
+          "start_s": 168.0,
+          "end_s": 178.0,
+          "duration_s": 10.0,
+          "text": "一丁だけ それで十分だ",
+          "support_score": 0.818,
+          "status": "supported",
+          "best_reference_match": "それでじゅうぶんだ"
+        },
+        {
+          "index": 50,
+          "start_s": 178.0,
+          "end_s": 188.0,
+          "duration_s": 10.0,
+          "text": "必要のなら これはあなたの",
+          "support_score": 0.278,
+          "status": "hallucination",
+          "best_reference_match": "このよるの形が決まるならぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 51,
+          "start_s": 188.0,
+          "end_s": 193.0,
+          "duration_s": 5.0,
+          "text": "消える気がおるより 偽り同じ価格のまま",
+          "support_score": 0.276,
+          "status": "hallucination",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 52,
+          "start_s": 192.0,
+          "end_s": 195.0,
+          "duration_s": 3.0,
+          "text": "顔書くのまま言い回しだけ",
+          "support_score": 0.333,
+          "status": "hallucination",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 53,
+          "start_s": 195.0,
+          "end_s": 198.0,
+          "duration_s": 3.0,
+          "text": "寄せた差分も作れるよ",
+          "support_score": 0.286,
+          "status": "hallucination",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 54,
+          "start_s": 198.0,
+          "end_s": 201.0,
+          "duration_s": 3.0,
+          "text": "イスタイルプロンプト",
+          "support_score": 0.333,
+          "status": "hallucination",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 55,
+          "start_s": 201.0,
+          "end_s": 203.0,
+          "duration_s": 2.0,
+          "text": "スコアなスナルティー",
+          "support_score": 0.211,
+          "status": "unsupported",
+          "best_reference_match": "強がってスクロルして"
+        },
+        {
+          "index": 56,
+          "start_s": 203.0,
+          "end_s": 204.0,
+          "duration_s": 1.0,
+          "text": "ハートパッパリッチ",
+          "support_score": 0.211,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 57,
+          "start_s": 204.0,
+          "end_s": 205.0,
+          "duration_s": 1.0,
+          "text": "リクリッチ ベッチ",
+          "support_score": 0.316,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 58,
+          "start_s": 205.0,
+          "end_s": 207.0,
+          "duration_s": 2.0,
+          "text": "レクリクリカーランベッチ",
+          "support_score": 0.273,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 59,
+          "start_s": 207.0,
+          "end_s": 208.0,
+          "duration_s": 1.0,
+          "text": "ヌーランジャスペルト",
+          "support_score": 0.235,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 60,
+          "start_s": 208.0,
+          "end_s": 209.0,
+          "duration_s": 1.0,
+          "text": "クロミアフソン",
+          "support_score": 0.235,
+          "status": "unsupported",
+          "best_reference_match": "強がってスクロルして"
+        },
+        {
+          "index": 61,
+          "start_s": 209.0,
+          "end_s": 211.0,
+          "duration_s": 2.0,
+          "text": "ザデノーティーベッチ",
+          "support_score": 0.105,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 62,
+          "start_s": 211.0,
+          "end_s": 213.0,
+          "duration_s": 2.0,
+          "text": "ウンモノロンジョーネン",
+          "support_score": 0.111,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 63,
+          "start_s": 213.0,
+          "end_s": 215.0,
+          "duration_s": 2.0,
+          "text": "チョドシュワクテ",
+          "support_score": 0.111,
+          "status": "unsupported",
+          "best_reference_match": "強がってスクロルして"
+        },
+        {
+          "index": 64,
+          "start_s": 216.0,
+          "end_s": 215.0,
+          "duration_s": 0.0,
+          "text": "あゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝあゝ",
+          "support_score": 0.013,
+          "status": "hallucination",
+          "best_reference_match": "選んだ跡に立ち上がるああ"
+        },
+        {
+          "index": 65,
+          "start_s": 240.0,
+          "end_s": 243.25999999046326,
+          "duration_s": 3.259999990463257,
+          "text": "メッセージで繋がる余裕があるのなら",
+          "support_score": 0.634,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら"
+        },
+        {
+          "index": 66,
+          "start_s": 243.25999999046326,
+          "end_s": 246.1399998664856,
+          "duration_s": 2.879999876022339,
+          "text": "返事なんてのかなくても",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 67,
+          "start_s": 246.1399998664856,
+          "end_s": 249.42000007629395,
+          "duration_s": 3.2800002098083496,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 68,
+          "start_s": 249.42000007629395,
+          "end_s": 252.17999935150146,
+          "duration_s": 2.7599992752075195,
+          "text": "Oh",
+          "support_score": 0.0,
+          "status": "unsupported",
+          "best_reference_match": ""
+        },
+        {
+          "index": 69,
+          "start_s": 252.17999935150146,
+          "end_s": 254.17999935150146,
+          "duration_s": 2.0,
+          "text": "一挙だけのメッセージ",
+          "support_score": 0.667,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 70,
+          "start_s": 254.17999935150146,
+          "end_s": 257.1000003814697,
+          "duration_s": 2.9200010299682617,
+          "text": "ヘッドの音を歌う時が決まるの",
+          "support_score": 0.385,
+          "status": "unsupported",
+          "best_reference_match": "このよるの形が決まるなら"
+        },
+        {
+          "index": 71,
+          "start_s": 257.1000003814697,
+          "end_s": 259.6000003814697,
+          "duration_s": 2.5,
+          "text": "僕が見かけた時のイレアミを",
+          "support_score": 0.3,
+          "status": "hallucination",
+          "best_reference_match": "誰かのよるを"
+        },
+        {
+          "index": 72,
+          "start_s": 259.6000003814697,
+          "end_s": 263.26000022888184,
+          "duration_s": 3.6599998474121094,
+          "text": "落ちるさ先にを選びて",
+          "support_score": 0.417,
+          "status": "unsupported",
+          "best_reference_match": "小さなせきにんを選びたいねえ"
+        },
+        {
+          "index": 73,
+          "start_s": 263.26000022888184,
+          "end_s": 265.26000022888184,
+          "duration_s": 2.0,
+          "text": "でもなのと時が",
+          "support_score": 0.308,
+          "status": "unsupported",
+          "best_reference_match": "既読の灯りが"
+        },
+        {
+          "index": 74,
+          "start_s": 264.0,
+          "end_s": 266.0,
+          "duration_s": 2.0,
+          "text": "続きが出なくて",
+          "support_score": 0.556,
+          "status": "partial",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 75,
+          "start_s": 266.0,
+          "end_s": 267.25999999046326,
+          "duration_s": 1.2599999904632568,
+          "text": "イヤハクだった",
+          "support_score": 0.286,
+          "status": "unsupported",
+          "best_reference_match": "げんきだよって"
+        },
+        {
+          "index": 76,
+          "start_s": 267.25999999046326,
+          "end_s": 269.0,
+          "duration_s": 1.7400000095367432,
+          "text": "イコヘテレキアケド",
+          "support_score": 0.118,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 77,
+          "start_s": 269.0,
+          "end_s": 272.0,
+          "duration_s": 3.0,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 78,
+          "start_s": 272.0,
+          "end_s": 275.0,
+          "duration_s": 3.0,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 79,
+          "start_s": 288.0,
+          "end_s": 287.0,
+          "duration_s": 0.0,
+          "text": "I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so tired of this, I'm so",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        }
+      ]
+    },
+    "medium_raw": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-20260514.json",
+      "totals": {
+        "segments": 87,
+        "supported": 50,
+        "partial": 13,
+        "unsupported": 14,
+        "hallucination": 10,
+        "duration_s": 255.0999984741211,
+        "unsupported_duration_s": 64.21999931335449,
+        "hallucination_duration_s": 29.69999885559082,
+        "chars": 2447,
+        "unsupported_chars": 1764,
+        "hallucination_chars": 1658,
+        "unsupported_segment_rate": 0.2759,
+        "hallucination_segment_rate": 0.1149,
+        "unsupported_duration_rate": 0.2517,
+        "hallucination_duration_rate": 0.1164,
+        "unsupported_char_rate": 0.7209,
+        "hallucination_char_rate": 0.6776
+      },
+      "entries": [
+        {
+          "index": 0,
+          "start_s": 0.0,
+          "end_s": 3.0,
+          "duration_s": 3.0,
+          "text": "現形だよね",
+          "support_score": 0.333,
+          "status": "unsupported",
+          "best_reference_match": "げんきだよって"
+        },
+        {
+          "index": 1,
+          "start_s": 3.0,
+          "end_s": 5.0,
+          "duration_s": 2.0,
+          "text": "一個だけのメッセージ",
+          "support_score": 0.727,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 2,
+          "start_s": 5.0,
+          "end_s": 8.0,
+          "duration_s": 3.0,
+          "text": "非毒の灯が",
+          "support_score": 0.545,
+          "status": "partial",
+          "best_reference_match": "既読の灯りが"
+        },
+        {
+          "index": 3,
+          "start_s": 8.0,
+          "end_s": 11.0,
+          "duration_s": 3.0,
+          "text": "胸の底を叩いてる",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "むねの底を叩いてる"
+        },
+        {
+          "index": 4,
+          "start_s": 11.0,
+          "end_s": 12.0,
+          "duration_s": 1.0,
+          "text": "言えなかった",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "言えなかった"
+        },
+        {
+          "index": 5,
+          "start_s": 12.0,
+          "end_s": 15.0,
+          "duration_s": 3.0,
+          "text": "ごめんねよりもっと可愛いのは",
+          "support_score": 0.727,
+          "status": "supported",
+          "best_reference_match": "言えなかったごめんねよりもっと怖いのは"
+        },
+        {
+          "index": 6,
+          "start_s": 15.0,
+          "end_s": 17.0,
+          "duration_s": 2.0,
+          "text": "何も贈らないっていう",
+          "support_score": 0.9,
+          "status": "supported",
+          "best_reference_match": "何も送らないっていう"
+        },
+        {
+          "index": 7,
+          "start_s": 17.0,
+          "end_s": 22.0,
+          "duration_s": 5.0,
+          "text": "静かな洗濯",
+          "support_score": 0.6,
+          "status": "partial",
+          "best_reference_match": "静かな選択"
+        },
+        {
+          "index": 8,
+          "start_s": 22.0,
+          "end_s": 25.0,
+          "duration_s": 3.0,
+          "text": "理由はいつも後から",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "理由はいつも"
+        },
+        {
+          "index": 9,
+          "start_s": 24.0,
+          "end_s": 27.0,
+          "duration_s": 3.0,
+          "text": "夢の後からなら選べれる",
+          "support_score": 0.5,
+          "status": "partial",
+          "best_reference_match": "あとから並べられる"
+        },
+        {
+          "index": 10,
+          "start_s": 27.0,
+          "end_s": 30.0,
+          "duration_s": 3.0,
+          "text": "でも指先は先に",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも指先は先に"
+        },
+        {
+          "index": 11,
+          "start_s": 30.0,
+          "end_s": 33.0,
+          "duration_s": 3.0,
+          "text": "生き方を知ってしまう",
+          "support_score": 0.8,
+          "status": "supported",
+          "best_reference_match": "生き方を押してしまう"
+        },
+        {
+          "index": 12,
+          "start_s": 33.0,
+          "end_s": 35.0,
+          "duration_s": 2.0,
+          "text": "一行だけのメッセージ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 13,
+          "start_s": 35.0,
+          "end_s": 38.0,
+          "duration_s": 3.0,
+          "text": "この夜の形が決まんなら",
+          "support_score": 0.917,
+          "status": "supported",
+          "best_reference_match": "このよるの形が決まるなら"
+        },
+        {
+          "index": 14,
+          "start_s": 38.0,
+          "end_s": 41.0,
+          "duration_s": 3.0,
+          "text": "僕は逃げ道の言い訳より",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 15,
+          "start_s": 41.0,
+          "end_s": 44.0,
+          "duration_s": 3.0,
+          "text": "小さな責任を選びたいね",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "小さなせきにんを選びたいね"
+        },
+        {
+          "index": 16,
+          "start_s": 44.0,
+          "end_s": 47.0,
+          "duration_s": 3.0,
+          "text": "さよならの続きかけなくて",
+          "support_score": 0.917,
+          "status": "supported",
+          "best_reference_match": "さよならの続き書けなくて"
+        },
+        {
+          "index": 17,
+          "start_s": 47.0,
+          "end_s": 49.0,
+          "duration_s": 2.0,
+          "text": "くわへくばかり増えて",
+          "support_score": 0.545,
+          "status": "partial",
+          "best_reference_match": "空白ばかり増えていくけど"
+        },
+        {
+          "index": 18,
+          "start_s": 48.0,
+          "end_s": 50.0,
+          "duration_s": 2.0,
+          "text": "ばかり増えていくけど",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ばかり増えていくけど"
+        },
+        {
+          "index": 19,
+          "start_s": 50.0,
+          "end_s": 53.0,
+          "duration_s": 3.0,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 20,
+          "start_s": 53.0,
+          "end_s": 56.0,
+          "duration_s": 3.0,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 21,
+          "start_s": 56.0,
+          "end_s": 60.0,
+          "duration_s": 4.0,
+          "text": "タイムラインには知らない誰かの笑顔",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "タイムラインには知らない誰かの笑顔"
+        },
+        {
+          "index": 22,
+          "start_s": 60.0,
+          "end_s": 65.0,
+          "duration_s": 5.0,
+          "text": "強がってスクロールして心だけ取り残す",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "強がってスクロルして心だけ取り残す"
+        },
+        {
+          "index": 23,
+          "start_s": 65.0,
+          "end_s": 69.0,
+          "duration_s": 4.0,
+          "text": "打ち掛けの言葉が震えて消えてくたび",
+          "support_score": 0.941,
+          "status": "supported",
+          "best_reference_match": "打ちかけの言葉が震えて消えてくたび"
+        },
+        {
+          "index": 24,
+          "start_s": 69.0,
+          "end_s": 73.0,
+          "duration_s": 4.0,
+          "text": "どうせの物語がまた会おう",
+          "support_score": 0.636,
+          "status": "partial",
+          "best_reference_match": "どうせ...の物語が"
+        },
+        {
+          "index": 25,
+          "start_s": 72.0,
+          "end_s": 75.19999980926514,
+          "duration_s": 3.1999998092651367,
+          "text": "青くないを被る",
+          "support_score": 0.375,
+          "status": "unsupported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 26,
+          "start_s": 76.19999980926514,
+          "end_s": 78.7999997138977,
+          "duration_s": 2.5999999046325684,
+          "text": "きっと決まっているって",
+          "support_score": 0.952,
+          "status": "supported",
+          "best_reference_match": "きっと決まってるって"
+        },
+        {
+          "index": 27,
+          "start_s": 78.7999997138977,
+          "end_s": 80.80000019073486,
+          "duration_s": 2.000000476837158,
+          "text": "口にした瞬間",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "口にした瞬間"
+        },
+        {
+          "index": 28,
+          "start_s": 81.59999942779541,
+          "end_s": 83.80000019073486,
+          "duration_s": 2.200000762939453,
+          "text": "僕の手のひらから",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくの手のひらから"
+        },
+        {
+          "index": 29,
+          "start_s": 83.80000019073486,
+          "end_s": 86.79999923706055,
+          "duration_s": 2.9999990463256836,
+          "text": "明日が落ちていく",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "あしたが落ちていく"
+        },
+        {
+          "index": 30,
+          "start_s": 86.79999923706055,
+          "end_s": 89.29999923706055,
+          "duration_s": 2.5,
+          "text": "一行だけのメッセージで",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 31,
+          "start_s": 89.29999923706055,
+          "end_s": 92.0,
+          "duration_s": 2.700000762939453,
+          "text": "戻れる場所を探す僕",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "戻れる場所を探すぼく"
+        },
+        {
+          "index": 32,
+          "start_s": 92.0,
+          "end_s": 94.79999923706055,
+          "duration_s": 2.799999237060547,
+          "text": "ただいっさは外に落ちてなくて",
+          "support_score": 0.769,
+          "status": "supported",
+          "best_reference_match": "正しさは外に落ちてなくて"
+        },
+        {
+          "index": 33,
+          "start_s": 94.79999923706055,
+          "end_s": 96.79999923706055,
+          "duration_s": 2.0,
+          "text": "選んだ後に立ち上がる",
+          "support_score": 0.818,
+          "status": "supported",
+          "best_reference_match": "選んだ跡に立ち上がるああ"
+        },
+        {
+          "index": 34,
+          "start_s": 96.0,
+          "end_s": 98.0,
+          "duration_s": 2.0,
+          "text": "立ち上がる",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "立ち上がる"
+        },
+        {
+          "index": 35,
+          "start_s": 98.0,
+          "end_s": 101.0,
+          "duration_s": 3.0,
+          "text": "言えなかったこと数えたら",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 36,
+          "start_s": 101.0,
+          "end_s": 104.0,
+          "duration_s": 3.0,
+          "text": "仮面に入りきらないほど",
+          "support_score": 0.909,
+          "status": "supported",
+          "best_reference_match": "画面に入りきらないほど"
+        },
+        {
+          "index": 37,
+          "start_s": 104.0,
+          "end_s": 106.0,
+          "duration_s": 2.0,
+          "text": "それでも一興だけで",
+          "support_score": 0.833,
+          "status": "supported",
+          "best_reference_match": "それでもいちぎょうだけで"
+        },
+        {
+          "index": 38,
+          "start_s": 106.0,
+          "end_s": 109.0,
+          "duration_s": 3.0,
+          "text": "世界に参加してたい",
+          "support_score": 0.952,
+          "status": "supported",
+          "best_reference_match": "せかいに参加していたい"
+        },
+        {
+          "index": 39,
+          "start_s": 109.0,
+          "end_s": 111.0,
+          "duration_s": 2.0,
+          "text": "もしも明日",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "もしもあした"
+        },
+        {
+          "index": 40,
+          "start_s": 111.0,
+          "end_s": 114.0,
+          "duration_s": 3.0,
+          "text": "ただの友達で笑えたら",
+          "support_score": 0.857,
+          "status": "supported",
+          "best_reference_match": "ただの友だちで笑えたら"
+        },
+        {
+          "index": 41,
+          "start_s": 114.0,
+          "end_s": 116.0,
+          "duration_s": 2.0,
+          "text": "それだけでいい",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "それだけでいい"
+        },
+        {
+          "index": 42,
+          "start_s": 116.0,
+          "end_s": 119.0,
+          "duration_s": 3.0,
+          "text": "そう言い聞かせて",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "そう言い聞かせて"
+        },
+        {
+          "index": 43,
+          "start_s": 119.0,
+          "end_s": 121.0,
+          "duration_s": 2.0,
+          "text": "でも本当は知って",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "でも本当は知って"
+        },
+        {
+          "index": 44,
+          "start_s": 120.0,
+          "end_s": 123.43999981880188,
+          "duration_s": 3.43999981880188,
+          "text": "本当は知ってる 真のもまた",
+          "support_score": 0.714,
+          "status": "partial",
+          "best_reference_match": "でも本当は知ってるちんもくもまた"
+        },
+        {
+          "index": 45,
+          "start_s": 123.43999981880188,
+          "end_s": 131.73999977111816,
+          "duration_s": 8.299999952316284,
+          "text": "誰かの夜を 増やしてしまうって",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "誰かのよるを増やしてしまうって"
+        },
+        {
+          "index": 46,
+          "start_s": 131.73999977111816,
+          "end_s": 135.4399995803833,
+          "duration_s": 3.6999998092651367,
+          "text": "嗚呼 打ち直す日記の3本字",
+          "support_score": 0.522,
+          "status": "partial",
+          "best_reference_match": "打ち直すげんきの三文字"
+        },
+        {
+          "index": 47,
+          "start_s": 135.4399995803833,
+          "end_s": 138.0399990081787,
+          "duration_s": 2.59999942779541,
+          "text": "飛ぶのは進行じゃなくて",
+          "support_score": 0.727,
+          "status": "supported",
+          "best_reference_match": "跳ぶのは信仰じゃなくて"
+        },
+        {
+          "index": 48,
+          "start_s": 138.0399990081787,
+          "end_s": 141.0399990081787,
+          "duration_s": 3.0,
+          "text": "投げ出さない無言決意",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "投げ出さないというけつい"
+        },
+        {
+          "index": 49,
+          "start_s": 141.0399990081787,
+          "end_s": 145.0399990081787,
+          "duration_s": 4.0,
+          "text": "一秒だけのメッセージで繋がる理由がある",
+          "support_score": 0.605,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら"
+        },
+        {
+          "index": 50,
+          "start_s": 144.0,
+          "end_s": 146.0,
+          "duration_s": 2.0,
+          "text": "理由があるのなら",
+          "support_score": 0.6,
+          "status": "partial",
+          "best_reference_match": "つながるよるがあるのなら"
+        },
+        {
+          "index": 51,
+          "start_s": 146.0,
+          "end_s": 148.59999990463257,
+          "duration_s": 2.5999999046325684,
+          "text": "返事なんてもう起きなくても",
+          "support_score": 0.88,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 52,
+          "start_s": 148.59999990463257,
+          "end_s": 152.30000019073486,
+          "duration_s": 3.700000286102295,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 53,
+          "start_s": 152.30000019073486,
+          "end_s": 154.69999980926514,
+          "duration_s": 2.3999996185302734,
+          "text": "どうせの続きが消えなくて",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 54,
+          "start_s": 154.69999980926514,
+          "end_s": 157.5999994277954,
+          "duration_s": 2.8999996185302734,
+          "text": "それでも送信をしてみる",
+          "support_score": 0.963,
+          "status": "supported",
+          "best_reference_match": "それでもそうしんを押してみる"
+        },
+        {
+          "index": 55,
+          "start_s": 157.5999994277954,
+          "end_s": 160.10000038146973,
+          "duration_s": 2.5000009536743164,
+          "text": "一興だけのメッセージで",
+          "support_score": 0.846,
+          "status": "supported",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 56,
+          "start_s": 160.10000038146973,
+          "end_s": 164.0,
+          "duration_s": 3.8999996185302734,
+          "text": "僕は明日を肯定する",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "ぼくはあしたをこうていする"
+        },
+        {
+          "index": 57,
+          "start_s": 168.0,
+          "end_s": 178.0,
+          "duration_s": 10.0,
+          "text": "一丁だけ それで十分だ",
+          "support_score": 0.818,
+          "status": "supported",
+          "best_reference_match": "それでじゅうぶんだ"
+        },
+        {
+          "index": 58,
+          "start_s": 178.0,
+          "end_s": 188.0,
+          "duration_s": 10.0,
+          "text": "必要のなら これはまたの ゲルケゴールより",
+          "support_score": 0.333,
+          "status": "hallucination",
+          "best_reference_match": "このよるの形が決まるならぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 59,
+          "start_s": 188.0,
+          "end_s": 194.0,
+          "duration_s": 6.0,
+          "text": "偽り同じ価格の魔法",
+          "support_score": 0.167,
+          "status": "unsupported",
+          "best_reference_match": "既読の灯りがむねの底を叩いてる"
+        },
+        {
+          "index": 60,
+          "start_s": 192.0,
+          "end_s": 195.59999990463257,
+          "duration_s": 3.5999999046325684,
+          "text": "顔書くのまま言い回したって",
+          "support_score": 0.323,
+          "status": "hallucination",
+          "best_reference_match": "ぼくの手のひらからあしたが落ちていく"
+        },
+        {
+          "index": 61,
+          "start_s": 195.59999990463257,
+          "end_s": 197.75999975204468,
+          "duration_s": 2.1599998474121094,
+          "text": "寄せたサブも作れるよ",
+          "support_score": 0.286,
+          "status": "hallucination",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 62,
+          "start_s": 197.75999975204468,
+          "end_s": 201.07999992370605,
+          "duration_s": 3.320000171661377,
+          "text": "イスタイルプロンプト",
+          "support_score": 0.333,
+          "status": "hallucination",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 63,
+          "start_s": 201.07999992370605,
+          "end_s": 203.11999988555908,
+          "duration_s": 2.0399999618530273,
+          "text": "ロールズ コーナースナルティー",
+          "support_score": 0.2,
+          "status": "hallucination",
+          "best_reference_match": "強がってスクロルして"
+        },
+        {
+          "index": 64,
+          "start_s": 203.11999988555908,
+          "end_s": 204.07999992370605,
+          "duration_s": 0.9600000381469727,
+          "text": "アルパパリッチ",
+          "support_score": 0.222,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 65,
+          "start_s": 204.07999992370605,
+          "end_s": 205.19999980926514,
+          "duration_s": 1.119999885559082,
+          "text": "リクリッチ ベッチ",
+          "support_score": 0.316,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 66,
+          "start_s": 205.19999980926514,
+          "end_s": 207.19999980926514,
+          "duration_s": 2.0,
+          "text": "レクリクリカーランベッチ",
+          "support_score": 0.273,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 67,
+          "start_s": 207.19999980926514,
+          "end_s": 208.52000045776367,
+          "duration_s": 1.3200006484985352,
+          "text": "ヌーランジャースペック",
+          "support_score": 0.235,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 68,
+          "start_s": 208.52000045776367,
+          "end_s": 210.92000007629395,
+          "duration_s": 2.3999996185302734,
+          "text": "ルミアフソン ザデノーティーベッチ",
+          "support_score": 0.091,
+          "status": "hallucination",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 69,
+          "start_s": 210.92000007629395,
+          "end_s": 213.0399990081787,
+          "duration_s": 2.1199989318847656,
+          "text": "ウン モノロンジョーメン",
+          "support_score": 0.111,
+          "status": "unsupported",
+          "best_reference_match": "タイムラインには"
+        },
+        {
+          "index": 70,
+          "start_s": 213.0399990081787,
+          "end_s": 217.1599998474121,
+          "duration_s": 4.120000839233398,
+          "text": "チョドシュアクッテ",
+          "support_score": 0.2,
+          "status": "unsupported",
+          "best_reference_match": "クリック音通知音は遠く"
+        },
+        {
+          "index": 71,
+          "start_s": 216.0,
+          "end_s": 215.0,
+          "duration_s": 0.0,
+          "text": "Ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        },
+        {
+          "index": 72,
+          "start_s": 240.0,
+          "end_s": 243.25999999046326,
+          "duration_s": 3.259999990463257,
+          "text": "メッセージで繋がる余裕があるのなら",
+          "support_score": 0.634,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら"
+        },
+        {
+          "index": 73,
+          "start_s": 243.25999999046326,
+          "end_s": 246.1399998664856,
+          "duration_s": 2.879999876022339,
+          "text": "返事なんてろかなくても",
+          "support_score": 0.783,
+          "status": "supported",
+          "best_reference_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 74,
+          "start_s": 246.1399998664856,
+          "end_s": 249.42000007629395,
+          "duration_s": 3.2800002098083496,
+          "text": "名前を呼べた気がするよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 75,
+          "start_s": 249.42000007629395,
+          "end_s": 252.01999950408936,
+          "duration_s": 2.59999942779541,
+          "text": "Oh",
+          "support_score": 0.0,
+          "status": "unsupported",
+          "best_reference_match": ""
+        },
+        {
+          "index": 76,
+          "start_s": 252.01999950408936,
+          "end_s": 254.11999988555908,
+          "duration_s": 2.1000003814697266,
+          "text": "一挙だけのメッセージ",
+          "support_score": 0.667,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 77,
+          "start_s": 254.11999988555908,
+          "end_s": 257.0599994659424,
+          "duration_s": 2.939999580383301,
+          "text": "あえてものを持った時が決まるの",
+          "support_score": 0.37,
+          "status": "hallucination",
+          "best_reference_match": "このよるの形が決まるなら"
+        },
+        {
+          "index": 78,
+          "start_s": 257.0599994659424,
+          "end_s": 260.29999923706055,
+          "duration_s": 3.239999771118164,
+          "text": "僕が逃げる地面で見下ろしさ",
+          "support_score": 0.308,
+          "status": "hallucination",
+          "best_reference_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 79,
+          "start_s": 260.29999923706055,
+          "end_s": 263.26000022888184,
+          "duration_s": 2.960000991821289,
+          "text": "先にを選びて",
+          "support_score": 0.4,
+          "status": "unsupported",
+          "best_reference_match": "小さなせきにんを選びたいねえ"
+        },
+        {
+          "index": 80,
+          "start_s": 263.26000022888184,
+          "end_s": 265.26000022888184,
+          "duration_s": 2.0,
+          "text": "でもなのと時が",
+          "support_score": 0.308,
+          "status": "unsupported",
+          "best_reference_match": "既読の灯りが"
+        },
+        {
+          "index": 81,
+          "start_s": 264.0,
+          "end_s": 266.0,
+          "duration_s": 2.0,
+          "text": "続きがあったなくて",
+          "support_score": 0.5,
+          "status": "partial",
+          "best_reference_match": "どうせの続き書けなくて"
+        },
+        {
+          "index": 82,
+          "start_s": 266.0,
+          "end_s": 267.75999999046326,
+          "duration_s": 1.7599999904632568,
+          "text": "部屋箱だったいくらい",
+          "support_score": 0.353,
+          "status": "unsupported",
+          "best_reference_match": "それだけでいい"
+        },
+        {
+          "index": 83,
+          "start_s": 267.75999999046326,
+          "end_s": 269.1199998855591,
+          "duration_s": 1.3599998950958252,
+          "text": "照れ消えたら",
+          "support_score": 0.4,
+          "status": "unsupported",
+          "best_reference_match": "震えて消えてくたび"
+        },
+        {
+          "index": 84,
+          "start_s": 269.1199998855591,
+          "end_s": 272.0,
+          "duration_s": 2.880000114440918,
+          "text": "一度だけのメッセージで",
+          "support_score": 0.696,
+          "status": "partial",
+          "best_reference_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 85,
+          "start_s": 272.0,
+          "end_s": 274.63999938964844,
+          "duration_s": 2.6399993896484375,
+          "text": "意味を置いて帰るよ",
+          "support_score": 1.0,
+          "status": "supported",
+          "best_reference_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 86,
+          "start_s": 288.0,
+          "end_s": 287.0,
+          "duration_s": 0.0,
+          "text": "HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP",
+          "support_score": 0.0,
+          "status": "hallucination",
+          "best_reference_match": ""
+        }
+      ]
+    }
+  }
+}

@@ -24,6 +24,18 @@ engineering practice; it does not imply access to Err's local machine.
 - `src/fork_tales/law/` — Malli contracts only.
 - `src/fork_tales/classifier/` — DSL validation and JVM runtime adapters.
 - `docs/lore/` — derived thematic, stylistic, and world-building synthesis.
+- `docs/reconstruction/` — the Scribe-mode audio reconstruction system: operating
+  model, rubric, handoff contract, and pipeline references. Start at its
+  `README.md`.
+- `resources/reconstruction/` — rubric weights, handoff schemas, and agent
+  contracts as pure data.
+- `scripts/reconstruction/` — reconstruction runner and graders. The canonical
+  runner is `audio_agent.cljs`; the Python tools grade and judge, they are not
+  the pipeline.
+- `references/` — per-song reconstruction evidence: f0 contours, note fixtures,
+  alignment JSON, USTX plans, coverage diagnostics. Renders are untracked and
+  recorded by hash in each song's `RENDERS-MANIFEST.edn`. Artifacts are
+  historical records; never rewrite one to correct a stale path.
 - `receipts.edn` — append-only Receipt River accountability ledger.
 
 ## Commands

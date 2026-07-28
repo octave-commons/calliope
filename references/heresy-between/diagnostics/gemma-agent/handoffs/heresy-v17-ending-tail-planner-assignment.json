@@ -1,0 +1,82 @@
+{
+  "schema_version": "fork-tales-handoff/v1",
+  "handoff_kind": "planner_assignment",
+  "job_id": "heresy-v17-ending-tail-repair",
+  "mode": "scribe",
+  "role": "planner_agent",
+  "created_at": "2026-05-15T19:15:00Z",
+  "objective": "repair the v16 ending-tail OpenUTAU render so the phrase after 返事なんてもう来なくても preserves 名前を呼べた気がするよ and improves pitch/delivery fidelity",
+  "inputs": {
+    "audio": [
+      "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/vocals.wav"
+    ],
+    "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-exact-phrase-grid-openutau-v16.wav",
+    "candidate_manifest": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-exact-phrase-grid-openutau-v16.json",
+    "candidate_ustx": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-07-ending.ustx",
+    "gemma_check": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/evidence.json",
+    "grade": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/grade-suno_reverse_accuracy.json",
+    "references": []
+  },
+  "constraints": {
+    "rubric_profile": "suno_reverse_accuracy",
+    "languages": ["ja"],
+    "deliverables": [
+      "v17 ending-tail USTX or render-unit generator change",
+      "candidate render WAV",
+      "gemma-check evidence",
+      "grade JSON",
+      "brief repair report"
+    ],
+    "no_overwrite": true,
+    "preserve_baseline": "v16"
+  },
+  "ambiguities": [
+    {
+      "ambiguity_id": "ending-tail.name-phrase-dropped.v16",
+      "type": "homophone_or_near_homophone",
+      "severity": 0.58,
+      "affects_domains": ["lyrics_realized", "word_syllable_timing", "render_fidelity"],
+      "policy": {
+        "require_human_audit_if_disagreement_gt": 0.4
+      },
+      "rationale": "Local STT hears original as 返事なんてのかなくても名前を呼べた気がするよ, while candidate is 返事なんてもう来なくてもするよ, indicating the 名前を呼べた気が phrase may be dropped or collapsed. STT is noisy, but this is a targeted repair clue."
+    },
+    {
+      "ambiguity_id": "ending-tail.pitch-contour.v16",
+      "type": "dense_ornament_note_segmentation",
+      "severity": 0.74,
+      "affects_domains": ["pitch_content", "ornament_articulation", "render_fidelity"],
+      "policy": {
+        "require_human_audit_if_disagreement_gt": 0.4
+      },
+      "rationale": "The Gemma Check evidence reports mean_abs_cents around 360.7 and f0 correlation around 0.049, so lyric repairs must not claim pitch correctness without improved f0 evidence."
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "repair-ending-tail-phrase-grid",
+      "domain": "lyrics_realized",
+      "span": {"t0": 243.36, "t1": 249.86},
+      "required_outputs": [
+        "candidate USTX/render unit preserving 返事なんてもう来なくても 名前を呼べた気がするよ",
+        "fresh gemma-check under checks/",
+        "fresh grade JSON"
+      ]
+    },
+    {
+      "task_id": "repair-ending-tail-pitch-contour",
+      "domain": "pitch_content",
+      "span": {"t0": 243.36, "t1": 249.86},
+      "required_outputs": [
+        "f0 overlay showing improved contour similarity",
+        "pitch_notes feature improvement over v16 baseline"
+      ]
+    }
+  ],
+  "success_criteria": [
+    "local STT no longer collapses 名前を呼べた気がするよ into only するよ",
+    "pitch_notes and pitch_expression improve over the v16 check baseline",
+    "no regression in the opening of the ending phrase 返事なんてもう来なくても",
+    "all new artifacts are versioned as v17 or later and do not overwrite v16"
+  ]
+}

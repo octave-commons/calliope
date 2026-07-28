@@ -1,0 +1,102 @@
+name: Apply Rheos Review
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [design/media-workbench-v1]
+    paths:
+      - ".github/workflows/apply-rheos-review.yml"
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: design/media-workbench-v1
+          fetch-depth: 0
+      - name: Apply board migration
+        run: python3 scripts/apply_rheos_review.py
+      - name: Verify migrated card graph
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+
+          root = Path('.')
+          tasks = root / 'docs' / 'kanban'
+          card_paths = [
+              path
+              for category in ('epics', 'stories', 'chores')
+              for path in sorted((tasks / category).glob('*.md'))
+          ]
+          assert not list(tasks.glob('*.md')), 'tasksDir root contains phantom markdown cards'
+          cards = {}
+          for path in card_paths:
+              text = path.read_text(encoding='utf-8')
+              assert text.endswith('\n'), f'{path}: missing trailing newline'
+              match = re.match(r'^---\n(.*?)\n---\n', text, re.S)
+              assert match, f'{path}: missing frontmatter'
+              front = {}
+              for line in match.group(1).splitlines():
+                  item = re.match(r'^([A-Za-z0-9_-]+):\s*(.*)$', line)
+                  if item:
+                      front[item.group(1)] = item.group(2).strip()
+              uuid = front.get('uuid', '').strip('"\'')
+              assert uuid and uuid not in cards, f'{path}: invalid/duplicate uuid {uuid}'
+              assert 'id' not in front, f'{path}: inert id field remains'
+              assert front.get('dependency') != '[]', f'{path}: phantom empty dependency'
+              assert not front.get('labels', '').startswith('['), f'{path}: lossy label encoding'
+              cards[uuid] = (path, front)
+          def values(raw):
+              if not raw:
+                  return []
+              raw = raw.strip()
+              if raw.startswith('[') and raw.endswith(']'):
+                  raw = raw[1:-1]
+              return [part.strip().strip('"\'') for part in raw.split(',') if part.strip().strip('"\'')]
+          for uuid, (path, front) in cards.items():
+              for key in ('epic', 'parent'):
+                  target = front.get(key, '').strip('"\'')
+                  assert not target or target in cards, f'{path}: unresolved {key} {target}'
+              for target in values(front.get('dependency')):
+                  assert target in cards and target != uuid, f'{path}: invalid dependency {target}'
+          print(f'Rheos card graph valid: {len(cards)} cards')
+          PY
+      - uses: DeLaGuardo/setup-clojure@13.0
+        with:
+          cli: 1.12.2.1565
+      - name: Run Clojure tests
+        run: clojure -M:test
+      - name: Commit tested migration
+        env:
+          SOURCE_HEAD: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import datetime
+          import os
+          from pathlib import Path
+
+          receipt = (
+              '{:ts "' + datetime.datetime.now(datetime.timezone.utc).isoformat().replace('+00:00', 'Z') + '", '
+              ':kind :build, :repo "https://github.com/octave-commons/fork_tales_v2", '
+              ':origin "github-actions", :owner "gpt-5.6-thinking", '
+              ':dod "Apply the independent local Claude review corrections to the Rheos board mechanics and preserve accepted media-workbench authority.", '
+              ':pi "eta-mu/receipt-river-v1", :host "github-actions/ubuntu-latest", '
+              ':manifest "PR #3; docs/kanban card corpus; docs/kanban-docs; .gitignore", '
+              ':refs "PR review 4793817603; source head ' + os.environ['SOURCE_HEAD'] + '; workflow run ' + os.environ['RUN_ID'] + '", '
+              ':tests "Rheos card graph validation passed; clojure -M:test passed before commit.", '
+              ':decisions "Only card Markdown remains under tasksDir; uuid is canonical identity; dependency/epic references use uuid; board.json is a lossy ignored diagnostic; native Clojure/JVM runtime decisions are owned by FT-000D."}\n'
+          )
+          path = Path('receipts.edn')
+          with path.open('a', encoding='utf-8') as handle:
+              handle.write(receipt)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "fix: align media workbench board with Rheos mechanics"
+          git push origin HEAD:design/media-workbench-v1

@@ -1,0 +1,58 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 2.6210288206736245,
+  "words": [
+    {
+      "end_s": 11.979999542236328,
+      "start_s": 0,
+      "word": "それでも一行だけで世界に参加していたいもしも明日ただの友達で笑えたらそれだけで"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 5.599999904632568,
+      "start_s": 0,
+      "text": "それでも一行だけで世界に参加していたい"
+    },
+    {
+      "end_s": 12,
+      "start_s": 5.599999904632568,
+      "text": "もしも明日ただの友達で笑えたらそれだけで"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 5.599999904632568,
+          "start_s": 0,
+          "text": "それでも一行だけで世界に参加していたい"
+        },
+        {
+          "end_s": 12,
+          "start_s": 5.599999904632568,
+          "text": "もしも明日ただの友達で笑えたらそれだけで"
+        }
+      ],
+      "text": "それでも一行だけで世界に参加していたいもしも明日ただの友達で笑えたらそれだけで",
+      "words": [
+        {
+          "end_s": 11.979999542236328,
+          "start_s": 0,
+          "word": "それでも一行だけで世界に参加していたいもしも明日ただの友達で笑えたらそれだけで"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "それでも一行だけで世界に参加していたいもしも明日ただの友達で笑えたらそれだけで"
+}

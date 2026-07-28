@@ -1,0 +1,12 @@
+{
+  "source_midi": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/basic-pitch/other_basic_pitch.mid",
+  "cleaned_midi": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.mid",
+  "sonified_wav": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.wav",
+  "raw_note_count": 4749,
+  "filtered_note_count": 3997,
+  "cleaned_note_count": 3860,
+  "duration_seconds": 303.34,
+  "pitch_min": 30,
+  "pitch_max": 87,
+  "method": "Basic Pitch raw MIDI filtered by duration/velocity, quantized to 40ms cells, capped to one bass plus five body notes per cell, merged adjacent same-pitch notes."
+}

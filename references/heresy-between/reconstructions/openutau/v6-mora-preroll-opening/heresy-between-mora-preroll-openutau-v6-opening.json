@@ -1,0 +1,391 @@
+{
+  "kind": "mora-preroll OpenUTAU v6 opening probe",
+  "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v6-mora-preroll-opening/heresy-between-mora-preroll-openutau-v6-opening.ustx",
+  "raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v6-mora-preroll-opening/heresy-between-mora-preroll-openutau-v6-opening-raw.wav",
+  "trimmed_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v6-mora-preroll-opening/heresy-between-mora-preroll-openutau-v6-opening.wav",
+  "source_hybrid_transcript_layer": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/hybrid-transcript-layer-v1-large-with-medium-tail.json",
+  "source_gesture_layer": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/auditions/gesture-layer-v3-hybrid-safe.json",
+  "start_seconds": 0.0,
+  "end_seconds": 10.24,
+  "preroll_seconds": 0.5,
+  "note_count": 35,
+  "readings": [
+    {
+      "segment_index": 0,
+      "start_s": 0.0,
+      "end_s": 5.54,
+      "text": "元気だよって一語だけのメッセージ",
+      "best_reference_match": "げんきだよっていちぎょうだけのめっせじ",
+      "reading_hiragana": "げんきだよっていちぎょうだけのめっせじ",
+      "morae": [
+        "げ",
+        "ん",
+        "き",
+        "だ",
+        "よ",
+        "て",
+        "い",
+        "ち",
+        "ぎょ",
+        "う",
+        "だ",
+        "け",
+        "の",
+        "め",
+        "せ",
+        "じ"
+      ],
+      "mora_count": 16,
+      "note_policy": "exactly one sung note per mora; no cyclic lyric reuse"
+    },
+    {
+      "segment_index": 1,
+      "start_s": 5.54,
+      "end_s": 10.24,
+      "text": "既読の明かりが胸の底を叩いてる",
+      "best_reference_match": "既読の灯りがむねの底を叩いてる",
+      "reading_hiragana": "きどくのあかりがむねのそこをたたいてる",
+      "morae": [
+        "き",
+        "ど",
+        "く",
+        "の",
+        "あ",
+        "か",
+        "り",
+        "が",
+        "む",
+        "ね",
+        "の",
+        "そ",
+        "こ",
+        "を",
+        "た",
+        "た",
+        "い",
+        "て",
+        "る"
+      ],
+      "mora_count": 19,
+      "note_policy": "exactly one sung note per mora; no cyclic lyric reuse"
+    }
+  ],
+  "notes": [
+    {
+      "position": 400,
+      "duration": 277,
+      "tone": 63,
+      "lyric": "げ",
+      "source_segment_index": 0,
+      "source_start_s": 0.0,
+      "source_end_s": 0.34625
+    },
+    {
+      "position": 677,
+      "duration": 277,
+      "tone": 63,
+      "lyric": "ん",
+      "source_segment_index": 0,
+      "source_start_s": 0.34625,
+      "source_end_s": 0.6925
+    },
+    {
+      "position": 954,
+      "duration": 277,
+      "tone": 58,
+      "lyric": "き",
+      "source_segment_index": 0,
+      "source_start_s": 0.6925,
+      "source_end_s": 1.03875
+    },
+    {
+      "position": 1231,
+      "duration": 277,
+      "tone": 61,
+      "lyric": "だ",
+      "source_segment_index": 0,
+      "source_start_s": 1.03875,
+      "source_end_s": 1.385
+    },
+    {
+      "position": 1508,
+      "duration": 277,
+      "tone": 61,
+      "lyric": "よ",
+      "source_segment_index": 0,
+      "source_start_s": 1.385,
+      "source_end_s": 1.73125
+    },
+    {
+      "position": 1785,
+      "duration": 277,
+      "tone": 64,
+      "lyric": "て",
+      "source_segment_index": 0,
+      "source_start_s": 1.73125,
+      "source_end_s": 2.0775
+    },
+    {
+      "position": 2062,
+      "duration": 277,
+      "tone": 67,
+      "lyric": "い",
+      "source_segment_index": 0,
+      "source_start_s": 2.0775,
+      "source_end_s": 2.42375
+    },
+    {
+      "position": 2339,
+      "duration": 277,
+      "tone": 64,
+      "lyric": "ち",
+      "source_segment_index": 0,
+      "source_start_s": 2.42375,
+      "source_end_s": 2.77
+    },
+    {
+      "position": 2616,
+      "duration": 277,
+      "tone": 65,
+      "lyric": "ぎょ",
+      "source_segment_index": 0,
+      "source_start_s": 2.77,
+      "source_end_s": 3.11625
+    },
+    {
+      "position": 2893,
+      "duration": 277,
+      "tone": 63,
+      "lyric": "う",
+      "source_segment_index": 0,
+      "source_start_s": 3.11625,
+      "source_end_s": 3.4625
+    },
+    {
+      "position": 3170,
+      "duration": 277,
+      "tone": 65,
+      "lyric": "だ",
+      "source_segment_index": 0,
+      "source_start_s": 3.4625,
+      "source_end_s": 3.80875
+    },
+    {
+      "position": 3447,
+      "duration": 277,
+      "tone": 65,
+      "lyric": "け",
+      "source_segment_index": 0,
+      "source_start_s": 3.80875,
+      "source_end_s": 4.155
+    },
+    {
+      "position": 3724,
+      "duration": 277,
+      "tone": 61,
+      "lyric": "の",
+      "source_segment_index": 0,
+      "source_start_s": 4.155,
+      "source_end_s": 4.50125
+    },
+    {
+      "position": 4001,
+      "duration": 277,
+      "tone": 58,
+      "lyric": "め",
+      "source_segment_index": 0,
+      "source_start_s": 4.50125,
+      "source_end_s": 4.8475
+    },
+    {
+      "position": 4278,
+      "duration": 277,
+      "tone": 64,
+      "lyric": "せ",
+      "source_segment_index": 0,
+      "source_start_s": 4.8475,
+      "source_end_s": 5.19375
+    },
+    {
+      "position": 4555,
+      "duration": 277,
+      "tone": 64,
+      "lyric": "じ",
+      "source_segment_index": 0,
+      "source_start_s": 5.19375,
+      "source_end_s": 5.54
+    },
+    {
+      "position": 4832,
+      "duration": 198,
+      "tone": 64,
+      "lyric": "き",
+      "source_segment_index": 1,
+      "source_start_s": 5.54,
+      "source_end_s": 5.787368421052632
+    },
+    {
+      "position": 5030,
+      "duration": 198,
+      "tone": 61,
+      "lyric": "ど",
+      "source_segment_index": 1,
+      "source_start_s": 5.787368421052632,
+      "source_end_s": 6.034736842105263
+    },
+    {
+      "position": 5228,
+      "duration": 198,
+      "tone": 58,
+      "lyric": "く",
+      "source_segment_index": 1,
+      "source_start_s": 6.034736842105263,
+      "source_end_s": 6.282105263157895
+    },
+    {
+      "position": 5426,
+      "duration": 198,
+      "tone": 58,
+      "lyric": "の",
+      "source_segment_index": 1,
+      "source_start_s": 6.282105263157895,
+      "source_end_s": 6.529473684210527
+    },
+    {
+      "position": 5624,
+      "duration": 198,
+      "tone": 61,
+      "lyric": "あ",
+      "source_segment_index": 1,
+      "source_start_s": 6.529473684210527,
+      "source_end_s": 6.7768421052631584
+    },
+    {
+      "position": 5821,
+      "duration": 198,
+      "tone": 64,
+      "lyric": "か",
+      "source_segment_index": 1,
+      "source_start_s": 6.7768421052631584,
+      "source_end_s": 7.024210526315789
+    },
+    {
+      "position": 6019,
+      "duration": 198,
+      "tone": 67,
+      "lyric": "り",
+      "source_segment_index": 1,
+      "source_start_s": 7.024210526315789,
+      "source_end_s": 7.271578947368421
+    },
+    {
+      "position": 6217,
+      "duration": 198,
+      "tone": 64,
+      "lyric": "が",
+      "source_segment_index": 1,
+      "source_start_s": 7.271578947368421,
+      "source_end_s": 7.518947368421053
+    },
+    {
+      "position": 6415,
+      "duration": 198,
+      "tone": 67,
+      "lyric": "む",
+      "source_segment_index": 1,
+      "source_start_s": 7.518947368421053,
+      "source_end_s": 7.766315789473684
+    },
+    {
+      "position": 6613,
+      "duration": 198,
+      "tone": 67,
+      "lyric": "ね",
+      "source_segment_index": 1,
+      "source_start_s": 7.766315789473684,
+      "source_end_s": 8.013684210526316
+    },
+    {
+      "position": 6811,
+      "duration": 198,
+      "tone": 67,
+      "lyric": "の",
+      "source_segment_index": 1,
+      "source_start_s": 8.013684210526316,
+      "source_end_s": 8.261052631578949
+    },
+    {
+      "position": 7009,
+      "duration": 198,
+      "tone": 63,
+      "lyric": "そ",
+      "source_segment_index": 1,
+      "source_start_s": 8.261052631578949,
+      "source_end_s": 8.50842105263158
+    },
+    {
+      "position": 7207,
+      "duration": 198,
+      "tone": 63,
+      "lyric": "こ",
+      "source_segment_index": 1,
+      "source_start_s": 8.50842105263158,
+      "source_end_s": 8.75578947368421
+    },
+    {
+      "position": 7405,
+      "duration": 198,
+      "tone": 63,
+      "lyric": "を",
+      "source_segment_index": 1,
+      "source_start_s": 8.75578947368421,
+      "source_end_s": 9.003157894736843
+    },
+    {
+      "position": 7603,
+      "duration": 198,
+      "tone": 63,
+      "lyric": "た",
+      "source_segment_index": 1,
+      "source_start_s": 9.003157894736843,
+      "source_end_s": 9.250526315789473
+    },
+    {
+      "position": 7800,
+      "duration": 198,
+      "tone": 65,
+      "lyric": "た",
+      "source_segment_index": 1,
+      "source_start_s": 9.250526315789473,
+      "source_end_s": 9.497894736842106
+    },
+    {
+      "position": 7998,
+      "duration": 198,
+      "tone": 68,
+      "lyric": "い",
+      "source_segment_index": 1,
+      "source_start_s": 9.497894736842106,
+      "source_end_s": 9.745263157894737
+    },
+    {
+      "position": 8196,
+      "duration": 198,
+      "tone": 65,
+      "lyric": "て",
+      "source_segment_index": 1,
+      "source_start_s": 9.745263157894737,
+      "source_end_s": 9.992631578947368
+    },
+    {
+      "position": 8394,
+      "duration": 198,
+      "tone": 65,
+      "lyric": "る",
+      "source_segment_index": 1,
+      "source_start_s": 9.992631578947368,
+      "source_end_s": 10.24
+    }
+  ],
+  "hypothesis": "v5 sounded wrong because it cycled lyrics when pitch events outnumbered morae and clipped first-note preutterance at chunk start. v6 sings each mora once and renders with pre-roll."
+}

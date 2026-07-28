@@ -1,0 +1,61 @@
+{
+  "schema_version": "fork-tales-audio-audit-evidence/v1",
+  "audit_id": "gemma-grounded-audit-smoke-opening-v16-0-6",
+  "created_at": "2026-05-15T06:26:44.035Z",
+  "segment": {
+    "start_seconds": 0,
+    "duration_seconds": 6,
+    "expected": "元気だよって一行だけのメッセージ",
+    "task": "Smoke-test the Gemma-grounded audit path. Use direct listening, STT, pitch metrics, and spectrogram metrics to say what is valid and what remains wrong."
+  },
+  "files": {
+    "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/vocals.wav",
+    "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-exact-phrase-grid-openutau-v16.wav",
+    "original_fullband_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/original-fullband.wav",
+    "candidate_fullband_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/candidate-fullband.wav",
+    "original_stt_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/original-stt.wav",
+    "candidate_stt_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/candidate-stt.wav",
+    "ab_audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/ab-original-candidate.wav"
+  },
+  "transcription": {
+    "tool": "local-stt/transcribe-timed",
+    "original": {
+      "text": "Thank you for watching!",
+      "response_file": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-opening-v16-original-1778826356061.json"
+    },
+    "candidate": {
+      "text": "I'm fine I'm fine with just a message I'm fine with just a message",
+      "response_file": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-opening-v16-candidate-1778826375163.json"
+    }
+  },
+  "metrics": {
+    "tool": "/home/err/devel/scripts/fork_tales_audio_metrics.py",
+    "json": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.json",
+    "outputs": {
+      "mel_diff_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.mel-diff.png",
+      "f0_overlay_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.f0-overlay.png"
+    },
+    "pitch": {
+      "voiced_overlap_ratio": 0.7717601547388782,
+      "cents_error": {
+        "count": 399,
+        "mean": -111.328320802005,
+        "median": -9.999999999999678,
+        "min": -1990.0000000000002,
+        "max": 470.00000000000017,
+        "p05": -1830.0000000000005,
+        "p95": 270
+      },
+      "mean_abs_cents": 217.54385964912285,
+      "f0_hz_correlation": 0.2895048936978062
+    },
+    "spectrogram": {
+      "mel_db_mean_abs_diff": 16.038095474243164,
+      "mel_db_rmse": 20.221187591552734,
+      "mel_db_correlation": 0.1868518619792899
+    },
+    "waveform": {
+      "normalized_correlation": -0.027316538527935398
+    }
+  }
+}

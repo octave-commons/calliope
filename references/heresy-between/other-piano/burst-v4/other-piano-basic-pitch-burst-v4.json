@@ -1,0 +1,11 @@
+{
+  "source_midi": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/basic-pitch/other_basic_pitch.mid",
+  "burst_midi": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/burst-v4/other-piano-basic-pitch-burst-v4.mid",
+  "raw_note_count": 4749,
+  "filtered_note_count": 4722,
+  "burst_note_count": 4720,
+  "duration_seconds": 302.292,
+  "pitch_min": 30,
+  "pitch_max": 87,
+  "method": "Preserve short arpeggio bursts: 25ms onset cells, lower duration/velocity threshold, capped 2 bass + 7 body + 3 high notes, shortened sustains, boosted upper velocities."
+}

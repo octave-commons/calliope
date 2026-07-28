@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-05-13T00:00:00Z",
+  "kind": "OpenUTAU v1 vocal coverage diagnostic",
+  "source_notes_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-pyin-vocal-v1.notes.json",
+  "reference_vocal_stem_path": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/vocals.wav",
+  "track_duration_seconds": 303.32,
+  "ticks_per_second": 800.0,
+  "note_count": 221,
+  "total_note_seconds": 34.72,
+  "coverage_percent": 11.45,
+  "failure_summary": "The v1 OpenUTAU vocal is structurally sparse: pYIN was collapsed into short note islands and placeholder kana, yielding only 11.45% note coverage across a vocal-forward reference track.",
+  "first_note": {
+    "start_seconds": 2.09,
+    "end_seconds": 2.22875,
+    "duration_seconds": 0.13875,
+    "tone": 68,
+    "lyric": "げ"
+  },
+  "last_note": {
+    "start_seconds": 282.54,
+    "end_seconds": 282.72625,
+    "duration_seconds": 0.18625,
+    "tone": 70,
+    "lyric": "て"
+  },
+  "gap_count_over_2s": 31,
+  "gap_count_over_5s": 13,
+  "long_gaps_over_5s": [
+    {"start_seconds": 41.08, "end_seconds": 47.37, "duration_seconds": 6.29},
+    {"start_seconds": 47.55, "end_seconds": 53.27, "duration_seconds": 5.71},
+    {"start_seconds": 84.89, "end_seconds": 98.73, "duration_seconds": 13.84},
+    {"start_seconds": 103.12, "end_seconds": 109.69, "duration_seconds": 6.57},
+    {"start_seconds": 140.34, "end_seconds": 156.32, "duration_seconds": 15.97},
+    {"start_seconds": 156.44, "end_seconds": 165.05, "duration_seconds": 8.61},
+    {"start_seconds": 169.09, "end_seconds": 176.8, "duration_seconds": 7.71},
+    {"start_seconds": 212.42, "end_seconds": 218.64, "duration_seconds": 6.22},
+    {"start_seconds": 225.84, "end_seconds": 240.79, "duration_seconds": 14.95},
+    {"start_seconds": 246.3, "end_seconds": 252.73, "duration_seconds": 6.43},
+    {"start_seconds": 256.16, "end_seconds": 261.32, "duration_seconds": 5.15},
+    {"start_seconds": 261.44, "end_seconds": 282.54, "duration_seconds": 21.1},
+    {"start_seconds": 282.73, "end_seconds": 303.32, "duration_seconds": 20.59}
+  ],
+  "coverage_by_minute": [
+    {"start_seconds": 0, "end_seconds": 60, "note_count": 80, "note_seconds": 12.28, "coverage_percent": 20.47},
+    {"start_seconds": 60, "end_seconds": 120, "note_count": 54, "note_seconds": 8.02, "coverage_percent": 13.37},
+    {"start_seconds": 120, "end_seconds": 180, "note_count": 31, "note_seconds": 4.7, "coverage_percent": 7.84},
+    {"start_seconds": 180, "end_seconds": 240, "note_count": 35, "note_seconds": 6.87, "coverage_percent": 11.45},
+    {"start_seconds": 240, "end_seconds": 300, "note_count": 21, "note_seconds": 2.84, "coverage_percent": 4.73},
+    {"start_seconds": 300, "end_seconds": 303.32, "note_count": 0, "note_seconds": 0, "coverage_percent": 0}
+  ],
+  "root_causes": [
+    "pYIN note collapse produced short note islands instead of phrase-length vocal coverage.",
+    "Safe kana syllables were cycled over notes instead of being aligned to the original lyric text.",
+    "Whisper alignment artifacts are not reliable enough to provide final Japanese text timing; they must be used as rough anchors only.",
+    "Breaths, spoken cues, and ghost choir moments were not represented as explicit OpenUTAU/audio events, so they became silence."
+  ],
+  "repair_target": {
+    "next_version": "v2",
+    "minimum_note_coverage_percent": 60,
+    "preferred_note_coverage_percent": 70,
+    "max_unintentional_gap_seconds": 4,
+    "strategy": "Build lyric-section anchored phrase notes first, then constrain their pitch from pYIN/f0 where reliable."
+  }
+}

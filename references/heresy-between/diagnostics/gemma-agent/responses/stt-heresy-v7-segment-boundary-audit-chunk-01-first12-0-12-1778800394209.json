@@ -1,0 +1,68 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 7.766744494438171,
+  "words": [
+    {
+      "end_s": 6.019999980926514,
+      "start_s": 0,
+      "word": "元気だよって一行だけのメッセージ"
+    },
+    {
+      "end_s": 11.979999542236328,
+      "start_s": 6.019999980926514,
+      "word": "記読の愛が胸をそこたいてういえなから"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 10.4399995803833,
+      "start_s": 0,
+      "text": "元気だよって一行だけのメッセージ 記読の愛が胸をそこたいて"
+    },
+    {
+      "end_s": 11.960000038146973,
+      "start_s": 10.4399995803833,
+      "text": "ういえなから"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 10.4399995803833,
+          "start_s": 0,
+          "text": "元気だよって一行だけのメッセージ 記読の愛が胸をそこたいて"
+        },
+        {
+          "end_s": 11.960000038146973,
+          "start_s": 10.4399995803833,
+          "text": "ういえなから"
+        }
+      ],
+      "text": "元気だよって一行だけのメッセージ 記読の愛が胸をそこたいてういえなから",
+      "words": [
+        {
+          "end_s": 6.019999980926514,
+          "start_s": 0,
+          "word": "元気だよって一行だけのメッセージ"
+        },
+        {
+          "end_s": 11.979999542236328,
+          "start_s": 6.019999980926514,
+          "word": "記読の愛が胸をそこたいてういえなから"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "元気だよって一行だけのメッセージ 記読の愛が胸をそこたいてういえなから"
+}

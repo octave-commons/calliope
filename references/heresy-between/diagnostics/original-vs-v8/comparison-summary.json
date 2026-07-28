@@ -1,0 +1,33 @@
+{
+  "original": "/home/err/devel/Music/heresy_between/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066.mp3",
+  "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v8-master.wav",
+  "duration_seconds": 303.32,
+  "original_rms": 0.21159939467906952,
+  "candidate_rms": 0.12323546409606934,
+  "original_peak": 1.0159052610397339,
+  "candidate_peak": 0.8025970458984375,
+  "mean_chroma_similarity": 0.5748501420021057,
+  "median_chroma_similarity": 0.5864720940589905,
+  "mean_onset_delta": 0.00213501020334661,
+  "onset_95p_ratio": 0.9014620184898376,
+  "mean_rms_gap_db": -3.7309486865997314,
+  "median_rms_gap_db": -4.503262519836426,
+  "min_rms_gap_db": -36.39429473876953,
+  "max_rms_gap_db": 69.35272216796875,
+  "band_deltas_db": {
+    "sub_20_80": -6.98828649520874,
+    "bass_80_250": -3.590579032897949,
+    "low_mid_250_800": -16.10493278503418,
+    "piano_body_800_2500": -17.924230575561523,
+    "presence_2500_6000": -15.0889253616333,
+    "air_6000_12000": -14.518147468566895
+  },
+  "plots": {
+    "original_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v8/original-spectrogram.png",
+    "candidate_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v8/v8-master-spectrogram.png",
+    "diff_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v8/v8-minus-original-spectrogram-diff.png",
+    "onset": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v8/onset-strength-original-vs-v8.png",
+    "rms": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v8/rms-v8-minus-original.png"
+  },
+  "interpretation_note": "This full-mix diagnostic compares v8 to the original MP3, not to Demucs other.wav."
+}

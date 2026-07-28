@@ -1,0 +1,11 @@
+{
+  "schema_version": "fork-tales-handoff-validation-report/v1",
+  "ok": true,
+  "checked_specs": [
+    "μ1"
+  ],
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": []
+}

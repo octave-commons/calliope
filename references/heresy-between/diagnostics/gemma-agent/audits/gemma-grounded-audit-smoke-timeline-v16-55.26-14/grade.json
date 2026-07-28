@@ -1,0 +1,399 @@
+{
+  "schema_version": "fork-tales-audio-grade/v1",
+  "profile": "suno_reverse_accuracy",
+  "audit_id": "gemma-grounded-audit-smoke-timeline-v16-55.26-14",
+  "overall": {
+    "score": 0.4394431257612338,
+    "grade": "F",
+    "confidence": 0.1380722937976783,
+    "coverage": 0.3104,
+    "promote": false,
+    "gate_results": {
+      "min_overall": false,
+      "min_confidence": false,
+      "min_coverage": false,
+      "critical_features": {
+        "lyric_identity": true,
+        "lyric_timing": true,
+        "pitch_notes": false,
+        "rhythm_grid": false
+      }
+    }
+  },
+  "features": {
+    "lyric_identity": {
+      "importance": 0.16,
+      "score": 0.8530172413793103,
+      "grade": "B",
+      "confidence": 0.28559999999999997,
+      "coverage": 0.48,
+      "available_judges": [
+        {
+          "feature": "lyric_identity",
+          "judge": "local_stt",
+          "score": 0.8530172413793103,
+          "confidence": 0.7,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json,/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-candidate-1778826824000.json",
+          "notes": "char similarity candidate-vs-original-stt=0.9038461538461539; candidate-vs-expected=0.7586206896551724"
+        }
+      ],
+      "missing_judges": [
+        "gemma_audio",
+        "lyric_prompt",
+        "gemini_text_audio",
+        "human_user",
+        "spectrogram_image_judge"
+      ]
+    },
+    "lyric_timing": {
+      "importance": 0.12,
+      "score": 1.0,
+      "grade": "A",
+      "confidence": 0.09689999999999999,
+      "coverage": 0.3,
+      "available_judges": [
+        {
+          "feature": "lyric_timing",
+          "judge": "local_stt",
+          "score": 1.0,
+          "confidence": 0.38,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json,/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-candidate-1778826824000.json",
+          "notes": "STT span/count proxy: original_span=13.979999542236328, candidate_span=13.979999542236328, original_words=1, candidate_words=1"
+        }
+      ],
+      "missing_judges": [
+        "ustx_midi_grid",
+        "f0_tracker",
+        "spectrogram_metrics",
+        "spectrogram_image_judge",
+        "gemma_audio",
+        "human_user"
+      ]
+    },
+    "phoneme_beat_mapping": {
+      "importance": 0.1,
+      "score": null,
+      "grade": "U",
+      "confidence": 0.0,
+      "coverage": 0.0,
+      "available_judges": [],
+      "missing_judges": [
+        "ustx_midi_grid",
+        "local_stt",
+        "f0_tracker",
+        "gemma_audio",
+        "spectrogram_image_judge",
+        "human_user",
+        "lyric_prompt"
+      ]
+    },
+    "rhythm_grid": {
+      "importance": 0.12,
+      "score": 0.33333333333333337,
+      "grade": "F",
+      "confidence": 0.0,
+      "coverage": 0.33999999999999997,
+      "available_judges": [
+        {
+          "feature": "rhythm_grid",
+          "judge": "local_stt",
+          "score": 1.0,
+          "confidence": 0.22,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json,/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-candidate-1778826824000.json",
+          "notes": "Low-confidence rhythm proxy from STT span/count only."
+        },
+        {
+          "feature": "rhythm_grid",
+          "judge": "spectrogram_metrics",
+          "score": 0.0,
+          "confidence": 0.24,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+          "notes": "Very rough waveform correlation rhythm proxy=0.005153162450307919; use onset/grid extraction later."
+        }
+      ],
+      "missing_judges": [
+        "ustx_midi_grid",
+        "f0_tracker",
+        "spectrogram_image_judge",
+        "gemma_audio",
+        "human_user"
+      ]
+    },
+    "pitch_notes": {
+      "importance": 0.16,
+      "score": 0.010335132317949544,
+      "grade": "F",
+      "confidence": 0.25205558872305145,
+      "coverage": 0.46,
+      "available_judges": [
+        {
+          "feature": "pitch_notes",
+          "judge": "f0_tracker",
+          "score": 0.010335132317949544,
+          "confidence": 0.6446434494195689,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+          "notes": "mean_abs_cents=411.3274336283186; f0_corr=0.07952894947985584; voiced_overlap=0.7495854063018242"
+        }
+      ],
+      "missing_judges": [
+        "spectrogram_metrics",
+        "spectrogram_image_judge",
+        "ustx_midi_grid",
+        "gemma_audio",
+        "human_user",
+        "local_stt",
+        "lyric_prompt"
+      ]
+    },
+    "pitch_expression": {
+      "importance": 0.12,
+      "score": 0.2863471636580213,
+      "grade": "F",
+      "confidence": 0.15835666334991708,
+      "coverage": 0.34,
+      "available_judges": [
+        {
+          "feature": "pitch_expression",
+          "judge": "f0_tracker",
+          "score": 0.2863471636580213,
+          "confidence": 0.5479469320066335,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+          "notes": "Proxy from f0 correlation plus voiced overlap; vibrato/slide-specific scoring still needed."
+        }
+      ],
+      "missing_judges": [
+        "spectrogram_image_judge",
+        "spectrogram_metrics",
+        "gemma_audio",
+        "ustx_midi_grid",
+        "human_user",
+        "local_stt"
+      ]
+    },
+    "delivery_inflection": {
+      "importance": 0.09,
+      "score": 0.15235130356582852,
+      "grade": "F",
+      "confidence": 0.04046000000000001,
+      "coverage": 0.14,
+      "available_judges": [
+        {
+          "feature": "delivery_inflection",
+          "judge": "spectrogram_metrics",
+          "score": 0.15235130356582852,
+          "confidence": 0.34,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+          "notes": "Low-confidence delivery proxy from spectral similarity; needs Gemma/image/human evidence."
+        }
+      ],
+      "missing_judges": [
+        "gemma_audio",
+        "f0_tracker",
+        "spectrogram_image_judge",
+        "human_user",
+        "local_stt",
+        "lyric_prompt"
+      ]
+    },
+    "timbre_spectral": {
+      "importance": 0.07,
+      "score": 0.15235130356582852,
+      "grade": "F",
+      "confidence": 0.21386,
+      "coverage": 0.34,
+      "available_judges": [
+        {
+          "feature": "timbre_spectral",
+          "judge": "spectrogram_metrics",
+          "score": 0.15235130356582852,
+          "confidence": 0.74,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+          "notes": "mel_corr=0.09123148303660446; mel_rmse=22.070438385009766; mel_mean_abs=17.661590576171875"
+        }
+      ],
+      "missing_judges": [
+        "spectrogram_image_judge",
+        "gemma_audio",
+        "human_user",
+        "f0_tracker",
+        "lyric_prompt",
+        "local_stt"
+      ]
+    },
+    "stem_score_separation": {
+      "importance": 0.04,
+      "score": null,
+      "grade": "U",
+      "confidence": 0.0,
+      "coverage": 0.0,
+      "available_judges": [],
+      "missing_judges": [
+        "spectrogram_metrics",
+        "spectrogram_image_judge",
+        "f0_tracker",
+        "ustx_midi_grid",
+        "gemma_audio",
+        "human_user"
+      ]
+    },
+    "prompt_drift_accounting": {
+      "importance": 0.02,
+      "score": 0.8045977011494253,
+      "grade": "B",
+      "confidence": 0.14025,
+      "coverage": 0.3,
+      "available_judges": [
+        {
+          "feature": "prompt_drift_accounting",
+          "judge": "local_stt",
+          "score": 0.8045977011494253,
+          "confidence": 0.55,
+          "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json",
+          "notes": "original-stt vs expected lyric prompt similarity=0.8045977011494253"
+        }
+      ],
+      "missing_judges": [
+        "lyric_prompt",
+        "gemma_audio",
+        "gemini_text_audio",
+        "human_user",
+        "spectrogram_image_judge"
+      ]
+    }
+  },
+  "judge_scores": [
+    {
+      "feature": "lyric_identity",
+      "judge": "local_stt",
+      "score": 0.8530172413793103,
+      "confidence": 0.7,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json,/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-candidate-1778826824000.json",
+      "notes": "char similarity candidate-vs-original-stt=0.9038461538461539; candidate-vs-expected=0.7586206896551724"
+    },
+    {
+      "feature": "lyric_diction_quality",
+      "judge": "local_stt",
+      "score": 0.8530172413793103,
+      "confidence": 0.595,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json,/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-candidate-1778826824000.json",
+      "notes": "STT alignment proxy for diction clarity; not a pitch/delivery score."
+    },
+    {
+      "feature": "prompt_drift_accounting",
+      "judge": "local_stt",
+      "score": 0.8045977011494253,
+      "confidence": 0.55,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json",
+      "notes": "original-stt vs expected lyric prompt similarity=0.8045977011494253"
+    },
+    {
+      "feature": "lyric_timing",
+      "judge": "local_stt",
+      "score": 1.0,
+      "confidence": 0.38,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json,/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-candidate-1778826824000.json",
+      "notes": "STT span/count proxy: original_span=13.979999542236328, candidate_span=13.979999542236328, original_words=1, candidate_words=1"
+    },
+    {
+      "feature": "rhythm_grid",
+      "judge": "local_stt",
+      "score": 1.0,
+      "confidence": 0.22,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json,/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-candidate-1778826824000.json",
+      "notes": "Low-confidence rhythm proxy from STT span/count only."
+    },
+    {
+      "feature": "pitch_notes",
+      "judge": "f0_tracker",
+      "score": 0.010335132317949544,
+      "confidence": 0.6446434494195689,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "mean_abs_cents=411.3274336283186; f0_corr=0.07952894947985584; voiced_overlap=0.7495854063018242"
+    },
+    {
+      "feature": "pitch_expression",
+      "judge": "f0_tracker",
+      "score": 0.2863471636580213,
+      "confidence": 0.5479469320066335,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "Proxy from f0 correlation plus voiced overlap; vibrato/slide-specific scoring still needed."
+    },
+    {
+      "feature": "melody_quality",
+      "judge": "f0_tracker",
+      "score": 0.010335132317949544,
+      "confidence": 0.41901824212271976,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "For original-quality profile this is only a contour sanity proxy, not taste."
+    },
+    {
+      "feature": "timbre_spectral",
+      "judge": "spectrogram_metrics",
+      "score": 0.15235130356582852,
+      "confidence": 0.74,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "mel_corr=0.09123148303660446; mel_rmse=22.070438385009766; mel_mean_abs=17.661590576171875"
+    },
+    {
+      "feature": "mix_translation",
+      "judge": "spectrogram_metrics",
+      "score": 0.15235130356582852,
+      "confidence": 0.7,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "Spectrogram similarity proxy for mix translation."
+    },
+    {
+      "feature": "delivery_inflection",
+      "judge": "spectrogram_metrics",
+      "score": 0.15235130356582852,
+      "confidence": 0.34,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "Low-confidence delivery proxy from spectral similarity; needs Gemma/image/human evidence."
+    },
+    {
+      "feature": "arrangement_coherence",
+      "judge": "spectrogram_metrics",
+      "score": 0.15235130356582852,
+      "confidence": 0.36,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "Low-confidence arrangement proxy from spectral similarity."
+    },
+    {
+      "feature": "rhythm_grid",
+      "judge": "spectrogram_metrics",
+      "score": 0.0,
+      "confidence": 0.24,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "Very rough waveform correlation rhythm proxy=0.005153162450307919; use onset/grid extraction later."
+    },
+    {
+      "feature": "rhythm_groove",
+      "judge": "spectrogram_metrics",
+      "score": 0.0,
+      "confidence": 0.2,
+      "evidence_ref": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+      "notes": "Very rough waveform proxy; not a groove judge."
+    },
+    {
+      "feature": "instruction_following",
+      "judge": "lyric_prompt",
+      "score": 0.5,
+      "confidence": 0.35,
+      "evidence_ref": "segment.expected",
+      "notes": "Prompt exists; actual adherence requires audio/model/human judges."
+    },
+    {
+      "feature": "fork_tales_identity",
+      "judge": "lyric_prompt",
+      "score": 0.5,
+      "confidence": 0.25,
+      "evidence_ref": "segment.expected",
+      "notes": "Identity cannot be inferred from expected lyric alone."
+    }
+  ],
+  "notes": [
+    "This grade is evidence-weighted, not authoritative.",
+    "Missing image, Gemma, human, USTX/MIDI, or stronger pitch judges lower coverage/confidence rather than proving failure.",
+    "Promotion requires critical feature gates, not just a high weighted average."
+  ]
+}

@@ -11,4 +11,17 @@
    :main-opts ["-m" "fork-tales.test-runner"]}
 
   :classify
-  {:main-opts ["-m" "fork-tales.classifier.main"]}}}
+  {:main-opts ["-m" "fork-tales.classifier.main"]}
+
+  ;; DSP lane. Cannot run under babashka: libpython-clj needs JNA and
+  ;; dtype-next native interop, and bb's GraalVM image has no JNA on the
+  ;; classpath. No pod is needed either — a pod would be a JVM process too, so
+  ;; it buys nothing over invoking this alias directly. bb and this lane
+  ;; communicate only by appending to ledgers/reconstruction.edn.
+  ;;
+  ;; NOTE: the libpython-clj version below is unverified — it was added without
+  ;; Maven access. Pin it against the current release on first run.
+  :metrics
+  {:extra-paths ["scripts"]
+   :extra-deps {clj-python/libpython-clj {:mvn/version "2.025"}}
+   :main-opts ["-m" "reconstruction.metrics"]}}}

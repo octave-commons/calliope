@@ -1,0 +1,198 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 1.4557915131251018,
+  "words": [
+    {
+      "end_s": 1.1999999284744263,
+      "start_s": 0,
+      "word": "I'm"
+    },
+    {
+      "end_s": 1.1999999284744263,
+      "start_s": 1.1999999284744263,
+      "word": "fine"
+    },
+    {
+      "end_s": 1.1999999284744263,
+      "start_s": 1.1999999284744263,
+      "word": "I'm"
+    },
+    {
+      "end_s": 1.7599999904632568,
+      "start_s": 1.1999999284744263,
+      "word": "fine"
+    },
+    {
+      "end_s": 1.7599999904632568,
+      "start_s": 1.7599999904632568,
+      "word": "with"
+    },
+    {
+      "end_s": 2.180000066757202,
+      "start_s": 1.7599999904632568,
+      "word": "just"
+    },
+    {
+      "end_s": 2.759999990463257,
+      "start_s": 2.180000066757202,
+      "word": "a"
+    },
+    {
+      "end_s": 4.779999732971191,
+      "start_s": 2.759999990463257,
+      "word": "message"
+    },
+    {
+      "end_s": 4.819999694824219,
+      "start_s": 4.779999732971191,
+      "word": "I'm"
+    },
+    {
+      "end_s": 5.980000019073486,
+      "start_s": 4.819999694824219,
+      "word": "fine"
+    },
+    {
+      "end_s": 5.980000019073486,
+      "start_s": 5.980000019073486,
+      "word": "with"
+    },
+    {
+      "end_s": 5.980000019073486,
+      "start_s": 5.980000019073486,
+      "word": "just"
+    },
+    {
+      "end_s": 5.980000019073486,
+      "start_s": 5.980000019073486,
+      "word": "a"
+    },
+    {
+      "end_s": 5.980000019073486,
+      "start_s": 5.980000019073486,
+      "word": "message"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 1.7599999904632568,
+      "start_s": 0,
+      "text": "I'm fine"
+    },
+    {
+      "end_s": 4.71999979019165,
+      "start_s": 1.7599999904632568,
+      "text": "I'm fine with just a message"
+    },
+    {
+      "end_s": 6,
+      "start_s": 4.71999979019165,
+      "text": "I'm fine with just a message"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 1.7599999904632568,
+          "start_s": 0,
+          "text": "I'm fine"
+        },
+        {
+          "end_s": 4.71999979019165,
+          "start_s": 1.7599999904632568,
+          "text": "I'm fine with just a message"
+        },
+        {
+          "end_s": 6,
+          "start_s": 4.71999979019165,
+          "text": "I'm fine with just a message"
+        }
+      ],
+      "text": "I'm fine I'm fine with just a message I'm fine with just a message",
+      "words": [
+        {
+          "end_s": 1.1999999284744263,
+          "start_s": 0,
+          "word": "I'm"
+        },
+        {
+          "end_s": 1.1999999284744263,
+          "start_s": 1.1999999284744263,
+          "word": "fine"
+        },
+        {
+          "end_s": 1.1999999284744263,
+          "start_s": 1.1999999284744263,
+          "word": "I'm"
+        },
+        {
+          "end_s": 1.7599999904632568,
+          "start_s": 1.1999999284744263,
+          "word": "fine"
+        },
+        {
+          "end_s": 1.7599999904632568,
+          "start_s": 1.7599999904632568,
+          "word": "with"
+        },
+        {
+          "end_s": 2.180000066757202,
+          "start_s": 1.7599999904632568,
+          "word": "just"
+        },
+        {
+          "end_s": 2.759999990463257,
+          "start_s": 2.180000066757202,
+          "word": "a"
+        },
+        {
+          "end_s": 4.779999732971191,
+          "start_s": 2.759999990463257,
+          "word": "message"
+        },
+        {
+          "end_s": 4.819999694824219,
+          "start_s": 4.779999732971191,
+          "word": "I'm"
+        },
+        {
+          "end_s": 5.980000019073486,
+          "start_s": 4.819999694824219,
+          "word": "fine"
+        },
+        {
+          "end_s": 5.980000019073486,
+          "start_s": 5.980000019073486,
+          "word": "with"
+        },
+        {
+          "end_s": 5.980000019073486,
+          "start_s": 5.980000019073486,
+          "word": "just"
+        },
+        {
+          "end_s": 5.980000019073486,
+          "start_s": 5.980000019073486,
+          "word": "a"
+        },
+        {
+          "end_s": 5.980000019073486,
+          "start_s": 5.980000019073486,
+          "word": "message"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 6,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "I'm fine I'm fine with just a message I'm fine with just a message"
+}

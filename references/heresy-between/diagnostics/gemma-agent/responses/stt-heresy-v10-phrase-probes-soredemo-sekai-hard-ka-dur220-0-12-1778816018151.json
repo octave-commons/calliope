@@ -1,0 +1,48 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 6.154255562822481,
+  "words": [
+    {
+      "end_s": 6.799999713897705,
+      "start_s": 0,
+      "word": "それでも一行だけで世界に参加していたい"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 6.739999771118164,
+      "start_s": 0,
+      "text": "それでも一行だけで世界に参加していたい"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 6.739999771118164,
+          "start_s": 0,
+          "text": "それでも一行だけで世界に参加していたい"
+        }
+      ],
+      "text": "それでも一行だけで世界に参加していたい",
+      "words": [
+        {
+          "end_s": 6.799999713897705,
+          "start_s": 0,
+          "word": "それでも一行だけで世界に参加していたい"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 6.8200625,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "それでも一行だけで世界に参加していたい"
+}

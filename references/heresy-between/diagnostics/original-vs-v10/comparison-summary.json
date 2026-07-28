@@ -1,0 +1,33 @@
+{
+  "original": "/home/err/devel/Music/heresy_between/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066.mp3",
+  "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-hybrid-body-reconstruction-v10-master.wav",
+  "duration_seconds": 303.32,
+  "original_rms": 0.21159939467906952,
+  "candidate_rms": 0.12582390010356903,
+  "original_peak": 1.0159052610397339,
+  "candidate_peak": 0.789306640625,
+  "mean_chroma_similarity": 0.5872471332550049,
+  "median_chroma_similarity": 0.6029332876205444,
+  "mean_onset_delta": 0.001451768446713686,
+  "onset_95p_ratio": 1.5942800045013428,
+  "mean_rms_gap_db": -3.2134883403778076,
+  "median_rms_gap_db": -4.273273468017578,
+  "min_rms_gap_db": -58.185829162597656,
+  "max_rms_gap_db": 69.26185607910156,
+  "band_deltas_db": {
+    "sub_20_80": -8.416385650634766,
+    "bass_80_250": -0.791519284248352,
+    "low_mid_250_800": -9.844898223876953,
+    "piano_body_800_2500": -14.325393676757812,
+    "presence_2500_6000": -15.241589546203613,
+    "air_6000_12000": -19.546340942382812
+  },
+  "plots": {
+    "original_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v10/original-spectrogram.png",
+    "candidate_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v10/v10-master-spectrogram.png",
+    "diff_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v10/v10-minus-original-spectrogram-diff.png",
+    "onset": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v10/onset-strength-original-vs-v10.png",
+    "rms": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v10/rms-v10-minus-original.png"
+  },
+  "interpretation_note": "v10 compares hybrid MelBand body branch to original MP3."
+}

@@ -1,0 +1,12 @@
+{
+  "source": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6-fluidr3.wav",
+  "output": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6-fluidr3-rmsmatched.wav",
+  "target": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+  "method": "integrated RMS match to original other.wav with peak protection at 0.98",
+  "rms_match_scale": 6.901931486227933,
+  "peak_before_protect": 0.9364619851112366,
+  "peak_protect_scale": 1.0,
+  "final_peak": 0.9364619851112366,
+  "final_rms": 0.04954079911112785,
+  "target_rms": 0.04954079911112785
+}

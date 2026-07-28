@@ -1,0 +1,48 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 6.468809030552184,
+  "words": [
+    {
+      "end_s": 5.460000038146973,
+      "start_s": 0,
+      "word": "強がてスクロールして心だけ取り残す"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 5.440000057220459,
+      "start_s": 0,
+      "text": "強がてスクロールして心だけ取り残す"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 5.440000057220459,
+          "start_s": 0,
+          "text": "強がてスクロールして心だけ取り残す"
+        }
+      ],
+      "text": "強がてスクロールして心だけ取り残す",
+      "words": [
+        {
+          "end_s": 5.460000038146973,
+          "start_s": 0,
+          "word": "強がてスクロールして心だけ取り残す"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 5.4900625,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "強がてスクロールして心だけ取り残す"
+}

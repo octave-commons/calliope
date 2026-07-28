@@ -1,0 +1,98 @@
+{
+  "excerpt_source": "/home/err/devel/Music/fork-tales/references/heresy-between/separator-benchmark/heresy-60s-excerpt.wav",
+  "excerpt_start_seconds": 60.0,
+  "reference_other_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+  "metrics_note": "Scores compare candidate stems to the original 60s full-mix excerpt and Demucs other.wav slice. Higher onset_peak_ratio/crest/air may indicate better transient and high-frequency retention but can include bleed.",
+  "candidates": {
+    "demucs_other_reference_slice": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+      "duration_seconds": 60.0,
+      "rms": 0.05176672711968422,
+      "peak": 0.3352508544921875,
+      "crest_factor": 6.476183891296387,
+      "mean_chroma_similarity_to_demucs_other_slice": 1.0,
+      "median_chroma_similarity_to_demucs_other_slice": 1.0,
+      "mean_onset_vs_original_delta": 0.034844107925891876,
+      "onset_peak_ratio_to_original": 0.6640909314155579,
+      "spectral_flux_ratio_to_original": 0.12071799486875534,
+      "band_energy_ratios": {
+        "low_mud_20_250": 12.951458930969238,
+        "body_250_2000": 7.585317134857178,
+        "attack_2000_6000": 0.9809743762016296,
+        "air_6000_14000": 0.14859047532081604
+      }
+    },
+    "htdemucs_6s_piano": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/separator-benchmark/htdemucs_6s-piano/heresy-60s-excerpt_(Piano)_htdemucs_6s.wav",
+      "duration_seconds": 60.0,
+      "rms": 0.011328544467687607,
+      "peak": 0.216796875,
+      "crest_factor": 19.137222290039062,
+      "mean_chroma_similarity_to_demucs_other_slice": 0.8425655961036682,
+      "median_chroma_similarity_to_demucs_other_slice": 0.8947851061820984,
+      "mean_onset_vs_original_delta": -0.06032392010092735,
+      "onset_peak_ratio_to_original": 0.42825815081596375,
+      "spectral_flux_ratio_to_original": 0.009568833746016026,
+      "band_energy_ratios": {
+        "low_mud_20_250": 45.20335388183594,
+        "body_250_2000": 4.990034103393555,
+        "attack_2000_6000": 0.2569647431373596,
+        "air_6000_14000": 0.08754625171422958
+      }
+    },
+    "bs_roformer_no_drum_bass": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/separator-benchmark/bs-roformer-no-drum-bass-60s/heresy-60s-excerpt_(No Drum-Bass)_model_bs_roformer_ep_937_sdr_10.wav",
+      "duration_seconds": 60.0,
+      "rms": 0.1513012796640396,
+      "peak": 0.7325592041015625,
+      "crest_factor": 4.841724872589111,
+      "mean_chroma_similarity_to_demucs_other_slice": 0.578453004360199,
+      "median_chroma_similarity_to_demucs_other_slice": 0.5477514863014221,
+      "mean_onset_vs_original_delta": 0.00042690543341450393,
+      "onset_peak_ratio_to_original": 1.0503363609313965,
+      "spectral_flux_ratio_to_original": 0.7016631960868835,
+      "band_energy_ratios": {
+        "low_mud_20_250": 2.942115068435669,
+        "body_250_2000": 5.777079105377197,
+        "attack_2000_6000": 1.3912447690963745,
+        "air_6000_14000": 0.6379599571228027
+      }
+    },
+    "kuielab_b_other": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/separator-benchmark/kuielab-other-60s/heresy-60s-excerpt_(Other)_kuielab_b_other.wav",
+      "duration_seconds": 60.0,
+      "rms": 0.041714590042829514,
+      "peak": 0.2811126708984375,
+      "crest_factor": 6.738953113555908,
+      "mean_chroma_similarity_to_demucs_other_slice": 0.9047609567642212,
+      "median_chroma_similarity_to_demucs_other_slice": 0.9685806632041931,
+      "mean_onset_vs_original_delta": 0.15121597051620483,
+      "onset_peak_ratio_to_original": 0.5872182250022888,
+      "spectral_flux_ratio_to_original": 0.10282502323389053,
+      "band_energy_ratios": {
+        "low_mud_20_250": 11.480429649353027,
+        "body_250_2000": 7.920662879943848,
+        "attack_2000_6000": 1.0818835496902466,
+        "air_6000_14000": 0.148036390542984
+      }
+    },
+    "melband_roformer_inst_v2": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/separator-benchmark/melband-inst-v2-60s/heresy-60s-excerpt_(Instrumental)_melband_roformer_inst_v2.wav",
+      "duration_seconds": 60.0,
+      "rms": 0.13221268355846405,
+      "peak": 0.8591156005859375,
+      "crest_factor": 6.497981548309326,
+      "mean_chroma_similarity_to_demucs_other_slice": 0.8981370329856873,
+      "median_chroma_similarity_to_demucs_other_slice": 0.9250378608703613,
+      "mean_onset_vs_original_delta": -0.03747956082224846,
+      "onset_peak_ratio_to_original": 1.4110920429229736,
+      "spectral_flux_ratio_to_original": 0.5695247650146484,
+      "band_energy_ratios": {
+        "low_mud_20_250": 22.978078842163086,
+        "body_250_2000": 4.093054294586182,
+        "attack_2000_6000": 1.092072606086731,
+        "air_6000_14000": 0.4969003200531006
+      }
+    }
+  }
+}

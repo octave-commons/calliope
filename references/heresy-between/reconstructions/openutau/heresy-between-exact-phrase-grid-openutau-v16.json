@@ -1,0 +1,4100 @@
+{
+  "generated_at": "2026-05-15T05:37:02.016378+00:00",
+  "kind": "exact-phrase-grid OpenUTAU v16 full timeline",
+  "source_hybrid_transcript_layer": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/hybrid-transcript-layer-v1-large-with-medium-tail.json",
+  "source_gesture_layer": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/auditions/gesture-layer-v3-hybrid-safe.json",
+  "target_duration_seconds": 303.32,
+  "singer": "波音リツ連続音Ver1.5.1",
+  "phonemizer": "OpenUtau.Plugin.Builtin.JapaneseVCVPhonemizer",
+  "renderer": "WORLDLINE-R",
+  "preroll_seconds": 0.5,
+  "small_tsu_ticks": 80,
+  "reading_source_overrides": {
+    "11": "text"
+  },
+  "total_note_count_available": 737,
+  "render_units": [
+    {
+      "id": "unit-01-opening",
+      "render_start": 0.0,
+      "render_end": 55.26,
+      "assembly_start": 0.0,
+      "assembly_end": 55.26,
+      "render_tail_seconds": 0.5,
+      "policy": "v10-opening-small-tsu-preserved",
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-01-opening.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-01-opening-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-01-opening.wav",
+      "assembly_duration_seconds": 55.26,
+      "trim_start_seconds": 0.5,
+      "note_count": 219,
+      "first_lyrics": [
+        "げ",
+        "ん",
+        "き",
+        "だ",
+        "よ",
+        "っ",
+        "て",
+        "い",
+        "ち",
+        "ぎょ",
+        "う",
+        "だ",
+        "け",
+        "の",
+        "め",
+        "っ",
+        "せ",
+        "じ",
+        "き",
+        "ど",
+        "く",
+        "の",
+        "あ",
+        "か",
+        "り",
+        "が",
+        "む",
+        "ね",
+        "の",
+        "そ",
+        "こ",
+        "を",
+        "た",
+        "た",
+        "い",
+        "て",
+        "る",
+        "い",
+        "え",
+        "な"
+      ]
+    },
+    {
+      "id": "unit-02a-timeline-with-context",
+      "render_start": 55.26,
+      "render_end": 69.22,
+      "assembly_start": 55.26,
+      "assembly_end": 59.44,
+      "render_tail_seconds": 0.5,
+      "policy": "timeline-segment-with-following-context",
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02a-timeline-with-context.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02a-timeline-with-context-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02a-timeline-with-context.wav",
+      "assembly_duration_seconds": 4.18,
+      "trim_start_seconds": 0.5,
+      "note_count": 60,
+      "first_lyrics": [
+        "た",
+        "い",
+        "む",
+        "ら",
+        "い",
+        "ん",
+        "に",
+        "は",
+        "し",
+        "ら",
+        "な",
+        "い",
+        "だ",
+        "れ",
+        "か",
+        "の",
+        "え",
+        "が",
+        "お",
+        "つ",
+        "よ",
+        "が",
+        "っ",
+        "て",
+        "す",
+        "く",
+        "ろ",
+        "お",
+        "る",
+        "し",
+        "て",
+        "こ",
+        "こ",
+        "ろ",
+        "だ",
+        "け",
+        "と",
+        "り",
+        "の",
+        "こ"
+      ]
+    },
+    {
+      "id": "unit-02b-gap",
+      "render_start": 59.44,
+      "render_end": 60.28,
+      "assembly_start": 59.44,
+      "assembly_end": 60.28,
+      "kind": "silence",
+      "policy": "timeline-gap-silence",
+      "ustx_path": null,
+      "planned_raw_wav_path": null,
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02b-gap.wav",
+      "assembly_duration_seconds": 0.8400000000000034,
+      "trim_start_seconds": 0.0,
+      "note_count": 0,
+      "first_lyrics": []
+    },
+    {
+      "id": "unit-02c-tsuyogatte-scroll",
+      "render_start": 60.28,
+      "render_end": 64.82,
+      "assembly_start": 60.28,
+      "assembly_end": 64.82,
+      "render_tail_seconds": 0.5,
+      "policy": "literal-small-tsu-and-long-vowel-source-text-segment-11-exact-grid",
+      "exact_grid_segments": [
+        11
+      ],
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02c-tsuyogatte-scroll.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02c-tsuyogatte-scroll-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02c-tsuyogatte-scroll.wav",
+      "assembly_duration_seconds": 4.539999999999992,
+      "trim_start_seconds": 0.5,
+      "note_count": 22,
+      "first_lyrics": [
+        "つ",
+        "よ",
+        "が",
+        "っ",
+        "て",
+        "す",
+        "く",
+        "ろ",
+        "お",
+        "る",
+        "し",
+        "て",
+        "こ",
+        "こ",
+        "ろ",
+        "だ",
+        "け",
+        "と",
+        "り",
+        "の",
+        "こ",
+        "す"
+      ]
+    },
+    {
+      "id": "unit-02d-uchikake",
+      "render_start": 60.28,
+      "render_end": 69.22,
+      "assembly_start": 64.82,
+      "assembly_end": 69.22,
+      "render_tail_seconds": 0.5,
+      "policy": "tail-from-segment-11-12-context",
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02d-uchikake.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02d-uchikake-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-02d-uchikake.wav",
+      "assembly_duration_seconds": 4.400000000000006,
+      "trim_start_seconds": 5.039999999999992,
+      "note_count": 41,
+      "first_lyrics": [
+        "つ",
+        "よ",
+        "が",
+        "っ",
+        "て",
+        "す",
+        "く",
+        "ろ",
+        "お",
+        "る",
+        "し",
+        "て",
+        "こ",
+        "こ",
+        "ろ",
+        "だ",
+        "け",
+        "と",
+        "り",
+        "の",
+        "こ",
+        "す",
+        "う",
+        "ち",
+        "か",
+        "け",
+        "の",
+        "こ",
+        "と",
+        "ば",
+        "が",
+        "ふ",
+        "る",
+        "え",
+        "て",
+        "き",
+        "え",
+        "て",
+        "く",
+        "た"
+      ]
+    },
+    {
+      "id": "unit-03-middle-pre-sekai",
+      "render_start": 69.22,
+      "render_end": 103.64,
+      "assembly_start": 69.22,
+      "assembly_end": 103.64,
+      "render_tail_seconds": 0.5,
+      "policy": "v10-microphrase-middle",
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-03-middle-pre-sekai.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-03-middle-pre-sekai-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-03-middle-pre-sekai.wav",
+      "assembly_duration_seconds": 34.42,
+      "trim_start_seconds": 0.5,
+      "note_count": 132,
+      "first_lyrics": [
+        "ど",
+        "う",
+        "せ",
+        "の",
+        "も",
+        "の",
+        "が",
+        "た",
+        "り",
+        "が",
+        "ま",
+        "た",
+        "お",
+        "う",
+        "か",
+        "ん",
+        "を",
+        "か",
+        "ぶ",
+        "る",
+        "き",
+        "っ",
+        "と",
+        "き",
+        "ま",
+        "っ",
+        "て",
+        "る",
+        "っ",
+        "て",
+        "く",
+        "ち",
+        "に",
+        "し",
+        "た",
+        "しゅ",
+        "ん",
+        "か",
+        "ん",
+        "ぼ"
+      ]
+    },
+    {
+      "id": "unit-04-sekai-phrase-with-custom-tail",
+      "render_start": 103.64,
+      "render_end": 113.86,
+      "assembly_start": 103.64,
+      "assembly_end": 113.86,
+      "render_tail_seconds": 2.0,
+      "policy": "phrase-isolated-render-with-custom-soredakedeii-tail-exact-grid-fixes-sekai",
+      "exact_grid_segments": [
+        21,
+        22
+      ],
+      "tail_context_lyrics": [
+        "そ",
+        "れ",
+        "だ",
+        "け",
+        "で",
+        "い",
+        "い"
+      ],
+      "tail_context_duration_ticks": 209,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-04-sekai-phrase-with-custom-tail.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-04-sekai-phrase-with-custom-tail-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-04-sekai-phrase-with-custom-tail.wav",
+      "assembly_duration_seconds": 10.219999999999999,
+      "trim_start_seconds": 0.5,
+      "note_count": 49,
+      "first_lyrics": [
+        "そ",
+        "れ",
+        "で",
+        "も",
+        "い",
+        "ち",
+        "ぎょ",
+        "う",
+        "だ",
+        "け",
+        "で",
+        "せ",
+        "か",
+        "い",
+        "に",
+        "さ",
+        "ん",
+        "か",
+        "し",
+        "て",
+        "い",
+        "た",
+        "い",
+        "も",
+        "し",
+        "も",
+        "あ",
+        "し",
+        "た",
+        "た",
+        "だ",
+        "の",
+        "と",
+        "も",
+        "だ",
+        "ち",
+        "で",
+        "わ",
+        "ら",
+        "え"
+      ]
+    },
+    {
+      "id": "unit-05-middle-post-sekai",
+      "render_start": 113.86,
+      "render_end": 173.44,
+      "assembly_start": 113.86,
+      "assembly_end": 173.44,
+      "render_tail_seconds": 0.5,
+      "policy": "v10-microphrase-middle-tail",
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-05-middle-post-sekai.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-05-middle-post-sekai-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-05-middle-post-sekai.wav",
+      "assembly_duration_seconds": 59.58,
+      "trim_start_seconds": 0.5,
+      "note_count": 186,
+      "first_lyrics": [
+        "そ",
+        "れ",
+        "だ",
+        "け",
+        "で",
+        "い",
+        "い",
+        "そ",
+        "う",
+        "い",
+        "い",
+        "き",
+        "か",
+        "せ",
+        "て",
+        "で",
+        "も",
+        "ほ",
+        "ん",
+        "と",
+        "う",
+        "は",
+        "し",
+        "っ",
+        "て",
+        "る",
+        "ち",
+        "ん",
+        "も",
+        "く",
+        "も",
+        "ま",
+        "た",
+        "だ",
+        "れ",
+        "か",
+        "の",
+        "よ",
+        "る",
+        "を"
+      ]
+    },
+    {
+      "id": "unit-06-sorede",
+      "render_start": 173.44,
+      "render_end": 243.35999989509583,
+      "assembly_start": 173.44,
+      "assembly_end": 243.35999989509583,
+      "render_tail_seconds": 0.5,
+      "policy": "v10-sorede-and-long-gap",
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-06-sorede.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-06-sorede-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-06-sorede.wav",
+      "assembly_duration_seconds": 69.91999989509583,
+      "trim_start_seconds": 0.5,
+      "note_count": 32,
+      "first_lyrics": [
+        "そ",
+        "れ",
+        "で",
+        "じゅ",
+        "う",
+        "ぶ",
+        "ん",
+        "だ",
+        "い",
+        "ち",
+        "ぎょ",
+        "う",
+        "だ",
+        "け",
+        "の",
+        "め",
+        "っ",
+        "せ",
+        "じ",
+        "で",
+        "つ",
+        "な",
+        "が",
+        "る",
+        "よ",
+        "る",
+        "が",
+        "あ",
+        "る",
+        "の",
+        "な",
+        "ら"
+      ]
+    },
+    {
+      "id": "unit-07-ending",
+      "render_start": 243.35999989509583,
+      "render_end": 303.32,
+      "assembly_start": 243.35999989509583,
+      "assembly_end": 303.32,
+      "render_tail_seconds": 0.5,
+      "policy": "v10-ending",
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-07-ending.ustx",
+      "planned_raw_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-07-ending-raw.wav",
+      "planned_aligned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v16-exact-phrase-grid-chunks/heresy-between-exact-phrase-grid-openutau-v16-unit-07-ending.wav",
+      "assembly_duration_seconds": 59.96000010490417,
+      "trim_start_seconds": 0.5,
+      "note_count": 66,
+      "first_lyrics": [
+        "へ",
+        "ん",
+        "じ",
+        "な",
+        "ん",
+        "て",
+        "も",
+        "う",
+        "こ",
+        "な",
+        "く",
+        "て",
+        "も",
+        "す",
+        "る",
+        "よ",
+        "い",
+        "ち",
+        "ぎょ",
+        "う",
+        "だ",
+        "け",
+        "の",
+        "め",
+        "っ",
+        "せ",
+        "じ",
+        "さ",
+        "よ",
+        "な",
+        "ら",
+        "の",
+        "つ",
+        "づ",
+        "き",
+        "か",
+        "け",
+        "な",
+        "く",
+        "て"
+      ]
+    }
+  ],
+  "segment_readings": [
+    {
+      "segment_index": 0,
+      "start_s": 0.0,
+      "end_s": 5.54,
+      "text": "元気だよって一語だけのメッセージ",
+      "best_reference_match": "げんきだよっていちぎょうだけのめっせじ",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "げんきだよっていちぎょうだけのめっせじ",
+      "tokens": [
+        {
+          "lyric": "げ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 18,
+      "small_tsu_count": 2
+    },
+    {
+      "segment_index": 1,
+      "start_s": 5.54,
+      "end_s": 10.24,
+      "text": "既読の明かりが胸の底を叩いてる",
+      "best_reference_match": "既読の灯りがむねの底を叩いてる",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "きどくのあかりがむねのそこをたたいてる",
+      "tokens": [
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ど",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "り",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "む",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ね",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "そ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 19,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 2,
+      "start_s": 10.24,
+      "end_s": 15.2,
+      "text": "言えなかったごめんねよりもっと可愛いのは",
+      "best_reference_match": "言えなかったごめんねよりもっと怖いのは",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いえなかったごめんねよりもっとこわいのは",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ご",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ね",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "り",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "わ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 20,
+      "small_tsu_count": 2
+    },
+    {
+      "segment_index": 3,
+      "start_s": 15.2,
+      "end_s": 21.14,
+      "text": "何も送らないっていう静かな選択",
+      "best_reference_match": "何も送らないっていう静かな選択",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "なにもおくらないっていうしずかなせんたく",
+      "tokens": [
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ず",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 20,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 4,
+      "start_s": 22.54,
+      "end_s": 26.62,
+      "text": "理由はいつも後から並べれる",
+      "best_reference_match": "理由はいつもあとから並べられる",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "りゆうはいつもあとからならべられる",
+      "tokens": [
+        {
+          "lyric": "り",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ゆ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "つ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "べ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "れ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 17,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 5,
+      "start_s": 27.26,
+      "end_s": 32.86,
+      "text": "でも指先は先に 生き方を知ってしまう",
+      "best_reference_match": "でも指先は先に生き方を押してしまう",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "でもゆびさきはさきにいきかたをおしてしまう",
+      "tokens": [
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ゆ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "び",
+          "kind": "mora"
+        },
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ま",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 21,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 6,
+      "start_s": 32.86,
+      "end_s": 37.98,
+      "text": "一行だけのメッセージ この夜のカタツが決まるなら",
+      "best_reference_match": "いちぎょうだけのめっせじでこのよるの形が決まるなら",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いちぎょうだけのめっせじでこのよるのかたちがきまるなら",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ま",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 26,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 7,
+      "start_s": 37.98,
+      "end_s": 43.68,
+      "text": "僕は逃げ道の言い訳より 小さな責任を選びたいね",
+      "best_reference_match": "ぼくは逃げ道の言い訳より小さなせきにんを選びたいね",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "ぼくはにげみちのいいわけよりちいさなせきにんをえらびたいね",
+      "tokens": [
+        {
+          "lyric": "ぼ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "げ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "み",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "わ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "り",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "び",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ね",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 29,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 8,
+      "start_s": 43.68,
+      "end_s": 49.94,
+      "text": "さよならの続きかけなくて 食わへくばかり増えてゆくけど",
+      "best_reference_match": "さよならの続き書けなくて空白ばかり増えていくけど",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "さよならのつづきかけなくてくうはくばかりふえていくけど",
+      "tokens": [
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "つ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "づ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ば",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "り",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ふ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ど",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 27,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 9,
+      "start_s": 49.94,
+      "end_s": 55.26,
+      "text": "一行だけのメッセージで 意味を置いて帰るよ",
+      "best_reference_match": "いちぎょうだけのめっせじでいみを置いて帰るよ",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いちぎょうだけのめっせじでいみをおいてかえるよ",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "み",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 22,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 10,
+      "start_s": 55.26,
+      "end_s": 59.44,
+      "text": "タイムラインには知らない誰かの笑顔",
+      "best_reference_match": "タイムラインには知らない誰かの笑顔",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "たいむらいんにはしらないだれかのえがお",
+      "tokens": [
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "む",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "れ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 19,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 11,
+      "start_s": 60.28,
+      "end_s": 64.82,
+      "text": "強がってスクロールして心だけ取り残す",
+      "best_reference_match": "強がってスクロルして心だけ取り残す",
+      "source_policy": "text",
+      "reading_hiragana": "つよがってすくろーるしてこころだけとりのこす",
+      "tokens": [
+        {
+          "lyric": "つ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "す",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ろ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "long_vowel"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ろ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "り",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "す",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 22,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 12,
+      "start_s": 64.82,
+      "end_s": 69.22,
+      "text": "打ちかけの言葉が震えて消えてくたび",
+      "best_reference_match": "打ちかけの言葉が震えて消えてくたび",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "うちかけのことばがふるえてきえてくたび",
+      "tokens": [
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ば",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ふ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "び",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 19,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 13,
+      "start_s": 69.22,
+      "end_s": 75.26,
+      "text": "どうせの物語がまたお前をかぶる",
+      "best_reference_match": "どうせ...の物語がまた王冠をかぶる",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "どうせのものがたりがまたおうかんをかぶる",
+      "tokens": [
+        {
+          "lyric": "ど",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "り",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ま",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぶ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 20,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 14,
+      "start_s": 75.26,
+      "end_s": 80.52,
+      "text": "きっと決まってるって口にした瞬間",
+      "best_reference_match": "きっと決まってるって口にした瞬間",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "きっときまってるってくちにしたしゅんかん",
+      "tokens": [
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ま",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "しゅ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 19,
+      "small_tsu_count": 3
+    },
+    {
+      "segment_index": 15,
+      "start_s": 81.28,
+      "end_s": 85.98,
+      "text": "僕の手のひらから明日が落ちていく",
+      "best_reference_match": "ぼくの手のひらからあしたが落ちていく",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "ぼくのてのひらからあしたがおちていく",
+      "tokens": [
+        {
+          "lyric": "ぼ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ひ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 18,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 16,
+      "start_s": 86.91999999999999,
+      "end_s": 91.26,
+      "text": "一行だけのメッセージで戻れる場所を探す",
+      "best_reference_match": "いちぎょうだけのめっせじで戻れる場所を探す",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いちぎょうだけのめっせじでもどれるばしょをさがす",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ど",
+          "kind": "mora"
+        },
+        {
+          "lyric": "れ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ば",
+          "kind": "mora"
+        },
+        {
+          "lyric": "しょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "す",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 22,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 17,
+      "start_s": 91.26,
+      "end_s": 94.66,
+      "text": "僕ただしさは外に落ちてなくて",
+      "best_reference_match": "正しさは外に落ちてなくて",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "ただしさはそとにおちてなくて",
+      "tokens": [
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "そ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 14,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 18,
+      "start_s": 94.66,
+      "end_s": 97.32,
+      "text": "選んだ後に立ち上がる",
+      "best_reference_match": "選んだ跡に立ち上がるああ",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "えらんだあとにたちあがるああ",
+      "tokens": [
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 14,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 19,
+      "start_s": 98.1,
+      "end_s": 100.86,
+      "text": "言えなかったこと数えたら",
+      "best_reference_match": "言えなかったこと数えたら",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いえなかったことかぞえたら",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぞ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 13,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 20,
+      "start_s": 100.86,
+      "end_s": 103.64,
+      "text": "仮面に入りきらないほど",
+      "best_reference_match": "画面に入りきらないほど",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "がめんにいりきらないほど",
+      "tokens": [
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "り",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ほ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ど",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 21,
+      "start_s": 103.64,
+      "end_s": 108.9,
+      "text": "それでも一行だけで世界に参加してたい",
+      "best_reference_match": "それでもいちぎょうだけでせかいに参加していたい",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "それでもいちぎょうだけでせかいにさんかしていたい",
+      "tokens": [
+        {
+          "lyric": "そ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "れ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "に",
+          "kind": "mora"
+        },
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 23,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 22,
+      "start_s": 108.9,
+      "end_s": 113.86,
+      "text": "もしも明日 ただの友達で笑えたら",
+      "best_reference_match": "もしもあしたただの友だちで笑えたら",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "もしもあしたただのともだちでわらえたら",
+      "tokens": [
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "わ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 19,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 23,
+      "start_s": 113.86,
+      "end_s": 118.0,
+      "text": "それだけでいい そう言い聞かせて",
+      "best_reference_match": "それだけでいいそう言い聞かせて",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "それだけでいいそういいきかせて",
+      "tokens": [
+        {
+          "lyric": "そ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "れ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "そ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 15,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 24,
+      "start_s": 119.06,
+      "end_s": 125.32,
+      "text": "でも本当は知ってる 沈黙もまた誰かの夜を",
+      "best_reference_match": "でも本当は知ってるちんもくもまた誰かのよるを",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "でもほんとうはしってるちんもくもまただれかのよるを",
+      "tokens": [
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ほ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ま",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "れ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 25,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 25,
+      "start_s": 125.32,
+      "end_s": 129.1,
+      "text": "増やしてしまうって",
+      "best_reference_match": "増やしてしまうって",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "ふやしてしまうって",
+      "tokens": [
+        {
+          "lyric": "ふ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "や",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ま",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 9,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 26,
+      "start_s": 131.44,
+      "end_s": 135.0,
+      "text": "ああ 打ち直す人気の三本心",
+      "best_reference_match": "打ち直すげんきの三文字",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "うちなおすげんきのさんもじ",
+      "tokens": [
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "す",
+          "kind": "mora"
+        },
+        {
+          "lyric": "げ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 13,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 27,
+      "start_s": 135.0,
+      "end_s": 137.64,
+      "text": "飛ぶのは真顔じゃなくて",
+      "best_reference_match": "跳ぶのは信仰じゃなくて",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "とぶのはしんこうじゃなくて",
+      "tokens": [
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぶ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じゃ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 28,
+      "start_s": 137.64,
+      "end_s": 140.04,
+      "text": "投げ出さないというケース",
+      "best_reference_match": "投げ出さないというけつい",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "なげださないというけつい",
+      "tokens": [
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "げ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "と",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "つ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 29,
+      "start_s": 140.66,
+      "end_s": 143.3,
+      "text": "一行だけのメッセージで",
+      "best_reference_match": "いちぎょうだけのめっせじで",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いちぎょうだけのめっせじで",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 30,
+      "start_s": 143.3,
+      "end_s": 145.72,
+      "text": "繋がる理由があるのなら",
+      "best_reference_match": "つながるよるがあるのなら",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "つながるよるがあるのなら",
+      "tokens": [
+        {
+          "lyric": "つ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 31,
+      "start_s": 145.72,
+      "end_s": 148.56,
+      "text": "返事なんてもう起きなくても",
+      "best_reference_match": "返事なんてもう来なくても",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "へんじなんてもうこなくても",
+      "tokens": [
+        {
+          "lyric": "へ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 13,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 32,
+      "start_s": 148.56,
+      "end_s": 151.24,
+      "text": "名前を呼べた気がするよ",
+      "best_reference_match": "名前を呼べた気がするよ",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "なまえをよべたきがするよ",
+      "tokens": [
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ま",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "べ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "す",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 33,
+      "start_s": 152.06,
+      "end_s": 154.7,
+      "text": "どうせの続きがけなくて",
+      "best_reference_match": "どうせの続き書けなくて",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "どうせのつづきかけなくて",
+      "tokens": [
+        {
+          "lyric": "ど",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "つ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "づ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 34,
+      "start_s": 154.7,
+      "end_s": 157.44,
+      "text": "それでも送信をしてみる",
+      "best_reference_match": "それでもそうしんを押してみる",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "それでもそうしんをおしてみる",
+      "tokens": [
+        {
+          "lyric": "そ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "れ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "そ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "み",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 14,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 35,
+      "start_s": 157.44,
+      "end_s": 160.08,
+      "text": "一行だけのメッセージで",
+      "best_reference_match": "いちぎょうだけのめっせじで",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いちぎょうだけのめっせじで",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 36,
+      "start_s": 160.08,
+      "end_s": 163.14,
+      "text": "僕は明日を肯定する",
+      "best_reference_match": "ぼくはあしたをこうていする",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "ぼくはあしたをこうていする",
+      "tokens": [
+        {
+          "lyric": "ぼ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "は",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "し",
+          "kind": "mora"
+        },
+        {
+          "lyric": "た",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "す",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 13,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 37,
+      "start_s": 173.44,
+      "end_s": 176.88,
+      "text": "一生だけそれで十分だ",
+      "best_reference_match": "それでじゅうぶんだ",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "それでじゅうぶんだ",
+      "tokens": [
+        {
+          "lyric": "そ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "れ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じゅ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぶ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 8,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 38,
+      "start_s": 240.0,
+      "end_s": 243.35999989509583,
+      "text": "メッセージで繋がる余裕があるのなら",
+      "best_reference_match": "いちぎょうだけのめっせじでつながるよるがあるのなら",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いちぎょうだけのめっせじでつながるよるがあるのなら",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        },
+        {
+          "lyric": "つ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "が",
+          "kind": "mora"
+        },
+        {
+          "lyric": "あ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 24,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 39,
+      "start_s": 243.35999989509583,
+      "end_s": 246.1399998664856,
+      "text": "返事なんて動かなくても",
+      "best_reference_match": "返事なんてもう来なくても",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "へんじなんてもうこなくても",
+      "tokens": [
+        {
+          "lyric": "へ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ん",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "こ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "も",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 13,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 40,
+      "start_s": 247.78,
+      "end_s": 248.86,
+      "text": "するよ",
+      "best_reference_match": "するよ",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "するよ",
+      "tokens": [
+        {
+          "lyric": "す",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 3,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 41,
+      "start_s": 251.9,
+      "end_s": 254.12,
+      "text": "意志向だけのメッセージ",
+      "best_reference_match": "いちぎょうだけのめっせじ",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いちぎょうだけのめっせじ",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 11,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 42,
+      "start_s": 263.1,
+      "end_s": 265.86,
+      "text": "さよならの続きが当てなくて",
+      "best_reference_match": "さよならの続き書けなくて",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "さよならのつづきかけなくて",
+      "tokens": [
+        {
+          "lyric": "さ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ら",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "つ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "づ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "な",
+          "kind": "mora"
+        },
+        {
+          "lyric": "く",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 13,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 43,
+      "start_s": 268.94,
+      "end_s": 271.84,
+      "text": "意志向だけのメッセージで",
+      "best_reference_match": "いちぎょうだけのめっせじで",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いちぎょうだけのめっせじで",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ち",
+          "kind": "mora"
+        },
+        {
+          "lyric": "ぎょ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "う",
+          "kind": "mora"
+        },
+        {
+          "lyric": "だ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "け",
+          "kind": "mora"
+        },
+        {
+          "lyric": "の",
+          "kind": "mora"
+        },
+        {
+          "lyric": "め",
+          "kind": "mora"
+        },
+        {
+          "lyric": "っ",
+          "kind": "small_tsu"
+        },
+        {
+          "lyric": "せ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "じ",
+          "kind": "mora"
+        },
+        {
+          "lyric": "で",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 12,
+      "small_tsu_count": 1
+    },
+    {
+      "segment_index": 44,
+      "start_s": 271.84,
+      "end_s": 274.3,
+      "text": "意味を置いて帰るよ",
+      "best_reference_match": "いみを置いて帰るよ",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いみをおいてかえるよ",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "み",
+          "kind": "mora"
+        },
+        {
+          "lyric": "を",
+          "kind": "mora"
+        },
+        {
+          "lyric": "お",
+          "kind": "mora"
+        },
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "て",
+          "kind": "mora"
+        },
+        {
+          "lyric": "か",
+          "kind": "mora"
+        },
+        {
+          "lyric": "え",
+          "kind": "mora"
+        },
+        {
+          "lyric": "る",
+          "kind": "mora"
+        },
+        {
+          "lyric": "よ",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 10,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 45,
+      "start_s": 274.3,
+      "end_s": 275.3,
+      "text": "Ahh...",
+      "best_reference_match": "息...",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いき",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 2,
+      "small_tsu_count": 0
+    },
+    {
+      "segment_index": 46,
+      "start_s": 275.3,
+      "end_s": 280.48,
+      "text": "Ahh...",
+      "best_reference_match": "息...",
+      "source_policy": "best_reference_match_or_text",
+      "reading_hiragana": "いき",
+      "tokens": [
+        {
+          "lyric": "い",
+          "kind": "mora"
+        },
+        {
+          "lyric": "き",
+          "kind": "mora"
+        }
+      ],
+      "token_count": 2,
+      "small_tsu_count": 0
+    }
+  ],
+  "note_strategy": "v16 promotes audited phrase probes into generated render units with exact small-tsu-aware integer tick grids and custom phrase-tail context: exact assembly spans, optional render context, render-tail extension for short phrases, small-tsu preservation, long-vowel preservation for segment 11, and stable pitch for segments 10-36."
+}

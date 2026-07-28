@@ -1,0 +1,41 @@
+name: Append PR 3 Review Receipt
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [design/media-workbench-v1]
+    paths:
+      - ".github/workflows/append-pr3-review-receipt.yml"
+
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: design/media-workbench-v1
+          fetch-depth: 0
+
+      - name: Append Receipt River row
+        shell: bash
+        run: |
+          set -euo pipefail
+          marker='Address the current PR #3 automated review findings'
+          if grep -Fq "$marker" receipts.edn; then
+            echo "Receipt already present"
+            exit 1
+          fi
+          ts=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          printf '%s\n' "{:ts \"${ts}\", :kind :build, :repo \"https://github.com/octave-commons/fork_tales_v2\", :origin \"github-actions\", :owner \"gpt-5.6-thinking\", :dod \"Address the current PR #3 automated review findings while preserving intentional actor naming and generated-projection authority.\", :pi \"eta-mu/receipt-river-v1\", :host \"github-actions/ubuntu-latest\", :manifest \"PR #3; scripts/validate_rheos_board.py; FT-000 through FT-003 epics; FT-OPS-001; FT-004C; docs/lyrics/the-space-where-we-used-to-be.md; CodeRabbit and duplicate Codex review threads\", :refs \"substantive tested head 05ba87a4af6a94427750e6f7052a3dd1996cd211; Repository Contracts run 30404193231; negative-fixture verifier run 30404193217\", :tests \"Repository Contracts passed. Rheos board valid with 27 cards. clojure -M:test passed 23 tests and 91 assertions. Synthetic nested duplicate, dependency cycle, and missing-owner fixtures were rejected. The generated lyrics projection matched main byte-for-byte.\", :decisions \"Recursively scan every Markdown card beneath allowed categories; reject dependency cycles; require explicit ownership after icebox/incoming; add FT-000D to FT-000 decomposition; require local acceptance and target readiness separately; normalize host-specific tool paths; link FT-OPS-001 to immutable receipt timestamps; retain Err as the intentional approved actor name; revert the newline-only generated projection drift instead of editing source truth.\", :note \"Remote GitHub work only. The temporary verification and receipt workflows are removed after use. No user-local Rheos, audio device, or playback command was invoked in this review pass.\"}" >> receipts.edn
+
+      - name: Commit receipt only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add receipts.edn
+          git commit -m "docs: record PR 3 review fixes"
+          git push origin HEAD:design/media-workbench-v1

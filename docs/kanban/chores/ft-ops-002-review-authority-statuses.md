@@ -5,7 +5,7 @@ status: done
 type: chore
 priority: P0
 phase: 0
-owner: unassigned
+owner: gpt-5.6-thinking
 points: 1
 labels: adr, design-review, documentation
 category: chores
@@ -19,14 +19,17 @@ dependency: ["ft-000a-review-and-accept-or-revise-media-workbench-authority"]
 
 ## Outcome
 
-The ADR, design, FT-000A card, board breakdown, and implementation readiness all
-reflect the same explicit human disposition.
+The authority documents and board now reflect the same explicit disposition.
 
-## Acceptance criteria
+## Completed reconciliation
 
-- ADR-001 is accepted, rejected, or revised with basis.
-- The design status is consistent with the ADR.
-- FT-000A records the review disposition.
-- Implementation cards remain blocked or advance according to the accepted
-  authority, never merely because the design PR merged.
-- Receipt River records the reconciliation.
+- ADR-001 is `accepted` with Err as decider.
+- Media Workbench v1 is `approved`.
+- The product-delivery process is `accepted`.
+- FT-000A is `done` with the acceptance basis.
+- FT-000B and FT-000D are `ready`.
+- FT-000C and player work remain dependency-gated.
+- Board prose moved to `docs/kanban-docs/` and no longer becomes phantom cards.
+- Receipt River records the review and mechanics correction.
+
+Merging the PR remains distinct from accepting future implementation cards.

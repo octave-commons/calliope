@@ -102,12 +102,35 @@ documented paths landed in a near-empty directory.
 
 A second, quieter class of stale path survived that pass and was only caught by
 running the programs here on 2026-07-28: *in-repo* paths left over from the
-pre-consolidation flat `scripts/` layout. `audio_agent.cljs` printed its own
-usage as `scripts/fork_tales_audio_agent.cljs` (nine lines), and `rubrics.md`
-pointed at `scripts/fork_tales_audio_metrics.py`, `_audio_grade.py`, and
-`_spectrogram_image_judge.py`. None of those files exist; all four live under
-`scripts/reconstruction/`. Corrected. The lesson generalises: a path claim is
-only as good as the last time something executed it.
+pre-consolidation flat `scripts/` layout. None of those `scripts/fork_tales_*`
+files exist; the real programs all live under `scripts/reconstruction/`.
+
+The first attempt at this fix is itself the cautionary tale. It corrected the
+nine usage lines inside `audio_agent.cljs` and the three implementation-status
+entries in `rubrics.md`, then declared the class swept — while **21 further
+references survived in the same directory**, including copy-pasteable `nbb`
+command lines that fail with `ENOENT`. The full sweep, completed 2026-07-28
+during stack reconciliation, covered:
+
+| File | Stale refs |
+| --- | --- |
+| `docs/reconstruction/gemma-audio-agent.md` | 16 |
+| `docs/reconstruction/rubrics.md` | 3 (in the very file the first pass edited) |
+| `docs/reconstruction/operating-model.md` | 1 |
+| `resources/reconstruction/contracts/fork_tales_vocal_auditor.edn` | 1 (inside a live system prompt) |
+| `src/fork_tales/reconstruction/handoff.cljc` | 1 — docstring named the retired tool as `scripts/fork_tales_handoff_validate.py`; it was actually `scripts/reconstruction/handoff_validate.py`, a path that never existed in this repository |
+
+The residual mentions in this README are deliberate: they quote the wrong paths
+in order to describe them.
+
+The lesson generalises twice over. A path claim is only as good as the last time
+something executed it — and a *sweep* claim is only as good as the last time
+someone grepped the whole tree rather than the files they happened to open.
+Verification for this class is one command:
+
+```bash
+git ls-files | grep -v '^references/' | xargs grep -n 'scripts/fork_tales_'
+```
 
 **The 426 imported artifacts were not rewritten.** They still contain the old
 `devel/Music` strings. They are historical records of runs that really happened,

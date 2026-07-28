@@ -8,7 +8,7 @@ The higher-level role and handoff model lives in [`operating-model.md`](./operat
 
 The harness lives at:
 
-`scripts/fork_tales_audio_agent.cljs`
+`scripts/reconstruction/audio_agent.cljs`
 
 It is intentionally not an eta-mu extension and does not change eta-mu CLI behavior. It uses eta-mu SDK-shaped audio maps internally:
 
@@ -38,37 +38,37 @@ Each case directory contains:
 Initialize a case:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs init --case-dir /home/err/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent
+nbb scripts/reconstruction/audio_agent.cljs init --case-dir /home/err/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent
 ```
 
 Slice audio:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs slice --case-dir <case-dir> --in <input.wav> --start 0 --duration 10 --out <slice.wav>
+nbb scripts/reconstruction/audio_agent.cljs slice --case-dir <case-dir> --in <input.wav> --start 0 --duration 10 --out <slice.wav>
 ```
 
 Filter audio:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs filter --case-dir <case-dir> --kind speech --in <input.wav> --out <filtered.wav>
+nbb scripts/reconstruction/audio_agent.cljs filter --case-dir <case-dir> --kind speech --in <input.wav> --out <filtered.wav>
 ```
 
 Label an artifact:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs label --case-dir <case-dir> --file <path> --labels opening,wrong-syllables --note "Gemma hears candidate syllables diverging immediately."
+nbb scripts/reconstruction/audio_agent.cljs label --case-dir <case-dir> --file <path> --labels opening,wrong-syllables --note "Gemma hears candidate syllables diverging immediately."
 ```
 
 Ask Gemma about one or more audio files:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs ask --case-dir <case-dir> --audio <a.wav>,<b.wav> --prompt "Transcribe A and B separately. Return JSON only."
+nbb scripts/reconstruction/audio_agent.cljs ask --case-dir <case-dir> --audio <a.wav>,<b.wav> --prompt "Transcribe A and B separately. Return JSON only."
 ```
 
 Start a persistent listening session:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs session-init \
+nbb scripts/reconstruction/audio_agent.cljs session-init \
   --case-dir <case-dir> \
   --session-id heresy-opening \
   --goal "Learn why OpenUTAU is not singing the same opening words as the isolated vocal." \
@@ -80,7 +80,7 @@ nbb scripts/fork_tales_audio_agent.cljs session-init \
 Hear exactly one segment in that session:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs hear \
+nbb scripts/reconstruction/audio_agent.cljs hear \
   --case-dir <case-dir> \
   --session-id heresy-opening \
   --role original \
@@ -95,7 +95,7 @@ nbb scripts/fork_tales_audio_agent.cljs hear \
 Run local timed STT on one segment as a second, non-Gemma ear:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs stt \
+nbb scripts/reconstruction/audio_agent.cljs stt \
   --case-dir <case-dir> \
   --session-id heresy-opening \
   --role candidate \
@@ -109,7 +109,7 @@ nbb scripts/fork_tales_audio_agent.cljs stt \
 Compare original vs candidate:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs compare \
+nbb scripts/reconstruction/audio_agent.cljs compare \
   --case-dir <case-dir> \
   --original <original-vocal.wav> \
   --candidate <openutau.wav> \
@@ -127,7 +127,7 @@ This is more stable with the current Ollama/OpenAI-compatible `gemma4:e4b-128k` 
 Generate deterministic f0/spectrogram evidence without calling Gemma:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs metrics \
+nbb scripts/reconstruction/audio_agent.cljs metrics \
   --case-dir <case-dir> \
   --role opening-v16 \
   --original <original-slice.wav> \
@@ -146,7 +146,7 @@ nbb scripts/fork_tales_audio_agent.cljs metrics \
 Run a grounded Gemma Check that gives Gemma the audio first and then explicit tool evidence:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs gemma-check \
+nbb scripts/reconstruction/audio_agent.cljs gemma-check \
   --case-dir <case-dir> \
   --session-id heresy-v16-audit \
   --role timeline-v16 \
@@ -173,7 +173,7 @@ Keep Gemma Check windows short. A 14s segment becomes roughly 29s of A/B audio a
 Grade an audit evidence bundle with feature-specific judge weights:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs grade \
+nbb scripts/reconstruction/audio_agent.cljs grade \
   --case-dir <case-dir> \
   --evidence <case-dir>/checks/<check-id>/evidence.json \
   --profile suno_reverse_accuracy
@@ -184,7 +184,7 @@ nbb scripts/fork_tales_audio_agent.cljs grade \
 Prepare a spectrogram/f0 image-judge prompt:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs image-judge-prompt \
+nbb scripts/reconstruction/audio_agent.cljs image-judge-prompt \
   --case-dir <case-dir> \
   --evidence <case-dir>/checks/<check-id>/evidence.json \
   --profile suno_reverse_accuracy
@@ -195,7 +195,7 @@ This writes a prompt, request manifest, and JSON response template next to the a
 Normalize the vision judge response into grade-compatible evidence:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs image-judge-import \
+nbb scripts/reconstruction/audio_agent.cljs image-judge-import \
   --case-dir <case-dir> \
   --evidence <case-dir>/checks/<check-id>/evidence.json \
   --response <case-dir>/checks/<check-id>/spectrogram-image-judge-response.json
@@ -206,7 +206,7 @@ Then pass `--judge-scores <case-dir>/checks/<check-id>/spectrogram-image-judge-s
 Validate role handoff packets against the executable loop specs:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs handoff-validate \
+nbb scripts/reconstruction/audio_agent.cljs handoff-validate \
   --case-dir <case-dir> \
   --packets planner-assignment.json,qc-review.json \
   --catalog approved-reference-catalog.json

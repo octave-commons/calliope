@@ -1,7 +1,7 @@
 (ns fork-tales.reconstruction.handoff
   "Pure interpreter for the μ1-μ6 handoff invariants.
 
-  Port of the retired scripts/fork_tales_handoff_validate.py. The invariants
+  Port of the retired scripts/reconstruction/handoff_validate.py. The invariants
   themselves are not restated here — they are read from
   fork-tales.law.reconstruction/handoff-invariants, so adding or tightening an
   invariant is a data edit, not a code edit.

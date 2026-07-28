@@ -161,7 +161,7 @@ Image analysis is a third/fourth judge class. It is useful because f0 overlays a
 Generate a calibrated prompt and response template from an existing audit:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs image-judge-prompt \
+nbb scripts/reconstruction/audio_agent.cljs image-judge-prompt \
   --case-dir <case-dir> \
   --evidence <case-dir>/checks/<check-id>/evidence.json \
   --profile suno_reverse_accuracy
@@ -195,7 +195,7 @@ Give the prompt plus listed images to a vision-capable judge. The judge must ret
 Normalize the response into grade-compatible judge scores:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs image-judge-import \
+nbb scripts/reconstruction/audio_agent.cljs image-judge-import \
   --case-dir <case-dir> \
   --evidence <case-dir>/checks/<check-id>/evidence.json \
   --response <case-dir>/checks/<check-id>/spectrogram-image-judge-response.json
@@ -204,7 +204,7 @@ nbb scripts/fork_tales_audio_agent.cljs image-judge-import \
 Then include it in grading:
 
 ```bash
-nbb scripts/fork_tales_audio_agent.cljs grade \
+nbb scripts/reconstruction/audio_agent.cljs grade \
   --case-dir <case-dir> \
   --evidence <case-dir>/checks/<check-id>/evidence.json \
   --profile suno_reverse_accuracy \

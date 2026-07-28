@@ -44,7 +44,7 @@ Its place in the control hierarchy is:
 |---|---|---|
 | Planner Agent | SOTA multimodal planner; identifies ambiguity, creates/revises plan, initiates handoff | Gemini via Proxx / Google AI Studio |
 | Primary Agent | Executes targeted work; calls extraction tools and Gemma Check as needed | coding/audio agent with bash/read/write/render tools |
-| Gemma Check sub-agent | Fast local cross-lane checker used by Primary before handoff | `gemma4:e4b` via `scripts/fork_tales_audio_agent.cljs gemma-check` |
+| Gemma Check sub-agent | Fast local cross-lane checker used by Primary before handoff | `gemma4:e4b` via `scripts/reconstruction/audio_agent.cljs gemma-check` |
 | Adjudication layer | Aggregates bounded evidence against rubric | `grade`, judge scores, evidence observations |
 | QC Reviewer Agent | Smart reviewer after `handoff`; can accept/reject/revise | Gemini reviewer with accept/reject tool |
 | Human Auditor | Final structured external assessment | user/audience/human panel |

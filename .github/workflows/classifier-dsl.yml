@@ -1,0 +1,48 @@
+name: Classifier DSL
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    paths:
+      - "AGENTS.md"
+      - "PROCESS.md"
+      - "deps.edn"
+      - "docs/classifier-dsl.md"
+      - "docs/harnesses/**"
+      - ".opencode/AGENTS.md"
+      - ".opencode/skills/fork-tales-corpus/SKILL.md"
+      - "src/fork_tales/**"
+      - "resources/classifiers/**"
+      - "test/fork_tales/**"
+      - ".github/workflows/classifier-dsl.yml"
+      - ".github/workflows/apply-coderabbit-fixes.yml"
+  push:
+    branches: [main]
+    paths:
+      - "AGENTS.md"
+      - "PROCESS.md"
+      - "deps.edn"
+      - "docs/classifier-dsl.md"
+      - "docs/harnesses/**"
+      - ".opencode/AGENTS.md"
+      - ".opencode/skills/fork-tales-corpus/SKILL.md"
+      - "src/fork_tales/**"
+      - "resources/classifiers/**"
+      - "test/fork_tales/**"
+      - ".github/workflows/classifier-dsl.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          show-progress: false
+          persist-credentials: false
+      - uses: DeLaGuardo/setup-clojure@13.0
+        with:
+          cli: 1.12.2.1565
+      - name: Run classifier DSL tests
+        run: clojure -M:test

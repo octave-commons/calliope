@@ -1,0 +1,370 @@
+{:classifier-dsl/version 1
+ :program/id :fork-tales/theme-discovery-v1
+ :program/description
+ "Extract reusable song features, then discover provisional shared concepts from reproducible random groups of ten works."
+
+ :sources
+ {:fork-tales/songs-v1
+  {:source/id :fork-tales/songs-v1
+   :source/type :edn-projection
+   :source/location "ledgers/projections/songs-v1.edn"
+   :source/object-type :work
+   :source/options {:canonical-lyrics-root "docs/lyrics"
+                    :track-root "tracks"}}}
+
+ :models
+ {:fork-tales/gemma4-e4b-ollama
+  {:model/id :fork-tales/gemma4-e4b-ollama
+   :model/provider :ollama
+   :model/name "gemma4:e4b"
+   :model/endpoint "http://127.0.0.1:11434"
+   :model/modalities #{:text :image :audio}
+   :model/options {:num_ctx 32768
+                   :temperature 0.2}}
+
+  :fork-tales/gemma4-e4b-llama-cpp
+  {:model/id :fork-tales/gemma4-e4b-llama-cpp
+   :model/provider :llama-cpp
+   :model/name "gemma4:e4b"
+   :model/endpoint "http://127.0.0.1:8080/v1/chat/completions"
+   :model/modalities #{:text :image :audio}
+   :model/options {:temperature 0.2}}
+
+  :fork-tales/gemma4-e2b-ollama
+  {:model/id :fork-tales/gemma4-e2b-ollama
+   :model/provider :ollama
+   :model/name "gemma4:e2b"
+   :model/endpoint "http://127.0.0.1:11434"
+   :model/modalities #{:text :image :audio}
+   :model/options {:num_ctx 16384
+                   :temperature 0.1}}}
+
+ :features
+ {:fork-tales/song-sections-v1
+  {:feature/id :fork-tales/song-sections-v1
+   :feature/version 1
+   :feature/name "Song sections"
+   :feature/description
+   "Ordered explicit or inferred sections with bounded text and source spans."
+   :feature/family :structure
+   :feature/scopes #{:work :lyric-document}
+   :feature/aggregation :ordered
+   :feature/value-schema
+   [:vector {:min 1}
+    [:map {:closed true}
+     [:section/id [:string {:min 1}]]
+     [:section/type
+      [:enum :intro :verse :pre-chorus :chorus :hook :refrain :bridge
+       :interlude :instrumental :spoken :outro :coda :unknown]]
+     [:section/label [:string {:min 1}]]
+     [:section/ordinal [:int {:min 0}]]
+     [:section/start-line [:int {:min 1}]]
+     [:section/end-line [:int {:min 1}]]
+     [:section/text [:string {:min 1}]]]]}
+
+  :fork-tales/production-style-v1
+  {:feature/id :fork-tales/production-style-v1
+   :feature/version 1
+   :feature/name "Production style"
+   :feature/description
+   "Normalized production intent extracted from style prompts, delivery notes, lyrics, and render metadata without asserting that the audio realized it."
+   :feature/family :production
+   :feature/scopes #{:work :production-brief :style-prompt}
+   :feature/aggregation :none
+   :feature/value-schema
+   [:map {:closed true}
+    [:tempo
+     [:map {:closed true}
+      [:bpm-min {:optional true} [:int {:min 1 :max 400}]]
+      [:bpm-max {:optional true} [:int {:min 1 :max 400}]]
+      [:feel {:optional true}
+       [:enum :straight :half-time :double-time :rubato :destabilized :unknown]]]]
+    [:genres [:vector :string]]
+    [:moods [:vector :string]]
+    [:rhythm [:vector :string]]
+    [:texture [:vector :string]]
+    [:vocals [:vector :string]]
+    [:structure [:vector :string]]
+    [:negative-constraints [:vector :string]]
+    [:production-notes [:vector :string]]
+    [:evidence
+     [:vector
+      [:map {:closed true}
+       [:source [:enum :style-prompt :lyrics :metadata :artwork :audio]]
+       [:quote-or-description [:string {:min 1}]]]]]]}
+
+  :fork-tales/section-rhetoric-v1
+  {:feature/id :fork-tales/section-rhetoric-v1
+   :feature/version 1
+   :feature/name "Section rhetoric"
+   :feature/description
+   "Localized rhetorical mechanisms such as log interruption, call-and-response, mantra, contradiction, or final-hook mutation."
+   :feature/family :rhetoric
+   :feature/scopes #{:song-section :text-span}
+   :feature/aggregation :any
+   :feature/value-schema
+   [:vector
+    [:map {:closed true}
+     [:device [:string {:min 1}]]
+     [:confidence [:double {:min 0.0 :max 1.0}]]
+     [:evidence/quote [:string {:min 1}]]]]}
+
+  :fork-tales/audio-traits-v1
+  {:feature/id :fork-tales/audio-traits-v1
+   :feature/version 1
+   :feature/name "Audible production traits"
+   :feature/description
+   "Traits observed in a render or audio segment, kept distinct from requested production intent."
+   :feature/family :audio
+   :feature/scopes #{:render :audio-segment}
+   :feature/aggregation :ordered
+   :feature/value-schema
+   [:map {:closed true}
+    [:traits [:vector :string]]
+    [:energy-curve [:vector :string]]
+    [:vocal-observations [:vector :string]]
+    [:segment-evidence
+     [:vector
+      [:map {:closed true}
+       [:start-ms [:int {:min 0}]]
+       [:end-ms [:int {:min 1}]]
+       [:description [:string {:min 1}]]]]]]}
+
+  :fork-tales/visual-motifs-v1
+  {:feature/id :fork-tales/visual-motifs-v1
+   :feature/version 1
+   :feature/name "Visual motifs"
+   :feature/description
+   "Objects, symbols, palette relationships, and compositional motifs observed in artwork."
+   :feature/family :visual
+   :feature/scopes #{:artwork}
+   :feature/aggregation :any
+   :feature/value-schema
+   [:vector
+    [:map {:closed true}
+     [:motif [:string {:min 1}]]
+     [:role [:string {:min 1}]]
+     [:confidence [:double {:min 0.0 :max 1.0}]]
+     [:region {:optional true}
+      [:map {:closed true}
+       [:x [:double {:min 0.0 :max 1.0}]]
+       [:y [:double {:min 0.0 :max 1.0}]]
+       [:width [:double {:min 0.0 :max 1.0}]]
+       [:height [:double {:min 0.0 :max 1.0}]]]]]]}}
+
+ :selectors
+ {:fork-tales/random-ten-works-v1
+  {:selector/id :fork-tales/random-ten-works-v1
+   :selector/type :random
+   :selector/source :fork-tales/songs-v1
+   :selector/count 10
+   :selector/seed :run-seed
+   :selector/where [:not [:contains :flags :pasted-artifact]]
+   :selector/distinct-by :body-sha256}
+
+  :fork-tales/provided-work-v1
+  {:selector/id :fork-tales/provided-work-v1
+   :selector/type :provided
+   :selector/source :fork-tales/songs-v1
+   :selector/input-key :run/object-ids
+   :selector/max-count 1
+   :selector/where [:not [:contains :flags :pasted-artifact]]}}
+
+ :contexts
+ {:fork-tales/one-work-production-context-v1
+  {:context/id :fork-tales/one-work-production-context-v1
+   :context/selector :fork-tales/provided-work-v1
+   :context/steps
+   [{:step/op :hydrate
+     :step/input :selected
+     :step/resolver :fork-tales/lyric-and-production-metadata-v1
+     :step/modalities #{:text}
+     :step/as :work-material}
+    {:step/op :limit
+     :step/input :work-material
+     :step/max-chars-per-object 18000
+     :step/overflow :truncate-tail
+     :step/as :bounded-work-material}
+    {:step/op :render
+     :step/input :bounded-work-material
+     :step/template
+     "## {{title}}\nObject ID: {{object/id}}\n\n### Style and metadata\n{{style-and-metadata}}\n\n### Lyrics\n{{lyrics}}\n"
+     :step/as :context/work}]
+   :context/output-key :context/work
+   :context/token-budget {:max-tokens 16000
+                          :overflow :truncate}}
+
+  :fork-tales/ten-lyric-sections-v1
+  {:context/id :fork-tales/ten-lyric-sections-v1
+   :context/selector :fork-tales/random-ten-works-v1
+   :context/steps
+   [{:step/op :hydrate
+     :step/input :selected
+     :step/resolver :fork-tales/canonical-lyric-v1
+     :step/modalities #{:text}
+     :step/as :lyrics}
+    {:step/op :segment
+     :step/input :lyrics
+     :step/strategy :explicit-song-sections
+     :step/as :sections}
+    {:step/op :limit
+     :step/input :sections
+     :step/max-chars-per-object 12000
+     :step/overflow :truncate-tail
+     :step/as :bounded-sections}
+    {:step/op :attach-features
+     :step/input :bounded-sections
+     :step/features #{:fork-tales/production-style-v1}
+     :step/status-policy :derived-or-better
+     :step/missing :extract
+     :step/as :enriched-sections}
+    {:step/op :render
+     :step/input :enriched-sections
+     :step/template
+     "## {{title}}\nObject ID: {{object/id}}\n\n### Extracted production style\n{{features}}\n\n### Sections\n{{sections}}\n"
+     :step/as :context/songs}]
+   :context/output-key :context/songs
+   :context/token-budget {:max-tokens 28000
+                          :overflow :drop-largest-object}}}
+
+ :prompts
+ {:fork-tales/production-style-extraction-v1
+  {:prompt/id :fork-tales/production-style-extraction-v1
+   :prompt/version 1
+   :prompt/variables #{:context/work}
+   :prompt/output-contract :provider-native
+   :prompt/response-format :json
+   :prompt/messages
+   [{:message/role :system
+     :message/template
+     "You extract production intent conservatively. Distinguish requested style from audible fact. Do not invent BPM, instruments, structure, or vocal treatment. Preserve unusual language and negative instructions rather than normalizing them into generic genre tags."}
+    {:message/role :user
+     :message/template
+     "Extract a structured production-style feature from this work.\n\n{{context/work}}\n\nUse explicit style prompts and delivery notes first. Lyrics may support structural or vocal notes only when the text contains stage directions. Empty vectors are valid when evidence is absent."}]}
+
+  :fork-tales/shared-concepts-v1
+  {:prompt/id :fork-tales/shared-concepts-v1
+   :prompt/version 1
+   :prompt/variables #{:context/songs :run/seed}
+   :prompt/output-contract :provider-native
+   :prompt/response-format :json
+   :prompt/messages
+   [{:message/role :system
+     :message/template
+     "You are a conservative comparative analyst of one evolving song corpus. Treat every interpretation as provisional. Shared vocabulary alone is not a shared theme. Never claim evidence outside the supplied objects. Extracted production features are supporting observations, not unquestionable facts."}
+    {:message/role :user
+     :message/template
+     "The following ten works were selected with reproducible seed {{run/seed}}.\n\n{{context/songs}}\n\nIdentify at most eight concepts meaningfully shared by at least two works. A concept may be a theme, proposition, motif, narrative function, emotional trajectory, rhetorical device, or production pattern. Prefer precise concepts such as 'technical failure as personal exhaustion' over generic topics such as 'technology' or 'emotion'.\n\nFor every concept:\n- give a precise name and one-sentence definition;\n- choose the narrowest scope justified by the evidence;\n- identify every supporting object and exact lyric quote;\n- explain the shared basis;\n- explain one important difference between examples;\n- assign confidence from 0.0 to 1.0."}]}}
+
+ :outputs
+ {:fork-tales/song-sections-result-v1
+  {:output/id :fork-tales/song-sections-result-v1
+   :output/format :edn
+   :output/on-invalid :reject
+   :output/schema
+   [:map {:closed true}
+    [:object/id [:string {:min 1}]]
+    [:feature/id [:= :fork-tales/song-sections-v1]]
+    [:feature/value
+     [:ref :fork-tales/song-sections-v1]]]}
+
+  :fork-tales/production-style-result-v1
+  {:output/id :fork-tales/production-style-result-v1
+   :output/format :edn
+   :output/on-invalid :repair-once
+   :output/max-repair-attempts 1
+   :output/schema
+   [:map {:closed true}
+    [:object/id [:string {:min 1}]]
+    [:feature/id [:= :fork-tales/production-style-v1]]
+    [:feature/value
+     [:ref :fork-tales/production-style-v1]]]}
+
+  :fork-tales/theme-discovery-result-v1
+  {:output/id :fork-tales/theme-discovery-result-v1
+   :output/format :edn
+   :output/on-invalid :repair-once
+   :output/max-repair-attempts 1
+   :output/schema
+   [:map {:closed true}
+    [:batch-summary [:string {:min 1}]]
+    [:concepts
+     [:vector {:max 8}
+      [:map {:closed true}
+       [:concept/name [:string {:min 3}]]
+       [:concept/family
+        [:enum :theme :proposition :motif :narrative-function
+         :emotional-trajectory :rhetorical-device :production-pattern]]
+       [:concept/definition [:string {:min 10}]]
+       [:concept/scope [:enum :work :song-section :text-span]]
+       [:concept/members
+        [:vector {:min 2}
+         [:map {:closed true}
+          [:object/id [:string {:min 1}]]
+          [:section/id {:optional true} [:string {:min 1}]]
+          [:evidence/quote [:string {:min 1}]]
+          [:evidence/explanation [:string {:min 1}]]]]]
+       [:concept/shared-basis [:string {:min 1}]]
+       [:concept/important-difference [:string {:min 1}]]
+       [:concept/confidence [:double {:min 0.0 :max 1.0}]]]]]]}}
+
+ :extractors
+ {:fork-tales/song-sections-v1
+  {:extractor/id :fork-tales/song-sections-v1
+   :extractor/type :deterministic
+   :extractor/version 1
+   :extractor/description
+   "Parse explicit lyric section markers and preserve ordered source spans."
+   :extractor/resolver :fork-tales/explicit-song-sections-v1
+   :extractor/input-object-types #{:work :lyric-document}
+   :extractor/modalities #{:text}
+   :extractor/produces #{:fork-tales/song-sections-v1}
+   :extractor/output :fork-tales/song-sections-result-v1
+   :extractor/cache {:cache/reuse :exact-only
+                     :cache/key #{:object-content-sha256 :extractor-version}}
+   :extractor/emits {:event/type :feature/extracted
+                     :event/ledger "ledgers/classification.edn"
+                     :event/status :derived}}
+
+  :fork-tales/production-style-v1
+  {:extractor/id :fork-tales/production-style-v1
+   :extractor/type :llm
+   :extractor/version 1
+   :extractor/description
+   "Extract normalized production intent while preserving evidence and negative instructions."
+   :extractor/input-object-types #{:work :production-brief :style-prompt}
+   :extractor/modalities #{:text}
+   :extractor/produces #{:fork-tales/production-style-v1}
+   :extractor/model :fork-tales/gemma4-e2b-ollama
+   :extractor/context :fork-tales/one-work-production-context-v1
+   :extractor/prompt :fork-tales/production-style-extraction-v1
+   :extractor/output :fork-tales/production-style-result-v1
+   :extractor/cache {:cache/reuse :exact-only
+                     :cache/key #{:object-content-sha256 :extractor-version
+                                  :model-digest :prompt-version :context-version}}
+   :extractor/emits {:event/type :feature/extracted
+                     :event/ledger "ledgers/classification.edn"
+                     :event/status :derived}
+   :extractor/runtime {:timeout-ms 120000
+                       :max-attempts 2
+                       :temperature 0.1}}}
+
+ :classifiers
+ {:fork-tales/random-ten-theme-discovery-v1
+  {:classifier/id :fork-tales/random-ten-theme-discovery-v1
+   :classifier/version 1
+   :classifier/kind :concept-discovery
+   :classifier/description
+   "Propose shared concepts from ten randomly selected lyric works with cached production-style features attached."
+   :classifier/model :fork-tales/gemma4-e4b-ollama
+   :classifier/fallback-models [:fork-tales/gemma4-e4b-llama-cpp]
+   :classifier/context :fork-tales/ten-lyric-sections-v1
+   :classifier/prompt :fork-tales/shared-concepts-v1
+   :classifier/output :fork-tales/theme-discovery-result-v1
+   :classifier/requires-features #{:fork-tales/production-style-v1}
+   :classifier/emits {:event/type :concept/discovered
+                      :event/ledger "ledgers/classification.edn"
+                      :event/status :provisional}
+   :classifier/runtime {:timeout-ms 180000
+                        :max-attempts 2
+                        :temperature 0.2}}}}

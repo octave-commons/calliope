@@ -4,3 +4,4 @@ out/
 
 .lsp/
 .clj-kondo/
+.cpcache/

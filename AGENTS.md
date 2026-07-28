@@ -1,69 +1,132 @@
-# fork_tales_v2 — Agent Contract
+# fork_tales_v2 — Repository Agent Guide
 
-A muse/eta-mu/epiphany-participant workspace for the fork_tales corpus:
-~690 unique songs distilled from ~1,500 lyric files scattered across
-`~/Downloads/Suno Downloads`, `~/Music`, and `~/devel` (fork_tales v1,
-Lore/fork-tales, gates-of-aker).
+A muse/eta-mu/epiphany-participant workspace for the Fork Tales corpus: roughly
+690 unique songs distilled from about 1,500 lyric files, now connected to Suno
+track metadata, audio, artwork, classifier programs, and provisional concept
+work.
 
-## Orientation
+Read `PROCESS.md` first. It governs evidence, receipts, harness portability,
+completion claims, and acceptance. This file describes repository facts and
+engineering practice; it does not imply access to Err's local machine.
 
-- `ledgers/ingest.edn` — THE source of truth. Append-only EDN event ledger:
-  one event per line (`:doc/discovered`, `:ingest/run-started`,
-  `:ingest/run-completed`, `:projection/computed`). Every document carries
-  `:path :sha256 :body-sha256 :classification :title`.
-- `docs/lyrics/` — DERIVED. A pure projection over the ledger (pass 1:
-  exact-copy dedup by normalized body hash). Never edit by hand; regenerate
-  with `bb scripts/corpus.clj project`.
-- `docs/lyrics/index.edn` + `ledgers/projections/songs-v1.edn` — slug →
-  `{:title :body-sha256 :sha256s :sources :classification :flags}`.
-- `docs/lore/` — theme, style, and world-building synthesis (agent-written).
-- `receipts.edn` — muse receipt-river ledger for this repo (use the global
-  `receipt_river` tool, do not hand-edit).
+## Ground truth
+
+- `ledgers/ingest.edn` — append-only ingestion truth. Events preserve path,
+  content hashes, classification, title, basis, and run provenance.
+- `docs/lyrics/` — derived pass-1 projection. Never edit by hand to create new
+  truth; change sources or projection logic and regenerate.
+- `docs/lyrics/index.edn` and `ledgers/projections/songs-v1.edn` — song index
+  projections.
+- `ledgers/projections/variants-v1.edn` — pass-2 same-title similarity signals.
+  Similarity never silently becomes identity.
+- `tracks/` — corpus-linked audio, metadata, and artwork assets.
+- `resources/classifiers/` — pure-data classifier and feature-extractor programs.
+- `src/fork_tales/law/` — Malli contracts only.
+- `src/fork_tales/classifier/` — DSL validation and JVM runtime adapters.
+- `docs/lore/` — derived thematic, stylistic, and world-building synthesis.
+- `receipts.edn` — append-only Receipt River accountability ledger.
 
 ## Commands
 
+These commands require a harness with a local repository, shell, dependencies,
+and applicable services. Their presence here does not prove the current harness
+can execute them.
+
+```bash
+bb scripts/corpus.clj ingest    # append :doc/discovered events
+bb scripts/corpus.clj project   # rebuild lyrics and song projections
+bb scripts/corpus.clj stats     # summarize the latest ingest run
+bb scripts/corpus.clj variants  # produce same-title graded similarity signals
+
+clojure -M:test
+clojure -M:classify -- --seed 3721599729 --dry-run
+clojure -M:classify -- --seed 3721599729
+
+# Compare output contracts against a live endpoint.
+clojure -M:classify -- --seed 3721599729 --output-contract tool-call
 ```
-bb scripts/corpus.clj ingest    # scan roots, append :doc/discovered events
-bb scripts/corpus.clj project   # rebuild docs/lyrics from latest run
-bb scripts/corpus.clj stats     # summarize latest run
-bb scripts/corpus.clj variants  # pass 2: cluster same-title variants by edit distance
+
+The non-dry classifier run additionally requires its declared model endpoint
+and its declared models pulled locally:
+
+```bash
+ollama pull gemma4:e2b   # feature extraction
+ollama pull gemma4:e4b   # concept discovery
 ```
 
-## Ledger discipline (epiphany rules)
+An unreachable selected service is unavailable, never a successful empty result.
 
-1. Append-only. Never rewrite history; corrections are new events.
-2. Similarity is not identity. Pass 1 = exact hashes only. Later passes
-   (edit-distance, embeddings) are graded *signals*, recorded as events —
-   they never silently merge documents.
-3. Provenance forever: a projected song always links back to every source
-   path and hash it was derived from.
-4. Observed → derived → provisional → accepted. `docs/lyrics` is `derived`.
+## Classifier architecture
 
-## Dedup roadmap
+The classifier system is data-first:
 
-- [x] Pass 1: sha256 + normalized body-sha256 (strip Suno `ID:` line,
-      whitespace) — done, 1,522 files → 690 songs.
-- [x] Pass 2: edit-distance clustering for same-title/different-body variants
-      (Suno re-renders, mashups) — done, `bb scripts/corpus.clj variants`:
-      148 same-title clusters / 413 songs, line-level Levenshtein, recorded
-      as `:doc/variant-cluster` events + `ledgers/projections/variants-v1.edn`
-      (graded signals with per-edge similarity, never merged). Caveat:
-      title-extraction artifacts (e.g. the "## signal" cluster, mean-sim
-      0.07) group unrelated songs — use mean-similarity to filter.
-- [ ] Pass 3: embedding similarity + named-entity/theme extraction
-      (epiphany's intended territory; see `~/spaces/epiphany`).
+```text
+source objects
+  -> seeded selection
+  -> feature extraction and exact cache lookup
+  -> bounded multimodal context
+  -> model prompt and validated output
+  -> derived feature or provisional concept events
+```
+
+Keep these layers distinct:
+
+- source object versus projection;
+- work versus section versus text or audio span;
+- production intent versus audible observation;
+- feature observation versus classification;
+- provisional relationship versus accepted relation.
+
+Schemas precede adapters. Classifier definitions must remain non-executable data;
+runtime operations use closed vocabularies and explicit resolvers.
+
+## Ledger discipline
+
+1. Append-only: never rewrite historical events or receipts.
+2. Preserve provenance: content hashes, object IDs, selection seeds, model and
+   prompt identity, cache keys, and evidence remain inspectable.
+3. Preserve epistemic tier: observed -> derived -> provisional -> accepted.
+4. Never silently merge based on title, embedding, edit distance, repeated model
+   agreement, or shared vocabulary.
+5. Follow the Receipt River protocol in `PROCESS.md` after every substantive
+   repository write. A receipt is required even when work is performed through a
+   remote GitHub connector rather than OpenCode.
+
+## Harness boundaries
+
+Harness-specific instructions live outside this guide:
+
+| Harness | Instructions |
+|---|---|
+| OpenCode local environment | `.opencode/AGENTS.md` and `docs/harnesses/opencode-global.md` |
+| ChatGPT connectors | `docs/harnesses/chatgpt.md` |
+| Perplexity web research | `docs/harnesses/perplexity.md` |
+| Other | `docs/harnesses/README.md` plus a declared capability set |
+
+Never infer local filesystem, shell, model-server, plugin, or write access from a
+reference in this repository.
+
+## Corpus facts
+
+- Pass 1: 22,208 documents scanned -> 1,522 lyric files -> 690 unique songs.
+- Pass 2: 148 same-title clusters covering 413 songs, with line-level
+  Levenshtein signals.
+- Low-similarity title clusters may be extraction artifacts. Treat values below
+  roughly 0.3 as shared-title evidence only; values around 0.8 or above are
+  stronger rerender candidates, never automatic identity.
+- `:pasted-artifact` items remain in the corpus because they were rendered, but
+  should normally be excluded from thematic discovery samples.
 
 ## Ecosystem relationships
 
-- Consumer of the globally-published muse plugins (`receipt_river`,
-  `session_mycology`, `edn_ledger`) — no local plugin build.
-- `.ημ/ledgers/` is the actor-ledger root when eta-mu actors run here.
-- v1 prototype (`~/devel/orgs/octave-commons/fork_tales`) is inspiration
-  only — its receipt vocabulary and manifest ideas evolved into muse's
-  receipt schema; its code is not reused.
-- Music studio prototype: `~/devel/orgs/open-hax/openplanner/packages/agents/knoxx`.
+- Epiphany supplies the evidence-first relationship and archaeology discipline.
+- Eta-mu/Muse may supply local runtime extensions and compatibility tooling when
+  installed; they are not assumed in remote harnesses.
+- The Knoxx/OpenPlanner studio work remains historical design input.
+- Suno and other music models are renderers and evidence sources, not canonical
+  authorities for the corpus ontology.
 
 ## License
 
-Code: GPL-3.0-or-later. Creative works (lyrics, lore): CC-BY-SA-4.0.
-(Inherited from fork_tales v1's dual licensing.)
+Software and process documentation: GPL-3.0-or-later.
+Creative works and lore: CC-BY-SA-4.0 where applicable.

@@ -65,7 +65,7 @@
     (is (= "gemma4:e2b" (get-in plan [:model :model/name])))
     (is (= :context/work
            (get-in plan [:context :context/output-key])))
-    (is (= :inline-schema
+    (is (= :provider-native
            (get-in plan [:prompt :prompt/output-contract])))))
 
 (deftest closed-contracts-reject-unknown-keys

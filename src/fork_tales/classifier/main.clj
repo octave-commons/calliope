@@ -26,7 +26,18 @@
     "  --seed N             reproducible selection seed"
     "  --base-dir PATH      repository root (default .)"
     "  --dry-run            build selection and prompts without model calls"
+    "  --output-contract C  override every prompt's output contract:"
+    "                       provider-native | tool-call | inline-schema"
     "  --help               show this message"]))
+
+(defn override-output-contract
+  "Force every prompt in a program onto one output contract.
+
+  The contract is a property of the program, but comparing contracts against a
+  real endpoint means running the same program each way."
+  [program contract]
+  (update program :prompts update-vals
+          #(assoc % :prompt/output-contract contract)))
 
 (defn- parse-long!
   [value option]
@@ -61,6 +72,15 @@
         "--dry-run"
         (recur (next remaining) (assoc options :dry-run? true))
 
+        "--output-contract"
+        (recur (nnext remaining)
+               (assoc options :output-contract (keyword (second remaining))))
+
+        ;; clojure -M:classify already ends its :main-opts with -m <ns>, so a
+        ;; "--" separator is forwarded here rather than consumed by the CLI.
+        "--"
+        (recur (next remaining) options)
+
         "--help"
         (assoc options :help? true)
 
@@ -83,11 +103,13 @@
 (defn -main
   [& args]
   (try
-    (let [{:keys [help? program classifier base-dir] :as options}
+    (let [{:keys [help? program classifier base-dir output-contract] :as options}
           (parse-args args)]
       (if help?
         (println (usage))
-        (let [definition (load-program base-dir program)
+        (let [definition (cond-> (load-program base-dir program)
+                           output-contract
+                           (override-output-contract output-contract))
               result (runtime/run-classifier!
                       (runtime/default-runtime base-dir)
                       definition

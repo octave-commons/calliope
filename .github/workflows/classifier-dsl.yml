@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   patch-test-commit:
@@ -28,26 +27,25 @@ jobs:
 
       - name: Run expanded classifier DSL tests
         id: tests
-        env:
-          GH_TOKEN: ${{ github.token }}
+        continue-on-error: true
         run: |
-          set +e
-          clojure -M:test > /tmp/classifier-test.log 2>&1
-          status=$?
-          cat /tmp/classifier-test.log
-          if [ "$status" -ne 0 ]; then
-            {
-              echo "### Review-fix test failure"
-              echo
-              echo '```text'
-              tail -n 160 /tmp/classifier-test.log
-              echo '```'
-            } > /tmp/review-test-comment.md
-            gh pr comment 1 --body-file /tmp/review-test-comment.md
-            exit "$status"
-          fi
+          clojure -M:test > classifier-review-test.log 2>&1
+          cat classifier-review-test.log
+
+      - name: Upload classifier test log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: classifier-review-test-log
+          path: classifier-review-test.log
+          if-no-files-found: error
+
+      - name: Stop after failed tests
+        if: steps.tests.outcome == 'failure'
+        run: exit 1
 
       - name: Restore hardened workflow, record receipt, and commit
+        if: steps.tests.outcome == 'success'
         env:
           SOURCE_SHA: ${{ github.event.pull_request.head.sha }}
         run: |

@@ -1,145 +1,55 @@
-name: Integrate Reconstruction Evidence
+name: Verify Reconstruction Integration
 
 permissions:
-  contents: write
+  contents: read
 
 on:
   push:
     branches: [integrate/reconstruction-media-workbench]
     paths:
       - ".github/workflows/integrate-reconstruction.yml"
-      - "docs/kanban/stories/ft-003e-index-reconstruction-evidence.md"
-  pull_request:
-    branches: [design/media-workbench-v1]
-    types: [opened, synchronize, reopened]
-    paths:
-      - ".github/workflows/integrate-reconstruction.yml"
-      - "docs/kanban/stories/ft-003e-index-reconstruction-evidence.md"
 
 jobs:
-  integrate:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: integrate/reconstruction-media-workbench
           fetch-depth: 0
+          persist-credentials: false
 
-      - uses: DeLaGuardo/setup-clojure@13.0
-        with:
-          cli: 1.12.2.1565
-
-      - name: Merge reconstruction lineage and reconcile authority files
+      - name: Verify ancestry, receipt union, and exclusions
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          cp AGENTS.md /tmp/AGENTS.media-workbench.md
-          cp receipts.edn /tmp/receipts.media-workbench.edn
-          git fetch origin design/classifier-dsl-v1
-
-          set +e
-          git merge --no-commit --no-ff origin/design/classifier-dsl-v1
-          merge_rc=$?
-          set -e
-
-          conflicts="$(git diff --name-only --diff-filter=U || true)"
-          if [[ -n "$conflicts" ]]; then
-            while IFS= read -r path; do
-              case "$path" in
-                AGENTS.md|receipts.edn)
-                  ;;
-                deps.edn)
-                  git checkout --theirs -- "$path"
-                  git add "$path"
-                  ;;
-                .gitignore)
-                  git checkout --ours -- "$path"
-                  git add "$path"
-                  ;;
-                *)
-                  echo "Unexpected merge conflict: $path" >&2
-                  exit 1
-                  ;;
-              esac
-            done <<< "$conflicts"
-          elif [[ $merge_rc -ne 0 ]]; then
-            echo "Merge failed without named conflicts" >&2
-            exit "$merge_rc"
-          fi
-
-          cp /tmp/AGENTS.media-workbench.md AGENTS.md
-          cp /tmp/receipts.media-workbench.edn receipts.edn
+          git fetch origin design/classifier-dsl-v1 design/media-workbench-v1
+          git merge-base --is-ancestor origin/design/classifier-dsl-v1 HEAD
+          git merge-base --is-ancestor origin/design/media-workbench-v1 HEAD
 
           python3 - <<'PY'
           from pathlib import Path
           import subprocess
 
-          receipts = Path("receipts.edn")
-          current = receipts.read_text(encoding="utf-8").splitlines()
-          source = subprocess.check_output(
-              ["git", "show", "origin/design/classifier-dsl-v1:receipts.edn"],
-              text=True,
-          ).splitlines()
-          seen = set(current)
-          merged = list(current)
-          for line in source:
-              if line and line not in seen:
-                  merged.append(line)
-                  seen.add(line)
-          receipts.write_text("\n".join(merged) + "\n", encoding="utf-8")
+          current = Path("receipts.edn").read_text(encoding="utf-8").splitlines()
+          current_nonblank = [line for line in current if line]
+          if len(current_nonblank) != len(set(current_nonblank)):
+              raise SystemExit("integrated receipts.edn contains duplicate nonblank rows")
 
-          agents = Path("AGENTS.md")
-          text = agents.read_text(encoding="utf-8")
-          section = """## Audio reconstruction\n\n- `docs/reconstruction/` — operating model, contracts, rubrics, runtime split, and tool surveys for recovering owned renders as inspectable local music.\n- `resources/reconstruction/` — pure-data rubrics, path-root translations, handoff schemas, and agent contracts.\n- `src/fork_tales/law/audio.cljc` and `src/fork_tales/law/reconstruction.cljc` — reconstruction contracts and event law.\n- `scripts/reconstruction/` — canonical validation, preflight, grading, metrics, and Gemma-check programs.\n- `references/heresy-between/` — committed evidence and manifests; large regenerable render bytes remain local and are referenced by hash.\n- `ledgers/reconstruction.edn` — append-only reconstruction events. Historical evidence is never rewritten merely to repair stale paths; translate through recorded path-root rules.\n\n"""
-          if "## Audio reconstruction" not in text:
-              marker = "## Commands\n"
-              if marker not in text:
-                  raise SystemExit("AGENTS.md: missing Commands insertion marker")
-              text = text.replace(marker, section + marker, 1)
-              agents.write_text(text, encoding="utf-8")
+          for ref in ["origin/design/classifier-dsl-v1", "origin/design/media-workbench-v1"]:
+              source = subprocess.check_output(
+                  ["git", "show", f"{ref}:receipts.edn"], text=True
+              ).splitlines()
+              missing = [line for line in source if line and line not in current_nonblank]
+              if missing:
+                  raise SystemExit(f"{ref}: {len(missing)} receipt rows missing from integration")
+              print(f"{ref}: {len([line for line in source if line])} receipt rows preserved")
 
-          ignore = Path(".gitignore")
-          lines = ignore.read_text(encoding="utf-8").splitlines()
-          for entry in [".cpcache/", ".ημ/session-mycology/"]:
-              if entry not in lines:
-                  lines.append(entry)
-          ignore.write_text("\n".join(lines) + "\n", encoding="utf-8")
+          print(f"integrated receipts.edn: {len(current_nonblank)} unique rows")
           PY
-
-          git rm -rf --ignore-unmatch .cpcache .ημ/session-mycology
-          git add AGENTS.md receipts.edn .gitignore
-
-          remaining="$(git diff --name-only --diff-filter=U || true)"
-          if [[ -n "$remaining" ]]; then
-            echo "Unresolved conflicts remain:" >&2
-            echo "$remaining" >&2
-            exit 1
-          fi
 
           test ! -e .cpcache
           test ! -e .ημ/session-mycology
-
-      - name: Validate Rheos card graph
-        run: python3 scripts/validate_rheos_board.py
-
-      - name: Run Clojure tests
-        run: clojure -M:test
-
-      - name: Load reconstruction laws
-        run: clojure -M -e "(require 'fork-tales.law.audio 'fork-tales.law.reconstruction) (println :reconstruction-laws-loaded)"
-
-      - name: Parse append-only EDN streams
-        shell: bash
-        run: |
-          clojure -M -e '(require (quote [clojure.edn :as edn]) (quote [clojure.java.io :as io])) (doseq [p ["receipts.edn" "references/heresy-between/RENDERS-MANIFEST.edn"]] (with-open [r (java.io.PushbackReader. (io/reader p))] (loop [n 0] (let [x (edn/read {:eof ::eof} r)] (if (= x ::eof) (println p n) (recur (inc n)))))))'
-
-      - name: Commit tested merge
-        shell: bash
-        run: |
-          set -euo pipefail
-          git add -A
-          git commit -m "merge: integrate reconstruction evidence into media workbench"
-          git push origin HEAD:integrate/reconstruction-media-workbench
+          test -f docs/reconstruction/README.md
+          test -f references/heresy-between/RENDERS-MANIFEST.edn
+          test -f docs/kanban/stories/ft-003e-index-reconstruction-evidence.md

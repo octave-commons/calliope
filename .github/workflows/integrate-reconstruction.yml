@@ -107,7 +107,7 @@ jobs:
           ignore.write_text("\n".join(lines) + "\n", encoding="utf-8")
           PY
 
-          git rm -r --ignore-unmatch .cpcache .ημ/session-mycology
+          git rm -rf --ignore-unmatch .cpcache .ημ/session-mycology
           git add AGENTS.md receipts.edn .gitignore
 
           remaining="$(git diff --name-only --diff-filter=U || true)"

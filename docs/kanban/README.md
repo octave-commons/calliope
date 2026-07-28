@@ -18,12 +18,16 @@ The first active card is FT-000A, which requests an explicit human disposition o
 the proposed ADR and open design. Implementation cards are intentionally not
 `ready` yet.
 
-When Rheos is available locally:
+When Rheos is available locally, run from the repository root so it discovers
+`openhax.kanban.json`:
 
 ```bash
-eta-mu kanban list --tasks-dir docs/kanban
-eta-mu kanban board snapshot --tasks-dir docs/kanban --out docs/kanban/board.json
+eta-mu kanban list
+eta-mu kanban board snapshot --out docs/kanban/board.json
 ```
+
+Use `--tasks-dir` only for an intentional board-location override or configuration
+diagnostics.
 
 `board.json` is generated and was not created by the remote ChatGPT/GitHub
 connector design pass.

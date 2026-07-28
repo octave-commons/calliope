@@ -58,9 +58,19 @@ bb scripts/corpus.clj variants  # produce same-title graded similarity signals
 clojure -M:test
 clojure -M:classify -- --seed 3721599729 --dry-run
 clojure -M:classify -- --seed 3721599729
+
+# Compare output contracts against a live endpoint.
+clojure -M:classify -- --seed 3721599729 --output-contract tool-call
 ```
 
-The non-dry classifier run additionally requires its declared model endpoint.
+The non-dry classifier run additionally requires its declared model endpoint
+and its declared models pulled locally:
+
+```bash
+ollama pull gemma4:e2b   # feature extraction
+ollama pull gemma4:e4b   # concept discovery
+```
+
 An unreachable selected service is unavailable, never a successful empty result.
 
 ## Classifier architecture

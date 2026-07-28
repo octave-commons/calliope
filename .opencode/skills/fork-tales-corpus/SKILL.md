@@ -57,7 +57,9 @@ They are historical source preferences, not portable harness capabilities.
   mean-sim 0.07) are unrelated songs. Treat `:mean-similarity` < ~0.3 as
   "shared title only", ≥ ~0.8 as true re-render candidates.
 - `:pasted-artifact` flags = Suno "songs" whose body is a pasted chat log or
-  zip manifest. Kept (they were rendered), but filter them for lore analysis.
+  zip manifest. Keep them in the rendered corpus, but exclude them from thematic
+  discovery and lore analysis by default. Include them only when deliberately
+  requested.
 
 ## Working with ledgers
 

@@ -8,8 +8,11 @@
             [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.string :as str]
+            [clojure.walk :as walk]
             [fork-tales.classifier.dsl :as dsl]
-            [malli.core :as m])
+            [malli.core :as m]
+            [malli.json-schema :as json-schema]
+            [malli.transform :as mt])
   (:import [java.net URI]
            [java.net.http HttpClient HttpRequest HttpRequest$BodyPublishers
             HttpResponse$BodyHandlers]
@@ -176,7 +179,14 @@
 
       :explicit
       (let [by-id (into {} (map (juxt :object/id identity)) filtered)]
-        (mapv by-id (:selector/object-ids selector)))
+        (mapv
+         (fn [object-id]
+           (or (get by-id object-id)
+               (throw
+                (ex-info "Explicit selector references an unknown or filtered-out object."
+                         {:selector/id (:selector/id selector)
+                          :object/id object-id}))))
+         (:selector/object-ids selector)))
 
       :provided
       (->> (get inputs (:selector/input-key selector) [])
@@ -445,6 +455,36 @@
       :json (json/read-str body :key-fn keyword)
       (throw (ex-info "Unknown output format." {:output/format format})))))
 
+(defn json-safe
+  "Render every keyword as its FULL name so namespaces survive JSON encoding.
+
+  `clojure.data.json` writes `:object/id` as `\"id\"`, silently dropping the
+  namespace. A schema encoded that way asks the model for the wrong keys, so
+  keywords are stringified explicitly before the payload is serialized."
+  [form]
+  (walk/postwalk #(if (keyword? %) (subs (str %) 1) %) form))
+
+(defn ->json-schema
+  "Translate a compiled Malli output contract into the JSON Schema that Ollama's
+  structured-output and tool-calling modes consume."
+  [schema]
+  (json-safe (json-schema/transform schema)))
+
+(defn decode-json-value
+  "Coerce a JSON-decoded value into the EDN types the Malli contract declares.
+
+  This is what turns `\"destabilized\"` into `:destabilized`, the string
+  `\"fork-tales/production-style-v1\"` into a namespaced keyword, and an
+  integer `1` into `1.0` where the contract wants a double."
+  [schema value]
+  (m/decode schema value (mt/json-transformer)))
+
+(defn tool-name
+  "Derive a stable function name for tool-calling mode from an output id."
+  [output-id]
+  (-> (str "emit_" (name output-id))
+      (str/replace #"[^A-Za-z0-9_]+" "_")))
+
 (defn- http-post-json
   [endpoint payload timeout-ms]
   (let [client (HttpClient/newHttpClient)
@@ -463,37 +503,87 @@
                        :http/endpoint endpoint})))
     (json/read-str (.body response) :key-fn keyword)))
 
+(defn- tool-call-arguments
+  "Extract the single expected tool call, or explain why none arrived."
+  [calls message provider]
+  (if-let [call (first calls)]
+    (get-in call [:function :arguments])
+    (throw (ex-info "Model returned no tool call."
+                    {:model/provider provider
+                     :message/content (:content message)
+                     :message/thinking (:thinking message)}))))
+
 (defn invoke-model-http
-  [{:keys [model messages runtime-options]}]
+  "Call one model endpoint.
+
+  Returns the assistant's text, except in tool-calling mode where it returns
+  the already-decoded argument map. Callers must handle both."
+  [{:keys [model messages runtime-options output-schema tools?]}]
   (let [provider (:model/provider model)
         timeout-ms (or (:timeout-ms runtime-options) 120000)
         temperature (or (:temperature runtime-options)
                         (get-in model [:model/options :temperature])
-                        0.0)]
+                        0.0)
+        json-schema (when output-schema (->json-schema output-schema))
+        tool-fn-name (:tool-name runtime-options)]
     (case provider
       :ollama
       (let [base (str/replace (:model/endpoint model) #"/$" "")
             response
             (http-post-json
              (str base "/api/chat")
-             {:model (:model/name model)
-              :messages messages
-              :stream false
-              :options (merge (:model/options model)
-                              {:temperature temperature})}
+             (cond-> {:model (:model/name model)
+                      :messages messages
+                      :stream false
+                      :options (merge (:model/options model)
+                                      {:temperature temperature})}
+               (and json-schema (not tools?))
+               (assoc :format json-schema)
+
+               (and json-schema tools?)
+               (assoc :tools [{:type "function"
+                               :function {:name tool-fn-name
+                                          :description
+                                          "Emit the extracted result."
+                                          :parameters json-schema}}]))
              timeout-ms)]
-        (get-in response [:message :content]))
+        (if tools?
+          (tool-call-arguments (get-in response [:message :tool_calls])
+                               (:message response)
+                               provider)
+          (get-in response [:message :content])))
 
       :llama-cpp
       (let [response
             (http-post-json
              (:model/endpoint model)
-             {:model (:model/name model)
-              :messages messages
-              :temperature temperature
-              :stream false}
+             (cond-> {:model (:model/name model)
+                      :messages messages
+                      :temperature temperature
+                      :stream false}
+               (and json-schema (not tools?))
+               (assoc :response_format
+                      {:type "json_schema"
+                       :json_schema {:name "output" :schema json-schema}})
+
+               (and json-schema tools?)
+               (assoc :tools [{:type "function"
+                               :function {:name tool-fn-name
+                                          :description
+                                          "Emit the extracted result."
+                                          :parameters json-schema}}]))
              timeout-ms)]
-        (get-in response [:choices 0 :message :content]))
+        (if tools?
+          ;; OpenAI-compatible servers serialize arguments as a JSON string.
+          (let [calls (get-in response [:choices 0 :message :tool_calls])
+                raw (get-in (first calls) [:function :arguments])]
+            (if (nil? raw)
+              (tool-call-arguments nil
+                                   (get-in response [:choices 0 :message])
+                                   provider)
+              (cond-> raw
+                (string? raw) (json/read-str :key-fn keyword))))
+          (get-in response [:choices 0 :message :content])))
 
       (throw (ex-info "Unknown model provider."
                       {:model/provider provider})))))
@@ -504,6 +594,28 @@
     (invoke! request)
     (invoke-model-http request)))
 
+(defn contract-instruction
+  "The closing instruction that makes a prompt agree with its output contract.
+
+  The contract decides how the model is constrained, so it must also decide
+  what the model is told. Telling a model to \"return one EDN value\" while
+  handing it a function to call yields neither."
+  [contract output]
+  (case contract
+    :inline-schema
+    (str "\n\nOutput Malli schema:\n" (pr-str (:output/schema output)))
+
+    ;; Ollama's own guidance is to still ask for JSON in the prompt; the
+    ;; grammar constrains the shape, the instruction sets the intent.
+    :provider-native
+    "\n\nReturn the result as JSON matching the required schema. Return no prose."
+
+    :tool-call
+    (str "\n\nCall the " (tool-name (:output/id output))
+         " function with the extracted values. Do not reply with prose.")
+
+    nil))
+
 (defn- prompt-messages
   [prompt variables output]
   (let [messages
@@ -512,9 +624,9 @@
            {:role (name (:message/role message))
             :content (render-template (:message/template message) variables)})
          (:prompt/messages prompt))]
-    (if (= :inline-schema (:prompt/output-contract prompt))
-      (update-in messages [(dec (count messages)) :content]
-                 str "\n\nOutput Malli schema:\n" (pr-str (:output/schema output)))
+    (if-let [instruction (contract-instruction (:prompt/output-contract prompt)
+                                               output)]
+      (update-in messages [(dec (count messages)) :content] str instruction)
       messages)))
 
 (defn- validate-output
@@ -526,15 +638,26 @@
   [plan]
   (into [(:model plan)] (:fallback-models plan)))
 
+(defn structured-contract?
+  "Does this output contract put a machine-checked schema on the wire?"
+  [contract]
+  (contains? #{:provider-native :tool-call} contract))
+
 (defn call-model-and-validate
   [runtime plan messages]
   (let [output (:output plan)
         schema (:output-schema plan)
-        format (:output/format output)
+        contract (get-in plan [:prompt :prompt/output-contract])
+        structured? (structured-contract? contract)
+        tools? (= :tool-call contract)
+        ;; A schema-constrained endpoint always answers in JSON, whatever the
+        ;; program declared for the free-text path.
+        format (if structured? :json (:output/format output))
         candidates (model-candidates plan)
         runtime-options
-        (or (get-in plan [:classifier :classifier/runtime])
-            (get-in plan [:extractor :extractor/runtime]))
+        (cond-> (or (get-in plan [:classifier :classifier/runtime])
+                    (get-in plan [:extractor :extractor/runtime]))
+          tools? (assoc :tool-name (tool-name (:output/id output))))
         max-attempts (or (:max-attempts runtime-options) 1)
         max-repairs (case (:output/on-invalid output)
                       :reject 0
@@ -557,7 +680,9 @@
               {:text (invoke-model runtime
                                    {:model model
                                     :messages current-messages
-                                    :runtime-options runtime-options})}
+                                    :runtime-options runtime-options
+                                    :output-schema (when structured? schema)
+                                    :tools? tools?})}
               (catch Exception error
                 {:error error}))]
         (if-let [error (:error invocation)]
@@ -565,20 +690,48 @@
                  repair
                  current-messages
                  (conj failures {:model (:model/id model)
-                                 :error (.getMessage ^Exception error)}))
+                                 ;; ConnectException carries a nil message, so
+                                 ;; fall back to the class name to keep the
+                                 ;; failure list diagnosable.
+                                 :error (or (.getMessage ^Exception error)
+                                            (.getName (class error)))}))
           (let [text (:text invocation)
                 parsed
                 (try
-                  {:value (parse-model-output format text)}
+                  ;; Tool calling yields an already-decoded argument map;
+                  ;; every other path yields text that still needs parsing.
+                  (let [raw (if (string? text)
+                              (parse-model-output format text)
+                              text)]
+                    {:value (if structured?
+                              (decode-json-value schema raw)
+                              raw)})
                   (catch Exception error
                     {:error error}))]
             (if-let [error (:error parsed)]
-              (recur (inc attempt)
-                     repair
-                     current-messages
-                     (conj failures {:model (:model/id model)
-                                     :error (.getMessage ^Exception error)
-                                     :raw text}))
+              ;; A malformed reply is repairable: tell the model what broke.
+              ;; Resending the identical prompt just reproduces the failure.
+              (if (< repair max-repairs)
+                (recur (inc attempt)
+                       (inc repair)
+                       (conj current-messages
+                             {:role "assistant" :content (str text)}
+                             {:role "user"
+                              :content
+                              (str "The previous response could not be parsed as "
+                                   (name format) ": "
+                                   (.getMessage ^Exception error)
+                                   "\nReturn only a single well-formed "
+                                   (name format) " value.")})
+                       (conj failures {:model (:model/id model)
+                                       :error (.getMessage ^Exception error)
+                                       :raw text}))
+                (recur (inc attempt)
+                       repair
+                       current-messages
+                       (conj failures {:model (:model/id model)
+                                       :error (.getMessage ^Exception error)
+                                       :raw text})))
               (let [value (:value parsed)
                     explanation (validate-output schema value)]
                 (if-not explanation
@@ -636,7 +789,14 @@
 
         :else
         (let [events (run-extractor! state producer-id object)
-              event (first (filter #(= feature-id (:feature/id %)) events))]
+              event
+              (or (first (filter #(= feature-id (:feature/id %)) events))
+                  (throw
+                   (ex-info "Extractor ran but did not produce the requested feature."
+                            {:feature/id feature-id
+                             :extractor/id producer-id
+                             :object/id (:object/id object)
+                             :produced-feature-ids (mapv :feature/id events)})))]
           {:feature/id feature-id
            :feature/value (:feature/value event)
            :feature/status (:event/status event)
@@ -655,7 +815,7 @@
                  (case (:step/op step)
                    :hydrate
                    (mapv #((resolver runtime (:step/resolver step)) runtime %)
-                         (get bindings :selected))
+                         input)
 
                    :segment
                    (case (:step/strategy step)

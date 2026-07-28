@@ -34,3 +34,12 @@
   spore: 20260727-200827-recover-scrubbed-literals-from-pre-purge-blobs.md
   receipt-refs: commit 43024c7
   note: Highest-value phase and the worst-executed. Execution found two breakages that all prior reading had missed, including a runner that could not start. But I asserted the DSP lane's status three times before exercising it, and mis-invoked two CLIs by assuming flags. Run it early; assertion is not evidence.
+- ts: 2026-07-28T01:13:48.337220239Z
+  session: octave-commons/fork_tales_v2 (throwaway clone; see receipt-refs for durable commits)
+  task: Act on the check-inputs-before-blaming-the-tool spore: build the preflight lane
+  p-efficiency: 0.85
+  p-friction: 0.25
+  p-skill-candidate: 0.3
+  spore: none
+  receipt-refs: spore 20260727-200827-check-inputs-before-blaming-the-tool
+  note: Loop closed rather than merely recorded: the spore named silent degradation as the real defect, so it became scripts/reconstruction/preflight.clj plus declared rules in path-roots.edn. Verified by the number that misled me earlier -- stale evidence grades coverage 0.26, preflighted grades 0.3104, which is the committed value. Spore left incubating; the fix does not promote it.

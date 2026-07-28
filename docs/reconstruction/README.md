@@ -62,6 +62,7 @@ Two rules that are easy to get wrong, both from `operating-model.md`:
 | Agent contracts | [`../../resources/reconstruction/contracts/`](../../resources/reconstruction/contracts/) |
 | Programs | [`../../scripts/reconstruction/`](../../scripts/reconstruction/) |
 | Runtime boundary (bb vs JVM) | [`runtime-split.md`](./runtime-split.md) |
+| Path translation rules | [`../../resources/reconstruction/path-roots.edn`](../../resources/reconstruction/path-roots.edn) |
 | Event ledger law | [`../../src/fork_tales/law/reconstruction.cljc`](../../src/fork_tales/law/reconstruction.cljc) |
 | Evidence artifacts | [`../../references/heresy-between/`](../../references/heresy-between/) |
 
@@ -104,6 +105,29 @@ landed in a near-empty directory.
 and the ledger is append-only: correcting evidence after the fact would destroy
 the provenance it exists to hold. Read them as written, translate on the way out.
 
+"Translate on the way out" is now mechanised, because leaving it to discipline
+failed immediately. A grader handed stale evidence does **not** error — it scores
+the unreachable features null and reports lower coverage, so a broken input looks
+exactly like a weak candidate. Measured on the v16 opening audit: stale evidence
+grades `coverage 0.26 / score 0.25`, the same evidence preflighted grades
+`0.3104 / 0.2943`, which is the committed result. Nothing warned.
+
+So run preflight first. It classifies every embedded path as resolved,
+translated, missing, or **shadowed** (still resolves as written *and* a rule
+matches — the decoy case), exits non-zero on anything missing, and appends an
+`:evidence/preflighted` event:
+
+```bash
+bb scripts/reconstruction/preflight.clj EVIDENCE... --rewrite-to /tmp/pf
+python3 scripts/reconstruction/audio_grade.py --evidence /tmp/pf/evidence.json --out-json g.json
+```
+
+Translation rules live in
+[`../../resources/reconstruction/path-roots.edn`](../../resources/reconstruction/path-roots.edn),
+each carrying a `:basis` — a rule without a recorded reason is a guess, and a
+guess that silently succeeds is the failure this mechanism exists to prevent.
+`--rewrite-to` writes scratch copies only; committed artifacts are never touched.
+
 ## Where the loop actually stands
 
 Ten full reconstruction versions (through `v10-melband-hybrid-body`) and sixteen
@@ -144,6 +168,7 @@ Require a harness with a local shell, a JVM/NBB toolchain, and the declared
 endpoints. Their presence here does not prove the current harness can run them.
 
 ```bash
+bb scripts/reconstruction/preflight.clj EVIDENCE...  # do the paths still resolve?
 bb scripts/reconstruction/validate.clj PACKET...   # μ1-μ6 handoff invariants
 clojure -M:test                                    # law + interpreter tests
 clojure -M:metrics ...                             # DSP lane (librosa via libpython-clj)

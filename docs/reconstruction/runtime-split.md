@@ -30,6 +30,7 @@ so libpython-clj works fine on the JVM side.
 
 | Lane | Runtime | Why |
 |---|---|---|
+| Evidence path preflight | bb | pure data; must run before any grader |
 | Handoff validation (μ1-μ6) | bb | pure data; instant startup |
 | Rubric grading | bb | pure arithmetic over JSON |
 | Judge-output parsing | bb | regex and string work |

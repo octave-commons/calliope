@@ -1,0 +1,16 @@
+;; Declared root translations for paths embedded in preserved evidence.
+;;
+;; Artifacts under references/ are append-only records and are never rewritten,
+;; so stale roots are corrected at READ time by these rules instead. Order
+;; matters: the first matching :from wins, so put longer prefixes first.
+;;
+;; Every rule carries a :basis. A translation without a recorded reason is a
+;; guess, and a guess that silently succeeds is the failure mode this whole
+;; mechanism exists to prevent.
+{:rules
+ [{:from "/home/err/devel/Music/fork-tales"
+   :to   "/home/err/Music/fork-tales"
+   :basis "Artifacts predate the ~/Music relocation. devel/Music/fork-tales does exist but holds one unrelated file, so the stale path resolves to a decoy rather than erroring — observed 2026-07-27."}
+  {:from "/home/err/devel/Music/heresy_between"
+   :to   "/home/err/Music/heresy_between"
+   :basis "Same relocation; source Suno renders and metadata live under ~/Music."}]}

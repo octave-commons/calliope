@@ -27,6 +27,7 @@
 (def event-types
   "Closed vocabulary of reconstruction event types, in pipeline order."
   [:reconstruction/run-started
+   :evidence/preflighted
    :stem/separated
    :f0/extracted
    :notes/derived
@@ -114,6 +115,24 @@
      [:case/reference-root :string]
      [:objective :string]
      [:mode [:enum :scribe :composition]]]]
+
+   ;; Whether a preserved artifact's embedded paths still resolve. Exists because
+   ;; a grader fed unreachable evidence scores those features null and reports
+   ;; lower coverage instead of failing, so a broken input imitates a weak
+   ;; candidate. This event makes that difference explicit and auditable.
+   :ft.rec/EvidencePreflighted
+   [:merge
+    [:ref :ft.rec/EventBase]
+    [:map
+     [:event/tier [:= :observed]]
+     [:artifact [:ref :ft.rec/ArtifactRef]]
+     [:ok? :boolean]
+     [:total [:int {:min 0}]]
+     [:counts [:map-of :keyword [:int {:min 0}]]]
+     [:missing [:sequential :string]]
+     [:translated {:optional true} [:sequential [:tuple :string :string]]]
+     [:shadowed {:optional true} [:sequential [:tuple :string :string]]]
+     [:rules-source :string]]]
 
    :ft.rec/StemSeparated
    [:merge
@@ -271,6 +290,7 @@
    :ft.rec/Event
    [:multi {:dispatch :event/type}
     [:reconstruction/run-started  [:ref :ft.rec/RunStarted]]
+    [:evidence/preflighted        [:ref :ft.rec/EvidencePreflighted]]
     [:stem/separated              [:ref :ft.rec/StemSeparated]]
     [:f0/extracted                [:ref :ft.rec/F0Extracted]]
     [:notes/derived               [:ref :ft.rec/NotesDerived]]

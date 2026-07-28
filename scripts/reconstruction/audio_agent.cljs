@@ -638,16 +638,16 @@
                    :candidate (:text candidate-stt-result)}}))))))
 
 (defn usage! []
-  (println "Usage: nbb scripts/fork_tales_audio_agent.cljs <init|session-init|hear|stt|slice|filter|label|note|ask|compare|ab|metrics|gemma-check|audit|grade|image-judge-prompt|image-judge-import|handoff-validate> [--key value]")
-  (println "Example: nbb scripts/fork_tales_audio_agent.cljs hear --case-dir /tmp/case --session-id opening --role original --audio a.wav --start 0 --duration 6 --expected 'げんき...'")
-  (println "Example: nbb scripts/fork_tales_audio_agent.cljs stt --case-dir /tmp/case --session-id opening --role candidate --audio b.wav --start 0 --duration 8")
-  (println "Example: nbb scripts/fork_tales_audio_agent.cljs metrics --case-dir /tmp/case --role opening --original original.wav --candidate candidate.wav")
-  (println "Example: nbb scripts/fork_tales_audio_agent.cljs gemma-check --case-dir /tmp/case --session-id opening --role opening --original vocals.wav --candidate render.wav --start 0 --duration 8 --expected '元気だよって一行だけのメッセージ'")
+  (println "Usage: nbb scripts/reconstruction/audio_agent.cljs <init|session-init|hear|stt|slice|filter|label|note|ask|compare|ab|metrics|gemma-check|audit|grade|image-judge-prompt|image-judge-import|handoff-validate> [--key value]")
+  (println "Example: nbb scripts/reconstruction/audio_agent.cljs hear --case-dir /tmp/case --session-id opening --role original --audio a.wav --start 0 --duration 6 --expected 'げんき...'")
+  (println "Example: nbb scripts/reconstruction/audio_agent.cljs stt --case-dir /tmp/case --session-id opening --role candidate --audio b.wav --start 0 --duration 8")
+  (println "Example: nbb scripts/reconstruction/audio_agent.cljs metrics --case-dir /tmp/case --role opening --original original.wav --candidate candidate.wav")
+  (println "Example: nbb scripts/reconstruction/audio_agent.cljs gemma-check --case-dir /tmp/case --session-id opening --role opening --original vocals.wav --candidate render.wav --start 0 --duration 8 --expected '元気だよって一行だけのメッセージ'")
   (println "Note: audit is retained as a legacy alias for gemma-check; it is a cheap local pre-review check, not the final QC reviewer.")
-  (println "Example: nbb scripts/fork_tales_audio_agent.cljs grade --case-dir /tmp/case --evidence /tmp/case/checks/opening/evidence.json --profile suno_reverse_accuracy")
-  (println "Example: nbb scripts/fork_tales_audio_agent.cljs image-judge-prompt --case-dir /tmp/case --evidence /tmp/case/checks/opening/evidence.json")
-  (println "Example: nbb scripts/fork_tales_audio_agent.cljs image-judge-import --case-dir /tmp/case --evidence /tmp/case/checks/opening/evidence.json --response /tmp/case/checks/opening/spectrogram-image-judge-response.json")
-  (println "Example: nbb scripts/fork_tales_audio_agent.cljs handoff-validate --case-dir /tmp/case --packets plan.json,qc-review.json --catalog approved-reference-catalog.json"))
+  (println "Example: nbb scripts/reconstruction/audio_agent.cljs grade --case-dir /tmp/case --evidence /tmp/case/checks/opening/evidence.json --profile suno_reverse_accuracy")
+  (println "Example: nbb scripts/reconstruction/audio_agent.cljs image-judge-prompt --case-dir /tmp/case --evidence /tmp/case/checks/opening/evidence.json")
+  (println "Example: nbb scripts/reconstruction/audio_agent.cljs image-judge-import --case-dir /tmp/case --evidence /tmp/case/checks/opening/evidence.json --response /tmp/case/checks/opening/spectrogram-image-judge-response.json")
+  (println "Example: nbb scripts/reconstruction/audio_agent.cljs handoff-validate --case-dir /tmp/case --packets plan.json,qc-review.json --catalog approved-reference-catalog.json"))
 
 (defn -main []
   (let [argv (vec (js->clj (.-argv js/process)))

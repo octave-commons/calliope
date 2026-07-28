@@ -32,15 +32,29 @@ so libpython-clj works fine on the JVM side.
 |---|---|---|
 | Evidence path preflight | bb | pure data; must run before any grader |
 | Handoff validation (μ1-μ6) | bb | pure data; instant startup |
-| Rubric grading | bb | pure arithmetic over JSON |
-| Judge-output parsing | bb | regex and string work |
+| Rubric grading | bb (planned) / Python today | pure arithmetic over JSON; still `audio_grade.py` |
+| Judge-output parsing | bb (planned) / Python today | regex and string work; still `spectrogram_image_judge.py` |
 | Event ledger | both | plain EDN append; no runtime-specific deps |
-| Spectral metrics, spectrograms | **JVM** | librosa + matplotlib via libpython-clj |
+| Spectral metrics, spectrograms | **JVM** (declared) / venv Python today | librosa + matplotlib; see the caveat below |
 
 ```bash
-bb scripts/reconstruction/validate.clj PACKET...   # bb lane
-clojure -M:metrics ...                             # JVM + libpython-clj lane
+bb scripts/reconstruction/validate.clj PACKET...   # bb lane, runnable now
+clojure -M:metrics ...                             # DECLARED, NOT YET RUNNABLE
 ```
+
+`clojure -M:metrics` fails today — measured 2026-07-28:
+
+```
+$ clojure -M:metrics --help
+Could not locate reconstruction/metrics__init.class, reconstruction/metrics.clj
+  or reconstruction/metrics.cljc on classpath
+```
+
+The alias exists and its deps resolve (libpython-clj 2.025 downloads and
+`libpython-clj2.python` loads on the JVM), but nobody has written
+`reconstruction.metrics` yet. Until then the DSP lane is `audio_metrics.py` run
+under the venv below. The boundary in this table is the design; the runnable
+surface is the venv.
 
 ## The ledger is the IPC
 
@@ -48,6 +62,15 @@ The two runtimes never call each other. They both append events to
 `ledgers/reconstruction.edn`, and every derived view is a projection rebuilt from
 that file. `reconstruction.ledger` deliberately requires nothing bb-only and
 nothing JVM-only, so it loads identically in both.
+
+One classpath caveat, measured 2026-07-28: the namespace is *portable*, but on
+the JVM it is not *reachable* by default. `bb.edn` puts `scripts` on the bb
+classpath; `deps.edn` `:paths` is `["src" "resources"]`, so a bare
+`clojure -M -e "(require 'reconstruction.ledger)"` raises
+`FileNotFoundException`. The `:metrics` alias supplies
+`:extra-paths ["scripts"]`, which is the intended JVM route — and with that path
+added, the namespace loads and appends and re-reads events identically to bb
+(verified both directions on the same ledger file).
 
 This is what makes the pipeline native to the event-sourcing process rather than
 merely scripted by it: a stage's output is an immutable event, not a return
@@ -98,9 +121,38 @@ libpython-clj must be pointed at this same interpreter.
 
 | Tool | Status |
 |---|---|
-| `handoff_validate.py` | **ported** → `fork-tales.reconstruction.handoff` + `scripts/reconstruction/validate.clj`. Python file retired. |
+| `handoff_validate.py` | **ported** → `fork-tales.reconstruction.handoff` + `scripts/reconstruction/validate.clj`. Python file retired. One reported field deliberately diverges — see below. |
 | `audio_grade.py` | not yet ported. Pure stdlib + `difflib.SequenceMatcher`; needs a similarity-ratio equivalent. |
 | `spectrogram_image_judge.py` | not yet ported. Pure stdlib + `re`; direct translation. |
 | `audio_metrics.py` | **not portable to bb.** librosa/matplotlib. Belongs behind `-M:metrics` via libpython-clj. |
 | `audio_agent.cljs` | already ClojureScript (nbb). Retarget to bb, or keep nbb and let it append events. |
 | 25 `.py` + 4 `.mjs` generators under `references/` | historical provenance, not live pipeline. Leave as records. |
+
+## The one place the handoff port does not match the retired tool
+
+Differentially measured 2026-07-28. The retired `handoff_validate.py` was
+recovered from the pre-retirement blob into a scratch directory and run as an
+oracle against the Clojure interpreter over 365 packets — every
+`handoff_kind` × `verdict` × `mode` × `role` combination in the schema
+vocabulary, plus five structured fixtures.
+
+Result: `ok`, `error_count`, `warning_count`, and every error `path` and
+`message` agree on **all 365 cases**. The verdict the pipeline actually consumes,
+and the exit code, are faithful.
+
+`checked_specs` differs on 364 of 365, in exactly two ways:
+
+- the Python tool called `checked("μ1")` unconditionally, before testing
+  applicability, so μ1 appears in every report it ever wrote;
+- it marked μ2/μ3 checked on `handoff_kind` alone, while the Clojure
+  interpreter's `:applies-when` also requires a rejecting `verdict`.
+
+The Clojure reading is the intended one — a spec is reported checked only if it
+was actually evaluated — and `handoff_test.clj` pins it ("an accepting review
+does not trigger μ2 at all"). The consequence to know about: **committed
+`*.validation.json` artifacts replay with a wider `checked_specs` than the
+current tool produces.** `heresy-v17-ending-tail-planner-assignment.validation.json`
+records `["μ1"]`; re-running `validate.clj` on the same packet yields `[]` with
+identical `ok`/`error_count`/`warning_count`. Neither is wrong; do not treat the
+difference as evidence drift. `handoff_test.clj` locks both readings so the next
+change to `:applies-when` has to be deliberate.

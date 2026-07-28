@@ -275,7 +275,16 @@
 
 (defn report
   "Validate `named-packets` (a seq of [display-name packet]) into a report map.
-  Shape matches the retired Python tool's JSON output exactly."
+
+  Key shape matches the retired Python tool's JSON output exactly, and so do
+  :ok, :error_count, :warning_count, and every error path and message —
+  differentially confirmed against the recovered tool over 365 packets.
+
+  :checked_specs deliberately does not match. The retired tool marked μ1 checked
+  unconditionally and μ2/μ3 on handoff_kind alone; here a spec is reported
+  checked only when :applies-when actually fires, so committed *.validation.json
+  artifacts replay with a wider :checked_specs than this produces. See
+  docs/reconstruction/runtime-split.md."
   [named-packets schema approved]
   (let [acc (reduce (fn [a [pname packet]]
                       (if-not (map? packet)

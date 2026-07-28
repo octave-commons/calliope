@@ -4,7 +4,8 @@
   Packets are written string-keyed, the way they arrive from JSON, since that is
   the shape the retired Python tool consumed. A keyword-keyed case is included
   to prove EDN and JSON packets validate identically."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [clojure.data.json :as json]
+            [clojure.test :refer [deftest is testing]]
             [fork-tales.law.reconstruction :as law]
             [fork-tales.reconstruction.handoff :as h]))
 
@@ -226,3 +227,41 @@
                 [:ok :checked_specs :error_count :warning_count :errors :warnings]))
     (is (vector? (:checked_specs r)))
     (is (= (:checked_specs r) (vec (sort (:checked_specs r)))) "specs are sorted")))
+
+(deftest committed-validation-artifact-replays
+  (testing "the real v16 planner assignment still validates clean"
+    ;; The committed evidence pair
+    ;; references/heresy-between/diagnostics/gemma-agent/handoffs/
+    ;;   heresy-v17-ending-tail-planner-assignment{,.validation}.json
+    ;; was produced by the retired Python tool. Read against the real
+    ;; handoff-schemas.json, the ported interpreter must still agree on the
+    ;; verdict fields. Uses the packet's own shape, not a fixture, so a schema
+    ;; edit that breaks replay of shipped evidence fails here.
+    (let [schema (json/read-str (slurp "resources/reconstruction/handoff-schemas.json"))
+          packet (json/read-str (slurp (str "references/heresy-between/diagnostics/gemma-agent/"
+                                            "handoffs/heresy-v17-ending-tail-planner-assignment.json")))
+          committed (json/read-str
+                     (slurp (str "references/heresy-between/diagnostics/gemma-agent/handoffs/"
+                                 "heresy-v17-ending-tail-planner-assignment.validation.json"))
+                     :key-fn keyword)
+          r (h/report [["heresy-v17-ending-tail-planner-assignment.json[0]" packet]] schema #{})]
+      (is (= (:schema_version committed) (:schema_version r)))
+      (is (= (:ok committed) (:ok r)))
+      (is (= (:error_count committed) (:error_count r)))
+      (is (= (:warning_count committed) (:warning_count r)))
+      (is (= [] (:errors r)))))
+  (testing "checked_specs is narrower than the retired tool's, on purpose"
+    ;; Documented in docs/reconstruction/runtime-split.md. The retired tool
+    ;; marked μ1 checked unconditionally; here μ1 is only reported when it has
+    ;; artifacts to check. This assertion exists so that divergence stays a
+    ;; decision rather than becoming an accident.
+    (is (= [] (:checked_specs
+               (report {"handoff_kind" "planner_assignment" "role" "planner_agent"
+                        "mode" "scribe"})))
+        "no accepted artifacts and no rejecting verdict means no spec fired")
+    (is (= ["μ1"] (:checked_specs
+                   (report {"handoff_kind" "reference_catalog_entry" "role" "planner_agent"
+                            "artifacts" [{"provenance" "p"
+                                          "source_span" {"section" "outro"}
+                                          "unresolved_issues" []}]})))
+        "μ1 is reported once it actually has an accepted artifact to check")))

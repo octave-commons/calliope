@@ -64,9 +64,13 @@
            :basis "venv rebuilt 2026-07-27 with librosa 0.11.0 + matplotlib; audio_metrics.py compare reproduced the committed v16 opening metrics, 6/7 values bit-identical and the 7th within 2e-9"
            :note "librosa 0.11 lazy-loads, so a bare `import librosa` reports success while real use fails; joblib and platformdirs had to be added"}
           :ollama-model
+          {:status :available
+           :basis "re-probed 2026-07-28: 192.168.12.68:11434 /api/tags lists gemma4:e4b-128k, and /api/show reports capabilities completion, vision, audio, tools, thinking"
+           :note "supersedes the 2026-07-27 basis, which was that the endpoint listed only nomic-embed-text; the model is reachable but the Gemma Check lane has still not been exercised end to end"}
+          :stt-endpoint
           {:status :unavailable
-           :basis "192.168.12.68:11434 /api/tags listed only nomic-embed-text"
-           :note "gemma4:e4b-128k needs pulling before the Gemma Check lane can run"}}
+           :basis "observed 2026-07-28: http://127.0.0.1:8010 refused the connection (curl exit 7)"
+           :note "the whisper CLI is on PATH, but audio_agent.cljs stt speaks to Knoxx /transcribe-timed over HTTP, and gemma-audio-agent.md forbids restarting Knoxx for it"}}
          :constraints ["free/local only"
                        "music.generate_song/local MusicGen is instrumental-only"
                        "unload MusicGen before CUDA-heavy ASR/separation"

@@ -35,7 +35,11 @@ not imply access to Err's machine.
 - `src/fork_tales/law/audio.cljc` and `src/fork_tales/law/reconstruction.cljc` — reconstruction contracts and event law.
 - `scripts/reconstruction/` — canonical validation, preflight, grading, metrics, and Gemma-check programs.
 - `references/heresy-between/` — committed evidence and manifests; large regenerable render bytes remain local and are referenced by hash.
-- `ledgers/reconstruction.edn` — append-only reconstruction events. Historical evidence is never rewritten merely to repair stale paths; translate through recorded path-root rules.
+- `ledgers/reconstruction.edn` — append-only reconstruction events, created by the first lane that appends one. Historical evidence is never rewritten merely to repair stale paths; translate through recorded path-root rules.
+
+Preflight before grading. A grader handed unreachable evidence does not error; it
+under-reports coverage, so broken input reads as a weak candidate. See
+`docs/reconstruction/README.md`.
 
 ## Commands
 
@@ -56,6 +60,10 @@ clojure -M:classify -- --seed 3721599729
 eta-mu kanban count
 eta-mu kanban list
 python3 scripts/validate_rheos_board.py
+
+# Reconstruction lanes. Preflight first; both exit non-zero on failure.
+bb scripts/reconstruction/preflight.clj EVIDENCE...
+bb scripts/reconstruction/validate.clj PACKET...
 ```
 
 Use `--tasks-dir` only for an intentional override or discovery diagnostic.

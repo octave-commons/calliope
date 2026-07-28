@@ -300,11 +300,11 @@ Calibration rules:
 
 Implemented:
 
-- `audit` evidence bundle in `scripts/fork_tales_audio_agent.cljs`
-- deterministic f0/mel metrics in `scripts/fork_tales_audio_metrics.py`
+- `audit` evidence bundle in `scripts/reconstruction/audio_agent.cljs`
+- deterministic f0/mel metrics in `scripts/reconstruction/audio_metrics.py`
 - machine-readable rubric in `resources/reconstruction/rubrics.json`
-- first-pass grade aggregator in `scripts/fork_tales_audio_grade.py`
-- calibrated spectrogram/f0 image-judge prompt + response normalizer in `scripts/fork_tales_spectrogram_image_judge.py`
+- first-pass grade aggregator in `scripts/reconstruction/audio_grade.py`
+- calibrated spectrogram/f0 image-judge prompt + response normalizer in `scripts/reconstruction/spectrogram_image_judge.py`
 
 Still needed:
 

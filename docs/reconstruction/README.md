@@ -94,11 +94,20 @@ content hashes remain checkable; it does not ask that they be re-uploaded.
 
 ## A path note that matters
 
-Every doc, script, and contract in this directory has had its paths corrected.
-The old tree said `/home/err/devel/Music/fork-tales/...`; the artifacts have
-always actually been at `/home/err/Music/fork-tales/...`. That single wrong
-segment is why this system became unfindable — following the documented paths
-landed in a near-empty directory.
+Every doc, script, and contract in this directory has had its host paths
+corrected. The old tree said `/home/err/devel/Music/fork-tales/...`; the
+artifacts have always actually been at `/home/err/Music/fork-tales/...`. That
+single wrong segment is why this system became unfindable — following the
+documented paths landed in a near-empty directory.
+
+A second, quieter class of stale path survived that pass and was only caught by
+running the programs here on 2026-07-28: *in-repo* paths left over from the
+pre-consolidation flat `scripts/` layout. `audio_agent.cljs` printed its own
+usage as `scripts/fork_tales_audio_agent.cljs` (nine lines), and `rubrics.md`
+pointed at `scripts/fork_tales_audio_metrics.py`, `_audio_grade.py`, and
+`_spectrogram_image_judge.py`. None of those files exist; all four live under
+`scripts/reconstruction/`. Corrected. The lesson generalises: a path claim is
+only as good as the last time something executed it.
 
 **The 426 imported artifacts were not rewritten.** They still contain the old
 `devel/Music` strings. They are historical records of runs that really happened,
@@ -158,9 +167,12 @@ under `:availability`:
 | OpenUTAU patched exporter | `:unavailable` | path absent; `.opencode/` missing from the checkout. Source is present and clean at `cb393b01` — the patched build was never committed and needs rebuilding. |
 | Demucs | `:unavailable` | not importable; no venv provides it. Existing htdemucs stems are on disk, so analysis still works; re-splitting does not. |
 | Metrics / DSP lane | **available** | venv rebuilt 2026-07-27 at `~/Music/fork-tales/references/mir-workbench/.venv`; `audio_metrics.py` verified to reproduce committed metrics. See [`runtime-split.md`](./runtime-split.md). |
-| `gemma4:e4b-128k` | `:unavailable` | `192.168.12.68:11434` listed only `nomic-embed-text`. Needs pulling before Gemma Check runs. |
+| `gemma4:e4b-128k` | `:available` (re-observed 2026-07-28) | `192.168.12.68:11434` `/api/tags` now lists `gemma4:e4b-128k`, and `/api/show` reports capabilities `completion, vision, audio, tools, thinking`. Superseded the 2026-07-27 basis, which was that the endpoint listed only `nomic-embed-text`. The model is reachable; the Gemma Check lane itself has still not been exercised end to end. |
+| Knoxx STT `/transcribe-timed` | `:unavailable` (observed 2026-07-28) | `http://127.0.0.1:8010` refused the connection (curl exit 7). The `whisper` CLI is on PATH, but `audio_agent.cljs stt` speaks to the HTTP endpoint, and per [`gemma-audio-agent.md`](./gemma-audio-agent.md) Knoxx is not to be restarted for it. |
 
-An absent binary is `:unavailable`. It is never a successful empty result.
+An absent binary is `:unavailable`. It is never a successful empty result. A
+status here is a dated observation, not a standing property: re-probe before
+relying on any row, and supersede rather than overwrite when it changes.
 
 ## Commands
 
@@ -171,7 +183,12 @@ endpoints. Their presence here does not prove the current harness can run them.
 bb scripts/reconstruction/preflight.clj EVIDENCE...  # do the paths still resolve?
 bb scripts/reconstruction/validate.clj PACKET...   # μ1-μ6 handoff invariants
 clojure -M:test                                    # law + interpreter tests
-clojure -M:metrics ...                             # DSP lane (librosa via libpython-clj)
+
+# DSP lane, today. -M:metrics is a declared boundary with no namespace behind it
+# yet; see runtime-split.md and the :metrics comment in deps.edn.
+~/Music/fork-tales/references/mir-workbench/.venv/bin/python \
+  scripts/reconstruction/audio_metrics.py compare \
+  --original O.wav --candidate C.wav --out-json m.json --out-prefix m
 ```
 
 The pipeline is event-sourced: each lane appends to `ledgers/reconstruction.edn`
@@ -179,11 +196,12 @@ rather than returning a value, and the babashka and JVM lanes communicate only
 through that file. See [`runtime-split.md`](./runtime-split.md) — in particular,
 libpython-clj cannot run under babashka, and no pod is needed to work around it.
 
-All five scripts are verified to run — see the port table in
+All five scripts are verified to run, and were re-verified locally on 2026-07-28
+against the committed evidence — see the port table in
 [`runtime-split.md`](./runtime-split.md). Still Python, not yet ported:
 `audio_grade.py` and `spectrogram_image_judge.py` (both pure stdlib, direct
 translations) and `audio_metrics.py` (librosa + matplotlib, belongs behind
-`-M:metrics`).
+`-M:metrics` once that namespace exists).
 
 `audio_agent.cljs` and `handoff-schemas.json` were also repaired here: a historical
 secret-scrub had replaced the literals `node` and `root` with `REDACTED_SECRET`,

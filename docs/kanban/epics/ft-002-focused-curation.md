@@ -5,6 +5,7 @@ status: breakdown
 type: epic
 priority: P1
 phase: 2
+owner: unassigned
 points: 13
 labels: media-workbench, curation, workspaces, decomposed
 category: epics

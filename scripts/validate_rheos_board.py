@@ -15,19 +15,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TASKS = ROOT / "docs" / "kanban"
 CARD_DIRS = tuple(TASKS / name for name in ("epics", "stories", "chores"))
+# The full state vocabulary of the `promethean` FSM shipped by eta-mu 1.1.1.
 VALID_STATUSES = {
     "icebox",
     "incoming",
     "accepted",
     "breakdown",
+    "blocked",
     "ready",
     "todo",
     "in_progress",
-    "blocked",
+    "testing",
     "review",
     "document",
     "done",
     "rejected",
+    "archived",
 }
 
 

@@ -110,6 +110,10 @@ playback, curation, or salvage.
 - The generated `board.json` is lossy diagnostic output and is ignored by Git.
 - Run `scripts/validate_rheos_board.py` for complete relationship validation.
 - Active decomposed epics remain `breakdown`; deferred epics may remain `icebox`.
+- Read board state with the CLI; write board state by editing card Markdown. In
+  eta-mu 1.1.1 the `frontmatter` and `comment` subcommands rewrite frontmatter and
+  drop the trailing newline, which the validator rejects. See
+  `docs/kanban-docs/AGENTS.md` for the verified FSM and write-path drift.
 
 ## Ledger discipline
 

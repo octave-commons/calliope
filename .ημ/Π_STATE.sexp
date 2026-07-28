@@ -1,0 +1,11 @@
+(Π-state
+ (repo "fork_tales_v2")
+ (branch "design/classifier-dsl-v1")
+ (commit "fc88b933af5fb70cb908fbec687d8a2f26bd0053")
+ (commit-subject "docs: append process and harness receipt")
+ (up-to-date-with "origin/design/classifier-dsl-v1" true)
+ (remote "origin")
+ (remote-url "git@github.com:octave-commons/fork_tales_v2.git")
+ (timestamp "2026-07-27T20:22:00Z")
+ (clean true)
+ (concurrent-dirt nil))

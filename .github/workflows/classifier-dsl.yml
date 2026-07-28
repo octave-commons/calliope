@@ -67,79 +67,12 @@ jobs:
           PY
 
       - name: Run expanded classifier DSL tests
-        id: tests
-        continue-on-error: true
-        run: |
-          clojure -M:test > classifier-review-test.log 2>&1
-          cat classifier-review-test.log
+        run: clojure -M:test
 
-      - name: Upload classifier test log
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: classifier-review-test-log
-          path: classifier-review-test.log
-          if-no-files-found: error
-
-      - name: Stop after failed tests
-        if: steps.tests.outcome == 'failure'
-        run: exit 1
-
-      - name: Restore hardened workflow, record receipt, and commit
-        if: steps.tests.outcome == 'success'
+      - name: Record receipt and commit tested repository changes
         env:
           SOURCE_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          cat > .github/workflows/classifier-dsl.yml <<'YAML'
-          name: Classifier DSL
-
-          permissions:
-            contents: read
-
-          on:
-            pull_request:
-              paths:
-                - "AGENTS.md"
-                - "PROCESS.md"
-                - "deps.edn"
-                - "docs/classifier-dsl.md"
-                - "docs/harnesses/**"
-                - ".opencode/AGENTS.md"
-                - ".opencode/skills/fork-tales-corpus/SKILL.md"
-                - "src/fork_tales/**"
-                - "resources/classifiers/**"
-                - "test/fork_tales/**"
-                - ".github/workflows/classifier-dsl.yml"
-            push:
-              branches: [main]
-              paths:
-                - "AGENTS.md"
-                - "PROCESS.md"
-                - "deps.edn"
-                - "docs/classifier-dsl.md"
-                - "docs/harnesses/**"
-                - ".opencode/AGENTS.md"
-                - ".opencode/skills/fork-tales-corpus/SKILL.md"
-                - "src/fork_tales/**"
-                - "resources/classifiers/**"
-                - "test/fork_tales/**"
-                - ".github/workflows/classifier-dsl.yml"
-
-          jobs:
-            test:
-              runs-on: ubuntu-latest
-              steps:
-                - uses: actions/checkout@v4
-                  with:
-                    show-progress: false
-                    persist-credentials: false
-                - uses: DeLaGuardo/setup-clojure@13.0
-                  with:
-                    cli: 1.12.2.1565
-                - name: Run classifier DSL tests
-                  run: clojure -M:test
-          YAML
-
           python3 - <<'PY'
           from datetime import datetime, timezone
           import os
@@ -160,10 +93,19 @@ jobs:
               f.write(line)
           PY
 
-          rm -f .github/workflows/apply-coderabbit-fixes.yml
           rm -f scripts/apply-classifier-review-fixes.py
           git config user.name "fork-tales-review-fixer[bot]"
           git config user.email "fork-tales-review-fixer[bot]@users.noreply.github.com"
-          git add -A
+          git add PROCESS.md \
+            .opencode/skills/fork-tales-corpus/SKILL.md \
+            resources/classifiers/theme-discovery-v1.edn \
+            src/fork_tales/classifier/dsl.cljc \
+            src/fork_tales/classifier/runtime.clj \
+            src/fork_tales/law/classifier.cljc \
+            docs/classifier-dsl.md \
+            test/fork_tales/classifier/dsl_test.clj \
+            test/fork_tales/classifier/runtime_test.clj \
+            receipts.edn \
+            scripts/apply-classifier-review-fixes.py
           git commit -m "fix: address classifier DSL review findings"
           git push origin HEAD:design/classifier-dsl-v1

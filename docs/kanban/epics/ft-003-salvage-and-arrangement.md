@@ -5,6 +5,7 @@ status: breakdown
 type: epic
 priority: P0
 phase: 3
+owner: unassigned
 points: 21
 labels: media-workbench, clips, waveform, arrangement, decomposed
 category: epics

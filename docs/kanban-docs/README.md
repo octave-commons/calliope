@@ -1,10 +1,10 @@
 # Fork Tales Media Workbench Board
 
-This is the Rheos/eta-mu coordination board for building the Fork Tales daily-driver
+This is the Rheos/eta-mu coordination board for the Fork Tales native daily-driver
 player, curation workbench, non-destructive salvage editor, release builder, and
 publication adapters.
 
-Read in this order:
+## Authority reading order
 
 1. `../../PROCESS.md`
 2. `../process/product-design-and-delivery.md`
@@ -14,20 +14,28 @@ Read in this order:
 6. `AGENTS.md`
 7. `BOARD-BREAKDOWN.md`
 
-The first active card is FT-000A, which requests an explicit human disposition on
-the proposed ADR and open design. Implementation cards are intentionally not
-`ready` yet.
+`docs/kanban/` is the configured Rheos `tasksDir` and contains cards only. Board
+prose lives here in `docs/kanban-docs/` so Rheos does not ingest it as phantom
+work.
 
-When Rheos is available locally, run from the repository root so it discovers
-`openhax.kanban.json`:
+ADR-001 is accepted and Media Workbench v1 is approved. FT-000A and the review
+reconciliation chores are done. The first ready slices are:
+
+- FT-000B — media-workbench domain laws;
+- FT-000D — native UI, real playback, read-model, and application topology.
+
+## Local verification
+
+Run from the repository root so Rheos discovers `openhax.kanban.json`:
 
 ```bash
+eta-mu kanban count
 eta-mu kanban list
-eta-mu kanban board snapshot --out docs/kanban/board.json
+eta-mu kanban find ft-000b-define-media-workbench-domain-laws
+python3 scripts/validate_rheos_board.py
 ```
 
-Use `--tasks-dir` only for an intentional board-location override or configuration
-diagnostics.
+Use `--tasks-dir` only for an intentional override or configuration diagnostic.
 
-`board.json` is generated and was not created by the remote ChatGPT/GitHub
-connector design pass.
+The current Rheos `board snapshot` drops rich card fields and is not committed.
+Markdown card files plus the repository validator are the inspectable board source.

@@ -1,21 +1,34 @@
 # Π Handoff Snapshot
 
-**Date**: 2026-07-27T20:22:00Z
-**Branch**: design/classifier-dsl-v1
-**Commit**: fc88b933af5fb70cb908fbec687d8a2f26bd0053
-**Commit Message**: docs: append process and harness receipt
+- **Branch**: `design/classifier-dsl-v1`
+- **Parent**: `Π-20260726T235322Z`
+- **Date**: 2026-07-28
+- **Tests**: 18 tests, 79 assertions, 0 failures
 
-## Repository Status
+## Changes
 
-- **Up to date with remote**: Yes
-- **Remote**: origin (git@github.com:octave-commons/fork_tales_v2.git)
-- **Working tree**: Clean
-- **Concurrent dirt**: None detected
-
-## Handoff Notes
-
-The repository is in a clean, deterministic state. All work on the `design/classifier-dsl-v1` branch has been committed and pushed to origin. No concurrent agent work or uncommitted changes detected.
+| File | Summary |
+|------|---------|
+| `AGENTS.md` | Classifier architecture docs |
+| `docs/classifier-dsl.md` | DSL specification update |
+| `resources/classifiers/theme-discovery-v1.edn` | Theme discovery schema |
+| `src/fork_tales/classifier/main.clj` | CLI entry point |
+| `src/fork_tales/classifier/runtime.clj` | Runtime pipeline: feature extraction, theme discovery |
+| `src/fork_tales/law/classifier.cljc` | Malli contracts |
+| `test/fork_tales/classifier/dsl_test.clj` | DSL tests |
+| `test/fork_tales/classifier/runtime_test.clj` | Runtime tests |
+| `ledgers/classification.edn` | Classification event ledger (new) |
 
 ## Verification
 
-This snapshot was created using the fork-tax skill with concurrent agent guardrails enabled.
+```
+$ clojure -M:test
+Testing fork-tales.classifier.dsl-test
+Testing fork-tales.classifier.runtime-test
+Ran 18 tests containing 79 assertions.
+0 failures, 0 errors.
+```
+
+## Blockers / Concurrent Dirt
+
+None.

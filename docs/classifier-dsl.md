@@ -226,10 +226,36 @@ response contract. Invalid model output is never appended directly. The
 runtime must apply the declared policy (`:reject`, `:repair-once`, or
 `:repair-until-limit`) and record each attempt in its run evidence.
 
-`:prompt/output-contract :inline-schema` directs the adapter to append the
-resolved output schema to the prompt. `:provider-native` allows a model adapter
-to use native structured-output facilities. The response is still validated by
-Malli afterward.
+`:prompt/output-contract` selects how the model is held to that contract. Every
+mode is validated by Malli afterward, and every mode lands EDN in the ledger.
+
+| Contract | Wire mechanism | Use it for |
+| --- | --- | --- |
+| `:provider-native` | Malli is translated to JSON Schema and sent as Ollama's `format`, which grammar-constrains decoding | the default; bulk structured extraction |
+| `:tool-call` | the same JSON Schema is sent as a function's `parameters` | small, flat decision payloads |
+| `:inline-schema` | the Malli form is appended to the prompt as text | large hosted models that follow instructions reliably |
+| `:none` | nothing is appended | free text |
+
+Both schema-constrained modes are derived from the same Malli contract, so the
+contract stays the single source of truth. Responses come back as JSON and are
+decoded with `malli.transform/json-transformer`, which restores the declared EDN
+types: `"destabilized"` becomes `:destabilized`, `"fork-tales/production-style-v1"`
+becomes a namespaced keyword, and an integer `1` becomes `1.0` where the contract
+wants a double.
+
+Two things measured against a local Ollama endpoint are worth knowing before
+choosing a mode:
+
+- `:inline-schema` fails against small local models. Handed a Malli form, they
+  echo the schema back or interleave it with values. Reserve it for models you
+  have confirmed can follow it.
+- `:tool-call` depends on the model's native tool-calling, which Ollama does not
+  grammar-constrain. `gemma4:e2b` emits a tool call for a flat schema but none at
+  all for a deeply nested one, so prefer it for decisions rather than extraction.
+
+Keyword namespaces need care on the JSON boundary: `clojure.data.json` writes
+`:object/id` as `"id"`, so the runtime stringifies keywords through
+`runtime/json-safe` before encoding a schema or payload.
 
 Themes and motifs are values produced by classifiers, not enums in the DSL.
 Only broad concept families are constrained by the output contract. This keeps

@@ -1,11 +1,28 @@
-(Π-state
- (repo "fork_tales_v2")
+;; Π_STATE.sexp — deterministic handoff snapshot
+;; Branch: design/classifier-dsl-v1
+
+(handoff
  (branch "design/classifier-dsl-v1")
- (commit "fc88b933af5fb70cb908fbec687d8a2f26bd0053")
- (commit-subject "docs: append process and harness receipt")
- (up-to-date-with "origin/design/classifier-dsl-v1" true)
- (remote "origin")
- (remote-url "git@github.com:octave-commons/fork_tales_v2.git")
- (timestamp "2026-07-27T20:22:00Z")
- (clean true)
- (concurrent-dirt nil))
+ (parent-tag "Π-20260726T235322Z")
+ (files-changed 9)
+ (tests-passed true)
+ (test-count 18)
+ (assertion-count 79)
+ (verification "clojure -M:test — 0 failures, 0 errors")
+
+ (owned-paths
+  "AGENTS.md"
+  "docs/classifier-dsl.md"
+  "resources/classifiers/theme-discovery-v1.edn"
+  "src/fork_tales/classifier/main.clj"
+  "src/fork_tales/classifier/runtime.clj"
+  "src/fork_tales/law/classifier.cljc"
+  "test/fork_tales/classifier/dsl_test.clj"
+  "test/fork_tales/classifier/runtime_test.clj"
+  "ledgers/classification.edn")
+
+ (concurrent-dirt none)
+ (blocked none)
+
+ (summary
+  "Classifier DSL v1: extended runtime with feature-extraction pipeline, theme-discovery schema updates, and classification ledger. All 18 tests pass."))

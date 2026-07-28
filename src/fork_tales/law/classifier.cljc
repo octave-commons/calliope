@@ -181,8 +181,12 @@
     [:prompt/messages [:vector {:min 1} [:ref "prompt/message-v1"]]]
     [:prompt/variables [:set :keyword]]
     ;; :inline-schema appends the exact output Malli form to the prompt;
-    ;; :provider-native delegates structured output to the model adapter.
-    [:prompt/output-contract [:enum :inline-schema :provider-native :none]]
+    ;; :provider-native constrains decoding with a provider JSON Schema;
+    ;; :tool-call makes the result a function call the model must emit.
+    ;; The last two are translated from this program's Malli contract and
+    ;; decoded back into EDN types, so the ledger stays EDN either way.
+    [:prompt/output-contract
+     [:enum :inline-schema :provider-native :tool-call :none]]
     [:prompt/response-format [:enum :edn :json]]]
 
    "output/definition-v1"

@@ -1,39 +1,39 @@
 ---
 title: "Fork Tales Media Workbench v1"
-status: open
+status: approved
 requires-decisions: [ADR-001]
 dependencies:
   - docs/research/media-workbench-interface-and-publishing.md
-epics: [FT-001, FT-002, FT-003, FT-004]
+epics: [FT-000, FT-001, FT-002, FT-003, FT-004]
 created: "2026-07-27"
+approved: "2026-07-28"
 ---
 
 # Fork Tales Media Workbench v1
 
 ## Outcome
 
-A local-first application that can replace an ordinary personal music player for
-the Fork Tales corpus while progressively adding curation, non-destructive audio
-salvage, release preparation, and publication.
+A local-first native Clojure/JVM application that can replace an ordinary music
+player for the Fork Tales corpus while progressively adding curation,
+non-destructive audio salvage, release preparation, and publication.
 
-The first usable milestone is not a publishing dashboard. It is a player that is
-pleasant enough to leave open all day and fast enough to classify the corpus by
-listening.
+The first usable milestone is not a publishing dashboard. It is a player pleasant
+enough to leave open all day and fast enough to classify the corpus by listening.
 
 ## Product principles
 
-1. **Playback never feels secondary.** The transport and queue persist across all
-   views.
+1. **Playback never feels secondary.** Transport and queue persist across views.
 2. **The source is never sacrificed to the edit.** Every cut is reversible.
-3. **Partial value is visible.** A render can be globally rejected and still
-   contain starred clips.
-4. **Fast judgment and deep judgment coexist.** One keystroke can record a quick
-   rating; the inspector can record richer scoped observations.
-5. **The system distinguishes facts, proposals, and decisions.** Model markers
-   and classifiers may suggest; they do not accept.
+3. **Partial value is visible.** A rejected render may contain accepted clips.
+4. **Fast and deep judgment coexist.** One key records a quick decision; the
+   inspector records richer scoped observations.
+5. **Facts, proposals, and decisions remain distinct.** Models may suggest; they do
+   not accept.
 6. **Organization tools have explicit semantics.** Playlist, smart list,
-   workspace, release, and board are not aliases.
+   workspace, release, and development board are not aliases.
 7. **External publication is an adapter.** The local release remains authoritative.
+8. **Native means native.** The first client is Clojure/JVM and does not embed a
+   browser runtime.
 
 ## Information architecture
 
@@ -66,9 +66,29 @@ Fork Tales
     └── Rheos Development Board
 ```
 
-The development board is repository/project coordination. User-created media
-workspaces are application objects. They may link to each other, but the UI must
-not conflate them.
+The Rheos board coordinates repository work. User-created media workspaces are
+application objects. They may link to each other, but the UI must not conflate
+them.
+
+## Native application boundary
+
+The first client is one native Clojure/JVM desktop process. It has four explicit
+layers:
+
+```text
+native views and input
+  -> application commands and queries
+  -> domain laws and services
+  -> ledger, index, audio, analysis, export, and publication adapters
+```
+
+The application boundary is transport-neutral and may run in-process. A local HTTP
+server is not required for the first client. UI code cannot write ledgers, invoke
+FFmpeg, or call remote publication APIs directly.
+
+FT-000D selects the first UI toolkit, audio backend, rebuildable read model, and
+in-process application topology through a real local spike. Those choices are not
+smuggled into later player cards.
 
 ## Application shell
 
@@ -83,13 +103,11 @@ not conflate them.
 4. **Bottom player** — transport, current playable, scrubber, queue controls,
    loudness mode, loop, and output device.
 
-The player remains mounted while the main surface changes. Opening a clip or
-release must not rebuild the audio graph or lose queue position.
+The player remains alive while the main surface changes. Opening a clip, workspace,
+or release does not rebuild the audio graph or lose queue position.
 
-### Responsive priority
-
-The desktop layout is authoritative. Narrow layouts may collapse the inspector
-and left rail, but the player and current playable remain visible.
+The desktop layout is authoritative. Narrow windows may collapse the inspector or
+left rail, but transport and current playable remain visible.
 
 ## Playable domain
 
@@ -100,22 +118,16 @@ briefs, artwork, and relations to multiple renders.
 
 ### Render
 
-An immutable audio artifact from Suno or another renderer. The render records its
-content hash, source metadata, duration, codec, and relation to a work.
+An immutable audio artifact from Suno or another renderer. It records content
+hash, source metadata, duration, codec, and relation to a work.
 
 ### Marker
 
-A point or range annotation on a render or arrangement. Examples:
+A point or range annotation on a render or arrangement. Examples include
+`good-intro`, `vocal-breaks-here`, `too-weird`, `usable-transition`,
+`chorus-entry`, silence, and proposed section boundaries.
 
-- `good-intro`;
-- `vocal-breaks-here`;
-- `too-weird`;
-- `usable-transition`;
-- `chorus-entry`;
-- `silence`;
-- classifier-proposed section boundary.
-
-Markers have epistemic status. A model marker is derived/provisional; a user
+Markers have epistemic status. A model marker is derived or provisional; a user
 marker is an explicit durable annotation.
 
 ### Clip
@@ -137,45 +149,42 @@ arrangements.
 
 ### Arrangement
 
-An ordered edit decision list of clips, gaps, and transitions. The arrangement
-is playable before export. It may combine clips from multiple renders of the
-same work or, when explicitly allowed, different works.
+An ordered edit decision list of clips, gaps, and transitions. It is playable
+before export. It may combine clips from sibling renders of one work or, when
+explicitly allowed, different works.
 
 ### Export
 
-A materialized derivative such as WAV, FLAC, MP3, or video. It records renderer
-version, source hashes, arrangement version, encoding settings, and output hash.
+A materialized WAV, FLAC, MP3, or video derivative. It records renderer version,
+source hashes, arrangement version, encoding settings, and output hash.
 
 ## Rating and curation model
 
 ### Quick disposition
 
-The triage view provides a fast disposition independent of numeric ratings:
-
 - `keeper` — valuable as a whole;
 - `salvage` — inspect or retain specific spans;
-- `reject` — not useful for current purposes;
+- `reject` — not useful for the current purpose;
 - `unreviewed` — no durable disposition yet.
 
 Rejecting a render does not delete it and does not reject its clips.
 
 ### Rating dimensions
 
-Default dimensions use a 0–5 scale and may be applied to work, render, clip,
-arrangement, or export:
+Default 0–5 dimensions may be applied to work, render, clip, arrangement, or
+export:
 
 - **enjoyment** — desire to hear it again;
 - **publishability** — suitability for release in current form;
-- **weirdness** — degree of sonic/structural strangeness, not inherently bad;
+- **weirdness** — sonic or structural strangeness, not inherently bad;
 - **salvageability** — value of extracting or recombining spans;
 - **technical-quality** — artifacts, clipping, continuity, intelligibility.
 
-The library exposes one chosen primary dimension at a time. It does not collapse
-all dimensions into an unexplained aggregate.
+The library displays chosen dimensions rather than an unexplained aggregate.
 
 ### Labels
 
-Labels are user-authored and namespace-capable:
+Labels are user-authored and namespace-capable, for example:
 
 ```text
 mood/nocturnal
@@ -190,30 +199,18 @@ Classifier-proposed labels remain visually distinct until accepted.
 
 ## Core screens
 
-## 1. Library
+### 1. Library
 
-A virtualized table and optional artwork grid. Columns may include:
+A virtualized table and optional artwork grid. Columns may include title, work,
+playable type, duration, disposition, selected rating dimensions, labels, render
+family, clip count, publication state, listening history, model/source/date, and
+anomaly indicators.
 
-- title and work;
-- playable type;
-- duration;
-- disposition;
-- selected rating dimensions;
-- labels;
-- render family/variant count;
-- clip count;
-- publish state;
-- last played / play count;
-- model/source/date;
-- anomaly indicators.
+Every meaningful column is sortable. Filters compose and can be saved as a smart
+list or workspace. Selection remains stable while sorting, filtering, or refreshing
+projections.
 
-Every column is sortable where meaningful. Filters compose and can be saved as a
-smart list or workspace view.
-
-Selection must be stable while sorting, filtering, or classifier projections
-refresh.
-
-## 2. Triage Inbox
+### 2. Triage Inbox
 
 A keyboard-first listening queue for unreviewed renders.
 
@@ -223,42 +220,46 @@ Default actions:
 - `K`: keeper;
 - `S`: salvage;
 - `X`: reject;
-- `M`: add marker at playhead;
-- `I` / `O`: set provisional in/out points;
-- `C`: create clip from in/out range;
-- `[` / `]`: jump between markers/sections;
-- `Enter`: open full inspector;
+- `M`: marker at playhead;
+- `I` / `O`: provisional in/out points;
+- `C`: create clip from range;
+- `[` / `]`: jump between markers or sections;
+- `Enter`: full inspector;
 - `Space`: play/pause;
 - `J` / `L`: seek backward/forward;
 - `Shift+J` / `Shift+L`: previous/next item.
 
-Key bindings are configurable and discoverable from an overlay.
+Bindings are configurable and discoverable from an overlay.
 
-## 3. Waveform Salvage Editor
+### 3. Waveform Salvage Editor
 
 The editor is optimized for one source render first, not a full DAW.
 
 Required v1 behavior:
 
 - zoomable waveform and overview;
-- playhead, loop region, in/out selection;
+- playhead, loop region, and in/out selection;
 - marker lanes for user, deterministic analysis, and model proposals;
-- create and rename clips;
-- trim and adjust fades/gain non-destructively;
-- audition clip boundaries without leaving the editor;
-- compare sibling renders at the same approximate section;
+- create, name, and revise clips;
+- bounded fades and gain;
+- boundary audition with pre/post roll;
+- manual sibling-render comparison with independently controlled playheads;
 - drag accepted clips into an arrangement lane;
-- display source and derivation at all times.
+- source and derivation visible at all times.
 
-Deferred DAW features include multitrack recording, plugins, MIDI, spectral repair,
-and arbitrary destructive processing.
+Automatic cross-render alignment is deferred until an evidence-backed alignment
+model exists. V1 comparison does not pretend approximate semantic sections are
+synchronized.
 
-## 4. Playlists and Smart Lists
+Deferred DAW features include multitrack recording, plugins, MIDI, spectral
+repair, and arbitrary destructive processing.
+
+### 4. Playlists and Smart Lists
 
 A playlist stores explicit order and may mix renders, clips, arrangements, and
-exports. Reordering appends an edit event; history remains inspectable.
+exports. Reordering appends an edit event.
 
-A smart list stores a query such as:
+A smart list stores a closed query such as:
 
 ```clojure
 {:where [:and
@@ -269,20 +270,13 @@ A smart list stores a query such as:
         [:duration-ms :asc]]}
 ```
 
-The current result is a projection, not a frozen membership list.
+Its current result is a projection, not frozen hidden membership.
 
-## 5. Workspaces
+### 5. Workspaces
 
-A workspace restores a focused context:
-
-- active saved query and visible columns;
-- pinned works/renders/clips;
-- current queue or playlist;
-- open comparisons;
-- notes and questions;
-- selected rating dimension;
-- active arrangement or release candidate;
-- layout state worth preserving.
+A workspace restores active query and columns, pinned objects, queue or playlist,
+comparisons, notes, selected rating dimension, active arrangement or release, and
+layout state worth preserving.
 
 Examples:
 
@@ -292,25 +286,14 @@ Examples:
 - “YouTube visualizer batch”;
 - “Compare rerenders of the same lyric.”
 
-## 6. Release Builder
+### 6. Release Builder
 
-A release candidate is assembled from accepted local assets.
+A release candidate is assembled from accepted local assets. It includes title,
+type, audio exports, artwork, optional video treatment, artist identity, sequence,
+descriptions, lyrics, credits, tags, provenance, rights basis, encoding checks,
+target metadata, and acceptance state.
 
-Required fields:
-
-- release title and type;
-- primary audio export(s);
-- artwork and optional video treatment;
-- artist/display identity;
-- track titles and ordering;
-- descriptions, lyrics, credits, and tags;
-- source/provenance summary;
-- rights basis and user attestation;
-- loudness/encoding checks;
-- target-specific metadata;
-- acceptance state.
-
-The builder shows a target matrix rather than one global publish button.
+The builder shows a target matrix rather than one global publish button:
 
 ```text
 Target       Capability          State
@@ -320,9 +303,9 @@ Bandcamp     export-package      package-ready
 Spotify      distributor-handoff metadata-incomplete
 ```
 
-## 7. Publication Activity
+### 7. Publication Activity
 
-Each target attempt has its own state machine:
+Each target attempt has an independent state machine:
 
 ```text
 planned -> validating -> rendering -> ready -> authenticating -> uploading
@@ -330,9 +313,8 @@ planned -> validating -> rendering -> ready -> authenticating -> uploading
         -> failed | unavailable | cancelled | manual-action-required
 ```
 
-Retries create new attempt events or resume a checkpointed attempt. External IDs,
-URLs, visibility, timestamps, and response summaries are recorded without
-credentials.
+Retries create new attempts or resume explicit checkpoints. External IDs, URLs,
+visibility, timestamps, and response summaries are recorded without credentials.
 
 ## Persistent player behavior
 
@@ -341,12 +323,16 @@ Required for daily-driver use:
 - play/pause, previous/next, seek, loop;
 - queue append, play-next, remove, reorder, save as playlist;
 - resume last session;
-- optional crossfade and gapless transition where source formats permit;
+- optional crossfade and gapless transition where supported;
 - optional loudness normalization as a playback transform;
 - waveform/position updates without ledger writes on every tick;
-- system media-key integration when a desktop shell exists;
-- failure isolation: one unreadable item is skipped with an explicit error and
-  does not destroy the queue.
+- system media-key integration through the native adapter;
+- one unreadable item is skipped with an explicit error and does not destroy the
+  queue.
+
+Gate 1 is not accepted from fake media tests alone. It requires a representative
+real corpus MP3 to play, seek, pause, resume, advance through the queue, and recover
+from an unreadable item in the chosen native stack.
 
 ## Command/query boundary
 
@@ -365,33 +351,16 @@ Illustrative durable commands:
  :range {:start-ms 1200 :end-ms 43820}
  :request/id #uuid "..."}
 
-{:command/type :playlist/append
- :playlist/id #uuid "..."
- :playable {:object/type :clip :object/id "..."}
- :request/id #uuid "..."}
-
 {:command/type :publication/request
  :release/id #uuid "..."
  :target/id :soundcloud
  :request/id #uuid "..."}
 ```
 
-Illustrative queries:
+Every durable command is idempotent. Optimistic UI state must reconcile against
+the resulting durable event.
 
-```clojure
-{:query/type :library/search
- :where [:and [:eq :disposition :salvage]
-              [:gte :rating/enjoyment 4]]
- :sort [[:rating/salvageability :desc]]}
-
-{:query/type :playable/resolve
- :playable {:object/type :arrangement :object/id "..."}}
-```
-
-Every durable command is idempotent. The UI uses optimistic projections only when
-it can reconcile them against the resulting durable event.
-
-## Storage and projection shape
+## Storage and projections
 
 Proposed durable ledgers:
 
@@ -403,75 +372,76 @@ ledgers/publication.edn   publication requests, attempts, checkpoints, outcomes
 
 Existing ingest and classification ledgers remain separate authorities.
 
-Proposed derived/local data:
+Proposed derived or local data:
 
 ```text
-target/studio/index.sqlite       query/read projection
-target/studio/waveforms/         rebuildable peak data
-target/studio/exports/           derived media artifacts
-user-local playback store        queue/session/history telemetry
+target/studio/index.*       rebuildable query projection
+target/studio/waveforms/    rebuildable peak data
+target/studio/exports/      derived media artifacts
+user-local playback store   queue/session/history telemetry
 ```
 
-Exact paths remain provisional until the law and adapter cards decide packaging
-and portability.
+FT-000D chooses the first index and playback/session adapters. Exact paths are not
+fixed before that evidence.
 
-## Visual language
+## Visual language and accessibility
 
-- Dark and light modes, but no meaning encoded by color alone.
+- Dark and light modes; no meaning encoded by color alone.
 - Artwork is prominent during listening but does not replace metadata.
 - Observed, derived, provisional, accepted, rejected, stale, and unavailable have
-  text/icon treatments consistent with `PROCESS.md`.
-- Waveform markers show source/actor and confidence on hover/focus.
+  consistent text and icon treatments.
 - Dense tables are preferred over decorative cards for corpus triage.
-- Animation is limited to transport, waveform, progress, and clear state changes.
-
-## Accessibility
-
-- Complete keyboard operation for player, triage, tables, editor, and release
-  validation.
-- Visible focus and configurable shortcuts.
-- Screen-reader names for waveform controls and marker lists.
-- Time ranges editable as text as well as pointer gestures.
-- Status never communicated by color alone.
-- Reduced-motion mode.
+- Complete keyboard operation for player, tables, editor, and release validation.
+- Visible focus, configurable shortcuts, screen-reader names, textual time-range
+  editing, and reduced-motion behavior.
 
 ## Delivery slices
 
-### Slice A — Daily-driver listening
+### Slice A — Native daily-driver listening
 
-Library index, persistent player, queue, resume, sorting/filtering, enjoyment
-rating, disposition, labels, and playlists.
+Native shell, selected audio backend, rebuildable library index, persistent queue,
+resume, real-media verification, sorting/filtering, ratings, labels, and playlists.
 
 ### Slice B — Focused curation
 
-Smart lists, workspaces, triage shortcuts, classifier overlays, comparison views.
+Smart lists, workspaces, triage shortcuts, classifier overlays, and comparison
+views.
 
 ### Slice C — Salvage and arrangement
 
-Waveform peaks, markers, clips, fades, arrangement playback, deterministic export.
+Waveform peaks, markers, clips, fades, arrangement playback, and deterministic
+export.
 
 ### Slice D — Release preparation
 
-Release manifest, artwork/metadata validation, export packages, provenance and
-rights checklist.
+Release manifest, artwork/metadata validation, packages, provenance, and rights
+checklist.
 
 ### Slice E — Publication adapters
 
 SoundCloud direct upload, YouTube video generation/upload, then distributor and
 manual-package workflows.
 
-Each slice must be independently usable. Publication work may not delay the
-player and salvage editor.
+Each slice is independently useful. Publication work may not delay the player and
+salvage editor.
 
-## Open questions
+## Owned decisions and remaining questions
 
-1. Which derived index is preferred for the first local read model: SQLite,
-   Datascript, or another embedded store?
-2. Which desktop shell, if any, is required for the first daily-driver release?
-3. Should raw listening history remain machine-local by default or optionally
-   sync through a separate private ledger?
-4. What normalization and export defaults are appropriate for the corpus?
-5. How should cross-render section alignment be represented before robust audio
-   analysis exists?
-6. Which distributor, if any, deserves a first-class adapter after export
-   packages are proven?
+FT-000D owns the first UI toolkit, playback backend, read-model implementation,
+and in-process application topology. Later work may not invent those choices.
+
+Remaining non-blocking questions:
+
+1. Should listening history remain machine-local by default or optionally sync
+   through a private ledger?
+2. What normalization and export defaults fit the corpus?
+3. What evidence is sufficient before automatic cross-render alignment is added?
+4. Which distributor, if any, deserves a first-class adapter after packages work?
+
+## Approval record
+
+Err approved the direction after the Rheos config-discovery correction. The local
+Claude review approved the design authority and requested board-mechanics repairs.
+Those repairs moved prose outside `tasksDir`, adopted explicit Rheos `uuid`
+identity, removed lossy snapshot authority, and created FT-000D for the uncovered
+native runtime decisions.

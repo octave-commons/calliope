@@ -1,20 +1,20 @@
 ---
-id: "1f07dfbc-f4f6-448d-937c-86d2c38d4e17"
+uuid: "ft-001a-index-playable-media-metadata-and-waveform-jobs"
 title: "FT-001A: Index playable media metadata and waveform jobs"
 status: incoming
 type: story
 priority: P0
 phase: 1
-epic: "033b5cda-ed7e-429b-95ac-a56c1ab7156d"
+epic: "ft-001-ship-a-daily-driver-library-and-player"
 owner: unassigned
 points: 5
-labels: [player, media-index, waveform]
+labels: player, media-index, waveform
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["9c66aedc-71c3-4d82-b222-d338daf3d99c", "d7e1dc7e-cf4d-4b77-8714-69ce092e1c2d"]
+dependency: ["ft-000b-define-media-workbench-domain-laws", "ft-000c-define-append-only-studio-events-and-read-projection", "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 ---
 
 # FT-001A: Index playable media metadata and waveform jobs

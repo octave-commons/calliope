@@ -1,20 +1,20 @@
 ---
-id: "4b93e25c-f574-4ec3-ba5b-d7f5336dfb9e"
+uuid: "ft-004a-define-release-manifest-and-publication-target-laws"
 title: "FT-004A: Define release manifest and publication target laws"
 status: icebox
 type: story
 priority: P1
 phase: 4
-epic: "9351aa82-a474-4dbc-8fee-be4acc09e02a"
+epic: "ft-004-prepare-releases-and-publish-through-explicit-target-capabilities"
 owner: unassigned
 points: 5
-labels: [release, law, publishing]
+labels: release, law, publishing
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["9c66aedc-71c3-4d82-b222-d338daf3d99c", "4c9d0687-c088-469c-b177-2eb0aaa6858d"]
+dependency: ["ft-000b-define-media-workbench-domain-laws", "ft-003d-preserve-render-to-release-derivation-graph"]
 ---
 
 # FT-004A: Define release manifest and publication target laws

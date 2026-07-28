@@ -1,20 +1,20 @@
 ---
-id: "9c66aedc-71c3-4d82-b222-d338daf3d99c"
+uuid: "ft-000b-define-media-workbench-domain-laws"
 title: "FT-000B: Define media workbench domain laws"
-status: incoming
+status: ready
 type: story
 priority: P0
 phase: 0
-epic: "c75d00eb-7cc8-4938-a088-7f2acefb0f4f"
+epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
 owner: unassigned
 points: 5
-labels: [law, malli, media-workbench]
+labels: law, malli, media-workbench
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["32325ea0-6c36-4af7-9711-df9cace6cb36"]
+dependency: ["ft-000a-review-and-accept-or-revise-media-workbench-authority"]
 ---
 
 # FT-000B: Define media workbench domain laws

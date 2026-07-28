@@ -1,20 +1,20 @@
 ---
-id: "55c1a87e-122a-432a-9be2-4f26dbe8fcee"
+uuid: "ft-004c-implement-checkpointed-soundcloud-publication-adapter"
 title: "FT-004C: Implement checkpointed SoundCloud publication adapter"
 status: icebox
 type: story
 priority: P1
 phase: 4
-epic: "9351aa82-a474-4dbc-8fee-be4acc09e02a"
+epic: "ft-004-prepare-releases-and-publish-through-explicit-target-capabilities"
 owner: unassigned
 points: 5
-labels: [publishing, soundcloud, oauth]
+labels: publishing, soundcloud, oauth
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["4b93e25c-f574-4ec3-ba5b-d7f5336dfb9e", "55a69664-5b24-4921-8761-c38a9234265b"]
+dependency: ["ft-004a-define-release-manifest-and-publication-target-laws", "ft-004b-generate-target-ready-release-packages-and-youtube-video-assets"]
 ---
 
 # FT-004C: Implement checkpointed SoundCloud publication adapter

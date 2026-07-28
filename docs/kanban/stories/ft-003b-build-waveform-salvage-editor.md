@@ -1,20 +1,20 @@
 ---
-id: "24607f2f-2d5b-4c59-aa2b-ac902b581547"
+uuid: "ft-003b-build-waveform-salvage-editor"
 title: "FT-003B: Build waveform salvage editor"
 status: incoming
 type: story
 priority: P0
 phase: 3
-epic: "dfad6caa-f439-4d41-95c4-18ed8807be6d"
+epic: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
 owner: unassigned
 points: 5
-labels: [waveform, clips, editor, ui]
+labels: waveform, clips, editor, ui
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["2cc53668-22a0-4701-91b9-001f2deb9ca6", "22d92aa9-61d2-45e6-bb2a-a9c6c6518fc3"]
+dependency: ["ft-001c-build-persistent-player-shell-and-library-browser", "ft-003a-implement-marker-and-clip-commands-over-immutable-renders"]
 ---
 
 # FT-003B: Build waveform salvage editor

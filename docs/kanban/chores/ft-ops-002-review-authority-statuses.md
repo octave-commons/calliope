@@ -1,18 +1,18 @@
 ---
-id: "d83c3495-523e-49c7-b42b-7aa8d585f0dc"
+uuid: "ft-ops-002-reconcile-adr-and-design-statuses-after-review"
 title: "FT-OPS-002: Reconcile ADR and design statuses after review"
-status: incoming
+status: done
 type: chore
 priority: P0
 phase: 0
 owner: unassigned
 points: 1
-labels: [adr, design-review, documentation]
+labels: adr, design-review, documentation
 category: chores
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["32325ea0-6c36-4af7-9711-df9cace6cb36"]
+dependency: ["ft-000a-review-and-accept-or-revise-media-workbench-authority"]
 ---
 
 # FT-OPS-002: Reconcile ADR and design statuses after review

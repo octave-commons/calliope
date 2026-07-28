@@ -7,4 +7,5 @@ out/
 .cpcache/
 
 # Rheos operational event ledger; card Markdown is the durable board source.
-docs/kanban/.events/ledger.edn
+docs/kanban/.events/
+docs/kanban/board.json

@@ -1,20 +1,19 @@
 ---
-id: "32325ea0-6c36-4af7-9711-df9cace6cb36"
+uuid: "ft-000a-review-and-accept-or-revise-media-workbench-authority"
 title: "FT-000A: Review and accept or revise Media Workbench authority"
-status: review
+status: done
 type: story
 priority: P0
 phase: 0
-epic: "c75d00eb-7cc8-4938-a088-7f2acefb0f4f"
+epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
 owner: unassigned
 points: 2
-labels: [architecture, design-review, media-workbench]
+labels: architecture, design-review, media-workbench
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: []
 ---
 
 # FT-000A: Review and accept or revise Media Workbench authority

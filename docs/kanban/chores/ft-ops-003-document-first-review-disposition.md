@@ -1,19 +1,18 @@
 ---
-id: "5342f499-e988-4338-b4ac-fda0e0d425b1"
+uuid: "ft-ops-003-record-first-independent-design-review-disposition"
 title: "FT-OPS-003: Record first independent design review disposition"
-status: incoming
+status: done
 type: chore
 priority: P1
 phase: 0
 owner: unassigned
 points: 2
-labels: [review, media-workbench, governance]
+labels: review, media-workbench, governance
 category: chores
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: []
 ---
 
 # FT-OPS-003: Record first independent design review disposition

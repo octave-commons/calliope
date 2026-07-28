@@ -1,18 +1,18 @@
 ---
-id: "dfad6caa-f439-4d41-95c4-18ed8807be6d"
+uuid: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
 title: "FT-003: Recover valuable spans and arrange them non-destructively"
-status: incoming
+status: breakdown
 type: epic
 priority: P0
 phase: 3
 points: 21
-labels: [media-workbench, clips, waveform, arrangement, decomposed]
+labels: media-workbench, clips, waveform, arrangement, decomposed
 category: epics
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["033b5cda-ed7e-429b-95ac-a56c1ab7156d"]
+dependency: ["ft-001-ship-a-daily-driver-library-and-player"]
 ---
 
 # FT-003: Recover valuable spans and arrange them non-destructively

@@ -1,20 +1,20 @@
 ---
-id: "b539c602-c635-4735-aa9c-500c63f900d3"
+uuid: "ft-003c-implement-arrangement-playback-and-deterministic-export"
 title: "FT-003C: Implement arrangement playback and deterministic export"
 status: incoming
 type: story
 priority: P0
 phase: 3
-epic: "dfad6caa-f439-4d41-95c4-18ed8807be6d"
+epic: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
 owner: unassigned
 points: 5
-labels: [arrangement, export, playback]
+labels: arrangement, export, playback
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["22d92aa9-61d2-45e6-bb2a-a9c6c6518fc3", "24607f2f-2d5b-4c59-aa2b-ac902b581547"]
+dependency: ["ft-003a-implement-marker-and-clip-commands-over-immutable-renders", "ft-003b-build-waveform-salvage-editor"]
 ---
 
 # FT-003C: Implement arrangement playback and deterministic export

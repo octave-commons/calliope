@@ -1,5 +1,5 @@
 ---
-id: "70f43999-0d5c-45f5-8927-97fd0a032c74"
+uuid: "ft-ops-001-validate-cards-and-generate-rheos-board-snapshot"
 title: "FT-OPS-001: Validate cards and generate Rheos board snapshot"
 status: ready
 type: chore
@@ -7,10 +7,9 @@ priority: P0
 phase: 0
 owner: unassigned
 points: 1
-labels: [rheos, board, verification]
+labels: rheos, board, verification
 category: chores
 process: "docs/process/product-design-and-delivery.md"
-dependency: []
 ---
 
 # FT-OPS-001: Validate cards and generate Rheos board snapshot

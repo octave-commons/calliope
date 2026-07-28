@@ -1,20 +1,20 @@
 ---
-id: "34436b78-1a11-4722-8d0c-9e54197bacb8"
+uuid: "ft-002a-add-smart-lists-and-saved-media-workspaces"
 title: "FT-002A: Add smart lists and saved media workspaces"
 status: incoming
 type: story
 priority: P1
 phase: 2
-epic: "1168af89-845d-4af8-9c46-9155ec6dc235"
+epic: "ft-002-make-corpus-curation-fast-and-context-preserving"
 owner: unassigned
 points: 5
-labels: [curation, smart-lists, workspaces]
+labels: curation, smart-lists, workspaces
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["bcd785d4-0ad9-4b42-bfd8-bf989a42c70c"]
+dependency: ["ft-001d-add-dispositions-ratings-labels-sorting-and-playlists"]
 ---
 
 # FT-002A: Add smart lists and saved media workspaces

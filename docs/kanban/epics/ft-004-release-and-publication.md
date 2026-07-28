@@ -1,18 +1,18 @@
 ---
-id: "9351aa82-a474-4dbc-8fee-be4acc09e02a"
+uuid: "ft-004-prepare-releases-and-publish-through-explicit-target-capabilities"
 title: "FT-004: Prepare releases and publish through explicit target capabilities"
 status: icebox
 type: epic
 priority: P1
 phase: 4
 points: 34
-labels: [media-workbench, release, publishing, decomposed]
+labels: media-workbench, release, publishing, decomposed
 category: epics
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["dfad6caa-f439-4d41-95c4-18ed8807be6d"]
+dependency: ["ft-003-recover-valuable-spans-and-arrange-them-non-destructively"]
 ---
 
 # FT-004: Prepare releases and publish through explicit target capabilities

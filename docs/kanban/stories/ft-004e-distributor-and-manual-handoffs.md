@@ -1,20 +1,20 @@
 ---
-id: "b462ceab-e5ca-4a37-92d3-1d44ac8658a0"
+uuid: "ft-004e-implement-distributor-and-manual-publication-handoffs"
 title: "FT-004E: Implement distributor and manual publication handoffs"
 status: icebox
 type: story
 priority: P1
 phase: 4
-epic: "9351aa82-a474-4dbc-8fee-be4acc09e02a"
+epic: "ft-004-prepare-releases-and-publish-through-explicit-target-capabilities"
 owner: unassigned
 points: 5
-labels: [publishing, distributor, bandcamp, spotify]
+labels: publishing, distributor, bandcamp, spotify
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["4b93e25c-f574-4ec3-ba5b-d7f5336dfb9e", "55a69664-5b24-4921-8761-c38a9234265b"]
+dependency: ["ft-004a-define-release-manifest-and-publication-target-laws", "ft-004b-generate-target-ready-release-packages-and-youtube-video-assets"]
 ---
 
 # FT-004E: Implement distributor and manual publication handoffs

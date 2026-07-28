@@ -1,20 +1,20 @@
 ---
-id: "63a5b66e-a80b-414b-9522-f3972cc6a4dd"
+uuid: "ft-001b-implement-playback-resolver-persistent-queue-and-resume"
 title: "FT-001B: Implement playback resolver, persistent queue, and resume"
 status: incoming
 type: story
 priority: P0
 phase: 1
-epic: "033b5cda-ed7e-429b-95ac-a56c1ab7156d"
+epic: "ft-001-ship-a-daily-driver-library-and-player"
 owner: unassigned
 points: 5
-labels: [player, queue, playback]
+labels: player, queue, playback
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["1f07dfbc-f4f6-448d-937c-86d2c38d4e17"]
+dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology", "ft-001a-index-playable-media-metadata-and-waveform-jobs"]
 ---
 
 # FT-001B: Implement playback resolver, persistent queue, and resume

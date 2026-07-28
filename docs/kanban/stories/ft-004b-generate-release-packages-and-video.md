@@ -1,20 +1,20 @@
 ---
-id: "55a69664-5b24-4921-8761-c38a9234265b"
+uuid: "ft-004b-generate-target-ready-release-packages-and-youtube-video-assets"
 title: "FT-004B: Generate target-ready release packages and YouTube video assets"
 status: icebox
 type: story
 priority: P1
 phase: 4
-epic: "9351aa82-a474-4dbc-8fee-be4acc09e02a"
+epic: "ft-004-prepare-releases-and-publish-through-explicit-target-capabilities"
 owner: unassigned
 points: 5
-labels: [release, export-package, video]
+labels: release, export-package, video
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["b539c602-c635-4735-aa9c-500c63f900d3", "4b93e25c-f574-4ec3-ba5b-d7f5336dfb9e"]
+dependency: ["ft-003c-implement-arrangement-playback-and-deterministic-export", "ft-004a-define-release-manifest-and-publication-target-laws"]
 ---
 
 # FT-004B: Generate target-ready release packages and YouTube video assets

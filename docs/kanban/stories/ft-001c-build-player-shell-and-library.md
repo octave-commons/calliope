@@ -1,20 +1,20 @@
 ---
-id: "2cc53668-22a0-4701-91b9-001f2deb9ca6"
+uuid: "ft-001c-build-persistent-player-shell-and-library-browser"
 title: "FT-001C: Build persistent player shell and library browser"
 status: incoming
 type: story
 priority: P0
 phase: 1
-epic: "033b5cda-ed7e-429b-95ac-a56c1ab7156d"
+epic: "ft-001-ship-a-daily-driver-library-and-player"
 owner: unassigned
 points: 5
-labels: [ui, player, library]
+labels: ui, player, library
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["63a5b66e-a80b-414b-9522-f3972cc6a4dd"]
+dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology", "ft-001b-implement-playback-resolver-persistent-queue-and-resume"]
 ---
 
 # FT-001C: Build persistent player shell and library browser

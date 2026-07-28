@@ -1,20 +1,20 @@
 ---
-id: "4c9d0687-c088-469c-b177-2eb0aaa6858d"
+uuid: "ft-003d-preserve-render-to-release-derivation-graph"
 title: "FT-003D: Preserve render-to-release derivation graph"
 status: incoming
 type: story
 priority: P1
 phase: 3
-epic: "dfad6caa-f439-4d41-95c4-18ed8807be6d"
+epic: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
 owner: unassigned
 points: 3
-labels: [provenance, derivation, export]
+labels: provenance, derivation, export
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["b539c602-c635-4735-aa9c-500c63f900d3"]
+dependency: ["ft-003c-implement-arrangement-playback-and-deterministic-export"]
 ---
 
 # FT-003D: Preserve render-to-release derivation graph

@@ -1,20 +1,20 @@
 ---
-id: "d7e1dc7e-cf4d-4b77-8714-69ce092e1c2d"
+uuid: "ft-000c-define-append-only-studio-events-and-read-projection"
 title: "FT-000C: Define append-only studio events and read projection"
 status: incoming
 type: story
 priority: P0
 phase: 0
-epic: "c75d00eb-7cc8-4938-a088-7f2acefb0f4f"
+epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
 owner: unassigned
 points: 5
-labels: [event-ledger, projection, media-workbench]
+labels: event-ledger, projection, media-workbench
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["9c66aedc-71c3-4d82-b222-d338daf3d99c"]
+dependency: ["ft-000b-define-media-workbench-domain-laws", "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 ---
 
 # FT-000C: Define append-only studio events and read projection

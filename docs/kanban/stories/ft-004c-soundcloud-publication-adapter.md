@@ -39,7 +39,7 @@ credentials external and recording target processing/publication state.
 
 ## Acceptance criteria
 
-- Adapter refuses release versions that are not locally accepted/ready.
+- Adapter refuses release versions that are not locally accepted and target-ready.
 - Credentials never appear in logs, ledgers, receipts, or packages.
 - Upload and processing states are independently visible.
 - Retry is idempotent or records a deliberate new attempt.

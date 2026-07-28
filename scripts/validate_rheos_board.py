@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TASKS = ROOT / "docs" / "kanban"
-CARD_DIRS = tuple(TASKS / name for name in ("epics", "stories", "chores"))
+ALLOWED_CATEGORIES = {"epics", "stories", "chores"}
 # The full state vocabulary of the `promethean` FSM shipped by eta-mu 1.1.1.
 VALID_STATUSES = {
     "icebox",
@@ -32,6 +32,7 @@ VALID_STATUSES = {
     "rejected",
     "archived",
 }
+OWNER_OPTIONAL_STATUSES = {"icebox", "incoming"}
 
 
 def unquote(value: str) -> str:
@@ -67,18 +68,60 @@ def parse_card(path: Path) -> dict[str, str]:
     return frontmatter
 
 
+def dependency_cycles(graph: dict[str, list[str]]) -> list[list[str]]:
+    """Return canonical directed dependency cycles discovered by DFS."""
+
+    state: dict[str, int] = {}
+    stack: list[str] = []
+    positions: dict[str, int] = {}
+    cycles: dict[tuple[str, ...], list[str]] = {}
+
+    def visit(node: str) -> None:
+        state[node] = 1
+        positions[node] = len(stack)
+        stack.append(node)
+        for target in sorted(graph[node]):
+            target_state = state.get(target, 0)
+            if target_state == 0:
+                visit(target)
+            elif target_state == 1:
+                members = stack[positions[target] :]
+                rotations = [
+                    tuple(members[index:] + members[:index])
+                    for index in range(len(members))
+                ]
+                key = min(rotations)
+                cycles[key] = [*key, key[0]]
+        stack.pop()
+        positions.pop(node)
+        state[node] = 2
+
+    for node in sorted(graph):
+        if state.get(node, 0) == 0:
+            visit(node)
+    return [cycles[key] for key in sorted(cycles)]
+
+
 def main() -> int:
     errors: list[str] = []
+    paths: list[Path] = []
 
-    root_markdown = sorted(TASKS.glob("*.md"))
-    for path in root_markdown:
-        errors.append(f"{path.relative_to(ROOT)}: prose/card at tasksDir root")
+    for path in sorted(TASKS.rglob("*.md")):
+        task_path = path.relative_to(TASKS)
+        relative = path.relative_to(ROOT)
+        if len(task_path.parts) == 1:
+            errors.append(f"{relative}: prose/card at tasksDir root")
+            continue
+        if task_path.parts[0] not in ALLOWED_CATEGORIES:
+            errors.append(f"{relative}: card outside an allowed category")
+            continue
+        paths.append(path)
 
-    paths = [path for directory in CARD_DIRS for path in sorted(directory.glob("*.md"))]
     cards: dict[str, tuple[Path, dict[str, str]]] = {}
 
     for path in paths:
         relative = path.relative_to(ROOT)
+        task_path = path.relative_to(TASKS)
         try:
             frontmatter = parse_card(path)
         except (OSError, UnicodeError, ValueError) as exc:
@@ -99,6 +142,10 @@ def main() -> int:
         status = unquote(frontmatter.get("status", "incoming"))
         if status not in VALID_STATUSES:
             errors.append(f"{relative}: invalid status {status!r}")
+        if status not in OWNER_OPTIONAL_STATUSES and not unquote(
+            frontmatter.get("owner", "")
+        ):
+            errors.append(f"{relative}: missing owner outside icebox/incoming")
 
         try:
             points = int(unquote(frontmatter.get("points", "0")))
@@ -117,14 +164,22 @@ def main() -> int:
 
         card_type = unquote(frontmatter.get("type", ""))
         category = unquote(frontmatter.get("category", ""))
-        expected_category = path.parent.name
+        expected_category = task_path.parts[0]
         if category and category != expected_category:
             errors.append(
                 f"{relative}: category {category!r} does not match {expected_category!r}"
             )
-        if card_type == "epic" and status not in {"breakdown", "icebox", "done", "rejected"}:
-            errors.append(f"{relative}: decomposed epic should be breakdown or deliberately deferred")
+        if card_type == "epic" and status not in {
+            "breakdown",
+            "icebox",
+            "done",
+            "rejected",
+        }:
+            errors.append(
+                f"{relative}: decomposed epic should be breakdown or deliberately deferred"
+            )
 
+    graph: dict[str, list[str]] = {uuid: [] for uuid in cards}
     for uuid, (path, frontmatter) in cards.items():
         relative = path.relative_to(ROOT)
         for key in ("epic", "parent"):
@@ -138,6 +193,11 @@ def main() -> int:
                 errors.append(f"{relative}: unresolved dependency {target!r}")
             elif target == uuid:
                 errors.append(f"{relative}: self-dependency")
+            else:
+                graph[uuid].append(target)
+
+    for cycle in dependency_cycles(graph):
+        errors.append(f"dependency cycle: {' -> '.join(cycle)}")
 
     status_counts = Counter(
         unquote(frontmatter.get("status", "incoming"))
@@ -154,7 +214,9 @@ def main() -> int:
             print(f"- {error}", file=sys.stderr)
         return 1
 
-    counts = ", ".join(f"{status}={count}" for status, count in sorted(status_counts.items()))
+    counts = ", ".join(
+        f"{status}={count}" for status, count in sorted(status_counts.items())
+    )
     print(f"Rheos board valid: {len(cards)} cards ({counts})")
     return 0
 

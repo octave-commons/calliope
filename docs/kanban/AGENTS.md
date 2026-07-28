@@ -25,16 +25,21 @@ ignored by Git. Card files and append-oriented comments/progress remain durable.
 
 ## CLI
 
-Run from the repository root, where `openhax.kanban.json` lives:
+Run from the repository root. Rheos discovers `openhax.kanban.json`; the
+configuration file's `tasksDir` is the normal board-location authority.
 
 ```bash
-eta-mu kanban count --tasks-dir docs/kanban
-eta-mu kanban list --tasks-dir docs/kanban
-eta-mu kanban find <slug> --tasks-dir docs/kanban
-eta-mu kanban frontmatter <slug> status in_progress --tasks-dir docs/kanban
-eta-mu kanban comment <slug> "Progress note" --tasks-dir docs/kanban
-eta-mu kanban board snapshot --tasks-dir docs/kanban --out docs/kanban/board.json
+eta-mu kanban count
+eta-mu kanban list
+eta-mu kanban find <slug>
+eta-mu kanban frontmatter <slug> status in_progress
+eta-mu kanban comment <slug> "Progress note"
+eta-mu kanban board snapshot --out docs/kanban/board.json
 ```
+
+Use `--tasks-dir` only as a deliberate override when operating a different board
+or diagnosing configuration discovery. Do not repeat the configured path in
+normal repository commands.
 
 A remote harness that cannot run Rheos may create or update card Markdown through
 the repository API, preserving the same schema and append-oriented history. It

@@ -4,9 +4,9 @@
   (:require [cljs.reader :as reader]
             [clojure.string :as str]
             [promesa.core :as p]
-            ["REDACTED_SECRET:fs" :as fs]
-            ["REDACTED_SECRET:path" :as path]
-            ["REDACTED_SECRET:child_process" :refer [execFileSync]]))
+            ["node:fs" :as fs]
+            ["node:path" :as path]
+            ["node:child_process" :refer [execFileSync]]))
 
 (def default-ollama-url "http://192.168.12.68:11434")
 (def default-model "gemma4:e4b-128k")
@@ -531,7 +531,7 @@
        "lyric_mismatches, rhythm_mismatches, pitch_mismatches, timbre_mismatches, confidence, next_tool_actions. "
        "next_tool_actions must be concrete commands or edits an agent can perform."))
 
-(defn audit! [{:keys [case-dir session-id role original candidate start duration expected task model ollama-url stt-url metrics-python metrics-script artifact-REDACTED_SECRET evidence-schema response-prefix record-kind]}]
+(defn audit! [{:keys [case-dir session-id role original candidate start duration expected task model ollama-url stt-url metrics-python metrics-script artifact-root evidence-schema response-prefix record-kind]}]
   (init-case! case-dir)
   (let [sid (normalize-id session-id)
         role* (normalize-id (or role "audit"))
@@ -539,8 +539,8 @@
         duration* (or duration "10")
         audit-id (str sid "-" role* "-" start* "-" duration*)
         check-id audit-id
-        REDACTED_SECRET-dir (or artifact-REDACTED_SECRET "checks")
-        audit-dir (join-path case-dir REDACTED_SECRET-dir check-id)
+        root-dir (or artifact-root "checks")
+        audit-dir (join-path case-dir root-dir check-id)
         original-full (join-path audit-dir "original-fullband.wav")
         candidate-full (join-path audit-dir "candidate-fullband.wav")
         original-stt (join-path audit-dir "original-stt.wav")
@@ -570,7 +570,7 @@
             evidence {:schema_version (or evidence-schema "fork-tales-audio-check-evidence/v1")
                       :audit_id audit-id
                       :check_id check-id
-                      :artifact_REDACTED_SECRET REDACTED_SECRET-dir
+                      :artifact_root root-dir
                       :created_at (now-iso)
                       :segment {:start_seconds (js/parseFloat (str start*))
                                 :duration_seconds (js/parseFloat (str duration*))
@@ -607,7 +607,7 @@
                       :role role*
                       :audit-id audit-id
                       :check-id check-id
-                      :artifact-REDACTED_SECRET REDACTED_SECRET-dir
+                      :artifact-root root-dir
                       :original original
                       :candidate candidate
                       :start (js/parseFloat (str start*))
@@ -625,7 +625,7 @@
              :session-id sid
              :audit-id audit-id
              :check-id check-id
-             :artifact-REDACTED_SECRET REDACTED_SECRET-dir
+             :artifact-root root-dir
              :audit-dir audit-dir
              :check-dir audit-dir
              :evidence-file evidence-file
@@ -671,13 +671,13 @@
                      "metrics" (metrics! (assoc opts :case-dir case-dir))
                      "gemma-check" (audit! (assoc opts
                                                   :case-dir case-dir
-                                                  :artifact-REDACTED_SECRET "checks"
+                                                  :artifact-root "checks"
                                                   :evidence-schema "fork-tales-audio-check-evidence/v1"
                                                   :response-prefix "gemma-check"
                                                   :record-kind :session/gemma-check))
                      "audit" (audit! (assoc opts
                                              :case-dir case-dir
-                                             :artifact-REDACTED_SECRET "audits"
+                                             :artifact-root "audits"
                                              :evidence-schema "fork-tales-audio-audit-evidence/v1"
                                              :response-prefix "audit"
                                              :record-kind :session/audit))

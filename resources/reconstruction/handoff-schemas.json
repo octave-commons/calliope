@@ -258,7 +258,7 @@
         "provenance"
       ],
       "optional": [
-        "REDACTED_SECRETation_refs",
+        "publication_refs",
         "notes"
       ]
     },

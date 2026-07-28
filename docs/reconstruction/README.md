@@ -132,7 +132,8 @@ under `:availability`:
 | What | Status | Basis |
 |---|---|---|
 | OpenUTAU patched exporter | `:unavailable` | path absent; `.opencode/` missing from the checkout. Source is present and clean at `cb393b01` — the patched build was never committed and needs rebuilding. |
-| Demucs | `:unavailable` | not importable from default `python3`; no venv found. Existing htdemucs stems are on disk, so analysis still works; re-splitting does not. |
+| Demucs | `:unavailable` | not importable; no venv provides it. Existing htdemucs stems are on disk, so analysis still works; re-splitting does not. |
+| Metrics / DSP lane | **available** | venv rebuilt 2026-07-27 at `~/Music/fork-tales/references/mir-workbench/.venv`; `audio_metrics.py` verified to reproduce committed metrics. See [`runtime-split.md`](./runtime-split.md). |
 | `gemma4:e4b-128k` | `:unavailable` | `192.168.12.68:11434` listed only `nomic-embed-text`. Needs pulling before Gemma Check runs. |
 
 An absent binary is `:unavailable`. It is never a successful empty result.
@@ -153,9 +154,17 @@ rather than returning a value, and the babashka and JVM lanes communicate only
 through that file. See [`runtime-split.md`](./runtime-split.md) — in particular,
 libpython-clj cannot run under babashka, and no pod is needed to work around it.
 
-Still Python, not yet ported: `audio_grade.py`, `spectrogram_image_judge.py`
-(both pure stdlib, direct translations) and `audio_metrics.py` (librosa +
-matplotlib, belongs behind `-M:metrics`).
+All five scripts are verified to run — see the port table in
+[`runtime-split.md`](./runtime-split.md). Still Python, not yet ported:
+`audio_grade.py` and `spectrogram_image_judge.py` (both pure stdlib, direct
+translations) and `audio_metrics.py` (librosa + matplotlib, belongs behind
+`-M:metrics`).
+
+`audio_agent.cljs` and `handoff-schemas.json` were also repaired here: a historical
+secret-scrub had replaced the literals `node` and `root` with `REDACTED_SECRET`,
+breaking `node:fs`/`node:path`/`node:child_process` requires and the
+`artifact-root`/`root-dir` bindings, and had corrupted `publication_refs` in the
+schema. Originals were recovered from pre-purge git blobs, not guessed.
 
 ## Still elsewhere
 

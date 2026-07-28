@@ -63,13 +63,35 @@ A resident pod would amortise that cost too, and is the right answer *only* if
 you end up needing many small interactive DSP calls from a bb-rooted loop. Until
 that is a measured problem, batching is strictly simpler.
 
-## Current blocker
+## Metrics environment — rebuilt and verified 2026-07-27
 
-The metrics venv referenced by the old workflow —
-`references/mir-workbench/.venv` — **does not exist**. `audio_metrics.py` is
-therefore unrunnable as written, independently of any port. Whichever route is
-taken, a Python environment with librosa and matplotlib has to be rebuilt first,
-and libpython-clj must be pointed at that interpreter.
+The venv at `~/Music/fork-tales/references/mir-workbench/.venv` had been deleted
+and was rebuilt with `--system-site-packages` plus two missing packages.
+
+The failure mode is worth recording, because a naive check reports success:
+librosa 0.11 uses `lazy_loader`, so `import librosa` succeeds even when its
+dependencies are absent. Only real use fails.
+
+```
+$ python3 -c "import librosa; print(librosa.__version__)"   ->  0.11.0
+$ python3 -c "import librosa; librosa.note_to_hz('C4')"     ->  No module named 'joblib'
+```
+
+`joblib` and `platformdirs` were missing. A user-level `pip install` is blocked by
+PEP 668 on this host, so the venv is the supported route:
+
+```bash
+python3 -m venv --system-site-packages ~/Music/fork-tales/references/mir-workbench/.venv
+~/Music/fork-tales/references/mir-workbench/.venv/bin/pip install joblib platformdirs
+```
+
+`audio_agent.cljs` defaults `--metrics-python` to that interpreter, so the lane
+works once the venv exists. Verified end-to-end: the agent's `metrics` subcommand
+reproduced the committed `metrics.json` for the v16 opening audit — 6 of 7 values
+bit-identical, the seventh differing by 2e-9 float noise, with both input
+`sha256` matching.
+
+libpython-clj must be pointed at this same interpreter.
 
 ## Port status
 

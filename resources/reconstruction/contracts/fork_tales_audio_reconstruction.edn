@@ -57,8 +57,12 @@
            :note "source checkout present and clean at cb393b01; the patched exporter was never committed and must be rebuilt"}
           :stem-separator
           {:status :unavailable
-           :basis "no demucs module importable from default python3; no venv located"
+           :basis "no demucs module importable from default python3; no venv provides it"
            :note "existing htdemucs stems are on disk, so analysis is not blocked; re-splitting is"}
+          :metrics-lane
+          {:status :available
+           :basis "venv rebuilt 2026-07-27 with librosa 0.11.0 + matplotlib; audio_metrics.py compare reproduced the committed v16 opening metrics, 6/7 values bit-identical and the 7th within 2e-9"
+           :note "librosa 0.11 lazy-loads, so a bare `import librosa` reports success while real use fails; joblib and platformdirs had to be added"}
           :ollama-model
           {:status :unavailable
            :basis "192.168.12.68:11434 /api/tags listed only nomic-embed-text"

@@ -23,7 +23,26 @@ jobs:
           cli: 1.12.2.1565
 
       - name: Apply verified review fixes
-        run: python3 scripts/apply-classifier-review-fixes.py
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path("scripts/apply-classifier-review-fixes.py")
+          text = path.read_text()
+          old = '''replace_once(
+              "src/fork_tales/classifier/runtime.clj",
+              "(get bindings :selected)",
+              "input",
+              "hydrate declared input")'''
+          new = '''regex_once(
+              "src/fork_tales/classifier/runtime.clj",
+              r"\\(get bindings :selected\\)",
+              "input",
+              "hydrate declared input")'''
+          if text.count(old) != 1:
+              raise SystemExit("hydrate migration block not found exactly once")
+          path.write_text(text.replace(old, new, 1))
+          PY
+          python3 scripts/apply-classifier-review-fixes.py
 
       - name: Run expanded classifier DSL tests
         id: tests

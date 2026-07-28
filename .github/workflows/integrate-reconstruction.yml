@@ -8,6 +8,11 @@ on:
     branches: [integrate/reconstruction-media-workbench]
     paths:
       - ".github/workflows/integrate-reconstruction.yml"
+  pull_request:
+    branches: [design/media-workbench-v1]
+    types: [opened, synchronize, reopened]
+    paths:
+      - ".github/workflows/integrate-reconstruction.yml"
 
 jobs:
   verify:

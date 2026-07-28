@@ -1,4 +1,4 @@
-name: Classifier DSL
+name: Repository Contracts
 
 permissions:
   contents: read
@@ -11,13 +11,20 @@ on:
       - "deps.edn"
       - "docs/classifier-dsl.md"
       - "docs/harnesses/**"
+      - "docs/research/**"
+      - "docs/adrs/**"
+      - "docs/designs/**"
+      - "docs/process/**"
+      - "docs/kanban/**"
+      - "docs/kanban-docs/**"
+      - "openhax.kanban.json"
+      - "scripts/validate_rheos_board.py"
       - ".opencode/AGENTS.md"
       - ".opencode/skills/fork-tales-corpus/SKILL.md"
       - "src/fork_tales/**"
       - "resources/classifiers/**"
       - "test/fork_tales/**"
       - ".github/workflows/classifier-dsl.yml"
-      - ".github/workflows/apply-coderabbit-fixes.yml"
   push:
     branches: [main]
     paths:
@@ -26,6 +33,14 @@ on:
       - "deps.edn"
       - "docs/classifier-dsl.md"
       - "docs/harnesses/**"
+      - "docs/research/**"
+      - "docs/adrs/**"
+      - "docs/designs/**"
+      - "docs/process/**"
+      - "docs/kanban/**"
+      - "docs/kanban-docs/**"
+      - "openhax.kanban.json"
+      - "scripts/validate_rheos_board.py"
       - ".opencode/AGENTS.md"
       - ".opencode/skills/fork-tales-corpus/SKILL.md"
       - "src/fork_tales/**"
@@ -41,8 +56,10 @@ jobs:
         with:
           show-progress: false
           persist-credentials: false
+      - name: Validate Rheos card graph
+        run: python3 scripts/validate_rheos_board.py
       - uses: DeLaGuardo/setup-clojure@13.0
         with:
           cli: 1.12.2.1565
-      - name: Run classifier DSL tests
+      - name: Run Clojure tests
         run: clojure -M:test

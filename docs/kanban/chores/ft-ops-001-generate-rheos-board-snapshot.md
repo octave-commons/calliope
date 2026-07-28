@@ -141,19 +141,36 @@ All acceptance criteria passed.
 1. The installed `promethean` FSM does not match the FSM previously documented in
    `docs/kanban-docs/AGENTS.md`. `blocked` is reachable only from `breakdown`,
    an undocumented `testing` state sits between `in_progress` and `review`, and
-   `archived` exists as a terminal state. The board contract has been corrected
-   to the transitions the installed engine actually enforces.
-2. `in_progress -> review` is guarded by a `pnpm build` gate. Fork Tales is a
-   Clojure/JVM repository with no pnpm project, so the guard fails
-   (`transition rejected: Build gate failed: 'pnpm build' exited with code 1`)
-   and the CLI cannot advance any card past `in_progress` here.
+   `rejected` and `archived` exist as further states — `rejected` reachable from
+   `accepted`, `breakdown`, `blocked`, `ready`, `todo`, `in_progress`, `review`,
+   and `document`; `archived` reachable from every other state. The FSM declares
+   15 transitions in total. The board contract has been corrected to the
+   transitions the installed engine actually enforces.
+2. The build gate sits on exactly one edge, the direct `in_progress -> review`
+   transition, and its check spec runs three commands: `pnpm build`, `pnpm lint`,
+   `pnpm test`. Fork Tales is a Clojure/JVM repository with no pnpm project, so
+   the first command fails and that edge is rejected with
+   ``transition rejected: Build gate failed: `pnpm build` exited with code 1``.
+   The gate does **not** stop the CLI from reaching `done`: `in_progress ->
+   testing` and `testing -> review` are both `always_allow`, so routing through
+   `testing` bypasses it. Verified on a throwaway board copy — `ready -> todo ->
+   in_progress -> testing -> review -> document -> done` via
+   `eta-mu kanban frontmatter <uuid> status <state>` succeeded at every step,
+   ending at `eta-mu kanban count` -> `Total tasks: 1 / Done: 1`.
 3. `eta-mu kanban frontmatter` and `eta-mu kanban comment` rewrite the whole
    frontmatter block: keys are reordered, every scalar is re-quoted, a
    `write-id` field is injected, and the file's trailing newline is dropped. The
-   last of these fails `scripts/validate_rheos_board.py`. Because of 2 and 3,
-   this card's status change and this evidence section were written directly to
-   card Markdown, which `docs/kanban-docs/AGENTS.md` already names as the
-   durable board source.
-4. The installed engine's own WIP limits are `in_progress=10` and `review=5`.
-   The repository's stricter 2/1 limits are enforced only by
-   `scripts/validate_rheos_board.py`.
+   last of these fails `scripts/validate_rheos_board.py`. Because of 3 — item 2
+   is *not* a reason, since the gate is bypassable — this card's status change
+   and this evidence section were written directly to card Markdown, which
+   `docs/kanban-docs/AGENTS.md` already names as the durable board source.
+4. The installed engine's own WIP limits are looser than the repository rule, but
+   the relevant numbers are the `promethean` FSM's, not `default_fsm`'s.
+   `openhax.kanban.json` selects `promethean`, whose limits are
+   `in_progress=50`, `review=40`, `todo=75`, `ready=100`, `blocked=15`,
+   `breakdown=50`, `testing=40`, `accepted=40`, `document=40`, `done=500`, and
+   `9999` for `icebox`/`incoming`/`rejected`/`archived`. The `in_progress=10` /
+   `review=5` pair belongs to `default_fsm` and does not apply here. Confirmed
+   empirically: 12 sandbox cards moved to `in_progress` with zero rejections,
+   which a limit of 10 would have refused. The repository's stricter 2/1 limits
+   are enforced only by `scripts/validate_rheos_board.py`.

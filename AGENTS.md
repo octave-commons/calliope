@@ -24,6 +24,12 @@ engineering practice; it does not imply access to Err's local machine.
 - `src/fork_tales/law/` — Malli contracts only.
 - `src/fork_tales/classifier/` — DSL validation and JVM runtime adapters.
 - `docs/lore/` — derived thematic, stylistic, and world-building synthesis.
+- `docs/research/` — evidence and constraints; research does not decide architecture.
+- `docs/adrs/` — accepted architectural authority for the declared scope.
+- `docs/designs/` — product behavior grounded in research and accepted ADRs.
+- `docs/process/` — revisable policies implementing the root charter.
+- `docs/kanban/` plus `openhax.kanban.json` — Rheos coordination board. Cards do
+  not override ADRs or designs; `board.json` is generated when present.
 - `receipts.edn` — append-only Receipt River accountability ledger.
 
 ## Commands
@@ -44,6 +50,10 @@ clojure -M:classify -- --seed 3721599729
 
 # Compare output contracts against a live endpoint.
 clojure -M:classify -- --seed 3721599729 --output-contract tool-call
+
+# Rheos board (when eta-mu is installed locally).
+eta-mu kanban list --tasks-dir docs/kanban
+eta-mu kanban board snapshot --tasks-dir docs/kanban --out docs/kanban/board.json
 ```
 
 The non-dry classifier run additionally requires its declared model endpoint
@@ -79,6 +89,35 @@ Keep these layers distinct:
 
 Schemas precede adapters. Classifier definitions must remain non-executable data;
 runtime operations use closed vocabularies and explicit resolvers.
+
+## Media workbench design
+
+The proposed media workbench authority set is:
+
+- `docs/research/media-workbench-interface-and-publishing.md`;
+- `docs/adrs/adr-001-local-first-media-workbench.md`;
+- `docs/designs/media-workbench-v1.md`;
+- `docs/process/product-design-and-delivery.md`;
+- `docs/kanban/BOARD-BREAKDOWN.md`.
+
+Until ADR-001 is accepted and the design approved, implementation cards remain
+planning records rather than ready work.
+
+Preserve these boundaries:
+
+- a work is not a render;
+- a render is immutable source audio;
+- a marker is an annotation, not automatically an accepted edit;
+- a clip is a non-destructive span of one render;
+- an arrangement is an edit decision list;
+- an export is a rebuildable derivative;
+- a release is a local accepted bundle before publication;
+- publication state is target-specific;
+- playlists, smart lists, user workspaces, and the Rheos development board have
+  distinct semantics.
+
+The first usable milestone is a daily-driver player. Publishing work must not
+delay playback, curation, or salvage.
 
 ## Ledger discipline
 
@@ -119,7 +158,10 @@ reference in this repository.
 
 ## Ecosystem relationships
 
-- Epiphany supplies the evidence-first relationship and archaeology discipline.
+- Epiphany supplies the evidence-first relationship, research/ADR/design, and
+  archaeology discipline.
+- Eta-mu/Rheos supplies the Markdown-backed development board when installed;
+  repository cards remain readable without the tool.
 - Eta-mu/Muse may supply local runtime extensions and compatibility tooling when
   installed; they are not assumed in remote harnesses.
 - The Knoxx/OpenPlanner studio work remains historical design input.

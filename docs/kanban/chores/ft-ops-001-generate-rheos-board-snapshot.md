@@ -64,11 +64,11 @@ Tool identity:
 $ eta-mu --version
 1.1.1
 $ which eta-mu
-/home/err/.volta/bin/eta-mu
+<user-toolchain>/bin/eta-mu
 ```
 
 The board engine is the bundled `@eta-mu/rheos` at
-`~/.volta/tools/image/packages/eta-mu/lib/node_modules/eta-mu/node_modules/@eta-mu/rheos/dist/cli.cjs`.
+`<user-toolchain>/packages/eta-mu/node_modules/@eta-mu/rheos/dist/cli.cjs`.
 The installed distribution ships no VCS commit metadata, so only the semantic
 version is recordable.
 
@@ -135,6 +135,11 @@ Rheos board valid: 27 cards (breakdown=4, done=4, icebox=6, incoming=11, ready=2
 ```
 
 All acceptance criteria passed.
+
+Receipt River evidence:
+
+- local execution record: `receipts.edn` event at `:ts "2026-07-28T20:33:40Z"`;
+- corrected FSM/WIP adjudication: `receipts.edn` event at `:ts "2026-07-28T21:19:42Z"`.
 
 ## Recorded tool drift
 

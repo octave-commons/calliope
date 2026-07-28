@@ -59,40 +59,40 @@ jobs:
           cycle="$(mktemp -d)"
           make_fixture "$cycle"
           mkdir -p "$cycle/docs/kanban/stories/nested"
-          cat > "$cycle/docs/kanban/stories/nested/cycle-a.md" <<'EOF'
----
-uuid: "cycle-a"
-title: "Cycle A"
-status: incoming
-type: story
-priority: P2
-phase: 9
-owner: unassigned
-points: 1
-labels: test
-category: stories
-dependency: ["cycle-b"]
----
-
-# Cycle A
-EOF
-          cat > "$cycle/docs/kanban/stories/nested/cycle-b.md" <<'EOF'
----
-uuid: "cycle-b"
-title: "Cycle B"
-status: incoming
-type: story
-priority: P2
-phase: 9
-owner: unassigned
-points: 1
-labels: test
-category: stories
-dependency: ["cycle-a"]
----
-
-# Cycle B
-EOF
+          printf '%s\n' \
+            '---' \
+            'uuid: "cycle-a"' \
+            'title: "Cycle A"' \
+            'status: incoming' \
+            'type: story' \
+            'priority: P2' \
+            'phase: 9' \
+            'owner: unassigned' \
+            'points: 1' \
+            'labels: test' \
+            'category: stories' \
+            'dependency: ["cycle-b"]' \
+            '---' \
+            '' \
+            '# Cycle A' \
+            > "$cycle/docs/kanban/stories/nested/cycle-a.md"
+          printf '%s\n' \
+            '---' \
+            'uuid: "cycle-b"' \
+            'title: "Cycle B"' \
+            'status: incoming' \
+            'type: story' \
+            'priority: P2' \
+            'phase: 9' \
+            'owner: unassigned' \
+            'points: 1' \
+            'labels: test' \
+            'category: stories' \
+            'dependency: ["cycle-a"]' \
+            '---' \
+            '' \
+            '# Cycle B' \
+            > "$cycle/docs/kanban/stories/nested/cycle-b.md"
           if python3 "$cycle/scripts/validate_rheos_board.py" >"$cycle/out" 2>"$cycle/err"; then
             echo "dependency cycle unexpectedly passed" >&2
             exit 1

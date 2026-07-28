@@ -1,0 +1,117 @@
+name: Verify PR 3 Review Fixes
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [design/media-workbench-v1]
+    paths:
+      - ".github/workflows/verify-pr3-review-fixes.yml"
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+    paths:
+      - ".github/workflows/verify-pr3-review-fixes.yml"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: design/media-workbench-v1
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: DeLaGuardo/setup-clojure@13.0
+        with:
+          cli: 1.12.2.1565
+
+      - name: Validate current repository
+        run: |
+          python3 scripts/validate_rheos_board.py
+          clojure -M:test
+
+      - name: Exercise recursive, cycle, and owner guards
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          make_fixture() {
+            local root="$1"
+            mkdir -p "$root/scripts" "$root/docs"
+            cp scripts/validate_rheos_board.py "$root/scripts/"
+            cp -R docs/kanban "$root/docs/kanban"
+          }
+
+          nested="$(mktemp -d)"
+          make_fixture "$nested"
+          mkdir -p "$nested/docs/kanban/stories/nested"
+          cp "$nested/docs/kanban/stories/ft-002a-add-smart-lists-and-workspaces.md" \
+             "$nested/docs/kanban/stories/nested/duplicate.md"
+          if python3 "$nested/scripts/validate_rheos_board.py" >"$nested/out" 2>"$nested/err"; then
+            echo "nested duplicate unexpectedly passed" >&2
+            exit 1
+          fi
+          grep -F "duplicate uuid" "$nested/err"
+
+          cycle="$(mktemp -d)"
+          make_fixture "$cycle"
+          mkdir -p "$cycle/docs/kanban/stories/nested"
+          cat > "$cycle/docs/kanban/stories/nested/cycle-a.md" <<'EOF'
+---
+uuid: "cycle-a"
+title: "Cycle A"
+status: incoming
+type: story
+priority: P2
+phase: 9
+owner: unassigned
+points: 1
+labels: test
+category: stories
+dependency: ["cycle-b"]
+---
+
+# Cycle A
+EOF
+          cat > "$cycle/docs/kanban/stories/nested/cycle-b.md" <<'EOF'
+---
+uuid: "cycle-b"
+title: "Cycle B"
+status: incoming
+type: story
+priority: P2
+phase: 9
+owner: unassigned
+points: 1
+labels: test
+category: stories
+dependency: ["cycle-a"]
+---
+
+# Cycle B
+EOF
+          if python3 "$cycle/scripts/validate_rheos_board.py" >"$cycle/out" 2>"$cycle/err"; then
+            echo "dependency cycle unexpectedly passed" >&2
+            exit 1
+          fi
+          grep -F "dependency cycle:" "$cycle/err"
+
+          owner="$(mktemp -d)"
+          make_fixture "$owner"
+          sed -i '/^owner:/d' "$owner/docs/kanban/epics/ft-000-design-authority-and-studio-foundation.md"
+          if python3 "$owner/scripts/validate_rheos_board.py" >"$owner/out" 2>"$owner/err"; then
+            echo "owner omission unexpectedly passed" >&2
+            exit 1
+          fi
+          grep -F "missing owner outside icebox/incoming" "$owner/err"
+
+      - name: Verify generated projection restoration
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          cmp docs/lyrics/the-space-where-we-used-to-be.md \
+              <(git show origin/main:docs/lyrics/the-space-where-we-used-to-be.md)

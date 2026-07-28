@@ -6,7 +6,7 @@ type: story
 priority: P0
 phase: 0
 epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
-owner: unassigned
+owner: Err
 points: 2
 labels: architecture, design-review, media-workbench
 category: stories
@@ -20,31 +20,30 @@ process: "docs/process/product-design-and-delivery.md"
 
 ## Outcome
 
-Err records an explicit disposition on ADR-001 and Media Workbench v1: approve,
-request revisions, or reject.
+Err explicitly accepted ADR-001 and approved Media Workbench v1 after requiring
+normal Rheos config discovery instead of repeated `--tasks-dir` defaults.
 
-## Scope
+## Accepted boundaries
 
 - Immutable source renders.
 - First-class clips and arrangements.
-- Ratings, playlists, smart lists, and workspaces.
-- Local release before target publication.
-- Local service and shared application boundary.
-- Delivery gates and deferred publication work.
+- Scoped ratings, playlists, smart lists, and workspaces.
+- Local accepted releases before target publication.
+- Per-target publication state.
+- Shared command/query application boundary.
+- Native Clojure/JVM first client with no embedded browser.
+- Daily-driver playback before editing and publication expansion.
 
-## Non-goals
+## Review evidence
 
-- Implementing schemas or UI.
-- Selecting every library or desktop-shell dependency.
+- Human disposition in the conversation and PR #3 comment `5099692071`.
+- Independent local Claude review `4793817603`, which approved the design authority
+  and requested Rheos mechanics corrections.
+- Board mechanics corrected in commit `09be7d22f414a753f1a3a5067fb14f8e8fff6da3`.
+- FT-000D created to own the native UI, playback backend, read model, and
+  application-topology decisions found missing by the independent review.
 
-## Acceptance criteria
+## Acceptance
 
-- ADR-001 has an explicit status and review basis.
-- The design is approved, revised, or rejected consistently with the ADR.
-- Material open questions that block laws become separate research/decision cards.
-- The review comment names any changed boundary rather than only saying “looks good.”
-
-## Verification
-
-Document/link review for internal consistency among research, ADR, design, process,
-and board breakdown. No runtime test is required.
+ADR-001 is `accepted`, Media Workbench v1 is `approved`, and implementation may
+advance only through the explicit dependencies in the corrected board.

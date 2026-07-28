@@ -24,9 +24,37 @@ Err can move through unreviewed renders quickly, save meaningful query contexts,
 and return to a curation problem without reconstructing filters, queue, notes, or
 active comparisons.
 
+## Scope
+
+- Add closed-query smart lists with deterministic current membership.
+- Save and restore media-workspace context without copying canonical media data.
+- Build keyboard-first triage over an unreviewed or smart-list-backed queue.
+- Review classifier overlays as proposals requiring explicit accept/reject decisions.
+
+## Non-goals
+
+- Team collaboration or shared workspace conflict resolution.
+- Arbitrary executable query code.
+- Treating the Rheos development board as a media workspace.
+- Automatic acceptance of model classifications.
+
 ## Decomposed into
 
 - FT-002A — smart lists and saved workspaces.
 - FT-002B — keyboard-first triage and classifier-overlay review.
 
 Implement the children, never this epic directly.
+
+## Acceptance criteria
+
+- FT-002A and FT-002B resolve as bounded children of this epic.
+- Saved workspaces restore attention context without duplicating source media.
+- Smart-list membership remains a rebuildable projection.
+- Primary triage actions are keyboard-accessible and visibly confirmed.
+- Proposed classifier output remains distinct from accepted human decisions.
+
+## Verification
+
+Run `python3 scripts/validate_rheos_board.py`; child interaction and projection
+tests verify query determinism, workspace restoration, keyboard safety, and
+proposal adjudication.

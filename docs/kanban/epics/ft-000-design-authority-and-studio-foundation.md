@@ -5,6 +5,7 @@ status: breakdown
 type: epic
 priority: P0
 phase: 0
+owner: unassigned
 points: 13
 labels: media-workbench, architecture, law, decomposed
 category: epics
@@ -32,5 +33,6 @@ durable listening, curation, editing, release, and publication intent.
 - FT-000A — review ADR-001 and the v1 design.
 - FT-000B — define studio-domain Malli laws.
 - FT-000C — define append-only studio events and read projection.
+- FT-000D — decide native runtime architecture through a real spike.
 
 Implement the children, never this epic directly.

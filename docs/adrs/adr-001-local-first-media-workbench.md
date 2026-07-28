@@ -1,15 +1,16 @@
 ---
 id: ADR-001
-title: "Local-first media workbench with immutable renders and non-destructive playable spans"
-status: proposed
+title: "Local-first native media workbench with immutable renders and non-destructive playable spans"
+status: accepted
 date: "2026-07-27"
+accepted: "2026-07-28"
 deciders: [Err]
 research: "docs/research/media-workbench-interface-and-publishing.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
 ---
 
-# ADR-001: Local-first media workbench with immutable renders and non-destructive playable spans
+# ADR-001: Local-first native media workbench
 
 ## Context
 
@@ -18,24 +19,24 @@ renders. The corpus is not adequately modeled as a folder of finished songs.
 Some renders are excellent, some are unusable, and some contain valuable openings,
 verses, transitions, textures, or vocal moments inside a globally poor render.
 
-The desired application must support personal listening, curation, creative
-salvage, arrangement, release preparation, and publication without making an
-external platform or generated media file the authority for the work.
+The application must support personal listening, curation, creative salvage,
+arrangement, release preparation, and publication without making an external
+platform, generated derivative, or mutable database row the authority for the
+work.
 
-The existing repository already distinguishes canonical observations, derived
-projections, provisional claims, and accepted decisions. The media interface must
-preserve the same discipline.
+The user also requires a Clojure-native desktop application and does not want to
+embed a browser merely to obtain an interface.
 
 ## Decision
 
-Fork Tales will build a **local-first media workbench** whose durable creative
-state is append-oriented and whose source media is immutable.
+Fork Tales will build a **local-first native Clojure/JVM media workbench** whose
+durable creative state is append-oriented and whose source media is immutable.
 
 ### 1. Source media is immutable
 
 An imported or generated audio render is never destructively edited in place.
-Trimming, fading, gain changes, ordering, and composition are represented as
-versioned edit decisions that reference source hashes and time ranges.
+Trimming, fading, gain changes, ordering, and composition are versioned edit
+decisions referencing source hashes and time ranges.
 
 ### 2. The playable abstraction is broader than a track file
 
@@ -44,20 +45,21 @@ The player accepts a common playable reference to any of:
 - `:render` — immutable source audio;
 - `:clip` — a bounded span of one render;
 - `:arrangement` — an ordered edit decision list of clips and transitions;
-- `:export` — a rendered derivative produced from an arrangement or release.
+- `:export` — a materialized derivative produced from an arrangement or release.
 
-A playlist, queue, rating, label, or workspace may reference any playable type
-unless a narrower scope is explicitly required.
+A queue, playlist, rating, label, or workspace may reference any declared
+playable type unless a narrower scope is explicit.
 
 ### 3. Durable user intent is event-sourced
 
 Ratings, labels, playlist edits, clip definitions, arrangements, workspaces,
 release decisions, and publication outcomes are append-only events. Mutable UI
-state and high-frequency playback telemetry are projections or local operational
-state unless deliberately promoted.
+state and high-frequency playback telemetry remain projections or local
+operational state unless deliberately promoted.
 
-Derived read models may use SQLite or another local index for responsive queries,
-but that index is rebuildable and is never the only copy of a creative decision.
+A local read model may use SQLite, Datascript, or another embedded store for
+responsive queries, but it is rebuildable and never the only copy of a creative
+decision.
 
 ### 4. Ratings are multidimensional and scoped
 
@@ -78,7 +80,7 @@ rating does not become a work-level judgment.
 - A **playlist** is an ordered durable sequence of playable references.
 - A **smart list** is a saved query evaluated against current projections.
 - A **workspace** is a saved attention context containing filters, pinned objects,
-  queue context, notes, active comparisons, and optional edit/release focus.
+  queue context, notes, comparisons, and optional edit or release focus.
 
 A workspace may contain playlists and smart lists but is not reducible to either.
 
@@ -88,12 +90,13 @@ A clip records at least source render, start/end time, optional fades, gain, and
 annotations. An arrangement records ordered clip references and transition
 parameters. Exports preserve the complete derivation chain.
 
-Automatic beat, silence, section, or anomaly detection may propose markers, but
-only an explicit durable decision creates an accepted clip or arrangement.
+Automatic beat, silence, section, anomaly, or alignment analysis may propose
+markers, but only an explicit durable decision creates an accepted clip or
+arrangement.
 
-### 7. Release is a local object before publication
+### 7. Release is local before publication
 
-A release candidate contains the accepted playable/export assets, artwork,
+A release candidate contains accepted playable or export assets, artwork,
 metadata, credits, lyrics, provenance, rights basis, and target-specific fields.
 Publication cannot begin until a local release candidate exists.
 
@@ -104,43 +107,44 @@ target and remain pending, rejected, unavailable, or manual on another.
 
 Targets declare supported operations such as direct upload, resumable upload,
 metadata synchronization, export package, manual handoff, or distributor handoff.
-The UI must not present an export or manual step as a remote publication.
-Credentials and refresh tokens remain outside Git and outside portable ledgers.
+The UI must not present an export or manual step as remote publication.
+Credentials and refresh tokens remain outside Git and portable ledgers.
 
 ### 9. Interfaces share one application boundary
 
-The browser/desktop UI, CLI, background workers, and future integrations invoke
-versioned commands and queries over the same domain contracts. The UI does not
-write ledgers, invoke FFmpeg, or call publication APIs directly.
+The native UI, CLI, workers, and future integrations invoke versioned commands and
+queries over the same application contracts. UI components do not directly write
+ledgers, invoke FFmpeg, or call publication APIs.
 
-The first implementation is a local service plus a desktop-first web UI. A thin
-native shell may later provide media keys, file associations, notifications, and
-packaging without changing the domain boundary.
+The first client is a **native Clojure/JVM desktop application with no embedded
+browser runtime**. The command/query boundary may run in-process initially; a
+network service is optional deployment topology, not a prerequisite or product
+boundary. Native media keys, notifications, file associations, waveform drawing,
+and packaging belong to adapters around the same domain.
 
-### 10. Development is governed by research, ADR, design, and Rheos cards
+### 10. Development is governed by research, ADRs, designs, and Rheos cards
 
 Research preserves evidence and open questions. This ADR governs architecture.
-The design document governs the intended user experience. Rheos cards coordinate
-bounded implementation and may not silently override either.
+The approved design governs intended user behavior. Rheos cards coordinate
+bounded work and may not silently override either.
 
 ## Consequences
 
 ### Positive
 
-- Partial-value renders are salvageable without corrupting source audio.
-- Personal listening and production use the same library and provenance model.
-- Ratings and labels remain meaningful at work, render, clip, and arrangement
-  scope.
+- Partial-value renders remain salvageable without corrupting source audio.
+- Personal listening and production use one library and provenance model.
+- Ratings and labels retain work, render, clip, arrangement, and export scope.
 - Publication integrations can vary without changing release truth.
-- The interface can become a daily driver before all editing and publishing
-  features exist.
+- The player can become a daily driver before editing and publishing are complete.
+- The UI does not inherit a browser stack merely for convenience.
 
 ### Costs
 
 - The domain is richer than a conventional track table.
-- A responsive player requires derived indexes, waveform/peak projections, and
-  careful queue state.
-- Export and publishing require background job, retry, credential, and checkpoint
+- A responsive native player requires a chosen UI toolkit, audio backend, read
+  model, waveform projections, and careful transport state.
+- Export and publishing require jobs, retry, credential, and checkpoint
   infrastructure.
 - Non-destructive editing requires explicit timeline and render-engine contracts.
 
@@ -150,12 +154,15 @@ bounded implementation and may not silently override either.
   bounded decisions and summaries.
 - **Scope explosion:** delivery is gated player -> curation -> salvage -> release
   -> publication.
+- **Native-stack uncertainty:** FT-000D owns an evidence-producing spike for the UI,
+  playback, read-model, and application topology before those adapters become
+  implementation assumptions.
 - **External API drift:** adapter capabilities are versioned and availability is
   explicit.
-- **Accidental source mutation:** media writes are content-addressed derivatives;
-  source hashes are verified before export.
+- **Accidental source mutation:** derivatives are content-addressed and source
+  hashes are verified before export.
 - **False automation authority:** generated markers and classifications remain
-  derived/provisional until accepted.
+  derived or provisional until accepted.
 
 ## Rejected alternatives
 
@@ -176,21 +183,30 @@ release state have different semantics.
 
 ### Publish directly from arbitrary library items
 
-Rejected because publication needs an accepted local release record, target
-metadata, rights/provenance, and target-specific state.
+Rejected because publication needs an accepted local release, target metadata,
+rights/provenance, and target-specific state.
 
 ### Make a remote music service canonical
 
 Rejected because external resources can disappear, transcode source audio,
 change APIs, or represent only a subset of the local corpus.
 
-## Acceptance conditions
+### Make a browser UI the first client
 
-This ADR may become `accepted` when Err confirms these boundaries:
+Rejected because it conflicts with the native daily-driver goal and would pull a
+browser runtime into the application before evidence shows it is necessary.
+
+## Acceptance record
+
+Err approved the media-workbench direction on 2026-07-28 after requiring Rheos
+configuration discovery rather than repeated `--tasks-dir` flags. The independent
+local Claude review approved ADR-001 and the design authority while finding board
+mechanics that were subsequently corrected. The accepted boundaries are:
 
 1. immutable source renders;
 2. first-class clips and arrangements;
 3. distinct playlists, smart lists, and workspaces;
 4. local release before publication;
 5. per-target publication state;
-6. local-first service and shared application boundary.
+6. a shared application boundary;
+7. a native Clojure/JVM first client with no embedded browser.

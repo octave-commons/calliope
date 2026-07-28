@@ -5,3 +5,6 @@ out/
 .lsp/
 .clj-kondo/
 .cpcache/
+
+# Rheos operational event ledger; card Markdown is the durable board source.
+docs/kanban/.events/ledger.edn

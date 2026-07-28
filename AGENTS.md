@@ -51,9 +51,10 @@ clojure -M:classify -- --seed 3721599729
 # Compare output contracts against a live endpoint.
 clojure -M:classify -- --seed 3721599729 --output-contract tool-call
 
-# Rheos board (when eta-mu is installed locally).
-eta-mu kanban list --tasks-dir docs/kanban
-eta-mu kanban board snapshot --tasks-dir docs/kanban --out docs/kanban/board.json
+# Rheos board (when eta-mu is installed locally; run from the repository root so
+# openhax.kanban.json supplies tasksDir).
+eta-mu kanban list
+eta-mu kanban board snapshot --out docs/kanban/board.json
 ```
 
 The non-dry classifier run additionally requires its declared model endpoint

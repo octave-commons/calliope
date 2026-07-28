@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-05-13T23:44:40.705580+00:00",
+  "kind": "v10 hybrid using v7 MIDI piano plus MelBand separator body/air audio",
+  "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-hybrid-body-reconstruction-v10.wav",
+  "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-hybrid-body-reconstruction-v10-master.wav",
+  "duration_seconds": 303.32,
+  "sample_rate": 44100,
+  "inputs": {
+    "v7_piano": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst-fluidr3-rmsmatched.wav",
+    "melband_inst": "/home/err/devel/Music/fork-tales/references/heresy-between/separator-benchmark/melband-inst-v2-full/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066_(Instrumental)_melband_roformer_inst_v2.wav",
+    "vocal": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-vocals-openutau-v1.wav",
+    "drums": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-drums-v1.wav",
+    "bass": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-bass-v1.wav"
+  },
+  "weights": {
+    "v7_piano": 0.84,
+    "melband_body": 0.46,
+    "melband_air": 0.2,
+    "vocal": 0.48,
+    "drums": 0.3,
+    "bass": 0.32
+  },
+  "method": [
+    "Use v7 ByteDance/FluidSynth piano for explicit note timing",
+    "Borrow filtered 180-5200 Hz body and 5200+ Hz air from the MelBand Inst V2 separator audio derived from the original MP3",
+    "Avoid Demucs other.wav as target or source for this branch",
+    "Mix with lower regenerated vocal/drum/bass support and soft-limit as v10"
+  ],
+  "levels": {
+    "mix_peak": 0.9800000190734863,
+    "mix_rms": 0.10451378673315048,
+    "master_peak": 0.8077318668365479,
+    "master_rms": 0.13661330938339233
+  },
+  "interpretation_note": "v10 responds to v9 failure by using the fresh MelBand separator audio itself for body/air rather than synthetic saturation layers."
+}

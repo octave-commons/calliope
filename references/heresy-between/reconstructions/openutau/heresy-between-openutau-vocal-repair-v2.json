@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-05-14T00:35:13.345Z",
+  "kind": "OpenUTAU vocal repair v2",
+  "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2.ustx",
+  "notes_json_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2.notes.json",
+  "planned_vocal_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2.wav",
+  "vocal_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2.wav",
+  "unpadded_concat_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2-unpadded.wav",
+  "chunk_manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2-chunks.json",
+  "source_repair_plan": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-vocal-repair-plan-v2.md",
+  "source_lyrics": "/home/err/devel/Music/heresy_between/存在論的な“反・虚無”の論証として/存在論的な“反・虚無”の論証として.txt",
+  "reference_vocal_stem": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/vocals.wav",
+  "f0_source": "/home/err/devel/Music/fork-tales/references/heresy-between/vocal/vocals.pyin.f0.json",
+  "singer": "波音リツ連続音Ver1.5.1",
+  "phonemizer": "OpenUtau.Plugin.Builtin.JapaneseVCVPhonemizer",
+  "renderer": "WORLDLINE-R",
+  "note_count": 681,
+  "total_note_seconds": 255.91,
+  "coverage_percent": 84.37,
+  "max_gap_seconds": 0.4,
+  "gaps_over_4s": [],
+  "render_status": {
+    "full_song_export_status": "failed_exit_137_after_phonemize",
+    "successful_method": "five section USTX chunks rendered sequentially with patched OpenUTAU, concatenated with ffmpeg, then padded to the 303.32s reference duration",
+    "duration_seconds": 303.32,
+    "sample_rate": 44100,
+    "channels": 2,
+    "format": "WAV PCM 16-bit stereo",
+    "mean_volume_db": -20.7,
+    "max_volume_db": -7.2
+  },
+  "acceptance": {
+    "minimum_coverage_percent": 60,
+    "preferred_coverage_percent": 70,
+    "max_unintentional_gap_seconds": 4,
+    "coverage_pass": true,
+    "gap_pass": true
+  }
+}

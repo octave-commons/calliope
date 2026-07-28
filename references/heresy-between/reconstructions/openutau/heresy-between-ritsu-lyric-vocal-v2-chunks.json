@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-05-14T00:39:34.068Z",
+  "kind": "OpenUTAU lyric vocal v2 render chunks",
+  "canonical_full_ustx": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2.ustx",
+  "source_notes_json": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2.notes.json",
+  "reason": "Full-song v2 render loaded and phonemized but OpenUTAU exited 137, likely render-time memory pressure. These chunks are transport artifacts for lower-memory rendering.",
+  "chunks": [
+    {
+      "id": "chunk-01-intro-verse1",
+      "start_seconds": 0,
+      "end_seconds": 58,
+      "duration_seconds": 58,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-01-intro-verse1.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-01-intro-verse1.wav",
+      "note_count": 131
+    },
+    {
+      "id": "chunk-02-chorus1",
+      "start_seconds": 58,
+      "end_seconds": 106,
+      "duration_seconds": 48,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-02-chorus1.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-02-chorus1.wav",
+      "note_count": 107
+    },
+    {
+      "id": "chunk-03-verse2-pre2",
+      "start_seconds": 106,
+      "end_seconds": 174,
+      "duration_seconds": 68,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-03-verse2-pre2.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-03-verse2-pre2.wav",
+      "note_count": 114
+    },
+    {
+      "id": "chunk-04-chorus2-bridge",
+      "start_seconds": 174,
+      "end_seconds": 244,
+      "duration_seconds": 70,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-04-chorus2-bridge.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-04-chorus2-bridge.wav",
+      "note_count": 137
+    },
+    {
+      "id": "chunk-05-bridge-final-outro",
+      "start_seconds": 244,
+      "end_seconds": 303.32,
+      "duration_seconds": 59.32,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-05-bridge-final-outro.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v2-chunks/heresy-between-ritsu-lyric-vocal-v2-chunk-05-bridge-final-outro.wav",
+      "note_count": 192
+    }
+  ]
+}

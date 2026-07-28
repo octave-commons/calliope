@@ -1,0 +1,30 @@
+{
+  "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+  "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1-fluidr3.wav",
+  "duration_seconds": 303.32,
+  "candidate_rms": 0.02778564766049385,
+  "original_rms": 0.04954079911112785,
+  "candidate_peak": 0.2485504150390625,
+  "mean_chroma_similarity": 0.7662586569786072,
+  "median_chroma_similarity": 0.8130622506141663,
+  "mean_onset_delta": -0.04296277090907097,
+  "mean_rms_gap_db": -5.594058990478516,
+  "median_rms_gap_db": -4.98790168762207,
+  "min_rms_gap_db": -63.47039031982422,
+  "max_rms_gap_db": 37.372528076171875,
+  "band_deltas_db": {
+    "sub_20_80": 1.6569485664367676,
+    "bass_80_250": 0.6905519366264343,
+    "low_mid_250_800": -6.589111804962158,
+    "piano_body_800_2500": -1.52869713306427,
+    "presence_2500_6000": 2.9916584491729736,
+    "air_6000_12000": -4.064108371734619
+  },
+  "plots": {
+    "original_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/original-other-spectrogram.png",
+    "candidate_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/piano_other_basic_pitch_v3-spectrogram.png",
+    "diff_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/piano_other_basic_pitch_v3-minus-original-other-spectrogram-diff.png",
+    "onset": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/onset-strength-original-other-vs-piano_other_basic_pitch_v3.png",
+    "rms": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/rms-piano_other_basic_pitch_v3-minus-original-other.png"
+  }
+}

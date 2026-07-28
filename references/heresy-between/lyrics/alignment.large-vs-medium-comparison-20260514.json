@@ -1,0 +1,629 @@
+{
+  "generated_at": "2026-05-14T01:38:17.429Z",
+  "summaries": [
+    {
+      "name": "medium_raw",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-20260514.json",
+      "model": "OpenVINO/whisper-medium-int8-ov",
+      "device": "CPU",
+      "rtf": 0.961,
+      "segments": 87,
+      "words": 687,
+      "segmentCoveragePercent": 84.1,
+      "wordCoveragePercent": 96.69,
+      "lyricTokenHits": 23,
+      "lyricTokenHitList": [
+        "一行",
+        "メッセージ",
+        "胸",
+        "ごめん",
+        "何も",
+        "静か",
+        "理由",
+        "指先",
+        "生き方",
+        "夜",
+        "責任",
+        "意味",
+        "帰る",
+        "タイムライン",
+        "笑顔",
+        "スクロール",
+        "心",
+        "どうせ",
+        "明日",
+        "世界",
+        "決意",
+        "肯定",
+        "十分"
+      ],
+      "hallucinationPatternHits": [
+        "HIP HIP",
+        "スタイルプロンプト",
+        "Ah ah ah",
+        "ロールズ",
+        "ゲルケゴール"
+      ],
+      "invalidSegmentCount": 2,
+      "textPreview": "現形だよね一個だけのメッセージ非毒の灯が胸の底を叩いてる言えなかったごめんねよりもっと可愛いのは何も贈らないっていう静かな洗濯理由はいつも後から 夢の後からなら選べれるでも指先は先に生き方を知ってしまう一行だけのメッセージこの夜の形が決まんなら僕は逃げ道の言い訳より小さな責任を選びたいねさよならの続きかけなくてくわへくばかり増えて ばかり増えていくけど一行だけのメッセージで意味を置いて帰るよタイムラインには知らない誰かの笑顔強がってスクロールして心だけ取り残す打ち掛けの言葉が震えて消えてくたびどうせの物語がまた会おう 青くないを被るきっと決まっているって口にした瞬間僕の手のひらから明日が落ちていく一行だけのメッセージで戻れる場所を探す僕ただいっさは外に落ちてなくて選んだ後に立ち上がる 立ち上がる言えなかったこと数えたら仮面に入りきらないほどそれでも一興だけで世界に参加してたいもしも明日ただの友達で笑えたらそれだけでいいそう言い聞かせてでも本当は知って 本当は知ってる 真のもまた誰かの夜を 増やしてしまうって嗚呼 打ち直す日記の3本字飛ぶのは進行じゃなくて投げ出さない無言決意一秒だけのメッセージで繋がる理由がある 理由があるのなら返事なんてもう起きなくても名前を呼べた気がするよどうせの続きが消えなくてそれでも送信をしてみる一興だけのメッセージで僕は明日を肯定する 一丁だけ それで十分だ必要のなら これはまたの ゲルケゴールより偽り同じ価格の魔法 顔書くのまま言い回したって寄せたサブも作れるよイスタイルプロンプトロールズ コーナースナルティーアルパパリッチリクリッチ ベッチレクリクリカーランベッチヌーランジャースペックルミアフソン ザデノーティーベッチウン モノロンジョーメンチョドシュアクッテ Ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah a",
+      "textTail": " HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP",
+      "firstSegments": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "現形だよね"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "text": "一個だけのメッセージ"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "非毒の灯が"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "胸の底を叩いてる"
+        },
+        {
+          "start": 11,
+          "end": 12,
+          "text": "言えなかった"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "ごめんねよりもっと可愛いのは"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "何も贈らないっていう"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "静かな洗濯"
+        },
+        {
+          "start": 22,
+          "end": 25,
+          "text": "理由はいつも後から"
+        },
+        {
+          "start": 24,
+          "end": 27,
+          "text": "夢の後からなら選べれる"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "でも指先は先に"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "生き方を知ってしまう"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "一行だけのメッセージ"
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "text": "この夜の形が決まんなら"
+        },
+        {
+          "start": 38,
+          "end": 41,
+          "text": "僕は逃げ道の言い訳より"
+        },
+        {
+          "start": 41,
+          "end": 44,
+          "text": "小さな責任を選びたいね"
+        }
+      ],
+      "finalSegments": [
+        {
+          "start": 240,
+          "end": 243.26,
+          "text": "メッセージで繋がる余裕があるのなら"
+        },
+        {
+          "start": 243.26,
+          "end": 246.14,
+          "text": "返事なんてろかなくても"
+        },
+        {
+          "start": 246.14,
+          "end": 249.42,
+          "text": "名前を呼べた気がするよ"
+        },
+        {
+          "start": 249.42,
+          "end": 252.02,
+          "text": "Oh"
+        },
+        {
+          "start": 252.02,
+          "end": 254.12,
+          "text": "一挙だけのメッセージ"
+        },
+        {
+          "start": 254.12,
+          "end": 257.06,
+          "text": "あえてものを持った時が決まるの"
+        },
+        {
+          "start": 257.06,
+          "end": 260.3,
+          "text": "僕が逃げる地面で見下ろしさ"
+        },
+        {
+          "start": 260.3,
+          "end": 263.26,
+          "text": "先にを選びて"
+        },
+        {
+          "start": 263.26,
+          "end": 265.26,
+          "text": "でもなのと時が"
+        },
+        {
+          "start": 264,
+          "end": 266,
+          "text": "続きがあったなくて"
+        },
+        {
+          "start": 266,
+          "end": 267.76,
+          "text": "部屋箱だったいくらい"
+        },
+        {
+          "start": 267.76,
+          "end": 269.12,
+          "text": "照れ消えたら"
+        },
+        {
+          "start": 269.12,
+          "end": 272,
+          "text": "一度だけのメッセージで"
+        },
+        {
+          "start": 272,
+          "end": 274.64,
+          "text": "意味を置いて帰るよ"
+        },
+        {
+          "start": 288,
+          "end": 287,
+          "text": "HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP HIP"
+        }
+      ],
+      "heuristicScore": 25.560519482666564
+    },
+    {
+      "name": "medium_gated",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-gated-20260514.json",
+      "model": "OpenVINO/whisper-medium-int8-ov",
+      "device": "CPU",
+      "rtf": 0.732,
+      "segments": 80,
+      "words": 333,
+      "segmentCoveragePercent": 91.3,
+      "wordCoveragePercent": 94.72,
+      "lyricTokenHits": 23,
+      "lyricTokenHitList": [
+        "一行",
+        "メッセージ",
+        "胸",
+        "ごめん",
+        "何も",
+        "静か",
+        "理由",
+        "指先",
+        "生き方",
+        "夜",
+        "責任",
+        "意味",
+        "帰る",
+        "タイムライン",
+        "笑顔",
+        "スクロール",
+        "心",
+        "どうせ",
+        "明日",
+        "世界",
+        "決意",
+        "肯定",
+        "十分"
+      ],
+      "hallucinationPatternHits": [
+        "ゲルケゴール"
+      ],
+      "invalidSegmentCount": 1,
+      "textPreview": "現形だよって 一個だけのメッセージ非毒の灯が 胸の底を叩いてる言えなかった ごめんねよりもっと可愛いのは何も贈らないっていう 静かな洗濯理由はいつも 後悔 夢は後からなら選べれるでも指先は先に生き方を知ってしまう一行だけのメッセージこの世の形が決まるなら僕は逃げ道の言い訳より小さな責任を選びたいねさよならの続きかけなくてくわへくばかり増えて ばかり増えていくけど一行だけのメッセージで意味を置いて帰るよタイムラインには知らない誰かの笑顔強がってスクロールして心だけ取り残す打ち掛けの言葉が震えて消えてくたびどうせの物語がまたオープン 青くないよカブルきっと決まってるって口にした瞬間僕の手のひらから明日が落ちていく一行だけのメッセージで戻れる場所を探す僕ただいさを外に落ちてなくて選んだ後に立ち上がる 立ち上がる言えなかったこと数えたら仮面に入りきらないほどそれでも一挙だけで世界に参加してたいもしも明日ただの友達で笑えたらそれだけでいいそう言い聞かせてでも本当は知って 本当は知ってる 真のもまた誰かの夜を 増やしてしまうって嗚呼 打ち直す 人気の三本字飛ぶのは進行じゃなくて投げ出さないという決意一秒だけのメッセージで繋がる理由がある 理由があるのなら返事なんてもう来なくても名前を呼べた気がするよどうせの続きが消えなくてそれでも送信をしてみる一興だけのメッセージで僕は明日を肯定する 一丁だけそれで十分だ必要のならこれはまたのゲルケゴールよりいつもに同じ価格のものを 顔書くのまま言い回しただけ寄せたサブも作れるよI start the romp doorSkull on us now to the heartパパリッチ リクリッチ ベッチレクリクリ カーランベッチヌーランジャスペックルミアフソン ザリノーツ ベッチウンモノロンジョーネンチョドシュワクテ Ahhhhh一行だけのメッセージで繋がる メッセージで繋がる揺竜があるのなら返事なんてろーかなくても名前を呼べた気がするよoh一挙だけのメッセージ出て物を持った時が決まるのah 僕が逃げ出しないで雨を落ちるさ先に僕を選びてでもなぁの",
+      "textTail": " happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so",
+      "firstSegments": [
+        {
+          "start": 0,
+          "end": 5.22,
+          "text": "現形だよって 一個だけのメッセージ"
+        },
+        {
+          "start": 5.22,
+          "end": 10.62,
+          "text": "非毒の灯が 胸の底を叩いてる"
+        },
+        {
+          "start": 10.62,
+          "end": 14.98,
+          "text": "言えなかった ごめんねよりもっと可愛いのは"
+        },
+        {
+          "start": 14.98,
+          "end": 21.32,
+          "text": "何も贈らないっていう 静かな洗濯"
+        },
+        {
+          "start": 21.32,
+          "end": 24.98,
+          "text": "理由はいつも 後悔"
+        },
+        {
+          "start": 24,
+          "end": 27,
+          "text": "夢は後からなら選べれる"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "でも指先は先に"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "生き方を知ってしまう"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "一行だけのメッセージ"
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "text": "この世の形が決まるなら"
+        },
+        {
+          "start": 38,
+          "end": 41,
+          "text": "僕は逃げ道の言い訳より"
+        },
+        {
+          "start": 41,
+          "end": 44,
+          "text": "小さな責任を選びたいね"
+        },
+        {
+          "start": 44,
+          "end": 47,
+          "text": "さよならの続きかけなくて"
+        },
+        {
+          "start": 47,
+          "end": 49,
+          "text": "くわへくばかり増えて"
+        },
+        {
+          "start": 48,
+          "end": 50,
+          "text": "ばかり増えていくけど"
+        },
+        {
+          "start": 50,
+          "end": 53,
+          "text": "一行だけのメッセージで"
+        }
+      ],
+      "finalSegments": [
+        {
+          "start": 238,
+          "end": 241,
+          "text": "一行だけのメッセージで繋がる"
+        },
+        {
+          "start": 240,
+          "end": 243.36,
+          "text": "メッセージで繋がる揺竜があるのなら"
+        },
+        {
+          "start": 243.36,
+          "end": 246.14,
+          "text": "返事なんてろーかなくても"
+        },
+        {
+          "start": 246.14,
+          "end": 249.42,
+          "text": "名前を呼べた気がするよ"
+        },
+        {
+          "start": 249.42,
+          "end": 252.18,
+          "text": "oh"
+        },
+        {
+          "start": 252.18,
+          "end": 254.2,
+          "text": "一挙だけのメッセージ"
+        },
+        {
+          "start": 254.2,
+          "end": 256.86,
+          "text": "出て物を持った時が決まるの"
+        },
+        {
+          "start": 256.86,
+          "end": 258.96,
+          "text": "ah 僕が逃げ出しないで"
+        },
+        {
+          "start": 258.96,
+          "end": 260.42,
+          "text": "雨を落ちるさ"
+        },
+        {
+          "start": 260.42,
+          "end": 263.26,
+          "text": "先に僕を選びて"
+        },
+        {
+          "start": 263.26,
+          "end": 265.26,
+          "text": "でもなぁの続きが"
+        },
+        {
+          "start": 264,
+          "end": 266,
+          "text": "続きがあってなくて"
+        },
+        {
+          "start": 266,
+          "end": 268,
+          "text": "ヒアハクだったいこめてる"
+        },
+        {
+          "start": 268,
+          "end": 270,
+          "text": "気分は一向だけの"
+        },
+        {
+          "start": 270,
+          "end": 272,
+          "text": "メッセージで"
+        },
+        {
+          "start": 272,
+          "end": 274,
+          "text": "意味を置いて帰るよ"
+        },
+        {
+          "start": 288,
+          "end": 287,
+          "text": "I'm so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so happy, so"
+        }
+      ],
+      "heuristicScore": 109.91926414850943
+    },
+    {
+      "name": "large_turbo_gated_cpu_int8",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.faster-whisper-large-v3-turbo-gated-cpu-int8-20260514.json",
+      "model": "large-v3-turbo",
+      "device": "cpu",
+      "compute_type": "int8",
+      "rtf": 0.764,
+      "segments": 58,
+      "words": 1053,
+      "segmentCoveragePercent": 81.37,
+      "wordCoveragePercent": 80.81,
+      "lyricTokenHits": 27,
+      "lyricTokenHitList": [
+        "元気",
+        "一行",
+        "メッセージ",
+        "既読",
+        "胸",
+        "ごめん",
+        "何も",
+        "送ら",
+        "静か",
+        "選択",
+        "理由",
+        "指先",
+        "生き方",
+        "夜",
+        "責任",
+        "意味",
+        "帰る",
+        "タイムライン",
+        "笑顔",
+        "スクロール",
+        "心",
+        "どうせ",
+        "明日",
+        "世界",
+        "沈黙",
+        "肯定",
+        "十分"
+      ],
+      "hallucinationPatternHits": [
+        "スタイルプロンプト",
+        "ご視聴"
+      ],
+      "invalidSegmentCount": 0,
+      "textPreview": "元気だよって一語だけのメッセージ 既読の明かりが胸の底を叩いてる 言えなかったごめんねよりもっと可愛いのは 何も送らないっていう静かな選択 理由はいつも後から並べれる でも指先は先に 生き方を知ってしまう 一行だけのメッセージ この夜のカタツが決まるなら 僕は逃げ道の言い訳より 小さな責任を選びたいね さよならの続きかけなくて 食わへくばかり増えてゆくけど 一行だけのメッセージで 意味を置いて帰るよ タイムラインには知らない誰かの笑顔 強がってスクロールして心だけ取り残す 打ちかけの言葉が震えて消えてくたび どうせの物語がまたお前をかぶる きっと決まってるって口にした瞬間 僕の手のひらから明日が落ちていく 一行だけのメッセージで戻れる場所を探す 僕ただしさは外に落ちてなくて 選んだ後に立ち上がる 言えなかったこと数えたら 仮面に入りきらないほど それでも一行だけで世界に参加してたい もしも明日 ただの友達で笑えたら それだけでいい そう言い聞かせて でも本当は知ってる 沈黙もまた誰かの夜を 増やしてしまうって ああ 打ち直す人気の三本心 飛ぶのは真顔じゃなくて 投げ出さないというケース 一行だけのメッセージで 繋がる理由があるのなら 返事なんてもう起きなくても 名前を呼べた気がするよ どうせの続きがけなくて それでも送信をしてみる 一行だけのメッセージで 僕は明日を肯定する 一生だけそれで十分だ 必要なならこれはあなたの受ける気候より いつらに同じ骨格のまま言い回しだけ 寄せた差分も作れる良いスタイルプロンプト おー つこわなすなるティア ハーパーパーパーチュレッグリッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッ",
+      "textTail": "ッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチベッチ タタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタ するよ 意志向だけのメッセージ で手の持った時が決まるのは トピアニキャの地霊で 身を落ちるさら先にも選びて さよならの続きが当てなくて ゲイヤハクタタイクルで 出来上げる 意志向だけのメッセージで 意味を置いて帰るよ Ahh... Ahh... ご視聴ありがとうございました",
+      "firstSegments": [
+        {
+          "start": 0,
+          "end": 5.54,
+          "text": "元気だよって一語だけのメッセージ"
+        },
+        {
+          "start": 5.54,
+          "end": 10.24,
+          "text": "既読の明かりが胸の底を叩いてる"
+        },
+        {
+          "start": 10.24,
+          "end": 15.2,
+          "text": "言えなかったごめんねよりもっと可愛いのは"
+        },
+        {
+          "start": 15.2,
+          "end": 21.14,
+          "text": "何も送らないっていう静かな選択"
+        },
+        {
+          "start": 22.54,
+          "end": 26.62,
+          "text": "理由はいつも後から並べれる"
+        },
+        {
+          "start": 27.26,
+          "end": 32.86,
+          "text": "でも指先は先に 生き方を知ってしまう"
+        },
+        {
+          "start": 32.86,
+          "end": 37.98,
+          "text": "一行だけのメッセージ この夜のカタツが決まるなら"
+        },
+        {
+          "start": 37.98,
+          "end": 43.68,
+          "text": "僕は逃げ道の言い訳より 小さな責任を選びたいね"
+        },
+        {
+          "start": 43.68,
+          "end": 49.94,
+          "text": "さよならの続きかけなくて 食わへくばかり増えてゆくけど"
+        },
+        {
+          "start": 49.94,
+          "end": 55.26,
+          "text": "一行だけのメッセージで 意味を置いて帰るよ"
+        },
+        {
+          "start": 55.26,
+          "end": 59.44,
+          "text": "タイムラインには知らない誰かの笑顔"
+        },
+        {
+          "start": 60.28,
+          "end": 64.82,
+          "text": "強がってスクロールして心だけ取り残す"
+        },
+        {
+          "start": 64.82,
+          "end": 69.22,
+          "text": "打ちかけの言葉が震えて消えてくたび"
+        },
+        {
+          "start": 69.22,
+          "end": 75.26,
+          "text": "どうせの物語がまたお前をかぶる"
+        },
+        {
+          "start": 75.26,
+          "end": 80.52,
+          "text": "きっと決まってるって口にした瞬間"
+        },
+        {
+          "start": 81.28,
+          "end": 85.98,
+          "text": "僕の手のひらから明日が落ちていく"
+        }
+      ],
+      "finalSegments": [
+        {
+          "start": 232.8,
+          "end": 247.78,
+          "text": "タタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタタ"
+        },
+        {
+          "start": 247.78,
+          "end": 248.86,
+          "text": "するよ"
+        },
+        {
+          "start": 251.9,
+          "end": 254.12,
+          "text": "意志向だけのメッセージ"
+        },
+        {
+          "start": 254.12,
+          "end": 256.88,
+          "text": "で手の持った時が決まるのは"
+        },
+        {
+          "start": 256.88,
+          "end": 258.88,
+          "text": "トピアニキャの地霊で"
+        },
+        {
+          "start": 258.88,
+          "end": 262.24,
+          "text": "身を落ちるさら先にも選びて"
+        },
+        {
+          "start": 263.1,
+          "end": 265.86,
+          "text": "さよならの続きが当てなくて"
+        },
+        {
+          "start": 265.86,
+          "end": 267.96,
+          "text": "ゲイヤハクタタイクルで"
+        },
+        {
+          "start": 267.96,
+          "end": 268.94,
+          "text": "出来上げる"
+        },
+        {
+          "start": 268.94,
+          "end": 271.84,
+          "text": "意志向だけのメッセージで"
+        },
+        {
+          "start": 271.84,
+          "end": 274.3,
+          "text": "意味を置いて帰るよ"
+        },
+        {
+          "start": 274.3,
+          "end": 275.3,
+          "text": "Ahh..."
+        },
+        {
+          "start": 275.3,
+          "end": 280.48,
+          "text": "Ahh..."
+        },
+        {
+          "start": 301.9,
+          "end": 303.3,
+          "text": "ご視聴ありがとうございました"
+        }
+      ],
+      "heuristicScore": 132.33456151918767
+    }
+  ]
+}

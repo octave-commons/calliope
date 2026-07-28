@@ -1,0 +1,238 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 1.26527738571167,
+  "words": [
+    {
+      "end_s": 1.3199999332427979,
+      "start_s": 0,
+      "word": "I"
+    },
+    {
+      "end_s": 1.5399999618530273,
+      "start_s": 1.3199999332427979,
+      "word": "want"
+    },
+    {
+      "end_s": 1.5399999618530273,
+      "start_s": 1.5399999618530273,
+      "word": "to"
+    },
+    {
+      "end_s": 2.799999952316284,
+      "start_s": 1.5399999618530273,
+      "word": "be"
+    },
+    {
+      "end_s": 2.799999952316284,
+      "start_s": 2.799999952316284,
+      "word": "a"
+    },
+    {
+      "end_s": 2.799999952316284,
+      "start_s": 2.799999952316284,
+      "word": "part"
+    },
+    {
+      "end_s": 3.359999895095825,
+      "start_s": 2.799999952316284,
+      "word": "of"
+    },
+    {
+      "end_s": 3.359999895095825,
+      "start_s": 3.359999895095825,
+      "word": "the"
+    },
+    {
+      "end_s": 3.359999895095825,
+      "start_s": 3.359999895095825,
+      "word": "party."
+    },
+    {
+      "end_s": 4.079999923706055,
+      "start_s": 3.5999999046325684,
+      "word": "If"
+    },
+    {
+      "end_s": 4.699999809265137,
+      "start_s": 4.079999923706055,
+      "word": "you're"
+    },
+    {
+      "end_s": 5.539999961853027,
+      "start_s": 4.699999809265137,
+      "word": "just"
+    },
+    {
+      "end_s": 5.739999771118164,
+      "start_s": 5.539999961853027,
+      "word": "a"
+    },
+    {
+      "end_s": 6.599999904632568,
+      "start_s": 5.739999771118164,
+      "word": "friend."
+    },
+    {
+      "end_s": 6.980000019073486,
+      "start_s": 6.599999904632568,
+      "word": "I"
+    },
+    {
+      "end_s": 7.899999618530273,
+      "start_s": 6.980000019073486,
+      "word": "laughed."
+    },
+    {
+      "end_s": 9.779999732971191,
+      "start_s": 8.9399995803833,
+      "word": "That's"
+    },
+    {
+      "end_s": 10.059999465942383,
+      "start_s": 9.779999732971191,
+      "word": "fine."
+    },
+    {
+      "end_s": 11.15999984741211,
+      "start_s": 10.719999313354492,
+      "word": "I'm"
+    },
+    {
+      "end_s": 11.399999618530273,
+      "start_s": 11.15999984741211,
+      "word": "good."
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 12,
+      "start_s": 0,
+      "text": "I want to be a part of the party. If you're just a friend. I laughed. That's fine. I'm good."
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 12,
+          "start_s": 0,
+          "text": "I want to be a part of the party. If you're just a friend. I laughed. That's fine. I'm good."
+        }
+      ],
+      "text": "I want to be a part of the party. If you're just a friend. I laughed. That's fine. I'm good.",
+      "words": [
+        {
+          "end_s": 1.3199999332427979,
+          "start_s": 0,
+          "word": "I"
+        },
+        {
+          "end_s": 1.5399999618530273,
+          "start_s": 1.3199999332427979,
+          "word": "want"
+        },
+        {
+          "end_s": 1.5399999618530273,
+          "start_s": 1.5399999618530273,
+          "word": "to"
+        },
+        {
+          "end_s": 2.799999952316284,
+          "start_s": 1.5399999618530273,
+          "word": "be"
+        },
+        {
+          "end_s": 2.799999952316284,
+          "start_s": 2.799999952316284,
+          "word": "a"
+        },
+        {
+          "end_s": 2.799999952316284,
+          "start_s": 2.799999952316284,
+          "word": "part"
+        },
+        {
+          "end_s": 3.359999895095825,
+          "start_s": 2.799999952316284,
+          "word": "of"
+        },
+        {
+          "end_s": 3.359999895095825,
+          "start_s": 3.359999895095825,
+          "word": "the"
+        },
+        {
+          "end_s": 3.359999895095825,
+          "start_s": 3.359999895095825,
+          "word": "party."
+        },
+        {
+          "end_s": 4.079999923706055,
+          "start_s": 3.5999999046325684,
+          "word": "If"
+        },
+        {
+          "end_s": 4.699999809265137,
+          "start_s": 4.079999923706055,
+          "word": "you're"
+        },
+        {
+          "end_s": 5.539999961853027,
+          "start_s": 4.699999809265137,
+          "word": "just"
+        },
+        {
+          "end_s": 5.739999771118164,
+          "start_s": 5.539999961853027,
+          "word": "a"
+        },
+        {
+          "end_s": 6.599999904632568,
+          "start_s": 5.739999771118164,
+          "word": "friend."
+        },
+        {
+          "end_s": 6.980000019073486,
+          "start_s": 6.599999904632568,
+          "word": "I"
+        },
+        {
+          "end_s": 7.899999618530273,
+          "start_s": 6.980000019073486,
+          "word": "laughed."
+        },
+        {
+          "end_s": 9.779999732971191,
+          "start_s": 8.9399995803833,
+          "word": "That's"
+        },
+        {
+          "end_s": 10.059999465942383,
+          "start_s": 9.779999732971191,
+          "word": "fine."
+        },
+        {
+          "end_s": 11.15999984741211,
+          "start_s": 10.719999313354492,
+          "word": "I'm"
+        },
+        {
+          "end_s": 11.399999618530273,
+          "start_s": 11.15999984741211,
+          "word": "good."
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "I want to be a part of the party. If you're just a friend. I laughed. That's fine. I'm good."
+}

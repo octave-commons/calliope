@@ -1,0 +1,68 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 6.381245195865631,
+  "words": [
+    {
+      "end_s": 11.979999542236328,
+      "start_s": 0,
+      "word": "それでも一行だけで正義に参加していたいもしもあったただの友達で笑ったらそれだでいい"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 5.099999904632568,
+      "start_s": 0,
+      "text": "それでも一行だけで正義に参加していたい"
+    },
+    {
+      "end_s": 11.199999809265137,
+      "start_s": 5.099999904632568,
+      "text": "もしもあったただの友達で笑ったらそれだ"
+    },
+    {
+      "end_s": 12,
+      "start_s": 11.199999809265137,
+      "text": "でいい"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 5.099999904632568,
+          "start_s": 0,
+          "text": "それでも一行だけで正義に参加していたい"
+        },
+        {
+          "end_s": 11.199999809265137,
+          "start_s": 5.099999904632568,
+          "text": "もしもあったただの友達で笑ったらそれだ"
+        },
+        {
+          "end_s": 12,
+          "start_s": 11.199999809265137,
+          "text": "でいい"
+        }
+      ],
+      "text": "それでも一行だけで正義に参加していたいもしもあったただの友達で笑ったらそれだでいい",
+      "words": [
+        {
+          "end_s": 11.979999542236328,
+          "start_s": 0,
+          "word": "それでも一行だけで正義に参加していたいもしもあったただの友達で笑ったらそれだでいい"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "それでも一行だけで正義に参加していたいもしもあったただの友達で笑ったらそれだでいい"
+}

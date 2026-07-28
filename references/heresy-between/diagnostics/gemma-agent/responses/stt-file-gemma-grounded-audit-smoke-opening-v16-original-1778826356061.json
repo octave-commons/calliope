@@ -1,0 +1,78 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 3.1167229413986206,
+  "words": [
+    {
+      "end_s": 1.3799999952316284,
+      "start_s": 0,
+      "word": "Thank"
+    },
+    {
+      "end_s": 5.539999961853027,
+      "start_s": 1.3799999952316284,
+      "word": "you"
+    },
+    {
+      "end_s": 5.539999961853027,
+      "start_s": 5.539999961853027,
+      "word": "for"
+    },
+    {
+      "end_s": 5.539999961853027,
+      "start_s": 5.539999961853027,
+      "word": "watching!"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 2,
+      "start_s": 0,
+      "text": "Thank you for watching!"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 2,
+          "start_s": 0,
+          "text": "Thank you for watching!"
+        }
+      ],
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "end_s": 1.3799999952316284,
+          "start_s": 0,
+          "word": "Thank"
+        },
+        {
+          "end_s": 5.539999961853027,
+          "start_s": 1.3799999952316284,
+          "word": "you"
+        },
+        {
+          "end_s": 5.539999961853027,
+          "start_s": 5.539999961853027,
+          "word": "for"
+        },
+        {
+          "end_s": 5.539999961853027,
+          "start_s": 5.539999961853027,
+          "word": "watching!"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 6,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "Thank you for watching!"
+}

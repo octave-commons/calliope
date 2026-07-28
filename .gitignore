@@ -9,3 +9,4 @@ out/
 # Rheos operational event ledger; card Markdown is the durable board source.
 docs/kanban/.events/
 docs/kanban/board.json
+.ημ/session-mycology/

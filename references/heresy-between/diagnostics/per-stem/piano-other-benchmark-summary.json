@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-05-13",
+  "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+  "loudness_match": {
+    "source": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6-fluidr3.wav",
+    "output": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6-fluidr3-rmsmatched.wav",
+    "target": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+    "method": "integrated RMS match to original other.wav with peak protection at 0.98",
+    "rms_match_scale": 6.901931486227933,
+    "peak_before_protect": 0.9364619851112366,
+    "peak_protect_scale": 1.0,
+    "final_peak": 0.9364619851112366,
+    "final_rms": 0.04954079911112785,
+    "target_rms": 0.04954079911112785
+  },
+  "comparisons": {
+    "piano_other_basic_pitch_v3": {
+      "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+      "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1-fluidr3.wav",
+      "duration_seconds": 303.32,
+      "candidate_rms": 0.02778564766049385,
+      "original_rms": 0.04954079911112785,
+      "candidate_peak": 0.2485504150390625,
+      "mean_chroma_similarity": 0.7662586569786072,
+      "median_chroma_similarity": 0.8130622506141663,
+      "mean_onset_delta": -0.04296277090907097,
+      "mean_rms_gap_db": -5.594058990478516,
+      "median_rms_gap_db": -4.98790168762207,
+      "min_rms_gap_db": -63.47039031982422,
+      "max_rms_gap_db": 37.372528076171875,
+      "band_deltas_db": {
+        "sub_20_80": 1.6569485664367676,
+        "bass_80_250": 0.6905519366264343,
+        "low_mid_250_800": -6.589111804962158,
+        "piano_body_800_2500": -1.52869713306427,
+        "presence_2500_6000": 2.9916584491729736,
+        "air_6000_12000": -4.064108371734619
+      },
+      "plots": {
+        "original_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/original-other-spectrogram.png",
+        "candidate_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/piano_other_basic_pitch_v3-spectrogram.png",
+        "diff_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/piano_other_basic_pitch_v3-minus-original-other-spectrogram-diff.png",
+        "onset": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/onset-strength-original-other-vs-piano_other_basic_pitch_v3.png",
+        "rms": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_basic_pitch_v3/rms-piano_other_basic_pitch_v3-minus-original-other.png"
+      }
+    },
+    "piano_other_bytedance_v6_raw": {
+      "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+      "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6-fluidr3.wav",
+      "duration_seconds": 303.32,
+      "candidate_rms": 0.007177816703915596,
+      "original_rms": 0.04954079911112785,
+      "candidate_peak": 0.13568115234375,
+      "mean_chroma_similarity": 0.6736220717430115,
+      "median_chroma_similarity": 0.7205637097358704,
+      "mean_onset_delta": -0.042602889239788055,
+      "mean_rms_gap_db": -21.683183670043945,
+      "median_rms_gap_db": -17.7713623046875,
+      "min_rms_gap_db": -71.82447814941406,
+      "max_rms_gap_db": -1.0635414123535156,
+      "band_deltas_db": {
+        "sub_20_80": -2.488948106765747,
+        "bass_80_250": -4.340566635131836,
+        "low_mid_250_800": -9.974531173706055,
+        "piano_body_800_2500": -4.7119269371032715,
+        "presence_2500_6000": 0.5730159878730774,
+        "air_6000_12000": -4.266320705413818
+      },
+      "plots": {
+        "original_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_raw/original-other-spectrogram.png",
+        "candidate_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_raw/piano_other_bytedance_v6_raw-spectrogram.png",
+        "diff_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_raw/piano_other_bytedance_v6_raw-minus-original-other-spectrogram-diff.png",
+        "onset": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_raw/onset-strength-original-other-vs-piano_other_bytedance_v6_raw.png",
+        "rms": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_raw/rms-piano_other_bytedance_v6_raw-minus-original-other.png"
+      }
+    },
+    "piano_other_bytedance_v6_rmsmatched": {
+      "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+      "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6-fluidr3-rmsmatched.wav",
+      "duration_seconds": 303.32,
+      "candidate_rms": 0.04954081028699875,
+      "original_rms": 0.04954079911112785,
+      "candidate_peak": 0.936431884765625,
+      "mean_chroma_similarity": 0.67379230260849,
+      "median_chroma_similarity": 0.7205158472061157,
+      "mean_onset_delta": -0.04259736090898514,
+      "mean_rms_gap_db": -4.869939804077148,
+      "median_rms_gap_db": -0.9920768737792969,
+      "min_rms_gap_db": -54.67158889770508,
+      "max_rms_gap_db": 15.717090606689453,
+      "band_deltas_db": {
+        "sub_20_80": -2.488457441329956,
+        "bass_80_250": -4.339080333709717,
+        "low_mid_250_800": -9.973958969116211,
+        "piano_body_800_2500": -4.711858749389648,
+        "presence_2500_6000": 0.57310950756073,
+        "air_6000_12000": -4.266229152679443
+      },
+      "plots": {
+        "original_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/original-other-spectrogram.png",
+        "candidate_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/piano_other_bytedance_v6_rmsmatched-spectrogram.png",
+        "diff_spectrogram": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/piano_other_bytedance_v6_rmsmatched-minus-original-other-spectrogram-diff.png",
+        "onset": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/onset-strength-original-other-vs-piano_other_bytedance_v6_rmsmatched.png",
+        "rms": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/rms-piano_other_bytedance_v6_rmsmatched-minus-original-other.png"
+      }
+    }
+  },
+  "interpretation": "Compare Basic Pitch v3 and ByteDance v6 on the same Demucs other.wav source. Use rmsmatched v6 for spectral/onset comparison; raw v6 records unmastered render level."
+}

@@ -28,6 +28,15 @@ not imply access to Err's machine.
 - `openhax.kanban.json` — board discovery and FSM configuration.
 - `receipts.edn` — append-only Receipt River accountability ledger.
 
+## Audio reconstruction
+
+- `docs/reconstruction/` — operating model, contracts, rubrics, runtime split, and tool surveys for recovering owned renders as inspectable local music.
+- `resources/reconstruction/` — pure-data rubrics, path-root translations, handoff schemas, and agent contracts.
+- `src/fork_tales/law/audio.cljc` and `src/fork_tales/law/reconstruction.cljc` — reconstruction contracts and event law.
+- `scripts/reconstruction/` — canonical validation, preflight, grading, metrics, and Gemma-check programs.
+- `references/heresy-between/` — committed evidence and manifests; large regenerable render bytes remain local and are referenced by hash.
+- `ledgers/reconstruction.edn` — append-only reconstruction events. Historical evidence is never rewritten merely to repair stale paths; translate through recorded path-root rules.
+
 ## Commands
 
 These require a local checkout, shell, dependencies, and applicable services.

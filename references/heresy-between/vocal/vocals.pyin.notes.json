@@ -1,0 +1,1775 @@
+{
+  "source": "/home/err/devel/Music/fork-tales/references/heresy-between/vocal/vocals.pyin.f0.json",
+  "algorithm": "librosa.pyin frame collapse",
+  "note_count": 221,
+  "notes": [
+    {
+      "start": 2.089796,
+      "end": 2.229116,
+      "duration": 0.13932,
+      "midi": 68,
+      "mean_midi": 67.967,
+      "note": "G♯4"
+    },
+    {
+      "start": 2.600635,
+      "end": 2.693515,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.35,
+      "note": "D♯4"
+    },
+    {
+      "start": 3.529433,
+      "end": 3.761633,
+      "duration": 0.2322,
+      "midi": 63,
+      "mean_midi": 63.18,
+      "note": "D♯4"
+    },
+    {
+      "start": 4.179592,
+      "end": 4.458231,
+      "duration": 0.278639,
+      "midi": 61,
+      "mean_midi": 61.217,
+      "note": "C♯4"
+    },
+    {
+      "start": 4.504671,
+      "end": 4.643991,
+      "duration": 0.13932,
+      "midi": 58,
+      "mean_midi": 58.267,
+      "note": "A♯3"
+    },
+    {
+      "start": 6.037188,
+      "end": 6.130068,
+      "duration": 0.09288,
+      "midi": 58,
+      "mean_midi": 57.95,
+      "note": "A♯3"
+    },
+    {
+      "start": 6.269388,
+      "end": 6.362268,
+      "duration": 0.09288,
+      "midi": 58,
+      "mean_midi": 58.2,
+      "note": "A♯3"
+    },
+    {
+      "start": 7.012426,
+      "end": 7.105306,
+      "duration": 0.09288,
+      "midi": 67,
+      "mean_midi": 66.7,
+      "note": "G4"
+    },
+    {
+      "start": 7.151746,
+      "end": 7.291066,
+      "duration": 0.13932,
+      "midi": 68,
+      "mean_midi": 67.967,
+      "note": "G♯4"
+    },
+    {
+      "start": 8.219864,
+      "end": 8.498503,
+      "duration": 0.278639,
+      "midi": 63,
+      "mean_midi": 63.083,
+      "note": "D♯4"
+    },
+    {
+      "start": 8.730703,
+      "end": 8.870023,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 62.933,
+      "note": "D♯4"
+    },
+    {
+      "start": 8.962902,
+      "end": 9.055782,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.25,
+      "note": "C♯4"
+    },
+    {
+      "start": 9.427302,
+      "end": 9.520181,
+      "duration": 0.092879,
+      "midi": 66,
+      "mean_midi": 66.05,
+      "note": "F♯4"
+    },
+    {
+      "start": 9.566621,
+      "end": 9.705941,
+      "duration": 0.13932,
+      "midi": 68,
+      "mean_midi": 67.933,
+      "note": "G♯4"
+    },
+    {
+      "start": 9.891701,
+      "end": 10.07746,
+      "duration": 0.185759,
+      "midi": 65,
+      "mean_midi": 64.825,
+      "note": "F4"
+    },
+    {
+      "start": 10.21678,
+      "end": 10.3561,
+      "duration": 0.13932,
+      "midi": 61,
+      "mean_midi": 61.0,
+      "note": "C♯4"
+    },
+    {
+      "start": 10.681179,
+      "end": 10.866939,
+      "duration": 0.18576,
+      "midi": 61,
+      "mean_midi": 61.025,
+      "note": "C♯4"
+    },
+    {
+      "start": 12.399456,
+      "end": 12.492336,
+      "duration": 0.09288,
+      "midi": 58,
+      "mean_midi": 58.2,
+      "note": "A♯3"
+    },
+    {
+      "start": 12.724535,
+      "end": 12.863855,
+      "duration": 0.13932,
+      "midi": 61,
+      "mean_midi": 60.967,
+      "note": "C♯4"
+    },
+    {
+      "start": 13.049615,
+      "end": 13.188934,
+      "duration": 0.139319,
+      "midi": 70,
+      "mean_midi": 70.2,
+      "note": "A♯4"
+    },
+    {
+      "start": 13.235374,
+      "end": 13.467574,
+      "duration": 0.2322,
+      "midi": 68,
+      "mean_midi": 68.2,
+      "note": "G♯4"
+    },
+    {
+      "start": 13.792653,
+      "end": 13.978413,
+      "duration": 0.18576,
+      "midi": 70,
+      "mean_midi": 70.25,
+      "note": "A♯4"
+    },
+    {
+      "start": 14.303492,
+      "end": 14.442812,
+      "duration": 0.13932,
+      "midi": 72,
+      "mean_midi": 72.0,
+      "note": "C5"
+    },
+    {
+      "start": 14.489252,
+      "end": 14.767891,
+      "duration": 0.278639,
+      "midi": 68,
+      "mean_midi": 68.167,
+      "note": "G♯4"
+    },
+    {
+      "start": 14.860771,
+      "end": 15.046531,
+      "duration": 0.18576,
+      "midi": 65,
+      "mean_midi": 65.025,
+      "note": "F4"
+    },
+    {
+      "start": 15.60381,
+      "end": 15.696689,
+      "duration": 0.092879,
+      "midi": 58,
+      "mean_midi": 58.35,
+      "note": "A♯3"
+    },
+    {
+      "start": 15.789569,
+      "end": 15.928889,
+      "duration": 0.13932,
+      "midi": 58,
+      "mean_midi": 58.133,
+      "note": "A♯3"
+    },
+    {
+      "start": 16.068209,
+      "end": 16.161088,
+      "duration": 0.092879,
+      "midi": 61,
+      "mean_midi": 61.0,
+      "note": "C♯4"
+    },
+    {
+      "start": 16.393288,
+      "end": 16.625488,
+      "duration": 0.2322,
+      "midi": 63,
+      "mean_midi": 63.3,
+      "note": "D♯4"
+    },
+    {
+      "start": 16.718367,
+      "end": 16.950567,
+      "duration": 0.2322,
+      "midi": 65,
+      "mean_midi": 64.98,
+      "note": "F4"
+    },
+    {
+      "start": 17.414966,
+      "end": 17.554286,
+      "duration": 0.13932,
+      "midi": 58,
+      "mean_midi": 57.867,
+      "note": "A♯3"
+    },
+    {
+      "start": 17.647166,
+      "end": 17.740045,
+      "duration": 0.092879,
+      "midi": 58,
+      "mean_midi": 58.25,
+      "note": "A♯3"
+    },
+    {
+      "start": 20.108481,
+      "end": 20.2478,
+      "duration": 0.139319,
+      "midi": 60,
+      "mean_midi": 60.1,
+      "note": "C4"
+    },
+    {
+      "start": 23.405714,
+      "end": 23.498594,
+      "duration": 0.09288,
+      "midi": 60,
+      "mean_midi": 60.15,
+      "note": "C4"
+    },
+    {
+      "start": 23.545034,
+      "end": 23.637914,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.2,
+      "note": "C♯4"
+    },
+    {
+      "start": 24.055873,
+      "end": 24.195193,
+      "duration": 0.13932,
+      "midi": 65,
+      "mean_midi": 65.133,
+      "note": "F4"
+    },
+    {
+      "start": 24.520272,
+      "end": 24.613152,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 24.706032,
+      "end": 24.798912,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.0,
+      "note": "F4"
+    },
+    {
+      "start": 25.44907,
+      "end": 25.54195,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.15,
+      "note": "C♯4"
+    },
+    {
+      "start": 25.58839,
+      "end": 25.72771,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 25.867029,
+      "end": 26.052789,
+      "duration": 0.18576,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 26.377868,
+      "end": 26.517188,
+      "duration": 0.13932,
+      "midi": 65,
+      "mean_midi": 65.1,
+      "note": "F4"
+    },
+    {
+      "start": 27.631746,
+      "end": 28.049705,
+      "duration": 0.417959,
+      "midi": 58,
+      "mean_midi": 58.167,
+      "note": "A♯3"
+    },
+    {
+      "start": 28.281905,
+      "end": 28.374785,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.1,
+      "note": "C♯4"
+    },
+    {
+      "start": 29.164263,
+      "end": 29.257143,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.2,
+      "note": "C♯4"
+    },
+    {
+      "start": 29.303583,
+      "end": 29.396463,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.25,
+      "note": "D♯4"
+    },
+    {
+      "start": 29.442902,
+      "end": 29.535782,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.05,
+      "note": "F4"
+    },
+    {
+      "start": 30.325261,
+      "end": 30.418141,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 30.8361,
+      "end": 31.021859,
+      "duration": 0.185759,
+      "midi": 63,
+      "mean_midi": 63.125,
+      "note": "D♯4"
+    },
+    {
+      "start": 31.254059,
+      "end": 31.393379,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.067,
+      "note": "D♯4"
+    },
+    {
+      "start": 31.718458,
+      "end": 31.904218,
+      "duration": 0.18576,
+      "midi": 58,
+      "mean_midi": 58.0,
+      "note": "A♯3"
+    },
+    {
+      "start": 33.343855,
+      "end": 33.436735,
+      "duration": 0.09288,
+      "midi": 70,
+      "mean_midi": 70.05,
+      "note": "A♯4"
+    },
+    {
+      "start": 33.715374,
+      "end": 33.808254,
+      "duration": 0.09288,
+      "midi": 72,
+      "mean_midi": 72.05,
+      "note": "C5"
+    },
+    {
+      "start": 33.808254,
+      "end": 33.947574,
+      "duration": 0.13932,
+      "midi": 73,
+      "mean_midi": 73.2,
+      "note": "C♯5"
+    },
+    {
+      "start": 34.040454,
+      "end": 34.133333,
+      "duration": 0.092879,
+      "midi": 72,
+      "mean_midi": 72.35,
+      "note": "C5"
+    },
+    {
+      "start": 34.226213,
+      "end": 34.551293,
+      "duration": 0.32508,
+      "midi": 68,
+      "mean_midi": 68.157,
+      "note": "G♯4"
+    },
+    {
+      "start": 35.340771,
+      "end": 35.480091,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.033,
+      "note": "D♯4"
+    },
+    {
+      "start": 35.572971,
+      "end": 35.66585,
+      "duration": 0.092879,
+      "midi": 61,
+      "mean_midi": 61.15,
+      "note": "C♯4"
+    },
+    {
+      "start": 36.408889,
+      "end": 36.501769,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 36.733968,
+      "end": 36.826848,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 37.059048,
+      "end": 37.291247,
+      "duration": 0.232199,
+      "midi": 63,
+      "mean_midi": 63.08,
+      "note": "D♯4"
+    },
+    {
+      "start": 37.569887,
+      "end": 37.709206,
+      "duration": 0.139319,
+      "midi": 58,
+      "mean_midi": 58.133,
+      "note": "A♯3"
+    },
+    {
+      "start": 40.96,
+      "end": 41.05288,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.05,
+      "note": "D♯4"
+    },
+    {
+      "start": 47.368707,
+      "end": 47.554467,
+      "duration": 0.18576,
+      "midi": 70,
+      "mean_midi": 70.125,
+      "note": "A♯4"
+    },
+    {
+      "start": 53.266576,
+      "end": 53.452336,
+      "duration": 0.18576,
+      "midi": 63,
+      "mean_midi": 63.125,
+      "note": "D♯4"
+    },
+    {
+      "start": 53.545215,
+      "end": 53.638095,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.25,
+      "note": "C♯4"
+    },
+    {
+      "start": 53.730975,
+      "end": 53.823855,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.15,
+      "note": "D♯4"
+    },
+    {
+      "start": 54.009615,
+      "end": 54.148934,
+      "duration": 0.139319,
+      "midi": 63,
+      "mean_midi": 63.067,
+      "note": "D♯4"
+    },
+    {
+      "start": 54.706213,
+      "end": 54.799093,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 55.031293,
+      "end": 55.217052,
+      "duration": 0.185759,
+      "midi": 58,
+      "mean_midi": 58.175,
+      "note": "A♯3"
+    },
+    {
+      "start": 56.006531,
+      "end": 56.09941,
+      "duration": 0.092879,
+      "midi": 63,
+      "mean_midi": 63.05,
+      "note": "D♯4"
+    },
+    {
+      "start": 56.19229,
+      "end": 56.28517,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.0,
+      "note": "F4"
+    },
+    {
+      "start": 56.37805,
+      "end": 56.51737,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.2,
+      "note": "D♯4"
+    },
+    {
+      "start": 56.796009,
+      "end": 56.888889,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 64.9,
+      "note": "F4"
+    },
+    {
+      "start": 57.074649,
+      "end": 57.167528,
+      "duration": 0.092879,
+      "midi": 65,
+      "mean_midi": 65.1,
+      "note": "F4"
+    },
+    {
+      "start": 57.399728,
+      "end": 57.492608,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.15,
+      "note": "F4"
+    },
+    {
+      "start": 58.096327,
+      "end": 58.189206,
+      "duration": 0.092879,
+      "midi": 65,
+      "mean_midi": 64.95,
+      "note": "F4"
+    },
+    {
+      "start": 58.421406,
+      "end": 58.514286,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.2,
+      "note": "C♯4"
+    },
+    {
+      "start": 58.560726,
+      "end": 58.746485,
+      "duration": 0.185759,
+      "midi": 63,
+      "mean_midi": 63.025,
+      "note": "D♯4"
+    },
+    {
+      "start": 59.025125,
+      "end": 59.164444,
+      "duration": 0.139319,
+      "midi": 61,
+      "mean_midi": 61.167,
+      "note": "C♯4"
+    },
+    {
+      "start": 61.44,
+      "end": 61.53288,
+      "duration": 0.09288,
+      "midi": 68,
+      "mean_midi": 68.1,
+      "note": "G♯4"
+    },
+    {
+      "start": 61.811519,
+      "end": 61.904399,
+      "duration": 0.09288,
+      "midi": 70,
+      "mean_midi": 70.05,
+      "note": "A♯4"
+    },
+    {
+      "start": 61.997279,
+      "end": 62.090159,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.25,
+      "note": "D♯4"
+    },
+    {
+      "start": 62.229478,
+      "end": 62.322358,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.15,
+      "note": "D♯4"
+    },
+    {
+      "start": 62.786757,
+      "end": 62.926077,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.033,
+      "note": "D♯4"
+    },
+    {
+      "start": 63.111837,
+      "end": 63.251156,
+      "duration": 0.139319,
+      "midi": 63,
+      "mean_midi": 63.067,
+      "note": "D♯4"
+    },
+    {
+      "start": 63.483356,
+      "end": 63.576236,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 63.808435,
+      "end": 63.994195,
+      "duration": 0.18576,
+      "midi": 63,
+      "mean_midi": 63.075,
+      "note": "D♯4"
+    },
+    {
+      "start": 64.087075,
+      "end": 64.179955,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 64.75,
+      "note": "F4"
+    },
+    {
+      "start": 67.105669,
+      "end": 67.244989,
+      "duration": 0.13932,
+      "midi": 65,
+      "mean_midi": 65.1,
+      "note": "F4"
+    },
+    {
+      "start": 67.709388,
+      "end": 67.802268,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.3,
+      "note": "F4"
+    },
+    {
+      "start": 68.034467,
+      "end": 68.127347,
+      "duration": 0.09288,
+      "midi": 72,
+      "mean_midi": 71.95,
+      "note": "C5"
+    },
+    {
+      "start": 68.220227,
+      "end": 68.313107,
+      "duration": 0.09288,
+      "midi": 72,
+      "mean_midi": 72.05,
+      "note": "C5"
+    },
+    {
+      "start": 68.591746,
+      "end": 68.684626,
+      "duration": 0.09288,
+      "midi": 68,
+      "mean_midi": 68.05,
+      "note": "G♯4"
+    },
+    {
+      "start": 68.963265,
+      "end": 69.056145,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.25,
+      "note": "D♯4"
+    },
+    {
+      "start": 70.077823,
+      "end": 70.217143,
+      "duration": 0.13932,
+      "midi": 61,
+      "mean_midi": 61.3,
+      "note": "C♯4"
+    },
+    {
+      "start": 70.263583,
+      "end": 70.356463,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 62.95,
+      "note": "D♯4"
+    },
+    {
+      "start": 70.588662,
+      "end": 70.727982,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.033,
+      "note": "D♯4"
+    },
+    {
+      "start": 70.913741,
+      "end": 71.006621,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.05,
+      "note": "D♯4"
+    },
+    {
+      "start": 72.121179,
+      "end": 72.214059,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.1,
+      "note": "C♯4"
+    },
+    {
+      "start": 72.446259,
+      "end": 72.864218,
+      "duration": 0.417959,
+      "midi": 63,
+      "mean_midi": 63.067,
+      "note": "D♯4"
+    },
+    {
+      "start": 72.957098,
+      "end": 73.653696,
+      "duration": 0.696598,
+      "midi": 63,
+      "mean_midi": 63.107,
+      "note": "D♯4"
+    },
+    {
+      "start": 73.700136,
+      "end": 73.793016,
+      "duration": 0.09288,
+      "midi": 64,
+      "mean_midi": 63.75,
+      "note": "E4"
+    },
+    {
+      "start": 73.793016,
+      "end": 74.071655,
+      "duration": 0.278639,
+      "midi": 63,
+      "mean_midi": 63.15,
+      "note": "D♯4"
+    },
+    {
+      "start": 74.210975,
+      "end": 74.303855,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.1,
+      "note": "C♯4"
+    },
+    {
+      "start": 74.536054,
+      "end": 74.628934,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 60.95,
+      "note": "C♯4"
+    },
+    {
+      "start": 74.675374,
+      "end": 74.814694,
+      "duration": 0.13932,
+      "midi": 58,
+      "mean_midi": 58.233,
+      "note": "A♯3"
+    },
+    {
+      "start": 74.907574,
+      "end": 75.000454,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 60.9,
+      "note": "C♯4"
+    },
+    {
+      "start": 75.093333,
+      "end": 75.186213,
+      "duration": 0.09288,
+      "midi": 60,
+      "mean_midi": 60.4,
+      "note": "C4"
+    },
+    {
+      "start": 75.186213,
+      "end": 75.279093,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.4,
+      "note": "C♯4"
+    },
+    {
+      "start": 76.76517,
+      "end": 76.90449,
+      "duration": 0.13932,
+      "midi": 65,
+      "mean_midi": 65.1,
+      "note": "F4"
+    },
+    {
+      "start": 78.297687,
+      "end": 78.390567,
+      "duration": 0.09288,
+      "midi": 68,
+      "mean_midi": 68.0,
+      "note": "G♯4"
+    },
+    {
+      "start": 78.762086,
+      "end": 78.901406,
+      "duration": 0.13932,
+      "midi": 65,
+      "mean_midi": 65.033,
+      "note": "F4"
+    },
+    {
+      "start": 80.108844,
+      "end": 80.248163,
+      "duration": 0.139319,
+      "midi": 65,
+      "mean_midi": 64.967,
+      "note": "F4"
+    },
+    {
+      "start": 82.05932,
+      "end": 82.198639,
+      "duration": 0.139319,
+      "midi": 63,
+      "mean_midi": 63.167,
+      "note": "D♯4"
+    },
+    {
+      "start": 82.337959,
+      "end": 82.430839,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 64.95,
+      "note": "F4"
+    },
+    {
+      "start": 82.523719,
+      "end": 82.616599,
+      "duration": 0.09288,
+      "midi": 68,
+      "mean_midi": 68.05,
+      "note": "G♯4"
+    },
+    {
+      "start": 82.755918,
+      "end": 82.848798,
+      "duration": 0.09288,
+      "midi": 70,
+      "mean_midi": 70.15,
+      "note": "A♯4"
+    },
+    {
+      "start": 82.988118,
+      "end": 83.080998,
+      "duration": 0.09288,
+      "midi": 73,
+      "mean_midi": 73.0,
+      "note": "C♯5"
+    },
+    {
+      "start": 83.220317,
+      "end": 83.313197,
+      "duration": 0.09288,
+      "midi": 72,
+      "mean_midi": 72.35,
+      "note": "C5"
+    },
+    {
+      "start": 83.406077,
+      "end": 83.498957,
+      "duration": 0.09288,
+      "midi": 68,
+      "mean_midi": 68.05,
+      "note": "G♯4"
+    },
+    {
+      "start": 84.520635,
+      "end": 84.659955,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.067,
+      "note": "D♯4"
+    },
+    {
+      "start": 84.752834,
+      "end": 84.892154,
+      "duration": 0.13932,
+      "midi": 61,
+      "mean_midi": 61.1,
+      "note": "C♯4"
+    },
+    {
+      "start": 98.731247,
+      "end": 98.824127,
+      "duration": 0.09288,
+      "midi": 70,
+      "mean_midi": 70.05,
+      "note": "A♯4"
+    },
+    {
+      "start": 102.58576,
+      "end": 102.678639,
+      "duration": 0.092879,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 103.003719,
+      "end": 103.096599,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.05,
+      "note": "D♯4"
+    },
+    {
+      "start": 109.691066,
+      "end": 109.783946,
+      "duration": 0.09288,
+      "midi": 73,
+      "mean_midi": 73.1,
+      "note": "C♯5"
+    },
+    {
+      "start": 112.013061,
+      "end": 112.152381,
+      "duration": 0.13932,
+      "midi": 72,
+      "mean_midi": 72.133,
+      "note": "C5"
+    },
+    {
+      "start": 114.288617,
+      "end": 114.520816,
+      "duration": 0.232199,
+      "midi": 65,
+      "mean_midi": 65.06,
+      "note": "F4"
+    },
+    {
+      "start": 114.753016,
+      "end": 114.845896,
+      "duration": 0.09288,
+      "midi": 68,
+      "mean_midi": 68.15,
+      "note": "G♯4"
+    },
+    {
+      "start": 116.424853,
+      "end": 116.564172,
+      "duration": 0.139319,
+      "midi": 65,
+      "mean_midi": 65.067,
+      "note": "F4"
+    },
+    {
+      "start": 117.72517,
+      "end": 117.81805,
+      "duration": 0.09288,
+      "midi": 72,
+      "mean_midi": 72.1,
+      "note": "C5"
+    },
+    {
+      "start": 118.189569,
+      "end": 118.375329,
+      "duration": 0.18576,
+      "midi": 68,
+      "mean_midi": 68.075,
+      "note": "G♯4"
+    },
+    {
+      "start": 119.489887,
+      "end": 119.582766,
+      "duration": 0.092879,
+      "midi": 65,
+      "mean_midi": 65.15,
+      "note": "F4"
+    },
+    {
+      "start": 120.883084,
+      "end": 120.975964,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 121.208163,
+      "end": 121.301043,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.0,
+      "note": "C♯4"
+    },
+    {
+      "start": 122.415601,
+      "end": 122.508481,
+      "duration": 0.09288,
+      "midi": 68,
+      "mean_midi": 68.1,
+      "note": "G♯4"
+    },
+    {
+      "start": 123.1122,
+      "end": 123.205079,
+      "duration": 0.092879,
+      "midi": 63,
+      "mean_midi": 63.05,
+      "note": "D♯4"
+    },
+    {
+      "start": 123.297959,
+      "end": 123.390839,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.0,
+      "note": "C♯4"
+    },
+    {
+      "start": 124.644717,
+      "end": 124.876916,
+      "duration": 0.232199,
+      "midi": 73,
+      "mean_midi": 73.12,
+      "note": "C♯5"
+    },
+    {
+      "start": 124.969796,
+      "end": 125.109116,
+      "duration": 0.13932,
+      "midi": 75,
+      "mean_midi": 75.2,
+      "note": "D♯5"
+    },
+    {
+      "start": 126.595193,
+      "end": 126.688073,
+      "duration": 0.09288,
+      "midi": 75,
+      "mean_midi": 75.1,
+      "note": "D♯5"
+    },
+    {
+      "start": 127.80263,
+      "end": 128.12771,
+      "duration": 0.32508,
+      "midi": 73,
+      "mean_midi": 73.129,
+      "note": "C♯5"
+    },
+    {
+      "start": 128.359909,
+      "end": 128.592109,
+      "duration": 0.2322,
+      "midi": 72,
+      "mean_midi": 72.02,
+      "note": "C5"
+    },
+    {
+      "start": 128.963628,
+      "end": 129.149388,
+      "duration": 0.18576,
+      "midi": 70,
+      "mean_midi": 70.125,
+      "note": "A♯4"
+    },
+    {
+      "start": 129.381587,
+      "end": 129.474467,
+      "duration": 0.09288,
+      "midi": 70,
+      "mean_midi": 70.15,
+      "note": "A♯4"
+    },
+    {
+      "start": 132.121542,
+      "end": 132.260862,
+      "duration": 0.13932,
+      "midi": 65,
+      "mean_midi": 64.933,
+      "note": "F4"
+    },
+    {
+      "start": 132.307302,
+      "end": 132.446621,
+      "duration": 0.139319,
+      "midi": 63,
+      "mean_midi": 63.2,
+      "note": "D♯4"
+    },
+    {
+      "start": 133.05034,
+      "end": 133.14322,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 133.32898,
+      "end": 133.421859,
+      "duration": 0.092879,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 134.489977,
+      "end": 134.722177,
+      "duration": 0.2322,
+      "midi": 63,
+      "mean_midi": 63.06,
+      "note": "D♯4"
+    },
+    {
+      "start": 134.768617,
+      "end": 134.861497,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 64.8,
+      "note": "F4"
+    },
+    {
+      "start": 135.790295,
+      "end": 136.022494,
+      "duration": 0.232199,
+      "midi": 58,
+      "mean_midi": 58.06,
+      "note": "A♯3"
+    },
+    {
+      "start": 136.394014,
+      "end": 136.533333,
+      "duration": 0.139319,
+      "midi": 68,
+      "mean_midi": 67.967,
+      "note": "G♯4"
+    },
+    {
+      "start": 137.090612,
+      "end": 137.183492,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.35,
+      "note": "D♯4"
+    },
+    {
+      "start": 138.716009,
+      "end": 138.808889,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 138.901769,
+      "end": 139.041088,
+      "duration": 0.139319,
+      "midi": 63,
+      "mean_midi": 63.267,
+      "note": "D♯4"
+    },
+    {
+      "start": 139.180408,
+      "end": 139.319728,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.133,
+      "note": "D♯4"
+    },
+    {
+      "start": 139.366168,
+      "end": 139.505488,
+      "duration": 0.13932,
+      "midi": 61,
+      "mean_midi": 61.1,
+      "note": "C♯4"
+    },
+    {
+      "start": 140.109206,
+      "end": 140.341406,
+      "duration": 0.2322,
+      "midi": 58,
+      "mean_midi": 58.02,
+      "note": "A♯3"
+    },
+    {
+      "start": 156.316735,
+      "end": 156.409615,
+      "duration": 0.09288,
+      "midi": 70,
+      "mean_midi": 69.95,
+      "note": "A♯4"
+    },
+    {
+      "start": 165.047438,
+      "end": 165.140317,
+      "duration": 0.092879,
+      "midi": 70,
+      "mean_midi": 69.95,
+      "note": "A♯4"
+    },
+    {
+      "start": 166.533515,
+      "end": 166.626395,
+      "duration": 0.09288,
+      "midi": 72,
+      "mean_midi": 72.05,
+      "note": "C5"
+    },
+    {
+      "start": 168.94839,
+      "end": 169.08771,
+      "duration": 0.13932,
+      "midi": 68,
+      "mean_midi": 68.033,
+      "note": "G♯4"
+    },
+    {
+      "start": 176.796735,
+      "end": 176.889615,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 64.9,
+      "note": "F4"
+    },
+    {
+      "start": 181.347846,
+      "end": 181.440726,
+      "duration": 0.09288,
+      "midi": 72,
+      "mean_midi": 72.0,
+      "note": "C5"
+    },
+    {
+      "start": 185.898957,
+      "end": 185.991837,
+      "duration": 0.09288,
+      "midi": 70,
+      "mean_midi": 70.0,
+      "note": "A♯4"
+    },
+    {
+      "start": 186.781315,
+      "end": 186.920635,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 188.778231,
+      "end": 188.871111,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.25,
+      "note": "D♯4"
+    },
+    {
+      "start": 191.611066,
+      "end": 191.843265,
+      "duration": 0.232199,
+      "midi": 68,
+      "mean_midi": 68.02,
+      "note": "G♯4"
+    },
+    {
+      "start": 192.261224,
+      "end": 192.354104,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.2,
+      "note": "D♯4"
+    },
+    {
+      "start": 192.864943,
+      "end": 192.957823,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.0,
+      "note": "F4"
+    },
+    {
+      "start": 193.747302,
+      "end": 193.840181,
+      "duration": 0.092879,
+      "midi": 64,
+      "mean_midi": 63.6,
+      "note": "E4"
+    },
+    {
+      "start": 196.533696,
+      "end": 196.905215,
+      "duration": 0.371519,
+      "midi": 63,
+      "mean_midi": 63.163,
+      "note": "D♯4"
+    },
+    {
+      "start": 198.762812,
+      "end": 198.948571,
+      "duration": 0.185759,
+      "midi": 63,
+      "mean_midi": 63.25,
+      "note": "D♯4"
+    },
+    {
+      "start": 199.45941,
+      "end": 199.69161,
+      "duration": 0.2322,
+      "midi": 63,
+      "mean_midi": 63.04,
+      "note": "D♯4"
+    },
+    {
+      "start": 199.73805,
+      "end": 199.83093,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.3,
+      "note": "C♯4"
+    },
+    {
+      "start": 200.063129,
+      "end": 200.156009,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.1,
+      "note": "F4"
+    },
+    {
+      "start": 200.295329,
+      "end": 200.527528,
+      "duration": 0.232199,
+      "midi": 65,
+      "mean_midi": 65.16,
+      "note": "F4"
+    },
+    {
+      "start": 203.546122,
+      "end": 203.685442,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 203.964082,
+      "end": 204.103401,
+      "duration": 0.139319,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 204.335601,
+      "end": 204.474921,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 62.867,
+      "note": "D♯4"
+    },
+    {
+      "start": 204.70712,
+      "end": 204.8,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 62.95,
+      "note": "D♯4"
+    },
+    {
+      "start": 204.98576,
+      "end": 205.171519,
+      "duration": 0.185759,
+      "midi": 63,
+      "mean_midi": 62.95,
+      "note": "D♯4"
+    },
+    {
+      "start": 205.357279,
+      "end": 205.496599,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 62.933,
+      "note": "D♯4"
+    },
+    {
+      "start": 205.589478,
+      "end": 205.682358,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.25,
+      "note": "C♯4"
+    },
+    {
+      "start": 205.728798,
+      "end": 205.821678,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 206.053878,
+      "end": 206.193197,
+      "duration": 0.139319,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 206.425397,
+      "end": 206.704036,
+      "duration": 0.278639,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 206.750476,
+      "end": 206.889796,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.033,
+      "note": "D♯4"
+    },
+    {
+      "start": 207.400635,
+      "end": 207.911474,
+      "duration": 0.510839,
+      "midi": 63,
+      "mean_midi": 63.1,
+      "note": "D♯4"
+    },
+    {
+      "start": 208.329433,
+      "end": 208.468753,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 62.933,
+      "note": "D♯4"
+    },
+    {
+      "start": 208.840272,
+      "end": 208.933152,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.15,
+      "note": "D♯4"
+    },
+    {
+      "start": 209.118912,
+      "end": 209.258231,
+      "duration": 0.139319,
+      "midi": 63,
+      "mean_midi": 63.033,
+      "note": "D♯4"
+    },
+    {
+      "start": 211.533787,
+      "end": 212.091066,
+      "duration": 0.557279,
+      "midi": 58,
+      "mean_midi": 58.033,
+      "note": "A♯3"
+    },
+    {
+      "start": 212.183946,
+      "end": 212.416145,
+      "duration": 0.232199,
+      "midi": 58,
+      "mean_midi": 58.0,
+      "note": "A♯3"
+    },
+    {
+      "start": 218.639093,
+      "end": 219.149932,
+      "duration": 0.510839,
+      "midi": 72,
+      "mean_midi": 72.0,
+      "note": "C5"
+    },
+    {
+      "start": 220.775329,
+      "end": 220.961088,
+      "duration": 0.185759,
+      "midi": 72,
+      "mean_midi": 72.05,
+      "note": "C5"
+    },
+    {
+      "start": 222.493605,
+      "end": 222.725805,
+      "duration": 0.2322,
+      "midi": 63,
+      "mean_midi": 63.04,
+      "note": "D♯4"
+    },
+    {
+      "start": 225.605079,
+      "end": 225.837279,
+      "duration": 0.2322,
+      "midi": 70,
+      "mean_midi": 69.82,
+      "note": "A♯4"
+    },
+    {
+      "start": 240.79093,
+      "end": 240.88381,
+      "duration": 0.09288,
+      "midi": 62,
+      "mean_midi": 61.95,
+      "note": "D4"
+    },
+    {
+      "start": 240.88381,
+      "end": 240.976689,
+      "duration": 0.092879,
+      "midi": 63,
+      "mean_midi": 63.05,
+      "note": "D♯4"
+    },
+    {
+      "start": 241.208889,
+      "end": 241.348209,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 241.394649,
+      "end": 241.487528,
+      "duration": 0.092879,
+      "midi": 61,
+      "mean_midi": 61.05,
+      "note": "C♯4"
+    },
+    {
+      "start": 241.533968,
+      "end": 241.673288,
+      "duration": 0.13932,
+      "midi": 63,
+      "mean_midi": 62.967,
+      "note": "D♯4"
+    },
+    {
+      "start": 242.462766,
+      "end": 242.602086,
+      "duration": 0.13932,
+      "midi": 64,
+      "mean_midi": 63.8,
+      "note": "E4"
+    },
+    {
+      "start": 242.602086,
+      "end": 242.694966,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 242.741406,
+      "end": 242.880726,
+      "duration": 0.13932,
+      "midi": 61,
+      "mean_midi": 61.067,
+      "note": "C♯4"
+    },
+    {
+      "start": 243.623764,
+      "end": 243.716644,
+      "duration": 0.09288,
+      "midi": 58,
+      "mean_midi": 58.05,
+      "note": "A♯3"
+    },
+    {
+      "start": 243.855964,
+      "end": 243.948844,
+      "duration": 0.09288,
+      "midi": 58,
+      "mean_midi": 58.15,
+      "note": "A♯3"
+    },
+    {
+      "start": 244.088163,
+      "end": 244.181043,
+      "duration": 0.09288,
+      "midi": 58,
+      "mean_midi": 58.25,
+      "note": "A♯3"
+    },
+    {
+      "start": 245.94576,
+      "end": 246.131519,
+      "duration": 0.185759,
+      "midi": 63,
+      "mean_midi": 63.15,
+      "note": "D♯4"
+    },
+    {
+      "start": 246.177959,
+      "end": 246.270839,
+      "duration": 0.09288,
+      "midi": 61,
+      "mean_midi": 61.1,
+      "note": "C♯4"
+    },
+    {
+      "start": 252.725986,
+      "end": 252.818866,
+      "duration": 0.09288,
+      "midi": 73,
+      "mean_midi": 72.95,
+      "note": "C♯5"
+    },
+    {
+      "start": 253.236825,
+      "end": 253.329705,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.0,
+      "note": "F4"
+    },
+    {
+      "start": 253.886984,
+      "end": 253.979864,
+      "duration": 0.09288,
+      "midi": 65,
+      "mean_midi": 65.0,
+      "note": "F4"
+    },
+    {
+      "start": 254.583583,
+      "end": 254.676463,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.05,
+      "note": "D♯4"
+    },
+    {
+      "start": 255.605261,
+      "end": 255.698141,
+      "duration": 0.09288,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 255.93034,
+      "end": 256.16254,
+      "duration": 0.2322,
+      "midi": 63,
+      "mean_midi": 63.02,
+      "note": "D♯4"
+    },
+    {
+      "start": 261.31737,
+      "end": 261.410249,
+      "duration": 0.092879,
+      "midi": 63,
+      "mean_midi": 63.0,
+      "note": "D♯4"
+    },
+    {
+      "start": 282.540408,
+      "end": 282.726168,
+      "duration": 0.18576,
+      "midi": 70,
+      "mean_midi": 70.025,
+      "note": "A♯4"
+    }
+  ]
+}

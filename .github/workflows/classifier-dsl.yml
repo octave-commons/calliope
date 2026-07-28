@@ -36,87 +36,124 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
+          import re
 
-          def replace_once(path, old, new):
+          def replace_once(path, old, new, label):
               p = Path(path)
               text = p.read_text()
+              if new in text:
+                  print(f"{label}: already applied")
+                  return
               count = text.count(old)
               if count != 1:
-                  raise SystemExit(f"{path}: expected one match, found {count}\n--- expected ---\n{old}")
+                  raise SystemExit(f"{label}: expected one match, found {count}")
               p.write_text(text.replace(old, new, 1))
+              print(f"{label}: applied")
+
+          def regex_once(path, pattern, replacement, label, flags=0):
+              p = Path(path)
+              text = p.read_text()
+              new_text, count = re.subn(pattern, replacement, text, count=1, flags=flags)
+              if count != 1:
+                  raise SystemExit(f"{label}: expected one regex match, found {count}")
+              p.write_text(new_text)
+              print(f"{label}: applied")
 
           def append_once(path, sentinel, addition):
               p = Path(path)
               text = p.read_text()
               if sentinel in text:
-                  raise SystemExit(f"{path}: addition already present: {sentinel}")
+                  print(f"{sentinel}: already present")
+                  return
               p.write_text(text.rstrip() + "\n\n" + addition.strip() + "\n")
+              print(f"{sentinel}: appended")
 
           replace_once(
               "PROCESS.md",
               "Any substantive repository write activates the receipt obligation for that\nrepository. Multi-repository work requires a receipt in every substantively\ntouched repository.\n",
-              "Any substantive repository work activates the receipt obligation for that\nrepository. Multi-repository work requires a receipt in every substantively\ntouched repository.\n")
+              "Any substantive repository work activates the receipt obligation for that\nrepository. Multi-repository work requires a receipt in every substantively\ntouched repository.\n",
+              "receipt activation wording")
 
           replace_once(
               ".opencode/skills/fork-tales-corpus/SKILL.md",
               "- `:pasted-artifact` flags = Suno \"songs\" whose body is a pasted chat log or\n  zip manifest. Kept (they were rendered), but filter them for lore analysis.\n",
-              "- `:pasted-artifact` flags = Suno \"songs\" whose body is a pasted chat log or\n  zip manifest. Keep them in the rendered corpus, but exclude them from thematic\n  discovery and lore analysis by default. Include them only when deliberately\n  requested.\n")
+              "- `:pasted-artifact` flags = Suno \"songs\" whose body is a pasted chat log or\n  zip manifest. Keep them in the rendered corpus, but exclude them from thematic\n  discovery and lore analysis by default. Include them only when deliberately\n  requested.\n",
+              "pasted-artifact guidance")
+
+          regex_once(
+              "resources/classifiers/theme-discovery-v1.edn",
+              r":model/options \{:n_ctx 32768\s+:temperature 0\.2\}",
+              ":model/options {:temperature 0.2}",
+              "llama.cpp request options")
+
+          p = Path("resources/classifiers/theme-discovery-v1.edn")
+          text = p.read_text()
+          output_start = text.index("  :fork-tales/production-style-result-v1")
+          value_start = text.index("    [:feature/value", output_start)
+          next_output = text.index("\n\n  :fork-tales/theme-discovery-result-v1", value_start)
+          replacement = "    [:feature/value\n     [:ref :fork-tales/production-style-v1]]]}"
+          text = text[:value_start] + replacement + text[next_output:]
+          p.write_text(text)
+          print("production-style schema reference: applied")
 
           replace_once(
               "resources/classifiers/theme-discovery-v1.edn",
-              "   :model/options {:n_ctx 32768\n                    :temperature 0.2}}",
-              "   :model/options {:temperature 0.2}}")
-          replace_once(
-              "resources/classifiers/theme-discovery-v1.edn",
-              "    [:feature/value\n     [:map {:closed true}\n      [:tempo\n       [:map {:closed true}\n        [:bpm-min {:optional true} [:int {:min 1 :max 400}]]\n        [:bpm-max {:optional true} [:int {:min 1 :max 400}]]\n        [:feel {:optional true}\n         [:enum :straight :half-time :double-time :rubato :destabilized :unknown]]]]\n      [:genres [:vector :string]]\n      [:moods [:vector :string]]\n      [:rhythm [:vector :string]]\n      [:texture [:vector :string]]\n      [:vocals [:vector :string]]\n      [:structure [:vector :string]]\n      [:negative-constraints [:vector :string]]\n      [:production-notes [:vector :string]]\n      [:evidence\n       [:vector\n        [:map {:closed true}\n         [:source [:enum :style-prompt :lyrics :metadata :artwork :audio]]\n         [:quote-or-description [:string {:min 1}]]]]]]]]}",
-              "    [:feature/value\n     [:ref :fork-tales/production-style-v1]]]}" )
-          replace_once(
-              "resources/classifiers/theme-discovery-v1.edn",
-              "                                   :model-digest :prompt-version}}",
-              "                                   :model-digest :prompt-version :context-version}}")
+              ":model-digest :prompt-version}}",
+              ":model-digest :prompt-version :context-version}}",
+              "LLM context cache identity")
 
           replace_once(
               "src/fork_tales/classifier/dsl.cljc",
               "  (:require [fork-tales.law.classifier :as classifier-law]",
-              "  (:require [clojure.set :as set]\n            [fork-tales.law.classifier :as classifier-law]")
+              "  (:require [clojure.set :as set]\n            [fork-tales.law.classifier :as classifier-law]",
+              "clojure.set require")
           replace_once(
               "src/fork_tales/classifier/dsl.cljc",
               "(defn- classifier-reference-issues\n",
-              "(declare producer-index)\n\n(defn- classifier-reference-issues\n")
+              "(declare producer-index)\n\n(defn- classifier-reference-issues\n",
+              "producer-index declaration")
           replace_once(
               "src/fork_tales/classifier/dsl.cljc",
               "(defn- extractor-reference-issues\n",
-              "(defn- unproducible-feature-issues\n  [program]\n  (let [producers (producer-index program)]\n    (mapcat\n     (fn [[classifier-id classifier]]\n       (keep\n        (fn [feature-id]\n          (when (empty? (get producers feature-id))\n            (issue :feature/unproducible\n                   [:classifiers classifier-id :classifier/requires-features feature-id]\n                   \"Required feature has no extractor that produces it.\"\n                   {:feature feature-id})))\n        (:classifier/requires-features classifier)))\n     (:classifiers program))))\n\n(defn- extractor-reference-issues\n")
+              "(defn- unproducible-feature-issues\n  [program]\n  (let [producers (producer-index program)]\n    (mapcat\n     (fn [[classifier-id classifier]]\n       (keep\n        (fn [feature-id]\n          (when (empty? (get producers feature-id))\n            (issue :feature/unproducible\n                   [:classifiers classifier-id :classifier/requires-features feature-id]\n                   \"Required feature has no extractor that produces it.\"\n                   {:feature feature-id})))\n        (:classifier/requires-features classifier)))\n     (:classifiers program))))\n\n(defn- extractor-reference-issues\n",
+              "required feature producer lint")
           replace_once(
               "src/fork_tales/classifier/dsl.cljc",
               "(defn- prompt-context-issue\n",
-              "(defn- required-cache-key-parts\n  [extractor]\n  (cond-> #{:object-content-sha256 :extractor-version}\n    (= :llm (:extractor/type extractor))\n    (into #{:model-digest :prompt-version :context-version})))\n\n(defn- extractor-cache-issues\n  [program]\n  (mapcat\n   (fn [[extractor-id extractor]]\n     (let [cache (:extractor/cache extractor)]\n       (when (= :exact-only (:cache/reuse cache))\n         (for [part (sort-by name\n                            (set/difference\n                             (required-cache-key-parts extractor)\n                             (:cache/key cache)))]\n           (issue :cache/key-incomplete\n                  [:extractors extractor-id :extractor/cache :cache/key part]\n                  \"Exact cache reuse is missing an identity component required by the extractor type.\"\n                  {:extractor/id extractor-id\n                   :extractor/type (:extractor/type extractor)\n                   :missing-part part})))))\n   (:extractors program)))\n\n(defn- prompt-context-issue\n")
+              "(defn- required-cache-key-parts\n  [extractor]\n  (cond-> #{:object-content-sha256 :extractor-version}\n    (= :llm (:extractor/type extractor))\n    (into #{:model-digest :prompt-version :context-version})))\n\n(defn- extractor-cache-issues\n  [program]\n  (mapcat\n   (fn [[extractor-id extractor]]\n     (let [cache (:extractor/cache extractor)]\n       (when (= :exact-only (:cache/reuse cache))\n         (for [part (sort-by name\n                            (set/difference\n                             (required-cache-key-parts extractor)\n                             (:cache/key cache)))]\n           (issue :cache/key-incomplete\n                  [:extractors extractor-id :extractor/cache :cache/key part]\n                  \"Exact cache reuse is missing an identity component required by the extractor type.\"\n                  {:extractor/id extractor-id\n                   :extractor/type (:extractor/type extractor)\n                   :missing-part part})))))\n   (:extractors program)))\n\n(defn- prompt-context-issue\n",
+              "exact cache lint")
           replace_once(
               "src/fork_tales/classifier/dsl.cljc",
               "    (classifier-reference-issues program)\n    (extractor-reference-issues program)\n",
-              "    (classifier-reference-issues program)\n    (unproducible-feature-issues program)\n    (extractor-reference-issues program)\n    (extractor-cache-issues program)\n")
+              "    (classifier-reference-issues program)\n    (unproducible-feature-issues program)\n    (extractor-reference-issues program)\n    (extractor-cache-issues program)\n",
+              "lint registration")
 
           replace_once(
               "src/fork_tales/classifier/runtime.clj",
               "      :explicit\n      (let [by-id (into {} (map (juxt :object/id identity)) filtered)]\n        (mapv by-id (:selector/object-ids selector)))",
-              "      :explicit\n      (let [by-id (into {} (map (juxt :object/id identity)) filtered)]\n        (mapv\n         (fn [object-id]\n           (or (get by-id object-id)\n               (throw\n                (ex-info \"Explicit selector references an unknown or filtered-out object.\"\n                         {:selector/id (:selector/id selector)\n                          :object/id object-id}))))\n         (:selector/object-ids selector)))")
+              "      :explicit\n      (let [by-id (into {} (map (juxt :object/id identity)) filtered)]\n        (mapv\n         (fn [object-id]\n           (or (get by-id object-id)\n               (throw\n                (ex-info \"Explicit selector references an unknown or filtered-out object.\"\n                         {:selector/id (:selector/id selector)\n                          :object/id object-id}))))\n         (:selector/object-ids selector)))",
+              "explicit selector fail-fast")
           replace_once(
               "src/fork_tales/classifier/runtime.clj",
               "        (let [events (run-extractor! state producer-id object)\n              event (first (filter #(= feature-id (:feature/id %)) events))]",
-              "        (let [events (run-extractor! state producer-id object)\n              event\n              (or (first (filter #(= feature-id (:feature/id %)) events))\n                  (throw\n                   (ex-info \"Extractor ran but did not produce the requested feature.\"\n                            {:feature/id feature-id\n                             :extractor/id producer-id\n                             :object/id (:object/id object)\n                             :produced-feature-ids (mapv :feature/id events)})))]")
+              "        (let [events (run-extractor! state producer-id object)\n              event\n              (or (first (filter #(= feature-id (:feature/id %)) events))\n                  (throw\n                   (ex-info \"Extractor ran but did not produce the requested feature.\"\n                            {:feature/id feature-id\n                             :extractor/id producer-id\n                             :object/id (:object/id object)\n                             :produced-feature-ids (mapv :feature/id events)})))]",
+              "feature emission fail-fast")
           replace_once(
               "src/fork_tales/classifier/runtime.clj",
-              "                   (mapv #((resolver runtime (:step/resolver step)) runtime %)\n                         (get bindings :selected))",
-              "                   (mapv #((resolver runtime (:step/resolver step)) runtime %)\n                         input)")
+              "(get bindings :selected)",
+              "input",
+              "hydrate declared input")
 
           replace_once(
               "docs/classifier-dsl.md",
               "Feature cache keys are explicit. An exact reusable observation may depend on:\n",
-              "Feature cache keys are explicit. Exact reuse is accepted only when the declared\nidentity covers every dependency required by the extractor type. A reusable\nobservation may depend on:\n")
+              "Feature cache keys are explicit. Exact reuse is accepted only when the declared\nidentity covers every dependency required by the extractor type. A reusable\nobservation may depend on:\n",
+              "cache semantics premise")
           replace_once(
               "docs/classifier-dsl.md",
               "A changed lyric, extractor, model, prompt, or context policy therefore produces\na new derived observation instead of silently reusing stale features.\n",
-              "For deterministic extractors, exact reuse requires object content and extractor\nversion. For LLM extractors it additionally requires model identity, prompt\nversion, and a stable hash of the context generator. A changed dependency\ntherefore produces a new derived observation instead of silently reusing stale\nfeatures.\n")
+              "For deterministic extractors, exact reuse requires object content and extractor\nversion. For LLM extractors it additionally requires model identity, prompt\nversion, and a stable hash of the context generator. A changed dependency\ntherefore produces a new derived observation instead of silently reusing stale\nfeatures.\n",
+              "cache invalidation guarantee")
 
           append_once(
               "test/fork_tales/classifier/dsl_test.clj",
@@ -292,7 +329,6 @@ jobs:
           from datetime import datetime, timezone
           import os
           from pathlib import Path
-
           ts = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
           line = (
               '{:ts "' + ts + '", :kind :build, '

@@ -113,12 +113,13 @@ playback, curation, or salvage.
 - Use Rheos CLI, API, MCP, or UI operations for board-state reads, writes,
   comments, and transitions. Do not build a second implementation of those
   operations.
-- **Card body prose is authored in Git.** The installed engine exposes no
-  authoring verb for a card's Markdown body — only `status`, frontmatter, and
-  comments — so outcome, scope, non-goals, acceptance criteria, and verification
-  sections are written as Markdown and reviewed as diffs. This is a recorded
-  upstream gap, not a second write protocol for board state. When an upstream
-  body-authoring verb ships, consume it and narrow this exemption.
+- **Cards may be created and edited manually as Markdown.** This is intended
+  Rheos design, not a gap or a workaround: Rheos is built so that a collection of
+  Markdown documents is easy to migrate in, so hand-authored cards are first-class
+  input. Outcome, scope, non-goals, acceptance criteria, and verification sections
+  are written as Markdown and reviewed as diffs. Do not treat this as a second
+  write protocol for board state, and do not remove it when the CLI gains more
+  authoring verbs — plain Markdown stays a supported entry point.
 - A harness without Rheos may inspect board artifacts but must not mutate board
   state or claim board validation.
 - `docs/kanban/` contains cards plus the artifacts Rheos itself writes there;

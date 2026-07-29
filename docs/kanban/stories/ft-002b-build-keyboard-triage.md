@@ -14,7 +14,7 @@ research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["ft-001d-add-dispositions-ratings-labels-sorting-and-playlists", "ft-002a-add-smart-lists-and-saved-media-workspaces"]
+dependency: ["ft-001d-add-dispositions-ratings-labels-sorting-and-playlists", "ft-002a-add-smart-lists-and-saved-media-workspaces", "ft-003a-implement-marker-and-clip-commands-over-immutable-renders"]
 ---
 
 # FT-002B: Build keyboard-first triage and classifier-overlay review
@@ -29,13 +29,16 @@ markers, and clip in/out proposals without leaving the playback flow.
 - Configurable shortcut map and help overlay.
 - Unreviewed/smart-list queue source.
 - Quick rating/disposition/label actions.
-- In/out points and provisional marker creation.
+- In/out points and provisional marker creation, dispatched to FT-003A's marker
+  and clip commands rather than a triage-local command path.
 - Derived classifier overlays with accept/reject actions.
 
 ## Non-goals
 
 - Full waveform editing.
 - Automatic acceptance of classifier labels or section boundaries.
+- Implementing marker or clip commands. Triage consumes FT-003A's commands; a
+  second command path for the same domain operations is prohibited.
 
 ## Acceptance criteria
 
@@ -44,6 +47,8 @@ markers, and clip in/out proposals without leaving the playback flow.
 - Classifier suggestions show status, evidence, and extractor identity.
 - Accept/reject creates durable decisions; merely viewing a proposal does not.
 - Queue advance never hides a failed command.
+- Marker and in/out actions dispatch FT-003A commands; no marker or clip write
+  path originates in this card's code.
 
 ## Verification
 

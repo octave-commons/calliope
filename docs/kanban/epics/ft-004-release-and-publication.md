@@ -30,10 +30,17 @@ track direct uploads, resumable uploads, distributor handoffs, and manual action
 
 ## Decomposed into
 
+Listed in dependency order. Letters are stable labels, not sequence:
+
 - FT-004A — release and target-capability laws.
+- FT-004F — release builder assembly, validation, and local acceptance.
 - FT-004B — export packages and YouTube video assets.
 - FT-004C — SoundCloud adapter.
 - FT-004D — YouTube adapter.
 - FT-004E — distributor/manual handoffs.
 
 Implement the children, never this epic directly.
+
+FT-004F produces the accepted release that FT-004B and every publication adapter
+require as input. Without it, completing the other children still leaves nothing
+able to make a release acceptable.

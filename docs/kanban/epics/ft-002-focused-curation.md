@@ -65,5 +65,18 @@ eta-mu kanban find ft-002b-build-keyboard-first-triage-and-classifier-overlay-re
 eta-mu kanban list
 ```
 
+Expected child dependency edges (verified against each `find` result's
+`dependency` field, not just resolution and `epic` linkage):
+
+- FT-002A depends on FT-001D.
+- FT-002B depends on FT-001D, FT-002A, and FT-003A.
+
+FT-002B's edge to FT-003A is deliberate and crosses the phase 2/3 boundary: the
+triage surface records provisional markers and in/out points, and the marker and
+clip commands it dispatches are owned by FT-003A. Gate 2 therefore cannot be
+accepted before FT-003A lands. Do not "simplify" this edge away — removing it
+reintroduces a second marker command path, which the ADR's command/query boundary
+forbids.
+
 Child interaction and projection tests verify query determinism, workspace
 restoration, keyboard safety, and proposal adjudication.

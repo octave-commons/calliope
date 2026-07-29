@@ -43,20 +43,23 @@ labels, sorting, and playlists.
 - FT-001B — playback resolver and queue.
 - FT-001C — application shell and library.
 - FT-001D — dispositions, ratings, labels, and playlists.
+- FT-001E — system media keys through the native shell adapter.
 
 Implement the children, never this epic directly.
 
 ## Acceptance criteria
 
-- FT-001A through FT-001D exist as resolvable child work with explicit dependencies.
+- FT-001A through FT-001E exist as resolvable child work with explicit dependencies.
 - The first usable gate requires representative real corpus MP3 playback.
+- Every behavior the approved design marks as required for daily-driver use is
+  owned by a child card, including system media-key integration.
 - Transport and queue persist across application views.
 - One unreadable item produces a visible error without destroying the queue.
 - No editor or publication scope is smuggled into the player milestone.
 
 ## Verification
 
-Read this epic and its four children through Rheos and confirm each resolves with
+Read this epic and its five children through Rheos and confirm each resolves with
 this epic's UUID in its `epic` field, and that each child's `dependency` array in
 the returned card matches the expected edge below:
 
@@ -66,6 +69,7 @@ eta-mu kanban find ft-001a-index-playable-media-metadata-and-waveform-jobs
 eta-mu kanban find ft-001b-implement-playback-resolver-persistent-queue-and-resume
 eta-mu kanban find ft-001c-build-persistent-player-shell-and-library-browser
 eta-mu kanban find ft-001d-add-dispositions-ratings-labels-sorting-and-playlists
+eta-mu kanban find ft-001e-integrate-system-media-keys-through-the-native-shell-adapter
 eta-mu kanban list
 ```
 
@@ -76,6 +80,7 @@ Expected child dependency edges (verified against each `find` result's
 - FT-001B depends on FT-000D, FT-001A.
 - FT-001C depends on FT-000D, FT-001B.
 - FT-001D depends on FT-000C, FT-001C.
+- FT-001E depends on FT-000D, FT-001C.
 
 Child-card tests and the Gate 1 native playback evidence verify implementation.
 This epic remains `breakdown` until its child work is accepted.

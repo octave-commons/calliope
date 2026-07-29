@@ -14,7 +14,7 @@ research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["ft-003c-implement-arrangement-playback-and-deterministic-export", "ft-004a-define-release-manifest-and-publication-target-laws"]
+dependency: ["ft-003c-implement-arrangement-playback-and-deterministic-export", "ft-004a-define-release-manifest-and-publication-target-laws", "ft-004f-build-release-builder-assembly-validation-and-local-acceptance"]
 ---
 
 # FT-004B: Generate target-ready release packages and YouTube video assets

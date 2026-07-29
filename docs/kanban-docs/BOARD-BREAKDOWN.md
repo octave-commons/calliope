@@ -31,6 +31,7 @@ application/event boundary.
 | FT-001B | Implement real playback resolver, persistent queue, resume, and failure isolation | 5 | 000D, 001A | incoming |
 | FT-001C | Build native Clojure/JVM shell and virtualized library browser | 5 | 000D, 001B | incoming |
 | FT-001D | Add disposition, multidimensional ratings, labels, sorting, and playlists | 5 | 000C, 001C | incoming |
+| FT-001E | Integrate system media keys through the native shell adapter | 3 | 000D, 001C | incoming |
 
 Gate outcome: Fork Tales is demonstrably useful as the everyday player for the
 corpus. Acceptance requires representative real MP3 playback, seek, pause/resume,
@@ -42,10 +43,14 @@ alone are insufficient.
 | Card | Outcome | Pts | Depends on | State |
 |---|---|---:|---|---|
 | FT-002A | Add query-backed smart lists and saved workspaces | 5 | 001D | incoming |
-| FT-002B | Add keyboard-first triage and classifier-overlay review | 5 | 001D, 002A | incoming |
+| FT-002B | Add keyboard-first triage and classifier-overlay review | 5 | 001D, 002A, 003A | incoming |
 
 Gate outcome: the corpus can be reviewed quickly without losing richer attention
 context or classifier provenance.
+
+FT-002B's edge to FT-003A crosses into Gate 3 on purpose: triage records
+provisional markers and in/out points, and those commands are owned by FT-003A.
+Gate 2 cannot be accepted before FT-003A lands.
 
 ## Gate 3 — Salvage and arrangement
 
@@ -65,10 +70,13 @@ an evidence-backed alignment model.
 
 ## Gate 4 — Release and publication
 
+Rows are in dependency order; letters are stable labels, not sequence.
+
 | Card | Outcome | Pts | Depends on | State |
 |---|---|---:|---|---|
 | FT-004A | Define release manifest, rights/provenance checklist, and target-capability law | 5 | 000B, 003D | icebox |
-| FT-004B | Generate target-ready packages and YouTube video assets | 5 | 003C, 004A | icebox |
+| FT-004F | Assemble, validate, and locally accept a release candidate | 5 | 004A | icebox |
+| FT-004B | Generate target-ready packages and YouTube video assets | 5 | 003C, 004A, 004F | icebox |
 | FT-004C | Implement checkpointed SoundCloud direct-upload adapter | 5 | 004A, 004B | icebox |
 | FT-004D | Implement resumable YouTube upload with privacy/audit state | 5 | 004A, 004B | icebox |
 | FT-004E | Implement distributor/manual handoffs for Spotify, Bandcamp, and similar targets | 5 | 004A, 004B | icebox |
@@ -94,13 +102,19 @@ board implementation.
 ```text
 FT-000A ─┬─> FT-000B ─┐
          └─> FT-000D ─┴─> FT-000C
-                         ├─> FT-001A -> FT-001B -> FT-001C -> FT-001D
-                         │                         └-> FT-002A -> FT-002B
+                         ├─> FT-001A -> FT-001B -> FT-001C ─┬─> FT-001D -> FT-002A -> FT-002B
+                         │                                  └─> FT-001E
                          └─> FT-003A -> FT-003B -> FT-003C -> FT-003D
-                                                             └-> FT-004A
-                                                                 -> FT-004B
-                                                                 -> target adapters
+                                                             -> FT-004A -> FT-004F -> FT-004B
+                                                                                      -> target adapters
 ```
+
+Cross-gate edge not drawn above: **FT-002B also depends on FT-003A**, because
+triage dispatches FT-003A's marker and clip commands.
+
+This diagram shows principal chains only. Each card's `dependency` field is
+authoritative, and several cards carry additional edges to the FT-000 foundation
+cards that would make the drawing unreadable.
 
 ## Acceptance
 

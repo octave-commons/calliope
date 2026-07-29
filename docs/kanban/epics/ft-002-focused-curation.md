@@ -55,6 +55,15 @@ Implement the children, never this epic directly.
 
 ## Verification
 
-Run `python3 scripts/validate_rheos_board.py`; child interaction and projection
-tests verify query determinism, workspace restoration, keyboard safety, and
-proposal adjudication.
+Read this epic and its two children through Rheos and confirm each resolves with
+this epic's UUID in its `epic` field:
+
+```bash
+eta-mu kanban find ft-002-make-corpus-curation-fast-and-context-preserving
+eta-mu kanban find ft-002a-add-smart-lists-and-saved-media-workspaces
+eta-mu kanban find ft-002b-build-keyboard-first-triage-and-classifier-overlay-review
+eta-mu kanban list
+```
+
+Child interaction and projection tests verify query determinism, workspace
+restoration, keyboard safety, and proposal adjudication.

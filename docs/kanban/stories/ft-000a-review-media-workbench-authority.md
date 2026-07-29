@@ -63,4 +63,47 @@ normal Rheos config discovery instead of repeated `--tasks-dir` defaults.
 - Board mechanics corrected in commit `09be7d22f414a753f1a3a5067fb14f8e8fff6da3`.
 - FT-000D created to own the native UI, playback backend, read model, and
   application-topology decisions found missing by the independent review.
-- Repository Contracts validates the card graph and authority paths.
+- Repository Contracts reads the board through eta-mu/Rheos and runs
+  `clojure -M:test`. It does not validate the card graph or authority paths; no
+  check in this repository does, and none may be added locally.
+
+## Verification result
+
+This is a human acceptance card owned by `Err`. Its disposition is recorded, not
+inferred. The evidence that actually exists on 2026-07-28, at commit `e9e3770`:
+
+**Human disposition — PR #3 issue comment `5099692071`**, author `riatzukiza`,
+`2026-07-28T03:46:00Z`, titled "Human review disposition", verbatim verdict:
+
+```text
+**APPROVE AFTER CHANGE**
+
+Err approved the media-workbench direction with one requested correction: normal
+Rheos commands must rely on repository-root discovery of `openhax.kanban.json`
+rather than redundantly defaulting to `--tasks-dir docs/kanban`.
+```
+
+Retrieved with
+`gh api repos/octave-commons/fork_tales_v2/issues/comments/5099692071`.
+That comment is the acceptance basis for this card, and the requested correction
+was applied on this branch.
+
+**Independent review — PR #3 review `4793817603`**, author `riatzukiza`,
+`2026-07-28T04:51:14Z`, GitHub state `COMMENTED`. Its body records
+"REQUEST-CHANGES on board mechanics; APPROVE the design authority".
+
+**Board-mechanics correction** — commit `09be7d2` ("fix: align media workbench
+board with Rheos mechanics"), confirmed present in this branch's history.
+
+**Explicitly not claimed.** PR #3 carries no review with GitHub state `APPROVED`;
+all 13 reviews on it are `COMMENTED`
+(`gh api repos/octave-commons/fork_tales_v2/pulls/3/reviews`). This card's `done`
+status therefore rests on the human comment above and not on a GitHub review
+approval, and not on PR merge state, which the non-goals already exclude. No
+acceptance of unimplemented player, audio, read-model, or publication work is
+recorded or implied here.
+
+This section was added after the fact: the card was already `done` with a
+`## Verification` plan but no recorded result, which the board contract does not
+permit. The status and disposition are unchanged; only the missing evidence is now
+present.

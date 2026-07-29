@@ -54,6 +54,19 @@ Implement the children, never this epic directly.
 
 ## Verification
 
-Run `python3 scripts/validate_rheos_board.py` and verify the four child UUIDs,
-authority paths, dependencies, ownership, and status remain valid. Child cards carry
-the executable tests and decision evidence for their bounded scopes.
+Read this epic and its four children through Rheos and confirm each resolves, that
+every child's `epic` field is this epic's UUID, and that dependencies, ownership,
+and status are as recorded:
+
+```bash
+eta-mu kanban find ft-000-establish-media-workbench-authority-and-durable-studio-foundation
+eta-mu kanban find ft-000a-review-and-accept-or-revise-media-workbench-authority
+eta-mu kanban find ft-000b-define-media-workbench-domain-laws
+eta-mu kanban find ft-000c-define-append-only-studio-events-and-read-projection
+eta-mu kanban find ft-000d-decide-native-desktop-playback-read-model-and-application-topology
+eta-mu kanban list
+```
+
+Child cards carry the executable tests and decision evidence for their bounded
+scopes. Authority-path resolution is not checked by Rheos; verify those paths by
+opening the referenced files.

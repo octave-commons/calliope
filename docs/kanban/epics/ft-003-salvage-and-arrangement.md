@@ -55,6 +55,18 @@ Implement the children, never this epic directly.
 
 ## Verification
 
-Run `python3 scripts/validate_rheos_board.py`; child contract, interaction, export,
-and derivation-graph tests verify the executable work. Real native waveform and
-audio evidence is recorded by the owning child cards.
+Read this epic and its four children through Rheos and confirm each resolves with
+this epic's UUID in its `epic` field:
+
+```bash
+eta-mu kanban find ft-003-recover-valuable-spans-and-arrange-them-non-destructively
+eta-mu kanban find ft-003a-implement-marker-and-clip-commands-over-immutable-renders
+eta-mu kanban find ft-003b-build-waveform-salvage-editor
+eta-mu kanban find ft-003c-implement-arrangement-playback-and-deterministic-export
+eta-mu kanban find ft-003d-preserve-render-to-release-derivation-graph
+eta-mu kanban list
+```
+
+Child contract, interaction, export, and derivation-graph tests verify the
+executable work. Real native waveform and audio evidence is recorded by the owning
+child cards.

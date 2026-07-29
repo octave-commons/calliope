@@ -56,6 +56,17 @@ Implement the children, never this epic directly.
 
 ## Verification
 
-Run `python3 scripts/validate_rheos_board.py`; child-card tests and the Gate 1
-native playback evidence verify implementation. This epic remains `breakdown`
-until its child work is accepted.
+Read this epic and its four children through Rheos and confirm each resolves with
+this epic's UUID in its `epic` field:
+
+```bash
+eta-mu kanban find ft-001-ship-a-daily-driver-library-and-player
+eta-mu kanban find ft-001a-index-playable-media-metadata-and-waveform-jobs
+eta-mu kanban find ft-001b-implement-playback-resolver-persistent-queue-and-resume
+eta-mu kanban find ft-001c-build-persistent-player-shell-and-library-browser
+eta-mu kanban find ft-001d-add-dispositions-ratings-labels-sorting-and-playlists
+eta-mu kanban list
+```
+
+Child-card tests and the Gate 1 native playback evidence verify implementation.
+This epic remains `breakdown` until its child work is accepted.

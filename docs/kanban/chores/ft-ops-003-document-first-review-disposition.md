@@ -58,7 +58,9 @@ Review: `https://github.com/octave-commons/fork_tales_v2/pull/3#pullrequestrevie
 - Prose is outside `docs/kanban/` and the board contains only actual cards.
 - All cards use explicit UUID identity and resolvable relationships.
 - Snapshot output is ignored and documented as diagnostic.
-- The repository validator enforces rich card invariants.
+- Rheos is the sole board authority: card invariants are enforced by Rheos, or
+  they are recorded as an open upstream gap. No repository-local validator exists
+  to enforce them.
 - FT-000D owns native UI, real audio backend, read model, and application topology.
 - Gate 1 requires real corpus MP3 evidence.
 - FT-003B limits v1 sibling comparison to manual independent playheads.
@@ -66,6 +68,25 @@ Review: `https://github.com/octave-commons/fork_tales_v2/pull/3#pullrequestrevie
 ## Verification
 
 Review `4793817603`, the corrected card corpus, and Repository Contracts provide
-the durable evidence. Run `python3 scripts/validate_rheos_board.py` and
-`clojure -M:test`; confirm the accepted findings remain represented in the board
-contract, authority documents, and Receipt River.
+the durable evidence. Confirm the accepted findings remain represented in the board
+contract, authority documents, and Receipt River by running:
+
+```bash
+eta-mu --version
+eta-mu kanban count
+eta-mu kanban list
+eta-mu kanban find ft-000b-define-media-workbench-domain-laws
+clojure -M:test
+```
+
+`eta-mu kanban count` reporting 27 cards with no `README`, `AGENTS`, or
+`BOARD-BREAKDOWN` row in `eta-mu kanban list` is the live evidence for the
+phantom-card finding; `eta-mu kanban find` resolving a UUID whose slug differs from
+it is the live evidence for the `uuid:`-identity finding.
+
+Some invariants this review asked for are **not** currently enforced anywhere.
+Rheos does not reject empty readiness sections, dependency cycles, or breaches of
+the repository's 2/1 WIP rule, and the repository-local validator that briefly
+enforced them was deleted in `ee10c65` because it was a second board
+implementation. Those gaps are recorded as drift in FT-OPS-001 and `receipts.edn`
+and belong upstream in `@eta-mu/rheos`. This card does not claim they are enforced.

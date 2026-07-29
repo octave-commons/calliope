@@ -1,7 +1,4 @@
 {
   "tasksDir": "./docs/kanban",
-  "fsm": {
-    "extends": "promethean",
-    "buildGateCommands": ["clojure -M:test"]
-  }
+  "fsm": "promethean"
 }

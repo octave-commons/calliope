@@ -102,26 +102,41 @@ playback, curation, or salvage.
 
 ## Rheos board discipline
 
-- **Rheos is the sole implementation and operational authority for the board.**
+- **Rheos is the sole implementation and operational authority for board state:**
+  status, frontmatter, comments, and transitions.
 - Never create a repository-local parser, validator, migration script, sidecar,
   workflow implementation, or alternate command surface for Rheos semantics.
 - CI and agents invoke eta-mu/Rheos directly. A check that cannot be expressed by
   Rheos is an upstream Rheos gap, not permission to duplicate it in this repository.
 - Fix missing board behavior in `open-hax/eta-mu` / `@eta-mu/rheos`, then consume
   that behavior here.
-- Use Rheos CLI, API, MCP, or UI operations for board reads, writes, comments, and
-  transitions. Do not establish a second Git/Markdown write protocol around it.
+- Use Rheos CLI, API, MCP, or UI operations for board-state reads, writes,
+  comments, and transitions. Do not build a second implementation of those
+  operations.
+- **Card body prose is authored in Git.** The installed engine exposes no
+  authoring verb for a card's Markdown body — only `status`, frontmatter, and
+  comments — so outcome, scope, non-goals, acceptance criteria, and verification
+  sections are written as Markdown and reviewed as diffs. This is a recorded
+  upstream gap, not a second write protocol for board state. When an upstream
+  body-authoring verb ships, consume it and narrow this exemption.
 - A harness without Rheos may inspect board artifacts but must not mutate board
   state or claim board validation.
-- `docs/kanban/` contains cards only; Rheos decides how its configured `tasksDir`
-  is interpreted.
+- `docs/kanban/` contains cards plus the artifacts Rheos itself writes there;
+  Rheos decides how its configured `tasksDir` is interpreted.
 - Explicit `uuid:` is canonical task identity.
 - `epic`, `parent`, and `dependency` use that UUID namespace.
 - Omit empty dependency fields.
 - Use comma-separated scalar labels for compatibility with the current parser.
 - The generated `board.json` is a lossy diagnostic output and is ignored by Git.
+- `docs/kanban/.events/ledger.edn` is Rheos's append-only event ledger and **is**
+  tracked, so transition, comment, and drift history survives a fresh checkout.
+  It is one EDN event per line and union-merged; never rewrite or reorder it.
 - Configure lifecycle, transition, and WIP behavior in Rheos/FSM configuration;
-  never shadow those rules with repository code.
+  never shadow those rules with repository code. The installed engine resolves
+  `"fsm"` as either a known name or a complete FSM map used verbatim — it does
+  not merge overlays, and a JSON map cannot express the keyword check ids that
+  gates dispatch on. `"fsm": "promethean"` is therefore the only working value
+  here; the Clojure build gate is an upstream gap tracked in `receipts.edn`.
 
 ## Ledger discipline
 

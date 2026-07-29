@@ -57,7 +57,8 @@ Implement the children, never this epic directly.
 ## Verification
 
 Read this epic and its four children through Rheos and confirm each resolves with
-this epic's UUID in its `epic` field:
+this epic's UUID in its `epic` field, and that each child's `dependency` array in
+the returned card matches the expected edge below:
 
 ```bash
 eta-mu kanban find ft-001-ship-a-daily-driver-library-and-player
@@ -67,6 +68,14 @@ eta-mu kanban find ft-001c-build-persistent-player-shell-and-library-browser
 eta-mu kanban find ft-001d-add-dispositions-ratings-labels-sorting-and-playlists
 eta-mu kanban list
 ```
+
+Expected child dependency edges (verified against each `find` result's
+`dependency` field, not just resolution and `epic` linkage):
+
+- FT-001A depends on FT-000B, FT-000C, FT-000D.
+- FT-001B depends on FT-000D, FT-001A.
+- FT-001C depends on FT-000D, FT-001B.
+- FT-001D depends on FT-000C, FT-001C.
 
 Child-card tests and the Gate 1 native playback evidence verify implementation.
 This epic remains `breakdown` until its child work is accepted.

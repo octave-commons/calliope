@@ -13,7 +13,7 @@ research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["ft-001-ship-a-daily-driver-library-and-player"]
+dependency: ["ft-001-ship-a-daily-driver-library-and-player", "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 ---
 
 # FT-003: Recover valuable spans and arrange them non-destructively
@@ -26,7 +26,9 @@ be auditioned, arranged, exported, and traced back to immutable source audio.
 ## Scope
 
 - Implement durable marker and clip commands over immutable renders.
-- Build the native waveform salvage editor and boundary-audition workflow.
+- Implement the salvage editor and boundary-audition workflow on the native
+  UI/runtime and topology FT-000D selects; this epic implements that decision
+  and does not choose a UI/runtime independently.
 - Support arrangement playback and deterministic derivative export.
 - Preserve complete render-to-release derivation relationships.
 
@@ -48,6 +50,8 @@ Implement the children, never this epic directly.
 ## Acceptance criteria
 
 - FT-003A through FT-003D resolve as bounded children with explicit dependencies.
+- The salvage editor implements FT-000D's accepted native UI/runtime and
+  topology decision rather than a UI/runtime chosen within this epic.
 - Source renders remain immutable while clips and arrangements remain reversible.
 - Every derivative retains typed provenance to its source render and ranges.
 - Arrangement playback and export are deterministic for a fixed decision list.
@@ -56,7 +60,8 @@ Implement the children, never this epic directly.
 ## Verification
 
 Read this epic and its four children through Rheos and confirm each resolves with
-this epic's UUID in its `epic` field:
+this epic's UUID in its `epic` field, and that each child's `dependency` array in
+the returned card matches the expected edge below:
 
 ```bash
 eta-mu kanban find ft-003-recover-valuable-spans-and-arrange-them-non-destructively
@@ -66,6 +71,14 @@ eta-mu kanban find ft-003c-implement-arrangement-playback-and-deterministic-expo
 eta-mu kanban find ft-003d-preserve-render-to-release-derivation-graph
 eta-mu kanban list
 ```
+
+Expected child dependency edges (verified against each `find` result's
+`dependency` field, not just resolution and `epic` linkage):
+
+- FT-003A depends on FT-000B, FT-000C, FT-001B.
+- FT-003B depends on FT-001C, FT-003A, FT-000D.
+- FT-003C depends on FT-003A, FT-003B.
+- FT-003D depends on FT-003C.
 
 Child contract, interaction, export, and derivation-graph tests verify the
 executable work. Real native waveform and audio evidence is recorded by the owning

@@ -14,7 +14,7 @@ research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["ft-001c-build-persistent-player-shell-and-library-browser", "ft-003a-implement-marker-and-clip-commands-over-immutable-renders"]
+dependency: ["ft-001c-build-persistent-player-shell-and-library-browser", "ft-003a-implement-marker-and-clip-commands-over-immutable-renders", "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 ---
 
 # FT-003B: Build waveform salvage editor

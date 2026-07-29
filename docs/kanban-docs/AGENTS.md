@@ -1,216 +1,124 @@
 # Fork Tales Rheos Board — Agent Contract
 
-Markdown-backed development board managed by eta-mu/Rheos. Every Markdown file
-under the configured `tasksDir` is interpreted as a card, so prose is kept outside
-that directory.
+The Fork Tales development board is managed by eta-mu/Rheos. Rheos owns board
+collection, parsing, identity, transitions, WIP enforcement, comments, events,
+writeback, and drift detection. This repository must not implement those mechanics
+a second time.
 
 `PROCESS.md` governs evidence, receipts, and completion. Accepted ADRs and approved
-designs govern architecture and product behavior. Cards coordinate bounded work
-and never silently override those authorities.
+designs govern architecture and product behavior. Rheos cards coordinate bounded
+work and never silently override those authorities.
 
 ## Layout
 
 ```text
-openhax.kanban.json          board discovery and FSM configuration
+openhax.kanban.json          Rheos discovery and FSM configuration
 
-docs/kanban/                Rheos tasksDir: cards only
+docs/kanban/                configured Rheos tasksDir
   stories/
   epics/
   chores/
 
-docs/kanban-docs/           prose outside the card scanner
+docs/kanban-docs/           product/process prose outside tasksDir
   README.md
   AGENTS.md
   BOARD-BREAKDOWN.md
 ```
 
-The operational `.events/` directory and lossy `board.json` snapshot are ignored
-by Git. Durable task changes and comments are written to card Markdown.
+The operational event ledger and generated board projections are Rheos artifacts.
+Generated snapshots are diagnostic and are not hand-edited or promoted over Rheos.
+
+## Sole-tool rule
+
+- **Use Rheos for every board operation.**
+- Do not create repository-local board parsers, validators, migration scripts,
+  writeback helpers, shadow state machines, WIP checkers, or alternate APIs.
+- Do not copy Rheos transition tables or limits into repository code and treat the
+  copy as authoritative.
+- CI invokes eta-mu/Rheos directly.
+- Agents use Rheos CLI, API, MCP, or UI operations for reads, writes, comments,
+  subtasks, and status transitions.
+- A harness without Rheos may inspect files but must not mutate board state or
+  claim that the board is valid.
+- When Rheos lacks a required capability or has a defect, the work is blocked here
+  until the capability is fixed upstream in `open-hax/eta-mu` / `@eta-mu/rheos`.
+  A local substitute is not an acceptable workaround.
+
+This rule exists specifically to prevent the board implementation from forking and
+drifting across repositories.
 
 ## CLI
 
-Run from the repository root. Rheos discovers `openhax.kanban.json`; its
-`tasksDir` is the normal board-location authority.
+Run from the repository root so eta-mu/Rheos discovers `openhax.kanban.json`.
 
 ```bash
+eta-mu --version
 eta-mu kanban count
 eta-mu kanban list
 eta-mu kanban find ft-000b-define-media-workbench-domain-laws
-python3 scripts/validate_rheos_board.py
 ```
 
-Use `--tasks-dir` only to operate a different board or diagnose configuration
-discovery. Config discovery walks upward from the working directory, so read
-commands also work from `docs/` or `scripts/`. Run from a path outside the
-repository and the tool silently falls back to its built-in default and reports
-zero tasks.
+Use `--tasks-dir` only for an intentional alternate board or a configuration
+diagnostic. Normal operations rely on repository config discovery.
 
-The current `board snapshot` is useful for display diagnostics but discards rich
-frontmatter fields. It is not committed and is not dependency or acceptance
-authority.
+The exact command surface, status machine, parser behavior, WIP limits, and event
+semantics come from the installed Rheos version. Query Rheos rather than copying
+those values into this repository.
 
-### Write-path caution
+## Board content
 
-Verified against eta-mu 1.1.1: `eta-mu kanban frontmatter` and
-`eta-mu kanban comment` rewrite the entire frontmatter block. They reorder keys,
-re-quote every scalar, inject a `write-id` field, and drop the file's trailing
-newline, which fails `scripts/validate_rheos_board.py`. Until that is fixed
-upstream, edit card Markdown directly for status changes and durable notes, then
-re-run `eta-mu kanban count` and the validator to confirm the board still reads.
-Treat the CLI as the authoritative *reader* and Git as the authoritative
-*writer*.
+Fork Tales cards should remain bounded and link to governing authority where
+applicable. Product expectations include:
 
-## Frontmatter contract
+- stable task identity;
+- a bounded outcome and explicit non-goals;
+- dependencies expressed in Rheos’s identity model;
+- observable acceptance and verification evidence;
+- explicit ownership when work is active;
+- preserved progress, review, and failure history.
 
-```yml
-uuid: "ft-001a-index-playable-media-metadata-and-waveform-jobs"
-title: "FT-001A: Imperative bounded outcome"
-status: incoming
-type: story
-priority: P0
-phase: 1
-epic: "ft-001-ship-a-daily-driver-library-and-player"
-parent: "optional-parent-uuid"
-research: "docs/research/...md"
-adr: "docs/adrs/...md"
-design: "docs/designs/...md"
-process: "docs/process/...md"
-points: 3
-labels: player, phase-1
-category: stories
-dependency: ["another-card-uuid"]
-```
+These are product/process expectations. Their operational representation and
+enforcement belong in Rheos. When the current Rheos schema cannot represent one,
+change Rheos first rather than adding an out-of-band field checker here.
 
-Rules:
+## Known eta-mu 1.1.1 findings
 
-- `uuid` is explicit, stable, and canonical. Retitling a card does not change it.
-- `epic`, `parent`, and `dependency` reference the same UUID namespace.
-- `epic` names outcome-group membership. `parent` is reserved for direct task
-  decomposition.
-- Omit `dependency` when there are no dependencies; do not write `dependency: []`.
-- Labels use a comma-separated scalar because the current Rheos snapshot parser
-  does not preserve YAML flow-list brackets correctly.
-- Rich fields remain durable in Markdown even when the generated snapshot omits
-  them.
+A local verification on 2026-07-28 found differences between assumptions in this
+repository and eta-mu/Rheos 1.1.1, including writeback formatting and transition
+behavior. Those observations remain historical evidence in FT-OPS-001 and
+`receipts.edn`; they are not a license to establish Git edits or a repository
+script as a second board engine.
 
-Required before leaving `incoming`:
+Until an upstream defect is fixed, affected Rheos mutations are unavailable or
+blocked. Do not bypass the tool and then claim Rheos-managed state.
 
-- stable UUID, title, type, priority, phase, category, and honest points;
-- bounded outcome, scope, non-goals, and acceptance criteria;
-- resolvable dependencies and governing authority links;
-- expected verification evidence;
-- current owner or explicit `unassigned`.
+## Product sequencing rules
 
-## Status FSM
+These rules describe Fork Tales delivery intent, not a replacement FSM:
 
-`openhax.kanban.json` selects the `promethean` FSM. These are the transitions the
-installed engine actually enforces, read from eta-mu 1.1.1 and confirmed by
-rejected probe transitions:
-
-```text
-icebox      -> incoming
-incoming    -> icebox | accepted
-accepted    -> breakdown | incoming
-breakdown   -> ready | accepted | blocked
-blocked     -> breakdown | ready
-ready       -> todo | breakdown
-todo        -> in_progress            (WIP check)
-in_progress -> testing | todo | breakdown
-in_progress -> review                 (build gate; the ONLY gated edge)
-testing     -> review | in_progress | todo
-review      -> document | in_progress | todo
-document    -> done | review
-done        -> icebox | review
-```
-
-`rejected` is reachable from `accepted`, `breakdown`, `blocked`, `ready`, `todo`,
-`in_progress`, `review`, and `document`. `archived` is reachable from every other
-state.
-
-- **icebox** — real work intentionally deferred.
-- **incoming** — captured but not fully triaged.
-- **accepted** — worth planning; authority and rough dependencies are known.
-- **breakdown** — being decomposed or a decomposed parent.
-- **blocked** — planned work that cannot proceed on named evidence. The engine
-  only allows entering it from `breakdown`, so a stalled `in_progress` card
-  returns to `breakdown` first.
-- **ready** — another qualified actor can begin without inventing scope.
-- **todo** — selected for execution.
-- **in_progress** — one actor owns an active bounded commitment.
-- **testing** — engine-supported verification hop between `in_progress` and
-  `review`. Fork Tales does not currently use it, but it is the ungated route
-  around the `in_progress -> review` build gate.
-- **review** — result and evidence await evaluation.
-- **document** — durable documentation or acceptance evidence is being completed.
-- **done** — accepted for the card's declared scope.
-- **rejected** — deliberately not pursued in the stated form.
-- **archived** — removed from active board consideration.
-
-States describe process position, not truth. A merged PR or green check does not
-make a card done without acceptance evidence.
-
-The engine's build gate sits on exactly one edge: the direct
-`in_progress -> review` transition. Its check spec runs `pnpm build`,
-`pnpm lint`, and `pnpm test`; Fork Tales is a Clojure/JVM repository with no
-pnpm project, so the first command fails and the CLI rejects that edge with
-``transition rejected: Build gate failed: `pnpm build` exited with code 1``.
-
-That gate does **not** prevent the CLI from reaching `done`. `in_progress ->
-testing` and `testing -> review` are both `always_allow`, so the gate is
-bypassable by routing through `testing`. Verified on a throwaway board copy with
-`eta-mu kanban frontmatter <uuid> status <state>`: `ready -> todo ->
-in_progress -> testing -> review -> document -> done` succeeded at every step.
-Do not read the gate as a hard stop; it only makes the shortcut edge unusable.
-
-Fork Tales still moves cards by editing card Markdown, because the CLI write path
-corrupts the card contract (see the write-path caution below) — not because the
-build gate blocks it. After any status edit, re-run `eta-mu kanban count` plus
-`scripts/validate_rheos_board.py`. The governing evidence gate for this
-repository is `clojure -M:test` and the Repository Contracts workflow, not
-`pnpm build`.
-
-## Hard rules
-
-1. No card over 5 points may be `ready`.
-2. Active decomposed parents remain `breakdown`; deliberately deferred decomposed
-   epics may remain `icebox`.
-3. Contracts precede adapters. Application services precede native views. Release
-   contracts precede publication adapters.
-4. Proposed ADRs and open designs gate implementation. Accepted ADR-001 and the
-   approved v1 design now permit their explicitly dependent cards to advance.
-5. Append progress, review dispositions, scope changes, and failures; do not erase
-   history.
-6. `board.json` is lossy diagnostic output, never hand-edited or authoritative.
-7. WIP limit: at most 2 `in_progress` and 1 `review` unless an explicit process
-   experiment changes it. This is a repository rule enforced by
-   `scripts/validate_rheos_board.py`; the installed engine's own limits are far
-   looser and must not be treated as permission. The `promethean` FSM this
-   repository selects sets `in_progress=50`, `review=40`, `todo=75`,
-   `ready=100`, `blocked=15`, `breakdown=50`, `testing=40`, `accepted=40`,
-   `document=40`, `done=500`, and `9999` for `icebox`/`incoming`/`rejected`/
-   `archived`. (The commonly quoted `in_progress=10`/`review=5` pair belongs to
-   the engine's `default_fsm`, which this repository does not use.)
-8. Work, render, clip, arrangement, export, and release identities may not be
-   collapsed for implementation convenience.
-9. Export, handoff, upload, processing, and published states remain distinct.
-10. Every substantive board wave receives one Receipt River record.
-11. The first UI is native Clojure/JVM without an embedded browser.
-12. A daily-driver milestone requires real corpus audio evidence, not only fake
-    media fixtures.
+1. Contracts precede adapters.
+2. Application services precede native views.
+3. Release contracts precede publication adapters.
+4. Native UI, playback, read-model, and topology choices are produced by FT-000D,
+   not invented downstream.
+5. A target adapter cannot advance before local release/export semantics work.
+6. `done` requires accepted evidence for the declared scope; a merge or green CI
+   result alone is insufficient.
+7. Work, render, clip, arrangement, export, release, and publication identities
+   remain distinct.
+8. Every substantive board wave receives a Receipt River record.
+9. The first UI is native Clojure/JVM without an embedded browser.
+10. The daily-driver milestone requires real corpus audio evidence.
 
 ## How an agent picks work
 
-1. Run Rheos list and `scripts/validate_rheos_board.py`.
-2. Filter `ready` cards and discard cards with unmet dependencies.
-3. Order by priority, phase, then smallest points.
-4. Confirm governing ADR/design status and local capability.
-5. Move the card through `todo` and `in_progress` before acting.
-6. Record material evidence as it occurs.
-7. Return to `breakdown` when scope or evidence is insufficient, and to `blocked`
-   from there when the obstruction is named and external.
-8. Move through `review` and `document`; only accepted work reaches `done`.
-9. Confirm every status change with `eta-mu kanban count` and
-   `scripts/validate_rheos_board.py`.
+1. Use Rheos to read the board and its current actionable view.
+2. Confirm governing ADR/design status and local capability.
+3. Use Rheos to claim and transition the selected card before acting.
+4. Record material evidence as it occurs through the supported Rheos surface.
+5. Use Rheos to return insufficiently specified work to the appropriate planning or
+   blocked state.
+6. Only accepted work reaches `done`.
 
 ## Current phase map
 
@@ -222,4 +130,5 @@ repository is `clojure -M:test` and the Repository Contracts workflow, not
 | 3 | Markers, clips, arrangements, and export | incoming |
 | 4 | Release and publication adapters | icebox until local release works |
 
-The current gates and critical path live in `BOARD-BREAKDOWN.md`.
+The current product gates and critical path live in `BOARD-BREAKDOWN.md`; live
+board state comes from Rheos.

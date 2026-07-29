@@ -80,15 +80,14 @@ confusing export, upload, processing, and published states.
 
 | Card | Outcome | State |
 |---|---|---|
-| FT-OPS-001 | Re-run installed Rheos against the corrected card corpus and record count/list/find evidence | done |
+| FT-OPS-001 | Run installed Rheos against the corrected card corpus and record count/list/find evidence | done |
 | FT-OPS-002 | Reconcile ADR, design, process, and card statuses after review | done |
 | FT-OPS-003 | Record independent Claude design/board review disposition | done |
 
 `board.json` is intentionally not a committed acceptance artifact because the
-current snapshot loses rich frontmatter. FT-OPS-001 validated the installed tool
-against the corrected corpus on 2026-07-28 with eta-mu 1.1.1 and recorded the
-resulting FSM and write-path drift in its card;
-`scripts/validate_rheos_board.py` validates the complete relationship contract.
+current snapshot loses rich frontmatter. FT-OPS-001 recorded a local eta-mu/Rheos
+1.1.1 run on 2026-07-28. Its observations are historical evidence, not a second
+board implementation.
 
 ## Critical path
 
@@ -103,19 +102,21 @@ FT-000A ─┬─> FT-000B ─┐
                                                                  -> target adapters
 ```
 
-## WIP and acceptance
+## Acceptance
 
-- WIP limit: 2 `in_progress`, 1 `review`.
-- No card above 5 points becomes `ready`.
 - Contracts precede adapters.
 - Native UI, playback, read-model, and topology choices are produced by FT-000D,
   not invented downstream.
-- A target adapter cannot become ready before local release/export semantics work.
+- A target adapter cannot advance before local release/export semantics work.
 - `done` means accepted for the card's scope, not merely merged or green.
+- Live status, dependency resolution, transitions, WIP limits, and actionable work
+  come from Rheos, not this static delivery map.
+- Any missing board invariant must be implemented in Rheos upstream; Fork Tales
+  does not create local validators or shadow board mechanics.
 
 ## Current first move
 
-FT-OPS-001 is done: the corrected board was verified locally against installed
-eta-mu 1.1.1 (27 cards, no phantom prose cards, UUID identity resolving, repository
-validator passing). FT-000B and FT-000D are now the parallel product
-implementation fronts.
+FT-OPS-001 is done: the corrected board was read locally through eta-mu/Rheos
+1.1.1, which discovered 27 cards and no phantom prose cards. FT-000B and FT-000D
+are the parallel product implementation fronts in the recorded board state; query
+Rheos for the live state before acting.

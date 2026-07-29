@@ -5,6 +5,7 @@ status: breakdown
 type: epic
 priority: P0
 phase: 1
+owner: unassigned
 points: 21
 labels: media-workbench, player, library, decomposed
 category: epics
@@ -23,6 +24,13 @@ Fork Tales is pleasant and reliable enough to remain open as the primary player
 for the corpus, with persistent transport, queue, library browsing, ratings,
 labels, sorting, and playlists.
 
+## Scope
+
+- Index playable media metadata and rebuildable waveform jobs.
+- Implement playback resolution, queue behavior, and failure recovery.
+- Build the persistent native player shell and library browser.
+- Add dispositions, ratings, labels, sorting, and playlists.
+
 ## Non-goals
 
 - Waveform editing.
@@ -37,3 +45,28 @@ labels, sorting, and playlists.
 - FT-001D — dispositions, ratings, labels, and playlists.
 
 Implement the children, never this epic directly.
+
+## Acceptance criteria
+
+- FT-001A through FT-001D exist as resolvable child work with explicit dependencies.
+- The first usable gate requires representative real corpus MP3 playback.
+- Transport and queue persist across application views.
+- One unreadable item produces a visible error without destroying the queue.
+- No editor or publication scope is smuggled into the player milestone.
+
+## Verification
+
+Read this epic and its four children through Rheos and confirm each resolves with
+this epic's UUID in its `epic` field:
+
+```bash
+eta-mu kanban find ft-001-ship-a-daily-driver-library-and-player
+eta-mu kanban find ft-001a-index-playable-media-metadata-and-waveform-jobs
+eta-mu kanban find ft-001b-implement-playback-resolver-persistent-queue-and-resume
+eta-mu kanban find ft-001c-build-persistent-player-shell-and-library-browser
+eta-mu kanban find ft-001d-add-dispositions-ratings-labels-sorting-and-playlists
+eta-mu kanban list
+```
+
+Child-card tests and the Gate 1 native playback evidence verify implementation.
+This epic remains `breakdown` until its child work is accepted.

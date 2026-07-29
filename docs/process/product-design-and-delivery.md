@@ -89,8 +89,9 @@ dependencies, acceptance criteria, and expected evidence. Cards preserve progres
 and review history but do not duplicate entire research reports or designs.
 
 Only actual card Markdown belongs under `docs/kanban/{stories,epics,chores}`.
-Rheos identity is the explicit `uuid:` value. `epic`, `parent`, and `dependency`
-use that same namespace.
+Rheos owns card collection, identity, parsing, transitions, comments, events,
+writeback, WIP enforcement, and drift detection. Repository documents may describe
+product expectations but may not establish a second operational board protocol.
 
 ## Lifecycle
 
@@ -117,7 +118,7 @@ A product implementation story may enter `ready` only when:
 - its outcome is bounded and at most 5 points;
 - applicable ADRs are accepted;
 - the governing design is approved or the card produces that design;
-- dependencies use resolvable Rheos UUIDs;
+- dependencies are represented through Rheos;
 - acceptance criteria are observable;
 - expected tests, fixtures, or review evidence are named;
 - open questions do not require the implementer to invent product policy.
@@ -131,15 +132,21 @@ application topology before downstream cards can assume those choices.
 
 ## Rheos mechanics
 
+- Rheos is the sole board implementation and validation authority.
 - Repository-root config discovery through `openhax.kanban.json` is normal.
-- `--tasks-dir` is only an explicit override or diagnostic.
-- `uuid:` is canonical task identity; title-derived identity is not accepted for
-  this board.
-- Empty dependency fields are omitted rather than encoded as `[]`.
-- Labels use the parser-compatible comma-separated scalar form.
-- `board.json` is a lossy diagnostic projection and is ignored by Git.
-- `scripts/validate_rheos_board.py` validates repository-specific relationship and
-  readiness invariants that the current snapshot does not preserve.
+- `--tasks-dir` is only an explicit alternate-board override or diagnostic.
+- Board reads, writes, comments, subtasks, and transitions use Rheos CLI, API, MCP,
+  or UI operations.
+- CI invokes eta-mu/Rheos directly.
+- Do not add repository-local parsers, validators, migration scripts, writeback
+  helpers, shadow FSMs, WIP checkers, or alternate board APIs.
+- Do not copy current Rheos transition tables, parser rules, or WIP limits into
+  repository code and treat the copy as authority.
+- A harness without Rheos may inspect board files but must not mutate board state
+  or claim validation.
+- Missing or defective behavior is fixed upstream in `open-hax/eta-mu` /
+  `@eta-mu/rheos`; it is not reimplemented in Fork Tales.
+- `board.json` remains a generated diagnostic projection and is ignored by Git.
 
 ## Design review questions
 
@@ -192,6 +199,6 @@ The current authority set is:
 - board contract: `docs/kanban-docs/AGENTS.md`.
 
 FT-000A, FT-OPS-002, and FT-OPS-003 are complete. FT-000B and FT-000D are the
-first ready implementation/decision slices. FT-000C and player cards remain
-blocked by their explicit dependencies rather than by unresolved product
-acceptance.
+first ready implementation/decision slices in the recorded state. Query Rheos for
+live state before acting. FT-000C and player cards remain dependency-gated rather
+than blocked by unresolved product acceptance.

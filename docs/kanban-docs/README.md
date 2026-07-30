@@ -18,8 +18,9 @@ publication adapters.
 prose lives here in `docs/kanban-docs/` so Rheos does not ingest it as work.
 
 ADR-001 is accepted and Media Workbench v1 is approved. FT-000A, the review
-reconciliation chores, and the FT-OPS-001 local board verification are done. The
-first ready slices are:
+reconciliation chores, and FT-OPS-001 preserve historical disposition and
+verification evidence, but their live card status is `incoming`; none is complete
+until Rheos records the lifecycle acceptance. The first ready slices are:
 
 - FT-000B — media-workbench domain laws;
 - FT-000D — native UI, real playback, read-model, and application topology.

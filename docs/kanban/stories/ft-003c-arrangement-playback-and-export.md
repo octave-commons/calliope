@@ -8,7 +8,7 @@ phase: 3
 epic: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
 owner: unassigned
 points: 5
-labels: arrangement, export, playback
+labels: arrangement, export, playback, native-ui
 category: stories
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
@@ -21,12 +21,15 @@ dependency: ["ft-003a-implement-marker-and-clip-commands-over-immutable-renders"
 
 ## Outcome
 
-Accepted clips can be ordered into a playable arrangement and rendered into a
-content-addressed derivative with complete settings and source identity.
+Accepted clips can be dragged or keyboard-added into a native arrangement lane,
+ordered into a playable arrangement, and rendered into a content-addressed
+derivative with complete settings and source identity.
 
 ## Scope
 
 - Arrangement edit commands and ordered timeline.
+- A native arrangement-lane view for adding, removing, and reordering accepted
+  clips with pointer and keyboard interaction.
 - Gaps, bounded overlaps/crossfades, clip gain, and fades.
 - Playback resolution without first exporting.
 - Background deterministic audio export.
@@ -40,6 +43,10 @@ content-addressed derivative with complete settings and source identity.
 
 ## Acceptance criteria
 
+- Accepted clips can be dragged from the salvage workflow into the arrangement
+  lane and added, removed, or reordered without mutating source media.
+- Pointer and keyboard arrangement interactions dispatch the same application
+  commands; the view does not maintain a second UI-only arrangement state.
 - Arrangement playback and export consume the same versioned edit decision list.
 - Re-running the same export inputs/settings produces the same declared identity.
 - Source hash drift fails before rendering.
@@ -48,5 +55,7 @@ content-addressed derivative with complete settings and source identity.
 
 ## Verification
 
-Golden-fixture tests cover timeline resolution, fades/gaps, deterministic job
-identity, source drift, failed rendering, and successful output hashing.
+Interaction tests cover pointer and keyboard add/remove/reorder behavior in the
+native arrangement lane and assert the emitted arrangement commands. Golden-fixture
+tests cover timeline resolution, fades/gaps, deterministic job identity, source
+drift, failed rendering, and successful output hashing.

@@ -1,0 +1,31 @@
+name: Append PR 3 Publication Activity receipt
+
+on:
+  push:
+    branches:
+      - design/media-workbench-v1
+    paths:
+      - .github/workflows/append-pr3-publication-activity-receipt.yml
+
+permissions:
+  contents: write
+
+jobs:
+  append-receipt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: design/media-workbench-v1
+      - name: Append Receipt River event
+        shell: bash
+        run: |
+          cat >> receipts.edn <<'EOF'
+          {:ts "2026-07-30T02:50:00Z", :kind :fix, :repo "https://github.com/octave-commons/fork_tales_v2", :origin "chatgpt", :owner "gpt-5.6-thinking", :dod "Resolve PR #3's Publication Activity review finding by assigning the native attempt-monitoring and recovery screen to a bounded Gate 4 child card and synchronizing the epic and delivery map.", :pi "eta-mu/receipt-river-v1", :host "chatgpt-github-connector", :manifest "docs/kanban/stories/ft-004h-build-native-publication-activity-view.md; docs/kanban/epics/ft-004-release-and-publication.md; docs/kanban-docs/BOARD-BREAKDOWN.md", :refs "PR #3; review thread PRRT_kwDOTkaDCs6U8pLL; commits e5527cd, 88781dc, 9757423", :tests "Repository Contracts run 30509561633 passed at substantive head 9757423. Remote GitHub connector only; no native UI, provider API, OAuth flow, upload, retry, or publication action was executed by this harness.", :decisions "FT-004H owns the native Publication Activity view through FT-000D's selected UI/runtime and topology. It consumes the independent attempt records and command surfaces owned by FT-004C, FT-004D, and FT-004E; it does not implement adapters or a second UI-only publication state machine. Retry either creates a linked attempt or resumes an explicit durable checkpoint, and target state remains independent."}
+          EOF
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add receipts.edn
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: record Publication Activity review fix"
+          git push origin HEAD:design/media-workbench-v1

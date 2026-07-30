@@ -24,7 +24,8 @@ A local harness runs the installed eta-mu/Rheos against the corrected card-only
 - Confirm repository-root discovery of `openhax.kanban.json`.
 - Run count/list/find using the installed tool and record version/commit.
 - Read the board through Rheos alone, with no repository-local board tool.
-- Confirm 27 cards and no phantom prose cards.
+- Confirm that the Rheos count matches the current Markdown card corpus and that
+  no board-prose files appear as phantom cards.
 - Record exact commands/results and Receipt River evidence.
 
 ## Non-goals
@@ -37,7 +38,8 @@ A local harness runs the installed eta-mu/Rheos against the corrected card-only
 ## Acceptance criteria
 
 - Rheos reads the config and card corpus without error.
-- `eta-mu kanban count` reports 27 actual cards.
+- `eta-mu kanban count` matches the number of card Markdown files under
+  `docs/kanban/{stories,epics,chores}` at verification time.
 - `eta-mu kanban list` contains no README/AGENTS/BOARD-BREAKDOWN phantom cards.
 - `eta-mu kanban find ft-000b-define-media-workbench-domain-laws` resolves the
   explicit UUID-backed card.
@@ -127,13 +129,13 @@ Ran 23 tests containing 91 assertions.
 > and still passes.
 
 Config discovery was confirmed to walk upward from the working directory:
-`eta-mu kanban count` reported the same 27 cards from the repository root, from
-`docs/`, and from `scripts/`. Run from `/tmp` it fell back to the built-in
-default and reported `collect error: /tmp/docs/agile/tasks ENOENT` with
-`Total tasks: 0`, so the 27-card result is genuine config discovery rather than
-a coincidental default.
+`eta-mu kanban count` reported the same historical 27-card corpus from the
+repository root, from `docs/`, and from `scripts/`. Run from `/tmp` it fell back
+to the built-in default and reported
+`collect error: /tmp/docs/agile/tasks ENOENT` with `Total tasks: 0`, so the
+27-card result was genuine config discovery rather than a coincidental default.
 
-After moving this card to `done`:
+After moving this card to `done` in that historical branch snapshot:
 
 ```text
 $ eta-mu kanban count
@@ -145,15 +147,20 @@ Total tasks: 27
   Done: 4
 ```
 
-The `Ready: 2 / Done: 4` counts above remain reproducible today through
-`eta-mu kanban count`. The second `validate_rheos_board.py` line that originally
-followed this block has been dropped rather than annotated, because it restated
-the same card totals that Rheos already reports.
+The `Ready: 2 / Done: 4` counts above are retained historical output and do not
+describe the current board. The card was later corrected to `incoming` because it
+had been created as `done` rather than transitioned through Rheos, and additional
+cards have since been added. Query `eta-mu kanban count` for current state. The
+second `validate_rheos_board.py` line that originally followed this block has been
+dropped rather than annotated, because it restated the same historical totals that
+Rheos already reported.
 
-All acceptance criteria as originally written passed on 2026-07-28. The criterion
-"the repository validator passes" has since been replaced, because the tool it
-named no longer exists and may not be recreated; the replacement criteria above
-are stated in terms of what Rheos itself verifies.
+The 27-card transcript satisfied the then-current criteria on 2026-07-28. The
+executable criteria above are now count-independent: they require Rheos's result
+to match the current card corpus rather than freezing a historical total. The
+criterion "the repository validator passes" was also replaced because the tool it
+named no longer exists and may not be recreated; the replacement criteria are
+stated in terms of what Rheos itself verifies.
 
 Receipt River evidence:
 

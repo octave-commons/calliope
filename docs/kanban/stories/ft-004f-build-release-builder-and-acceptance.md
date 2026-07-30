@@ -38,7 +38,8 @@ downstream packaging and publication can require as their input.
 ## Non-goals
 
 - Redefining release or target-capability law. That is FT-004A.
-- Producing target packages or video assets. That is FT-004B.
+- Producing target packages. That is FT-004B.
+- Producing video assets. That is FT-004G.
 - Any upload, distributor, or manual-handoff adapter.
 - A global publish action. Readiness stays per target.
 

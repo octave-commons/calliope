@@ -56,13 +56,14 @@ Gate 2 cannot be accepted before FT-003A lands.
 
 | Card | Outcome | Pts | Depends on | State |
 |---|---|---:|---|---|
-| FT-003A | Implement marker and clip commands with immutable source ranges | 5 | 000B, 000C, 001B | incoming |
-| FT-003B | Build waveform salvage editor with loop, in/out, fades, clip audition, and manual sibling comparison | 5 | 001C, 003A | incoming |
-| FT-003C | Implement arrangement playback and deterministic audio export | 5 | 003A, 003B | incoming |
+| FT-003A | Implement markers on versioned renders/arrangements and clips over immutable render ranges | 5 | 000B, 000C, 001B | incoming |
+| FT-003B | Build waveform salvage editor with loop, in/out, fades, clip audition, and manual sibling comparison | 5 | 000D, 001C, 003A | incoming |
+| FT-003C | Build native arrangement editing/playback and deterministic exports that resolve as queue/playlist playables | 5 | 001D, 003A, 003B | incoming |
 | FT-003D | Preserve derivation graph from render through clip, arrangement, and export | 3 | 003C | incoming |
 
-Gate outcome: valuable spans can be recovered from globally poor renders and
-assembled without destructive editing.
+Gate outcome: valuable spans can be recovered from globally poor renders,
+assembled without destructive editing, annotated at render or arrangement level,
+and exported into playable derivatives.
 
 Automatic cross-render alignment is not part of FT-003B. V1 supports manual
 comparison with independent playheads until a later research/decision card defines
@@ -75,15 +76,16 @@ Rows are in dependency order; letters are stable labels, not sequence.
 | Card | Outcome | Pts | Depends on | State |
 |---|---|---:|---|---|
 | FT-004A | Define release manifest, rights/provenance checklist, and target-capability law | 5 | 000B, 003D | icebox |
-| FT-004F | Assemble, validate, and locally accept a release candidate | 5 | 004A | icebox |
+| FT-004F | Build the native Release Builder; assemble, validate, and locally accept a release candidate | 5 | 000D, 004A | icebox |
 | FT-004B | Generate target-ready export packages | 5 | 003C, 004A, 004F | icebox |
 | FT-004G | Render YouTube video assets | 3 | 004A, 004B | icebox |
 | FT-004C | Implement checkpointed SoundCloud direct-upload adapter | 5 | 004A, 004B | icebox |
 | FT-004D | Implement resumable YouTube upload with privacy/audit state | 5 | 004A, 004B, 004G | icebox |
 | FT-004E | Implement distributor/manual handoffs for Spotify, Bandcamp, and similar targets | 5 | 004A, 004B | icebox |
 
-Gate outcome: an accepted local release can be published or handed off without
-confusing export, upload, processing, and published states.
+Gate outcome: an accepted local release can be assembled and accepted through the
+native application, then published or handed off without confusing export, upload,
+processing, and published states.
 
 ## Operational cards
 
@@ -113,8 +115,14 @@ FT-000A ─┬─> FT-000B ─┐
                                                                                                  └─> FT-004C / FT-004E
 ```
 
-Cross-gate edge not drawn above: **FT-002B also depends on FT-003A**, because
-triage dispatches FT-003A's marker and clip commands.
+Cross-gate edges not drawn above:
+
+- FT-002B depends on FT-003A because triage dispatches FT-003A's marker and clip
+  commands.
+- FT-003C depends on FT-001D because exported `:export` playables enter the same
+  queue/playlist model.
+- FT-004F depends on FT-000D because its native Release Builder implements the
+  selected UI/runtime and topology rather than choosing one downstream.
 
 This diagram shows principal chains only. Each card's `dependency` field is
 authoritative, and several cards carry additional edges to the FT-000 foundation
@@ -125,6 +133,7 @@ cards that would make the drawing unreadable.
 - Contracts precede adapters.
 - Native UI, playback, read-model, and topology choices are produced by FT-000D,
   not invented downstream.
+- Every declared playable type has an owning resolver path into queues/playlists.
 - A target adapter cannot advance before local release/export semantics work.
 - `done` means accepted for the card's scope, not merely merged or green.
 - Live status, dependency resolution, transitions, WIP limits, and actionable work

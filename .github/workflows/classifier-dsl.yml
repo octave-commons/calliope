@@ -1,4 +1,4 @@
-name: Classifier DSL
+name: Repository Contracts
 
 permissions:
   contents: read
@@ -11,13 +11,19 @@ on:
       - "deps.edn"
       - "docs/classifier-dsl.md"
       - "docs/harnesses/**"
+      - "docs/research/**"
+      - "docs/adrs/**"
+      - "docs/designs/**"
+      - "docs/process/**"
+      - "docs/kanban/**"
+      - "docs/kanban-docs/**"
+      - "openhax.kanban.json"
       - ".opencode/AGENTS.md"
       - ".opencode/skills/fork-tales-corpus/SKILL.md"
       - "src/fork_tales/**"
       - "resources/classifiers/**"
       - "test/fork_tales/**"
       - ".github/workflows/classifier-dsl.yml"
-      - ".github/workflows/apply-coderabbit-fixes.yml"
   push:
     branches: [main]
     paths:
@@ -26,6 +32,13 @@ on:
       - "deps.edn"
       - "docs/classifier-dsl.md"
       - "docs/harnesses/**"
+      - "docs/research/**"
+      - "docs/adrs/**"
+      - "docs/designs/**"
+      - "docs/process/**"
+      - "docs/kanban/**"
+      - "docs/kanban-docs/**"
+      - "openhax.kanban.json"
       - ".opencode/AGENTS.md"
       - ".opencode/skills/fork-tales-corpus/SKILL.md"
       - "src/fork_tales/**"
@@ -41,8 +54,19 @@ jobs:
         with:
           show-progress: false
           persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install eta-mu/Rheos
+        run: npm install --global eta-mu@1.1.1
+      - name: Read board through Rheos
+        run: |
+          eta-mu --version
+          eta-mu kanban count
+          eta-mu kanban list
+          eta-mu kanban find ft-000b-define-media-workbench-domain-laws
       - uses: DeLaGuardo/setup-clojure@13.0
         with:
           cli: 1.12.2.1565
-      - name: Run classifier DSL tests
+      - name: Run Clojure tests
         run: clojure -M:test

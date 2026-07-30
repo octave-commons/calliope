@@ -5,3 +5,9 @@ out/
 .lsp/
 .clj-kondo/
 .cpcache/
+
+# The generated board.json is a lossy diagnostic output (AGENTS.md, Rheos board
+# discipline). The .events/ ledger is NOT ignored: it is Rheos's append-only
+# record of every transition, frontmatter edit, and comment, and ledger
+# discipline requires that history survive a fresh checkout.
+docs/kanban/board.json

@@ -1,7 +1,7 @@
 ---
 uuid: "ft-000a-review-and-accept-or-revise-media-workbench-authority"
 title: "FT-000A: Review and accept or revise Media Workbench authority"
-status: done
+status: incoming
 type: story
 priority: P0
 phase: 0

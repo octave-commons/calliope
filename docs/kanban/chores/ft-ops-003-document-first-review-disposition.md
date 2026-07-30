@@ -1,7 +1,7 @@
 ---
 uuid: "ft-ops-003-record-first-independent-design-review-disposition"
 title: "FT-OPS-003: Record first independent design review disposition"
-status: done
+status: incoming
 type: chore
 priority: P1
 phase: 0

@@ -11,7 +11,7 @@ controlled by explicit dependencies rather than unresolved product authority.
 
 | Card | Outcome | Pts | Depends on | State |
 |---|---|---:|---|---|
-| FT-000A | Review and accept/revise ADR-001 and Media Workbench v1 | 2 | — | done |
+| FT-000A | Review and accept/revise ADR-001 and Media Workbench v1 | 2 | — | incoming |
 | FT-000B | Define Malli laws for playable refs, ratings, labels, clips, arrangements, workspaces, releases, and targets | 5 | 000A | ready |
 | FT-000D | Decide native UI, real audio backend, read model, and in-process application topology | 5 | 000A | ready |
 | FT-000C | Define append-only studio events and deterministic rebuildable projection | 5 | 000B, 000D | incoming |
@@ -76,9 +76,10 @@ Rows are in dependency order; letters are stable labels, not sequence.
 |---|---|---:|---|---|
 | FT-004A | Define release manifest, rights/provenance checklist, and target-capability law | 5 | 000B, 003D | icebox |
 | FT-004F | Assemble, validate, and locally accept a release candidate | 5 | 004A | icebox |
-| FT-004B | Generate target-ready packages and YouTube video assets | 5 | 003C, 004A, 004F | icebox |
+| FT-004B | Generate target-ready export packages | 5 | 003C, 004A, 004F | icebox |
+| FT-004G | Render YouTube video assets | 3 | 004A, 004B | icebox |
 | FT-004C | Implement checkpointed SoundCloud direct-upload adapter | 5 | 004A, 004B | icebox |
-| FT-004D | Implement resumable YouTube upload with privacy/audit state | 5 | 004A, 004B | icebox |
+| FT-004D | Implement resumable YouTube upload with privacy/audit state | 5 | 004A, 004B, 004G | icebox |
 | FT-004E | Implement distributor/manual handoffs for Spotify, Bandcamp, and similar targets | 5 | 004A, 004B | icebox |
 
 Gate outcome: an accepted local release can be published or handed off without
@@ -88,9 +89,12 @@ confusing export, upload, processing, and published states.
 
 | Card | Outcome | State |
 |---|---|---|
-| FT-OPS-001 | Run installed Rheos against the corrected card corpus and record count/list/find evidence | done |
-| FT-OPS-002 | Reconcile ADR, design, process, and card statuses after review | done |
-| FT-OPS-003 | Record independent Claude design/board review disposition | done |
+| FT-OPS-001 | Run installed Rheos against the corrected card corpus and record count/list/find evidence | incoming |
+| FT-OPS-002 | Reconcile ADR, design, process, and card statuses after review | incoming |
+| FT-OPS-003 | Record independent Claude design/board review disposition | incoming |
+
+These cards enter at `incoming` like any other. A card cannot be created already
+`done`: `done` is reached by a Rheos transition, never asserted at creation.
 
 `board.json` is intentionally not a committed acceptance artifact because the
 current snapshot loses rich frontmatter. FT-OPS-001 recorded a local eta-mu/Rheos
@@ -105,8 +109,8 @@ FT-000A ─┬─> FT-000B ─┐
                          ├─> FT-001A -> FT-001B -> FT-001C ─┬─> FT-001D -> FT-002A -> FT-002B
                          │                                  └─> FT-001E
                          └─> FT-003A -> FT-003B -> FT-003C -> FT-003D
-                                                             -> FT-004A -> FT-004F -> FT-004B
-                                                                                      -> target adapters
+                                                             -> FT-004A -> FT-004F -> FT-004B ─┬─> FT-004G -> FT-004D
+                                                                                                 └─> FT-004C / FT-004E
 ```
 
 Cross-gate edge not drawn above: **FT-002B also depends on FT-003A**, because
@@ -130,7 +134,6 @@ cards that would make the drawing unreadable.
 
 ## Current first move
 
-FT-OPS-001 is done: the corrected board was read locally through eta-mu/Rheos
-1.1.1, which discovered 27 cards and no phantom prose cards. FT-000B and FT-000D
-are the parallel product implementation fronts in the recorded board state; query
-Rheos for the live state before acting.
+FT-OPS-001 records a local eta-mu/Rheos read of the corrected board. FT-000B and
+FT-000D are the parallel product implementation fronts; query Rheos for live state
+before acting.

@@ -1,7 +1,7 @@
 ---
 uuid: "ft-ops-001-validate-cards-and-generate-rheos-board-snapshot"
 title: "FT-OPS-001: Validate corrected board with installed Rheos"
-status: done
+status: incoming
 type: chore
 priority: P0
 phase: 0

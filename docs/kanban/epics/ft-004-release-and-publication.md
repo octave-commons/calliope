@@ -34,7 +34,8 @@ Listed in dependency order. Letters are stable labels, not sequence:
 
 - FT-004A — release and target-capability laws.
 - FT-004F — release builder assembly, validation, and local acceptance.
-- FT-004B — export packages and YouTube video assets.
+- FT-004B — target-ready export packages.
+- FT-004G — YouTube video assets.
 - FT-004C — SoundCloud adapter.
 - FT-004D — YouTube adapter.
 - FT-004E — distributor/manual handoffs.
@@ -44,3 +45,6 @@ Implement the children, never this epic directly.
 FT-004F produces the accepted release that FT-004B and every publication adapter
 require as input. Without it, completing the other children still leaves nothing
 able to make a release acceptable.
+
+Video generation is FT-004G, separate from FT-004B's packaging, so that a target
+needing no video is never blocked on video. Only FT-004D depends on FT-004G.

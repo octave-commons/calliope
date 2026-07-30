@@ -33,7 +33,7 @@ board-mechanics objections, accepted findings, and their resolution.
 
 **Design authority: APPROVE. Board mechanics: REQUEST CHANGES.**
 
-Review: `https://github.com/octave-commons/fork_tales_v2/pull/3#pullrequestreview-4793817603`
+Review: PR #3 review `4793817603`.
 
 ## Non-goals
 
@@ -79,10 +79,12 @@ eta-mu kanban find ft-000b-define-media-workbench-domain-laws
 clojure -M:test
 ```
 
-`eta-mu kanban count` reporting 27 cards with no `README`, `AGENTS`, or
-`BOARD-BREAKDOWN` row in `eta-mu kanban list` is the live evidence for the
-phantom-card finding; `eta-mu kanban find` resolving a UUID whose slug differs from
-it is the live evidence for the `uuid:`-identity finding.
+`eta-mu kanban count` matching the current Markdown card corpus, with no `README`,
+`AGENTS`, or `BOARD-BREAKDOWN` row in `eta-mu kanban list`, is the live evidence
+for the phantom-card finding. The 27-card result recorded on 2026-07-28 is
+historical evidence for that tree, not a permanent expected total. `eta-mu kanban
+find` resolving a UUID whose slug differs from it is the live evidence for the
+`uuid:`-identity finding.
 
 Some invariants this review asked for are **not** currently enforced anywhere.
 Rheos does not reject empty readiness sections, dependency cycles, or breaches of

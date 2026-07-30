@@ -22,7 +22,7 @@ dependency: ["ft-004a-define-release-manifest-and-publication-target-laws", "ft-
 ## Outcome
 
 A generated release video can be uploaded with resumable checkpoints and explicit
-privacy, processing, audit, and publication state.
+privacy, processing, audit, publication, and cancellation capability state.
 
 ## Scope
 
@@ -31,12 +31,16 @@ privacy, processing, audit, and publication state.
 - Video metadata, tags, playlist placement, visibility, and external IDs.
 - Private-only/audit restriction handling.
 - Processing-status polling.
+- An attempt-cancel command that abandons an active resumable upload and its local
+  checkpoint, requests provider-session termination where supported, and reports an
+  explicit refusal once the remote operation can no longer be cancelled.
 
 ## Non-goals
 
 - Uploading raw audio as a normal channel video.
 - Assuming an API project can publish publicly without required audit.
 - Storing credentials in Git.
+- Treating cancellation as deletion of an uploaded, processing, or published video.
 
 ## Acceptance criteria
 
@@ -44,10 +48,16 @@ privacy, processing, audit, and publication state.
 - Interrupted uploads can resume from durable non-secret checkpoint state.
 - Privacy requested, privacy achieved, and audit restriction are distinguishable.
 - Upload completion and YouTube processing completion are separate states.
+- Cancellation records an explicit attempt outcome without rewriting prior
+  checkpoints, the accepted release, the rendered video, or sibling target attempts.
+- Cancellation is unavailable with an inspectable reason after the provider's abort
+  boundary; a request alone never produces a false `cancelled` state.
 - External video/playlist IDs are preserved.
 
 ## Verification
 
 Mock/API-contract tests cover resumable interruption, expired sessions, private
-restriction, processing failure, duplicate requests, and credential redaction.
-Live verification is separately recorded when an approved channel/project exists.
+restriction, processing failure, duplicate requests, cancellation before and after
+the provider abort boundary, unsupported-cancellation reasons, and credential
+redaction. Live verification is separately recorded when an approved channel/project
+exists.

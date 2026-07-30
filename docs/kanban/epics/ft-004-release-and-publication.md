@@ -20,8 +20,9 @@ dependency: ["ft-003-recover-valuable-spans-and-arrange-them-non-destructively"]
 ## Outcome
 
 An accepted local release can be assembled through a native Release Builder,
-generate complete target packages, and independently track direct uploads,
-resumable uploads, distributor handoffs, and manual actions.
+generate complete target packages, independently track direct uploads, resumable
+uploads, distributor handoffs, and manual actions, and expose those attempts through
+a native Publication Activity screen with explicit retry and recovery actions.
 
 ## Non-goals
 
@@ -40,6 +41,7 @@ Listed in dependency order. Letters are stable labels, not sequence:
 - FT-004C — SoundCloud adapter.
 - FT-004D — YouTube adapter.
 - FT-004E — distributor/manual handoffs.
+- FT-004H — native Publication Activity and retry view.
 
 Implement the children, never this epic directly.
 
@@ -50,3 +52,8 @@ make a release acceptable.
 
 Video generation is FT-004G, separate from FT-004B's packaging, so that a target
 needing no video is never blocked on video. Only FT-004D depends on FT-004G.
+
+FT-004H consumes the independent attempt records and command surfaces owned by
+FT-004C, FT-004D, and FT-004E. It implements the design's Publication Activity
+screen through FT-000D's selected native UI/runtime rather than introducing a
+second publication state machine in the view.

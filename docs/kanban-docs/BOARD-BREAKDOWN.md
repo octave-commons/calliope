@@ -82,10 +82,12 @@ Rows are in dependency order; letters are stable labels, not sequence.
 | FT-004C | Implement checkpointed SoundCloud direct-upload adapter | 5 | 004A, 004B | icebox |
 | FT-004D | Implement resumable YouTube upload with privacy/audit state | 5 | 004A, 004B, 004G | icebox |
 | FT-004E | Implement distributor/manual handoffs for Spotify, Bandcamp, and similar targets | 5 | 004A, 004B | icebox |
+| FT-004H | Build the native Publication Activity screen with attempt inspection, retry, resume, cancellation, and manual-action completion | 5 | 000D, 004C, 004D, 004E | icebox |
 
 Gate outcome: an accepted local release can be assembled and accepted through the
-native application, then published or handed off without confusing export, upload,
-processing, and published states.
+native application, published or handed off without confusing export, upload,
+processing, and published states, and monitored or recovered through a native
+Publication Activity screen.
 
 ## Operational cards
 
@@ -111,8 +113,9 @@ FT-000A ─┬─> FT-000B ─┐
                          ├─> FT-001A -> FT-001B -> FT-001C ─┬─> FT-001D -> FT-002A -> FT-002B
                          │                                  └─> FT-001E
                          └─> FT-003A -> FT-003B -> FT-003C -> FT-003D
-                                                             -> FT-004A -> FT-004F -> FT-004B ─┬─> FT-004G -> FT-004D
-                                                                                                 └─> FT-004C / FT-004E
+                                                             -> FT-004A -> FT-004F -> FT-004B ─┬─> FT-004G -> FT-004D ─┐
+                                                                                                 ├─> FT-004C ────────────┼─> FT-004H
+                                                                                                 └─> FT-004E ────────────┘
 ```
 
 Cross-gate edges not drawn above:
@@ -123,6 +126,8 @@ Cross-gate edges not drawn above:
   queue/playlist model.
 - FT-004F depends on FT-000D because its native Release Builder implements the
   selected UI/runtime and topology rather than choosing one downstream.
+- FT-004H depends on FT-000D because Publication Activity is a native application
+  screen, while FT-004C/D/E remain the owners of target-specific attempt commands.
 
 This diagram shows principal chains only. Each card's `dependency` field is
 authoritative, and several cards carry additional edges to the FT-000 foundation
@@ -133,6 +138,8 @@ cards that would make the drawing unreadable.
 - Contracts precede adapters.
 - Native UI, playback, read-model, and topology choices are produced by FT-000D,
   not invented downstream.
+- Every core native design screen has an explicit card owner; Gate 4 assigns the
+  Release Builder to FT-004F and Publication Activity to FT-004H.
 - Every declared playable type has an owning resolver path into queues/playlists.
 - A target adapter cannot advance before local release/export semantics work.
 - `done` means accepted for the card's scope, not merely merged or green.

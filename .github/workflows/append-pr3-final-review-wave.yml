@@ -1,0 +1,53 @@
+name: Verify and record PR 3 final review wave
+
+on:
+  push:
+    branches:
+      - design/media-workbench-v1
+    paths:
+      - .github/workflows/append-pr3-final-review-wave.yml
+
+permissions:
+  contents: write
+
+jobs:
+  verify-and-record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: design/media-workbench-v1
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install eta-mu/Rheos
+        run: npm install --global eta-mu@1.1.1
+      - uses: DeLaGuardo/setup-clojure@13.0
+        with:
+          cli: 1.12.2.1565
+      - name: Verify board and Clojure contracts
+        run: |
+          eta-mu --version
+          eta-mu kanban count
+          eta-mu kanban list
+          eta-mu kanban find ft-001a-index-playable-media-metadata-and-waveform-jobs
+          eta-mu kanban find ft-001b-implement-playback-resolver-persistent-queue-and-resume
+          eta-mu kanban find ft-004c-implement-checkpointed-soundcloud-publication-adapter
+          eta-mu kanban find ft-004d-implement-resumable-youtube-publication-adapter
+          eta-mu kanban find ft-004g-render-youtube-video-assets-from-an-accepted-release
+          eta-mu kanban find ft-004h-build-native-publication-activity-and-retry-view
+          clojure -M:test
+      - name: Append receipt and remove one-shot workflow
+        shell: bash
+        run: |
+          SOURCE_HEAD="$GITHUB_SHA"
+          cat >> receipts.edn <<EOF
+          {:ts "2026-07-30T17:27:00Z", :kind :fix, :repo "https://github.com/octave-commons/fork_tales_v2", :origin "chatgpt", :owner "gpt-5.6-thinking", :dod "Close PR #3's final structural review gaps by assigning work/render-family identity, the shared stop transport command, publication cancellation commands, durable video-render activity, and the corrected Gate 4 dependency branches to explicit cards.", :pi "eta-mu/receipt-river-v1", :host "github-actions/ubuntu-latest", :manifest "docs/kanban/stories/ft-001a-index-playable-media.md; docs/kanban/stories/ft-001b-implement-playback-and-queue.md; docs/kanban/stories/ft-004c-soundcloud-publication-adapter.md; docs/kanban/stories/ft-004d-youtube-publication-adapter.md; docs/kanban/stories/ft-004g-render-youtube-video-assets.md; docs/kanban/stories/ft-004h-build-native-publication-activity-view.md; docs/kanban/epics/ft-004-release-and-publication.md; docs/kanban-docs/BOARD-BREAKDOWN.md", :refs "PR #3; tested source head ${SOURCE_HEAD}; review threads PRRT_kwDOTkaDCs6U-Gsk, PRRT_kwDOTkaDCs6U-Gso, PRRT_kwDOTkaDCs6U-Gsr, PRRT_kwDOTkaDCs6U-Gss, PRRT_kwDOTkaDCs6U-KJT", :tests "eta-mu 1.1.1 count/list/find passed for the current 31-card corpus and all changed card UUIDs; clojure -M:test passed in this workflow. Remote GitHub/Actions only; no native UI, audio device, FFmpeg render, OAuth flow, provider upload, cancellation, or publication API was executed.", :decisions "FT-001A is the sole owner of explicit durable work-to-render relation ingestion and projection; downstream views may not infer render families from titles or directories. FT-001B owns a shared idempotent stop command consumed by FT-001E. FT-004C and FT-004D own target-specific cancellation capability/refusal semantics. FT-004G consumes FT-004F directly, owns durable render-job events plus retry/cancel commands, and remains independent of FT-004B packaging. FT-004H consumes FT-004G job activity and FT-004C/D/E attempt activity without fabricating rendering or cancellation state."}
+          EOF
+          rm .github/workflows/append-pr3-final-review-wave.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add receipts.edn .github/workflows/append-pr3-final-review-wave.yml
+          git commit -m "chore: record final PR 3 review wave"
+          git push origin HEAD:design/media-workbench-v1

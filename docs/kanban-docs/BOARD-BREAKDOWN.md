@@ -27,16 +27,16 @@ application/event boundary.
 
 | Card | Outcome | Pts | Depends on | State |
 |---|---|---:|---|---|
-| FT-001A | Index playable media metadata and waveform-peak jobs using the selected read model | 5 | 000B, 000C, 000D | incoming |
-| FT-001B | Implement real playback resolver, persistent queue, resume, and failure isolation | 5 | 000D, 001A | incoming |
+| FT-001A | Index works, explicit render-family identity, playable metadata, and waveform-peak jobs using the selected read model | 5 | 000B, 000C, 000D | incoming |
+| FT-001B | Implement real playback resolver, persistent queue, complete transport including stop, resume, and failure isolation | 5 | 000D, 001A | incoming |
 | FT-001C | Build native Clojure/JVM shell and virtualized library browser | 5 | 000D, 001B | incoming |
 | FT-001D | Add disposition, multidimensional ratings, labels, sorting, and playlists | 5 | 000C, 001C | incoming |
 | FT-001E | Integrate system media keys through the native shell adapter | 3 | 000D, 001C | incoming |
 
 Gate outcome: Fork Tales is demonstrably useful as the everyday player for the
 corpus. Acceptance requires representative real MP3 playback, seek, pause/resume,
-queue advance, restart recovery, and unreadable-item isolation; fake media tests
-alone are insufficient.
+stop/replay, queue advance, restart recovery, unreadable-item isolation, and stable
+work/render-family grouping; fake media tests alone are insufficient.
 
 ## Gate 2 — Focused curation
 
@@ -71,23 +71,25 @@ an evidence-backed alignment model.
 
 ## Gate 4 — Release and publication
 
-Rows are in dependency order; letters are stable labels, not sequence.
+Rows are in dependency order; FT-004B and FT-004G are parallel siblings after
+FT-004F. Letters are stable labels, not sequence.
 
 | Card | Outcome | Pts | Depends on | State |
 |---|---|---:|---|---|
 | FT-004A | Define release manifest, rights/provenance checklist, and target-capability law | 5 | 000B, 003D | icebox |
 | FT-004F | Build the native Release Builder; assemble, validate, and locally accept a release candidate | 5 | 000D, 004A | icebox |
 | FT-004B | Generate target-ready export packages | 5 | 003C, 004A, 004F | icebox |
-| FT-004G | Render YouTube video assets | 3 | 004A, 004B | icebox |
-| FT-004C | Implement checkpointed SoundCloud direct-upload adapter | 5 | 004A, 004B | icebox |
-| FT-004D | Implement resumable YouTube upload with privacy/audit state | 5 | 004A, 004B, 004G | icebox |
+| FT-004G | Render YouTube video assets with durable job progress, retry, and cancellation | 3 | 004A, 004F | icebox |
+| FT-004C | Implement checkpointed SoundCloud direct-upload adapter with explicit cancellation capability | 5 | 004A, 004B | icebox |
+| FT-004D | Implement resumable YouTube upload with privacy/audit and explicit cancellation capability | 5 | 004A, 004B, 004G | icebox |
 | FT-004E | Implement distributor/manual handoffs for Spotify, Bandcamp, and similar targets | 5 | 004A, 004B | icebox |
-| FT-004H | Build the native Publication Activity screen with attempt inspection, retry, resume, cancellation, and manual-action completion | 5 | 000D, 004C, 004D, 004E | icebox |
+| FT-004H | Build the native Publication Activity screen over render jobs and target attempts with inspection, retry, resume, cancellation, and manual-action completion | 5 | 000D, 004G, 004C, 004D, 004E | icebox |
 
 Gate outcome: an accepted local release can be assembled and accepted through the
-native application, published or handed off without confusing export, upload,
-processing, and published states, and monitored or recovered through a native
-Publication Activity screen.
+native application, packaged and rendered through independent target branches,
+published or handed off without confusing render, export, upload, processing, and
+published states, and monitored or recovered through a native Publication Activity
+screen.
 
 ## Operational cards
 
@@ -113,10 +115,16 @@ FT-000A ─┬─> FT-000B ─┐
                          ├─> FT-001A -> FT-001B -> FT-001C ─┬─> FT-001D -> FT-002A -> FT-002B
                          │                                  └─> FT-001E
                          └─> FT-003A -> FT-003B -> FT-003C -> FT-003D
-                                                             -> FT-004A -> FT-004F -> FT-004B ─┬─> FT-004G -> FT-004D ─┐
-                                                                                                 ├─> FT-004C ────────────┼─> FT-004H
-                                                                                                 └─> FT-004E ────────────┘
+                                                             -> FT-004A -> FT-004F ─┬─> FT-004B ─┬─> FT-004C ─┐
+                                                                                     │             ├─> FT-004E ─┤
+                                                                                     │             └──────────┐ │
+                                                                                     └─> FT-004G ─────> FT-004D ├─> FT-004H
+                                                                                                      └─────────┘
 ```
+
+FT-004D joins both Gate 4 branches: it depends on FT-004B's target-ready package
+and FT-004G's validated video. FT-004H consumes FT-004G render-job activity plus
+FT-004C/D/E target-attempt activity.
 
 Cross-gate edges not drawn above:
 
@@ -127,7 +135,8 @@ Cross-gate edges not drawn above:
 - FT-004F depends on FT-000D because its native Release Builder implements the
   selected UI/runtime and topology rather than choosing one downstream.
 - FT-004H depends on FT-000D because Publication Activity is a native application
-  screen, while FT-004C/D/E remain the owners of target-specific attempt commands.
+  screen, while FT-004G and FT-004C/D/E remain the owners of render-job and
+  target-specific attempt commands.
 
 This diagram shows principal chains only. Each card's `dependency` field is
 authoritative, and several cards carry additional edges to the FT-000 foundation
@@ -140,7 +149,11 @@ cards that would make the drawing unreadable.
   not invented downstream.
 - Every core native design screen has an explicit card owner; Gate 4 assigns the
   Release Builder to FT-004F and Publication Activity to FT-004H.
+- Work/render identity is explicit and projected once; downstream views never infer
+  render families from titles or directories.
 - Every declared playable type has an owning resolver path into queues/playlists.
+- Every Publication Activity action dispatches an owning service/adapter command;
+  the view never fabricates rendering or cancellation state.
 - A target adapter cannot advance before local release/export semantics work.
 - `done` means accepted for the card's scope, not merely merged or green.
 - Live status, dependency resolution, transitions, WIP limits, and actionable work

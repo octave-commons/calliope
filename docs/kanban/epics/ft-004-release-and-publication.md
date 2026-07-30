@@ -19,8 +19,9 @@ dependency: ["ft-003-recover-valuable-spans-and-arrange-them-non-destructively"]
 
 ## Outcome
 
-An accepted local release can generate complete target packages and independently
-track direct uploads, resumable uploads, distributor handoffs, and manual actions.
+An accepted local release can be assembled through a native Release Builder,
+generate complete target packages, and independently track direct uploads,
+resumable uploads, distributor handoffs, and manual actions.
 
 ## Non-goals
 
@@ -33,7 +34,7 @@ track direct uploads, resumable uploads, distributor handoffs, and manual action
 Listed in dependency order. Letters are stable labels, not sequence:
 
 - FT-004A — release and target-capability laws.
-- FT-004F — release builder assembly, validation, and local acceptance.
+- FT-004F — native Release Builder assembly, validation, and local acceptance.
 - FT-004B — target-ready export packages.
 - FT-004G — YouTube video assets.
 - FT-004C — SoundCloud adapter.
@@ -42,9 +43,10 @@ Listed in dependency order. Letters are stable labels, not sequence:
 
 Implement the children, never this epic directly.
 
-FT-004F produces the accepted release that FT-004B and every publication adapter
-require as input. Without it, completing the other children still leaves nothing
-able to make a release acceptable.
+FT-004F consumes FT-000D's accepted native UI/runtime and topology decision and
+produces the accepted release that FT-004B and every publication adapter require
+as input. Without it, completing the other children still leaves nothing able to
+make a release acceptable.
 
 Video generation is FT-004G, separate from FT-004B's packaging, so that a target
 needing no video is never blocked on video. Only FT-004D depends on FT-004G.

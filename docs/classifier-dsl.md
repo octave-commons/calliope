@@ -1,4 +1,4 @@
-# Fork Tales classifier DSL
+# Calliope classifier DSL
 
 The classifier DSL describes model-assisted corpus work as data. A program says:
 
@@ -15,11 +15,11 @@ provider.
 
 ## Files
 
-- `src/fork_tales/law/classifier.cljc` — classifier, context, model, and prompt contracts.
-- `src/fork_tales/law/feature.cljc` — feature definitions, extractor contracts, and cache policy.
-- `src/fork_tales/classifier/dsl.cljc` — registry, semantic lint, and plan resolution.
+- `src/calliope/law/classifier.cljc` — classifier, context, model, and prompt contracts.
+- `src/calliope/law/feature.cljc` — feature definitions, extractor contracts, and cache policy.
+- `src/calliope/classifier/dsl.cljc` — registry, semantic lint, and plan resolution.
 - `resources/classifiers/theme-discovery-v1.edn` — first complete feature-plus-classifier program.
-- `test/fork_tales/classifier/dsl_test.clj` — contract, reference, feature, and dataflow tests.
+- `test/calliope/classifier/dsl_test.clj` — contract, reference, feature, and dataflow tests.
 
 ## Program registries
 
@@ -38,7 +38,7 @@ A program contains named registries:
 ```
 
 Registry keys must equal each definition's declared ID. References are checked
-by `fork-tales.classifier.dsl/lint`; local data shape is checked by Malli.
+by `calliope.classifier.dsl/lint`; local data shape is checked by Malli.
 
 ## Objects, features, and classifications
 
@@ -56,7 +56,7 @@ text span, render, audio segment, artwork, production brief, or project event.
 A feature is a typed observation that may be reused by many later classifiers:
 
 ```clojure
-{:feature/id :fork-tales/production-style-v1
+{:feature/id :calliope/production-style-v1
  :feature/scopes #{:work :production-brief :style-prompt}
  :feature/family :production
  :feature/value-schema [:map ...]}
@@ -85,13 +85,13 @@ An extractor produces one or more feature observations. There are two forms.
 ### Deterministic extractor
 
 ```clojure
-{:extractor/id :fork-tales/song-sections-v1
+{:extractor/id :calliope/song-sections-v1
  :extractor/type :deterministic
- :extractor/resolver :fork-tales/explicit-song-sections-v1
+ :extractor/resolver :calliope/explicit-song-sections-v1
  :extractor/input-object-types #{:work :lyric-document}
  :extractor/modalities #{:text}
- :extractor/produces #{:fork-tales/song-sections-v1}
- :extractor/output :fork-tales/song-sections-result-v1
+ :extractor/produces #{:calliope/song-sections-v1}
+ :extractor/output :calliope/song-sections-result-v1
  :extractor/cache {:cache/reuse :exact-only
                    :cache/key #{:object-content-sha256 :extractor-version}}}
 ```
@@ -102,13 +102,13 @@ in the DSL.
 ### LLM extractor
 
 ```clojure
-{:extractor/id :fork-tales/production-style-v1
+{:extractor/id :calliope/production-style-v1
  :extractor/type :llm
- :extractor/model :fork-tales/gemma4-e2b-ollama
- :extractor/context :fork-tales/one-work-production-context-v1
- :extractor/prompt :fork-tales/production-style-extraction-v1
- :extractor/output :fork-tales/production-style-result-v1
- :extractor/produces #{:fork-tales/production-style-v1}}
+ :extractor/model :calliope/gemma4-e2b-ollama
+ :extractor/context :calliope/one-work-production-context-v1
+ :extractor/prompt :calliope/production-style-extraction-v1
+ :extractor/output :calliope/production-style-result-v1
+ :extractor/produces #{:calliope/production-style-v1}}
 ```
 
 The E2B extractor handles a bounded, narrow task: normalize explicit style and
@@ -123,8 +123,8 @@ reference it directly:
 ```clojure
 [:map {:closed true}
  [:object/id :string]
- [:feature/id [:= :fork-tales/song-sections-v1]]
- [:feature/value [:ref :fork-tales/song-sections-v1]]]
+ [:feature/id [:= :calliope/song-sections-v1]]
+ [:feature/value [:ref :calliope/song-sections-v1]]]
 ```
 
 `program-registry` extends the core DSL registry with each feature's
@@ -183,7 +183,7 @@ An attachment step can declare:
 ```clojure
 {:step/op :attach-features
  :step/input :bounded-sections
- :step/features #{:fork-tales/production-style-v1}
+ :step/features #{:calliope/production-style-v1}
  :step/status-policy :derived-or-better
  :step/missing :extract
  :step/as :enriched-sections}
@@ -212,7 +212,7 @@ There is no arbitrary evaluation boundary in classifier data.
 Model profiles carry provider-specific connection and option data:
 
 ```clojure
-{:model/id :fork-tales/gemma4-e4b-ollama
+{:model/id :calliope/gemma4-e4b-ollama
  :model/provider :ollama
  :model/name "gemma4:e4b"
  :model/endpoint "http://127.0.0.1:11434"
@@ -244,7 +244,7 @@ mode is validated by Malli afterward, and every mode lands EDN in the ledger.
 Both schema-constrained modes are derived from the same Malli contract, so the
 contract stays the single source of truth. Responses come back as JSON and are
 decoded with `malli.transform/json-transformer`, which restores the declared EDN
-types: `"destabilized"` becomes `:destabilized`, `"fork-tales/production-style-v1"`
+types: `"destabilized"` becomes `:destabilized`, `"calliope/production-style-v1"`
 becomes a namespaced keyword, and an integer `1` becomes `1.0` where the contract
 wants a double.
 
@@ -271,7 +271,7 @@ concept discovery open while preserving a stable machine-readable envelope.
 ```clojure
 (require '[clojure.edn :as edn]
          '[clojure.java.io :as io]
-         '[fork-tales.classifier.dsl :as dsl])
+         '[calliope.classifier.dsl :as dsl])
 
 (def program
   (-> "classifiers/theme-discovery-v1.edn"
@@ -284,16 +284,16 @@ concept discovery open while preserving a stable machine-readable envelope.
 (def style-plan
   (dsl/compile-extractor-plan
    program
-   :fork-tales/production-style-v1))
+   :calliope/production-style-v1))
 
 (def discovery-plan
   (dsl/compile-plan
    program
-   :fork-tales/random-ten-theme-discovery-v1))
+   :calliope/random-ten-theme-discovery-v1))
 ```
 
 The random-ten classifier declares
-`:classifier/requires-features #{:fork-tales/production-style-v1}`. Its compiled
+`:classifier/requires-features #{:calliope/production-style-v1}`. Its compiled
 plan includes both the feature definition and the registered producer IDs.
 
 An adapter executes feature and classifier work in this order:

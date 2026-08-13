@@ -1,8 +1,9 @@
-# fork_tales_v2 — Repository Agent Guide
+# calliope — Repository Agent Guide
 
-Fork Tales is a muse/eta-mu/epiphany-participant workspace for a large corpus of
-lyrics, prompts, metadata, artwork, audio renders, classifications, and emerging
-creative decisions.
+A muse/eta-mu/epiphany-participant workspace for the Calliope corpus: roughly
+690 unique songs distilled from about 1,500 lyric files, now connected to Suno
+track metadata, audio, artwork, classifier programs, and provisional concept
+work.
 
 Read `PROCESS.md` first. It governs evidence, receipts, harness portability,
 completion claims, and acceptance. This guide describes repository facts and does
@@ -10,15 +11,19 @@ not imply access to Err's machine.
 
 ## Ground truth
 
-- `ledgers/ingest.edn` — append-only ingestion truth.
-- `docs/lyrics/` — derived pass-1 projection; never create truth by hand-editing it.
-- `docs/lyrics/index.edn` and `ledgers/projections/songs-v1.edn` — song indexes.
-- `ledgers/projections/variants-v1.edn` — graded same-title similarity signals.
-- `tracks/` — corpus-linked audio, metadata, and artwork.
-- `resources/classifiers/` — data-first classifiers and feature extractors.
-- `src/fork_tales/law/` — Malli contracts.
-- `src/fork_tales/classifier/` — DSL validation and JVM runtime adapters.
-- `docs/lore/` — derived thematic and world-building synthesis.
+- `ledgers/ingest.edn` — append-only ingestion truth. Events preserve path,
+  content hashes, classification, title, basis, and run provenance.
+- `docs/lyrics/` — derived pass-1 projection. Never edit by hand to create new
+  truth; change sources or projection logic and regenerate.
+- `docs/lyrics/index.edn` and `ledgers/projections/songs-v1.edn` — song index
+  projections.
+- `ledgers/projections/variants-v1.edn` — pass-2 same-title similarity signals.
+  Similarity never silently becomes identity.
+- `tracks/` — corpus-linked audio, metadata, and artwork assets.
+- `resources/classifiers/` — pure-data classifier and feature-extractor programs.
+- `src/calliope/law/` — Malli contracts only.
+- `src/calliope/classifier/` — DSL validation and JVM runtime adapters.
+- `docs/lore/` — derived thematic, stylistic, and world-building synthesis.
 - `docs/research/` — evidence and constraints; research does not decide architecture.
 - `docs/adrs/` — architectural decision records.
 - `docs/designs/` — approved product behavior.

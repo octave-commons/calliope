@@ -1,4 +1,4 @@
-# fork_tales — World Bible (Entities & Lore)
+# calliope — World Bible (Entities & Lore)
 
 *Named-entity extraction over 690 songs. Status: derived/provisional —
 glosses are interpretive; quoted lines are observed. Contradictions are

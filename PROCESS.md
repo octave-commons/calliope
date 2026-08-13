@@ -1,8 +1,8 @@
-# Fork Tales Process Charter
+# Calliope Process Charter
 
 ## Purpose
 
-Fork Tales is a living creative corpus and an experimental system for recovering
+Calliope is a living creative corpus and an experimental system for recovering
 relationships among lyrics, production language, renders, artwork, project
 history, and the work that caused a song to exist.
 
@@ -31,7 +31,7 @@ Apply guidance in this order:
 1. This `PROCESS.md` governs provenance, evidence, receipts, completion claims,
    and harness portability.
 2. Accepted ADRs and explicit durable decisions govern their declared scope.
-3. Data contracts in `src/fork_tales/law/` govern represented data shapes.
+3. Data contracts in `src/calliope/law/` govern represented data shapes.
 4. Root `AGENTS.md` describes current repository structure and engineering
    practice.
 5. Harness adapters under `docs/harnesses/` and `.opencode/` describe how a
@@ -66,7 +66,7 @@ never human acceptance.
 - `tracks/` contains corpus-linked media assets and metadata; derived audio
   analysis remains reproducible and separately identified.
 - `resources/classifiers/` contains pure-data programs.
-- `src/fork_tales/law/` contains contracts.
+- `src/calliope/law/` contains contracts.
 - `receipts.edn` records accountable multi-step repository work.
 
 Never hand-edit a projection to create new truth. Change a source, event,

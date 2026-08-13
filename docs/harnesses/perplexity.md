@@ -28,7 +28,7 @@ Distinguish source claims from interpretation. Prefer official documentation,
 research papers, standards, and first-party project material for technical
 claims. Current facts require current sources.
 
-## Fork Tales use
+## Calliope use
 
 Perplexity is well suited for:
 

@@ -14,11 +14,11 @@
   "AGENTS.md"
   "docs/classifier-dsl.md"
   "resources/classifiers/theme-discovery-v1.edn"
-  "src/fork_tales/classifier/main.clj"
-  "src/fork_tales/classifier/runtime.clj"
-  "src/fork_tales/law/classifier.cljc"
-  "test/fork_tales/classifier/dsl_test.clj"
-  "test/fork_tales/classifier/runtime_test.clj"
+  "src/calliope/classifier/main.clj"
+  "src/calliope/classifier/runtime.clj"
+  "src/calliope/law/classifier.cljc"
+  "test/calliope/classifier/dsl_test.clj"
+  "test/calliope/classifier/runtime_test.clj"
   "ledgers/classification.edn")
 
  (concurrent-dirt none)

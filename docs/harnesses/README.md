@@ -1,6 +1,6 @@
 # Harness adapters
 
-Fork Tales process is harness-neutral. `PROCESS.md` defines obligations;
+Calliope process is harness-neutral. `PROCESS.md` defines obligations;
 adapters describe how a particular environment can satisfy them.
 
 ## Selection rule

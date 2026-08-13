@@ -44,7 +44,7 @@ Use truthful environment fields:
 ```clojure
 {:origin "chatgpt"
  :host "chatgpt-github-connector"
- :repo "https://github.com/octave-commons/fork_tales_v2"}
+ :repo "https://github.com/octave-commons/calliope_v2"}
 ```
 
 Use `:drift` to compensate for any earlier missed receipt rather than rewriting

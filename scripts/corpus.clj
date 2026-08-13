@@ -1,5 +1,5 @@
 #!/usr/bin/env bb
-;; fork_tales_v2 corpus pipeline — event-sourced lyric ingestion.
+;; calliope corpus pipeline — event-sourced lyric ingestion.
 ;;
 ;; Pass 1: exact-copy dedup. Every document discovered is hashed (raw sha256
 ;; plus a normalized body-sha256 that strips Suno ID lines and whitespace

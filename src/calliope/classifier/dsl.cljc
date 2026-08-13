@@ -1,12 +1,12 @@
-(ns fork-tales.classifier.dsl
+(ns calliope.classifier.dsl
   "Validation and pure-data resolution for classifier programs.
 
   This namespace deliberately does not call Ollama, llama.cpp, the filesystem,
   or an event ledger. It validates a program and resolves classifiers and
   feature extractors into pure plans for adapter layers to interpret."
   (:require [clojure.set :as set]
-            [fork-tales.law.classifier :as classifier-law]
-            [fork-tales.law.feature :as feature-law]
+            [calliope.law.classifier :as classifier-law]
+            [calliope.law.feature :as feature-law]
             [malli.core :as m]
             [malli.registry :as mr]))
 

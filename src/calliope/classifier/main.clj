@@ -1,12 +1,12 @@
-(ns fork-tales.classifier.main
+(ns calliope.classifier.main
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.string :as str]
-            [fork-tales.classifier.runtime :as runtime]))
+            [calliope.classifier.runtime :as runtime]))
 
 (def defaults
   {:program "classifiers/theme-discovery-v1.edn"
-   :classifier :fork-tales/random-ten-theme-discovery-v1
+   :classifier :calliope/random-ten-theme-discovery-v1
    :base-dir "."
    :run-seed 0
    :dry-run? false})
@@ -15,7 +15,7 @@
   []
   (str/join
    "\n"
-   ["Fork Tales classifier interpreter"
+   ["Calliope classifier interpreter"
     ""
     "Usage:"
     "  clojure -M:classify -- [options]"

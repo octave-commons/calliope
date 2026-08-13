@@ -19,10 +19,10 @@ on:
       - "docs/kanban-docs/**"
       - "openhax.kanban.json"
       - ".opencode/AGENTS.md"
-      - ".opencode/skills/fork-tales-corpus/SKILL.md"
-      - "src/fork_tales/**"
+      - ".opencode/skills/calliope-corpus/SKILL.md"
+      - "src/calliope/**"
       - "resources/classifiers/**"
-      - "test/fork_tales/**"
+      - "test/calliope/**"
       - ".github/workflows/classifier-dsl.yml"
   push:
     branches: [main]
@@ -40,10 +40,10 @@ on:
       - "docs/kanban-docs/**"
       - "openhax.kanban.json"
       - ".opencode/AGENTS.md"
-      - ".opencode/skills/fork-tales-corpus/SKILL.md"
-      - "src/fork_tales/**"
+      - ".opencode/skills/calliope-corpus/SKILL.md"
+      - "src/calliope/**"
       - "resources/classifiers/**"
-      - "test/fork_tales/**"
+      - "test/calliope/**"
       - ".github/workflows/classifier-dsl.yml"
 
 jobs:

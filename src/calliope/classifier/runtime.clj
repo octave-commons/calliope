@@ -1,5 +1,5 @@
-(ns fork-tales.classifier.runtime
-  "JVM interpreter for Fork Tales classifier programs.
+(ns calliope.classifier.runtime
+  "JVM interpreter for Calliope classifier programs.
 
   The DSL remains pure data. This namespace supplies explicit adapters for
   filesystem sources, deterministic context transforms, Ollama/llama.cpp model
@@ -9,7 +9,7 @@
             [clojure.java.io :as io]
             [clojure.string :as str]
             [clojure.walk :as walk]
-            [fork-tales.classifier.dsl :as dsl]
+            [calliope.classifier.dsl :as dsl]
             [malli.core :as m]
             [malli.json-schema :as json-schema]
             [malli.transform :as mt])
@@ -296,13 +296,13 @@
 (defn song-sections-result
   [object]
   {:object/id (:object/id object)
-   :feature/id :fork-tales/song-sections-v1
+   :feature/id :calliope/song-sections-v1
    :feature/value (explicit-sections (:lyrics object))})
 
 (def built-in-resolvers
-  {:fork-tales/canonical-lyric-v1 hydrate-canonical-lyric
-   :fork-tales/lyric-and-production-metadata-v1 hydrate-canonical-lyric
-   :fork-tales/explicit-song-sections-v1
+  {:calliope/canonical-lyric-v1 hydrate-canonical-lyric
+   :calliope/lyric-and-production-metadata-v1 hydrate-canonical-lyric
+   :calliope/explicit-song-sections-v1
    (fn [_ object] (song-sections-result object))})
 
 (defn- resolver
@@ -474,7 +474,7 @@
   "Coerce a JSON-decoded value into the EDN types the Malli contract declares.
 
   This is what turns `\"destabilized\"` into `:destabilized`, the string
-  `\"fork-tales/production-style-v1\"` into a namespaced keyword, and an
+  `\"calliope/production-style-v1\"` into a namespaced keyword, and an
   integer `1` into `1.0` where the contract wants a double."
   [schema value]
   (m/decode schema value (mt/json-transformer)))

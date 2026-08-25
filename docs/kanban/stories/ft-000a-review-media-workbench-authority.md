@@ -1,7 +1,7 @@
 ---
 uuid: "ft-000a-review-and-accept-or-revise-media-workbench-authority"
 title: "FT-000A: Review and accept or revise Media Workbench authority"
-status: done
+status: incoming
 type: story
 priority: P0
 phase: 0
@@ -95,15 +95,15 @@ was applied on this branch.
 **Board-mechanics correction** — commit `09be7d2` ("fix: align media workbench
 board with Rheos mechanics"), confirmed present in this branch's history.
 
-**Explicitly not claimed.** PR #3 carries no review with GitHub state `APPROVED`;
-all 13 reviews on it are `COMMENTED`
-(`gh api repos/octave-commons/fork_tales_v2/pulls/3/reviews`). This card's `done`
-status therefore rests on the human comment above and not on a GitHub review
-approval, and not on PR merge state, which the non-goals already exclude. No
-acceptance of unimplemented player, audio, read-model, or publication work is
-recorded or implied here.
+**Explicitly not claimed.** At the time this result was recorded, PR #3 carried no
+review with GitHub state `APPROVED`; the available reviews were `COMMENTED`. The
+human comment above is design-disposition evidence, not proof that this card passed
+the Rheos lifecycle. No acceptance of unimplemented player, audio, read-model, or
+publication work is recorded or implied here.
 
-This section was added after the fact: the card was already `done` with a
-`## Verification` plan but no recorded result, which the board contract does not
-permit. The status and disposition are unchanged; only the missing evidence is now
-present.
+This result section was added after a branch snapshot had already created the new
+card with `status: done`. That status was invalid: a new card enters `incoming`,
+and `done` must be reached through a Rheos lifecycle transition. The current
+frontmatter is therefore `incoming`; the recorded disposition and evidence remain
+inputs to a future lifecycle acceptance rather than a claim that it already
+occurred.

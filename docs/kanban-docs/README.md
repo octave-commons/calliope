@@ -18,8 +18,9 @@ publication adapters.
 prose lives here in `docs/kanban-docs/` so Rheos does not ingest it as work.
 
 ADR-001 is accepted and Media Workbench v1 is approved. FT-000A, the review
-reconciliation chores, and the FT-OPS-001 local board verification are done. The
-first ready slices are:
+reconciliation chores, and FT-OPS-001 preserve historical disposition and
+verification evidence, but their live card status is `incoming`; none is complete
+until Rheos records the lifecycle acceptance. The first ready slices are:
 
 - FT-000B — media-workbench domain laws;
 - FT-000D — native UI, real playback, read-model, and application topology.
@@ -50,3 +51,22 @@ command output and tool-version observations.
 
 Generated board snapshots remain diagnostic Rheos projections. Live board state,
 legal transitions, writes, and drift detection come from Rheos.
+
+## PR #3 review closeout
+
+The final reviewed board has explicit owners for the product capabilities needed by
+its dependent views and adapters:
+
+- FT-001A projects explicit work-to-render and render-family identity; downstream
+  views do not infer identity from titles or directories.
+- FT-001B owns the shared stop transport command consumed by native media keys.
+- FT-004B packaging and FT-004G video rendering are parallel branches from
+  FT-004F's accepted release; FT-004G also owns durable render-job retry and
+  cancellation activity.
+- FT-004C and FT-004D own target-specific cancellation commands and refusal
+  semantics; FT-004H only projects and dispatches owning command surfaces.
+
+Capability ownership is distinct from assignment to a human. Icebox cards may
+remain `owner: unassigned` until work becomes active. Cards introduced by this PR
+enter at their proposed initial status; the review does not fabricate retroactive
+Rheos transitions to represent discarded draft states.

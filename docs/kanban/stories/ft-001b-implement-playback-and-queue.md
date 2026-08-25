@@ -22,7 +22,8 @@ dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-
 ## Outcome
 
 Render playables use the FT-000D-selected JVM audio backend to play continuously
-with recoverable session state and explicit failure isolation.
+with recoverable session state, a complete transport command surface, and explicit
+failure isolation.
 
 ## Scope
 
@@ -30,14 +31,16 @@ with recoverable session state and explicit failure isolation.
 - Queue append, play-next, remove, reorder, previous/next.
 - Session resume and current position.
 - Missing/unreadable item skip behavior.
-- Play, pause, seek, loop, end-of-item advance, and duration reporting.
+- Play, pause, stop, seek, loop, end-of-item advance, and duration reporting.
+- A stop command that halts playback, returns the current item to its defined start,
+  and preserves current-item and queue identity.
 - Adapter boundary prepared for clip and arrangement playables.
 
 ## Non-goals
 
 - Selecting a different audio stack inside this card.
 - Waveform editor.
-- System media keys before the native-shell adapter exists.
+- System media-key registration before the native-shell adapter exists.
 - Publication playback.
 
 ## Acceptance criteria
@@ -46,13 +49,19 @@ with recoverable session state and explicit failure isolation.
 - One unreadable item produces an explicit error and does not destroy the queue.
 - Playback progress does not append durable Git events on every tick.
 - Transport state is independent of the current view.
+- Stop is idempotent, preserves the queue/current item, and leaves the current item
+  ready to play again from its defined start.
+- In-app controls and native adapters can dispatch the same stop command without a
+  backend- or adapter-local transport path.
 - The resolver can add clip/arrangement support without changing queue identity.
-- At least one representative corpus MP3 plays, pauses, resumes, seeks, reports
-  duration, reaches end-of-item advance, and survives a queue containing an
+- At least one representative corpus MP3 plays, pauses, stops, resumes, seeks,
+  reports duration, reaches end-of-item advance, and survives a queue containing an
   unreadable item on the actual native backend.
 
 ## Verification
 
-Deterministic fake-media tests cover queue logic, restart, reorder, and failures.
-A separately recorded local integration test exercises a real corpus MP3 and the
-selected JVM playback backend. The card cannot pass with fake sources alone.
+Deterministic fake-media tests cover queue logic, restart, reorder, stop semantics,
+idempotent repeated stop, and failures. A separately recorded local integration test
+exercises a real corpus MP3 and the selected JVM playback backend, including stop
+followed by replay from the defined start. The card cannot pass with fake sources
+alone.

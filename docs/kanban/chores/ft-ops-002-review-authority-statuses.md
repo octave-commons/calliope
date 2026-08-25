@@ -1,7 +1,7 @@
 ---
 uuid: "ft-ops-002-reconcile-adr-and-design-statuses-after-review"
 title: "FT-OPS-002: Reconcile ADR and design statuses after review"
-status: done
+status: incoming
 type: chore
 priority: P0
 phase: 0
@@ -39,7 +39,8 @@ The authority documents and board now reflect the same explicit disposition.
 - ADR-001 is `accepted` with Err as decider.
 - Media Workbench v1 is `approved`.
 - The product-delivery process is `accepted`.
-- FT-000A is `done` with the acceptance basis.
+- FT-000A carries the acceptance basis. It was created `done` and has since been
+  corrected to `incoming`, because a card cannot be created already accepted.
 - FT-000B and FT-000D are `ready`.
 - FT-000C and player work remain dependency-gated.
 - Board prose resides outside `docs/kanban/`.
@@ -101,9 +102,11 @@ ready     P0  FT-000D: Decide native desktop, playback, read-model, and applicat
 done      P0  FT-000A: Review and accept or revise Media Workbench authority
 ```
 
-`eta-mu kanban find` resolved all four child UUIDs and exited zero. FT-000A is
-`done`, FT-000B and FT-000D are `ready`, and FT-000C is still `incoming` behind
-its recorded dependencies:
+`eta-mu kanban find` resolved all four child UUIDs and exited zero. The transcripts
+above and below are recorded as captured and are not edited. They show FT-000A as
+`done`, which was the state at capture time; that status was created rather than
+transitioned into, and has since been corrected to `incoming`. FT-000B and FT-000D
+are `ready`, and FT-000C is still `incoming` behind its recorded dependencies:
 
 ```text
 $ eta-mu kanban find ft-000c-define-append-only-studio-events-and-read-projection
@@ -112,8 +115,39 @@ $ eta-mu kanban find ft-000c-define-append-only-studio-events-and-read-projectio
                "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 ```
 
-Neither dependency is accepted, so FT-000C remains correctly gated, as does the
-FT-001 player family. That satisfies the FT-000A/FT-000B/FT-000D/FT-000C criteria.
+Neither dependency is accepted, so FT-000C remains correctly gated. That satisfies
+the FT-000A/FT-000B/FT-000D/FT-000C criteria.
+
+The FT-001 player family (FT-001A-D) is verified separately, since none of them
+are FT-000C or FT-000D themselves:
+
+```text
+$ eta-mu kanban find ft-001a-index-playable-media-metadata-and-waveform-jobs
+  status:     incoming
+  dependency: ["ft-000b-define-media-workbench-domain-laws",
+               "ft-000c-define-append-only-studio-events-and-read-projection",
+               "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
+
+$ eta-mu kanban find ft-001b-implement-playback-resolver-persistent-queue-and-resume
+  status:     incoming
+  dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology",
+               "ft-001a-index-playable-media-metadata-and-waveform-jobs"]
+
+$ eta-mu kanban find ft-001c-build-persistent-player-shell-and-library-browser
+  status:     incoming
+  dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology",
+               "ft-001b-implement-playback-resolver-persistent-queue-and-resume"]
+
+$ eta-mu kanban find ft-001d-add-dispositions-ratings-labels-sorting-and-playlists
+  status:     incoming
+  dependency: ["ft-000c-define-append-only-studio-events-and-read-projection",
+               "ft-001c-build-persistent-player-shell-and-library-browser"]
+```
+
+All four sit at `incoming`, and each depends transitively on FT-000C and/or
+FT-000D, neither of which is accepted yet. That satisfies "FT-000C and player
+work remain dependency-gated" against direct evidence for the player family, not
+just FT-000C.
 
 Board prose location:
 

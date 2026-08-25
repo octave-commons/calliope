@@ -1,7 +1,7 @@
 ---
 uuid: "ft-ops-003-record-first-independent-design-review-disposition"
 title: "FT-OPS-003: Record first independent design review disposition"
-status: done
+status: incoming
 type: chore
 priority: P1
 phase: 0
@@ -33,7 +33,7 @@ board-mechanics objections, accepted findings, and their resolution.
 
 **Design authority: APPROVE. Board mechanics: REQUEST CHANGES.**
 
-Review: `https://github.com/octave-commons/fork_tales_v2/pull/3#pullrequestreview-4793817603`
+Review: PR #3 review `4793817603`.
 
 ## Non-goals
 

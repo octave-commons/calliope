@@ -13,21 +13,26 @@ research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
 design: "docs/designs/media-workbench-v1.md"
 process: "docs/process/product-design-and-delivery.md"
-dependency: ["ft-001-ship-a-daily-driver-library-and-player"]
+dependency: ["ft-001-ship-a-daily-driver-library-and-player", "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 ---
 
 # FT-003: Recover valuable spans and arrange them non-destructively
 
 ## Outcome
 
-A globally poor render can retain accepted markers and clips, and those clips can
-be auditioned, arranged, exported, and traced back to immutable source audio.
+A globally poor render can retain accepted markers and clips, arrangements can
+retain version-scoped markers, and accepted clips can be auditioned, arranged,
+exported into playable derivatives, and traced back to immutable source audio.
 
 ## Scope
 
-- Implement durable marker and clip commands over immutable renders.
-- Build the native waveform salvage editor and boundary-audition workflow.
-- Support arrangement playback and deterministic derivative export.
+- Implement durable marker commands over versioned render or arrangement subjects
+  and clip commands over immutable render ranges.
+- Implement the salvage editor and boundary-audition workflow on the native
+  UI/runtime and topology FT-000D selects; this epic implements that decision
+  and does not choose a UI/runtime independently.
+- Support native arrangement editing, arrangement playback, and deterministic
+  derivative export that registers as a queue/playlist playable.
 - Preserve complete render-to-release derivation relationships.
 
 ## Non-goals
@@ -38,9 +43,9 @@ be auditioned, arranged, exported, and traced back to immutable source audio.
 
 ## Decomposed into
 
-- FT-003A — marker and clip commands.
+- FT-003A — render/arrangement marker subjects and render clip commands.
 - FT-003B — waveform salvage editor.
-- FT-003C — arrangement playback and deterministic export.
+- FT-003C — native arrangement editing, playback, and playable deterministic export.
 - FT-003D — complete derivation graph.
 - FT-003E — index reconstruction evidence and auditions.
 
@@ -48,10 +53,14 @@ Implement the children, never this epic directly.
 
 ## Acceptance criteria
 
-- FT-003A through FT-003E resolve as bounded children with explicit dependencies.
+- FT-003A through FT-003D resolve as bounded children with explicit dependencies.
+- The salvage and arrangement views implement FT-000D's accepted native UI/runtime
+  and topology decision rather than a UI/runtime chosen within this epic.
 - Source renders remain immutable while clips and arrangements remain reversible.
+- Render and arrangement markers stay attached to their declared subject versions.
 - Every derivative retains typed provenance to its source render and ranges.
-- Arrangement playback and export are deterministic for a fixed decision list.
+- Arrangement playback and export are deterministic for a fixed decision list, and
+  successful exports resolve as playable references for queues and playlists.
 - V1 remains bounded away from full DAW, recording, plugin, and spectral-repair scope.
 
 ## Verification
@@ -69,6 +78,14 @@ eta-mu kanban find ft-003e-index-reconstruction-evidence-and-auditions
 eta-mu kanban list
 ```
 
-Child contract, interaction, export, and derivation-graph tests verify the
+Expected child dependency edges (verified against each `find` result's
+`dependency` field, not just resolution and `epic` linkage):
+
+- FT-003A depends on FT-000B, FT-000C, FT-001B.
+- FT-003B depends on FT-001C, FT-003A, FT-000D.
+- FT-003C depends on FT-001D, FT-003A, FT-003B.
+- FT-003D depends on FT-003C.
+
+Child contract, interaction, export/resolver, and derivation-graph tests verify the
 executable work. Real native waveform and audio evidence is recorded by the owning
 child cards.

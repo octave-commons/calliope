@@ -198,7 +198,9 @@ The current authority set is:
 - delivery map: `docs/kanban-docs/BOARD-BREAKDOWN.md`;
 - board contract: `docs/kanban-docs/AGENTS.md`.
 
-FT-000A, FT-OPS-002, and FT-OPS-003 are complete. FT-000B and FT-000D are the
-first ready implementation/decision slices in the recorded state. Query Rheos for
-live state before acting. FT-000C and player cards remain dependency-gated rather
-than blocked by unresolved product acceptance.
+FT-000A, FT-OPS-002, and FT-OPS-003 are currently `incoming`. Their documents
+preserve prior review, disposition, and verification evidence, but no Rheos
+lifecycle has accepted those cards as `done`. FT-000B and FT-000D are the first
+ready implementation/decision slices in the recorded state. Query Rheos for live
+state before acting. FT-000C and player cards remain dependency-gated rather than
+blocked by unresolved product acceptance.

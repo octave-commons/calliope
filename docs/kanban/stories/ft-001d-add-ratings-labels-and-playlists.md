@@ -32,6 +32,8 @@ player.
 - User labels and accepted classifier proposals.
 - Library sort/filter columns.
 - Explicit ordered playlists containing declared playable refs.
+- A save-queue-as-playlist command plus its player affordance, capturing the
+  current queue order as a new explicit playlist.
 
 ## Non-goals
 
@@ -47,6 +49,8 @@ player.
 - Labels distinguish user decisions from classifier proposals.
 - Playlist reorder preserves an auditable edit sequence and current projection.
 - Library sorting can choose one rating dimension without an unexplained aggregate.
+- Saving the queue as a playlist preserves the queue's current order, and later
+  queue mutations do not retroactively alter the saved playlist.
 
 ## Verification
 

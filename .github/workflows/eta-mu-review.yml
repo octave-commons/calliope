@@ -17,7 +17,7 @@ jobs:
     with:
       setup_eta_mu_toolchain: false
       evidence_gates_script: |
-        run_gate diff_stat git diff --stat "${PR_BASE_SHA}...HEAD"
+        run_gate diff_stat git diff --stat "${PR_BASE_SHA}...${PR_HEAD_SHA}"
     # Least privilege: forward only the secrets the review job consumes.
     secrets:
       ETA_MU_APP_ID: ${{ secrets.ETA_MU_APP_ID }}

@@ -6,11 +6,11 @@ process: "docs/process/product-design-and-delivery.md"
 phase: "0"
 type: "story"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1785714738557-0.kwd8htztk3ttvl8v6x8"
+write-id: "1787707467398-0.q5z826iv75paw20vg30"
 points: "5"
 title: "FT-000C: Define append-only studio events and read projection"
 priority: "P0"
-status: "blocked"
+status: "ready"
 epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
 design: "docs/designs/media-workbench-v1.md"
 uuid: "ft-000c-define-append-only-studio-events-and-read-projection"
@@ -56,4 +56,6 @@ and invalid event rejection pass under `clojure -M:test`.
 
 ---
 Dependency analysis (2026-08-02): depends on FT-000B and FT-000D. Blocks FT-001D (ratings/labels/playlists write studio events). Moved breakdown -> blocked: waiting on FT-000B and FT-000D.
+
+Unblocked: ADR-002 accepted by Err on 2026-08-25, so the read-model choice this card's projection law depends on (SQLite rebuildable projection) is now governing. Moved blocked -> ready via Rheos.
 ---

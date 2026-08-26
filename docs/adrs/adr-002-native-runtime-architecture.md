@@ -1,8 +1,9 @@
 ---
 id: ADR-002
 title: "Native runtime: cljfx/JavaFX UI, JavaFX Media playback, SQLite read model, in-process application boundary"
-status: proposed
+status: accepted
 date: "2026-08-02"
+accepted: "2026-08-25"
 deciders: [Err]
 research: "docs/research/media-workbench-interface-and-publishing.md"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"

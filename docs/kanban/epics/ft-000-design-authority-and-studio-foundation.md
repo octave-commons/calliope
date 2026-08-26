@@ -75,5 +75,5 @@ opening the referenced files.
 ---
 Dependency analysis (2026-08-02): no dependencies — root epic. Blocks FT-001 (daily-driver player epic). Children: FT-000A, FT-000B, FT-000C, FT-000D. Moved breakdown -> ready: no unresolved blockers.
 
-Gate 0 progress (2026-08-02): FT-000A done (authority accepted). FT-000B done (studio domain laws, 30 tests / 193 assertions green). FT-000D in review (spike evidence + ADR-002 proposed; acceptance pending Err). FT-000C blocked on FT-000D acceptance. Epic remains in_progress until children resolve.
+Gate 0 progress (updated 2026-08-25): FT-000A done (authority accepted). FT-000B done (studio domain laws, 30 tests / 193 assertions green). FT-000D done — ADR-002 accepted by Err on 2026-08-25 after spike evidence review; card moved review → document → done via Rheos. FT-000C ready (unblocked by the ADR-002 acceptance). Epic remains in_progress until children resolve. Earlier state (2026-08-02): FT-000D in review, FT-000C blocked on its acceptance.
 ---

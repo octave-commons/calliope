@@ -6,11 +6,11 @@ process: "docs/process/product-design-and-delivery.md"
 phase: "0"
 type: "story"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1785719664902-0.utqd9x9q7rphntrv7h2"
+write-id: "1787707463632-0.n63ogbqdw6egokhaf9r"
 points: "5"
 title: "FT-000D: Decide native desktop, playback, read-model, and application topology"
 priority: "P0"
-status: "review"
+status: "done"
 epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
 design: "docs/designs/media-workbench-v1.md"
 uuid: "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"
@@ -62,5 +62,7 @@ Unblocked 2026-08-02: FT-000A is done (acceptance recorded). Entering ready.
 
 Spike evidence (2026-08-02, all three spikes PASS, exact commands in spike/ft-000d/README.md): (A) JavaFX Media played a real corpus MP3 (aquila-regina/211cce48.mp3, 187.8 s) — duration, play, seek to 30% (56,846 ms), pause with position held, resume, clean dispose. (B) cljfx/JavaFX 21.0.3 native window rendered on Linux; liked-clip listing and transport state flowed only through an in-process command/query boundary; no browser component instantiated, no HTTP server. (C) SQLite read model built from durable EDN (825 clips, 107 liked), deleted, rebuilt to identical results. Decision recorded as ADR-002 (docs/adrs/adr-002-native-runtime-architecture.md): cljfx/JavaFX UI, JavaFX Media playback, SQLite read model via next.jdbc, in-process function boundary. Rejected alternatives recorded (Swing, Skija, embedded browser, JLayer/mp3spi, FFmpeg transport, Datascript-as-read-model, XTDB). Implications recorded: jlink/jpackage packaging (GraalVM native-image NOT assumed), MPRIS media keys as future adapter, headless CI needs Monocle.
 
-In review (2026-08-02): all agent-executable scope is complete — toolkit comparison, verified playback backend, rebuildable read model, in-process boundary, packaging/media-key/waveform/failure-isolation implications, ADR with evidence and rejected alternatives. ACCEPTANCE PENDING: the card outcome is an ACCEPTED implementation decision; ADR-002 is proposed with deciders [Err]. Err's disposition on ADR-002 completes this card and unblocks FT-000C and the FT-001/FT-003 spine. Not executed: GraalVM native-image evaluation (recorded as risk), MPRIS adapter (FT-001E scope), pro-audio decode adapter (deferred to FT-003 evidence).
+Accepted (2026-08-25): all agent-executable scope was complete as of 2026-08-02 (toolkit comparison, verified playback backend, rebuildable read model, in-process boundary, packaging/media-key/waveform/failure-isolation implications); Err accepted ADR-002 on 2026-08-25, completing this card and unblocking FT-000C and the FT-001/FT-003 spine. Not executed: GraalVM native-image evaluation (recorded as risk), MPRIS adapter (FT-001E scope), pro-audio decode adapter (deferred to FT-003 evidence).
+
+ADR-002 accepted by Err on 2026-08-25 (frontmatter accepted date set). Disposition recorded in docs/adrs/adr-002-native-runtime-architecture.md; spike evidence reproducible per ADR acceptance section. Card moved review -> document -> done via Rheos.
 ---

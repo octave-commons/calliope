@@ -1,16 +1,17 @@
 ---
-uuid: "ft-ops-004-untie-media-from-git-lfs"
-title: "FT-OPS-004: Untie media from git LFS onto a manifest-addressed dataset"
-status: incoming
-type: chore
-priority: P0
-phase: 0
-owner: unassigned
-points: 3
-labels: media-dataset, storage, migration
-category: chores
-adr: "docs/adrs/adr-002-manifest-addressed-external-media-dataset.md"
+category: "chores"
+labels: "media-dataset, storage, migration"
 process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "chore"
+adr: "docs/adrs/adr-002-manifest-addressed-external-media-dataset.md"
+write-id: "1787713975372-0.2bjernm1kxr2fsf578u"
+points: "3"
+title: "FT-OPS-004: Untie media from git LFS onto a manifest-addressed dataset"
+priority: "P0"
+status: "done"
+uuid: "ft-ops-004-untie-media-from-git-lfs"
+owner: "unassigned"
 ---
 
 # FT-OPS-004: Untie media from git LFS onto a manifest-addressed dataset
@@ -63,3 +64,7 @@ bb scripts/media.clj verify --ledger
 git ls-files -- ':(glob)tracks/**/*.mp3' ':(glob)tracks/**/*.jpeg'
 bb scripts/media.clj check
 ```
+
+---
+Evidence 2026-08-26 (opencode local, commit 20d353b): MANIFEST.edn generated over 1633 media files (4437767009 bytes); bb scripts/media.clj verify --ledger => :ok true, missing/size/hash/extras all empty, ledger cross-check untracked-in-ledger=[], missing-from-manifest=[], bytes-drift=[]; clojure -M:test => 87 tests, 345 assertions, 0 failures; git ls-files tracks/**/*.mp3|jpeg => 0 tracked; .gitattributes has no LFS filters; rclone sync to gdrive:calliope-media exited 0 (task.bb.1be81b21) and rclone check --files-from --one-way reports 1634 matching files, 0 differences. Deferred: history purge of ~4.2GB in GitHub LFS storage (explicit approval required).
+---

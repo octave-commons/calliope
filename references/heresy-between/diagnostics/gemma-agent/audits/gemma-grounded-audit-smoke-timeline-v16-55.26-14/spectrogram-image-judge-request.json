@@ -1,0 +1,172 @@
+{
+  "schema_version": "fork-tales-spectrogram-image-judge-request/v1",
+  "audit_id": "gemma-grounded-audit-smoke-timeline-v16-55.26-14",
+  "profile": "suno_reverse_accuracy",
+  "evidence_json": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/evidence.json",
+  "images": [
+    {
+      "role": "f0_overlay",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.f0-overlay.png",
+      "description": "Original and candidate f0 contours overlaid on the same axes.",
+      "exists": true
+    },
+    {
+      "role": "mel_diff",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.mel-diff.png",
+      "description": "Candidate minus original mel-spectrogram dB difference.",
+      "exists": true
+    },
+    {
+      "role": "original_f0",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.original.f0.png",
+      "description": "Original/reference f0 contour.",
+      "exists": true
+    },
+    {
+      "role": "candidate_f0",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.candidate.f0.png",
+      "description": "Candidate/render f0 contour.",
+      "exists": true
+    },
+    {
+      "role": "original_mel",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.original.mel.png",
+      "description": "Original/reference mel spectrogram.",
+      "exists": true
+    },
+    {
+      "role": "candidate_mel",
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.candidate.mel.png",
+      "description": "Candidate/render mel spectrogram.",
+      "exists": true
+    }
+  ],
+  "response_template": {
+    "schema_version": "fork-tales-spectrogram-image-judge/v1",
+    "audit_id": "gemma-grounded-audit-smoke-timeline-v16-55.26-14",
+    "profile": "suno_reverse_accuracy",
+    "judge": "spectrogram_image_judge",
+    "image_refs": [
+      {
+        "role": "f0_overlay",
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.f0-overlay.png"
+      },
+      {
+        "role": "mel_diff",
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.mel-diff.png"
+      },
+      {
+        "role": "original_f0",
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.original.f0.png"
+      },
+      {
+        "role": "candidate_f0",
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.candidate.f0.png"
+      },
+      {
+        "role": "original_mel",
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.original.mel.png"
+      },
+      {
+        "role": "candidate_mel",
+        "path": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.candidate.mel.png"
+      }
+    ],
+    "global_observations": [],
+    "feature_judgments": [
+      {
+        "feature": "pitch_notes",
+        "score": null,
+        "confidence": null,
+        "observations": [],
+        "failure_modes": [],
+        "image_roles_used": [
+          "f0_overlay",
+          "original_f0",
+          "candidate_f0"
+        ]
+      },
+      {
+        "feature": "pitch_expression",
+        "score": null,
+        "confidence": null,
+        "observations": [],
+        "failure_modes": [],
+        "image_roles_used": [
+          "f0_overlay",
+          "original_f0",
+          "candidate_f0"
+        ]
+      },
+      {
+        "feature": "delivery_inflection",
+        "score": null,
+        "confidence": null,
+        "observations": [],
+        "failure_modes": [],
+        "image_roles_used": [
+          "original_mel",
+          "candidate_mel",
+          "mel_diff",
+          "f0_overlay"
+        ]
+      },
+      {
+        "feature": "timbre_spectral",
+        "score": null,
+        "confidence": null,
+        "observations": [],
+        "failure_modes": [],
+        "image_roles_used": [
+          "original_mel",
+          "candidate_mel",
+          "mel_diff"
+        ]
+      },
+      {
+        "feature": "rhythm_grid",
+        "score": null,
+        "confidence": null,
+        "observations": [],
+        "failure_modes": [],
+        "image_roles_used": [
+          "original_mel",
+          "candidate_mel",
+          "mel_diff",
+          "f0_overlay"
+        ]
+      },
+      {
+        "feature": "lyric_timing",
+        "score": null,
+        "confidence": null,
+        "observations": [],
+        "failure_modes": [],
+        "image_roles_used": [
+          "original_mel",
+          "candidate_mel",
+          "mel_diff"
+        ]
+      },
+      {
+        "feature": "lyric_identity",
+        "score": null,
+        "confidence": null,
+        "observations": [],
+        "failure_modes": [],
+        "image_roles_used": [
+          "original_mel",
+          "candidate_mel",
+          "mel_diff"
+        ]
+      }
+    ],
+    "do_not_score": [
+      "Do not claim exact lyric transcription from images.",
+      "Do not override f0 numeric metrics; image reading is additional visual evidence.",
+      "Use null score and 0 confidence when the image does not support judging a feature."
+    ]
+  },
+  "prompt_markdown": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/spectrogram-image-judge-prompt.md",
+  "response_template_json": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/spectrogram-image-judge-response-template.json"
+}

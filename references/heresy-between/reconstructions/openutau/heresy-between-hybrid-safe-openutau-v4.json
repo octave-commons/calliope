@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-05-14T04:51:48.391Z",
+  "kind": "Hybrid-safe gesture-derived OpenUTAU audition v4",
+  "source_gesture_layer": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/auditions/gesture-layer-v3-hybrid-safe.json",
+  "source_f0": "/home/err/devel/Music/fork-tales/references/heresy-between/vocal/vocals.pyin.f0-narrow-c3-a4.json",
+  "target_duration_seconds": 303.32,
+  "singer": "波音リツ連続音Ver1.5.1",
+  "phonemizer": "OpenUtau.Plugin.Builtin.JapaneseVCVPhonemizer",
+  "renderer": "WORLDLINE-R",
+  "total_note_count": 966,
+  "total_note_seconds": 180.157,
+  "note_coverage_percent": 59.395,
+  "chunks": [
+    {
+      "id": "chunk-01",
+      "start": 0,
+      "end": 58,
+      "duration_seconds": 58,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-01.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-01.wav",
+      "note_count": 256
+    },
+    {
+      "id": "chunk-02",
+      "start": 58,
+      "end": 106,
+      "duration_seconds": 48,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-02.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-02.wav",
+      "note_count": 239
+    },
+    {
+      "id": "chunk-03",
+      "start": 106,
+      "end": 174,
+      "duration_seconds": 68,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-03.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-03.wav",
+      "note_count": 302
+    },
+    {
+      "id": "chunk-04",
+      "start": 174,
+      "end": 244,
+      "duration_seconds": 70,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-04.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-04.wav",
+      "note_count": 41
+    },
+    {
+      "id": "chunk-05",
+      "start": 244,
+      "end": 303.32,
+      "duration_seconds": 59.32,
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-05.ustx",
+      "planned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/v4-hybrid-safe-chunks/heresy-between-hybrid-safe-openutau-v4-chunk-05.wav",
+      "note_count": 128
+    }
+  ],
+  "note_strategy": "Use only conservative hybrid-safe transcript gesture events. Kana is sourced from accepted ASR segment text when available, otherwise safe kana pool. This branch intentionally leaves unresolved/hallucinated regions silent to test whether lyric trust improves over v3 dense-legato."
+}

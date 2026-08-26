@@ -1,0 +1,48 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 0.6209817230701447,
+  "words": [
+    {
+      "end_s": 3.4600000381469727,
+      "start_s": 0,
+      "word": "それで十分だ"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 3.43999981880188,
+      "start_s": 0,
+      "text": "それで十分だ"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 3.43999981880188,
+          "start_s": 0,
+          "text": "それで十分だ"
+        }
+      ],
+      "text": "それで十分だ",
+      "words": [
+        {
+          "end_s": 3.4600000381469727,
+          "start_s": 0,
+          "word": "それで十分だ"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 8,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "それで十分だ"
+}

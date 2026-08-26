@@ -79,12 +79,13 @@ eta-mu kanban find ft-000b-define-media-workbench-domain-laws
 clojure -M:test
 ```
 
-`eta-mu kanban count` matching the current Markdown card corpus, with no `README`,
-`AGENTS`, or `BOARD-BREAKDOWN` row in `eta-mu kanban list`, is the live evidence
-for the phantom-card finding. The 27-card result recorded on 2026-07-28 is
-historical evidence for that tree, not a permanent expected total. `eta-mu kanban
-find` resolving a UUID whose slug differs from it is the live evidence for the
-`uuid:`-identity finding.
+`eta-mu kanban count` agreeing with the number of card files while `eta-mu kanban
+list` shows no `README`, `AGENTS`, or `BOARD-BREAKDOWN` row is the live evidence for
+the phantom-card finding; `eta-mu kanban find` resolving a UUID whose slug differs
+from it is the live evidence for the `uuid:`-identity finding. The absence of
+phantom prose rows is the load-bearing property, not any particular total: this
+review recorded 27 cards on 2026-07-28, and the total is 28 on this branch because
+FT-003E joined the board with the reconstruction integration.
 
 Some invariants this review asked for are **not** currently enforced anywhere.
 Rheos does not reject empty readiness sections, dependency cycles, or breaches of

@@ -1,0 +1,58 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 0.5414887269337972,
+  "words": [
+    {
+      "end_s": 1.2599999904632568,
+      "start_s": 0,
+      "word": "That's"
+    },
+    {
+      "end_s": 2.5999999046325684,
+      "start_s": 1.2599999904632568,
+      "word": "enough."
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 3.359999895095825,
+      "start_s": 0,
+      "text": "That's enough."
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 3.359999895095825,
+          "start_s": 0,
+          "text": "That's enough."
+        }
+      ],
+      "text": "That's enough.",
+      "words": [
+        {
+          "end_s": 1.2599999904632568,
+          "start_s": 0,
+          "word": "That's"
+        },
+        {
+          "end_s": 2.5999999046325684,
+          "start_s": 1.2599999904632568,
+          "word": "enough."
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "That's enough."
+}

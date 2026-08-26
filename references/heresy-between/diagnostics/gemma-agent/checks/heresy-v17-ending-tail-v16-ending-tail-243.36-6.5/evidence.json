@@ -1,0 +1,63 @@
+{
+  "check_id": "heresy-v17-ending-tail-v16-ending-tail-243.36-6.5",
+  "artifact_root": "checks",
+  "schema_version": "fork-tales-audio-check-evidence/v1",
+  "audit_id": "heresy-v17-ending-tail-v16-ending-tail-243.36-6.5",
+  "segment": {
+    "start_seconds": 243.36,
+    "duration_seconds": 6.5,
+    "expected": "返事なんてもう来なくても 名前を呼べた気がするよ",
+    "task": "Gemma Check for Primary Agent before v17 repair. Determine whether v16 drops or mutates 名前を呼べた気がするよ after 返事なんてもう来なくても. Use local STT as noisy evidence, f0/spectrogram metrics as signal evidence, and direct A/B listening. Return concrete next tool actions; do not accept or reject final work."
+  },
+  "files": {
+    "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/vocals.wav",
+    "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-exact-phrase-grid-openutau-v16.wav",
+    "original_fullband_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/original-fullband.wav",
+    "candidate_fullband_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/candidate-fullband.wav",
+    "original_stt_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/original-stt.wav",
+    "candidate_stt_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/candidate-stt.wav",
+    "ab_audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/ab-original-candidate.wav"
+  },
+  "metrics": {
+    "tool": "/home/err/devel/scripts/fork_tales_audio_metrics.py",
+    "json": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.json",
+    "outputs": {
+      "mel_diff_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.mel-diff.png",
+      "f0_overlay_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.f0-overlay.png"
+    },
+    "pitch": {
+      "voiced_overlap_ratio": 0.4642857142857143,
+      "cents_error": {
+        "count": 260,
+        "mean": -121.96153846153844,
+        "median": -10.000000000000258,
+        "min": -1330,
+        "max": 1950.0000000000002,
+        "p05": -1280.0000000000002,
+        "p95": 375.99999999997436
+      },
+      "mean_abs_cents": 360.7307692307692,
+      "f0_hz_correlation": 0.048715353065195234
+    },
+    "spectrogram": {
+      "mel_db_mean_abs_diff": 24.19088363647461,
+      "mel_db_rmse": 28.869522094726562,
+      "mel_db_correlation": 0.07215294023028032
+    },
+    "waveform": {
+      "normalized_correlation": -0.11739488379461654
+    }
+  },
+  "transcription": {
+    "tool": "local-stt/transcribe-timed",
+    "original": {
+      "text": "返事なんてのかなくても名前を呼べた気がするよ",
+      "response_file": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-heresy-v17-ending-tail-v16-ending-tail-original-1778872102671.json"
+    },
+    "candidate": {
+      "text": "返事なんてもう来なくてもするよ",
+      "response_file": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-heresy-v17-ending-tail-v16-ending-tail-candidate-1778872143852.json"
+    }
+  },
+  "created_at": "2026-05-15T19:09:30.345Z"
+}

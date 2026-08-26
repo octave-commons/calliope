@@ -1,0 +1,138 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 2.778858077683638,
+  "words": [
+    {
+      "end_s": 1.399999976158142,
+      "start_s": 0,
+      "word": "I'll"
+    },
+    {
+      "end_s": 1.8199999332427979,
+      "start_s": 1.399999976158142,
+      "word": "crawl"
+    },
+    {
+      "end_s": 1.8199999332427979,
+      "start_s": 1.8199999332427979,
+      "word": "and"
+    },
+    {
+      "end_s": 1.8199999332427979,
+      "start_s": 1.8199999332427979,
+      "word": "get"
+    },
+    {
+      "end_s": 1.8399999141693115,
+      "start_s": 1.8199999332427979,
+      "word": "stronger,"
+    },
+    {
+      "end_s": 2.4600000381469727,
+      "start_s": 2.4600000381469727,
+      "word": "leaving"
+    },
+    {
+      "end_s": 2.4600000381469727,
+      "start_s": 2.4600000381469727,
+      "word": "only"
+    },
+    {
+      "end_s": 2.679999828338623,
+      "start_s": 2.4600000381469727,
+      "word": "my"
+    },
+    {
+      "end_s": 3.299999952316284,
+      "start_s": 2.679999828338623,
+      "word": "heart"
+    },
+    {
+      "end_s": 4.21999979019165,
+      "start_s": 3.299999952316284,
+      "word": "behind."
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 4.559999942779541,
+      "start_s": 0,
+      "text": "I'll crawl and get stronger, leaving only my heart behind."
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 4.559999942779541,
+          "start_s": 0,
+          "text": "I'll crawl and get stronger, leaving only my heart behind."
+        }
+      ],
+      "text": "I'll crawl and get stronger, leaving only my heart behind.",
+      "words": [
+        {
+          "end_s": 1.399999976158142,
+          "start_s": 0,
+          "word": "I'll"
+        },
+        {
+          "end_s": 1.8199999332427979,
+          "start_s": 1.399999976158142,
+          "word": "crawl"
+        },
+        {
+          "end_s": 1.8199999332427979,
+          "start_s": 1.8199999332427979,
+          "word": "and"
+        },
+        {
+          "end_s": 1.8199999332427979,
+          "start_s": 1.8199999332427979,
+          "word": "get"
+        },
+        {
+          "end_s": 1.8399999141693115,
+          "start_s": 1.8199999332427979,
+          "word": "stronger,"
+        },
+        {
+          "end_s": 2.4600000381469727,
+          "start_s": 2.4600000381469727,
+          "word": "leaving"
+        },
+        {
+          "end_s": 2.4600000381469727,
+          "start_s": 2.4600000381469727,
+          "word": "only"
+        },
+        {
+          "end_s": 2.679999828338623,
+          "start_s": 2.4600000381469727,
+          "word": "my"
+        },
+        {
+          "end_s": 3.299999952316284,
+          "start_s": 2.679999828338623,
+          "word": "heart"
+        },
+        {
+          "end_s": 4.21999979019165,
+          "start_s": 3.299999952316284,
+          "word": "behind."
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 4.54,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "I'll crawl and get stronger, leaving only my heart behind."
+}

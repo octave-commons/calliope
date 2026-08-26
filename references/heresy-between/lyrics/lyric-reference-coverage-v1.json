@@ -1,0 +1,3875 @@
+{
+  "generated_at": null,
+  "reference_lyrics_path": "/home/err/devel/Music/heresy_between/存在論的な“反・虚無”の論証として/存在論的な“反・虚無”の論証として.txt",
+  "method": "Content-only fuzzy line coverage. Lyrics are dictionary/reference only; no timing inferred from them. covered>=0.82, partial>=0.62, missing<0.62.",
+  "best_transcript_by_lyric_partial_coverage": "large_v3_turbo_gated_cpu_int8",
+  "reference_line_count": 68,
+  "reference_lyric_line_count": 61,
+  "reference_cue_line_count": 7,
+  "results": {
+    "large_v3_turbo_gated_cpu_int8": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.faster-whisper-large-v3-turbo-gated-cpu-int8-20260514.json",
+      "all_lines": {
+        "total": 68,
+        "covered": 48,
+        "partial": 14,
+        "missing": 6,
+        "strict_error_rate": 0.2941,
+        "missing_rate": 0.0882,
+        "coverage_with_partials": 0.8088
+      },
+      "lyric_lines": {
+        "total": 61,
+        "covered": 46,
+        "partial": 13,
+        "missing": 2,
+        "strict_error_rate": 0.2459,
+        "missing_rate": 0.0328,
+        "coverage_with_partials": 0.8607
+      },
+      "cue_lines": {
+        "total": 7,
+        "covered": 2,
+        "partial": 1,
+        "missing": 4,
+        "strict_error_rate": 0.7143,
+        "missing_rate": 0.5714,
+        "coverage_with_partials": 0.3571
+      },
+      "entries": [
+        {
+          "index": 1,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.6,
+          "status": "missing",
+          "best_match": "h...ahh...ご"
+        },
+        {
+          "index": 2,
+          "line": "（クリック音、通知音は遠く）",
+          "kind": "cue",
+          "normalized": "クリック音通知音は遠く",
+          "score": 0.222,
+          "status": "missing",
+          "best_match": "は真顔じゃなく"
+        },
+        {
+          "index": 3,
+          "line": "「元気？」",
+          "kind": "lyric",
+          "normalized": "げんき",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "げんき"
+        },
+        {
+          "index": 4,
+          "line": "—三文字だけで、世界が揺れる",
+          "kind": "lyric",
+          "normalized": "三文字だけでせかいが揺れる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "うだけでせかいに"
+        },
+        {
+          "index": 5,
+          "line": "「元気だよ」って",
+          "kind": "lyric",
+          "normalized": "げんきだよって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "げんきだよって"
+        },
+        {
+          "index": 6,
+          "line": "一行だけのメッセージ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 7,
+          "line": "既読の灯りが",
+          "kind": "lyric",
+          "normalized": "既読の灯りが",
+          "score": 0.769,
+          "status": "partial",
+          "best_match": "既読の明かりが"
+        },
+        {
+          "index": 8,
+          "line": "胸の底を叩いてる",
+          "kind": "lyric",
+          "normalized": "むねの底を叩いてる",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "むねの底を叩いてる"
+        },
+        {
+          "index": 9,
+          "line": "言えなかった「ごめんね」より",
+          "kind": "lyric",
+          "normalized": "言えなかったごめんねより",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったごめんねより"
+        },
+        {
+          "index": 10,
+          "line": "もっと怖いのは",
+          "kind": "lyric",
+          "normalized": "もっと怖いのは",
+          "score": 0.8,
+          "status": "partial",
+          "best_match": "もっと可愛いのは"
+        },
+        {
+          "index": 11,
+          "line": "“何も送らない”っていう",
+          "kind": "lyric",
+          "normalized": "何も送らないっていう",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "何も送らないっていう"
+        },
+        {
+          "index": 12,
+          "line": "静かな選択",
+          "kind": "lyric",
+          "normalized": "静かなえら択",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "静かなえら択"
+        },
+        {
+          "index": 13,
+          "line": "理由はいつも",
+          "kind": "lyric",
+          "normalized": "理由はいつも",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "理由はいつも"
+        },
+        {
+          "index": 14,
+          "line": "あとから並べられる",
+          "kind": "lyric",
+          "normalized": "あとから並べられる",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "後から並べれる"
+        },
+        {
+          "index": 15,
+          "line": "でも指先は先に",
+          "kind": "lyric",
+          "normalized": "でも指先は先に",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "でも指先は先に"
+        },
+        {
+          "index": 16,
+          "line": "生き方を押してしまう",
+          "kind": "lyric",
+          "normalized": "生き方を押してしまう",
+          "score": 0.8,
+          "status": "partial",
+          "best_match": "生き方を知ってしまう"
+        },
+        {
+          "index": 17,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 18,
+          "line": "この夜の形が決まるなら",
+          "kind": "lyric",
+          "normalized": "このよるの形が決まるなら",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "のよるのカタツが決まるな"
+        },
+        {
+          "index": 19,
+          "line": "僕は逃げ道の言い訳より",
+          "kind": "lyric",
+          "normalized": "ぼくは逃げ道の言い訳より",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 20,
+          "line": "小さな責任を選びたい（ねえ）",
+          "kind": "cue",
+          "normalized": "小さなせきにんをえらびたいねえ",
+          "score": 0.933,
+          "status": "covered",
+          "best_match": "り小さなせきにんをえらびたいね"
+        },
+        {
+          "index": 21,
+          "line": "さよならの続き書けなくて",
+          "kind": "lyric",
+          "normalized": "さよならの続き書けなくて",
+          "score": 0.917,
+          "status": "covered",
+          "best_match": "さよならの続きかけなくて"
+        },
+        {
+          "index": 22,
+          "line": "空白ばかり増えていくけど",
+          "kind": "lyric",
+          "normalized": "空白ばかり増えていくけど",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "ばかり増えてゆくけど"
+        },
+        {
+          "index": 23,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 24,
+          "line": "“意味”を置いて帰るよ",
+          "kind": "lyric",
+          "normalized": "いみを置いて帰るよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 25,
+          "line": "タイムラインには",
+          "kind": "lyric",
+          "normalized": "タイムラインには",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "タイムラインには"
+        },
+        {
+          "index": 26,
+          "line": "知らない誰かの笑顔",
+          "kind": "lyric",
+          "normalized": "知らない誰かの笑顔",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "知らない誰かの笑顔"
+        },
+        {
+          "index": 27,
+          "line": "強がってスクロールして",
+          "kind": "lyric",
+          "normalized": "強がってスクロルして",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "強がってスクロルして"
+        },
+        {
+          "index": 28,
+          "line": "心だけ取り残す",
+          "kind": "lyric",
+          "normalized": "心だけ取り残す",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "心だけ取り残す"
+        },
+        {
+          "index": 29,
+          "line": "打ちかけの言葉が",
+          "kind": "lyric",
+          "normalized": "打ちかけの言葉が",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "打ちかけの言葉が"
+        },
+        {
+          "index": 30,
+          "line": "震えて消えてくたび",
+          "kind": "lyric",
+          "normalized": "震えて消えてくたび",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "震えて消えてくたび"
+        },
+        {
+          "index": 31,
+          "line": "「どうせ…」の物語が",
+          "kind": "lyric",
+          "normalized": "どうせ...の物語が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "びどうせの物語が"
+        },
+        {
+          "index": 32,
+          "line": "また王冠をかぶる",
+          "kind": "lyric",
+          "normalized": "また王冠をかぶる",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "またお前をかぶる"
+        },
+        {
+          "index": 33,
+          "line": "“きっと決まってる”って",
+          "kind": "lyric",
+          "normalized": "きっと決まってるって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "きっと決まってるって"
+        },
+        {
+          "index": 34,
+          "line": "口にした瞬間",
+          "kind": "lyric",
+          "normalized": "口にした瞬間",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "口にした瞬間"
+        },
+        {
+          "index": 35,
+          "line": "僕の手のひらから",
+          "kind": "lyric",
+          "normalized": "ぼくの手のひらから",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくの手のひらから"
+        },
+        {
+          "index": 36,
+          "line": "明日が落ちていく",
+          "kind": "lyric",
+          "normalized": "あしたが落ちていく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "あしたが落ちていく"
+        },
+        {
+          "index": 37,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 38,
+          "line": "戻れる場所を探す僕",
+          "kind": "lyric",
+          "normalized": "戻れる場所を探すぼく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "戻れる場所を探すぼく"
+        },
+        {
+          "index": 39,
+          "line": "正しさは外に落ちてなくて",
+          "kind": "lyric",
+          "normalized": "正しさは外に落ちてなくて",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "さは外に落ちてなくて"
+        },
+        {
+          "index": 40,
+          "line": "選んだ跡に立ち上がる（ああ）",
+          "kind": "cue",
+          "normalized": "えらんだ跡に立ち上がるああ",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "えらんだ後に立ち上がる"
+        },
+        {
+          "index": 41,
+          "line": "言えなかったこと数えたら",
+          "kind": "lyric",
+          "normalized": "言えなかったこと数えたら",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 42,
+          "line": "画面に入りきらないほど",
+          "kind": "lyric",
+          "normalized": "画面に入りきらないほど",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "面に入りきらないほどそ"
+        },
+        {
+          "index": 43,
+          "line": "それでも一行だけで",
+          "kind": "lyric",
+          "normalized": "それでもいちぎょうだけで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それでもいちぎょうだけで"
+        },
+        {
+          "index": 44,
+          "line": "世界に参加していたい",
+          "kind": "lyric",
+          "normalized": "せかいに参加していたい",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "せかいに参加してたいも"
+        },
+        {
+          "index": 45,
+          "line": "もしも明日",
+          "kind": "lyric",
+          "normalized": "もしもあした",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "もしもあした"
+        },
+        {
+          "index": 46,
+          "line": "ただの友だちで笑えたら",
+          "kind": "lyric",
+          "normalized": "ただの友だちで笑えたら",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "ただの友達で笑えたらそ"
+        },
+        {
+          "index": 47,
+          "line": "それだけでいい",
+          "kind": "lyric",
+          "normalized": "それだけでいい",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それだけでいい"
+        },
+        {
+          "index": 48,
+          "line": "そう言い聞かせて",
+          "kind": "lyric",
+          "normalized": "そう言い聞かせて",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "そう言い聞かせて"
+        },
+        {
+          "index": 49,
+          "line": "でも本当は知ってる",
+          "kind": "lyric",
+          "normalized": "でも本当は知ってる",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "でも本当は知ってる"
+        },
+        {
+          "index": 50,
+          "line": "沈黙もまた",
+          "kind": "lyric",
+          "normalized": "沈黙もまた",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "沈黙もまた"
+        },
+        {
+          "index": 51,
+          "line": "誰かの夜を",
+          "kind": "lyric",
+          "normalized": "誰かのよるを",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "誰かのよるを"
+        },
+        {
+          "index": 52,
+          "line": "増やしてしまうって",
+          "kind": "lyric",
+          "normalized": "増やしてしまうって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "増やしてしまうって"
+        },
+        {
+          "index": 53,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.6,
+          "status": "missing",
+          "best_match": "h...ahh...ご"
+        },
+        {
+          "index": 54,
+          "line": "打ち直す「元気？」の三文字",
+          "kind": "lyric",
+          "normalized": "打ち直すげんきの三文字",
+          "score": 0.6,
+          "status": "missing",
+          "best_match": "打ち直す人気の三本"
+        },
+        {
+          "index": 55,
+          "line": "跳ぶのは信仰じゃなくて",
+          "kind": "lyric",
+          "normalized": "跳ぶのは信仰じゃなくて",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "飛ぶのは真顔じゃなくて"
+        },
+        {
+          "index": 56,
+          "line": "“投げ出さない”という決意",
+          "kind": "lyric",
+          "normalized": "投げ出さないという決意",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "て投げ出さないというケ"
+        },
+        {
+          "index": 57,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 58,
+          "line": "つながる夜があるのなら",
+          "kind": "lyric",
+          "normalized": "つながるよるがあるのなら",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "がる理由があるのなら"
+        },
+        {
+          "index": 59,
+          "line": "返事なんてもう来なくても",
+          "kind": "lyric",
+          "normalized": "返事なんてもう来なくても",
+          "score": 0.815,
+          "status": "partial",
+          "best_match": "ら返事なんてもう起きなくても名"
+        },
+        {
+          "index": 60,
+          "line": "名前を呼べた気がするよ",
+          "kind": "lyric",
+          "normalized": "名前を呼べた気がするよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 61,
+          "line": "“どうせ”の続き書けなくて",
+          "kind": "lyric",
+          "normalized": "どうせの続き書けなくて",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "どうせの続きがけなくて"
+        },
+        {
+          "index": 62,
+          "line": "それでも送信を押してみる",
+          "kind": "lyric",
+          "normalized": "それでも送信を押してみる",
+          "score": 0.917,
+          "status": "covered",
+          "best_match": "それでも送信をしてみるい"
+        },
+        {
+          "index": 63,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 64,
+          "line": "僕は明日を肯定する",
+          "kind": "lyric",
+          "normalized": "ぼくはあしたを肯定する",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくはあしたを肯定する"
+        },
+        {
+          "index": 65,
+          "line": "（息）…",
+          "kind": "cue",
+          "normalized": "息...",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "h..."
+        },
+        {
+          "index": 66,
+          "line": "一行だけ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけ"
+        },
+        {
+          "index": 67,
+          "line": "—それで十分だ",
+          "kind": "lyric",
+          "normalized": "それで十分だ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それで十分だ"
+        },
+        {
+          "index": 68,
+          "line": "（通知音、遠ざかる）",
+          "kind": "cue",
+          "normalized": "通知音遠ざかる",
+          "score": 0.364,
+          "status": "missing",
+          "best_match": "をかぶる"
+        }
+      ]
+    },
+    "large_v3_turbo_cleaned_layer": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/word-timing-layer-v2-large-turbo-gated-cleaned.json",
+      "all_lines": {
+        "total": 68,
+        "covered": 48,
+        "partial": 13,
+        "missing": 7,
+        "strict_error_rate": 0.2941,
+        "missing_rate": 0.1029,
+        "coverage_with_partials": 0.8015
+      },
+      "lyric_lines": {
+        "total": 61,
+        "covered": 46,
+        "partial": 13,
+        "missing": 2,
+        "strict_error_rate": 0.2459,
+        "missing_rate": 0.0328,
+        "coverage_with_partials": 0.8607
+      },
+      "cue_lines": {
+        "total": 7,
+        "covered": 2,
+        "partial": 0,
+        "missing": 5,
+        "strict_error_rate": 0.7143,
+        "missing_rate": 0.7143,
+        "coverage_with_partials": 0.2857
+      },
+      "entries": [
+        {
+          "index": 1,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 2,
+          "line": "（クリック音、通知音は遠く）",
+          "kind": "cue",
+          "normalized": "クリック音通知音は遠く",
+          "score": 0.222,
+          "status": "missing",
+          "best_match": "は真顔じゃなく"
+        },
+        {
+          "index": 3,
+          "line": "「元気？」",
+          "kind": "lyric",
+          "normalized": "げんき",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "げんき"
+        },
+        {
+          "index": 4,
+          "line": "—三文字だけで、世界が揺れる",
+          "kind": "lyric",
+          "normalized": "三文字だけでせかいが揺れる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "うだけでせかいに"
+        },
+        {
+          "index": 5,
+          "line": "「元気だよ」って",
+          "kind": "lyric",
+          "normalized": "げんきだよって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "げんきだよって"
+        },
+        {
+          "index": 6,
+          "line": "一行だけのメッセージ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 7,
+          "line": "既読の灯りが",
+          "kind": "lyric",
+          "normalized": "既読の灯りが",
+          "score": 0.769,
+          "status": "partial",
+          "best_match": "既読の明かりが"
+        },
+        {
+          "index": 8,
+          "line": "胸の底を叩いてる",
+          "kind": "lyric",
+          "normalized": "むねの底を叩いてる",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "むねの底を叩いてる"
+        },
+        {
+          "index": 9,
+          "line": "言えなかった「ごめんね」より",
+          "kind": "lyric",
+          "normalized": "言えなかったごめんねより",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったごめんねより"
+        },
+        {
+          "index": 10,
+          "line": "もっと怖いのは",
+          "kind": "lyric",
+          "normalized": "もっと怖いのは",
+          "score": 0.8,
+          "status": "partial",
+          "best_match": "もっと可愛いのは"
+        },
+        {
+          "index": 11,
+          "line": "“何も送らない”っていう",
+          "kind": "lyric",
+          "normalized": "何も送らないっていう",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "何も送らないっていう"
+        },
+        {
+          "index": 12,
+          "line": "静かな選択",
+          "kind": "lyric",
+          "normalized": "静かなえら択",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "静かなえら択"
+        },
+        {
+          "index": 13,
+          "line": "理由はいつも",
+          "kind": "lyric",
+          "normalized": "理由はいつも",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "理由はいつも"
+        },
+        {
+          "index": 14,
+          "line": "あとから並べられる",
+          "kind": "lyric",
+          "normalized": "あとから並べられる",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "後から並べれる"
+        },
+        {
+          "index": 15,
+          "line": "でも指先は先に",
+          "kind": "lyric",
+          "normalized": "でも指先は先に",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "でも指先は先に"
+        },
+        {
+          "index": 16,
+          "line": "生き方を押してしまう",
+          "kind": "lyric",
+          "normalized": "生き方を押してしまう",
+          "score": 0.8,
+          "status": "partial",
+          "best_match": "生き方を知ってしまう"
+        },
+        {
+          "index": 17,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 18,
+          "line": "この夜の形が決まるなら",
+          "kind": "lyric",
+          "normalized": "このよるの形が決まるなら",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "のよるのカタツが決まるな"
+        },
+        {
+          "index": 19,
+          "line": "僕は逃げ道の言い訳より",
+          "kind": "lyric",
+          "normalized": "ぼくは逃げ道の言い訳より",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 20,
+          "line": "小さな責任を選びたい（ねえ）",
+          "kind": "cue",
+          "normalized": "小さなせきにんをえらびたいねえ",
+          "score": 0.933,
+          "status": "covered",
+          "best_match": "り小さなせきにんをえらびたいね"
+        },
+        {
+          "index": 21,
+          "line": "さよならの続き書けなくて",
+          "kind": "lyric",
+          "normalized": "さよならの続き書けなくて",
+          "score": 0.917,
+          "status": "covered",
+          "best_match": "さよならの続きかけなくて"
+        },
+        {
+          "index": 22,
+          "line": "空白ばかり増えていくけど",
+          "kind": "lyric",
+          "normalized": "空白ばかり増えていくけど",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "ばかり増えてゆくけど"
+        },
+        {
+          "index": 23,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 24,
+          "line": "“意味”を置いて帰るよ",
+          "kind": "lyric",
+          "normalized": "いみを置いて帰るよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 25,
+          "line": "タイムラインには",
+          "kind": "lyric",
+          "normalized": "タイムラインには",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "タイムラインには"
+        },
+        {
+          "index": 26,
+          "line": "知らない誰かの笑顔",
+          "kind": "lyric",
+          "normalized": "知らない誰かの笑顔",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "知らない誰かの笑顔"
+        },
+        {
+          "index": 27,
+          "line": "強がってスクロールして",
+          "kind": "lyric",
+          "normalized": "強がってスクロルして",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "強がってスクロルして"
+        },
+        {
+          "index": 28,
+          "line": "心だけ取り残す",
+          "kind": "lyric",
+          "normalized": "心だけ取り残す",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "心だけ取り残す"
+        },
+        {
+          "index": 29,
+          "line": "打ちかけの言葉が",
+          "kind": "lyric",
+          "normalized": "打ちかけの言葉が",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "打ちかけの言葉が"
+        },
+        {
+          "index": 30,
+          "line": "震えて消えてくたび",
+          "kind": "lyric",
+          "normalized": "震えて消えてくたび",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "震えて消えてくたび"
+        },
+        {
+          "index": 31,
+          "line": "「どうせ…」の物語が",
+          "kind": "lyric",
+          "normalized": "どうせ...の物語が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "びどうせの物語が"
+        },
+        {
+          "index": 32,
+          "line": "また王冠をかぶる",
+          "kind": "lyric",
+          "normalized": "また王冠をかぶる",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "またお前をかぶる"
+        },
+        {
+          "index": 33,
+          "line": "“きっと決まってる”って",
+          "kind": "lyric",
+          "normalized": "きっと決まってるって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "きっと決まってるって"
+        },
+        {
+          "index": 34,
+          "line": "口にした瞬間",
+          "kind": "lyric",
+          "normalized": "口にした瞬間",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "口にした瞬間"
+        },
+        {
+          "index": 35,
+          "line": "僕の手のひらから",
+          "kind": "lyric",
+          "normalized": "ぼくの手のひらから",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくの手のひらから"
+        },
+        {
+          "index": 36,
+          "line": "明日が落ちていく",
+          "kind": "lyric",
+          "normalized": "あしたが落ちていく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "あしたが落ちていく"
+        },
+        {
+          "index": 37,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 38,
+          "line": "戻れる場所を探す僕",
+          "kind": "lyric",
+          "normalized": "戻れる場所を探すぼく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "戻れる場所を探すぼく"
+        },
+        {
+          "index": 39,
+          "line": "正しさは外に落ちてなくて",
+          "kind": "lyric",
+          "normalized": "正しさは外に落ちてなくて",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "さは外に落ちてなくて"
+        },
+        {
+          "index": 40,
+          "line": "選んだ跡に立ち上がる（ああ）",
+          "kind": "cue",
+          "normalized": "えらんだ跡に立ち上がるああ",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "えらんだ後に立ち上がる"
+        },
+        {
+          "index": 41,
+          "line": "言えなかったこと数えたら",
+          "kind": "lyric",
+          "normalized": "言えなかったこと数えたら",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 42,
+          "line": "画面に入りきらないほど",
+          "kind": "lyric",
+          "normalized": "画面に入りきらないほど",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "面に入りきらないほどそ"
+        },
+        {
+          "index": 43,
+          "line": "それでも一行だけで",
+          "kind": "lyric",
+          "normalized": "それでもいちぎょうだけで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それでもいちぎょうだけで"
+        },
+        {
+          "index": 44,
+          "line": "世界に参加していたい",
+          "kind": "lyric",
+          "normalized": "せかいに参加していたい",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "せかいに参加してたいも"
+        },
+        {
+          "index": 45,
+          "line": "もしも明日",
+          "kind": "lyric",
+          "normalized": "もしもあした",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "もしもあした"
+        },
+        {
+          "index": 46,
+          "line": "ただの友だちで笑えたら",
+          "kind": "lyric",
+          "normalized": "ただの友だちで笑えたら",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "ただの友達で笑えたらそ"
+        },
+        {
+          "index": 47,
+          "line": "それだけでいい",
+          "kind": "lyric",
+          "normalized": "それだけでいい",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それだけでいい"
+        },
+        {
+          "index": 48,
+          "line": "そう言い聞かせて",
+          "kind": "lyric",
+          "normalized": "そう言い聞かせて",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "そう言い聞かせて"
+        },
+        {
+          "index": 49,
+          "line": "でも本当は知ってる",
+          "kind": "lyric",
+          "normalized": "でも本当は知ってる",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "でも本当は知ってる"
+        },
+        {
+          "index": 50,
+          "line": "沈黙もまた",
+          "kind": "lyric",
+          "normalized": "沈黙もまた",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "沈黙もまた"
+        },
+        {
+          "index": 51,
+          "line": "誰かの夜を",
+          "kind": "lyric",
+          "normalized": "誰かのよるを",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "誰かのよるを"
+        },
+        {
+          "index": 52,
+          "line": "増やしてしまうって",
+          "kind": "lyric",
+          "normalized": "増やしてしまうって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "増やしてしまうって"
+        },
+        {
+          "index": 53,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 54,
+          "line": "打ち直す「元気？」の三文字",
+          "kind": "lyric",
+          "normalized": "打ち直すげんきの三文字",
+          "score": 0.6,
+          "status": "missing",
+          "best_match": "打ち直す人気の三本"
+        },
+        {
+          "index": 55,
+          "line": "跳ぶのは信仰じゃなくて",
+          "kind": "lyric",
+          "normalized": "跳ぶのは信仰じゃなくて",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "飛ぶのは真顔じゃなくて"
+        },
+        {
+          "index": 56,
+          "line": "“投げ出さない”という決意",
+          "kind": "lyric",
+          "normalized": "投げ出さないという決意",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "て投げ出さないというケ"
+        },
+        {
+          "index": 57,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 58,
+          "line": "つながる夜があるのなら",
+          "kind": "lyric",
+          "normalized": "つながるよるがあるのなら",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "がる理由があるのなら"
+        },
+        {
+          "index": 59,
+          "line": "返事なんてもう来なくても",
+          "kind": "lyric",
+          "normalized": "返事なんてもう来なくても",
+          "score": 0.815,
+          "status": "partial",
+          "best_match": "ら返事なんてもう起きなくても名"
+        },
+        {
+          "index": 60,
+          "line": "名前を呼べた気がするよ",
+          "kind": "lyric",
+          "normalized": "名前を呼べた気がするよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 61,
+          "line": "“どうせ”の続き書けなくて",
+          "kind": "lyric",
+          "normalized": "どうせの続き書けなくて",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "どうせの続きがけなくて"
+        },
+        {
+          "index": 62,
+          "line": "それでも送信を押してみる",
+          "kind": "lyric",
+          "normalized": "それでも送信を押してみる",
+          "score": 0.917,
+          "status": "covered",
+          "best_match": "それでも送信をしてみるい"
+        },
+        {
+          "index": 63,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 64,
+          "line": "僕は明日を肯定する",
+          "kind": "lyric",
+          "normalized": "ぼくはあしたを肯定する",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくはあしたを肯定する"
+        },
+        {
+          "index": 65,
+          "line": "（息）…",
+          "kind": "cue",
+          "normalized": "息...",
+          "score": 0.0,
+          "status": "missing",
+          "best_match": ""
+        },
+        {
+          "index": 66,
+          "line": "一行だけ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけ"
+        },
+        {
+          "index": 67,
+          "line": "—それで十分だ",
+          "kind": "lyric",
+          "normalized": "それで十分だ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それで十分だ"
+        },
+        {
+          "index": 68,
+          "line": "（通知音、遠ざかる）",
+          "kind": "cue",
+          "normalized": "通知音遠ざかる",
+          "score": 0.364,
+          "status": "missing",
+          "best_match": "をかぶる"
+        }
+      ]
+    },
+    "medium_gated": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-gated-20260514.json",
+      "all_lines": {
+        "total": 68,
+        "covered": 44,
+        "partial": 14,
+        "missing": 10,
+        "strict_error_rate": 0.3529,
+        "missing_rate": 0.1471,
+        "coverage_with_partials": 0.75
+      },
+      "lyric_lines": {
+        "total": 61,
+        "covered": 42,
+        "partial": 14,
+        "missing": 5,
+        "strict_error_rate": 0.3115,
+        "missing_rate": 0.082,
+        "coverage_with_partials": 0.8033
+      },
+      "cue_lines": {
+        "total": 7,
+        "covered": 2,
+        "partial": 0,
+        "missing": 5,
+        "strict_error_rate": 0.7143,
+        "missing_rate": 0.7143,
+        "coverage_with_partials": 0.2857
+      },
+      "entries": [
+        {
+          "index": 1,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 2,
+          "line": "（クリック音、通知音は遠く）",
+          "kind": "cue",
+          "normalized": "クリック音通知音は遠く",
+          "score": 0.4,
+          "status": "missing",
+          "best_match": "クリッチベッチレク"
+        },
+        {
+          "index": 3,
+          "line": "「元気？」",
+          "kind": "lyric",
+          "normalized": "げんき",
+          "score": 0.286,
+          "status": "missing",
+          "best_match": "たごめん"
+        },
+        {
+          "index": 4,
+          "line": "—三文字だけで、世界が揺れる",
+          "kind": "lyric",
+          "normalized": "三文字だけでせかいが揺れる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "挙だけでせかいに"
+        },
+        {
+          "index": 5,
+          "line": "「元気だよ」って",
+          "kind": "lyric",
+          "normalized": "げんきだよって",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "だよって"
+        },
+        {
+          "index": 6,
+          "line": "一行だけのメッセージ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 7,
+          "line": "既読の灯りが",
+          "kind": "lyric",
+          "normalized": "既読の灯りが",
+          "score": 0.6,
+          "status": "missing",
+          "best_match": "毒の灯が"
+        },
+        {
+          "index": 8,
+          "line": "胸の底を叩いてる",
+          "kind": "lyric",
+          "normalized": "むねの底を叩いてる",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "むねの底を叩いてる"
+        },
+        {
+          "index": 9,
+          "line": "言えなかった「ごめんね」より",
+          "kind": "lyric",
+          "normalized": "言えなかったごめんねより",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったごめんねより"
+        },
+        {
+          "index": 10,
+          "line": "もっと怖いのは",
+          "kind": "lyric",
+          "normalized": "もっと怖いのは",
+          "score": 0.8,
+          "status": "partial",
+          "best_match": "もっと可愛いのは"
+        },
+        {
+          "index": 11,
+          "line": "“何も送らない”っていう",
+          "kind": "lyric",
+          "normalized": "何も送らないっていう",
+          "score": 0.9,
+          "status": "covered",
+          "best_match": "何も贈らないっていう"
+        },
+        {
+          "index": 12,
+          "line": "静かな選択",
+          "kind": "lyric",
+          "normalized": "静かなえら択",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "からならえら"
+        },
+        {
+          "index": 13,
+          "line": "理由はいつも",
+          "kind": "lyric",
+          "normalized": "理由はいつも",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "理由はいつも"
+        },
+        {
+          "index": 14,
+          "line": "あとから並べられる",
+          "kind": "lyric",
+          "normalized": "あとから並べられる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "えらべれる"
+        },
+        {
+          "index": 15,
+          "line": "でも指先は先に",
+          "kind": "lyric",
+          "normalized": "でも指先は先に",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "でも指先は先に"
+        },
+        {
+          "index": 16,
+          "line": "生き方を押してしまう",
+          "kind": "lyric",
+          "normalized": "生き方を押してしまう",
+          "score": 0.8,
+          "status": "partial",
+          "best_match": "生き方を知ってしまう"
+        },
+        {
+          "index": 17,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 18,
+          "line": "この夜の形が決まるなら",
+          "kind": "lyric",
+          "normalized": "このよるの形が決まるなら",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "この世の形が決まるならぼ"
+        },
+        {
+          "index": 19,
+          "line": "僕は逃げ道の言い訳より",
+          "kind": "lyric",
+          "normalized": "ぼくは逃げ道の言い訳より",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 20,
+          "line": "小さな責任を選びたい（ねえ）",
+          "kind": "cue",
+          "normalized": "小さなせきにんをえらびたいねえ",
+          "score": 0.889,
+          "status": "covered",
+          "best_match": "さなせきにんをえらびたい"
+        },
+        {
+          "index": 21,
+          "line": "さよならの続き書けなくて",
+          "kind": "lyric",
+          "normalized": "さよならの続き書けなくて",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "ねさよならの続きかけなく"
+        },
+        {
+          "index": 22,
+          "line": "空白ばかり増えていくけど",
+          "kind": "lyric",
+          "normalized": "空白ばかり増えていくけど",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "えてばかり増えていくけど"
+        },
+        {
+          "index": 23,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 24,
+          "line": "“意味”を置いて帰るよ",
+          "kind": "lyric",
+          "normalized": "いみを置いて帰るよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 25,
+          "line": "タイムラインには",
+          "kind": "lyric",
+          "normalized": "タイムラインには",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "タイムラインには"
+        },
+        {
+          "index": 26,
+          "line": "知らない誰かの笑顔",
+          "kind": "lyric",
+          "normalized": "知らない誰かの笑顔",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "知らない誰かの笑顔"
+        },
+        {
+          "index": 27,
+          "line": "強がってスクロールして",
+          "kind": "lyric",
+          "normalized": "強がってスクロルして",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "強がってスクロルして"
+        },
+        {
+          "index": 28,
+          "line": "心だけ取り残す",
+          "kind": "lyric",
+          "normalized": "心だけ取り残す",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "心だけ取り残す"
+        },
+        {
+          "index": 29,
+          "line": "打ちかけの言葉が",
+          "kind": "lyric",
+          "normalized": "打ちかけの言葉が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "す打ち掛けの言葉が震"
+        },
+        {
+          "index": 30,
+          "line": "震えて消えてくたび",
+          "kind": "lyric",
+          "normalized": "震えて消えてくたび",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "震えて消えてくたび"
+        },
+        {
+          "index": 31,
+          "line": "「どうせ…」の物語が",
+          "kind": "lyric",
+          "normalized": "どうせ...の物語が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "どうせの物語がま"
+        },
+        {
+          "index": 32,
+          "line": "また王冠をかぶる",
+          "kind": "lyric",
+          "normalized": "また王冠をかぶる",
+          "score": 0.5,
+          "status": "missing",
+          "best_match": "もまた誰かのよる"
+        },
+        {
+          "index": 33,
+          "line": "“きっと決まってる”って",
+          "kind": "lyric",
+          "normalized": "きっと決まってるって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "きっと決まってるって"
+        },
+        {
+          "index": 34,
+          "line": "口にした瞬間",
+          "kind": "lyric",
+          "normalized": "口にした瞬間",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "口にした瞬間"
+        },
+        {
+          "index": 35,
+          "line": "僕の手のひらから",
+          "kind": "lyric",
+          "normalized": "ぼくの手のひらから",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくの手のひらから"
+        },
+        {
+          "index": 36,
+          "line": "明日が落ちていく",
+          "kind": "lyric",
+          "normalized": "あしたが落ちていく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "あしたが落ちていく"
+        },
+        {
+          "index": 37,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 38,
+          "line": "戻れる場所を探す僕",
+          "kind": "lyric",
+          "normalized": "戻れる場所を探すぼく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "戻れる場所を探すぼく"
+        },
+        {
+          "index": 39,
+          "line": "正しさは外に落ちてなくて",
+          "kind": "lyric",
+          "normalized": "正しさは外に落ちてなくて",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "さを外に落ちてなくて"
+        },
+        {
+          "index": 40,
+          "line": "選んだ跡に立ち上がる（ああ）",
+          "kind": "cue",
+          "normalized": "えらんだ跡に立ち上がるああ",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "えらんだ後に立ち上がる"
+        },
+        {
+          "index": 41,
+          "line": "言えなかったこと数えたら",
+          "kind": "lyric",
+          "normalized": "言えなかったこと数えたら",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 42,
+          "line": "画面に入りきらないほど",
+          "kind": "lyric",
+          "normalized": "画面に入りきらないほど",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "仮面に入りきらないほど"
+        },
+        {
+          "index": 43,
+          "line": "それでも一行だけで",
+          "kind": "lyric",
+          "normalized": "それでもいちぎょうだけで",
+          "score": 0.737,
+          "status": "partial",
+          "best_match": "いちぎょうだけ"
+        },
+        {
+          "index": 44,
+          "line": "世界に参加していたい",
+          "kind": "lyric",
+          "normalized": "せかいに参加していたい",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "せかいに参加してたいも"
+        },
+        {
+          "index": 45,
+          "line": "もしも明日",
+          "kind": "lyric",
+          "normalized": "もしもあした",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "もしもあした"
+        },
+        {
+          "index": 46,
+          "line": "ただの友だちで笑えたら",
+          "kind": "lyric",
+          "normalized": "ただの友だちで笑えたら",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "ただの友達で笑えたらそ"
+        },
+        {
+          "index": 47,
+          "line": "それだけでいい",
+          "kind": "lyric",
+          "normalized": "それだけでいい",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それだけでいい"
+        },
+        {
+          "index": 48,
+          "line": "そう言い聞かせて",
+          "kind": "lyric",
+          "normalized": "そう言い聞かせて",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "そう言い聞かせて"
+        },
+        {
+          "index": 49,
+          "line": "でも本当は知ってる",
+          "kind": "lyric",
+          "normalized": "でも本当は知ってる",
+          "score": 0.889,
+          "status": "covered",
+          "best_match": "てでも本当は知って"
+        },
+        {
+          "index": 50,
+          "line": "沈黙もまた",
+          "kind": "lyric",
+          "normalized": "沈黙もまた",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "のもまた"
+        },
+        {
+          "index": 51,
+          "line": "誰かの夜を",
+          "kind": "lyric",
+          "normalized": "誰かのよるを",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "誰かのよるを"
+        },
+        {
+          "index": 52,
+          "line": "増やしてしまうって",
+          "kind": "lyric",
+          "normalized": "増やしてしまうって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "増やしてしまうって"
+        },
+        {
+          "index": 53,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 54,
+          "line": "打ち直す「元気？」の三文字",
+          "kind": "lyric",
+          "normalized": "打ち直すげんきの三文字",
+          "score": 0.636,
+          "status": "partial",
+          "best_match": "打ち直す人気の三本字飛"
+        },
+        {
+          "index": 55,
+          "line": "跳ぶのは信仰じゃなくて",
+          "kind": "lyric",
+          "normalized": "跳ぶのは信仰じゃなくて",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "飛ぶのは進行じゃなくて"
+        },
+        {
+          "index": 56,
+          "line": "“投げ出さない”という決意",
+          "kind": "lyric",
+          "normalized": "投げ出さないという決意",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "投げ出さないという決意"
+        },
+        {
+          "index": 57,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 58,
+          "line": "つながる夜があるのなら",
+          "kind": "lyric",
+          "normalized": "つながるよるがあるのなら",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "がる揺竜があるのなら"
+        },
+        {
+          "index": 59,
+          "line": "返事なんてもう来なくても",
+          "kind": "lyric",
+          "normalized": "返事なんてもう来なくても",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 60,
+          "line": "名前を呼べた気がするよ",
+          "kind": "lyric",
+          "normalized": "名前を呼べた気がするよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 61,
+          "line": "“どうせ”の続き書けなくて",
+          "kind": "lyric",
+          "normalized": "どうせの続き書けなくて",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "よどうせの続きが消えなくて"
+        },
+        {
+          "index": 62,
+          "line": "それでも送信を押してみる",
+          "kind": "lyric",
+          "normalized": "それでも送信を押してみる",
+          "score": 0.917,
+          "status": "covered",
+          "best_match": "てそれでも送信をしてみる"
+        },
+        {
+          "index": 63,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 64,
+          "line": "僕は明日を肯定する",
+          "kind": "lyric",
+          "normalized": "ぼくはあしたを肯定する",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくはあしたを肯定する"
+        },
+        {
+          "index": 65,
+          "line": "（息）…",
+          "kind": "cue",
+          "normalized": "息...",
+          "score": 0.0,
+          "status": "missing",
+          "best_match": ""
+        },
+        {
+          "index": 66,
+          "line": "一行だけ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけ"
+        },
+        {
+          "index": 67,
+          "line": "—それで十分だ",
+          "kind": "lyric",
+          "normalized": "それで十分だ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それで十分だ"
+        },
+        {
+          "index": 68,
+          "line": "（通知音、遠ざかる）",
+          "kind": "cue",
+          "normalized": "通知音遠ざかる",
+          "score": 0.364,
+          "status": "missing",
+          "best_match": "知ってる"
+        }
+      ]
+    },
+    "medium_denoise_norm": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-denoise-norm-20260514.json",
+      "all_lines": {
+        "total": 68,
+        "covered": 43,
+        "partial": 13,
+        "missing": 12,
+        "strict_error_rate": 0.3676,
+        "missing_rate": 0.1765,
+        "coverage_with_partials": 0.7279
+      },
+      "lyric_lines": {
+        "total": 61,
+        "covered": 42,
+        "partial": 13,
+        "missing": 6,
+        "strict_error_rate": 0.3115,
+        "missing_rate": 0.0984,
+        "coverage_with_partials": 0.7951
+      },
+      "cue_lines": {
+        "total": 7,
+        "covered": 1,
+        "partial": 0,
+        "missing": 6,
+        "strict_error_rate": 0.8571,
+        "missing_rate": 0.8571,
+        "coverage_with_partials": 0.1429
+      },
+      "entries": [
+        {
+          "index": 1,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 2,
+          "line": "（クリック音、通知音は遠く）",
+          "kind": "cue",
+          "normalized": "クリック音通知音は遠く",
+          "score": 0.364,
+          "status": "missing",
+          "best_match": "リクリッチベッチレクリ"
+        },
+        {
+          "index": 3,
+          "line": "「元気？」",
+          "kind": "lyric",
+          "normalized": "げんき",
+          "score": 0.286,
+          "status": "missing",
+          "best_match": "たごめん"
+        },
+        {
+          "index": 4,
+          "line": "—三文字だけで、世界が揺れる",
+          "kind": "lyric",
+          "normalized": "三文字だけでせかいが揺れる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "ょうだけでせかい"
+        },
+        {
+          "index": 5,
+          "line": "「元気だよ」って",
+          "kind": "lyric",
+          "normalized": "げんきだよって",
+          "score": 0.545,
+          "status": "missing",
+          "best_match": "じだって"
+        },
+        {
+          "index": 6,
+          "line": "一行だけのメッセージ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 7,
+          "line": "既読の灯りが",
+          "kind": "lyric",
+          "normalized": "既読の灯りが",
+          "score": 0.6,
+          "status": "missing",
+          "best_match": "毒の灯が"
+        },
+        {
+          "index": 8,
+          "line": "胸の底を叩いてる",
+          "kind": "lyric",
+          "normalized": "むねの底を叩いてる",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "むねの底を叩いてる"
+        },
+        {
+          "index": 9,
+          "line": "言えなかった「ごめんね」より",
+          "kind": "lyric",
+          "normalized": "言えなかったごめんねより",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったごめんねより"
+        },
+        {
+          "index": 10,
+          "line": "もっと怖いのは",
+          "kind": "lyric",
+          "normalized": "もっと怖いのは",
+          "score": 0.714,
+          "status": "partial",
+          "best_match": "もっと可愛いの"
+        },
+        {
+          "index": 11,
+          "line": "“何も送らない”っていう",
+          "kind": "lyric",
+          "normalized": "何も送らないっていう",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "は何も贈らないっていう静"
+        },
+        {
+          "index": 12,
+          "line": "静かな選択",
+          "kind": "lyric",
+          "normalized": "静かなえら択",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "からならえら"
+        },
+        {
+          "index": 13,
+          "line": "理由はいつも",
+          "kind": "lyric",
+          "normalized": "理由はいつも",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "理由はいつも"
+        },
+        {
+          "index": 14,
+          "line": "あとから並べられる",
+          "kind": "lyric",
+          "normalized": "あとから並べられる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "えらべれる"
+        },
+        {
+          "index": 15,
+          "line": "でも指先は先に",
+          "kind": "lyric",
+          "normalized": "でも指先は先に",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "でも指先は先に"
+        },
+        {
+          "index": 16,
+          "line": "生き方を押してしまう",
+          "kind": "lyric",
+          "normalized": "生き方を押してしまう",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "に生き方を知ってしまうい"
+        },
+        {
+          "index": 17,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 18,
+          "line": "この夜の形が決まるなら",
+          "kind": "lyric",
+          "normalized": "このよるの形が決まるなら",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "このよるの形が決まるなら"
+        },
+        {
+          "index": 19,
+          "line": "僕は逃げ道の言い訳より",
+          "kind": "lyric",
+          "normalized": "ぼくは逃げ道の言い訳より",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 20,
+          "line": "小さな責任を選びたい（ねえ）",
+          "kind": "cue",
+          "normalized": "小さなせきにんをえらびたいねえ",
+          "score": 0.889,
+          "status": "covered",
+          "best_match": "さなせきにんをえらびたい"
+        },
+        {
+          "index": 21,
+          "line": "さよならの続き書けなくて",
+          "kind": "lyric",
+          "normalized": "さよならの続き書けなくて",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "ねさよならの続きかけなく"
+        },
+        {
+          "index": 22,
+          "line": "空白ばかり増えていくけど",
+          "kind": "lyric",
+          "normalized": "空白ばかり増えていくけど",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "えてばかり増えていくけど"
+        },
+        {
+          "index": 23,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 24,
+          "line": "“意味”を置いて帰るよ",
+          "kind": "lyric",
+          "normalized": "いみを置いて帰るよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 25,
+          "line": "タイムラインには",
+          "kind": "lyric",
+          "normalized": "タイムラインには",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "タイムラインには"
+        },
+        {
+          "index": 26,
+          "line": "知らない誰かの笑顔",
+          "kind": "lyric",
+          "normalized": "知らない誰かの笑顔",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "知らない誰かの笑顔"
+        },
+        {
+          "index": 27,
+          "line": "強がってスクロールして",
+          "kind": "lyric",
+          "normalized": "強がってスクロルして",
+          "score": 0.9,
+          "status": "covered",
+          "best_match": "強がってスクロルした"
+        },
+        {
+          "index": 28,
+          "line": "心だけ取り残す",
+          "kind": "lyric",
+          "normalized": "心だけ取り残す",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "心だけ取り残す"
+        },
+        {
+          "index": 29,
+          "line": "打ちかけの言葉が",
+          "kind": "lyric",
+          "normalized": "打ちかけの言葉が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "す打ち掛けの言葉が震"
+        },
+        {
+          "index": 30,
+          "line": "震えて消えてくたび",
+          "kind": "lyric",
+          "normalized": "震えて消えてくたび",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "震えて消えてくたび"
+        },
+        {
+          "index": 31,
+          "line": "「どうせ…」の物語が",
+          "kind": "lyric",
+          "normalized": "どうせ...の物語が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "どうせの物語がま"
+        },
+        {
+          "index": 32,
+          "line": "また王冠をかぶる",
+          "kind": "lyric",
+          "normalized": "また王冠をかぶる",
+          "score": 0.462,
+          "status": "missing",
+          "best_match": "もまた誰か"
+        },
+        {
+          "index": 33,
+          "line": "“きっと決まってる”って",
+          "kind": "lyric",
+          "normalized": "きっと決まってるって",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "るきっと決まっているって"
+        },
+        {
+          "index": 34,
+          "line": "口にした瞬間",
+          "kind": "lyric",
+          "normalized": "口にした瞬間",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "口にした瞬間"
+        },
+        {
+          "index": 35,
+          "line": "僕の手のひらから",
+          "kind": "lyric",
+          "normalized": "ぼくの手のひらから",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくの手のひらから"
+        },
+        {
+          "index": 36,
+          "line": "明日が落ちていく",
+          "kind": "lyric",
+          "normalized": "あしたが落ちていく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "あしたが落ちていく"
+        },
+        {
+          "index": 37,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 38,
+          "line": "戻れる場所を探す僕",
+          "kind": "lyric",
+          "normalized": "戻れる場所を探すぼく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "戻れる場所を探すぼく"
+        },
+        {
+          "index": 39,
+          "line": "正しさは外に落ちてなくて",
+          "kind": "lyric",
+          "normalized": "正しさは外に落ちてなくて",
+          "score": 0.917,
+          "status": "covered",
+          "best_match": "だしさは外に落ちてなくて"
+        },
+        {
+          "index": 40,
+          "line": "選んだ跡に立ち上がる（ああ）",
+          "kind": "cue",
+          "normalized": "えらんだ跡に立ち上がるああ",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "トに立ち上がる立"
+        },
+        {
+          "index": 41,
+          "line": "言えなかったこと数えたら",
+          "kind": "lyric",
+          "normalized": "言えなかったこと数えたら",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 42,
+          "line": "画面に入りきらないほど",
+          "kind": "lyric",
+          "normalized": "画面に入りきらないほど",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "仮面に入りきらないほど"
+        },
+        {
+          "index": 43,
+          "line": "それでも一行だけで",
+          "kind": "lyric",
+          "normalized": "それでもいちぎょうだけで",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "れでもいっきょうだけでせ"
+        },
+        {
+          "index": 44,
+          "line": "世界に参加していたい",
+          "kind": "lyric",
+          "normalized": "せかいに参加していたい",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "でせかいに参加してたい"
+        },
+        {
+          "index": 45,
+          "line": "もしも明日",
+          "kind": "lyric",
+          "normalized": "もしもあした",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "もしもあした"
+        },
+        {
+          "index": 46,
+          "line": "ただの友だちで笑えたら",
+          "kind": "lyric",
+          "normalized": "ただの友だちで笑えたら",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "たただの友達で笑えたら"
+        },
+        {
+          "index": 47,
+          "line": "それだけでいい",
+          "kind": "lyric",
+          "normalized": "それだけでいい",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それだけでいい"
+        },
+        {
+          "index": 48,
+          "line": "そう言い聞かせて",
+          "kind": "lyric",
+          "normalized": "そう言い聞かせて",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "そう言い聞かせて"
+        },
+        {
+          "index": 49,
+          "line": "でも本当は知ってる",
+          "kind": "lyric",
+          "normalized": "でも本当は知ってる",
+          "score": 0.889,
+          "status": "covered",
+          "best_match": "でも本当は知って本"
+        },
+        {
+          "index": 50,
+          "line": "沈黙もまた",
+          "kind": "lyric",
+          "normalized": "沈黙もまた",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "のもまた"
+        },
+        {
+          "index": 51,
+          "line": "誰かの夜を",
+          "kind": "lyric",
+          "normalized": "誰かのよるを",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "誰かのよるを"
+        },
+        {
+          "index": 52,
+          "line": "増やしてしまうって",
+          "kind": "lyric",
+          "normalized": "増やしてしまうって",
+          "score": 0.875,
+          "status": "covered",
+          "best_match": "してしまうって"
+        },
+        {
+          "index": 53,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 54,
+          "line": "打ち直す「元気？」の三文字",
+          "kind": "lyric",
+          "normalized": "打ち直すげんきの三文字",
+          "score": 0.7,
+          "status": "partial",
+          "best_match": "打ち直す右の三本字"
+        },
+        {
+          "index": 55,
+          "line": "跳ぶのは信仰じゃなくて",
+          "kind": "lyric",
+          "normalized": "跳ぶのは信仰じゃなくて",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "ぶのは進行じゃなくて投"
+        },
+        {
+          "index": 56,
+          "line": "“投げ出さない”という決意",
+          "kind": "lyric",
+          "normalized": "投げ出さないという決意",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "投げ出さないという決意"
+        },
+        {
+          "index": 57,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 58,
+          "line": "つながる夜があるのなら",
+          "kind": "lyric",
+          "normalized": "つながるよるがあるのなら",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "由がある言うがあるのなら"
+        },
+        {
+          "index": 59,
+          "line": "返事なんてもう来なくても",
+          "kind": "lyric",
+          "normalized": "返事なんてもう来なくても",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "返事なんてもう来なくても"
+        },
+        {
+          "index": 60,
+          "line": "名前を呼べた気がするよ",
+          "kind": "lyric",
+          "normalized": "名前を呼べた気がするよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 61,
+          "line": "“どうせ”の続き書けなくて",
+          "kind": "lyric",
+          "normalized": "どうせの続き書けなくて",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "うせの続きが消えなくて"
+        },
+        {
+          "index": 62,
+          "line": "それでも送信を押してみる",
+          "kind": "lyric",
+          "normalized": "それでも送信を押してみる",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "れでも送信をしてみる"
+        },
+        {
+          "index": 63,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 64,
+          "line": "僕は明日を肯定する",
+          "kind": "lyric",
+          "normalized": "ぼくはあしたを肯定する",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくはあしたを肯定する"
+        },
+        {
+          "index": 65,
+          "line": "（息）…",
+          "kind": "cue",
+          "normalized": "息...",
+          "score": 0.0,
+          "status": "missing",
+          "best_match": ""
+        },
+        {
+          "index": 66,
+          "line": "一行だけ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけ"
+        },
+        {
+          "index": 67,
+          "line": "—それで十分だ",
+          "kind": "lyric",
+          "normalized": "それで十分だ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それで十分だ"
+        },
+        {
+          "index": 68,
+          "line": "（通知音、遠ざかる）",
+          "kind": "cue",
+          "normalized": "通知音遠ざかる",
+          "score": 0.364,
+          "status": "missing",
+          "best_match": "知ってる"
+        }
+      ]
+    },
+    "medium_compressed": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-compressed-20260514.json",
+      "all_lines": {
+        "total": 68,
+        "covered": 44,
+        "partial": 13,
+        "missing": 11,
+        "strict_error_rate": 0.3529,
+        "missing_rate": 0.1618,
+        "coverage_with_partials": 0.7426
+      },
+      "lyric_lines": {
+        "total": 61,
+        "covered": 42,
+        "partial": 13,
+        "missing": 6,
+        "strict_error_rate": 0.3115,
+        "missing_rate": 0.0984,
+        "coverage_with_partials": 0.7951
+      },
+      "cue_lines": {
+        "total": 7,
+        "covered": 2,
+        "partial": 0,
+        "missing": 5,
+        "strict_error_rate": 0.7143,
+        "missing_rate": 0.7143,
+        "coverage_with_partials": 0.2857
+      },
+      "entries": [
+        {
+          "index": 1,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 2,
+          "line": "（クリック音、通知音は遠く）",
+          "kind": "cue",
+          "normalized": "クリック音通知音は遠く",
+          "score": 0.4,
+          "status": "missing",
+          "best_match": "クリッチベッチレク"
+        },
+        {
+          "index": 3,
+          "line": "「元気？」",
+          "kind": "lyric",
+          "normalized": "げんき",
+          "score": 0.286,
+          "status": "missing",
+          "best_match": "たごめん"
+        },
+        {
+          "index": 4,
+          "line": "—三文字だけで、世界が揺れる",
+          "kind": "lyric",
+          "normalized": "三文字だけでせかいが揺れる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "ょうだけでせかい"
+        },
+        {
+          "index": 5,
+          "line": "「元気だよ」って",
+          "kind": "lyric",
+          "normalized": "げんきだよって",
+          "score": 0.5,
+          "status": "missing",
+          "best_match": "だよねいっ"
+        },
+        {
+          "index": 6,
+          "line": "一行だけのメッセージ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 7,
+          "line": "既読の灯りが",
+          "kind": "lyric",
+          "normalized": "既読の灯りが",
+          "score": 0.6,
+          "status": "missing",
+          "best_match": "毒の灯が"
+        },
+        {
+          "index": 8,
+          "line": "胸の底を叩いてる",
+          "kind": "lyric",
+          "normalized": "むねの底を叩いてる",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "むねの底を叩いてる"
+        },
+        {
+          "index": 9,
+          "line": "言えなかった「ごめんね」より",
+          "kind": "lyric",
+          "normalized": "言えなかったごめんねより",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったごめんねより"
+        },
+        {
+          "index": 10,
+          "line": "もっと怖いのは",
+          "kind": "lyric",
+          "normalized": "もっと怖いのは",
+          "score": 0.714,
+          "status": "partial",
+          "best_match": "もっと可愛いの"
+        },
+        {
+          "index": 11,
+          "line": "“何も送らない”っていう",
+          "kind": "lyric",
+          "normalized": "何も送らないっていう",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "は何も贈らないっていう静"
+        },
+        {
+          "index": 12,
+          "line": "静かな選択",
+          "kind": "lyric",
+          "normalized": "静かなえら択",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "からならえら"
+        },
+        {
+          "index": 13,
+          "line": "理由はいつも",
+          "kind": "lyric",
+          "normalized": "理由はいつも",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "理由はいつも"
+        },
+        {
+          "index": 14,
+          "line": "あとから並べられる",
+          "kind": "lyric",
+          "normalized": "あとから並べられる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "えらべれる"
+        },
+        {
+          "index": 15,
+          "line": "でも指先は先に",
+          "kind": "lyric",
+          "normalized": "でも指先は先に",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "でも指先は先に"
+        },
+        {
+          "index": 16,
+          "line": "生き方を押してしまう",
+          "kind": "lyric",
+          "normalized": "生き方を押してしまう",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "に生き方を知ってしまうい"
+        },
+        {
+          "index": 17,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 18,
+          "line": "この夜の形が決まるなら",
+          "kind": "lyric",
+          "normalized": "このよるの形が決まるなら",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "のよるの形が決まんならぼ"
+        },
+        {
+          "index": 19,
+          "line": "僕は逃げ道の言い訳より",
+          "kind": "lyric",
+          "normalized": "ぼくは逃げ道の言い訳より",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 20,
+          "line": "小さな責任を選びたい（ねえ）",
+          "kind": "cue",
+          "normalized": "小さなせきにんをえらびたいねえ",
+          "score": 0.889,
+          "status": "covered",
+          "best_match": "さなせきにんをえらびたい"
+        },
+        {
+          "index": 21,
+          "line": "さよならの続き書けなくて",
+          "kind": "lyric",
+          "normalized": "さよならの続き書けなくて",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "ねさよならの続きかけなく"
+        },
+        {
+          "index": 22,
+          "line": "空白ばかり増えていくけど",
+          "kind": "lyric",
+          "normalized": "空白ばかり増えていくけど",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "えてばかり増えていくけど"
+        },
+        {
+          "index": 23,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 24,
+          "line": "“意味”を置いて帰るよ",
+          "kind": "lyric",
+          "normalized": "いみを置いて帰るよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 25,
+          "line": "タイムラインには",
+          "kind": "lyric",
+          "normalized": "タイムラインには",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "タイムラインには"
+        },
+        {
+          "index": 26,
+          "line": "知らない誰かの笑顔",
+          "kind": "lyric",
+          "normalized": "知らない誰かの笑顔",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "知らない誰かの笑顔"
+        },
+        {
+          "index": 27,
+          "line": "強がってスクロールして",
+          "kind": "lyric",
+          "normalized": "強がってスクロルして",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "強がってスクロルして"
+        },
+        {
+          "index": 28,
+          "line": "心だけ取り残す",
+          "kind": "lyric",
+          "normalized": "心だけ取り残す",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "心だけ取り残す"
+        },
+        {
+          "index": 29,
+          "line": "打ちかけの言葉が",
+          "kind": "lyric",
+          "normalized": "打ちかけの言葉が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "す打ち掛けの言葉が震"
+        },
+        {
+          "index": 30,
+          "line": "震えて消えてくたび",
+          "kind": "lyric",
+          "normalized": "震えて消えてくたび",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "震えて消えてくたび"
+        },
+        {
+          "index": 31,
+          "line": "「どうせ…」の物語が",
+          "kind": "lyric",
+          "normalized": "どうせ...の物語が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "どうせの物語がま"
+        },
+        {
+          "index": 32,
+          "line": "また王冠をかぶる",
+          "kind": "lyric",
+          "normalized": "また王冠をかぶる",
+          "score": 0.5,
+          "status": "missing",
+          "best_match": "もまた誰かのよる"
+        },
+        {
+          "index": 33,
+          "line": "“きっと決まってる”って",
+          "kind": "lyric",
+          "normalized": "きっと決まってるって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "きっと決まってるって"
+        },
+        {
+          "index": 34,
+          "line": "口にした瞬間",
+          "kind": "lyric",
+          "normalized": "口にした瞬間",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "口にした瞬間"
+        },
+        {
+          "index": 35,
+          "line": "僕の手のひらから",
+          "kind": "lyric",
+          "normalized": "ぼくの手のひらから",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくの手のひらから"
+        },
+        {
+          "index": 36,
+          "line": "明日が落ちていく",
+          "kind": "lyric",
+          "normalized": "あしたが落ちていく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "あしたが落ちていく"
+        },
+        {
+          "index": 37,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 38,
+          "line": "戻れる場所を探す僕",
+          "kind": "lyric",
+          "normalized": "戻れる場所を探すぼく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "戻れる場所を探すぼく"
+        },
+        {
+          "index": 39,
+          "line": "正しさは外に落ちてなくて",
+          "kind": "lyric",
+          "normalized": "正しさは外に落ちてなくて",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "さは外に落ちてなくて"
+        },
+        {
+          "index": 40,
+          "line": "選んだ跡に立ち上がる（ああ）",
+          "kind": "cue",
+          "normalized": "えらんだ跡に立ち上がるああ",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "えらんだ後に立ち上がる"
+        },
+        {
+          "index": 41,
+          "line": "言えなかったこと数えたら",
+          "kind": "lyric",
+          "normalized": "言えなかったこと数えたら",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 42,
+          "line": "画面に入りきらないほど",
+          "kind": "lyric",
+          "normalized": "画面に入りきらないほど",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "仮面に入りきらないほど"
+        },
+        {
+          "index": 43,
+          "line": "それでも一行だけで",
+          "kind": "lyric",
+          "normalized": "それでもいちぎょうだけで",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "どそれでもいっきょうだけ"
+        },
+        {
+          "index": 44,
+          "line": "世界に参加していたい",
+          "kind": "lyric",
+          "normalized": "せかいに参加していたい",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "せかいに参加していたい"
+        },
+        {
+          "index": 45,
+          "line": "もしも明日",
+          "kind": "lyric",
+          "normalized": "もしもあした",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "もしもあした"
+        },
+        {
+          "index": 46,
+          "line": "ただの友だちで笑えたら",
+          "kind": "lyric",
+          "normalized": "ただの友だちで笑えたら",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "ただの友達で笑えたらそ"
+        },
+        {
+          "index": 47,
+          "line": "それだけでいい",
+          "kind": "lyric",
+          "normalized": "それだけでいい",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それだけでいい"
+        },
+        {
+          "index": 48,
+          "line": "そう言い聞かせて",
+          "kind": "lyric",
+          "normalized": "そう言い聞かせて",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "そう言い聞かせて"
+        },
+        {
+          "index": 49,
+          "line": "でも本当は知ってる",
+          "kind": "lyric",
+          "normalized": "でも本当は知ってる",
+          "score": 0.889,
+          "status": "covered",
+          "best_match": "てでも本当は知って"
+        },
+        {
+          "index": 50,
+          "line": "沈黙もまた",
+          "kind": "lyric",
+          "normalized": "沈黙もまた",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "沈黙もまた"
+        },
+        {
+          "index": 51,
+          "line": "誰かの夜を",
+          "kind": "lyric",
+          "normalized": "誰かのよるを",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "誰かのよるを"
+        },
+        {
+          "index": 52,
+          "line": "増やしてしまうって",
+          "kind": "lyric",
+          "normalized": "増やしてしまうって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "増やしてしまうって"
+        },
+        {
+          "index": 53,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 54,
+          "line": "打ち直す「元気？」の三文字",
+          "kind": "lyric",
+          "normalized": "打ち直すげんきの三文字",
+          "score": 0.636,
+          "status": "partial",
+          "best_match": "打ち直す日記の三本字飛"
+        },
+        {
+          "index": 55,
+          "line": "跳ぶのは信仰じゃなくて",
+          "kind": "lyric",
+          "normalized": "跳ぶのは信仰じゃなくて",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "飛ぶのは進行じゃなくて"
+        },
+        {
+          "index": 56,
+          "line": "“投げ出さない”という決意",
+          "kind": "lyric",
+          "normalized": "投げ出さないという決意",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "て投げ出さない無言決意"
+        },
+        {
+          "index": 57,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 58,
+          "line": "つながる夜があるのなら",
+          "kind": "lyric",
+          "normalized": "つながるよるがあるのなら",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "がる余裕があるのなら"
+        },
+        {
+          "index": 59,
+          "line": "返事なんてもう来なくても",
+          "kind": "lyric",
+          "normalized": "返事なんてもう来なくても",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "事なんてもう起きなくても"
+        },
+        {
+          "index": 60,
+          "line": "名前を呼べた気がするよ",
+          "kind": "lyric",
+          "normalized": "名前を呼べた気がするよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 61,
+          "line": "“どうせ”の続き書けなくて",
+          "kind": "lyric",
+          "normalized": "どうせの続き書けなくて",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "うせの続きが消えなくて"
+        },
+        {
+          "index": 62,
+          "line": "それでも送信を押してみる",
+          "kind": "lyric",
+          "normalized": "それでも送信を押してみる",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "れでも送信をしてみる"
+        },
+        {
+          "index": 63,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 64,
+          "line": "僕は明日を肯定する",
+          "kind": "lyric",
+          "normalized": "ぼくはあしたを肯定する",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくはあしたを肯定する"
+        },
+        {
+          "index": 65,
+          "line": "（息）…",
+          "kind": "cue",
+          "normalized": "息...",
+          "score": 0.0,
+          "status": "missing",
+          "best_match": ""
+        },
+        {
+          "index": 66,
+          "line": "一行だけ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけ"
+        },
+        {
+          "index": 67,
+          "line": "—それで十分だ",
+          "kind": "lyric",
+          "normalized": "それで十分だ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それで十分だ"
+        },
+        {
+          "index": 68,
+          "line": "（通知音、遠ざかる）",
+          "kind": "cue",
+          "normalized": "通知音遠ざかる",
+          "score": 0.364,
+          "status": "missing",
+          "best_match": "知ってる"
+        }
+      ]
+    },
+    "medium_raw": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.knoxx-whisper-medium-vocals-20260514.json",
+      "all_lines": {
+        "total": 68,
+        "covered": 45,
+        "partial": 11,
+        "missing": 12,
+        "strict_error_rate": 0.3382,
+        "missing_rate": 0.1765,
+        "coverage_with_partials": 0.7426
+      },
+      "lyric_lines": {
+        "total": 61,
+        "covered": 43,
+        "partial": 11,
+        "missing": 7,
+        "strict_error_rate": 0.2951,
+        "missing_rate": 0.1148,
+        "coverage_with_partials": 0.7951
+      },
+      "cue_lines": {
+        "total": 7,
+        "covered": 2,
+        "partial": 0,
+        "missing": 5,
+        "strict_error_rate": 0.7143,
+        "missing_rate": 0.7143,
+        "coverage_with_partials": 0.2857
+      },
+      "entries": [
+        {
+          "index": 1,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 2,
+          "line": "（クリック音、通知音は遠く）",
+          "kind": "cue",
+          "normalized": "クリック音通知音は遠く",
+          "score": 0.364,
+          "status": "missing",
+          "best_match": "リクリッチベッチレクリ"
+        },
+        {
+          "index": 3,
+          "line": "「元気？」",
+          "kind": "lyric",
+          "normalized": "げんき",
+          "score": 0.286,
+          "status": "missing",
+          "best_match": "たごめん"
+        },
+        {
+          "index": 4,
+          "line": "—三文字だけで、世界が揺れる",
+          "kind": "lyric",
+          "normalized": "三文字だけでせかいが揺れる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "ょうだけでせかい"
+        },
+        {
+          "index": 5,
+          "line": "「元気だよ」って",
+          "kind": "lyric",
+          "normalized": "げんきだよって",
+          "score": 0.5,
+          "status": "missing",
+          "best_match": "だよねいっ"
+        },
+        {
+          "index": 6,
+          "line": "一行だけのメッセージ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじ"
+        },
+        {
+          "index": 7,
+          "line": "既読の灯りが",
+          "kind": "lyric",
+          "normalized": "既読の灯りが",
+          "score": 0.6,
+          "status": "missing",
+          "best_match": "毒の灯が"
+        },
+        {
+          "index": 8,
+          "line": "胸の底を叩いてる",
+          "kind": "lyric",
+          "normalized": "むねの底を叩いてる",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "むねの底を叩いてる"
+        },
+        {
+          "index": 9,
+          "line": "言えなかった「ごめんね」より",
+          "kind": "lyric",
+          "normalized": "言えなかったごめんねより",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったごめんねより"
+        },
+        {
+          "index": 10,
+          "line": "もっと怖いのは",
+          "kind": "lyric",
+          "normalized": "もっと怖いのは",
+          "score": 0.714,
+          "status": "partial",
+          "best_match": "もっと可愛いの"
+        },
+        {
+          "index": 11,
+          "line": "“何も送らない”っていう",
+          "kind": "lyric",
+          "normalized": "何も送らないっていう",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "は何も贈らないっていう静"
+        },
+        {
+          "index": 12,
+          "line": "静かな選択",
+          "kind": "lyric",
+          "normalized": "静かなえら択",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "からならえら"
+        },
+        {
+          "index": 13,
+          "line": "理由はいつも",
+          "kind": "lyric",
+          "normalized": "理由はいつも",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "理由はいつも"
+        },
+        {
+          "index": 14,
+          "line": "あとから並べられる",
+          "kind": "lyric",
+          "normalized": "あとから並べられる",
+          "score": 0.571,
+          "status": "missing",
+          "best_match": "えらべれる"
+        },
+        {
+          "index": 15,
+          "line": "でも指先は先に",
+          "kind": "lyric",
+          "normalized": "でも指先は先に",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "でも指先は先に"
+        },
+        {
+          "index": 16,
+          "line": "生き方を押してしまう",
+          "kind": "lyric",
+          "normalized": "生き方を押してしまう",
+          "score": 0.8,
+          "status": "partial",
+          "best_match": "生き方を知ってしまう"
+        },
+        {
+          "index": 17,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 18,
+          "line": "この夜の形が決まるなら",
+          "kind": "lyric",
+          "normalized": "このよるの形が決まるなら",
+          "score": 0.917,
+          "status": "covered",
+          "best_match": "このよるの形が決まんなら"
+        },
+        {
+          "index": 19,
+          "line": "僕は逃げ道の言い訳より",
+          "kind": "lyric",
+          "normalized": "ぼくは逃げ道の言い訳より",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくは逃げ道の言い訳より"
+        },
+        {
+          "index": 20,
+          "line": "小さな責任を選びたい（ねえ）",
+          "kind": "cue",
+          "normalized": "小さなせきにんをえらびたいねえ",
+          "score": 0.933,
+          "status": "covered",
+          "best_match": "小さなせきにんをえらびたいねさ"
+        },
+        {
+          "index": 21,
+          "line": "さよならの続き書けなくて",
+          "kind": "lyric",
+          "normalized": "さよならの続き書けなくて",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "よならの続きかけなくてく"
+        },
+        {
+          "index": 22,
+          "line": "空白ばかり増えていくけど",
+          "kind": "lyric",
+          "normalized": "空白ばかり増えていくけど",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "ばかり増えていくけど"
+        },
+        {
+          "index": 23,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 24,
+          "line": "“意味”を置いて帰るよ",
+          "kind": "lyric",
+          "normalized": "いみを置いて帰るよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いみを置いて帰るよ"
+        },
+        {
+          "index": 25,
+          "line": "タイムラインには",
+          "kind": "lyric",
+          "normalized": "タイムラインには",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "タイムラインには"
+        },
+        {
+          "index": 26,
+          "line": "知らない誰かの笑顔",
+          "kind": "lyric",
+          "normalized": "知らない誰かの笑顔",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "知らない誰かの笑顔"
+        },
+        {
+          "index": 27,
+          "line": "強がってスクロールして",
+          "kind": "lyric",
+          "normalized": "強がってスクロルして",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "強がってスクロルして"
+        },
+        {
+          "index": 28,
+          "line": "心だけ取り残す",
+          "kind": "lyric",
+          "normalized": "心だけ取り残す",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "心だけ取り残す"
+        },
+        {
+          "index": 29,
+          "line": "打ちかけの言葉が",
+          "kind": "lyric",
+          "normalized": "打ちかけの言葉が",
+          "score": 0.875,
+          "status": "covered",
+          "best_match": "打ち掛けの言葉が"
+        },
+        {
+          "index": 30,
+          "line": "震えて消えてくたび",
+          "kind": "lyric",
+          "normalized": "震えて消えてくたび",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "震えて消えてくたび"
+        },
+        {
+          "index": 31,
+          "line": "「どうせ…」の物語が",
+          "kind": "lyric",
+          "normalized": "どうせ...の物語が",
+          "score": 0.778,
+          "status": "partial",
+          "best_match": "びどうせの物語が"
+        },
+        {
+          "index": 32,
+          "line": "また王冠をかぶる",
+          "kind": "lyric",
+          "normalized": "また王冠をかぶる",
+          "score": 0.462,
+          "status": "missing",
+          "best_match": "もまた誰か"
+        },
+        {
+          "index": 33,
+          "line": "“きっと決まってる”って",
+          "kind": "lyric",
+          "normalized": "きっと決まってるって",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "きっと決まっているって口"
+        },
+        {
+          "index": 34,
+          "line": "口にした瞬間",
+          "kind": "lyric",
+          "normalized": "口にした瞬間",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "口にした瞬間"
+        },
+        {
+          "index": 35,
+          "line": "僕の手のひらから",
+          "kind": "lyric",
+          "normalized": "ぼくの手のひらから",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくの手のひらから"
+        },
+        {
+          "index": 36,
+          "line": "明日が落ちていく",
+          "kind": "lyric",
+          "normalized": "あしたが落ちていく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "あしたが落ちていく"
+        },
+        {
+          "index": 37,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 38,
+          "line": "戻れる場所を探す僕",
+          "kind": "lyric",
+          "normalized": "戻れる場所を探すぼく",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "戻れる場所を探すぼく"
+        },
+        {
+          "index": 39,
+          "line": "正しさは外に落ちてなくて",
+          "kind": "lyric",
+          "normalized": "正しさは外に落ちてなくて",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "さは外に落ちてなくて"
+        },
+        {
+          "index": 40,
+          "line": "選んだ跡に立ち上がる（ああ）",
+          "kind": "cue",
+          "normalized": "えらんだ跡に立ち上がるああ",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "えらんだ後に立ち上がる"
+        },
+        {
+          "index": 41,
+          "line": "言えなかったこと数えたら",
+          "kind": "lyric",
+          "normalized": "言えなかったこと数えたら",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "言えなかったこと数えたら"
+        },
+        {
+          "index": 42,
+          "line": "画面に入りきらないほど",
+          "kind": "lyric",
+          "normalized": "画面に入りきらないほど",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "仮面に入りきらないほど"
+        },
+        {
+          "index": 43,
+          "line": "それでも一行だけで",
+          "kind": "lyric",
+          "normalized": "それでもいちぎょうだけで",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "それでもいっきょうだけで"
+        },
+        {
+          "index": 44,
+          "line": "世界に参加していたい",
+          "kind": "lyric",
+          "normalized": "せかいに参加していたい",
+          "score": 0.909,
+          "status": "covered",
+          "best_match": "でせかいに参加してたい"
+        },
+        {
+          "index": 45,
+          "line": "もしも明日",
+          "kind": "lyric",
+          "normalized": "もしもあした",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "もしもあした"
+        },
+        {
+          "index": 46,
+          "line": "ただの友だちで笑えたら",
+          "kind": "lyric",
+          "normalized": "ただの友だちで笑えたら",
+          "score": 0.818,
+          "status": "partial",
+          "best_match": "たただの友達で笑えたら"
+        },
+        {
+          "index": 47,
+          "line": "それだけでいい",
+          "kind": "lyric",
+          "normalized": "それだけでいい",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それだけでいい"
+        },
+        {
+          "index": 48,
+          "line": "そう言い聞かせて",
+          "kind": "lyric",
+          "normalized": "そう言い聞かせて",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "そう言い聞かせて"
+        },
+        {
+          "index": 49,
+          "line": "でも本当は知ってる",
+          "kind": "lyric",
+          "normalized": "でも本当は知ってる",
+          "score": 0.889,
+          "status": "covered",
+          "best_match": "でも本当は知って本"
+        },
+        {
+          "index": 50,
+          "line": "沈黙もまた",
+          "kind": "lyric",
+          "normalized": "沈黙もまた",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "のもまた"
+        },
+        {
+          "index": 51,
+          "line": "誰かの夜を",
+          "kind": "lyric",
+          "normalized": "誰かのよるを",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "誰かのよるを"
+        },
+        {
+          "index": 52,
+          "line": "増やしてしまうって",
+          "kind": "lyric",
+          "normalized": "増やしてしまうって",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "増やしてしまうって"
+        },
+        {
+          "index": 53,
+          "line": "（息）…はぁ…",
+          "kind": "cue",
+          "normalized": "息...はぁ...",
+          "score": 0.143,
+          "status": "missing",
+          "best_match": "可愛いのは"
+        },
+        {
+          "index": 54,
+          "line": "打ち直す「元気？」の三文字",
+          "kind": "lyric",
+          "normalized": "打ち直すげんきの三文字",
+          "score": 0.556,
+          "status": "missing",
+          "best_match": "打ち直す日記の"
+        },
+        {
+          "index": 55,
+          "line": "跳ぶのは信仰じゃなくて",
+          "kind": "lyric",
+          "normalized": "跳ぶのは信仰じゃなくて",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "ぶのは進行じゃなくて投"
+        },
+        {
+          "index": 56,
+          "line": "“投げ出さない”という決意",
+          "kind": "lyric",
+          "normalized": "投げ出さないという決意",
+          "score": 0.727,
+          "status": "partial",
+          "best_match": "投げ出さない無言決意一"
+        },
+        {
+          "index": 57,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 58,
+          "line": "つながる夜があるのなら",
+          "kind": "lyric",
+          "normalized": "つながるよるがあるのなら",
+          "score": 0.667,
+          "status": "partial",
+          "best_match": "由がある理由があるのなら"
+        },
+        {
+          "index": 59,
+          "line": "返事なんてもう来なくても",
+          "kind": "lyric",
+          "normalized": "返事なんてもう来なくても",
+          "score": 0.833,
+          "status": "covered",
+          "best_match": "返事なんてもう起きなくて"
+        },
+        {
+          "index": 60,
+          "line": "名前を呼べた気がするよ",
+          "kind": "lyric",
+          "normalized": "名前を呼べた気がするよ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "名前を呼べた気がするよ"
+        },
+        {
+          "index": 61,
+          "line": "“どうせ”の続き書けなくて",
+          "kind": "lyric",
+          "normalized": "どうせの続き書けなくて",
+          "score": 0.75,
+          "status": "partial",
+          "best_match": "どうせの続きが消えなくてそ"
+        },
+        {
+          "index": 62,
+          "line": "それでも送信を押してみる",
+          "kind": "lyric",
+          "normalized": "それでも送信を押してみる",
+          "score": 0.917,
+          "status": "covered",
+          "best_match": "それでも送信をしてみるい"
+        },
+        {
+          "index": 63,
+          "line": "一行だけのメッセージで",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけのめっせじで",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけのめっせじで"
+        },
+        {
+          "index": 64,
+          "line": "僕は明日を肯定する",
+          "kind": "lyric",
+          "normalized": "ぼくはあしたを肯定する",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "ぼくはあしたを肯定する"
+        },
+        {
+          "index": 65,
+          "line": "（息）…",
+          "kind": "cue",
+          "normalized": "息...",
+          "score": 0.0,
+          "status": "missing",
+          "best_match": ""
+        },
+        {
+          "index": 66,
+          "line": "一行だけ",
+          "kind": "lyric",
+          "normalized": "いちぎょうだけ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "いちぎょうだけ"
+        },
+        {
+          "index": 67,
+          "line": "—それで十分だ",
+          "kind": "lyric",
+          "normalized": "それで十分だ",
+          "score": 1.0,
+          "status": "covered",
+          "best_match": "それで十分だ"
+        },
+        {
+          "index": 68,
+          "line": "（通知音、遠ざかる）",
+          "kind": "cue",
+          "normalized": "通知音遠ざかる",
+          "score": 0.364,
+          "status": "missing",
+          "best_match": "知ってる"
+        }
+      ]
+    }
+  }
+}

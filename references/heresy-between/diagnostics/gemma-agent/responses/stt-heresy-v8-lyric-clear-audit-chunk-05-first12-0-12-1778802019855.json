@@ -1,0 +1,68 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 3.535536309083303,
+  "words": [
+    {
+      "end_s": 11.979999542236328,
+      "start_s": 0,
+      "word": "返事なんてもう来なくてもするよ一受けのせい"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 4,
+      "start_s": 0,
+      "text": "返事なんてもう来なくても"
+    },
+    {
+      "end_s": 8,
+      "start_s": 4,
+      "text": "するよ"
+    },
+    {
+      "end_s": 11,
+      "start_s": 8,
+      "text": "一受けのせい"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 4,
+          "start_s": 0,
+          "text": "返事なんてもう来なくても"
+        },
+        {
+          "end_s": 8,
+          "start_s": 4,
+          "text": "するよ"
+        },
+        {
+          "end_s": 11,
+          "start_s": 8,
+          "text": "一受けのせい"
+        }
+      ],
+      "text": "返事なんてもう来なくてもするよ一受けのせい",
+      "words": [
+        {
+          "end_s": 11.979999542236328,
+          "start_s": 0,
+          "word": "返事なんてもう来なくてもするよ一受けのせい"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "返事なんてもう来なくてもするよ一受けのせい"
+}

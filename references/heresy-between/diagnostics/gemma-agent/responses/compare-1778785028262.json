@@ -1,0 +1,32 @@
+{
+  "request": {
+    "audio": [
+      "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/slices/ab-0-2.wav"
+    ],
+    "prompt": "The single audio file before this text contains: first A original, then a short separator beep, then B candidate. You are an audio reconstruction auditor. Audio inputs come before this instruction. Audio A is original. Audio B is candidate. Do not give generic critique. You must listen to both audio inputs. If you cannot perceive a syllable, write uncertain, not a placeholder. First transcribe syllables/phonetics in A and B separately. Then recommend concrete tool calls. Return JSON only with keys: a_phonetic, b_phonetic, lyric_mismatch, rhythm_mismatch, pitch_mismatch, delivery_mismatch, recommended_tool_calls. Available tools: label_file, note, slice_audio, filter_audio. Task: Smoke test only: transcribe A and B briefly.",
+    "model": "gemma4:e4b-128k"
+  },
+  "response": {
+    "id": "chatcmpl-452",
+    "object": "chat.completion",
+    "created": 1778785136,
+    "model": "gemma4:e4b-128k",
+    "system_fingerprint": "fp_ollama",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"a_phonetic\": \"kæ.əŋ. næ.jo\",\n  \"b_phonetic\": \"kæ.əŋ. næ.jo\",\n  \"lyric_mismatch\": \"None\",\n  \"rhythm_mismatch\": \"None\",\n  \"pitch_mismatch\": \"None\",\n  \"delivery_mismatch\": \"None\",\n  \"recommended_tool_calls\": []\n}\n```",
+          "reasoning": "Here's a thinking process to arrive at the desired JSON output:\n\n1.  **Analyze the Request:**\n    *   **Role:** Audio Reconstruction Auditor.\n    *   **Input:** Two audio files (A: Original, B: Candidate).\n    *   **Goal:** Compare A and B, transcribe them phonetically, and assess various mismatches (lyric, rhythm, pitch, delivery).\n    *   **Output Format:** JSON only, with specific keys: `a_phonetic`, `b_phonetic`, `lyric_mismatch`, `rhythm_mismatch`, `pitch_mismatch`, `delivery_mismatch`, `recommended_tool_calls`.\n    *   **Constraint:** Do not give generic critique. Must listen to both. If a syllable cannot be perceived, write \"uncertain\".\n    *   **Task:** Smoke test only (transcribe A and B briefly).\n\n2.  **Listen and Transcribe (A and B):**\n    *   *Self-Correction/Observation:* The provided audio is a single file containing A, a beep, and B. I need to focus on the speech content.\n    *   **Audio A (Original):** The audio contains a clear vocalization: \"Kaeung. Nae-yo.\" (The pronunciation is somewhat drawn out and melodic).\n    *   **Audio B (Candidate):** The audio contains a similar vocalization: \"Kaeung. Nae-yo.\" (It sounds very similar to A).\n\n3.  **Detailed Comparison & Analysis:**\n    *   **A Phonetics:** /kæ.əŋ. næ.jo/ (Approximation of the sound \"Kaeung. Nae-yo.\")\n    *   **B Phonetics:** /kæ.əŋ. næ.jo/ (Approximation of the sound \"Kaeung. Nae-yo.\")\n    *   **Lyric Mismatch:** No discernible difference in the lyrics/syllables.\n    *   **Rhythm Mismatch:** The rhythm seems consistent between A and B.\n    *   **Pitch Mismatch:** The pitch seems consistent between A and B.\n    *   **Delivery Mismatch:** The delivery seems consistent between A and B.\n    *   **Recommended Tool Calls:** Since the task is a \"Smoke test only: transcribe A and B briefly,\" and there are no obvious technical issues (like needing to label, slice, or filter), no tool calls are necessary.\n\n4.  **Construct the JSON Output:** (Adhering strictly to the required format.)\n\n    *   `a_phonetic`: \"kæ.əŋ. næ.jo\"\n    *   `b_phonetic`: \"kæ.əŋ. næ.jo\"\n    *   `lyric_mismatch`: \"None\"\n    *   `rhythm_mismatch`: \"None\"\n    *   `pitch_mismatch`: \"None\"\n    *   `delivery_mismatch`: \"None\"\n    *   `recommended_tool_calls`: []\n\n5.  **Final Review:** Ensure the output is *only* the JSON structure. (This matches the plan.)"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 350,
+      "completion_tokens": 785,
+      "total_tokens": 1135
+    }
+  }
+}

@@ -3,7 +3,9 @@
             [calliope.classifier.adapters-test]
             [calliope.classifier.dsl-test]
             [calliope.classifier.main-test]
-            [calliope.classifier.runtime-test]))
+            [calliope.classifier.runtime-test]
+            [calliope.reconstruction.handoff-test]
+            [calliope.reconstruction.paths-test]))
 
 (defn -main
   [& _]
@@ -11,6 +13,8 @@
         (test/run-tests 'calliope.classifier.adapters-test
                         'calliope.classifier.dsl-test
                         'calliope.classifier.main-test
-                        'calliope.classifier.runtime-test)]
+                        'calliope.classifier.runtime-test
+                        'calliope.reconstruction.handoff-test
+                        'calliope.reconstruction.paths-test)]
     (when (pos? (+ fail error))
       (System/exit 1))))

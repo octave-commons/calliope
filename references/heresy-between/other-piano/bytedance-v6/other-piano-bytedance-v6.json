@@ -1,0 +1,28 @@
+{
+  "source_stem": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/\u5b58\u5728\u8ad6\u7684\u306a\u201c\u53cd\u30fb\u865a\u7121\u201d\u306e\u8ad6\u8a3c\u3068\u3057\u3066/other.wav",
+  "output_midi": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6.mid",
+  "method": "ByteDance piano_transcription_inference CRNN onset/offset/frame/pedal transcription on existing Demucs other.wav",
+  "audio_loader": "soundfile + scipy.signal.resample_poly",
+  "environment": {
+    "venv": "/home/err/devel/Music/fork-tales/references/mir-workbench/.venv-piano-transcription",
+    "python": "3.10.19",
+    "torch": "2.5.1+cu121",
+    "cuda": true,
+    "device": "cuda",
+    "sample_rate": 16000,
+    "cwd_note": "must run outside /home/err/devel because /home/err/devel/coverage shadows Python coverage package"
+  },
+  "elapsed_seconds": 22.580440998077393,
+  "source_sample_rate": 44100,
+  "audio_duration_seconds": 303.32,
+  "note_count": 3980,
+  "pitch_min": 25,
+  "pitch_max": 99,
+  "midi_end_seconds": 303.3098958333333,
+  "pedal_cc64_count": 262,
+  "result_keys": [
+    "est_note_events",
+    "est_pedal_events",
+    "output_dict"
+  ]
+}

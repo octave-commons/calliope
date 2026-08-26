@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-13T20:03:53.466373+00:00",
+  "kind": "analysis-driven reconstruction sketch",
+  "source_reference": "/home/err/devel/Music/fork-tales/references/heresy-between",
+  "output_wav": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-pyin-energy-reconstruction-v1.wav",
+  "duration_seconds": 303.32,
+  "sample_rate": 44100,
+  "inputs": {
+    "vocal_notes": "/home/err/devel/Music/fork-tales/references/heresy-between/vocal/vocals.pyin.notes.json",
+    "arrangement_energy": "/home/err/devel/Music/fork-tales/references/heresy-between/arrangement/sections.energy.json",
+    "lyrics_alignment": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.multilingual-medium.json"
+  },
+  "method": [
+    "pYIN notes rendered as breathy sine/triangle lead",
+    "8s stem-energy windows interpolated as drums/bass/vocal/texture envelopes",
+    "synthetic kick/snare/hat pattern at ~100 BPM half-time",
+    "modal bass progression C#2/G#2/A#2/F#2",
+    "noise/modal texture bed and transition glitch dust"
+  ],
+  "note": "This is not the original audio and not a polished cover; it is a generated audible reconstruction from analysis artifacts."
+}

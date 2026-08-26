@@ -1,0 +1,68 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 1.8936499953269958,
+  "words": [
+    {
+      "end_s": 10.719999313354492,
+      "start_s": 0,
+      "word": "返事なんてもう来なくてもするよ一部消せ"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 3,
+      "start_s": 0,
+      "text": "返事なんてもう来なくても"
+    },
+    {
+      "end_s": 6,
+      "start_s": 4,
+      "text": "するよ"
+    },
+    {
+      "end_s": 11,
+      "start_s": 8,
+      "text": "一部消せ"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 3,
+          "start_s": 0,
+          "text": "返事なんてもう来なくても"
+        },
+        {
+          "end_s": 6,
+          "start_s": 4,
+          "text": "するよ"
+        },
+        {
+          "end_s": 11,
+          "start_s": 8,
+          "text": "一部消せ"
+        }
+      ],
+      "text": "返事なんてもう来なくてもするよ一部消せ",
+      "words": [
+        {
+          "end_s": 10.719999313354492,
+          "start_s": 0,
+          "word": "返事なんてもう来なくてもするよ一部消せ"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "返事なんてもう来なくてもするよ一部消せ"
+}

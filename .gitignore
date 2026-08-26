@@ -10,6 +10,7 @@ out/
 # per-track *.json metadata stay tracked.
 tracks/**/*.mp3
 tracks/**/*.jpeg
+tracks/text/
 
 # Machine-local eta-mu actor ledgers.
 .eta-mu/

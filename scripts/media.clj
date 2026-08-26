@@ -6,11 +6,12 @@
 ;; Media bytes synchronize through rclone, never through git.
 ;;
 ;; Usage:
-;;   bb scripts/media.clj where    print the selected dataset and manifest status
-;;   bb scripts/media.clj manifest generate a manifest from local media bytes
-;;   bb scripts/media.clj verify   verify local bytes, optionally against the ledger
-;;   bb scripts/media.clj sync     synchronize manifest-addressed files to rclone
-;;   bb scripts/media.clj check    check local files against the rclone remote
+;;   bb scripts/media.clj where     print the selected dataset and manifest status
+;;   bb scripts/media.clj assemble  copy the docs/lyrics songbook into <root>/text/
+;;   bb scripts/media.clj manifest  generate a manifest from local content bytes
+;;   bb scripts/media.clj verify    verify local bytes, optionally against the ledger
+;;   bb scripts/media.clj sync      synchronize manifest-addressed files to rclone
+;;   bb scripts/media.clj check     check local files against the rclone remote
 
 (require '[babashka.fs :as fs]
           '[babashka.process :as p]
@@ -22,7 +23,7 @@
 (def repo-root (media/find-repo-root *file*))
 
 (defn usage []
-  (println "usage: bb scripts/media.clj [where|manifest|verify|sync|check]"))
+  (println "usage: bb scripts/media.clj [where|assemble|manifest|verify|sync|check]"))
 
 (defn resolved-root []
   (media/resolve-root repo-root (System/getenv media/env-var)))
@@ -74,6 +75,12 @@
         (println "Bytes total:" (reduce + 0 (map :bytes (:entries manifest))))
         (println "Generated:" (:generated manifest))))))
 
+(defn assemble! []
+  (let [{:keys [root]} (resolved-root)
+        n (media/assemble-text! repo-root root)]
+    (println "Assembled" n "songbook files into" (str (fs/path root media/text-dir)))
+    (println "Run `bb scripts/media.clj manifest` next.")))
+
 (defn manifest! []
   (let [{:keys [root]} (resolved-root)
         {:keys [entries bytes-total path]} (media/generate-manifest! root)]
@@ -123,6 +130,7 @@
       args (rest *command-line-args*)]
   (case command
     "where" (where!)
+    "assemble" (assemble!)
     "manifest" (manifest!)
     "verify" (verify! args)
     "sync" (sync! args)

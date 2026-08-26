@@ -29,8 +29,13 @@
 (deftest media-manifest-contracts-reject-invalid-data
   (is (not (media/valid? :calliope.media/manifest-entry-v1 (assoc entry :sha256 "abc"))))
   (is (not (media/valid? :calliope.media/manifest-entry-v1 (assoc entry :path "/absence/x.mp3"))))
-  (is (not (media/valid? :calliope.media/manifest-entry-v1 (assoc entry :path "absence/x.txt"))))
+  (is (not (media/valid? :calliope.media/manifest-entry-v1 (assoc entry :path "absence/x.wav"))))
   (is (not (media/valid? :calliope.media/manifest-entry-v1 (assoc entry :bytes 0))))
   (is (not (media/valid? :calliope.media/manifest-entry-v1 (assoc entry :bytes -1))))
   (is (not (media/valid? :calliope.media/manifest-envelope-v1 (assoc envelope :schema :wrong))))
   (is (map? (media/decode-manifest (assoc envelope :entries [entry])))))
+
+(deftest media-manifest-contracts-cover-text-and-metadata-content
+  (doseq [path ["absence/01234567.json" "text/song.md" "text/song.txt"]]
+    (is (media/valid? :calliope.media/manifest-entry-v1 (assoc entry :path path))
+        path)))

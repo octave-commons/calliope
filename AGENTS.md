@@ -20,10 +20,10 @@ not imply access to Err's machine.
 - `ledgers/projections/variants-v1.edn` — pass-2 same-title similarity signals.
   Similarity never silently becomes identity.
 - `tracks/` — the media dataset mount point (see ADR-002). `MANIFEST.edn` and
-  the per-track `*.json` Suno metadata are git-tracked; MP3/JPEG bytes are
-  untracked, content-addressed, and synchronized externally via rclone
-  (`bb scripts/media.clj`). Any folder with a valid `MANIFEST.edn` works as
-  the dataset when selected via `CALLIOPE_MEDIA_ROOT`.
+  the per-track `*.json` Suno metadata are git-tracked; MP3/JPEG bytes and the
+  `text/` songbook projection are untracked dataset content synchronized
+  externally via rclone (`bb scripts/media.clj`). Any folder with a valid
+  `MANIFEST.edn` works as the dataset when selected via `CALLIOPE_MEDIA_ROOT`.
 - `src/calliope/media/dataset.cljc` — pure dataset library (root resolution,
   manifest read/write, verification).
 - `resources/classifiers/` — pure-data classifier and feature-extractor programs.
@@ -74,6 +74,7 @@ eta-mu kanban find ft-000b-define-media-workbench-domain-laws
 
 # Media dataset (ADR-002). Root: CALLIOPE_MEDIA_ROOT, default tracks/.
 bb scripts/media.clj where
+bb scripts/media.clj assemble
 bb scripts/media.clj manifest
 bb scripts/media.clj verify [--no-hash] [--ledger]
 bb scripts/media.clj sync [--remote <rclone-remote:path>]

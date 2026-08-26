@@ -20,6 +20,7 @@
 (defn dataset! [root]
   (write-bytes! root "absence/one.mp3" (.getBytes "hello" "UTF-8"))
   (write-bytes! root "absence/two.jpeg" (.getBytes "world" "UTF-8"))
+  (write-bytes! root "absence/meta.json" (.getBytes "meta" "UTF-8"))
   (dataset/write-manifest! root {:generated "2026-08-26T00:00:00Z"}))
 
 (defmacro with-dataset [[root] & body]
@@ -35,9 +36,10 @@
       (is (= dataset/dataset-id (:dataset/id manifest)))
       (is (= dataset/manifest-schema (:schema manifest)))
       (is (= "2026-08-26T00:00:00Z" (:generated manifest)))
-      (is (= 2 (count (:entries manifest))))
-      (is (= ["absence/one.mp3" "absence/two.jpeg"] (mapv :path (:entries manifest))))
-      (is (= {:ok true :checked 2 :missing [] :size-mismatch [] :hash-mismatch [] :extras []}
+      (is (= 3 (count (:entries manifest))))
+      (is (= ["absence/meta.json" "absence/one.mp3" "absence/two.jpeg"]
+             (mapv :path (:entries manifest))))
+      (is (= {:ok true :checked 3 :missing [] :size-mismatch [] :hash-mismatch [] :extras []}
              (dataset/verify root {:hash? true}))))))
 
 (deftest verification-detects-missing-size-hash-and-extra-files
@@ -61,18 +63,39 @@
   (is (= {:root "/tmp/media" :source :env} (dataset/resolve-root "/repo" "/tmp/media")))
   (is (= {:root "/repo/tracks" :source :default} (dataset/resolve-root "/repo" "   "))))
 
-(deftest ledger-verification-uses-media-events-only
+(deftest ledger-verification-checks-media-and-metadata-events
   (with-dataset [root]
     (let [report (dataset/verify-against-ledger
                   root
                   [{:event/type :track/discovered :asset :mp3 :dest "tracks/absence/one.mp3" :bytes 5}
                    {:event/type :track/discovered :asset :jpeg :dest "absence/two.jpeg" :bytes 9}
-                   {:event/type :track/discovered :asset :mp3 :dest "absent/three.mp3" :bytes 1}
-                   {:event/type :track/discovered :asset :json :dest "absence/meta.json" :bytes 1}])]
+                   {:event/type :track/discovered :asset :json :dest "absence/meta.json" :bytes 4}
+                   {:event/type :track/discovered :asset :mp3 :dest "absent/three.mp3" :bytes 1}])]
       (is (= [] (:untracked-in-ledger report)))
       (is (= ["absent/three.mp3"] (:missing-from-manifest report)))
       (is (= [{:path "absence/two.jpeg" :expected 9 :actual 5}]
              (:bytes-drift report))))))
+
+(deftest assembly-copies-songbook-text-into-the-dataset
+  (let [repo (temp-dir)
+        root (temp-dir)]
+    (try
+      (let [lyrics (File. repo "docs/lyrics")]
+        (.mkdirs lyrics)
+        (spit (File. lyrics "a.md") "# A")
+        (spit (File. lyrics "b.txt") "B")
+        (spit (File. lyrics "index.edn") "{}")
+        (is (= 2 (dataset/assemble-text! repo root)))
+        (is (= "# A" (slurp (dataset/resolve-file root "text/a.md"))))
+        (is (= "B" (slurp (dataset/resolve-file root "text/b.txt"))))
+        (is (not (.exists (dataset/resolve-file root "text/index.edn"))))
+        (dataset/write-manifest! root {:generated "t"})
+        (is (= #{"text/a.md" "text/b.txt"}
+               (set (filter #(re-find #"^text/" %)
+                            (map :path (:entries (dataset/read-manifest root))))))))
+      (finally
+        (delete-tree! repo)
+        (delete-tree! root)))))
 
 (deftest manifest-read-fails-loudly
   (let [root (temp-dir)

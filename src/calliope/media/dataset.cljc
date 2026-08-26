@@ -6,6 +6,7 @@
   the repository's `tracks/` directory is used. Media bytes are externally
   synchronized, while the manifest makes their identity and integrity portable."
   (:require [clojure.edn :as edn]
+            [clojure.java.io :as io]
             [clojure.string :as str])
   #?(:clj (:import [java.io BufferedInputStream BufferedReader File FileInputStream InputStreamReader]
                    [java.math BigInteger]
@@ -19,7 +20,11 @@
 (def env-var "CALLIOPE_MEDIA_ROOT")
 (def default-dataset-dir "tracks")
 (def manifest-name "MANIFEST.edn")
-(def media-extensions #{"mp3" "jpeg"})
+(def content-extensions #{"mp3" "jpeg" "json" "md" "txt"})
+(def text-dir "text")
+(def text-source-dir "docs/lyrics")
+(def text-extensions #{"md" "txt"})
+(def ledger-checkable-extensions #{"mp3" "jpeg" "json"})
 
 ;; --------------------------------------------------------------- resolution
 
@@ -87,7 +92,7 @@
        (->> (file-seq root-file)
             (filter #(.isFile ^File %))
             (remove #(= manifest-name (.getName ^File %)))
-            (filter #(contains? media-extensions (extension (.getName ^File %))))))))
+            (filter #(contains? content-extensions (extension (.getName ^File %))))))))
 
 #?(:clj
    (defn scan-entries
@@ -115,6 +120,32 @@
             (map #(relative-path root-file ^File %))
             (sort-by identity)
             vec))))
+
+#?(:clj
+   (defn assemble-text!
+     "Copy the canonical songbook projection (docs/lyrics/*.md|*.txt) from
+     `repo-root` into `<root>/text/`, overwriting in place. The repository
+     stays the authority; this copy exists so one dataset folder carries the
+     complete corpus. Returns the number of files written."
+     [repo-root root]
+     (let [source (File. (str repo-root) text-source-dir)]
+       (when-not (.isDirectory source)
+         (throw (ex-info "Songbook projection missing — run `bb scripts/corpus.clj project` first."
+                         {:dir (str source)})))
+       (let [dest (File. (str root) text-dir)]
+         (.mkdirs dest)
+         (->> (.listFiles source)
+              (filter (fn [^File f]
+                        (and (.isFile f)
+                             (contains? text-extensions (extension (.getName f))))))
+              (map (fn [^File f]
+                     (io/copy f (File. dest (.getName f)))
+                     (.getName f)))
+              doall
+              count))))
+   :cljs
+   (defn assemble-text! [& _]
+     (throw (ex-info "Media datasets require a JVM filesystem" {}))))
 
 (defn- parse-line [line-number line]
   (try
@@ -233,17 +264,20 @@
   (str/replace-first dest #"^tracks/" ""))
 
 (defn verify-against-ledger
-  "Compare media manifest entries with supplied `:track/discovered` events.
-  JSON events are intentionally excluded because the media manifest tracks only
-  externally synchronized MP3 and JPEG bytes."
+  "Compare media and metadata manifest entries with supplied
+  :track/discovered events, keyed by dataset-relative path with one
+  historical leading `tracks/` stripped. Songbook text has no track events
+  and is excluded here; JSON metadata events are included."
   [root events]
   (let [manifest (read-manifest root)
-        entries (:entries manifest)
+        checkable? (fn [entry]
+                     (contains? ledger-checkable-extensions (extension (:path entry))))
+        entries (filter checkable? (:entries manifest))
         manifest-by-path (into {} (map (juxt :path identity)) entries)
         events-by-path (into {}
                              (map (fn [event] [(normalize-dest (:dest event)) event]))
                              (filter #(and (= :track/discovered (:event/type %))
-                                           (contains? #{:mp3 :jpeg} (:asset %)))
+                                           (contains? #{:mp3 :jpeg :json} (:asset %)))
                                      events))
         untracked (->> entries (map :path) (remove events-by-path) vec)
         missing (->> (keys events-by-path) (remove manifest-by-path) sort vec)

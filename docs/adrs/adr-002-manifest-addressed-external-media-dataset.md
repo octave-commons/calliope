@@ -89,6 +89,19 @@ the hash; the path is a location, and locations translate, not rewrite.
 
 ## Consequences
 
+### Amendment 2026-08-26 — dataset carries text and metadata too
+
+Err directed that the dataset also carry the songbook text and the Suno JSON
+metadata so a single Drive folder is complete for Gemini reference. The
+manifest's content classes widen from media-only to
+`mp3 | jpeg | json | md | txt`; `bb scripts/media.clj assemble` projects the
+canonical `docs/lyrics/` songbook into `<root>/text/` (repository stays the
+authority; the copy is regenerable); `verify --ledger` now cross-checks JSON
+metadata events alongside MP3/JPEG. The git side does not change: text lives
+in `docs/lyrics/`, JSONs stay tracked, `<root>/text/` stays ignored.
+
+## Original consequences
+
 - A fresh machine reconstructs a working checkout with: `git clone`, then
   `rclone sync gdrive:calliope-media <any-folder>` (or into `tracks/`), then
   optionally set `CALLIOPE_MEDIA_ROOT`. `bb scripts/media.clj verify --ledger`

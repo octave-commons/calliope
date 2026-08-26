@@ -13,10 +13,11 @@
     [:generated :string]]
 
    :calliope.media/manifest-entry-v1
-   [:map {:closed true}
-    [:path [:and [:string {:min 1}] [:re #"^[^/\s]+/[^/\s]+\.(mp3|jpeg)$"]]]
-    [:bytes [:int {:min 1}]]
-    [:sha256 [:and :string [:re #"^[0-9a-f]{64}$"]]]]
+    [:map {:closed true}
+     [:path [:and [:string {:min 1}]
+             [:re #"^[^/\s]+(/[^/\s]+)*\.(mp3|jpeg|json|md|txt)$"]]]
+     [:bytes [:int {:min 1}]]
+     [:sha256 [:and :string [:re #"^[0-9a-f]{64}$"]]]]
 
    :calliope.media/manifest-v1
    [:map {:closed true}

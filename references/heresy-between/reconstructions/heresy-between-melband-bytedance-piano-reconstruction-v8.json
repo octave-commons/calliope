@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-05-13T23:30:45.142665+00:00",
+  "kind": "v8 reconstruction using MelBand Inst V2 separator plus ByteDance piano transcription",
+  "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v8.wav",
+  "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v8-master.wav",
+  "duration_seconds": 303.32,
+  "sample_rate": 44100,
+  "inputs": {
+    "piano": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst-fluidr3-rmsmatched.wav",
+    "vocal": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-vocals-openutau-v1.wav",
+    "drums": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-drums-v1.wav",
+    "bass": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-bass-v1.wav",
+    "texture": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-pyin-energy-reconstruction-v1.wav"
+  },
+  "weights": {
+    "piano": 1.15,
+    "vocal": 0.62,
+    "drums": 0.4,
+    "bass": 0.36,
+    "texture": 0.18
+  },
+  "method": [
+    "Use v7 piano render from original MP3 -> MelBand Roformer Inst V2 -> ByteDance piano transcription -> FluidSynth RMS-matched render",
+    "Mix with existing regenerated OpenUTAU vocal, synthetic drums, synthetic bass, and low-weight texture bed",
+    "Judge v8 against original full mix, not Demucs other.wav, because other.wav is a flawed stem extraction baseline"
+  ],
+  "levels": {
+    "mix_peak": 0.9800000190734863,
+    "mix_rms": 0.1012376993894577,
+    "master_peak": 0.8157275319099426,
+    "master_rms": 0.13072897493839264
+  },
+  "interpretation_note": "This promotes the better-sounding v7 branch for listening; previous other.wav-relative diagnostics should be treated as historical, not ground truth."
+}

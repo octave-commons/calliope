@@ -1,0 +1,11 @@
+{
+  "duration_seconds": 303.32,
+  "sample_rate": 44100,
+  "generated_stems": {
+    "vocals": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-vocals-openutau-v1.wav",
+    "drums": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-drums-v1.wav",
+    "bass": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-bass-v1.wav",
+    "piano_other": "/home/err/devel/Music/fork-tales/references/heresy-between/regenerated-stems/regenerated-piano-other-fluidr3-v3.wav"
+  },
+  "note": "Isolated regenerated stems for per-stem diagnostics; not final mix stems."
+}

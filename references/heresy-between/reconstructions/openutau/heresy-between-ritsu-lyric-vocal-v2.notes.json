@@ -1,0 +1,6062 @@
+{
+  "generated_at": "2026-05-14T00:35:13.345Z",
+  "kind": "OpenUTAU lyric-aware vocal repair notes v2",
+  "bpm": 100,
+  "ticks_per_second": 800,
+  "track_duration_seconds": 303.32,
+  "voice_duration": 242656,
+  "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-lyric-vocal-v2.ustx",
+  "note_count": 681,
+  "total_note_seconds": 255.91,
+  "coverage_percent": 84.37,
+  "gap_count": 682,
+  "max_gap_seconds": 0.4,
+  "gaps_over_4s": [],
+  "phrase_count": 66,
+  "phrases": [
+    {
+      "section": "Intro breath/spoken",
+      "text": "（息）…はぁ…",
+      "kana": "はあ",
+      "start_seconds": 0.18,
+      "end_seconds": 3.78,
+      "note_count": 2,
+      "median_tone": 63
+    },
+    {
+      "section": "Intro breath/spoken",
+      "text": "「元気？」",
+      "kana": "げんき",
+      "start_seconds": 4.18,
+      "end_seconds": 7.78,
+      "note_count": 3,
+      "median_tone": 61
+    },
+    {
+      "section": "Intro breath/spoken",
+      "text": "三文字だけで、世界が揺れる",
+      "kana": "さんもじだけでせかいがゆれる",
+      "start_seconds": 8.18,
+      "end_seconds": 11.78,
+      "note_count": 14,
+      "median_tone": 63
+    },
+    {
+      "section": "Verse 1A",
+      "text": "「元気だよ」って",
+      "kana": "げんきだよて",
+      "start_seconds": 12.18,
+      "end_seconds": 14.78,
+      "note_count": 6,
+      "median_tone": 68
+    },
+    {
+      "section": "Verse 1A",
+      "text": "一行だけのメッセージ",
+      "kana": "いちぎょうだけのめせえじ",
+      "start_seconds": 15.18,
+      "end_seconds": 17.78,
+      "note_count": 12,
+      "median_tone": 61
+    },
+    {
+      "section": "Verse 1A",
+      "text": "既読の灯りが",
+      "kana": "きどくのあかりが",
+      "start_seconds": 18.18,
+      "end_seconds": 20.78,
+      "note_count": 8,
+      "median_tone": 60
+    },
+    {
+      "section": "Verse 1A",
+      "text": "胸の底を叩いてる",
+      "kana": "むねのそこをたたいてる",
+      "start_seconds": 21.18,
+      "end_seconds": 23.78,
+      "note_count": 11,
+      "median_tone": 61
+    },
+    {
+      "section": "Verse 1B",
+      "text": "言えなかった「ごめんね」より",
+      "kana": "いえなかたごめんねより",
+      "start_seconds": 24.18,
+      "end_seconds": 27.78,
+      "note_count": 11,
+      "median_tone": 63
+    },
+    {
+      "section": "Verse 1B",
+      "text": "もっと怖いのは",
+      "kana": "もとこわいのは",
+      "start_seconds": 28.18,
+      "end_seconds": 31.78,
+      "note_count": 7,
+      "median_tone": 63
+    },
+    {
+      "section": "Verse 1B",
+      "text": "“何も送らない”っていう",
+      "kana": "なにもおくらないていう",
+      "start_seconds": 32.18,
+      "end_seconds": 35.78,
+      "note_count": 11,
+      "median_tone": 68
+    },
+    {
+      "section": "Verse 1B",
+      "text": "静かな選択",
+      "kana": "しずかなせんたく",
+      "start_seconds": 36.18,
+      "end_seconds": 39.78,
+      "note_count": 8,
+      "median_tone": 61
+    },
+    {
+      "section": "Pre-Chorus 1",
+      "text": "理由はいつも",
+      "kana": "りゆうはいつも",
+      "start_seconds": 40.18,
+      "end_seconds": 44.28,
+      "note_count": 7,
+      "median_tone": 63
+    },
+    {
+      "section": "Pre-Chorus 1",
+      "text": "あとから並べられる",
+      "kana": "あとからならべられる",
+      "start_seconds": 44.68,
+      "end_seconds": 48.78,
+      "note_count": 10,
+      "median_tone": 68
+    },
+    {
+      "section": "Pre-Chorus 1",
+      "text": "でも指先は先に",
+      "kana": "でもゆびさきはさきに",
+      "start_seconds": 49.18,
+      "end_seconds": 53.28,
+      "note_count": 10,
+      "median_tone": 63
+    },
+    {
+      "section": "Pre-Chorus 1",
+      "text": "生き方を押してしまう",
+      "kana": "いきかたをおしてしまう",
+      "start_seconds": 53.68,
+      "end_seconds": 57.78,
+      "note_count": 11,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 1A",
+      "text": "一行だけのメッセージで",
+      "kana": "いちぎょうだけのめせえじで",
+      "start_seconds": 58.18,
+      "end_seconds": 63.78,
+      "note_count": 13,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 1A",
+      "text": "この夜の形が決まるなら",
+      "kana": "このよるのかたちがきまるなら",
+      "start_seconds": 64.18,
+      "end_seconds": 69.78,
+      "note_count": 14,
+      "median_tone": 65
+    },
+    {
+      "section": "Chorus 1A",
+      "text": "僕は逃げ道の言い訳より",
+      "kana": "ぼくはにげみちのいいわけより",
+      "start_seconds": 70.18,
+      "end_seconds": 75.78,
+      "note_count": 14,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 1A",
+      "text": "小さな責任を選びたい（ねえ）",
+      "kana": "ちいさなせきにんをえらびたいねえ",
+      "start_seconds": 76.18,
+      "end_seconds": 81.78,
+      "note_count": 16,
+      "median_tone": 66
+    },
+    {
+      "section": "Chorus 1B",
+      "text": "さよならの続き書けなくて",
+      "kana": "さよならのつづきかけなくて",
+      "start_seconds": 82.18,
+      "end_seconds": 87.78,
+      "note_count": 13,
+      "median_tone": 68
+    },
+    {
+      "section": "Chorus 1B",
+      "text": "空白ばかり増えていくけど",
+      "kana": "くうはくばかりふえていくけど",
+      "start_seconds": 88.18,
+      "end_seconds": 93.78,
+      "note_count": 14,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 1B",
+      "text": "一行だけのメッセージで",
+      "kana": "いちぎょうだけのめせえじで",
+      "start_seconds": 94.18,
+      "end_seconds": 99.78,
+      "note_count": 13,
+      "median_tone": 68
+    },
+    {
+      "section": "Chorus 1B",
+      "text": "“意味”を置いて帰るよ",
+      "kana": "いみをおいてかえるよ",
+      "start_seconds": 100.18,
+      "end_seconds": 105.78,
+      "note_count": 10,
+      "median_tone": 63
+    },
+    {
+      "section": "Verse 2A",
+      "text": "タイムラインには",
+      "kana": "たいむらいんには",
+      "start_seconds": 106.18,
+      "end_seconds": 111.28,
+      "note_count": 8,
+      "median_tone": 61
+    },
+    {
+      "section": "Verse 2A",
+      "text": "知らない誰かの笑顔",
+      "kana": "しらないだれかのえがお",
+      "start_seconds": 111.68,
+      "end_seconds": 116.78,
+      "note_count": 11,
+      "median_tone": 70
+    },
+    {
+      "section": "Verse 2A",
+      "text": "強がってスクロールして",
+      "kana": "つよがてすくろおるして",
+      "start_seconds": 117.18,
+      "end_seconds": 122.28,
+      "note_count": 11,
+      "median_tone": 63
+    },
+    {
+      "section": "Verse 2A",
+      "text": "心だけ取り残す",
+      "kana": "こころだけとりのこす",
+      "start_seconds": 122.68,
+      "end_seconds": 127.78,
+      "note_count": 10,
+      "median_tone": 61
+    },
+    {
+      "section": "Verse 2B",
+      "text": "打ちかけの言葉が",
+      "kana": "うちかけのことばが",
+      "start_seconds": 128.18,
+      "end_seconds": 133.28,
+      "note_count": 9,
+      "median_tone": 70
+    },
+    {
+      "section": "Verse 2B",
+      "text": "震えて消えてくたび",
+      "kana": "ふるえてきえてくたび",
+      "start_seconds": 133.68,
+      "end_seconds": 138.78,
+      "note_count": 10,
+      "median_tone": 63
+    },
+    {
+      "section": "Verse 2B",
+      "text": "「どうせ…」の物語が",
+      "kana": "どうせのものがたりが",
+      "start_seconds": 139.18,
+      "end_seconds": 144.28,
+      "note_count": 10,
+      "median_tone": 63
+    },
+    {
+      "section": "Verse 2B",
+      "text": "また王冠をかぶる",
+      "kana": "またおうかんをかぶる",
+      "start_seconds": 144.68,
+      "end_seconds": 149.78,
+      "note_count": 10,
+      "median_tone": 63
+    },
+    {
+      "section": "Pre-Chorus 2",
+      "text": "“きっと決まってる”って",
+      "kana": "きときまてるて",
+      "start_seconds": 150.18,
+      "end_seconds": 155.78,
+      "note_count": 7,
+      "median_tone": 63
+    },
+    {
+      "section": "Pre-Chorus 2",
+      "text": "口にした瞬間",
+      "kana": "くちにしたしゅんかん",
+      "start_seconds": 156.18,
+      "end_seconds": 161.78,
+      "note_count": 10,
+      "median_tone": 63
+    },
+    {
+      "section": "Pre-Chorus 2",
+      "text": "僕の手のひらから",
+      "kana": "ぼくのてのひらから",
+      "start_seconds": 162.18,
+      "end_seconds": 167.78,
+      "note_count": 9,
+      "median_tone": 70
+    },
+    {
+      "section": "Pre-Chorus 2",
+      "text": "明日が落ちていく",
+      "kana": "あしたがおちていく",
+      "start_seconds": 168.18,
+      "end_seconds": 173.78,
+      "note_count": 9,
+      "median_tone": 68
+    },
+    {
+      "section": "Chorus 2A",
+      "text": "一行だけのメッセージで",
+      "kana": "いちぎょうだけのめせえじで",
+      "start_seconds": 174.18,
+      "end_seconds": 179.78,
+      "note_count": 13,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 2A",
+      "text": "戻れる場所を探す僕",
+      "kana": "もどれるばしょをさがすぼく",
+      "start_seconds": 180.18,
+      "end_seconds": 185.78,
+      "note_count": 13,
+      "median_tone": 70
+    },
+    {
+      "section": "Chorus 2A",
+      "text": "正しさは外に落ちてなくて",
+      "kana": "ただしさはそとにおちてなくて",
+      "start_seconds": 186.18,
+      "end_seconds": 191.78,
+      "note_count": 14,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 2A",
+      "text": "選んだ跡に立ち上がる（ああ）",
+      "kana": "えらんだあとにたちあがるああ",
+      "start_seconds": 192.18,
+      "end_seconds": 197.78,
+      "note_count": 14,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 2B",
+      "text": "言えなかったこと数えたら",
+      "kana": "いえなかたことかぞえたら",
+      "start_seconds": 198.18,
+      "end_seconds": 203.78,
+      "note_count": 12,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 2B",
+      "text": "画面に入りきらないほど",
+      "kana": "がめんにはいりきらないほど",
+      "start_seconds": 204.18,
+      "end_seconds": 209.78,
+      "note_count": 13,
+      "median_tone": 63
+    },
+    {
+      "section": "Chorus 2B",
+      "text": "それでも一行だけで",
+      "kana": "それでもいちぎょうだけで",
+      "start_seconds": 210.18,
+      "end_seconds": 215.78,
+      "note_count": 12,
+      "median_tone": 61
+    },
+    {
+      "section": "Chorus 2B",
+      "text": "世界に参加していたい",
+      "kana": "せかいにさんかしていたい",
+      "start_seconds": 216.18,
+      "end_seconds": 221.78,
+      "note_count": 12,
+      "median_tone": 72
+    },
+    {
+      "section": "Bridge",
+      "text": "もしも明日",
+      "kana": "もしもあした",
+      "start_seconds": 222.18,
+      "end_seconds": 227.28,
+      "note_count": 6,
+      "median_tone": 70
+    },
+    {
+      "section": "Bridge",
+      "text": "ただの友だちで笑えたら",
+      "kana": "ただのともだちでわらえたら",
+      "start_seconds": 227.68,
+      "end_seconds": 232.78,
+      "note_count": 13,
+      "median_tone": 70
+    },
+    {
+      "section": "Bridge",
+      "text": "それだけでいい",
+      "kana": "それだけでいい",
+      "start_seconds": 233.18,
+      "end_seconds": 238.28,
+      "note_count": 7,
+      "median_tone": 70
+    },
+    {
+      "section": "Bridge",
+      "text": "そう言い聞かせて",
+      "kana": "そういいきかせて",
+      "start_seconds": 238.68,
+      "end_seconds": 243.78,
+      "note_count": 8,
+      "median_tone": 63
+    },
+    {
+      "section": "Bridge reveal",
+      "text": "でも本当は知ってる",
+      "kana": "でもほんとうはしってる",
+      "start_seconds": 244.18,
+      "end_seconds": 248.28,
+      "note_count": 10,
+      "median_tone": 63
+    },
+    {
+      "section": "Bridge reveal",
+      "text": "沈黙もまた",
+      "kana": "ちんもくもまた",
+      "start_seconds": 248.68,
+      "end_seconds": 252.78,
+      "note_count": 7,
+      "median_tone": 70
+    },
+    {
+      "section": "Bridge reveal",
+      "text": "誰かの夜を",
+      "kana": "だれかのよるを",
+      "start_seconds": 253.18,
+      "end_seconds": 257.28,
+      "note_count": 7,
+      "median_tone": 63
+    },
+    {
+      "section": "Bridge reveal",
+      "text": "増やしてしまうって",
+      "kana": "ふやしてしまうて",
+      "start_seconds": 257.68,
+      "end_seconds": 261.78,
+      "note_count": 8,
+      "median_tone": 65
+    },
+    {
+      "section": "Breath/leap",
+      "text": "（息）…はぁ…",
+      "kana": "はあ",
+      "start_seconds": 262.18,
+      "end_seconds": 264.78,
+      "note_count": 2,
+      "median_tone": 70
+    },
+    {
+      "section": "Breath/leap",
+      "text": "打ち直す「元気？」の三文字",
+      "kana": "うちなおすげんきのさんもじ",
+      "start_seconds": 265.18,
+      "end_seconds": 267.78,
+      "note_count": 13,
+      "median_tone": 65
+    },
+    {
+      "section": "Breath/leap",
+      "text": "跳ぶのは信仰じゃなくて",
+      "kana": "とぶのはしんこうじゃなくて",
+      "start_seconds": 268.18,
+      "end_seconds": 270.78,
+      "note_count": 13,
+      "median_tone": 63
+    },
+    {
+      "section": "Breath/leap",
+      "text": "“投げ出さない”という決意",
+      "kana": "なげださないというけつい",
+      "start_seconds": 271.18,
+      "end_seconds": 273.78,
+      "note_count": 12,
+      "median_tone": 63
+    },
+    {
+      "section": "Final Chorus",
+      "text": "一行だけのメッセージで",
+      "kana": "いちぎょうだけのめせえじで",
+      "start_seconds": 274.165,
+      "end_seconds": 276.53,
+      "note_count": 13,
+      "median_tone": 70
+    },
+    {
+      "section": "Final Chorus",
+      "text": "つながる夜があるのなら",
+      "kana": "つながるよるがあるのなら",
+      "start_seconds": 276.915,
+      "end_seconds": 279.28,
+      "note_count": 12,
+      "median_tone": 70
+    },
+    {
+      "section": "Final Chorus",
+      "text": "返事なんてもう来なくても",
+      "kana": "へんじなんてもうこなくても",
+      "start_seconds": 279.665,
+      "end_seconds": 282.03,
+      "note_count": 13,
+      "median_tone": 70
+    },
+    {
+      "section": "Final Chorus",
+      "text": "名前を呼べた気がするよ",
+      "kana": "なまえをよべたきがするよ",
+      "start_seconds": 282.415,
+      "end_seconds": 284.78,
+      "note_count": 12,
+      "median_tone": 70
+    },
+    {
+      "section": "Final Chorus",
+      "text": "“どうせ”の続き書けなくて",
+      "kana": "どうせのつづきかけなくて",
+      "start_seconds": 285.165,
+      "end_seconds": 287.53,
+      "note_count": 12,
+      "median_tone": 70
+    },
+    {
+      "section": "Final Chorus",
+      "text": "それでも送信を押してみる",
+      "kana": "それでもそうしんをおしてみる",
+      "start_seconds": 287.915,
+      "end_seconds": 290.28,
+      "note_count": 14,
+      "median_tone": 65
+    },
+    {
+      "section": "Final Chorus",
+      "text": "一行だけのメッセージで",
+      "kana": "いちぎょうだけのめせえじで",
+      "start_seconds": 290.665,
+      "end_seconds": 293.03,
+      "note_count": 13,
+      "median_tone": 65
+    },
+    {
+      "section": "Final Chorus",
+      "text": "僕は明日を肯定する",
+      "kana": "ぼくはあしたをこうていする",
+      "start_seconds": 293.415,
+      "end_seconds": 295.78,
+      "note_count": 13,
+      "median_tone": 65
+    },
+    {
+      "section": "Outro",
+      "text": "（息）…",
+      "kana": "はあ",
+      "start_seconds": 296.146,
+      "end_seconds": 298.245,
+      "note_count": 2,
+      "median_tone": 63
+    },
+    {
+      "section": "Outro",
+      "text": "一行だけ",
+      "kana": "いちぎょうだけ",
+      "start_seconds": 298.586,
+      "end_seconds": 300.685,
+      "note_count": 7,
+      "median_tone": 63
+    },
+    {
+      "section": "Outro",
+      "text": "それで十分だ",
+      "kana": "それでじゅうぶんだ",
+      "start_seconds": 301.026,
+      "end_seconds": 303.125,
+      "note_count": 9,
+      "median_tone": 63
+    }
+  ],
+  "notes": [
+    {
+      "position": 144,
+      "duration": 1426,
+      "tone": 63,
+      "lyric": "は",
+      "section": "Intro breath/spoken",
+      "source_text": "（息）…はぁ…"
+    },
+    {
+      "position": 1598,
+      "duration": 1426,
+      "tone": 63,
+      "lyric": "あ",
+      "section": "Intro breath/spoken",
+      "source_text": "（息）…はぁ…"
+    },
+    {
+      "position": 3344,
+      "duration": 941,
+      "tone": 61,
+      "lyric": "げ",
+      "section": "Intro breath/spoken",
+      "source_text": "「元気？」"
+    },
+    {
+      "position": 4313,
+      "duration": 941,
+      "tone": 61,
+      "lyric": "ん",
+      "section": "Intro breath/spoken",
+      "source_text": "「元気？」"
+    },
+    {
+      "position": 5283,
+      "duration": 941,
+      "tone": 62,
+      "lyric": "き",
+      "section": "Intro breath/spoken",
+      "source_text": "「元気？」"
+    },
+    {
+      "position": 6544,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "さ",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 6752,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "ん",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 6959,
+      "duration": 180,
+      "tone": 64,
+      "lyric": "も",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 7167,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "じ",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 7375,
+      "duration": 180,
+      "tone": 62,
+      "lyric": "だ",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 7583,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "け",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 7790,
+      "duration": 180,
+      "tone": 64,
+      "lyric": "で",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 7998,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "せ",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 8206,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "か",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 8413,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 8621,
+      "duration": 180,
+      "tone": 64,
+      "lyric": "が",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 8829,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "ゆ",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 9037,
+      "duration": 180,
+      "tone": 62,
+      "lyric": "れ",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 9244,
+      "duration": 180,
+      "tone": 63,
+      "lyric": "る",
+      "section": "Intro breath/spoken",
+      "source_text": "三文字だけで、世界が揺れる"
+    },
+    {
+      "position": 9744,
+      "duration": 323,
+      "tone": 68,
+      "lyric": "げ",
+      "section": "Verse 1A",
+      "source_text": "「元気だよ」って"
+    },
+    {
+      "position": 10095,
+      "duration": 323,
+      "tone": 68,
+      "lyric": "ん",
+      "section": "Verse 1A",
+      "source_text": "「元気だよ」って"
+    },
+    {
+      "position": 10447,
+      "duration": 323,
+      "tone": 69,
+      "lyric": "き",
+      "section": "Verse 1A",
+      "source_text": "「元気だよ」って"
+    },
+    {
+      "position": 10798,
+      "duration": 323,
+      "tone": 68,
+      "lyric": "だ",
+      "section": "Verse 1A",
+      "source_text": "「元気だよ」って"
+    },
+    {
+      "position": 11149,
+      "duration": 323,
+      "tone": 67,
+      "lyric": "よ",
+      "section": "Verse 1A",
+      "source_text": "「元気だよ」って"
+    },
+    {
+      "position": 11501,
+      "duration": 323,
+      "tone": 68,
+      "lyric": "て",
+      "section": "Verse 1A",
+      "source_text": "「元気だよ」って"
+    },
+    {
+      "position": 12144,
+      "duration": 148,
+      "tone": 61,
+      "lyric": "い",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 12320,
+      "duration": 148,
+      "tone": 61,
+      "lyric": "ち",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 12495,
+      "duration": 148,
+      "tone": 62,
+      "lyric": "ぎ",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 12671,
+      "duration": 148,
+      "tone": 61,
+      "lyric": "ょ",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 12847,
+      "duration": 148,
+      "tone": 60,
+      "lyric": "う",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 13022,
+      "duration": 148,
+      "tone": 61,
+      "lyric": "だ",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 13198,
+      "duration": 148,
+      "tone": 62,
+      "lyric": "け",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 13374,
+      "duration": 148,
+      "tone": 61,
+      "lyric": "の",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 13549,
+      "duration": 148,
+      "tone": 61,
+      "lyric": "め",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 13725,
+      "duration": 148,
+      "tone": 61,
+      "lyric": "せ",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 13901,
+      "duration": 148,
+      "tone": 62,
+      "lyric": "え",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 14076,
+      "duration": 148,
+      "tone": 61,
+      "lyric": "じ",
+      "section": "Verse 1A",
+      "source_text": "一行だけのメッセージ"
+    },
+    {
+      "position": 14544,
+      "duration": 236,
+      "tone": 60,
+      "lyric": "き",
+      "section": "Verse 1A",
+      "source_text": "既読の灯りが"
+    },
+    {
+      "position": 14807,
+      "duration": 236,
+      "tone": 60,
+      "lyric": "ど",
+      "section": "Verse 1A",
+      "source_text": "既読の灯りが"
+    },
+    {
+      "position": 15071,
+      "duration": 236,
+      "tone": 61,
+      "lyric": "く",
+      "section": "Verse 1A",
+      "source_text": "既読の灯りが"
+    },
+    {
+      "position": 15335,
+      "duration": 236,
+      "tone": 60,
+      "lyric": "の",
+      "section": "Verse 1A",
+      "source_text": "既読の灯りが"
+    },
+    {
+      "position": 15598,
+      "duration": 236,
+      "tone": 60,
+      "lyric": "あ",
+      "section": "Verse 1A",
+      "source_text": "既読の灯りが"
+    },
+    {
+      "position": 15862,
+      "duration": 236,
+      "tone": 60,
+      "lyric": "か",
+      "section": "Verse 1A",
+      "source_text": "既読の灯りが"
+    },
+    {
+      "position": 16125,
+      "duration": 236,
+      "tone": 61,
+      "lyric": "り",
+      "section": "Verse 1A",
+      "source_text": "既読の灯りが"
+    },
+    {
+      "position": 16389,
+      "duration": 235,
+      "tone": 60,
+      "lyric": "が",
+      "section": "Verse 1A",
+      "source_text": "既読の灯りが"
+    },
+    {
+      "position": 16944,
+      "duration": 164,
+      "tone": 61,
+      "lyric": "む",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 17136,
+      "duration": 164,
+      "tone": 61,
+      "lyric": "ね",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 17327,
+      "duration": 164,
+      "tone": 62,
+      "lyric": "の",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 17519,
+      "duration": 164,
+      "tone": 61,
+      "lyric": "そ",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 17711,
+      "duration": 164,
+      "tone": 60,
+      "lyric": "こ",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 17902,
+      "duration": 164,
+      "tone": 61,
+      "lyric": "を",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 18094,
+      "duration": 164,
+      "tone": 62,
+      "lyric": "た",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 18285,
+      "duration": 164,
+      "tone": 61,
+      "lyric": "た",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 18477,
+      "duration": 164,
+      "tone": 61,
+      "lyric": "い",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 18669,
+      "duration": 164,
+      "tone": 61,
+      "lyric": "て",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 18860,
+      "duration": 164,
+      "tone": 62,
+      "lyric": "る",
+      "section": "Verse 1A",
+      "source_text": "胸の底を叩いてる"
+    },
+    {
+      "position": 19344,
+      "duration": 236,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 19608,
+      "duration": 236,
+      "tone": 63,
+      "lyric": "え",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 19873,
+      "duration": 236,
+      "tone": 64,
+      "lyric": "な",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 20137,
+      "duration": 236,
+      "tone": 63,
+      "lyric": "か",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 20401,
+      "duration": 236,
+      "tone": 62,
+      "lyric": "た",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 20666,
+      "duration": 236,
+      "tone": 63,
+      "lyric": "ご",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 20930,
+      "duration": 236,
+      "tone": 64,
+      "lyric": "め",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 21195,
+      "duration": 236,
+      "tone": 63,
+      "lyric": "ん",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 21459,
+      "duration": 236,
+      "tone": 63,
+      "lyric": "ね",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 21723,
+      "duration": 236,
+      "tone": 63,
+      "lyric": "よ",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 21988,
+      "duration": 236,
+      "tone": 64,
+      "lyric": "り",
+      "section": "Verse 1B",
+      "source_text": "言えなかった「ごめんね」より"
+    },
+    {
+      "position": 22544,
+      "duration": 387,
+      "tone": 63,
+      "lyric": "も",
+      "section": "Verse 1B",
+      "source_text": "もっと怖いのは"
+    },
+    {
+      "position": 22959,
+      "duration": 387,
+      "tone": 63,
+      "lyric": "と",
+      "section": "Verse 1B",
+      "source_text": "もっと怖いのは"
+    },
+    {
+      "position": 23375,
+      "duration": 387,
+      "tone": 64,
+      "lyric": "こ",
+      "section": "Verse 1B",
+      "source_text": "もっと怖いのは"
+    },
+    {
+      "position": 23790,
+      "duration": 387,
+      "tone": 63,
+      "lyric": "わ",
+      "section": "Verse 1B",
+      "source_text": "もっと怖いのは"
+    },
+    {
+      "position": 24206,
+      "duration": 387,
+      "tone": 62,
+      "lyric": "い",
+      "section": "Verse 1B",
+      "source_text": "もっと怖いのは"
+    },
+    {
+      "position": 24621,
+      "duration": 387,
+      "tone": 63,
+      "lyric": "の",
+      "section": "Verse 1B",
+      "source_text": "もっと怖いのは"
+    },
+    {
+      "position": 25037,
+      "duration": 387,
+      "tone": 64,
+      "lyric": "は",
+      "section": "Verse 1B",
+      "source_text": "もっと怖いのは"
+    },
+    {
+      "position": 25744,
+      "duration": 236,
+      "tone": 68,
+      "lyric": "な",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 26008,
+      "duration": 236,
+      "tone": 68,
+      "lyric": "に",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 26273,
+      "duration": 236,
+      "tone": 69,
+      "lyric": "も",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 26537,
+      "duration": 236,
+      "tone": 68,
+      "lyric": "お",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 26801,
+      "duration": 236,
+      "tone": 67,
+      "lyric": "く",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 27066,
+      "duration": 236,
+      "tone": 68,
+      "lyric": "ら",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 27330,
+      "duration": 236,
+      "tone": 69,
+      "lyric": "な",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 27595,
+      "duration": 236,
+      "tone": 68,
+      "lyric": "い",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 27859,
+      "duration": 236,
+      "tone": 68,
+      "lyric": "て",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 28123,
+      "duration": 236,
+      "tone": 68,
+      "lyric": "い",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 28388,
+      "duration": 236,
+      "tone": 69,
+      "lyric": "う",
+      "section": "Verse 1B",
+      "source_text": "“何も送らない”っていう"
+    },
+    {
+      "position": 28944,
+      "duration": 336,
+      "tone": 61,
+      "lyric": "し",
+      "section": "Verse 1B",
+      "source_text": "静かな選択"
+    },
+    {
+      "position": 29308,
+      "duration": 336,
+      "tone": 61,
+      "lyric": "ず",
+      "section": "Verse 1B",
+      "source_text": "静かな選択"
+    },
+    {
+      "position": 29671,
+      "duration": 336,
+      "tone": 62,
+      "lyric": "か",
+      "section": "Verse 1B",
+      "source_text": "静かな選択"
+    },
+    {
+      "position": 30035,
+      "duration": 336,
+      "tone": 61,
+      "lyric": "な",
+      "section": "Verse 1B",
+      "source_text": "静かな選択"
+    },
+    {
+      "position": 30398,
+      "duration": 336,
+      "tone": 60,
+      "lyric": "せ",
+      "section": "Verse 1B",
+      "source_text": "静かな選択"
+    },
+    {
+      "position": 30762,
+      "duration": 336,
+      "tone": 61,
+      "lyric": "ん",
+      "section": "Verse 1B",
+      "source_text": "静かな選択"
+    },
+    {
+      "position": 31125,
+      "duration": 336,
+      "tone": 62,
+      "lyric": "た",
+      "section": "Verse 1B",
+      "source_text": "静かな選択"
+    },
+    {
+      "position": 31489,
+      "duration": 336,
+      "tone": 61,
+      "lyric": "く",
+      "section": "Verse 1B",
+      "source_text": "静かな選択"
+    },
+    {
+      "position": 32144,
+      "duration": 445,
+      "tone": 63,
+      "lyric": "り",
+      "section": "Pre-Chorus 1",
+      "source_text": "理由はいつも"
+    },
+    {
+      "position": 32617,
+      "duration": 445,
+      "tone": 64,
+      "lyric": "ゆ",
+      "section": "Pre-Chorus 1",
+      "source_text": "理由はいつも"
+    },
+    {
+      "position": 33089,
+      "duration": 445,
+      "tone": 65,
+      "lyric": "う",
+      "section": "Pre-Chorus 1",
+      "source_text": "理由はいつも"
+    },
+    {
+      "position": 33562,
+      "duration": 445,
+      "tone": 66,
+      "lyric": "は",
+      "section": "Pre-Chorus 1",
+      "source_text": "理由はいつも"
+    },
+    {
+      "position": 34034,
+      "duration": 445,
+      "tone": 65,
+      "lyric": "い",
+      "section": "Pre-Chorus 1",
+      "source_text": "理由はいつも"
+    },
+    {
+      "position": 34507,
+      "duration": 445,
+      "tone": 64,
+      "lyric": "つ",
+      "section": "Pre-Chorus 1",
+      "source_text": "理由はいつも"
+    },
+    {
+      "position": 34979,
+      "duration": 445,
+      "tone": 65,
+      "lyric": "も",
+      "section": "Pre-Chorus 1",
+      "source_text": "理由はいつも"
+    },
+    {
+      "position": 35744,
+      "duration": 303,
+      "tone": 68,
+      "lyric": "あ",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 36075,
+      "duration": 303,
+      "tone": 69,
+      "lyric": "と",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 36406,
+      "duration": 303,
+      "tone": 70,
+      "lyric": "か",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 36736,
+      "duration": 303,
+      "tone": 71,
+      "lyric": "ら",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 37067,
+      "duration": 303,
+      "tone": 70,
+      "lyric": "な",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 37398,
+      "duration": 303,
+      "tone": 69,
+      "lyric": "ら",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 37729,
+      "duration": 303,
+      "tone": 70,
+      "lyric": "べ",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 38060,
+      "duration": 303,
+      "tone": 68,
+      "lyric": "ら",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 38390,
+      "duration": 303,
+      "tone": 68,
+      "lyric": "れ",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 38721,
+      "duration": 303,
+      "tone": 69,
+      "lyric": "る",
+      "section": "Pre-Chorus 1",
+      "source_text": "あとから並べられる"
+    },
+    {
+      "position": 39344,
+      "duration": 303,
+      "tone": 63,
+      "lyric": "で",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 39675,
+      "duration": 303,
+      "tone": 64,
+      "lyric": "も",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 40006,
+      "duration": 303,
+      "tone": 65,
+      "lyric": "ゆ",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 40336,
+      "duration": 303,
+      "tone": 66,
+      "lyric": "び",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 40667,
+      "duration": 303,
+      "tone": 65,
+      "lyric": "さ",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 40998,
+      "duration": 303,
+      "tone": 64,
+      "lyric": "き",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 41329,
+      "duration": 303,
+      "tone": 65,
+      "lyric": "は",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 41660,
+      "duration": 303,
+      "tone": 63,
+      "lyric": "さ",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 41990,
+      "duration": 303,
+      "tone": 63,
+      "lyric": "き",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 42321,
+      "duration": 303,
+      "tone": 64,
+      "lyric": "に",
+      "section": "Pre-Chorus 1",
+      "source_text": "でも指先は先に"
+    },
+    {
+      "position": 42944,
+      "duration": 273,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 43245,
+      "duration": 273,
+      "tone": 64,
+      "lyric": "き",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 43545,
+      "duration": 273,
+      "tone": 65,
+      "lyric": "か",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 43846,
+      "duration": 273,
+      "tone": 66,
+      "lyric": "た",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 44147,
+      "duration": 273,
+      "tone": 65,
+      "lyric": "を",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 44448,
+      "duration": 273,
+      "tone": 64,
+      "lyric": "お",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 44748,
+      "duration": 273,
+      "tone": 65,
+      "lyric": "し",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 45049,
+      "duration": 273,
+      "tone": 63,
+      "lyric": "て",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 45350,
+      "duration": 273,
+      "tone": 63,
+      "lyric": "し",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 45651,
+      "duration": 273,
+      "tone": 64,
+      "lyric": "ま",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 45951,
+      "duration": 273,
+      "tone": 65,
+      "lyric": "う",
+      "section": "Pre-Chorus 1",
+      "source_text": "生き方を押してしまう"
+    },
+    {
+      "position": 46544,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 46891,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "ち",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 47238,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "ぎ",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 47584,
+      "duration": 319,
+      "tone": 66,
+      "lyric": "ょ",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 47931,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "う",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 48278,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "だ",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 48625,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "け",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 48971,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "の",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 49318,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "め",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 49665,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "せ",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 50012,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "え",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 50358,
+      "duration": 319,
+      "tone": 66,
+      "lyric": "じ",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 50705,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "で",
+      "section": "Chorus 1A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 51344,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "こ",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 51666,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "の",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 51988,
+      "duration": 294,
+      "tone": 67,
+      "lyric": "よ",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 52310,
+      "duration": 294,
+      "tone": 68,
+      "lyric": "る",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 52632,
+      "duration": 294,
+      "tone": 67,
+      "lyric": "の",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 52954,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "か",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 53276,
+      "duration": 294,
+      "tone": 67,
+      "lyric": "た",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 53598,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "ち",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 53920,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "が",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 54242,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "き",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 54564,
+      "duration": 294,
+      "tone": 67,
+      "lyric": "ま",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 54886,
+      "duration": 294,
+      "tone": 68,
+      "lyric": "る",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 55208,
+      "duration": 294,
+      "tone": 67,
+      "lyric": "な",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 55530,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "ら",
+      "section": "Chorus 1A",
+      "source_text": "この夜の形が決まるなら"
+    },
+    {
+      "position": 56144,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "ぼ",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 56466,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "く",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 56788,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "は",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 57110,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "に",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 57432,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "げ",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 57754,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "み",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 58076,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "ち",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 58398,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "の",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 58720,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 59042,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "い",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 59364,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "わ",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 59686,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "け",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 60008,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "よ",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 60330,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "り",
+      "section": "Chorus 1A",
+      "source_text": "僕は逃げ道の言い訳より"
+    },
+    {
+      "position": 60944,
+      "duration": 254,
+      "tone": 66,
+      "lyric": "ち",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 61226,
+      "duration": 254,
+      "tone": 67,
+      "lyric": "い",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 61508,
+      "duration": 254,
+      "tone": 68,
+      "lyric": "さ",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 61789,
+      "duration": 254,
+      "tone": 69,
+      "lyric": "な",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 62071,
+      "duration": 254,
+      "tone": 68,
+      "lyric": "せ",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 62353,
+      "duration": 254,
+      "tone": 67,
+      "lyric": "き",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 62635,
+      "duration": 254,
+      "tone": 68,
+      "lyric": "に",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 62916,
+      "duration": 254,
+      "tone": 66,
+      "lyric": "ん",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 63198,
+      "duration": 254,
+      "tone": 66,
+      "lyric": "を",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 63480,
+      "duration": 254,
+      "tone": 67,
+      "lyric": "え",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 63762,
+      "duration": 254,
+      "tone": 68,
+      "lyric": "ら",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 64043,
+      "duration": 254,
+      "tone": 69,
+      "lyric": "び",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 64325,
+      "duration": 254,
+      "tone": 68,
+      "lyric": "た",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 64607,
+      "duration": 254,
+      "tone": 67,
+      "lyric": "い",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 64889,
+      "duration": 254,
+      "tone": 68,
+      "lyric": "ね",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 65170,
+      "duration": 254,
+      "tone": 66,
+      "lyric": "え",
+      "section": "Chorus 1A",
+      "source_text": "小さな責任を選びたい（ねえ）"
+    },
+    {
+      "position": 65744,
+      "duration": 319,
+      "tone": 68,
+      "lyric": "さ",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 66091,
+      "duration": 319,
+      "tone": 69,
+      "lyric": "よ",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 66438,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "な",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 66784,
+      "duration": 319,
+      "tone": 71,
+      "lyric": "ら",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 67131,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "の",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 67478,
+      "duration": 319,
+      "tone": 69,
+      "lyric": "つ",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 67825,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "づ",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 68171,
+      "duration": 319,
+      "tone": 68,
+      "lyric": "き",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 68518,
+      "duration": 319,
+      "tone": 68,
+      "lyric": "か",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 68865,
+      "duration": 319,
+      "tone": 69,
+      "lyric": "け",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 69212,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "な",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 69558,
+      "duration": 319,
+      "tone": 71,
+      "lyric": "く",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 69905,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "て",
+      "section": "Chorus 1B",
+      "source_text": "さよならの続き書けなくて"
+    },
+    {
+      "position": 70544,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "く",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 70866,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "う",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 71188,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "は",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 71510,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "く",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 71832,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "ば",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 72154,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "か",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 72476,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "り",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 72798,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "ふ",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 73120,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "え",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 73442,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "て",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 73764,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "い",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 74086,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "く",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 74408,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "け",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 74730,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "ど",
+      "section": "Chorus 1B",
+      "source_text": "空白ばかり増えていくけど"
+    },
+    {
+      "position": 75344,
+      "duration": 319,
+      "tone": 68,
+      "lyric": "い",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 75691,
+      "duration": 319,
+      "tone": 69,
+      "lyric": "ち",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 76038,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "ぎ",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 76384,
+      "duration": 319,
+      "tone": 71,
+      "lyric": "ょ",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 76731,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "う",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 77078,
+      "duration": 319,
+      "tone": 69,
+      "lyric": "だ",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 77425,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "け",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 77771,
+      "duration": 319,
+      "tone": 68,
+      "lyric": "の",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 78118,
+      "duration": 319,
+      "tone": 68,
+      "lyric": "め",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 78465,
+      "duration": 319,
+      "tone": 69,
+      "lyric": "せ",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 78812,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "え",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 79158,
+      "duration": 319,
+      "tone": 71,
+      "lyric": "じ",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 79505,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "で",
+      "section": "Chorus 1B",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 80144,
+      "duration": 423,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 80595,
+      "duration": 423,
+      "tone": 64,
+      "lyric": "み",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 81046,
+      "duration": 423,
+      "tone": 65,
+      "lyric": "を",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 81496,
+      "duration": 423,
+      "tone": 66,
+      "lyric": "お",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 81947,
+      "duration": 423,
+      "tone": 65,
+      "lyric": "い",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 82398,
+      "duration": 423,
+      "tone": 64,
+      "lyric": "て",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 82849,
+      "duration": 423,
+      "tone": 65,
+      "lyric": "か",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 83300,
+      "duration": 423,
+      "tone": 63,
+      "lyric": "え",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 83750,
+      "duration": 423,
+      "tone": 63,
+      "lyric": "る",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 84201,
+      "duration": 423,
+      "tone": 64,
+      "lyric": "よ",
+      "section": "Chorus 1B",
+      "source_text": "“意味”を置いて帰るよ"
+    },
+    {
+      "position": 84944,
+      "duration": 485,
+      "tone": 61,
+      "lyric": "た",
+      "section": "Verse 2A",
+      "source_text": "タイムラインには"
+    },
+    {
+      "position": 85458,
+      "duration": 485,
+      "tone": 61,
+      "lyric": "い",
+      "section": "Verse 2A",
+      "source_text": "タイムラインには"
+    },
+    {
+      "position": 85971,
+      "duration": 485,
+      "tone": 62,
+      "lyric": "む",
+      "section": "Verse 2A",
+      "source_text": "タイムラインには"
+    },
+    {
+      "position": 86485,
+      "duration": 485,
+      "tone": 61,
+      "lyric": "ら",
+      "section": "Verse 2A",
+      "source_text": "タイムラインには"
+    },
+    {
+      "position": 86998,
+      "duration": 485,
+      "tone": 60,
+      "lyric": "い",
+      "section": "Verse 2A",
+      "source_text": "タイムラインには"
+    },
+    {
+      "position": 87512,
+      "duration": 485,
+      "tone": 61,
+      "lyric": "ん",
+      "section": "Verse 2A",
+      "source_text": "タイムラインには"
+    },
+    {
+      "position": 88025,
+      "duration": 485,
+      "tone": 62,
+      "lyric": "に",
+      "section": "Verse 2A",
+      "source_text": "タイムラインには"
+    },
+    {
+      "position": 88539,
+      "duration": 486,
+      "tone": 61,
+      "lyric": "は",
+      "section": "Verse 2A",
+      "source_text": "タイムラインには"
+    },
+    {
+      "position": 89344,
+      "duration": 345,
+      "tone": 70,
+      "lyric": "し",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 89717,
+      "duration": 345,
+      "tone": 70,
+      "lyric": "ら",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 90091,
+      "duration": 345,
+      "tone": 71,
+      "lyric": "な",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 90464,
+      "duration": 345,
+      "tone": 70,
+      "lyric": "い",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 90838,
+      "duration": 345,
+      "tone": 69,
+      "lyric": "だ",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 91211,
+      "duration": 345,
+      "tone": 70,
+      "lyric": "れ",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 91585,
+      "duration": 345,
+      "tone": 71,
+      "lyric": "か",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 91958,
+      "duration": 345,
+      "tone": 70,
+      "lyric": "の",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 92332,
+      "duration": 345,
+      "tone": 70,
+      "lyric": "え",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 92705,
+      "duration": 345,
+      "tone": 70,
+      "lyric": "が",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 93079,
+      "duration": 345,
+      "tone": 71,
+      "lyric": "お",
+      "section": "Verse 2A",
+      "source_text": "知らない誰かの笑顔"
+    },
+    {
+      "position": 93744,
+      "duration": 345,
+      "tone": 63,
+      "lyric": "つ",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 94117,
+      "duration": 345,
+      "tone": 63,
+      "lyric": "よ",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 94491,
+      "duration": 345,
+      "tone": 64,
+      "lyric": "が",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 94864,
+      "duration": 345,
+      "tone": 63,
+      "lyric": "て",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 95238,
+      "duration": 345,
+      "tone": 62,
+      "lyric": "す",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 95611,
+      "duration": 345,
+      "tone": 63,
+      "lyric": "く",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 95985,
+      "duration": 345,
+      "tone": 64,
+      "lyric": "ろ",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 96358,
+      "duration": 345,
+      "tone": 63,
+      "lyric": "お",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 96732,
+      "duration": 345,
+      "tone": 63,
+      "lyric": "る",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 97105,
+      "duration": 345,
+      "tone": 63,
+      "lyric": "し",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 97479,
+      "duration": 345,
+      "tone": 64,
+      "lyric": "て",
+      "section": "Verse 2A",
+      "source_text": "強がってスクロールして"
+    },
+    {
+      "position": 98144,
+      "duration": 383,
+      "tone": 61,
+      "lyric": "こ",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 98555,
+      "duration": 383,
+      "tone": 61,
+      "lyric": "こ",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 98966,
+      "duration": 383,
+      "tone": 62,
+      "lyric": "ろ",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 99376,
+      "duration": 383,
+      "tone": 61,
+      "lyric": "だ",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 99787,
+      "duration": 383,
+      "tone": 60,
+      "lyric": "け",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 100198,
+      "duration": 383,
+      "tone": 61,
+      "lyric": "と",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 100609,
+      "duration": 383,
+      "tone": 62,
+      "lyric": "り",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 101020,
+      "duration": 383,
+      "tone": 61,
+      "lyric": "の",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 101430,
+      "duration": 383,
+      "tone": 61,
+      "lyric": "こ",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 101841,
+      "duration": 383,
+      "tone": 61,
+      "lyric": "す",
+      "section": "Verse 2A",
+      "source_text": "心だけ取り残す"
+    },
+    {
+      "position": 102544,
+      "duration": 428,
+      "tone": 70,
+      "lyric": "う",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 103000,
+      "duration": 428,
+      "tone": 70,
+      "lyric": "ち",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 103457,
+      "duration": 428,
+      "tone": 71,
+      "lyric": "か",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 103913,
+      "duration": 428,
+      "tone": 70,
+      "lyric": "け",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 104370,
+      "duration": 428,
+      "tone": 69,
+      "lyric": "の",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 104826,
+      "duration": 428,
+      "tone": 70,
+      "lyric": "こ",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 105283,
+      "duration": 428,
+      "tone": 71,
+      "lyric": "と",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 105739,
+      "duration": 428,
+      "tone": 70,
+      "lyric": "ば",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 106196,
+      "duration": 428,
+      "tone": 70,
+      "lyric": "が",
+      "section": "Verse 2B",
+      "source_text": "打ちかけの言葉が"
+    },
+    {
+      "position": 106944,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "ふ",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 107355,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "る",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 107766,
+      "duration": 383,
+      "tone": 64,
+      "lyric": "え",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 108176,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "て",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 108587,
+      "duration": 383,
+      "tone": 62,
+      "lyric": "き",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 108998,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "え",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 109409,
+      "duration": 383,
+      "tone": 64,
+      "lyric": "て",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 109820,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "く",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 110230,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "た",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 110641,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "び",
+      "section": "Verse 2B",
+      "source_text": "震えて消えてくたび"
+    },
+    {
+      "position": 111344,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "ど",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 111755,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "う",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 112166,
+      "duration": 383,
+      "tone": 64,
+      "lyric": "せ",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 112576,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "の",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 112987,
+      "duration": 383,
+      "tone": 62,
+      "lyric": "も",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 113398,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "の",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 113809,
+      "duration": 383,
+      "tone": 64,
+      "lyric": "が",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 114220,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "た",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 114630,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "り",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 115041,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "が",
+      "section": "Verse 2B",
+      "source_text": "「どうせ…」の物語が"
+    },
+    {
+      "position": 115744,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "ま",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 116155,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "た",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 116566,
+      "duration": 383,
+      "tone": 64,
+      "lyric": "お",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 116976,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "う",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 117387,
+      "duration": 383,
+      "tone": 62,
+      "lyric": "か",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 117798,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "ん",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 118209,
+      "duration": 383,
+      "tone": 64,
+      "lyric": "を",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 118620,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "か",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 119030,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "ぶ",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 119441,
+      "duration": 383,
+      "tone": 63,
+      "lyric": "る",
+      "section": "Verse 2B",
+      "source_text": "また王冠をかぶる"
+    },
+    {
+      "position": 120144,
+      "duration": 616,
+      "tone": 63,
+      "lyric": "き",
+      "section": "Pre-Chorus 2",
+      "source_text": "“きっと決まってる”って"
+    },
+    {
+      "position": 120788,
+      "duration": 616,
+      "tone": 64,
+      "lyric": "と",
+      "section": "Pre-Chorus 2",
+      "source_text": "“きっと決まってる”って"
+    },
+    {
+      "position": 121432,
+      "duration": 616,
+      "tone": 65,
+      "lyric": "き",
+      "section": "Pre-Chorus 2",
+      "source_text": "“きっと決まってる”って"
+    },
+    {
+      "position": 122076,
+      "duration": 616,
+      "tone": 66,
+      "lyric": "ま",
+      "section": "Pre-Chorus 2",
+      "source_text": "“きっと決まってる”って"
+    },
+    {
+      "position": 122720,
+      "duration": 616,
+      "tone": 65,
+      "lyric": "て",
+      "section": "Pre-Chorus 2",
+      "source_text": "“きっと決まってる”って"
+    },
+    {
+      "position": 123364,
+      "duration": 616,
+      "tone": 64,
+      "lyric": "る",
+      "section": "Pre-Chorus 2",
+      "source_text": "“きっと決まってる”って"
+    },
+    {
+      "position": 124008,
+      "duration": 616,
+      "tone": 65,
+      "lyric": "て",
+      "section": "Pre-Chorus 2",
+      "source_text": "“きっと決まってる”って"
+    },
+    {
+      "position": 124944,
+      "duration": 423,
+      "tone": 63,
+      "lyric": "く",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 125395,
+      "duration": 423,
+      "tone": 64,
+      "lyric": "ち",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 125846,
+      "duration": 423,
+      "tone": 65,
+      "lyric": "に",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 126296,
+      "duration": 423,
+      "tone": 66,
+      "lyric": "し",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 126747,
+      "duration": 423,
+      "tone": 65,
+      "lyric": "た",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 127198,
+      "duration": 423,
+      "tone": 64,
+      "lyric": "し",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 127649,
+      "duration": 423,
+      "tone": 65,
+      "lyric": "ゅ",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 128100,
+      "duration": 423,
+      "tone": 63,
+      "lyric": "ん",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 128550,
+      "duration": 423,
+      "tone": 63,
+      "lyric": "か",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 129001,
+      "duration": 423,
+      "tone": 64,
+      "lyric": "ん",
+      "section": "Pre-Chorus 2",
+      "source_text": "口にした瞬間"
+    },
+    {
+      "position": 129744,
+      "duration": 473,
+      "tone": 70,
+      "lyric": "ぼ",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 130245,
+      "duration": 473,
+      "tone": 71,
+      "lyric": "く",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 130746,
+      "duration": 473,
+      "tone": 72,
+      "lyric": "の",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 131247,
+      "duration": 473,
+      "tone": 72,
+      "lyric": "て",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 131748,
+      "duration": 473,
+      "tone": 72,
+      "lyric": "の",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 132248,
+      "duration": 473,
+      "tone": 71,
+      "lyric": "ひ",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 132749,
+      "duration": 473,
+      "tone": 72,
+      "lyric": "ら",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 133250,
+      "duration": 473,
+      "tone": 70,
+      "lyric": "か",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 133751,
+      "duration": 473,
+      "tone": 70,
+      "lyric": "ら",
+      "section": "Pre-Chorus 2",
+      "source_text": "僕の手のひらから"
+    },
+    {
+      "position": 134544,
+      "duration": 473,
+      "tone": 68,
+      "lyric": "あ",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 135045,
+      "duration": 473,
+      "tone": 69,
+      "lyric": "し",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 135546,
+      "duration": 473,
+      "tone": 70,
+      "lyric": "た",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 136047,
+      "duration": 473,
+      "tone": 71,
+      "lyric": "が",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 136548,
+      "duration": 473,
+      "tone": 70,
+      "lyric": "お",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 137048,
+      "duration": 473,
+      "tone": 69,
+      "lyric": "ち",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 137549,
+      "duration": 473,
+      "tone": 70,
+      "lyric": "て",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 138050,
+      "duration": 473,
+      "tone": 68,
+      "lyric": "い",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 138551,
+      "duration": 473,
+      "tone": 68,
+      "lyric": "く",
+      "section": "Pre-Chorus 2",
+      "source_text": "明日が落ちていく"
+    },
+    {
+      "position": 139344,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 139691,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "ち",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 140038,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "ぎ",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 140384,
+      "duration": 319,
+      "tone": 66,
+      "lyric": "ょ",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 140731,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "う",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 141078,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "だ",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 141425,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "け",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 141771,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "の",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 142118,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "め",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 142465,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "せ",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 142812,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "え",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 143158,
+      "duration": 319,
+      "tone": 66,
+      "lyric": "じ",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 143505,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "で",
+      "section": "Chorus 2A",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 144144,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "も",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 144491,
+      "duration": 319,
+      "tone": 71,
+      "lyric": "ど",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 144838,
+      "duration": 319,
+      "tone": 72,
+      "lyric": "れ",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 145184,
+      "duration": 319,
+      "tone": 72,
+      "lyric": "る",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 145531,
+      "duration": 319,
+      "tone": 72,
+      "lyric": "ば",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 145878,
+      "duration": 319,
+      "tone": 71,
+      "lyric": "し",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 146225,
+      "duration": 319,
+      "tone": 72,
+      "lyric": "ょ",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 146571,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "を",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 146918,
+      "duration": 319,
+      "tone": 70,
+      "lyric": "さ",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 147265,
+      "duration": 319,
+      "tone": 71,
+      "lyric": "が",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 147612,
+      "duration": 319,
+      "tone": 72,
+      "lyric": "す",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 147958,
+      "duration": 319,
+      "tone": 72,
+      "lyric": "ぼ",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 148305,
+      "duration": 319,
+      "tone": 72,
+      "lyric": "く",
+      "section": "Chorus 2A",
+      "source_text": "戻れる場所を探す僕"
+    },
+    {
+      "position": 148944,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "た",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 149266,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "だ",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 149588,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "し",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 149910,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "さ",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 150232,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "は",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 150554,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "そ",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 150876,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "と",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 151198,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "に",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 151520,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "お",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 151842,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "ち",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 152164,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "て",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 152486,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "な",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 152808,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "く",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 153130,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "て",
+      "section": "Chorus 2A",
+      "source_text": "正しさは外に落ちてなくて"
+    },
+    {
+      "position": 153744,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "え",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 154066,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "ら",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 154388,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "ん",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 154710,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "だ",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 155032,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "あ",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 155354,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "と",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 155676,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "に",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 155998,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "た",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 156320,
+      "duration": 294,
+      "tone": 63,
+      "lyric": "ち",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 156642,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "あ",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 156964,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "が",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 157286,
+      "duration": 294,
+      "tone": 66,
+      "lyric": "る",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 157608,
+      "duration": 294,
+      "tone": 65,
+      "lyric": "あ",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 157930,
+      "duration": 294,
+      "tone": 64,
+      "lyric": "あ",
+      "section": "Chorus 2A",
+      "source_text": "選んだ跡に立ち上がる（ああ）"
+    },
+    {
+      "position": 158544,
+      "duration": 348,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 158920,
+      "duration": 348,
+      "tone": 64,
+      "lyric": "え",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 159295,
+      "duration": 348,
+      "tone": 65,
+      "lyric": "な",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 159671,
+      "duration": 348,
+      "tone": 66,
+      "lyric": "か",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 160047,
+      "duration": 348,
+      "tone": 65,
+      "lyric": "た",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 160422,
+      "duration": 348,
+      "tone": 64,
+      "lyric": "こ",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 160798,
+      "duration": 348,
+      "tone": 65,
+      "lyric": "と",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 161174,
+      "duration": 348,
+      "tone": 63,
+      "lyric": "か",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 161549,
+      "duration": 348,
+      "tone": 63,
+      "lyric": "ぞ",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 161925,
+      "duration": 348,
+      "tone": 64,
+      "lyric": "え",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 162301,
+      "duration": 348,
+      "tone": 65,
+      "lyric": "た",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 162676,
+      "duration": 348,
+      "tone": 66,
+      "lyric": "ら",
+      "section": "Chorus 2B",
+      "source_text": "言えなかったこと数えたら"
+    },
+    {
+      "position": 163344,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "が",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 163691,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "め",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 164038,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "ん",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 164384,
+      "duration": 319,
+      "tone": 66,
+      "lyric": "に",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 164731,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "は",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 165078,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "い",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 165425,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "り",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 165771,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "き",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 166118,
+      "duration": 319,
+      "tone": 63,
+      "lyric": "ら",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 166465,
+      "duration": 319,
+      "tone": 64,
+      "lyric": "な",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 166812,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "い",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 167158,
+      "duration": 319,
+      "tone": 66,
+      "lyric": "ほ",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 167505,
+      "duration": 319,
+      "tone": 65,
+      "lyric": "ど",
+      "section": "Chorus 2B",
+      "source_text": "画面に入りきらないほど"
+    },
+    {
+      "position": 168144,
+      "duration": 348,
+      "tone": 61,
+      "lyric": "そ",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 168520,
+      "duration": 348,
+      "tone": 62,
+      "lyric": "れ",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 168895,
+      "duration": 348,
+      "tone": 63,
+      "lyric": "で",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 169271,
+      "duration": 348,
+      "tone": 64,
+      "lyric": "も",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 169647,
+      "duration": 348,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 170022,
+      "duration": 348,
+      "tone": 62,
+      "lyric": "ち",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 170398,
+      "duration": 348,
+      "tone": 63,
+      "lyric": "ぎ",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 170774,
+      "duration": 348,
+      "tone": 61,
+      "lyric": "ょ",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 171149,
+      "duration": 348,
+      "tone": 61,
+      "lyric": "う",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 171525,
+      "duration": 348,
+      "tone": 62,
+      "lyric": "だ",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 171901,
+      "duration": 348,
+      "tone": 63,
+      "lyric": "け",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 172276,
+      "duration": 348,
+      "tone": 64,
+      "lyric": "で",
+      "section": "Chorus 2B",
+      "source_text": "それでも一行だけで"
+    },
+    {
+      "position": 172944,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "せ",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 173320,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "か",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 173695,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "い",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 174071,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "に",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 174447,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "さ",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 174822,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "ん",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 175198,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "か",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 175574,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "し",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 175949,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "て",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 176325,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "い",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 176701,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "た",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 177076,
+      "duration": 348,
+      "tone": 72,
+      "lyric": "い",
+      "section": "Chorus 2B",
+      "source_text": "世界に参加していたい"
+    },
+    {
+      "position": 177744,
+      "duration": 657,
+      "tone": 72,
+      "lyric": "も",
+      "section": "Bridge",
+      "source_text": "もしも明日"
+    },
+    {
+      "position": 178429,
+      "duration": 657,
+      "tone": 71,
+      "lyric": "し",
+      "section": "Bridge",
+      "source_text": "もしも明日"
+    },
+    {
+      "position": 179113,
+      "duration": 657,
+      "tone": 70,
+      "lyric": "も",
+      "section": "Bridge",
+      "source_text": "もしも明日"
+    },
+    {
+      "position": 179798,
+      "duration": 657,
+      "tone": 69,
+      "lyric": "あ",
+      "section": "Bridge",
+      "source_text": "もしも明日"
+    },
+    {
+      "position": 180483,
+      "duration": 657,
+      "tone": 70,
+      "lyric": "し",
+      "section": "Bridge",
+      "source_text": "もしも明日"
+    },
+    {
+      "position": 181167,
+      "duration": 657,
+      "tone": 69,
+      "lyric": "た",
+      "section": "Bridge",
+      "source_text": "もしも明日"
+    },
+    {
+      "position": 182144,
+      "duration": 288,
+      "tone": 72,
+      "lyric": "た",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 182460,
+      "duration": 288,
+      "tone": 71,
+      "lyric": "だ",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 182776,
+      "duration": 288,
+      "tone": 70,
+      "lyric": "の",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 183092,
+      "duration": 288,
+      "tone": 69,
+      "lyric": "と",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 183408,
+      "duration": 288,
+      "tone": 70,
+      "lyric": "も",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 183724,
+      "duration": 288,
+      "tone": 69,
+      "lyric": "だ",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 184040,
+      "duration": 288,
+      "tone": 68,
+      "lyric": "ち",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 184356,
+      "duration": 288,
+      "tone": 69,
+      "lyric": "で",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 184672,
+      "duration": 288,
+      "tone": 72,
+      "lyric": "わ",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 184988,
+      "duration": 288,
+      "tone": 71,
+      "lyric": "ら",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 185304,
+      "duration": 288,
+      "tone": 70,
+      "lyric": "え",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 185620,
+      "duration": 288,
+      "tone": 69,
+      "lyric": "た",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 185936,
+      "duration": 288,
+      "tone": 70,
+      "lyric": "ら",
+      "section": "Bridge",
+      "source_text": "ただの友だちで笑えたら"
+    },
+    {
+      "position": 186544,
+      "duration": 559,
+      "tone": 72,
+      "lyric": "そ",
+      "section": "Bridge",
+      "source_text": "それだけでいい"
+    },
+    {
+      "position": 187131,
+      "duration": 559,
+      "tone": 71,
+      "lyric": "れ",
+      "section": "Bridge",
+      "source_text": "それだけでいい"
+    },
+    {
+      "position": 187718,
+      "duration": 559,
+      "tone": 70,
+      "lyric": "だ",
+      "section": "Bridge",
+      "source_text": "それだけでいい"
+    },
+    {
+      "position": 188305,
+      "duration": 559,
+      "tone": 69,
+      "lyric": "け",
+      "section": "Bridge",
+      "source_text": "それだけでいい"
+    },
+    {
+      "position": 188891,
+      "duration": 559,
+      "tone": 70,
+      "lyric": "で",
+      "section": "Bridge",
+      "source_text": "それだけでいい"
+    },
+    {
+      "position": 189478,
+      "duration": 559,
+      "tone": 69,
+      "lyric": "い",
+      "section": "Bridge",
+      "source_text": "それだけでいい"
+    },
+    {
+      "position": 190065,
+      "duration": 559,
+      "tone": 68,
+      "lyric": "い",
+      "section": "Bridge",
+      "source_text": "それだけでいい"
+    },
+    {
+      "position": 190944,
+      "duration": 485,
+      "tone": 65,
+      "lyric": "そ",
+      "section": "Bridge",
+      "source_text": "そう言い聞かせて"
+    },
+    {
+      "position": 191458,
+      "duration": 485,
+      "tone": 64,
+      "lyric": "う",
+      "section": "Bridge",
+      "source_text": "そう言い聞かせて"
+    },
+    {
+      "position": 191971,
+      "duration": 485,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Bridge",
+      "source_text": "そう言い聞かせて"
+    },
+    {
+      "position": 192485,
+      "duration": 485,
+      "tone": 62,
+      "lyric": "い",
+      "section": "Bridge",
+      "source_text": "そう言い聞かせて"
+    },
+    {
+      "position": 192998,
+      "duration": 485,
+      "tone": 63,
+      "lyric": "き",
+      "section": "Bridge",
+      "source_text": "そう言い聞かせて"
+    },
+    {
+      "position": 193512,
+      "duration": 485,
+      "tone": 62,
+      "lyric": "か",
+      "section": "Bridge",
+      "source_text": "そう言い聞かせて"
+    },
+    {
+      "position": 194025,
+      "duration": 485,
+      "tone": 61,
+      "lyric": "せ",
+      "section": "Bridge",
+      "source_text": "そう言い聞かせて"
+    },
+    {
+      "position": 194539,
+      "duration": 486,
+      "tone": 62,
+      "lyric": "て",
+      "section": "Bridge",
+      "source_text": "そう言い聞かせて"
+    },
+    {
+      "position": 195344,
+      "duration": 303,
+      "tone": 65,
+      "lyric": "で",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 195675,
+      "duration": 303,
+      "tone": 64,
+      "lyric": "も",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 196006,
+      "duration": 303,
+      "tone": 63,
+      "lyric": "ほ",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 196336,
+      "duration": 303,
+      "tone": 62,
+      "lyric": "ん",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 196667,
+      "duration": 303,
+      "tone": 63,
+      "lyric": "と",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 196998,
+      "duration": 303,
+      "tone": 62,
+      "lyric": "う",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 197329,
+      "duration": 303,
+      "tone": 61,
+      "lyric": "は",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 197660,
+      "duration": 303,
+      "tone": 62,
+      "lyric": "し",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 197990,
+      "duration": 303,
+      "tone": 65,
+      "lyric": "て",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 198321,
+      "duration": 303,
+      "tone": 64,
+      "lyric": "る",
+      "section": "Bridge reveal",
+      "source_text": "でも本当は知ってる"
+    },
+    {
+      "position": 198944,
+      "duration": 445,
+      "tone": 72,
+      "lyric": "ち",
+      "section": "Bridge reveal",
+      "source_text": "沈黙もまた"
+    },
+    {
+      "position": 199417,
+      "duration": 445,
+      "tone": 71,
+      "lyric": "ん",
+      "section": "Bridge reveal",
+      "source_text": "沈黙もまた"
+    },
+    {
+      "position": 199889,
+      "duration": 445,
+      "tone": 70,
+      "lyric": "も",
+      "section": "Bridge reveal",
+      "source_text": "沈黙もまた"
+    },
+    {
+      "position": 200362,
+      "duration": 445,
+      "tone": 69,
+      "lyric": "く",
+      "section": "Bridge reveal",
+      "source_text": "沈黙もまた"
+    },
+    {
+      "position": 200834,
+      "duration": 445,
+      "tone": 70,
+      "lyric": "も",
+      "section": "Bridge reveal",
+      "source_text": "沈黙もまた"
+    },
+    {
+      "position": 201307,
+      "duration": 445,
+      "tone": 69,
+      "lyric": "ま",
+      "section": "Bridge reveal",
+      "source_text": "沈黙もまた"
+    },
+    {
+      "position": 201779,
+      "duration": 445,
+      "tone": 68,
+      "lyric": "た",
+      "section": "Bridge reveal",
+      "source_text": "沈黙もまた"
+    },
+    {
+      "position": 202544,
+      "duration": 445,
+      "tone": 65,
+      "lyric": "だ",
+      "section": "Bridge reveal",
+      "source_text": "誰かの夜を"
+    },
+    {
+      "position": 203017,
+      "duration": 445,
+      "tone": 64,
+      "lyric": "れ",
+      "section": "Bridge reveal",
+      "source_text": "誰かの夜を"
+    },
+    {
+      "position": 203489,
+      "duration": 445,
+      "tone": 63,
+      "lyric": "か",
+      "section": "Bridge reveal",
+      "source_text": "誰かの夜を"
+    },
+    {
+      "position": 203962,
+      "duration": 445,
+      "tone": 62,
+      "lyric": "の",
+      "section": "Bridge reveal",
+      "source_text": "誰かの夜を"
+    },
+    {
+      "position": 204434,
+      "duration": 445,
+      "tone": 63,
+      "lyric": "よ",
+      "section": "Bridge reveal",
+      "source_text": "誰かの夜を"
+    },
+    {
+      "position": 204907,
+      "duration": 445,
+      "tone": 62,
+      "lyric": "る",
+      "section": "Bridge reveal",
+      "source_text": "誰かの夜を"
+    },
+    {
+      "position": 205379,
+      "duration": 445,
+      "tone": 61,
+      "lyric": "を",
+      "section": "Bridge reveal",
+      "source_text": "誰かの夜を"
+    },
+    {
+      "position": 206144,
+      "duration": 385,
+      "tone": 67,
+      "lyric": "ふ",
+      "section": "Bridge reveal",
+      "source_text": "増やしてしまうって"
+    },
+    {
+      "position": 206557,
+      "duration": 385,
+      "tone": 66,
+      "lyric": "や",
+      "section": "Bridge reveal",
+      "source_text": "増やしてしまうって"
+    },
+    {
+      "position": 206971,
+      "duration": 385,
+      "tone": 65,
+      "lyric": "し",
+      "section": "Bridge reveal",
+      "source_text": "増やしてしまうって"
+    },
+    {
+      "position": 207384,
+      "duration": 385,
+      "tone": 64,
+      "lyric": "て",
+      "section": "Bridge reveal",
+      "source_text": "増やしてしまうって"
+    },
+    {
+      "position": 207798,
+      "duration": 385,
+      "tone": 65,
+      "lyric": "し",
+      "section": "Bridge reveal",
+      "source_text": "増やしてしまうって"
+    },
+    {
+      "position": 208211,
+      "duration": 385,
+      "tone": 64,
+      "lyric": "ま",
+      "section": "Bridge reveal",
+      "source_text": "増やしてしまうって"
+    },
+    {
+      "position": 208625,
+      "duration": 385,
+      "tone": 63,
+      "lyric": "う",
+      "section": "Bridge reveal",
+      "source_text": "増やしてしまうって"
+    },
+    {
+      "position": 209038,
+      "duration": 386,
+      "tone": 64,
+      "lyric": "て",
+      "section": "Bridge reveal",
+      "source_text": "増やしてしまうって"
+    },
+    {
+      "position": 209744,
+      "duration": 1026,
+      "tone": 69,
+      "lyric": "は",
+      "section": "Breath/leap",
+      "source_text": "（息）…はぁ…"
+    },
+    {
+      "position": 210798,
+      "duration": 1026,
+      "tone": 70,
+      "lyric": "あ",
+      "section": "Breath/leap",
+      "source_text": "（息）…はぁ…"
+    },
+    {
+      "position": 212144,
+      "duration": 134,
+      "tone": 64,
+      "lyric": "う",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 212306,
+      "duration": 134,
+      "tone": 65,
+      "lyric": "ち",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 212468,
+      "duration": 134,
+      "tone": 66,
+      "lyric": "な",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 212630,
+      "duration": 134,
+      "tone": 67,
+      "lyric": "お",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 212793,
+      "duration": 134,
+      "tone": 66,
+      "lyric": "す",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 212955,
+      "duration": 134,
+      "tone": 65,
+      "lyric": "げ",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 213117,
+      "duration": 134,
+      "tone": 66,
+      "lyric": "ん",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 213279,
+      "duration": 134,
+      "tone": 67,
+      "lyric": "き",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 213441,
+      "duration": 134,
+      "tone": 64,
+      "lyric": "の",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 213603,
+      "duration": 134,
+      "tone": 65,
+      "lyric": "さ",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 213766,
+      "duration": 134,
+      "tone": 66,
+      "lyric": "ん",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 213928,
+      "duration": 134,
+      "tone": 67,
+      "lyric": "も",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 214090,
+      "duration": 134,
+      "tone": 66,
+      "lyric": "じ",
+      "section": "Breath/leap",
+      "source_text": "打ち直す「元気？」の三文字"
+    },
+    {
+      "position": 214544,
+      "duration": 134,
+      "tone": 62,
+      "lyric": "と",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 214706,
+      "duration": 134,
+      "tone": 63,
+      "lyric": "ぶ",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 214868,
+      "duration": 134,
+      "tone": 64,
+      "lyric": "の",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 215030,
+      "duration": 134,
+      "tone": 65,
+      "lyric": "は",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 215193,
+      "duration": 134,
+      "tone": 64,
+      "lyric": "し",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 215355,
+      "duration": 134,
+      "tone": 63,
+      "lyric": "ん",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 215517,
+      "duration": 134,
+      "tone": 64,
+      "lyric": "こ",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 215679,
+      "duration": 134,
+      "tone": 65,
+      "lyric": "う",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 215841,
+      "duration": 134,
+      "tone": 62,
+      "lyric": "じ",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 216003,
+      "duration": 134,
+      "tone": 63,
+      "lyric": "ゃ",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 216166,
+      "duration": 134,
+      "tone": 64,
+      "lyric": "な",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 216328,
+      "duration": 134,
+      "tone": 65,
+      "lyric": "く",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 216490,
+      "duration": 134,
+      "tone": 64,
+      "lyric": "て",
+      "section": "Breath/leap",
+      "source_text": "跳ぶのは信仰じゃなくて"
+    },
+    {
+      "position": 216944,
+      "duration": 148,
+      "tone": 62,
+      "lyric": "な",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 217120,
+      "duration": 148,
+      "tone": 63,
+      "lyric": "げ",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 217295,
+      "duration": 148,
+      "tone": 64,
+      "lyric": "だ",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 217471,
+      "duration": 148,
+      "tone": 65,
+      "lyric": "さ",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 217647,
+      "duration": 148,
+      "tone": 64,
+      "lyric": "な",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 217822,
+      "duration": 148,
+      "tone": 63,
+      "lyric": "い",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 217998,
+      "duration": 148,
+      "tone": 64,
+      "lyric": "と",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 218174,
+      "duration": 148,
+      "tone": 65,
+      "lyric": "い",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 218349,
+      "duration": 148,
+      "tone": 62,
+      "lyric": "う",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 218525,
+      "duration": 148,
+      "tone": 63,
+      "lyric": "け",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 218701,
+      "duration": 148,
+      "tone": 64,
+      "lyric": "つ",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 218876,
+      "duration": 148,
+      "tone": 65,
+      "lyric": "い",
+      "section": "Breath/leap",
+      "source_text": "“投げ出さない”という決意"
+    },
+    {
+      "position": 219332,
+      "duration": 121,
+      "tone": 70,
+      "lyric": "い",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 219480,
+      "duration": 121,
+      "tone": 71,
+      "lyric": "ち",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 219627,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "ぎ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 219775,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "ょ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 219922,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "う",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 220070,
+      "duration": 121,
+      "tone": 71,
+      "lyric": "だ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 220217,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "け",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 220365,
+      "duration": 121,
+      "tone": 70,
+      "lyric": "の",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 220512,
+      "duration": 121,
+      "tone": 70,
+      "lyric": "め",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 220660,
+      "duration": 121,
+      "tone": 71,
+      "lyric": "せ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 220808,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "え",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 220955,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "じ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 221103,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "で",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 221532,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "つ",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 221692,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "な",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 221852,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "が",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 222012,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "る",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 222172,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "よ",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 222332,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "る",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 222492,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "が",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 222652,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "あ",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 222812,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "る",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 222972,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "の",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 223132,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "な",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 223292,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "ら",
+      "section": "Final Chorus",
+      "source_text": "つながる夜があるのなら"
+    },
+    {
+      "position": 223732,
+      "duration": 121,
+      "tone": 70,
+      "lyric": "へ",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 223880,
+      "duration": 121,
+      "tone": 71,
+      "lyric": "ん",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 224027,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "じ",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 224175,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "な",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 224322,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "ん",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 224470,
+      "duration": 121,
+      "tone": 71,
+      "lyric": "て",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 224617,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "も",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 224765,
+      "duration": 121,
+      "tone": 70,
+      "lyric": "う",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 224912,
+      "duration": 121,
+      "tone": 70,
+      "lyric": "こ",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 225060,
+      "duration": 121,
+      "tone": 71,
+      "lyric": "な",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 225208,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "く",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 225355,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "て",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 225503,
+      "duration": 121,
+      "tone": 72,
+      "lyric": "も",
+      "section": "Final Chorus",
+      "source_text": "返事なんてもう来なくても"
+    },
+    {
+      "position": 225932,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "な",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 226092,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "ま",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 226252,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "え",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 226412,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "を",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 226572,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "よ",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 226732,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "べ",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 226892,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "た",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 227052,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "き",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 227212,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "が",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 227372,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "す",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 227532,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "る",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 227692,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "よ",
+      "section": "Final Chorus",
+      "source_text": "名前を呼べた気がするよ"
+    },
+    {
+      "position": 228132,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "ど",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 228292,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "う",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 228452,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "せ",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 228612,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "の",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 228772,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "つ",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 228932,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "づ",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 229092,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "き",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 229252,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "か",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 229412,
+      "duration": 132,
+      "tone": 70,
+      "lyric": "け",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 229572,
+      "duration": 132,
+      "tone": 71,
+      "lyric": "な",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 229732,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "く",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 229892,
+      "duration": 132,
+      "tone": 72,
+      "lyric": "て",
+      "section": "Final Chorus",
+      "source_text": "“どうせ”の続き書けなくて"
+    },
+    {
+      "position": 230332,
+      "duration": 113,
+      "tone": 65,
+      "lyric": "そ",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 230469,
+      "duration": 113,
+      "tone": 66,
+      "lyric": "れ",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 230606,
+      "duration": 113,
+      "tone": 67,
+      "lyric": "で",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 230743,
+      "duration": 113,
+      "tone": 68,
+      "lyric": "も",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 230880,
+      "duration": 113,
+      "tone": 67,
+      "lyric": "そ",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 231016,
+      "duration": 113,
+      "tone": 66,
+      "lyric": "う",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 231153,
+      "duration": 113,
+      "tone": 67,
+      "lyric": "し",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 231290,
+      "duration": 113,
+      "tone": 65,
+      "lyric": "ん",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 231427,
+      "duration": 113,
+      "tone": 65,
+      "lyric": "を",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 231564,
+      "duration": 113,
+      "tone": 66,
+      "lyric": "お",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 231701,
+      "duration": 113,
+      "tone": 67,
+      "lyric": "し",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 231838,
+      "duration": 113,
+      "tone": 68,
+      "lyric": "て",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 231975,
+      "duration": 113,
+      "tone": 67,
+      "lyric": "み",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 232111,
+      "duration": 113,
+      "tone": 66,
+      "lyric": "る",
+      "section": "Final Chorus",
+      "source_text": "それでも送信を押してみる"
+    },
+    {
+      "position": 232532,
+      "duration": 121,
+      "tone": 65,
+      "lyric": "い",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 232680,
+      "duration": 121,
+      "tone": 66,
+      "lyric": "ち",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 232827,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "ぎ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 232975,
+      "duration": 121,
+      "tone": 68,
+      "lyric": "ょ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 233122,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "う",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 233270,
+      "duration": 121,
+      "tone": 66,
+      "lyric": "だ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 233417,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "け",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 233565,
+      "duration": 121,
+      "tone": 65,
+      "lyric": "の",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 233712,
+      "duration": 121,
+      "tone": 65,
+      "lyric": "め",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 233860,
+      "duration": 121,
+      "tone": 66,
+      "lyric": "せ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 234008,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "え",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 234155,
+      "duration": 121,
+      "tone": 68,
+      "lyric": "じ",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 234303,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "で",
+      "section": "Final Chorus",
+      "source_text": "一行だけのメッセージで"
+    },
+    {
+      "position": 234732,
+      "duration": 121,
+      "tone": 65,
+      "lyric": "ぼ",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 234880,
+      "duration": 121,
+      "tone": 66,
+      "lyric": "く",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 235027,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "は",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 235175,
+      "duration": 121,
+      "tone": 68,
+      "lyric": "あ",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 235322,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "し",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 235470,
+      "duration": 121,
+      "tone": 66,
+      "lyric": "た",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 235617,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "を",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 235765,
+      "duration": 121,
+      "tone": 65,
+      "lyric": "こ",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 235912,
+      "duration": 121,
+      "tone": 65,
+      "lyric": "う",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 236060,
+      "duration": 121,
+      "tone": 66,
+      "lyric": "て",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 236208,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "い",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 236355,
+      "duration": 121,
+      "tone": 68,
+      "lyric": "す",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 236503,
+      "duration": 121,
+      "tone": 67,
+      "lyric": "る",
+      "section": "Final Chorus",
+      "source_text": "僕は明日を肯定する"
+    },
+    {
+      "position": 236917,
+      "duration": 825,
+      "tone": 65,
+      "lyric": "は",
+      "section": "Outro",
+      "source_text": "（息）…"
+    },
+    {
+      "position": 237770,
+      "duration": 825,
+      "tone": 64,
+      "lyric": "あ",
+      "section": "Outro",
+      "source_text": "（息）…"
+    },
+    {
+      "position": 238869,
+      "duration": 216,
+      "tone": 65,
+      "lyric": "い",
+      "section": "Outro",
+      "source_text": "一行だけ"
+    },
+    {
+      "position": 239113,
+      "duration": 216,
+      "tone": 64,
+      "lyric": "ち",
+      "section": "Outro",
+      "source_text": "一行だけ"
+    },
+    {
+      "position": 239357,
+      "duration": 216,
+      "tone": 63,
+      "lyric": "ぎ",
+      "section": "Outro",
+      "source_text": "一行だけ"
+    },
+    {
+      "position": 239601,
+      "duration": 216,
+      "tone": 62,
+      "lyric": "ょ",
+      "section": "Outro",
+      "source_text": "一行だけ"
+    },
+    {
+      "position": 239844,
+      "duration": 216,
+      "tone": 63,
+      "lyric": "う",
+      "section": "Outro",
+      "source_text": "一行だけ"
+    },
+    {
+      "position": 240088,
+      "duration": 216,
+      "tone": 62,
+      "lyric": "だ",
+      "section": "Outro",
+      "source_text": "一行だけ"
+    },
+    {
+      "position": 240332,
+      "duration": 216,
+      "tone": 61,
+      "lyric": "け",
+      "section": "Outro",
+      "source_text": "一行だけ"
+    },
+    {
+      "position": 240821,
+      "duration": 162,
+      "tone": 65,
+      "lyric": "そ",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    },
+    {
+      "position": 241011,
+      "duration": 162,
+      "tone": 64,
+      "lyric": "れ",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    },
+    {
+      "position": 241200,
+      "duration": 162,
+      "tone": 63,
+      "lyric": "で",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    },
+    {
+      "position": 241390,
+      "duration": 162,
+      "tone": 62,
+      "lyric": "じ",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    },
+    {
+      "position": 241580,
+      "duration": 162,
+      "tone": 63,
+      "lyric": "ゅ",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    },
+    {
+      "position": 241769,
+      "duration": 162,
+      "tone": 62,
+      "lyric": "う",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    },
+    {
+      "position": 241959,
+      "duration": 162,
+      "tone": 61,
+      "lyric": "ぶ",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    },
+    {
+      "position": 242149,
+      "duration": 162,
+      "tone": 62,
+      "lyric": "ん",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    },
+    {
+      "position": 242338,
+      "duration": 162,
+      "tone": 65,
+      "lyric": "だ",
+      "section": "Outro",
+      "source_text": "それで十分だ"
+    }
+  ]
+}

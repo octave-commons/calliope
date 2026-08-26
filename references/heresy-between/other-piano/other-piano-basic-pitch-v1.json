@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-13T20:55:14.199517+00:00",
+  "source_stem": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/other.wav",
+  "environment": {
+    "manager": "uv",
+    "venv": "/home/err/devel/Music/fork-tales/references/mir-workbench/.venv-basic-pitch",
+    "python": "3.11.14",
+    "basic_pitch": "0.4.0",
+    "tensorflow": "2.15.0",
+    "setuptools_pin": "<81 for pkg_resources compatibility"
+  },
+  "raw_basic_pitch": {
+    "midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/basic-pitch/other_basic_pitch.mid",
+    "csv_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/basic-pitch/other_basic_pitch.csv",
+    "note_count": 4749,
+    "pitch_min": 30,
+    "pitch_max": 87,
+    "duration_seconds": 302.82
+  },
+  "cleaned": {
+    "midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.mid",
+    "wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.wav",
+    "fluidsynth_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1-fluidr3.wav",
+    "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.json",
+    "note_count": 3860,
+    "pitch_min": 30,
+    "pitch_max": 87,
+    "duration_seconds": 303.34,
+    "method": "Basic Pitch raw MIDI filtered by duration/velocity, quantized to 40ms cells, capped to one bass plus five body notes per cell, merged adjacent same-pitch notes."
+  },
+  "reconstruction_v2": {
+    "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-openutau-other-piano-reconstruction-v2.wav",
+    "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-openutau-other-piano-reconstruction-v2-master.wav",
+    "duration_seconds": 303.32,
+    "master_mean_volume_db": -17.0,
+    "master_max_volume_db": 0.0
+  },
+  "reconstruction_v3": {
+    "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-piano-forward-reconstruction-v3.wav",
+    "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-piano-forward-reconstruction-v3-master.wav",
+    "duration_seconds": 303.32,
+    "master_mean_volume_db": -17.9,
+    "master_max_volume_db": -1.9,
+    "method": "FluidSynth render of cleaned Basic Pitch piano MIDI mixed forward with reduced synthetic bed and OpenUTAU vocal"
+  }
+}

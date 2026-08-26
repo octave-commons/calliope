@@ -1,0 +1,48 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 1.45406440893809,
+  "words": [
+    {
+      "end_s": 11.460000038146973,
+      "start_s": 0,
+      "word": "元気"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 29.760000228881836,
+      "start_s": 0,
+      "text": "元気"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 29.760000228881836,
+          "start_s": 0,
+          "text": "元気"
+        }
+      ],
+      "text": "元気",
+      "words": [
+        {
+          "end_s": 11.460000038146973,
+          "start_s": 0,
+          "word": "元気"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "元気"
+}

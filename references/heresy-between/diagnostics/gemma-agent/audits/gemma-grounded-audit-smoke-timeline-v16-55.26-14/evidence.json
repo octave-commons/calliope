@@ -1,0 +1,61 @@
+{
+  "schema_version": "fork-tales-audio-audit-evidence/v1",
+  "audit_id": "gemma-grounded-audit-smoke-timeline-v16-55.26-14",
+  "created_at": "2026-05-15T06:35:04.882Z",
+  "segment": {
+    "start_seconds": 55.26,
+    "duration_seconds": 14,
+    "expected": "タイムラインには知らない誰かの笑顔 強がってスクロールして心だけ取り残す",
+    "task": "Audit candidate against original. Pay special attention to transcription ambiguity: タイムラインには知らない may be heard as タイムラインに走らない. Use direct listening, local STT as noisy evidence, f0 overlay, and spectrogram metrics. Return concrete next tool actions."
+  },
+  "files": {
+    "original": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/vocals.wav",
+    "candidate": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-exact-phrase-grid-openutau-v16.wav",
+    "original_fullband_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/original-fullband.wav",
+    "candidate_fullband_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/candidate-fullband.wav",
+    "original_stt_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/original-stt.wav",
+    "candidate_stt_slice": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/candidate-stt.wav",
+    "ab_audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/ab-original-candidate.wav"
+  },
+  "transcription": {
+    "tool": "local-stt/transcribe-timed",
+    "original": {
+      "text": "タイムラインには知らない誰かの笑顔強がってスクロールして心だけ取り残す打ち掛けの言葉が震えて消えてくたび",
+      "response_file": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-original-1778826713134.json"
+    },
+    "candidate": {
+      "text": "タイムラインに走らない誰かの笑顔強がってスクロールして心だけ取り残す打ち明けの言葉が震えて消えてくタイム",
+      "response_file": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/responses/stt-file-gemma-grounded-audit-smoke-timeline-v16-candidate-1778826824000.json"
+    }
+  },
+  "metrics": {
+    "tool": "/home/err/devel/scripts/fork_tales_audio_metrics.py",
+    "json": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.json",
+    "outputs": {
+      "mel_diff_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.mel-diff.png",
+      "f0_overlay_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-timeline-v16-55.26-14/metrics.f0-overlay.png"
+    },
+    "pitch": {
+      "voiced_overlap_ratio": 0.7495854063018242,
+      "cents_error": {
+        "count": 904,
+        "mean": -363.3628318584071,
+        "median": -320.00000000000006,
+        "min": -1249.9999999999998,
+        "max": 430.0000000000002,
+        "p05": -1028.5,
+        "p95": 189.99999999999972
+      },
+      "mean_abs_cents": 411.3274336283186,
+      "f0_hz_correlation": 0.07952894947985584
+    },
+    "spectrogram": {
+      "mel_db_mean_abs_diff": 17.661590576171875,
+      "mel_db_rmse": 22.070438385009766,
+      "mel_db_correlation": 0.09123148303660446
+    },
+    "waveform": {
+      "normalized_correlation": 0.005153162450307919
+    }
+  }
+}

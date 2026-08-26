@@ -1,0 +1,48 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 6.242055819584773,
+  "words": [
+    {
+      "end_s": 6.059999942779541,
+      "start_s": 0,
+      "word": "返事なんてのかなくても名前を呼べた気がするよ"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 6.5,
+      "start_s": 0,
+      "text": "返事なんてのかなくても名前を呼べた気がするよ"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 6.5,
+          "start_s": 0,
+          "text": "返事なんてのかなくても名前を呼べた気がするよ"
+        }
+      ],
+      "text": "返事なんてのかなくても名前を呼べた気がするよ",
+      "words": [
+        {
+          "end_s": 6.059999942779541,
+          "start_s": 0,
+          "word": "返事なんてのかなくても名前を呼べた気がするよ"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 6.5,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "返事なんてのかなくても名前を呼べた気がするよ"
+}

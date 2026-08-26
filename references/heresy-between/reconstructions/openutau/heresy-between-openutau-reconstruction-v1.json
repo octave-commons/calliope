@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-13T20:43:53.346938+00:00",
+  "kind": "OpenUTAU vocal reconstruction mix",
+  "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-pyin-vocal-v1.ustx",
+  "vocal_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-pyin-vocal-v1.wav",
+  "bed_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-pyin-energy-reconstruction-v1.wav",
+  "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-openutau-reconstruction-v1.wav",
+  "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-openutau-reconstruction-v1-master.wav",
+  "duration_seconds": 303.32,
+  "sample_rate": 44100,
+  "singer": "波音リツ連続音Ver1.5.1",
+  "phonemizer": "OpenUtau.Plugin.Builtin.JapaneseVCVPhonemizer",
+  "renderer": "WORLDLINE-R",
+  "note_source": "/home/err/devel/Music/fork-tales/references/heresy-between/vocal/vocals.pyin.notes.json",
+  "lyric_strategy": "safe kana syllables cycled over recovered pYIN notes; not final lyric transcription",
+  "master_loudness": {
+    "mean_volume_db": -19.6,
+    "max_volume_db": 0.0
+  }
+}

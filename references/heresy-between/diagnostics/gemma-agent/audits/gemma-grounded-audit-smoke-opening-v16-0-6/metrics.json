@@ -1,0 +1,141 @@
+{
+  "original": {
+    "audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/original-fullband.wav",
+    "sha256": "5f2238c2175e4c53ed78b9616cafcbaece98dcc9b1d5240d02d3ce3fd7f7d28f",
+    "sample_rate": 22050,
+    "duration_seconds": 6.0,
+    "analysis_settings": {
+      "hop_length": 256,
+      "n_fft": 2048,
+      "n_mels": 128,
+      "fmin_hz": 65.0,
+      "fmax_hz": 1046.5
+    },
+    "outputs": {
+      "f0_csv": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.original.f0.csv",
+      "f0_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.original.f0.png",
+      "mel_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.original.mel.png"
+    },
+    "f0_hz": {
+      "count": 413,
+      "mean": 343.84725353871727,
+      "median": 314.5984631970161,
+      "min": 228.9731271349986,
+      "max": 981.6292851889611,
+      "p05": 232.97550689710764,
+      "p95": 894.9734947341033
+    },
+    "voiced_ratio": 0.7988394584139265,
+    "voiced_probability": {
+      "count": 517,
+      "mean": 0.3105132688091596,
+      "median": 0.17653060863289757,
+      "min": 0.0,
+      "max": 0.9848789761259924,
+      "p05": 0.01,
+      "p95": 0.9459302094659092
+    },
+    "rms": {
+      "count": 517,
+      "mean": 0.034978531301021576,
+      "median": 0.031040633097290993,
+      "min": 0.0003083045594394207,
+      "max": 0.09265105426311493,
+      "p05": 0.00042024176218546927,
+      "p95": 0.07722089439630508
+    },
+    "spectral_centroid_hz": {
+      "count": 517,
+      "mean": 3162.854954343291,
+      "median": 2816.5482951290833,
+      "min": 1228.684409890448,
+      "max": 6842.143598317696,
+      "p05": 1337.0861080780878,
+      "p95": 6142.940744413638
+    }
+  },
+  "candidate": {
+    "audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/candidate-fullband.wav",
+    "sha256": "455272a2df8700ee013e86dee3cefc881a80d93551c82a8ee471abbf48d5e1e6",
+    "sample_rate": 22050,
+    "duration_seconds": 6.0,
+    "analysis_settings": {
+      "hop_length": 256,
+      "n_fft": 2048,
+      "n_mels": 128,
+      "fmin_hz": 65.0,
+      "fmax_hz": 1046.5
+    },
+    "outputs": {
+      "f0_csv": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.candidate.f0.csv",
+      "f0_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.candidate.f0.png",
+      "mel_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.candidate.mel.png"
+    },
+    "f0_hz": {
+      "count": 499,
+      "mean": 307.0337157000432,
+      "median": 310.98499165172495,
+      "min": 232.97550689710764,
+      "max": 391.81653718338976,
+      "p05": 232.97550689710764,
+      "p95": 349.06885072286843
+    },
+    "voiced_ratio": 0.965183752417795,
+    "voiced_probability": {
+      "count": 517,
+      "mean": 0.7741255147790324,
+      "median": 0.9459302094659091,
+      "min": 0.01,
+      "max": 1.0,
+      "p05": 0.010002356004569784,
+      "p95": 0.9848789761259924
+    },
+    "rms": {
+      "count": 517,
+      "mean": 0.10092686116695404,
+      "median": 0.10671509802341461,
+      "min": 0.0010069418931379914,
+      "max": 0.19291532039642334,
+      "p05": 0.03632393479347229,
+      "p95": 0.14185932278633118
+    },
+    "spectral_centroid_hz": {
+      "count": 517,
+      "mean": 3050.844025144413,
+      "median": 2944.340999323974,
+      "min": 869.6173466024056,
+      "max": 8397.231393611988,
+      "p05": 1222.6094161556796,
+      "p95": 5411.491100307715
+    }
+  },
+  "duration_compared_seconds": 6.0,
+  "outputs": {
+    "mel_diff_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.mel-diff.png",
+    "f0_overlay_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.f0-overlay.png"
+  },
+  "pitch": {
+    "voiced_overlap_ratio": 0.7717601547388782,
+    "cents_error": {
+      "count": 399,
+      "mean": -111.328320802005,
+      "median": -9.999999999999678,
+      "min": -1990.0000000000002,
+      "max": 470.00000000000017,
+      "p05": -1830.0000000000005,
+      "p95": 270.0
+    },
+    "mean_abs_cents": 217.54385964912285,
+    "f0_hz_correlation": 0.2895048936978062
+  },
+  "spectrogram": {
+    "mel_db_mean_abs_diff": 16.038095474243164,
+    "mel_db_rmse": 20.221187591552734,
+    "mel_db_correlation": 0.1868518619792899
+  },
+  "waveform": {
+    "normalized_correlation": -0.027316538527935398
+  },
+  "command": "compare",
+  "out_json": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/audits/gemma-grounded-audit-smoke-opening-v16-0-6/metrics.json"
+}

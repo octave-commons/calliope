@@ -47,6 +47,7 @@ exported into playable derivatives, and traced back to immutable source audio.
 - FT-003B — waveform salvage editor.
 - FT-003C — native arrangement editing, playback, and playable deterministic export.
 - FT-003D — complete derivation graph.
+- FT-003E — index reconstruction evidence and auditions.
 
 Implement the children, never this epic directly.
 
@@ -64,9 +65,8 @@ Implement the children, never this epic directly.
 
 ## Verification
 
-Read this epic and its four children through Rheos and confirm each resolves with
-this epic's UUID in its `epic` field, and that each child's `dependency` array in
-the returned card matches the expected edge below:
+Read this epic and its five children through Rheos and confirm each resolves with
+this epic's UUID in its `epic` field:
 
 ```bash
 eta-mu kanban find ft-003-recover-valuable-spans-and-arrange-them-non-destructively
@@ -74,6 +74,7 @@ eta-mu kanban find ft-003a-implement-marker-and-clip-commands-over-immutable-ren
 eta-mu kanban find ft-003b-build-waveform-salvage-editor
 eta-mu kanban find ft-003c-implement-arrangement-playback-and-deterministic-export
 eta-mu kanban find ft-003d-preserve-render-to-release-derivation-graph
+eta-mu kanban find ft-003e-index-reconstruction-evidence-and-auditions
 eta-mu kanban list
 ```
 

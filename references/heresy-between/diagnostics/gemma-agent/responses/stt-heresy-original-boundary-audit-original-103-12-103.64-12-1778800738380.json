@@ -1,0 +1,58 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 5.234211643536885,
+  "words": [
+    {
+      "end_s": 11.9399995803833,
+      "start_s": 0,
+      "word": "それでも一協だけで世界に参加してたいもしも明日ただの友達で笑えたらそれだけでいい"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 5.839999675750732,
+      "start_s": 0,
+      "text": "それでも一協だけで世界に参加してたい"
+    },
+    {
+      "end_s": 11.960000038146973,
+      "start_s": 5.839999675750732,
+      "text": "もしも明日ただの友達で笑えたらそれだけでいい"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 5.839999675750732,
+          "start_s": 0,
+          "text": "それでも一協だけで世界に参加してたい"
+        },
+        {
+          "end_s": 11.960000038146973,
+          "start_s": 5.839999675750732,
+          "text": "もしも明日ただの友達で笑えたらそれだけでいい"
+        }
+      ],
+      "text": "それでも一協だけで世界に参加してたいもしも明日ただの友達で笑えたらそれだけでいい",
+      "words": [
+        {
+          "end_s": 11.9399995803833,
+          "start_s": 0,
+          "word": "それでも一協だけで世界に参加してたいもしも明日ただの友達で笑えたらそれだけでいい"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "それでも一協だけで世界に参加してたいもしも明日ただの友達で笑えたらそれだけでいい"
+}

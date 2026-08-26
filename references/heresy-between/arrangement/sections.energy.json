@@ -1,0 +1,1569 @@
+{
+  "source_stems": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として",
+  "method": "8s RMS windows, 4s hop, merged by dominant stem-share labels",
+  "duration_seconds": 303.32,
+  "window_seconds": 8.0,
+  "hop_seconds": 4.0,
+  "windows": [
+    {
+      "start": 0.0,
+      "end": 8.0,
+      "energy": {
+        "vocals": 0.04051,
+        "drums": 0.000505,
+        "bass": 0.011414,
+        "other": 0.02981
+      },
+      "share": {
+        "vocals": 0.4926,
+        "drums": 0.0061,
+        "bass": 0.1388,
+        "other": 0.3625
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 4.0,
+      "end": 12.0,
+      "energy": {
+        "vocals": 0.061283,
+        "drums": 0.000489,
+        "bass": 0.006825,
+        "other": 0.032226
+      },
+      "share": {
+        "vocals": 0.6078,
+        "drums": 0.0049,
+        "bass": 0.0677,
+        "other": 0.3196
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 8.0,
+      "end": 16.0,
+      "energy": {
+        "vocals": 0.098886,
+        "drums": 0.000479,
+        "bass": 0.001369,
+        "other": 0.036933
+      },
+      "share": {
+        "vocals": 0.7183,
+        "drums": 0.0035,
+        "bass": 0.0099,
+        "other": 0.2683
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 12.0,
+      "end": 20.0,
+      "energy": {
+        "vocals": 0.094612,
+        "drums": 0.000504,
+        "bass": 0.001361,
+        "other": 0.036488
+      },
+      "share": {
+        "vocals": 0.7116,
+        "drums": 0.0038,
+        "bass": 0.0102,
+        "other": 0.2744
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 16.0,
+      "end": 24.0,
+      "energy": {
+        "vocals": 0.052919,
+        "drums": 0.031568,
+        "bass": 0.003912,
+        "other": 0.032529
+      },
+      "share": {
+        "vocals": 0.4376,
+        "drums": 0.261,
+        "bass": 0.0323,
+        "other": 0.269
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 20.0,
+      "end": 28.0,
+      "energy": {
+        "vocals": 0.061593,
+        "drums": 0.05794,
+        "bass": 0.026988,
+        "other": 0.036117
+      },
+      "share": {
+        "vocals": 0.3372,
+        "drums": 0.3172,
+        "bass": 0.1478,
+        "other": 0.1978
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 24.0,
+      "end": 32.0,
+      "energy": {
+        "vocals": 0.085833,
+        "drums": 0.075369,
+        "bass": 0.050238,
+        "other": 0.039178
+      },
+      "share": {
+        "vocals": 0.3425,
+        "drums": 0.3007,
+        "bass": 0.2005,
+        "other": 0.1563
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 28.0,
+      "end": 36.0,
+      "energy": {
+        "vocals": 0.106656,
+        "drums": 0.094463,
+        "bass": 0.050393,
+        "other": 0.042081
+      },
+      "share": {
+        "vocals": 0.3633,
+        "drums": 0.3217,
+        "bass": 0.1716,
+        "other": 0.1433
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 32.0,
+      "end": 40.0,
+      "energy": {
+        "vocals": 0.12343,
+        "drums": 0.106455,
+        "bass": 0.062459,
+        "other": 0.043427
+      },
+      "share": {
+        "vocals": 0.3676,
+        "drums": 0.317,
+        "bass": 0.186,
+        "other": 0.1293
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 36.0,
+      "end": 44.0,
+      "energy": {
+        "vocals": 0.128048,
+        "drums": 0.105815,
+        "bass": 0.084772,
+        "other": 0.043512
+      },
+      "share": {
+        "vocals": 0.3536,
+        "drums": 0.2922,
+        "bass": 0.2341,
+        "other": 0.1202
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 40.0,
+      "end": 48.0,
+      "energy": {
+        "vocals": 0.127877,
+        "drums": 0.108743,
+        "bass": 0.083864,
+        "other": 0.041426
+      },
+      "share": {
+        "vocals": 0.3533,
+        "drums": 0.3005,
+        "bass": 0.2317,
+        "other": 0.1145
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 44.0,
+      "end": 52.0,
+      "energy": {
+        "vocals": 0.124728,
+        "drums": 0.110192,
+        "bass": 0.078479,
+        "other": 0.037545
+      },
+      "share": {
+        "vocals": 0.3554,
+        "drums": 0.314,
+        "bass": 0.2236,
+        "other": 0.107
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 48.0,
+      "end": 56.0,
+      "energy": {
+        "vocals": 0.114684,
+        "drums": 0.108857,
+        "bass": 0.091312,
+        "other": 0.040017
+      },
+      "share": {
+        "vocals": 0.3232,
+        "drums": 0.3068,
+        "bass": 0.2573,
+        "other": 0.1128
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 52.0,
+      "end": 60.0,
+      "energy": {
+        "vocals": 0.109528,
+        "drums": 0.082175,
+        "bass": 0.083969,
+        "other": 0.031522
+      },
+      "share": {
+        "vocals": 0.3565,
+        "drums": 0.2675,
+        "bass": 0.2733,
+        "other": 0.1026
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 56.0,
+      "end": 64.0,
+      "energy": {
+        "vocals": 0.112995,
+        "drums": 0.047728,
+        "bass": 0.051231,
+        "other": 0.038433
+      },
+      "share": {
+        "vocals": 0.4513,
+        "drums": 0.1906,
+        "bass": 0.2046,
+        "other": 0.1535
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 60.0,
+      "end": 68.0,
+      "energy": {
+        "vocals": 0.109628,
+        "drums": 0.068888,
+        "bass": 0.058392,
+        "other": 0.050678
+      },
+      "share": {
+        "vocals": 0.3812,
+        "drums": 0.2395,
+        "bass": 0.203,
+        "other": 0.1762
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 64.0,
+      "end": 72.0,
+      "energy": {
+        "vocals": 0.107603,
+        "drums": 0.091831,
+        "bass": 0.086813,
+        "other": 0.039997
+      },
+      "share": {
+        "vocals": 0.3298,
+        "drums": 0.2815,
+        "bass": 0.2661,
+        "other": 0.1226
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 68.0,
+      "end": 76.0,
+      "energy": {
+        "vocals": 0.108062,
+        "drums": 0.097197,
+        "bass": 0.08237,
+        "other": 0.059778
+      },
+      "share": {
+        "vocals": 0.3111,
+        "drums": 0.2798,
+        "bass": 0.2371,
+        "other": 0.1721
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 72.0,
+      "end": 80.0,
+      "energy": {
+        "vocals": 0.120749,
+        "drums": 0.086631,
+        "bass": 0.058448,
+        "other": 0.07111
+      },
+      "share": {
+        "vocals": 0.3584,
+        "drums": 0.2571,
+        "bass": 0.1735,
+        "other": 0.211
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 76.0,
+      "end": 84.0,
+      "energy": {
+        "vocals": 0.130475,
+        "drums": 0.061417,
+        "bass": 0.039117,
+        "other": 0.064752
+      },
+      "share": {
+        "vocals": 0.4412,
+        "drums": 0.2077,
+        "bass": 0.1323,
+        "other": 0.2189
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 80.0,
+      "end": 88.0,
+      "energy": {
+        "vocals": 0.13712,
+        "drums": 0.067699,
+        "bass": 0.015456,
+        "other": 0.061637
+      },
+      "share": {
+        "vocals": 0.4864,
+        "drums": 0.2401,
+        "bass": 0.0548,
+        "other": 0.2186
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 84.0,
+      "end": 92.0,
+      "energy": {
+        "vocals": 0.143156,
+        "drums": 0.104822,
+        "bass": 0.048588,
+        "other": 0.047606
+      },
+      "share": {
+        "vocals": 0.4159,
+        "drums": 0.3046,
+        "bass": 0.1412,
+        "other": 0.1383
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 88.0,
+      "end": 96.0,
+      "energy": {
+        "vocals": 0.151421,
+        "drums": 0.11163,
+        "bass": 0.06633,
+        "other": 0.038639
+      },
+      "share": {
+        "vocals": 0.4114,
+        "drums": 0.3033,
+        "bass": 0.1802,
+        "other": 0.105
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 92.0,
+      "end": 100.0,
+      "energy": {
+        "vocals": 0.167337,
+        "drums": 0.104856,
+        "bass": 0.07297,
+        "other": 0.036581
+      },
+      "share": {
+        "vocals": 0.4383,
+        "drums": 0.2747,
+        "bass": 0.1911,
+        "other": 0.0958
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 96.0,
+      "end": 104.0,
+      "energy": {
+        "vocals": 0.167038,
+        "drums": 0.104851,
+        "bass": 0.065566,
+        "other": 0.039266
+      },
+      "share": {
+        "vocals": 0.4434,
+        "drums": 0.2783,
+        "bass": 0.174,
+        "other": 0.1042
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 100.0,
+      "end": 108.0,
+      "energy": {
+        "vocals": 0.161037,
+        "drums": 0.10444,
+        "bass": 0.067632,
+        "other": 0.050409
+      },
+      "share": {
+        "vocals": 0.4199,
+        "drums": 0.2723,
+        "bass": 0.1763,
+        "other": 0.1314
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 104.0,
+      "end": 112.0,
+      "energy": {
+        "vocals": 0.168687,
+        "drums": 0.104586,
+        "bass": 0.089689,
+        "other": 0.054005
+      },
+      "share": {
+        "vocals": 0.4046,
+        "drums": 0.2508,
+        "bass": 0.2151,
+        "other": 0.1295
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 108.0,
+      "end": 116.0,
+      "energy": {
+        "vocals": 0.173539,
+        "drums": 0.100801,
+        "bass": 0.111204,
+        "other": 0.048649
+      },
+      "share": {
+        "vocals": 0.3997,
+        "drums": 0.2322,
+        "bass": 0.2561,
+        "other": 0.112
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 112.0,
+      "end": 120.0,
+      "energy": {
+        "vocals": 0.165515,
+        "drums": 0.095354,
+        "bass": 0.121649,
+        "other": 0.048546
+      },
+      "share": {
+        "vocals": 0.384,
+        "drums": 0.2212,
+        "bass": 0.2822,
+        "other": 0.1126
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 116.0,
+      "end": 124.0,
+      "energy": {
+        "vocals": 0.164803,
+        "drums": 0.092692,
+        "bass": 0.117123,
+        "other": 0.05767
+      },
+      "share": {
+        "vocals": 0.3812,
+        "drums": 0.2144,
+        "bass": 0.2709,
+        "other": 0.1334
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 120.0,
+      "end": 128.0,
+      "energy": {
+        "vocals": 0.174943,
+        "drums": 0.091755,
+        "bass": 0.112136,
+        "other": 0.064619
+      },
+      "share": {
+        "vocals": 0.3945,
+        "drums": 0.2069,
+        "bass": 0.2529,
+        "other": 0.1457
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 124.0,
+      "end": 132.0,
+      "energy": {
+        "vocals": 0.181705,
+        "drums": 0.092543,
+        "bass": 0.10815,
+        "other": 0.058825
+      },
+      "share": {
+        "vocals": 0.4118,
+        "drums": 0.2097,
+        "bass": 0.2451,
+        "other": 0.1333
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 128.0,
+      "end": 136.0,
+      "energy": {
+        "vocals": 0.137717,
+        "drums": 0.067626,
+        "bass": 0.075405,
+        "other": 0.043122
+      },
+      "share": {
+        "vocals": 0.4252,
+        "drums": 0.2088,
+        "bass": 0.2328,
+        "other": 0.1331
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 132.0,
+      "end": 140.0,
+      "energy": {
+        "vocals": 0.067639,
+        "drums": 0.029685,
+        "bass": 0.00055,
+        "other": 0.034757
+      },
+      "share": {
+        "vocals": 0.51,
+        "drums": 0.2238,
+        "bass": 0.0041,
+        "other": 0.2621
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 136.0,
+      "end": 144.0,
+      "energy": {
+        "vocals": 0.106553,
+        "drums": 0.096929,
+        "bass": 0.050729,
+        "other": 0.036369
+      },
+      "share": {
+        "vocals": 0.3667,
+        "drums": 0.3336,
+        "bass": 0.1746,
+        "other": 0.1252
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 140.0,
+      "end": 148.0,
+      "energy": {
+        "vocals": 0.150163,
+        "drums": 0.120662,
+        "bass": 0.071507,
+        "other": 0.043461
+      },
+      "share": {
+        "vocals": 0.3892,
+        "drums": 0.3128,
+        "bass": 0.1854,
+        "other": 0.1127
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 144.0,
+      "end": 152.0,
+      "energy": {
+        "vocals": 0.164788,
+        "drums": 0.104211,
+        "bass": 0.079707,
+        "other": 0.063042
+      },
+      "share": {
+        "vocals": 0.4002,
+        "drums": 0.2531,
+        "bass": 0.1936,
+        "other": 0.1531
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 148.0,
+      "end": 156.0,
+      "energy": {
+        "vocals": 0.170041,
+        "drums": 0.100739,
+        "bass": 0.091263,
+        "other": 0.072044
+      },
+      "share": {
+        "vocals": 0.3917,
+        "drums": 0.2321,
+        "bass": 0.2102,
+        "other": 0.166
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 152.0,
+      "end": 160.0,
+      "energy": {
+        "vocals": 0.178106,
+        "drums": 0.097059,
+        "bass": 0.09548,
+        "other": 0.071728
+      },
+      "share": {
+        "vocals": 0.4026,
+        "drums": 0.2194,
+        "bass": 0.2158,
+        "other": 0.1621
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 156.0,
+      "end": 164.0,
+      "energy": {
+        "vocals": 0.18172,
+        "drums": 0.109129,
+        "bass": 0.097673,
+        "other": 0.069935
+      },
+      "share": {
+        "vocals": 0.3964,
+        "drums": 0.238,
+        "bass": 0.213,
+        "other": 0.1525
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 160.0,
+      "end": 168.0,
+      "energy": {
+        "vocals": 0.19185,
+        "drums": 0.113989,
+        "bass": 0.088225,
+        "other": 0.06684
+      },
+      "share": {
+        "vocals": 0.4162,
+        "drums": 0.2473,
+        "bass": 0.1914,
+        "other": 0.145
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 164.0,
+      "end": 172.0,
+      "energy": {
+        "vocals": 0.19952,
+        "drums": 0.103376,
+        "bass": 0.098776,
+        "other": 0.062254
+      },
+      "share": {
+        "vocals": 0.4301,
+        "drums": 0.2228,
+        "bass": 0.2129,
+        "other": 0.1342
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 168.0,
+      "end": 176.0,
+      "energy": {
+        "vocals": 0.196974,
+        "drums": 0.102891,
+        "bass": 0.108753,
+        "other": 0.061587
+      },
+      "share": {
+        "vocals": 0.4189,
+        "drums": 0.2188,
+        "bass": 0.2313,
+        "other": 0.131
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 172.0,
+      "end": 180.0,
+      "energy": {
+        "vocals": 0.193346,
+        "drums": 0.10273,
+        "bass": 0.108013,
+        "other": 0.063893
+      },
+      "share": {
+        "vocals": 0.4131,
+        "drums": 0.2195,
+        "bass": 0.2308,
+        "other": 0.1365
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 176.0,
+      "end": 184.0,
+      "energy": {
+        "vocals": 0.199744,
+        "drums": 0.101885,
+        "bass": 0.112764,
+        "other": 0.072347
+      },
+      "share": {
+        "vocals": 0.4104,
+        "drums": 0.2093,
+        "bass": 0.2317,
+        "other": 0.1486
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 180.0,
+      "end": 188.0,
+      "energy": {
+        "vocals": 0.169631,
+        "drums": 0.084608,
+        "bass": 0.087969,
+        "other": 0.075227
+      },
+      "share": {
+        "vocals": 0.4064,
+        "drums": 0.2027,
+        "bass": 0.2107,
+        "other": 0.1802
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 184.0,
+      "end": 192.0,
+      "energy": {
+        "vocals": 0.095102,
+        "drums": 0.044291,
+        "bass": 0.042132,
+        "other": 0.050608
+      },
+      "share": {
+        "vocals": 0.4097,
+        "drums": 0.1908,
+        "bass": 0.1815,
+        "other": 0.218
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 188.0,
+      "end": 196.0,
+      "energy": {
+        "vocals": 0.05559,
+        "drums": 0.015515,
+        "bass": 0.000611,
+        "other": 0.019574
+      },
+      "share": {
+        "vocals": 0.6089,
+        "drums": 0.17,
+        "bass": 0.0067,
+        "other": 0.2144
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 192.0,
+      "end": 200.0,
+      "energy": {
+        "vocals": 0.057398,
+        "drums": 0.054354,
+        "bass": 0.000588,
+        "other": 0.020694
+      },
+      "share": {
+        "vocals": 0.4315,
+        "drums": 0.4086,
+        "bass": 0.0044,
+        "other": 0.1556
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 196.0,
+      "end": 204.0,
+      "energy": {
+        "vocals": 0.075691,
+        "drums": 0.068322,
+        "bass": 0.000609,
+        "other": 0.020823
+      },
+      "share": {
+        "vocals": 0.4575,
+        "drums": 0.413,
+        "bass": 0.0037,
+        "other": 0.1259
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 200.0,
+      "end": 208.0,
+      "energy": {
+        "vocals": 0.091036,
+        "drums": 0.093871,
+        "bass": 0.000632,
+        "other": 0.028583
+      },
+      "share": {
+        "vocals": 0.4252,
+        "drums": 0.4384,
+        "bass": 0.003,
+        "other": 0.1335
+      },
+      "dominant": "drums"
+    },
+    {
+      "start": 204.0,
+      "end": 212.0,
+      "energy": {
+        "vocals": 0.114549,
+        "drums": 0.114864,
+        "bass": 0.033232,
+        "other": 0.044951
+      },
+      "share": {
+        "vocals": 0.3724,
+        "drums": 0.3734,
+        "bass": 0.108,
+        "other": 0.1461
+      },
+      "dominant": "drums"
+    },
+    {
+      "start": 208.0,
+      "end": 216.0,
+      "energy": {
+        "vocals": 0.143244,
+        "drums": 0.115439,
+        "bass": 0.083989,
+        "other": 0.060328
+      },
+      "share": {
+        "vocals": 0.3554,
+        "drums": 0.2864,
+        "bass": 0.2084,
+        "other": 0.1497
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 212.0,
+      "end": 220.0,
+      "energy": {
+        "vocals": 0.156292,
+        "drums": 0.123597,
+        "bass": 0.123879,
+        "other": 0.066482
+      },
+      "share": {
+        "vocals": 0.3324,
+        "drums": 0.2628,
+        "bass": 0.2634,
+        "other": 0.1414
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 216.0,
+      "end": 224.0,
+      "energy": {
+        "vocals": 0.157752,
+        "drums": 0.122213,
+        "bass": 0.131907,
+        "other": 0.060689
+      },
+      "share": {
+        "vocals": 0.3338,
+        "drums": 0.2586,
+        "bass": 0.2791,
+        "other": 0.1284
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 220.0,
+      "end": 228.0,
+      "energy": {
+        "vocals": 0.161245,
+        "drums": 0.11895,
+        "bass": 0.12267,
+        "other": 0.051708
+      },
+      "share": {
+        "vocals": 0.3547,
+        "drums": 0.2617,
+        "bass": 0.2699,
+        "other": 0.1138
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 224.0,
+      "end": 232.0,
+      "energy": {
+        "vocals": 0.154632,
+        "drums": 0.11615,
+        "bass": 0.138441,
+        "other": 0.050966
+      },
+      "share": {
+        "vocals": 0.336,
+        "drums": 0.2524,
+        "bass": 0.3008,
+        "other": 0.1108
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 228.0,
+      "end": 236.0,
+      "energy": {
+        "vocals": 0.134531,
+        "drums": 0.117413,
+        "bass": 0.151405,
+        "other": 0.053355
+      },
+      "share": {
+        "vocals": 0.2946,
+        "drums": 0.2571,
+        "bass": 0.3315,
+        "other": 0.1168
+      },
+      "dominant": "bass"
+    },
+    {
+      "start": 232.0,
+      "end": 240.0,
+      "energy": {
+        "vocals": 0.130871,
+        "drums": 0.12544,
+        "bass": 0.142658,
+        "other": 0.051402
+      },
+      "share": {
+        "vocals": 0.2906,
+        "drums": 0.2785,
+        "bass": 0.3168,
+        "other": 0.1141
+      },
+      "dominant": "bass"
+    },
+    {
+      "start": 236.0,
+      "end": 244.0,
+      "energy": {
+        "vocals": 0.126226,
+        "drums": 0.089778,
+        "bass": 0.09772,
+        "other": 0.040965
+      },
+      "share": {
+        "vocals": 0.3559,
+        "drums": 0.2531,
+        "bass": 0.2755,
+        "other": 0.1155
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 240.0,
+      "end": 248.0,
+      "energy": {
+        "vocals": 0.104468,
+        "drums": 0.00052,
+        "bass": 0.000524,
+        "other": 0.02968
+      },
+      "share": {
+        "vocals": 0.7727,
+        "drums": 0.0038,
+        "bass": 0.0039,
+        "other": 0.2195
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 244.0,
+      "end": 252.0,
+      "energy": {
+        "vocals": 0.116144,
+        "drums": 0.065679,
+        "bass": 0.000602,
+        "other": 0.045002
+      },
+      "share": {
+        "vocals": 0.5107,
+        "drums": 0.2888,
+        "bass": 0.0026,
+        "other": 0.1979
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 248.0,
+      "end": 256.0,
+      "energy": {
+        "vocals": 0.154641,
+        "drums": 0.111805,
+        "bass": 0.05421,
+        "other": 0.051212
+      },
+      "share": {
+        "vocals": 0.4158,
+        "drums": 0.3007,
+        "bass": 0.1458,
+        "other": 0.1377
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 252.0,
+      "end": 260.0,
+      "energy": {
+        "vocals": 0.171058,
+        "drums": 0.130341,
+        "bass": 0.081272,
+        "other": 0.052842
+      },
+      "share": {
+        "vocals": 0.3928,
+        "drums": 0.2993,
+        "bass": 0.1866,
+        "other": 0.1213
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 256.0,
+      "end": 264.0,
+      "energy": {
+        "vocals": 0.171666,
+        "drums": 0.12881,
+        "bass": 0.090408,
+        "other": 0.059341
+      },
+      "share": {
+        "vocals": 0.3813,
+        "drums": 0.2861,
+        "bass": 0.2008,
+        "other": 0.1318
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 260.0,
+      "end": 268.0,
+      "energy": {
+        "vocals": 0.173828,
+        "drums": 0.126456,
+        "bass": 0.095325,
+        "other": 0.050888
+      },
+      "share": {
+        "vocals": 0.3893,
+        "drums": 0.2832,
+        "bass": 0.2135,
+        "other": 0.114
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 264.0,
+      "end": 272.0,
+      "energy": {
+        "vocals": 0.172111,
+        "drums": 0.130755,
+        "bass": 0.094895,
+        "other": 0.048938
+      },
+      "share": {
+        "vocals": 0.3853,
+        "drums": 0.2927,
+        "bass": 0.2124,
+        "other": 0.1096
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 268.0,
+      "end": 276.0,
+      "energy": {
+        "vocals": 0.183669,
+        "drums": 0.138596,
+        "bass": 0.108073,
+        "other": 0.052883
+      },
+      "share": {
+        "vocals": 0.3801,
+        "drums": 0.2868,
+        "bass": 0.2237,
+        "other": 0.1094
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 272.0,
+      "end": 280.0,
+      "energy": {
+        "vocals": 0.205685,
+        "drums": 0.133504,
+        "bass": 0.134388,
+        "other": 0.047773
+      },
+      "share": {
+        "vocals": 0.3945,
+        "drums": 0.2561,
+        "bass": 0.2578,
+        "other": 0.0916
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 276.0,
+      "end": 284.0,
+      "energy": {
+        "vocals": 0.210238,
+        "drums": 0.127322,
+        "bass": 0.143068,
+        "other": 0.046277
+      },
+      "share": {
+        "vocals": 0.399,
+        "drums": 0.2416,
+        "bass": 0.2715,
+        "other": 0.0878
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 280.0,
+      "end": 288.0,
+      "energy": {
+        "vocals": 0.181724,
+        "drums": 0.134152,
+        "bass": 0.147357,
+        "other": 0.044338
+      },
+      "share": {
+        "vocals": 0.358,
+        "drums": 0.2643,
+        "bass": 0.2903,
+        "other": 0.0874
+      },
+      "dominant": "vocals"
+    },
+    {
+      "start": 284.0,
+      "end": 292.0,
+      "energy": {
+        "vocals": 0.140048,
+        "drums": 0.139183,
+        "bass": 0.15763,
+        "other": 0.039823
+      },
+      "share": {
+        "vocals": 0.2938,
+        "drums": 0.292,
+        "bass": 0.3307,
+        "other": 0.0835
+      },
+      "dominant": "bass"
+    },
+    {
+      "start": 288.0,
+      "end": 296.0,
+      "energy": {
+        "vocals": 0.124444,
+        "drums": 0.14715,
+        "bass": 0.156413,
+        "other": 0.042357
+      },
+      "share": {
+        "vocals": 0.2646,
+        "drums": 0.3128,
+        "bass": 0.3325,
+        "other": 0.0901
+      },
+      "dominant": "bass"
+    },
+    {
+      "start": 292.0,
+      "end": 300.0,
+      "energy": {
+        "vocals": 0.102928,
+        "drums": 0.111645,
+        "bass": 0.113811,
+        "other": 0.043786
+      },
+      "share": {
+        "vocals": 0.2766,
+        "drums": 0.3,
+        "bass": 0.3058,
+        "other": 0.1176
+      },
+      "dominant": "bass"
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 20.0,
+      "label": "vocal-forward",
+      "duration": 20.0,
+      "average_share": {
+        "vocals": 0.6326,
+        "drums": 0.0046,
+        "bass": 0.0566,
+        "other": 0.3062
+      }
+    },
+    {
+      "start": 16.0,
+      "end": 24.0,
+      "label": "vocal+drum body",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.4376,
+        "drums": 0.261,
+        "bass": 0.0323,
+        "other": 0.269
+      }
+    },
+    {
+      "start": 20.0,
+      "end": 32.0,
+      "label": "mixed field",
+      "duration": 12.0,
+      "average_share": {
+        "vocals": 0.3398,
+        "drums": 0.309,
+        "bass": 0.1741,
+        "other": 0.177
+      }
+    },
+    {
+      "start": 28.0,
+      "end": 40.0,
+      "label": "vocal+drum body",
+      "duration": 12.0,
+      "average_share": {
+        "vocals": 0.3654,
+        "drums": 0.3194,
+        "bass": 0.1788,
+        "other": 0.1363
+      }
+    },
+    {
+      "start": 36.0,
+      "end": 60.0,
+      "label": "mixed field",
+      "duration": 24.0,
+      "average_share": {
+        "vocals": 0.3484,
+        "drums": 0.2962,
+        "bass": 0.244,
+        "other": 0.1114
+      }
+    },
+    {
+      "start": 56.0,
+      "end": 64.0,
+      "label": "vocal-forward",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.4513,
+        "drums": 0.1906,
+        "bass": 0.2046,
+        "other": 0.1535
+      }
+    },
+    {
+      "start": 60.0,
+      "end": 80.0,
+      "label": "mixed field",
+      "duration": 20.0,
+      "average_share": {
+        "vocals": 0.3451,
+        "drums": 0.2645,
+        "bass": 0.2199,
+        "other": 0.1705
+      }
+    },
+    {
+      "start": 76.0,
+      "end": 84.0,
+      "label": "vocal-forward",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.4412,
+        "drums": 0.2077,
+        "bass": 0.1323,
+        "other": 0.2189
+      }
+    },
+    {
+      "start": 80.0,
+      "end": 112.0,
+      "label": "vocal+drum body",
+      "duration": 32.0,
+      "average_share": {
+        "vocals": 0.4314,
+        "drums": 0.2749,
+        "bass": 0.1618,
+        "other": 0.1318
+      }
+    },
+    {
+      "start": 108.0,
+      "end": 132.0,
+      "label": "mixed field",
+      "duration": 24.0,
+      "average_share": {
+        "vocals": 0.3942,
+        "drums": 0.2169,
+        "bass": 0.2614,
+        "other": 0.1274
+      }
+    },
+    {
+      "start": 128.0,
+      "end": 140.0,
+      "label": "vocal-forward",
+      "duration": 12.0,
+      "average_share": {
+        "vocals": 0.4676,
+        "drums": 0.2163,
+        "bass": 0.1184,
+        "other": 0.1976
+      }
+    },
+    {
+      "start": 136.0,
+      "end": 152.0,
+      "label": "vocal+drum body",
+      "duration": 16.0,
+      "average_share": {
+        "vocals": 0.3854,
+        "drums": 0.2998,
+        "bass": 0.1845,
+        "other": 0.1303
+      }
+    },
+    {
+      "start": 148.0,
+      "end": 164.0,
+      "label": "mixed field",
+      "duration": 16.0,
+      "average_share": {
+        "vocals": 0.3969,
+        "drums": 0.2298,
+        "bass": 0.213,
+        "other": 0.1602
+      }
+    },
+    {
+      "start": 160.0,
+      "end": 168.0,
+      "label": "vocal+drum body",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.4162,
+        "drums": 0.2473,
+        "bass": 0.1914,
+        "other": 0.145
+      }
+    },
+    {
+      "start": 164.0,
+      "end": 172.0,
+      "label": "vocal-forward",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.4301,
+        "drums": 0.2228,
+        "bass": 0.2129,
+        "other": 0.1342
+      }
+    },
+    {
+      "start": 168.0,
+      "end": 192.0,
+      "label": "mixed field",
+      "duration": 24.0,
+      "average_share": {
+        "vocals": 0.4117,
+        "drums": 0.2082,
+        "bass": 0.2172,
+        "other": 0.1629
+      }
+    },
+    {
+      "start": 188.0,
+      "end": 196.0,
+      "label": "vocal-forward",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.6089,
+        "drums": 0.17,
+        "bass": 0.0067,
+        "other": 0.2144
+      }
+    },
+    {
+      "start": 192.0,
+      "end": 212.0,
+      "label": "vocal+drum body",
+      "duration": 20.0,
+      "average_share": {
+        "vocals": 0.4217,
+        "drums": 0.4083,
+        "bass": 0.0298,
+        "other": 0.1403
+      }
+    },
+    {
+      "start": 208.0,
+      "end": 228.0,
+      "label": "mixed field",
+      "duration": 20.0,
+      "average_share": {
+        "vocals": 0.3441,
+        "drums": 0.2674,
+        "bass": 0.2552,
+        "other": 0.1333
+      }
+    },
+    {
+      "start": 224.0,
+      "end": 240.0,
+      "label": "bass-weight",
+      "duration": 16.0,
+      "average_share": {
+        "vocals": 0.3071,
+        "drums": 0.2627,
+        "bass": 0.3164,
+        "other": 0.1139
+      }
+    },
+    {
+      "start": 236.0,
+      "end": 244.0,
+      "label": "mixed field",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.3559,
+        "drums": 0.2531,
+        "bass": 0.2755,
+        "other": 0.1155
+      }
+    },
+    {
+      "start": 240.0,
+      "end": 248.0,
+      "label": "vocal-forward",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.7727,
+        "drums": 0.0038,
+        "bass": 0.0039,
+        "other": 0.2195
+      }
+    },
+    {
+      "start": 244.0,
+      "end": 284.0,
+      "label": "vocal+drum body",
+      "duration": 40.0,
+      "average_share": {
+        "vocals": 0.4054,
+        "drums": 0.2817,
+        "bass": 0.1905,
+        "other": 0.1223
+      }
+    },
+    {
+      "start": 280.0,
+      "end": 288.0,
+      "label": "mixed field",
+      "duration": 8.0,
+      "average_share": {
+        "vocals": 0.358,
+        "drums": 0.2643,
+        "bass": 0.2903,
+        "other": 0.0874
+      }
+    },
+    {
+      "start": 284.0,
+      "end": 300.0,
+      "label": "bass-weight",
+      "duration": 16.0,
+      "average_share": {
+        "vocals": 0.2783,
+        "drums": 0.3016,
+        "bass": 0.323,
+        "other": 0.0971
+      }
+    }
+  ]
+}

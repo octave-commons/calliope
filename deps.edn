@@ -11,4 +11,25 @@
    :main-opts ["-m" "fork-tales.test-runner"]}
 
   :classify
-  {:main-opts ["-m" "fork-tales.classifier.main"]}}}
+  {:main-opts ["-m" "fork-tales.classifier.main"]}
+
+  ;; DSP lane. Cannot run under babashka: libpython-clj needs JNA and
+  ;; dtype-next native interop, and bb's GraalVM image has no JNA on the
+  ;; classpath. No pod is needed either — a pod would be a JVM process too, so
+  ;; it buys nothing over invoking this alias directly. bb and this lane
+  ;; communicate only by appending to ledgers/reconstruction.edn.
+  ;;
+  ;; libpython-clj 2.025 is verified: resolved from Maven and
+  ;; libpython-clj2.python loaded on the JVM, checked 2026-07-28 locally.
+  ;;
+  ;; The :main-opts entry point is DECLARED, NOT IMPLEMENTED. There is no
+  ;; reconstruction/metrics.clj yet, so `clojure -M:metrics` fails with
+  ;; FileNotFoundException on reconstruction.metrics. Until that namespace is
+  ;; written, the DSP lane runs as scripts/reconstruction/audio_metrics.py under
+  ;; the venv recorded in docs/reconstruction/runtime-split.md. This alias still
+  ;; earns its place: it pins the runtime boundary and puts scripts/ on the JVM
+  ;; classpath, which is how reconstruction.ledger becomes loadable there.
+  :metrics
+  {:extra-paths ["scripts"]
+   :extra-deps {clj-python/libpython-clj {:mvn/version "2.025"}}
+   :main-opts ["-m" "reconstruction.metrics"]}}}

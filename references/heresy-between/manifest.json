@@ -1,0 +1,274 @@
+{
+  "reference_id": "heresy-between",
+  "source_audio": "/home/err/devel/Music/heresy_between/存在論的な“反・虚無”の論証として.mp3",
+  "generated_at": "2026-05-13T18:57:46.155116+00:00",
+  "workbench": "/home/err/devel/Music/fork-tales/references/mir-workbench",
+  "environment": {
+    "manager": "uv",
+    "python": "3.12.3",
+    "demucs_model": "htdemucs"
+  },
+  "stems": {
+    "vocals": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/vocals.wav",
+      "samplerate": 44100,
+      "channels": 2,
+      "frames": 13376412,
+      "duration_seconds": 303.32,
+      "format": "WAV",
+      "subtype": "PCM_16"
+    },
+    "drums": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/drums.wav",
+      "samplerate": 44100,
+      "channels": 2,
+      "frames": 13376412,
+      "duration_seconds": 303.32,
+      "format": "WAV",
+      "subtype": "PCM_16"
+    },
+    "bass": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/bass.wav",
+      "samplerate": 44100,
+      "channels": 2,
+      "frames": 13376412,
+      "duration_seconds": 303.32,
+      "format": "WAV",
+      "subtype": "PCM_16"
+    },
+    "other": {
+      "path": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/other.wav",
+      "samplerate": 44100,
+      "channels": 2,
+      "frames": 13376412,
+      "duration_seconds": 303.32,
+      "format": "WAV",
+      "subtype": "PCM_16"
+    }
+  },
+  "vocal_f0": {
+    "path": "/home/err/devel/Music/fork-tales/references/heresy-between/vocal/vocals.pyin.f0.json",
+    "algorithm": "librosa.pyin",
+    "frame_count": 6532,
+    "voiced_frame_count": 5277
+  },
+  "vocal_notes": {
+    "json_path": "/home/err/devel/Music/fork-tales/references/heresy-between/vocal/vocals.pyin.notes.json",
+    "midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/midi/vocals.pyin.notes.mid",
+    "note_count": 221
+  },
+  "arrangement_sections": {
+    "json_path": "/home/err/devel/Music/fork-tales/references/heresy-between/arrangement/sections.energy.json",
+    "markdown_path": "/home/err/devel/Music/fork-tales/references/heresy-between/arrangement/sections.energy.md",
+    "method": "8s RMS windows, 4s hop, merged by dominant stem-share labels",
+    "section_count": 25,
+    "window_count": 74
+  },
+  "lyrics_alignment": {
+    "json_path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.multilingual-medium.json",
+    "previous_english_model_json_path": "/home/err/devel/Music/fork-tales/references/heresy-between/lyrics/alignment.json",
+    "service": "knoxx-stt-npu /transcribe-timed",
+    "model_id": "OpenVINO/whisper-medium-int8-ov",
+    "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+    "device": "CPU",
+    "requested_device": "NPU",
+    "realtime_device": "NPU",
+    "timed_requested_device": "CPU",
+    "word_timestamps": true,
+    "duration_seconds": 303.32,
+    "chunk_count": 13,
+    "segment_count": 87,
+    "word_count": 687,
+    "rtf": 1.2255698933727772,
+    "quality_note": "Multilingual medium is preferred for song/reference Japanese alignment. The live realtime STT pipeline remains on English-only medium because multilingual Whisper previously misdetected English conversational speech as Korean."
+  },
+  "other_piano": {
+    "source_stem": "/home/err/devel/Music/fork-tales/references/heresy-between/stems/htdemucs/存在論的な“反・虚無”の論証として/other.wav",
+    "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/other-piano-basic-pitch-v1.json",
+    "basic_pitch_raw_midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/basic-pitch/other_basic_pitch.mid",
+    "basic_pitch_raw_csv_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/basic-pitch/other_basic_pitch.csv",
+    "cleaned_midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.mid",
+    "cleaned_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.wav",
+    "cleaned_fluidsynth_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1-fluidr3.wav",
+    "raw_note_count": 4749,
+    "cleaned_note_count": 3860,
+    "pitch_range_midi": [30, 87],
+    "method": "Basic Pitch local repo in uv Python 3.11 venv, then duration/velocity filtering, 40ms onset-cell quantization, capped piano polyphony, and simple piano sonification"
+  },
+  "piano_separator_benchmarks": {
+    "audio_separator_env": {
+      "venv": "/home/err/devel/Music/fork-tales/references/mir-workbench/.venv-audio-separator",
+      "package": "audio-separator==0.44.1",
+      "torch": "2.12.0+cu130",
+      "gpu_verified": true,
+      "model_cache": "/home/err/devel/Music/fork-tales/references/mir-workbench/audio-separator-models"
+    },
+    "bytedance_env": {
+      "venv": "/home/err/devel/Music/fork-tales/references/mir-workbench/.venv-piano-transcription",
+      "package": "piano-transcription-inference==0.0.6",
+      "torch": "2.5.1+cu121",
+      "checkpoint": "/home/err/piano_transcription_inference_data/note_F1=0.9677_pedal_F1=0.9186.pth",
+      "gpu_verified": true,
+      "cwd_caveat": "Run outside /home/err/devel because /home/err/devel/coverage shadows Python coverage and breaks numba imports."
+    },
+    "gpu_model_chairs": {
+      "musicgen_unload_endpoint": "POST http://127.0.0.1:8083/unload",
+      "health_after_unload": {"model_loaded": false, "device": "cuda"},
+      "caveat": "Endpoint returns HTTP 500 because the aiohttp route returns the coroutine incorrectly, but the unload side effect works."
+    },
+    "separator_outputs": {
+      "htdemucs_6s_full_piano": "/home/err/devel/Music/fork-tales/references/heresy-between/separator-benchmark/htdemucs_6s-piano/存在論的な“反・虚無”の論証として_(Piano)_htdemucs_6s.wav",
+      "melband_roformer_inst_v2_full": "/home/err/devel/Music/fork-tales/references/heresy-between/separator-benchmark/melband-inst-v2-full/存在論的な“反・虚無”の論証として_(Instrumental)_melband_roformer_inst_v2.wav",
+      "excerpt_summary": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/separator-benchmark-60s/separator-candidate-summary.json"
+    },
+    "excerpt_metrics": {
+      "htdemucs_6s_piano": {
+        "chroma_to_demucs_other": 0.8425655961036682,
+        "onset_peak_ratio_to_original": 0.42825815081596375,
+        "spectral_flux_ratio_to_original": 0.009568833746016026,
+        "assessment": "Only explicit Piano stem, but weak transient/flux candidate for this track."
+      },
+      "kuielab_b_other": {
+        "chroma_to_demucs_other": 0.9047609567642212,
+        "onset_peak_ratio_to_original": 0.5872182250022888,
+        "spectral_flux_ratio_to_original": 0.10282502323389053,
+        "assessment": "Harmonically close to Demucs other, not a transient fix."
+      },
+      "melband_roformer_inst_v2": {
+        "chroma_to_demucs_other": 0.8981370329856873,
+        "onset_peak_ratio_to_original": 1.4110920429229736,
+        "spectral_flux_ratio_to_original": 0.5695247650146484,
+        "assessment": "Best transient-preserving separator candidate from the 60s benchmark, but not pure piano."
+      }
+    },
+    "bytedance_transcriptions": {
+      "v6_demucs_other": {
+        "midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6.mid",
+        "render_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6-fluidr3-rmsmatched.wav",
+        "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v6/other-piano-bytedance-v6.json",
+        "note_count": 3980,
+        "pitch_range_midi": [25, 99],
+        "pedal_cc64_count": 262,
+        "rmsmatched_chroma_to_other": 0.67379230260849,
+        "diagnostics": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v6_rmsmatched/comparison-summary.json"
+      },
+      "v7_melband_inst_v2": {
+        "midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst.mid",
+        "render_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst-fluidr3-rmsmatched.wav",
+        "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst.json",
+        "note_count": 1136,
+        "pitch_range_midi": [22, 104],
+        "pedal_cc64_count": 574,
+        "rmsmatched_chroma_to_other": 0.630410373210907,
+        "diagnostics": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/per-stem/piano_other_bytedance_v7_melband_rmsmatched/comparison-summary.json"
+      }
+    },
+    "current_conclusion": "Corrected after listening: Demucs other.wav is not ground truth and was not a good enough stem extraction. The v7 MelBand Inst V2 -> ByteDance branch is a fresh original-MP3 separator/transcriber route and sounds materially better than the other.wav-based route despite weaker other.wav-relative metrics. Judge v7/v8 against the original full mix, not against Demucs other.wav."
+  },
+  "reconstructions": {
+    "pyin_energy_v1": {
+      "wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-pyin-energy-reconstruction-v1.wav",
+      "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-pyin-energy-reconstruction-v1.json",
+      "kind": "analysis-driven reconstruction sketch",
+      "duration_seconds": 303.32,
+      "sample_rate": 44100,
+      "channels": 2,
+      "mean_volume_db": -17.9,
+      "max_volume_db": -0.7,
+      "method": "pYIN vocal-note synth lead plus section-energy-driven synthetic drums, bass, and texture"
+    },
+    "openutau_ritsu_v1": {
+      "ustx_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-pyin-vocal-v1.ustx",
+      "vocal_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-ritsu-pyin-vocal-v1.wav",
+      "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-openutau-reconstruction-v1.wav",
+      "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-openutau-reconstruction-v1-master.wav",
+      "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/openutau/heresy-between-openutau-reconstruction-v1.json",
+      "kind": "OpenUTAU vocal reconstruction mix",
+      "singer": "波音リツ連続音Ver1.5.1",
+      "phonemizer": "OpenUtau.Plugin.Builtin.JapaneseVCVPhonemizer",
+      "duration_seconds": 303.32,
+      "sample_rate": 44100,
+      "channels": 2,
+      "master_mean_volume_db": -19.6,
+      "master_max_volume_db": 0.0,
+      "lyric_strategy": "safe kana syllables cycled over recovered pYIN notes; not final lyric transcription"
+    },
+    "openutau_other_piano_v2": {
+      "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-openutau-other-piano-reconstruction-v2.wav",
+      "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-openutau-other-piano-reconstruction-v2-master.wav",
+      "kind": "OpenUTAU vocal reconstruction plus Basic Pitch other-stem piano",
+      "duration_seconds": 303.32,
+      "sample_rate": 44100,
+      "channels": 2,
+      "master_mean_volume_db": -17.0,
+      "master_max_volume_db": 0.0,
+      "piano_midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.mid"
+    },
+    "piano_forward_v3": {
+      "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-piano-forward-reconstruction-v3.wav",
+      "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-piano-forward-reconstruction-v3-master.wav",
+      "kind": "FluidSynth piano-forward reconstruction with OpenUTAU vocal and reduced synthetic bed",
+      "duration_seconds": 303.32,
+      "sample_rate": 44100,
+      "channels": 2,
+      "master_mean_volume_db": -17.9,
+      "master_max_volume_db": -1.9,
+      "piano_midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1.mid",
+      "piano_render_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/cleaned/other-piano-basic-pitch-cleaned-v1-fluidr3.wav"
+    },
+    "melband_bytedance_piano_v8": {
+      "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v8.wav",
+      "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v8-master.wav",
+      "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v8.json",
+      "kind": "Reconstruction promoted from original-MP3 MelBand Inst V2 separator plus ByteDance piano transcription",
+      "duration_seconds": 303.32,
+      "sample_rate": 44100,
+      "piano_branch_dir": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst",
+      "piano_midi_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst.mid",
+      "piano_render_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/bytedance-v7-melband-inst/other-piano-bytedance-v7-melband-inst-fluidr3-rmsmatched.wav",
+      "diagnostics_original_vs_v8": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v8/comparison-summary.json",
+      "original_vs_v8_metrics": {
+        "mean_chroma_similarity": 0.5748501420021057,
+        "onset_95p_ratio": 0.9014620184898376,
+        "mean_rms_gap_db": -3.7309486865997314,
+        "piano_body_800_2500_delta_db": -17.924230575561523,
+        "presence_2500_6000_delta_db": -15.0889253616333,
+        "air_6000_12000_delta_db": -14.518147468566895
+      },
+      "interpretation": "Listening-promoted branch. Use this as the piano/transient backbone, then add harmonic body and brightness. Do not score it against Demucs other.wav as if that stem were ground truth."
+    },
+    "melband_bytedance_body_air_v9": {
+      "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v9-body-air.wav",
+      "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v9-body-air-master.wav",
+      "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-bytedance-piano-reconstruction-v9-body-air.json",
+      "kind": "Synthetic parallel body/air enhancement from v7 piano render",
+      "diagnostics_original_vs_v9": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v9/comparison-summary.json",
+      "original_vs_v9_metrics": {
+        "mean_chroma_similarity": 0.569904088973999,
+        "onset_95p_ratio": 1.7690836191177368,
+        "mean_rms_gap_db": -8.595146179199219,
+        "piano_body_800_2500_delta_db": -22.870073318481445,
+        "presence_2500_6000_delta_db": -21.541460037231445,
+        "air_6000_12000_delta_db": -24.136869430541992
+      },
+      "interpretation": "Failed direction: too click-forward and spectrally thinner than v8. Keep as a preserved diagnostic branch."
+    },
+    "melband_hybrid_body_v10": {
+      "mix_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-hybrid-body-reconstruction-v10.wav",
+      "master_wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-hybrid-body-reconstruction-v10-master.wav",
+      "manifest_path": "/home/err/devel/Music/fork-tales/references/heresy-between/reconstructions/heresy-between-melband-hybrid-body-reconstruction-v10.json",
+      "kind": "Hybrid v7 MIDI piano plus filtered MelBand Inst V2 body/air audio",
+      "diagnostics_original_vs_v10": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/original-vs-v10/comparison-summary.json",
+      "original_vs_v10_metrics": {
+        "mean_chroma_similarity": 0.5872471332550049,
+        "onset_95p_ratio": 1.5942800045013428,
+        "mean_rms_gap_db": -3.2134883403778076,
+        "low_mid_250_800_delta_db": -9.844898223876953,
+        "piano_body_800_2500_delta_db": -14.325393676757812,
+        "presence_2500_6000_delta_db": -15.241589546203613,
+        "air_6000_12000_delta_db": -19.546340942382812
+      },
+      "interpretation": "Current best piano/body direction among recent branches, but broader mix failures are now dominated by vocal reconstruction gaps and bass support."
+    }
+  }
+}

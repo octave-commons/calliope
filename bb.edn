@@ -1,0 +1,8 @@
+;; Babashka classpath for the reconstruction lanes.
+;;
+;; bb hosts the pure-data lanes: handoff validation, rubric grading, judge
+;; parsing, and the event ledger. The DSP lane (librosa/matplotlib via
+;; libpython-clj) cannot run here — bb's native image has no JNA — so it lives
+;; behind the JVM :metrics alias in deps.edn. The two runtimes never call each
+;; other; they both append to ledgers/reconstruction.edn.
+{:paths ["src" "scripts" "resources"]}

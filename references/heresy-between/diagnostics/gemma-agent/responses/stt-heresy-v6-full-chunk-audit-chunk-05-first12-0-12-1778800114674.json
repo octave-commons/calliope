@@ -1,0 +1,68 @@
+{
+  "timed_device": "CPU",
+  "realtime_device": "NPU",
+  "realtime_model_id": "OpenVINO/whisper-medium.en-int8-ov",
+  "rtf": 3.2611162662506104,
+  "words": [
+    {
+      "end_s": 10.539999961853027,
+      "start_s": 0,
+      "word": "なんてもう来なくてもするよ一受けせ"
+    }
+  ],
+  "return_timestamps": true,
+  "segments": [
+    {
+      "end_s": 3,
+      "start_s": 0,
+      "text": "なんてもう来なくても"
+    },
+    {
+      "end_s": 6,
+      "start_s": 4,
+      "text": "するよ"
+    },
+    {
+      "end_s": 11,
+      "start_s": 8,
+      "text": "一受けせ"
+    }
+  ],
+  "chunks": [
+    {
+      "offset_s": 0,
+      "segments": [
+        {
+          "end_s": 3,
+          "start_s": 0,
+          "text": "なんてもう来なくても"
+        },
+        {
+          "end_s": 6,
+          "start_s": 4,
+          "text": "するよ"
+        },
+        {
+          "end_s": 11,
+          "start_s": 8,
+          "text": "一受けせ"
+        }
+      ],
+      "text": "なんてもう来なくてもするよ一受けせ",
+      "words": [
+        {
+          "end_s": 10.539999961853027,
+          "start_s": 0,
+          "word": "なんてもう来なくてもするよ一受けせ"
+        }
+      ]
+    }
+  ],
+  "model_id": "OpenVINO/whisper-medium-int8-ov",
+  "word_timestamps": true,
+  "duration_s": 12,
+  "device": "CPU",
+  "timed_requested_device": "CPU",
+  "timed_init_error": null,
+  "text": "なんてもう来なくてもするよ一受けせ"
+}

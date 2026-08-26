@@ -1,0 +1,7 @@
+{
+  "source_midi": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/burst-v4/other-piano-basic-pitch-burst-v4.mid",
+  "wav_path": "/home/err/devel/Music/fork-tales/references/heresy-between/other-piano/burst-v4/other-piano-basic-pitch-burst-v5-hammer.wav",
+  "note_count": 4720,
+  "duration_seconds": 303.32,
+  "method": "Custom hammer piano render from burst MIDI: short note envelopes, bright inharmonic harmonics, velocity-scaled hammer noise clicks, limited sustain."
+}

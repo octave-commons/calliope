@@ -11,3 +11,4 @@ out/
 # record of every transition, frontmatter edit, and comment, and ledger
 # discipline requires that history survive a fresh checkout.
 docs/kanban/board.json
+.ημ/session-mycology/

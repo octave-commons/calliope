@@ -1,0 +1,141 @@
+{
+  "original": {
+    "audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/original-fullband.wav",
+    "sha256": "d6a50404f785217f7701f3cc9778d1419a9aca15d5b379ac31b6bcf306e94db9",
+    "sample_rate": 22050,
+    "duration_seconds": 6.5,
+    "analysis_settings": {
+      "hop_length": 256,
+      "n_fft": 2048,
+      "n_mels": 128,
+      "fmin_hz": 65.0,
+      "fmax_hz": 1046.5
+    },
+    "outputs": {
+      "f0_csv": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.original.f0.csv",
+      "f0_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.original.f0.png",
+      "mel_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.original.mel.png"
+    },
+    "f0_hz": {
+      "count": 456,
+      "mean": 300.60422083998975,
+      "median": 286.82649376257405,
+      "min": 152.82122781686914,
+      "max": 557.3222005188725,
+      "p05": 209.66694984712768,
+      "p95": 536.0123123903409
+    },
+    "voiced_ratio": 0.8142857142857143,
+    "voiced_probability": {
+      "count": 560,
+      "mean": 0.3335822009179881,
+      "median": 0.2796051653363589,
+      "min": 0.010000000000000437,
+      "max": 0.9848789761259925,
+      "p05": 0.010000000814014906,
+      "p95": 0.8266685594724996
+    },
+    "rms": {
+      "count": 560,
+      "mean": 0.09146655350923538,
+      "median": 0.08705378323793411,
+      "min": 0.021344633772969246,
+      "max": 0.1696382611989975,
+      "p05": 0.04262910038232803,
+      "p95": 0.15553994476795197
+    },
+    "spectral_centroid_hz": {
+      "count": 560,
+      "mean": 4338.341693889966,
+      "median": 4081.063831709535,
+      "min": 2091.423893827422,
+      "max": 7694.072172845771,
+      "p05": 2806.7714794023104,
+      "p95": 6562.537709320337
+    }
+  },
+  "candidate": {
+    "audio": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/candidate-fullband.wav",
+    "sha256": "7762cfb42b2e31e975eb061020002c799393e76ece5e837b9f0ec1d791c51415",
+    "sample_rate": 22050,
+    "duration_seconds": 6.5,
+    "analysis_settings": {
+      "hop_length": 256,
+      "n_fft": 2048,
+      "n_mels": 128,
+      "fmin_hz": 65.0,
+      "fmax_hz": 1046.5
+    },
+    "outputs": {
+      "f0_csv": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.candidate.f0.csv",
+      "f0_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.candidate.f0.png",
+      "mel_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.candidate.mel.png"
+    },
+    "f0_hz": {
+      "count": 346,
+      "mean": 295.77096892205765,
+      "median": 261.5061646776419,
+      "min": 231.63366671648822,
+      "max": 959.2088413293768,
+      "p05": 232.97550689710764,
+      "p95": 333.30546129938955
+    },
+    "voiced_ratio": 0.6178571428571429,
+    "voiced_probability": {
+      "count": 560,
+      "mean": 0.4796271974096922,
+      "median": 0.6159498854580681,
+      "min": 0.0,
+      "max": 1.0,
+      "p05": 0.0,
+      "p95": 0.9848789761259924
+    },
+    "rms": {
+      "count": 560,
+      "mean": 0.06348777562379837,
+      "median": 0.07911236584186554,
+      "min": 0.0,
+      "max": 0.17121824622154236,
+      "p05": 0.0,
+      "p95": 0.13843809068202972
+    },
+    "spectral_centroid_hz": {
+      "count": 560,
+      "mean": 1757.5401595805754,
+      "median": 1918.3648702359246,
+      "min": 0.0,
+      "max": 8674.588293922146,
+      "p05": 0.0,
+      "p95": 4528.46796326734
+    }
+  },
+  "duration_compared_seconds": 6.5,
+  "outputs": {
+    "mel_diff_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.mel-diff.png",
+    "f0_overlay_png": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.f0-overlay.png"
+  },
+  "pitch": {
+    "voiced_overlap_ratio": 0.4642857142857143,
+    "cents_error": {
+      "count": 260,
+      "mean": -121.96153846153844,
+      "median": -10.000000000000258,
+      "min": -1330.0,
+      "max": 1950.0000000000002,
+      "p05": -1280.0000000000002,
+      "p95": 375.99999999997436
+    },
+    "mean_abs_cents": 360.7307692307692,
+    "f0_hz_correlation": 0.048715353065195234
+  },
+  "spectrogram": {
+    "mel_db_mean_abs_diff": 24.19088363647461,
+    "mel_db_rmse": 28.869522094726562,
+    "mel_db_correlation": 0.07215294023028032
+  },
+  "waveform": {
+    "normalized_correlation": -0.11739488379461654
+  },
+  "command": "compare",
+  "out_json": "/home/err/devel/Music/fork-tales/references/heresy-between/diagnostics/gemma-agent/checks/heresy-v17-ending-tail-v16-ending-tail-243.36-6.5/metrics.json"
+}

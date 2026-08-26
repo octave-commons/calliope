@@ -82,15 +82,20 @@
   (some->> (re-find #"(?i)\.([^.]+)$" (str path)) second str/lower-case))
 
 #?(:clj
+   (defn- media-files [root]
+     (let [root-file (.getCanonicalFile (File. (str root)))]
+       (->> (file-seq root-file)
+            (filter #(.isFile ^File %))
+            (remove #(= manifest-name (.getName ^File %)))
+            (filter #(contains? media-extensions (extension (.getName ^File %))))))))
+
+#?(:clj
    (defn scan-entries
      "Recursively hash media files under `root`, returning path-sorted entries.
      Paths are POSIX dataset-relative paths; every non-media file is ignored."
      [root]
      (let [root-file (.getCanonicalFile (File. (str root)))]
-       (->> (file-seq root-file)
-            (filter #(.isFile ^File %))
-            (remove #(= manifest-name (.getName ^File %)))
-            (filter #(contains? media-extensions (extension (.getName ^File %))))
+       (->> (media-files root)
             (map (fn [^File file]
                    {:path (relative-path root-file file)
                     :bytes (.length file)
@@ -100,6 +105,16 @@
    :cljs
    (defn scan-entries [& _]
      (throw (ex-info "Media datasets require a JVM filesystem" {}))))
+
+#?(:clj
+   (defn scan-media-paths
+     "Path-sorted dataset-relative media paths under `root`, without hashing."
+     [root]
+     (let [root-file (.getCanonicalFile (File. (str root)))]
+       (->> (media-files root)
+            (map #(relative-path root-file ^File %))
+            (sort-by identity)
+            vec))))
 
 (defn- parse-line [line-number line]
   (try
@@ -202,8 +217,8 @@
                                 :else acc)))
                           {:missing [] :size-mismatch [] :hash-mismatch []}
                           checked)
-           listed (set (map :path checked))
-           extras (->> (scan-entries root) (map :path) (remove listed) vec)]
+          listed (set (map :path checked))
+          extras (->> (scan-media-paths root) (remove listed) vec)]
        (assoc report
               :ok (every? empty? (vals report))
               :checked (count checked)

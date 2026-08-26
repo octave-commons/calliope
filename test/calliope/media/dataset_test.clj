@@ -51,7 +51,9 @@
     (is (empty? (:hash-mismatch (dataset/verify root {:hash? false}))))
     (is (= ["absence/one.mp3"] (mapv :path (:hash-mismatch (dataset/verify root {:hash? true})))))
     (write-bytes! root "absence/extra.mp3" (.getBytes "extra" "UTF-8"))
-    (is (= ["absence/extra.mp3"] (:extras (dataset/verify root {:hash? true}))))))
+    (let [report (dataset/verify root {:hash? false})]
+      (is (= ["absence/extra.mp3"] (:extras report)))
+      (is (:ok report) "extras alone must not fail verification"))))
 
 (deftest paths-and-roots-normalize-as-specified
   (is (= "absence/one.mp3" (dataset/normalize-dest "tracks/absence/one.mp3")))

@@ -28,7 +28,12 @@
   (media/resolve-root repo-root (System/getenv media/env-var)))
 
 (defn remote-flag [args]
-  (some-> (drop-while #(not= "--remote" %) args) second))
+  (let [[flag value] (drop-while #(not= "--remote" %) args)]
+    (when flag
+      (when-not value
+        (println "ERROR: --remote requires a value, e.g. --remote gdrive:calliope-media")
+        (System/exit 1))
+      value)))
 
 (defn remote [args]
   (or (remote-flag args)

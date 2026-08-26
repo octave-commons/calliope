@@ -1,18 +1,19 @@
 ---
-uuid: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
-title: "FT-000: Establish media-workbench authority and durable studio foundation"
-status: breakdown
-type: epic
-priority: P0
-phase: 0
-owner: unassigned
-points: 13
-labels: media-workbench, architecture, law, decomposed
-category: epics
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
+category: "epics"
+labels: "media-workbench, architecture, law, decomposed"
 process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "epic"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785719665959-0.2tz6qdzefvr0evb3to9"
+points: "13"
+title: "FT-000: Establish media-workbench authority and durable studio foundation"
+priority: "P0"
+status: "in_progress"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-000: Establish media-workbench authority and durable studio foundation
@@ -70,3 +71,9 @@ eta-mu kanban list
 Child cards carry the executable tests and decision evidence for their bounded
 scopes. Authority-path resolution is not checked by Rheos; verify those paths by
 opening the referenced files.
+
+---
+Dependency analysis (2026-08-02): no dependencies — root epic. Blocks FT-001 (daily-driver player epic). Children: FT-000A, FT-000B, FT-000C, FT-000D. Moved breakdown -> ready: no unresolved blockers.
+
+Gate 0 progress (2026-08-02): FT-000A done (authority accepted). FT-000B done (studio domain laws, 30 tests / 193 assertions green). FT-000D in review (spike evidence + ADR-002 proposed; acceptance pending Err). FT-000C blocked on FT-000D acceptance. Epic remains in_progress until children resolve.
+---

@@ -1,20 +1,21 @@
 ---
-uuid: "ft-001e-integrate-system-media-keys-through-the-native-shell-adapter"
-title: "FT-001E: Integrate system media keys through the native shell adapter"
-status: incoming
-type: story
-priority: P0
-phase: 1
-epic: "ft-001-ship-a-daily-driver-library-and-player"
-owner: unassigned
-points: 3
-labels: native-ui, player, adapter
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "native-ui, player, adapter"
 dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology", "ft-001c-build-persistent-player-shell-and-library-browser"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "1"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785713921129-0.dmzyyv4i9xr8s2rxnqv"
+points: "3"
+title: "FT-001E: Integrate system media keys through the native shell adapter"
+priority: "P1"
+status: "icebox"
+epic: "ft-001-ship-a-daily-driver-library-and-player"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-001e-integrate-system-media-keys-through-the-native-shell-adapter"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-001E: Integrate system media keys through the native shell adapter

@@ -1,20 +1,21 @@
 ---
-uuid: "ft-000c-define-append-only-studio-events-and-read-projection"
-title: "FT-000C: Define append-only studio events and read projection"
-status: incoming
-type: story
-priority: P0
-phase: 0
-epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
-owner: unassigned
-points: 5
-labels: event-ledger, projection, media-workbench
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "event-ledger, projection, media-workbench"
 dependency: ["ft-000b-define-media-workbench-domain-laws", "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714738557-0.kwd8htztk3ttvl8v6x8"
+points: "5"
+title: "FT-000C: Define append-only studio events and read projection"
+priority: "P0"
+status: "blocked"
+epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-000c-define-append-only-studio-events-and-read-projection"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-000C: Define append-only studio events and read projection
@@ -52,3 +53,7 @@ into a responsive local read model without making the projection canonical.
 
 Property/examples for deterministic replay, idempotency, append-only behavior,
 and invalid event rejection pass under `clojure -M:test`.
+
+---
+Dependency analysis (2026-08-02): depends on FT-000B and FT-000D. Blocks FT-001D (ratings/labels/playlists write studio events). Moved breakdown -> blocked: waiting on FT-000B and FT-000D.
+---

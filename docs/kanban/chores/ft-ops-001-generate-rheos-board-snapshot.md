@@ -1,15 +1,16 @@
 ---
-uuid: "ft-ops-001-validate-cards-and-generate-rheos-board-snapshot"
-title: "FT-OPS-001: Validate corrected board with installed Rheos"
-status: incoming
-type: chore
-priority: P0
-phase: 0
-owner: unassigned
-points: 1
-labels: rheos, board, verification
-category: chores
+category: "chores"
+labels: "rheos, board, verification"
 process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "chore"
+write-id: "1785714118320-0.g1zm1keuiy6aglwp30"
+points: "1"
+title: "FT-OPS-001: Validate corrected board with installed Rheos"
+priority: "P0"
+status: "accepted"
+uuid: "ft-ops-001-validate-cards-and-generate-rheos-board-snapshot"
+owner: "unassigned"
 ---
 
 # FT-OPS-001: Validate corrected board with installed Rheos

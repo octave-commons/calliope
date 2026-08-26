@@ -1,20 +1,21 @@
 ---
-uuid: "ft-001d-add-dispositions-ratings-labels-sorting-and-playlists"
-title: "FT-001D: Add dispositions, ratings, labels, sorting, and playlists"
-status: incoming
-type: story
-priority: P0
-phase: 1
-epic: "ft-001-ship-a-daily-driver-library-and-player"
-owner: unassigned
-points: 5
-labels: curation, ratings, labels, playlists
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "curation, ratings, labels, playlists"
 dependency: ["ft-000c-define-append-only-studio-events-and-read-projection", "ft-001c-build-persistent-player-shell-and-library-browser"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "1"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714740603-0.qo9laf8ik2l5yu8dtax"
+points: "5"
+title: "FT-001D: Add dispositions, ratings, labels, sorting, and playlists"
+priority: "P0"
+status: "blocked"
+epic: "ft-001-ship-a-daily-driver-library-and-player"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-001d-add-dispositions-ratings-labels-sorting-and-playlists"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-001D: Add dispositions, ratings, labels, sorting, and playlists
@@ -56,3 +57,7 @@ player.
 
 Command/projection tests cover repeated requests, independent rating dimensions,
 render/clip scope separation, label provenance, and playlist ordering.
+
+---
+Dependency analysis (2026-08-02): depends on FT-000C and FT-001C. Blocks FT-002A. Moved breakdown -> blocked: waiting on FT-000C and FT-001C.
+---

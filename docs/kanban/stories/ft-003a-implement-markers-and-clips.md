@@ -1,20 +1,21 @@
 ---
-uuid: "ft-003a-implement-marker-and-clip-commands-over-immutable-renders"
-title: "FT-003A: Implement marker and clip commands over immutable renders"
-status: incoming
-type: story
-priority: P0
-phase: 3
-epic: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
-owner: unassigned
-points: 5
-labels: clips, markers, non-destructive-editing
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "clips, markers, non-destructive-editing"
 dependency: ["ft-000b-define-media-workbench-domain-laws", "ft-000c-define-append-only-studio-events-and-read-projection", "ft-001b-implement-playback-resolver-persistent-queue-and-resume"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "3"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714113352-0.m0kso6x918twgyxsn1"
+points: "5"
+title: "FT-003A: Implement marker and clip commands over immutable renders"
+priority: "P1"
+status: "icebox"
+epic: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-003a-implement-marker-and-clip-commands-over-immutable-renders"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-003A: Implement marker and clip commands over immutable renders

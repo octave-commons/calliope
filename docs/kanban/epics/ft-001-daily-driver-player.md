@@ -1,19 +1,20 @@
 ---
-uuid: "ft-001-ship-a-daily-driver-library-and-player"
-title: "FT-001: Ship a daily-driver library and player"
-status: breakdown
-type: epic
-priority: P0
-phase: 1
-owner: unassigned
-points: 21
-labels: media-workbench, player, library, decomposed
-category: epics
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "epics"
+labels: "media-workbench, player, library, decomposed"
 dependency: ["ft-000-establish-media-workbench-authority-and-durable-studio-foundation"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "1"
+type: "epic"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714739428-0.smtf7dvwnenuj4gvhw"
+points: "21"
+title: "FT-001: Ship a daily-driver library and player"
+priority: "P0"
+status: "blocked"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-001-ship-a-daily-driver-library-and-player"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-001: Ship a daily-driver library and player
@@ -84,3 +85,7 @@ Expected child dependency edges (verified against each `find` result's
 
 Child-card tests and the Gate 1 native playback evidence verify implementation.
 This epic remains `breakdown` until its child work is accepted.
+
+---
+Dependency analysis (2026-08-02): depends on FT-000 (foundation epic). Blocks FT-002 and FT-003 epics. Children: FT-001A (accepted), FT-001B, FT-001C, FT-001D, FT-001E (icebox). Moved breakdown -> blocked: waiting on FT-000.
+---

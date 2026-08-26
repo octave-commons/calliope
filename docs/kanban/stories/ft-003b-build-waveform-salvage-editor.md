@@ -1,20 +1,21 @@
 ---
-uuid: "ft-003b-build-waveform-salvage-editor"
-title: "FT-003B: Build waveform salvage editor"
-status: incoming
-type: story
-priority: P0
-phase: 3
-epic: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
-owner: unassigned
-points: 5
-labels: waveform, clips, editor, native-ui
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "waveform, clips, editor, native-ui"
 dependency: ["ft-001c-build-persistent-player-shell-and-library-browser", "ft-003a-implement-marker-and-clip-commands-over-immutable-renders", "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "3"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714742218-0.71io1mvlhgohpjuda5r"
+points: "5"
+title: "FT-003B: Build waveform salvage editor"
+priority: "P0"
+status: "blocked"
+epic: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-003b-build-waveform-salvage-editor"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-003B: Build waveform salvage editor
@@ -58,3 +59,7 @@ Interaction tests cover zoom-independent range identity, in/out commands, clip
 audition, marker lanes, keyboard operation, invalid ranges, and independent
 sibling playheads. A native smoke test verifies waveform interaction while the
 selected audio backend is active.
+
+---
+Dependency analysis (2026-08-02): depends on FT-001C, FT-003A (icebox — also unresolved), FT-000D. Blocks FT-003C. Moved breakdown -> blocked: waiting on FT-001C, FT-003A, and FT-000D.
+---

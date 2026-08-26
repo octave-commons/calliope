@@ -1,19 +1,20 @@
 ---
-uuid: "ft-000a-review-and-accept-or-revise-media-workbench-authority"
-title: "FT-000A: Review and accept or revise Media Workbench authority"
-status: incoming
-type: story
-priority: P0
-phase: 0
-epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
-owner: Err
-points: 2
-labels: architecture, design-review, media-workbench
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
+category: "stories"
+labels: "architecture, design-review, media-workbench"
 process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785718816040-0.i501qm765yp1z1x4b6a"
+points: "2"
+title: "FT-000A: Review and accept or revise Media Workbench authority"
+priority: "P0"
+status: "done"
+epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-000a-review-and-accept-or-revise-media-workbench-authority"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "Err"
 ---
 
 # FT-000A: Review and accept or revise Media Workbench authority
@@ -107,3 +108,13 @@ This section was added after the fact: the card was already `done` with a
 `## Verification` plan but no recorded result, which the board contract does not
 permit. The status and disposition are unchanged; only the missing evidence is now
 present.
+
+---
+Dependency analysis (2026-08-02): no dependencies — root story. Blocks FT-000B (domain laws) and FT-000D (native runtime decision). Note: verification evidence for the human disposition is already recorded on this card; candidate for review/done at your call. Moved breakdown -> ready: no unresolved blockers.
+
+Walk-through (2026-08-02): no new work produced — this card's declared outcome (review and accept or revise the media-workbench authority set) was executed 2026-07-28 with evidence already on-card: human disposition APPROVE AFTER CHANGE (PR #3 comment 5099692071), independent review 4793812071-adjacent (review 4793817603), and the requested board-mechanics correction applied in commit 09be7d2. Verification re-run this session: eta-mu kanban find resolves the card; clojure -M:test green (23 tests, 91 assertions). Acceptance: recorded, not pending. Not executed: nothing further was required by the card scope.
+
+Review evidence (2026-08-02): artifacts on-card — Verification result section with verbatim human disposition, independent review record, and the explicitly-not-claimed list. Routed in_progress -> testing -> review per the adjudicated repo path (receipts.edn row 18): the installed promethean build gate on direct in_progress -> review runs pnpm against a pnpm-less Clojure repo; that is the recorded upstream Rheos gap, not a local check.
+
+Done (2026-08-02): declared outcome accepted by Err 2026-07-28 (PR #3 comment 5099692071); correction applied and verified. Completion record: changed artifacts — none this session (board state only); evidence — on-card verification section plus this walk's comments; not executed — none outstanding; receipt — receipts.edn 2026-08-02 gate-0 walk entry; acceptance — recorded, not pending.
+---

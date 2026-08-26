@@ -1,19 +1,20 @@
 ---
-uuid: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
-title: "FT-003: Recover valuable spans and arrange them non-destructively"
-status: breakdown
-type: epic
-priority: P0
-phase: 3
-owner: unassigned
-points: 21
-labels: media-workbench, clips, waveform, arrangement, decomposed
-category: epics
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "epics"
+labels: "media-workbench, clips, waveform, arrangement, decomposed"
 dependency: ["ft-001-ship-a-daily-driver-library-and-player", "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "3"
+type: "epic"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714741814-0.gm741bvoiqm68492d7n"
+points: "21"
+title: "FT-003: Recover valuable spans and arrange them non-destructively"
+priority: "P0"
+status: "blocked"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-003-recover-valuable-spans-and-arrange-them-non-destructively"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-003: Recover valuable spans and arrange them non-destructively
@@ -83,3 +84,7 @@ Expected child dependency edges (verified against each `find` result's
 Child contract, interaction, export, and derivation-graph tests verify the
 executable work. Real native waveform and audio evidence is recorded by the owning
 child cards.
+
+---
+Dependency analysis (2026-08-02): depends on FT-001 (player epic) and FT-000D. Blocks nothing active. Children: FT-003A (icebox), FT-003B, FT-003C, FT-003D (icebox). Moved breakdown -> blocked: waiting on FT-001 and FT-000D.
+---

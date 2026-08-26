@@ -1,19 +1,20 @@
 ---
-uuid: "ft-002-make-corpus-curation-fast-and-context-preserving"
-title: "FT-002: Make corpus curation fast and context-preserving"
-status: breakdown
-type: epic
-priority: P1
-phase: 2
-owner: unassigned
-points: 13
-labels: media-workbench, curation, workspaces, decomposed
-category: epics
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "epics"
+labels: "media-workbench, curation, workspaces, decomposed"
 dependency: ["ft-001-ship-a-daily-driver-library-and-player"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "2"
+type: "epic"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714741364-0.mtiaoi5fkrmyc5i00c5"
+points: "13"
+title: "FT-002: Make corpus curation fast and context-preserving"
+priority: "P1"
+status: "blocked"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-002-make-corpus-curation-fast-and-context-preserving"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-002: Make corpus curation fast and context-preserving
@@ -80,3 +81,7 @@ forbids.
 
 Child interaction and projection tests verify query determinism, workspace
 restoration, keyboard safety, and proposal adjudication.
+
+---
+Dependency analysis (2026-08-02): depends on FT-001 (player epic). Blocks nothing active. Moved breakdown -> blocked: waiting on FT-001.
+---

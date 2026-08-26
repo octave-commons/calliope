@@ -1,20 +1,21 @@
 ---
-uuid: "ft-001c-build-persistent-player-shell-and-library-browser"
-title: "FT-001C: Build native persistent player shell and library browser"
-status: incoming
-type: story
-priority: P0
-phase: 1
-epic: "ft-001-ship-a-daily-driver-library-and-player"
-owner: unassigned
-points: 5
-labels: native-ui, player, library
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "native-ui, player, library"
 dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology", "ft-001b-implement-playback-resolver-persistent-queue-and-resume"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "1"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714740220-0.fojwnons5g9m1htr0kq"
+points: "5"
+title: "FT-001C: Build native persistent player shell and library browser"
+priority: "P0"
+status: "blocked"
+epic: "ft-001-ship-a-daily-driver-library-and-player"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-001c-build-persistent-player-shell-and-library-browser"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-001C: Build native persistent player shell and library browser
@@ -57,3 +58,7 @@ filters, and sorts the corpus in a responsive library table.
 Native UI state tests cover view changes, selection stability, queue visibility,
 keyboard transport, and application-boundary calls. A local smoke run demonstrates
 the native window playing real corpus audio through FT-001B.
+
+---
+Dependency analysis (2026-08-02): depends on FT-000D and FT-001B. Blocks FT-001D and FT-003B. Moved breakdown -> blocked: waiting on FT-000D and FT-001B.
+---

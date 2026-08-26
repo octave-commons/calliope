@@ -1,18 +1,19 @@
 ---
-uuid: "ft-ops-002-reconcile-adr-and-design-statuses-after-review"
-title: "FT-OPS-002: Reconcile ADR and design statuses after review"
-status: incoming
-type: chore
-priority: P0
-phase: 0
-owner: gpt-5.6-thinking
-points: 1
-labels: adr, design-review, documentation
-category: chores
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "chores"
+labels: "adr, design-review, documentation"
 dependency: ["ft-000a-review-and-accept-or-revise-media-workbench-authority"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "chore"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714330064-0.o84z1giwi5gwe0z725k"
+points: "1"
+title: "FT-OPS-002: Reconcile ADR and design statuses after review"
+priority: "P1"
+status: "accepted"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-ops-002-reconcile-adr-and-design-statuses-after-review"
+owner: "gpt-5.6-thinking"
 ---
 
 # FT-OPS-002: Reconcile ADR and design statuses after review

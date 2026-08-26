@@ -1,18 +1,19 @@
 ---
-uuid: "ft-ops-003-record-first-independent-design-review-disposition"
-title: "FT-OPS-003: Record first independent design review disposition"
-status: incoming
-type: chore
-priority: P1
-phase: 0
-owner: claude-local
-points: 2
-labels: review, media-workbench, governance
-category: chores
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
+category: "chores"
+labels: "review, media-workbench, governance"
 process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "chore"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785714233113-0.0mkpc8rlenablzrysmc1"
+points: "2"
+title: "FT-OPS-003: Record first independent design review disposition"
+priority: "P0"
+status: "accepted"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-ops-003-record-first-independent-design-review-disposition"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "claude-local"
 ---
 
 # FT-OPS-003: Record first independent design review disposition

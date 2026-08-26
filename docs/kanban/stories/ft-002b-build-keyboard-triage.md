@@ -1,20 +1,21 @@
 ---
-uuid: "ft-002b-build-keyboard-first-triage-and-classifier-overlay-review"
-title: "FT-002B: Build keyboard-first triage and classifier-overlay review"
-status: incoming
-type: story
-priority: P0
-phase: 2
-epic: "ft-002-make-corpus-curation-fast-and-context-preserving"
-owner: unassigned
-points: 5
-labels: triage, keyboard, classifier-review
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "triage, keyboard, classifier-review"
 dependency: ["ft-001d-add-dispositions-ratings-labels-sorting-and-playlists", "ft-002a-add-smart-lists-and-saved-media-workspaces", "ft-003a-implement-marker-and-clip-commands-over-immutable-renders"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "2"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1785713983291-0.apoqmzq7k40lbf3o5i"
+points: "5"
+title: "FT-002B: Build keyboard-first triage and classifier-overlay review"
+priority: "P1"
+status: "icebox"
+epic: "ft-002-make-corpus-curation-fast-and-context-preserving"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-002b-build-keyboard-first-triage-and-classifier-overlay-review"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-002B: Build keyboard-first triage and classifier-overlay review

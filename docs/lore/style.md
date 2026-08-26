@@ -1,4 +1,4 @@
-# fork_tales — Sonic Style Bible
+# calliope — Sonic Style Bible
 
 *Extracted from style prompts and delivery instructions across 690 songs.
 Status: derived. This is the corpus' production language — reuse it verbatim

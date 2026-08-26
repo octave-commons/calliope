@@ -1,4 +1,4 @@
-# Fork Tales — OpenCode adapter
+# Calliope — OpenCode adapter
 
 This file applies only when OpenCode is operating in this repository.
 Harness-neutral obligations remain in root `PROCESS.md`; repository facts remain
@@ -33,7 +33,7 @@ record the unavailability. Do not silently replace it or claim it ran.
 
 ## Corpus work
 
-Use `.opencode/skills/fork-tales-corpus/SKILL.md` whenever changing ingestion,
+Use `.opencode/skills/calliope-corpus/SKILL.md` whenever changing ingestion,
 `docs/lyrics/`, variants, or corpus ledgers. Projections are never canonical
 sources.
 

@@ -45,7 +45,7 @@ When calling `receipt_river`:
 
 Never edit old receipt lines and never log credentials, tokens, or secrets.
 
-## Fork Tales local assumptions
+## Calliope local assumptions
 
 Historical corpus sources may exist below `~/Downloads`, `~/Music`, and
 `~/devel`. Treat those paths as available only after checking them. The Git

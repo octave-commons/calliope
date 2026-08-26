@@ -22,7 +22,7 @@
             [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.string :as str]
-            [fork-tales.reconstruction.paths :as paths]
+            [calliope.reconstruction.paths :as paths]
             [reconstruction.ledger :as ledger]))
 
 (def rules-path "resources/reconstruction/path-roots.edn")

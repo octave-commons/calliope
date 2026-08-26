@@ -1,4 +1,4 @@
-(ns fork-tales.law.feature
+(ns calliope.law.feature
   "Malli contracts for reusable feature definitions and extraction programs.
 
   Features are typed observations about an object or a bounded part of one.

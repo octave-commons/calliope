@@ -2,7 +2,7 @@
 (ns reconstruction.validate
   "CLI adapter for the μ1-μ6 handoff invariants.
 
-  All validation logic lives in fork-tales.reconstruction.handoff, which is pure
+  All validation logic lives in calliope.reconstruction.handoff, which is pure
   and JVM-testable. This namespace only does IO: read packets, call the core,
   write the report, append a :handoff/validated ledger event.
 
@@ -17,7 +17,7 @@
             [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.string :as str]
-            [fork-tales.reconstruction.handoff :as handoff]
+            [calliope.reconstruction.handoff :as handoff]
             [reconstruction.ledger :as ledger]))
 
 (defn read-data

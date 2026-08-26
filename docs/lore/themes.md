@@ -1,4 +1,4 @@
-# fork_tales — Thematic Taxonomy
+# calliope — Thematic Taxonomy
 
 *Derived from 690 deduplicated songs (pass-1 projection, 2026-07-24). Epistemic
 status: **derived/provisional** — themes are interpretations over observed

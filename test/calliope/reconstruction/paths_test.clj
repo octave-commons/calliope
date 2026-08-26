@@ -1,11 +1,11 @@
-(ns fork-tales.reconstruction.paths-test
+(ns calliope.reconstruction.paths-test
   "Tests for evidence path resolution.
 
   `exists?` is injected as a set membership check, so these run without touching
   a filesystem and the decoy case can be modelled exactly."
   (:require [clojure.test :refer [deftest is testing]]
-            [fork-tales.law.reconstruction :as law]
-            [fork-tales.reconstruction.paths :as p]))
+            [calliope.law.reconstruction :as law]
+            [calliope.reconstruction.paths :as p]))
 
 (def rules
   [{:from "/home/err/devel/Music/fork-tales" :to "/home/err/Music/fork-tales"}

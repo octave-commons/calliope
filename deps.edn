@@ -8,10 +8,22 @@
  :aliases
  {:test
   {:extra-paths ["test"]
-   :main-opts ["-m" "fork-tales.test-runner"]}
+   :main-opts ["-m" "calliope.test-runner"]}
 
   :classify
-  {:main-opts ["-m" "fork-tales.classifier.main"]}
+  {:main-opts ["-m" "calliope.classifier.main"]}
+
+  :cloverage
+  {:extra-paths ["test"]
+   :extra-deps {cloverage/cloverage {:mvn/version "1.2.4"}}
+   :main-opts ["-m" "cloverage.coverage"
+               "-n" "calliope.law.feature"
+               "-n" "calliope.law.classifier"
+               "-n" "calliope.classifier.dsl"
+               "-n" "calliope.classifier.runtime"
+               "-n" "calliope.classifier.main"
+               "-t" "calliope\\..*-test"
+               "--text" "--html" "--no-summary"]}
 
   ;; DSP lane. Cannot run under babashka: libpython-clj needs JNA and
   ;; dtype-next native interop, and bb's GraalVM image has no JNA on the

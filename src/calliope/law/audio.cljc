@@ -1,5 +1,5 @@
-(ns fork-tales.law.audio
-  "Malli μ registry for the Fork Tales audio agent pipeline.
+(ns calliope.law.audio
+  "Malli μ registry for the calliope audio agent pipeline.
 
   This namespace is intentionally data-first: the registry is plain
   EDN-serializable Malli schema data with named keys and [:ref ...]
@@ -346,7 +346,7 @@
    registry))
 
 (defn μ
-  "Return the executable validator for a named Fork Tales pipeline schema."
+  "Return the executable validator for a named calliope pipeline schema."
   [schema-key]
   (m/validator [:ref schema-key] {:registry malli-registry}))
 

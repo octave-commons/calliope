@@ -1,4 +1,4 @@
-(ns fork-tales.reconstruction.handoff-test
+(ns calliope.reconstruction.handoff-test
   "Tests for the μ1-μ6 handoff invariant interpreter.
 
   Packets are written string-keyed, the way they arrive from JSON, since that is
@@ -6,8 +6,8 @@
   to prove EDN and JSON packets validate identically."
   (:require [clojure.data.json :as json]
             [clojure.test :refer [deftest is testing]]
-            [fork-tales.law.reconstruction :as law]
-            [fork-tales.reconstruction.handoff :as h]))
+            [calliope.law.reconstruction :as law]
+            [calliope.reconstruction.handoff :as h]))
 
 (def schema
   {"common_required_fields" ["handoff_kind" "role"]

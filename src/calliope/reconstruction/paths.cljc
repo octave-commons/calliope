@@ -1,4 +1,4 @@
-(ns fork-tales.reconstruction.paths
+(ns calliope.reconstruction.paths
   "Resolve host paths recorded inside preserved evidence artifacts.
 
   Artifacts under `references/` are append-only records of runs that really

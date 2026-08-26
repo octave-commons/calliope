@@ -1,9 +1,9 @@
 ---
-name: fork-tales-corpus
-description: Work with the fork_tales_v2 lyric corpus — the event-sourced ingest ledger, dedup projection, and songbook conventions. Use whenever touching docs/lyrics, ledgers/, or running corpus scripts in this repo.
+name: calliope-corpus
+description: Work with the calliope_v2 lyric corpus — the event-sourced ingest ledger, dedup projection, and songbook conventions. Use whenever touching docs/lyrics, ledgers/, or running corpus scripts in this repo.
 ---
 
-# fork_tales corpus
+# calliope corpus
 
 This is an OpenCode-local skill. Root `PROCESS.md` remains authoritative for
 harness-neutral process, receipts, evidence, and fallback behavior.
@@ -34,11 +34,11 @@ bb scripts/corpus.clj variants  # pass 2: same-title clusters → :doc/variant-c
 
 Classes: `:suno-lyric` (Title/ID/Prompt header) · `:hand-lyric` (≥2 line-anchored
 section tags, or 1 tag + lyric-ish name/path) · `:lyric-adjacent` (style prompts,
-specs, briefs) · `:lore` (fork_tales/Lore world docs) · `:other`.
+specs, briefs) · `:lore` (calliope/Lore world docs) · `:other`.
 
 Projection groups `:suno-lyric`+`:hand-lyric` by `:body-sha256` (file text
 minus the Suno `ID:` line, whitespace-normalized), picks a canonical source
-(`~/Music` > octave-commons/fork_tales > Lore > devel > Downloads), copies it
+(`~/Music` > octave-commons/calliope > Lore > devel > Downloads), copies it
 verbatim to `docs/lyrics/<slug>.<ext>`.
 
 Treat those local paths as available only after checking the active machine.

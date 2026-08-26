@@ -1,4 +1,4 @@
-(ns fork-tales.law.classifier
+(ns calliope.law.classifier
   "Pure-data Malli contracts for describing LLM classifiers.
 
   The DSL separates source selection, context construction, prompting, model

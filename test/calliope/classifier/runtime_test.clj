@@ -1,11 +1,11 @@
-(ns fork-tales.classifier.runtime-test
+(ns calliope.classifier.runtime-test
   (:require [clojure.data.json :as json]
             [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.string :as str]
             [clojure.test :refer [deftest is testing]]
-            [fork-tales.classifier.dsl :as dsl]
-            [fork-tales.classifier.runtime :as runtime]))
+            [calliope.classifier.dsl :as dsl]
+            [calliope.classifier.runtime :as runtime]))
 
 (def program
   (-> "classifiers/theme-discovery-v1.edn"
@@ -103,7 +103,7 @@
   (let [content (:content (last messages))
         object-id (second (re-find #"Object ID: ([^\n]+)" content))]
     {:object/id object-id
-     :feature/id :fork-tales/production-style-v1
+     :feature/id :calliope/production-style-v1
      :feature/value
      {:tempo {:bpm-min 84 :bpm-max 84 :feel :straight}
       :genres ["glitch choir"]
@@ -174,7 +174,7 @@
         result (runtime/run-classifier!
                 fake-runtime
                 (with-contract program contract)
-                :fork-tales/random-ten-theme-discovery-v1
+                :calliope/random-ten-theme-discovery-v1
                 {:run-seed 3721599729})]
     {:result result :events @events}))
 
@@ -218,36 +218,36 @@
     (is (= {"object/id" 1}
            (json-round-trip (runtime/json-safe {:object/id 1})))))
   (testing "keyword values are stringified in full too"
-    (is (= {"feature/id" "fork-tales/production-style-v1"}
-           (runtime/json-safe {:feature/id :fork-tales/production-style-v1})))))
+    (is (= {"feature/id" "calliope/production-style-v1"}
+           (runtime/json-safe {:feature/id :calliope/production-style-v1})))))
 
 (deftest malli-contracts-translate-to-json-schema
   (let [schema (runtime/->json-schema
                 (dsl/output-schema program
-                                   :fork-tales/production-style-result-v1))]
+                                   :calliope/production-style-result-v1))]
     (testing "namespaced properties survive translation"
       (is (contains? (get schema "properties") "object/id"))
       (is (contains? (get schema "properties") "feature/value")))
     (testing "the feature id is pinned as a constant the model cannot vary"
-      (is (= "fork-tales/production-style-v1"
+      (is (= "calliope/production-style-v1"
              (get-in schema ["properties" "feature/id" "const"]))))
     (testing "the schema survives a JSON round trip with namespaces intact"
       (is (contains? (get (json-round-trip schema) "properties") "object/id")))))
 
 (deftest json-values-decode-into-declared-edn-types
   (let [schema (dsl/output-schema program
-                                  :fork-tales/production-style-result-v1)
+                                  :calliope/production-style-result-v1)
         decoded (runtime/decode-json-value
                  schema
                  (as-tool-arguments (production-value
                                      [{:content "Object ID: song-1"}])))]
     (is (= :straight (get-in decoded [:feature/value :tempo :feel])))
-    (is (= :fork-tales/production-style-v1 (:feature/id decoded)))
+    (is (= :calliope/production-style-v1 (:feature/id decoded)))
     (is (= :style-prompt
            (get-in decoded [:feature/value :evidence 0 :source])))))
 
 (deftest prompt-instruction-matches-the-output-contract
-  (let [output {:output/id :fork-tales/production-style-result-v1
+  (let [output {:output/id :calliope/production-style-result-v1
                 :output/schema [:map]}]
     (testing "inline-schema embeds the Malli form"
       (is (str/includes? (runtime/contract-instruction :inline-schema output)
@@ -298,14 +298,14 @@
   (let [state {:runtime {}
                :program program
                :producer-index
-               {:fork-tales/production-style-v1
-                [:fork-tales/production-style-v1]}
+               {:calliope/production-style-v1
+                [:calliope/production-style-v1]}
                :cache (atom {})
                :dry-run? false}
         context {:context/steps
                  [{:step/op :attach-features
                    :step/input :selected
-                   :step/features #{:fork-tales/production-style-v1}
+                   :step/features #{:calliope/production-style-v1}
                    :step/status-policy :derived-or-better
                    :step/missing :extract
                    :step/as :enriched}]
@@ -317,14 +317,14 @@
         error
         (with-redefs [runtime/run-extractor!
                       (fn [_ _ _]
-                        [{:feature/id :fork-tales/unrelated-feature-v1}])]
+                        [{:feature/id :calliope/unrelated-feature-v1}])]
           (try
             (runtime/execute-context state context [object])
             nil
             (catch clojure.lang.ExceptionInfo error error)))]
     (is (some? error))
-    (is (= :fork-tales/production-style-v1
+    (is (= :calliope/production-style-v1
            (:feature/id (ex-data error))))
-    (is (= :fork-tales/production-style-v1
+    (is (= :calliope/production-style-v1
            (:extractor/id (ex-data error))))
     (is (= "song" (:object/id (ex-data error))))))

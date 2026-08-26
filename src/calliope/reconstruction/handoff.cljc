@@ -1,9 +1,9 @@
-(ns fork-tales.reconstruction.handoff
+(ns calliope.reconstruction.handoff
   "Pure interpreter for the μ1-μ6 handoff invariants.
 
   Port of the retired scripts/reconstruction/handoff_validate.py. The invariants
   themselves are not restated here — they are read from
-  fork-tales.law.reconstruction/handoff-invariants, so adding or tightening an
+  calliope.law.reconstruction/handoff-invariants, so adding or tightening an
   invariant is a data edit, not a code edit.
 
   No IO, no JSON, no ledger, no bb-only requires: this namespace is loadable and
@@ -11,7 +11,7 @@
   may be string-keyed (from JSON) or keyword-keyed (from EDN) — both validate
   identically."
   (:require [clojure.string :as str]
-            [fork-tales.law.reconstruction :as law]))
+            [calliope.law.reconstruction :as law]))
 
 ;; ---------------------------------------------------------------------------
 ;; Predicates — faithful to the retired Python semantics

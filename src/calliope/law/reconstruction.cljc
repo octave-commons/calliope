@@ -1,4 +1,4 @@
-(ns fork-tales.law.reconstruction
+(ns calliope.law.reconstruction
   "Pure-data Malli contracts for the audio reconstruction event ledger.
 
   Reconstruction is event-sourced on the same terms as corpus ingestion: every

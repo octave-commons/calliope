@@ -4,6 +4,8 @@
             [calliope.classifier.dsl-test]
             [calliope.classifier.main-test]
             [calliope.classifier.runtime-test]
+            [calliope.law.media-test]
+            [calliope.media.dataset-test]
             [calliope.reconstruction.handoff-test]
             [calliope.reconstruction.paths-test]))
 
@@ -12,8 +14,10 @@
   (let [{:keys [fail error]}
         (test/run-tests 'calliope.classifier.adapters-test
                         'calliope.classifier.dsl-test
-                        'calliope.classifier.main-test
-                        'calliope.classifier.runtime-test
+                         'calliope.classifier.main-test
+                         'calliope.classifier.runtime-test
+                         'calliope.law.media-test
+                         'calliope.media.dataset-test
                         'calliope.reconstruction.handoff-test
                         'calliope.reconstruction.paths-test)]
     (when (pos? (+ fail error))

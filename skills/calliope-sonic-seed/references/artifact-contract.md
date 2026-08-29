@@ -34,6 +34,9 @@ Existing files may be reused only when their hashes match the new render exactly
 - GitHub holds laws, shapes, recipes, manifests, and reviewable provenance.
 - Google Drive holds WAV, MIDI, provider renders, stems, and portable session
   bundles. Text artifacts may be copied there for cross-agent access.
+- A lyrics-bearing Drive session may place `prompts.md` beside the immutable
+  sonic-seed files. Bind the exact prompts hash into `:seed/key`; the companion
+  document does not become part of the content-addressed seed or its receipt.
 - One stable content hash connects the GitHub record to the Drive artifact.
 - Calliope session orchestration may wrap the receipt in a Clio event and compose
   it through a Katamorph resource. The sonic-seed skill itself does not append to

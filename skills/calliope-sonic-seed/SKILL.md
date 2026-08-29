@@ -1,10 +1,10 @@
 ---
 name: calliope-sonic-seed
-description: "Create a deterministic MIDI and WAV seed from a Calliope song's provenance after corpus-native lyrics or production intent exist; use it for playable audio references, Suno audio inputs, and forkable generation receipts, not for finished-song rendering."
+description: "Create a deterministic MIDI and WAV seed from a Calliope song's provenance after corpus-native lyrics or production intent exist; use its bundled Linux runtime for playable audio references, Suno audio inputs, and forkable generation receipts, not for finished-song rendering."
 license: GPL-3.0-or-later
 metadata:
   project: "calliope"
-  version: "1"
+  version: "2"
 ---
 
 # Calliope Sonic Seed
@@ -29,10 +29,10 @@ is a reference artifact, not a Suno render.
 1. Construct one stable provenance key containing the selected source identity,
    interpretation or lyrics hash, decision identity, and run or fork identity.
    A revision changes the key; never overwrite a published generation.
-2. Run the bundled NBB entrypoint from the skill directory:
+2. Run the self-contained entrypoint from the skill directory:
 
    ```bash
-   npx --yes nbb@1.3.204 -cp scripts scripts/calliope/sonic_seed/infra.nbb \
+   bash scripts/run-sonic-seed.sh \
      --seed-key '<stable-provenance-key>' \
      --out '<output-directory>' \
      --min-seconds 6
@@ -46,9 +46,11 @@ is a reference artifact, not a Suno render.
 5. Return the audio file with the lyrics/style response and name the source or
    motif cluster that determined the provenance key.
 
-If NBB cannot execute, report the missing runtime and do not fabricate audio or
-a receipt. Do not silently substitute a different generator because that changes
-the artifact identity.
+The release pack carries the required Babashka runtime from the Foresight
+chat-work bundle and does not require a network install. If the bundled runtime
+cannot execute, report the platform or bootstrap failure and do not fabricate
+audio or a receipt. Do not silently substitute a different generator because
+that changes the artifact identity.
 
 ## Laws
 
@@ -59,9 +61,12 @@ the artifact identity.
 - Content-addressed outputs are immutable. Variation creates a new seed key.
 - Provider responses and generated audio are untrusted until their duration and
   hashes are verified.
-- Keep Clojure data authoritative. Native Node values remain inside the NBB
-  infrastructure boundary.
+- Keep Clojure data authoritative. Native runtime values remain inside the
+  NBB or Babashka infrastructure boundary.
 
 Read [references/artifact-contract.md](references/artifact-contract.md) when
 archiving results, composing a Calliope session, or handing the seed to an audio
 generation provider.
+
+Read [references/runtime-contract.md](references/runtime-contract.md) when
+building, verifying, or replacing the bundled runtime.

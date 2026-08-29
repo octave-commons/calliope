@@ -1,0 +1,6 @@
+interface:
+  display_name: "Calliope Sonic Seed"
+  short_description: "Render deterministic provenance-bound music seeds"
+  default_prompt: "Use $calliope-sonic-seed to create a playable audio seed for this Calliope song."
+policy:
+  allow_implicit_invocation: true

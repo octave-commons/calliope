@@ -1,20 +1,21 @@
 ---
-uuid: "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"
-title: "FT-000D: Decide native desktop, playback, read-model, and application topology"
-status: ready
-type: story
-priority: P0
-phase: 0
-epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
-owner: unassigned
-points: 5
-labels: architecture, native-ui, playback, read-model
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "architecture, native-ui, playback, read-model"
 dependency: ["ft-000a-review-and-accept-or-revise-media-workbench-authority"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1788047455111-0.6sme6jboey7o15dopd7"
+points: "5"
+title: "FT-000D: Decide native desktop, playback, read-model, and application topology"
+priority: "P0"
+status: "breakdown"
+epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-000D: Decide native desktop, playback, read-model, and application topology
@@ -53,3 +54,11 @@ application-service boundary.
 
 A local spike records exact commands and demonstrates real audio playback plus a
 minimal native window using the selected stack.
+
+---
+Recovery crosswalk (2026-08-30): GitHub issue #12 (https://github.com/octave-commons/calliope/issues/12) preserves the stale PR #7 ADR-002 and disposable-spike evidence for this existing canonical card. Historical acceptance must be reconciled against current authority and rerun on a compatible harness; it is not inferred from the stale head.
+
+Readiness repair (2026-08-30): moved from ready back to breakdown through Rheos because declared dependency FT-000A is still incoming. Re-enter ready only after the dependency is satisfied or explicitly revised through canonical authority.
+
+Date correction: the preceding reconciliation comments say 2026-08-30, but Rheos recorded these operations on 2026-08-29 UTC. The substance is unchanged; this append-only correction preserves the original ledger history.
+---

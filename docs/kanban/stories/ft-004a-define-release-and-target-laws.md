@@ -6,7 +6,7 @@ process: "docs/process/product-design-and-delivery.md"
 phase: "4"
 type: "story"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1788047454501-0.0u6vyt48kq7mvcb2841x"
+write-id: "1788049615461-0.ydc6qsphbviw6qyvxk6"
 points: "5"
 title: "FT-004A: Define release manifest and publication target laws"
 priority: "P1"
@@ -58,4 +58,6 @@ target outcomes, manual handoff, retries/checkpoints, and secret-field rejection
 Recovery crosswalk (2026-08-30): GitHub issue #10 (https://github.com/octave-commons/calliope/issues/10) is the current-main release-admission/publication seam and proof umbrella. This card owns the pure law; FT-004F/C/D/E own assembly and target execution. Preserve the issue until its acceptance evidence is split and completed across those canonical cards.
 
 Date correction: the preceding reconciliation comments say 2026-08-30, but Rheos recorded these operations on 2026-08-29 UTC. The substance is unchanged; this append-only correction preserves the original ledger history.
+
+Review correction for GitHub issue #10 crosswalk: FT-004A owns release/target laws; the existing delivery set is FT-004B target-ready packages, FT-004F release assembly/acceptance, FT-004G video assets, FT-004C SoundCloud, FT-004D YouTube, FT-004E distributor/manual handoffs, and FT-004H publication activity/retry. This maps ownership only and does not assert acceptance or completion of any child.
 ---

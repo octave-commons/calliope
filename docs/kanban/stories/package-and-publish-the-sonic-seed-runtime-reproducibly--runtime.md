@@ -2,7 +2,7 @@
 category: "stories"
 labels: "recovery, packaging, sonic-seed, reproducibility"
 type: "task"
-write-id: "1788049248526-0.zcu4wy2l1xmdtznohri"
+write-id: "1788049616725-0.735bp2146g0re54cwy"
 points: "5"
 title: "Package and publish the sonic-seed runtime reproducibly"
 priority: "P2"
@@ -68,4 +68,6 @@ layout, release admission, and publication execution are out of scope.
 
 ---
 Review finding confirmed: this card depends on calliope-issue-13-portable-sonic-seed-skill, but Rheos at source d3937a2 does not expose dependency on create or its guarded frontmatter surface. Direct frontmatter edits are prohibited for this reconciliation, so the enforceable field is authority-blocked by open-hax/eta-mu#306. Keep this card in incoming and do not advance it until Rheos can record the dependency canonically or authorized board policy explicitly revises the prerequisite.
+
+Review clarification: publishing the reproducible ZIP plus hashes/provenance to a durable repository release (GitHub release or equivalent) is in scope. The publication-execution non-goal excludes external media/provider/distributor publication governed by issue #10; it does not exclude repository artifact publication required by this card.
 ---

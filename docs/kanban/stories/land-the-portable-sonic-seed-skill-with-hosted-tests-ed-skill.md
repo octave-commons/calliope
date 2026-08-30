@@ -1,13 +1,13 @@
 ---
-uuid: "calliope-issue-13-portable-sonic-seed-skill"
-title: "Land the portable sonic-seed skill with hosted tests"
-status: "incoming"
-type: "task"
-priority: "P1"
-points: "5"
-labels: "recovery, skill, sonic-seed, testing"
 category: "stories"
-write-id: "1788047388767-0.xv5d6vaj42mphdns7u7"
+labels: "recovery, skill, sonic-seed, testing"
+type: "task"
+write-id: "1788049616176-0.sm2vjugv2vasr8ymruu"
+points: "5"
+title: "Land the portable sonic-seed skill with hosted tests"
+priority: "P1"
+status: "incoming"
+uuid: "calliope-issue-13-portable-sonic-seed-skill"
 created_at: "2026-08-29T23:49:48.767Z"
 ---
 
@@ -62,3 +62,7 @@ this card.
 
 Bundled executables, release ZIPs, generated session media, providers, finished
 songs, lyrics, product review, layout, and publication are out of scope.
+
+---
+Review clarification: deterministic reference MIDI/WAV generation and byte-identical golden artifacts remain required verification outputs for this skill card. The generated-session-media non-goal excludes distributing or retaining session outputs as bundled/product deliverables; it does not exclude the bounded reference artifacts required by the acceptance criteria.
+---

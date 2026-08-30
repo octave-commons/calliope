@@ -1,18 +1,19 @@
 ---
-uuid: "ft-ops-002-reconcile-adr-and-design-statuses-after-review"
-title: "FT-OPS-002: Reconcile ADR and design statuses after review"
-status: incoming
-type: chore
-priority: P0
-phase: 0
-owner: gpt-5.6-thinking
-points: 1
-labels: adr, design-review, documentation
-category: chores
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "chores"
+labels: "adr, design-review, documentation"
 dependency: ["ft-000a-review-and-accept-or-revise-media-workbench-authority"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "chore"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1788050066116-0.qr5npbevu7wojqltwz"
+points: "1"
+title: "FT-OPS-002: Reconcile ADR and design statuses after review"
+priority: "P0"
+status: "incoming"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-ops-002-reconcile-adr-and-design-statuses-after-review"
+owner: "gpt-5.6-thinking"
 ---
 
 # FT-OPS-002: Reconcile ADR and design statuses after review
@@ -177,3 +178,7 @@ disposition is unchanged; only the missing evidence is now present.
 
 Receipt River evidence: `receipts.edn` entries at `:ts "2026-07-28T21:19:42Z"` and
 the validator-sweep entry appended for this correction.
+
+---
+Current-state correction (2026-08-30): the acceptance criteria and 2026-07-28 transcript above remain dated evidence. Live Rheos state now has FT-000B and FT-000D in breakdown because their declared FT-000A dependency is incoming; neither is selectable ready work. They may return to ready only after FT-000A is satisfied or the dependency is explicitly revised through canonical authority. See PR #16 and docs/process/product-design-and-delivery.md for the synchronized live claim.
+---

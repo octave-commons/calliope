@@ -53,10 +53,11 @@ command output and tool-version observations.
 
 Current reconciliation evidence on 2026-08-29: Rheos discovered 35 cards
 (`icebox=9`, `incoming=20`, `breakdown=6`, all other columns zero). The increase
-from the latest 31-card receipt consists of the already-merged FT-004H card plus
-three canonical recovery cards for GitHub issues #11, #13, and #14. Historical
-count transcripts above and in receipts remain immutable evidence of their dated
-trees; query Rheos for live counts.
+from the latest 31-card receipt consists of the later-added FT-003E card plus
+three canonical recovery cards for GitHub issues #11, #13, and #14. FT-004H was
+already present at the receipt's recorded source head. Historical count
+transcripts above and in receipts remain immutable evidence of their dated trees;
+query Rheos for live counts.
 
 Generated board snapshots remain diagnostic Rheos projections. Live board state,
 legal transitions, writes, and drift detection come from Rheos.

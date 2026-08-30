@@ -1,13 +1,13 @@
 ---
-uuid: "calliope-issue-14-package-sonic-seed-runtime"
-title: "Package and publish the sonic-seed runtime reproducibly"
-status: "incoming"
-type: "task"
-priority: "P2"
-points: "5"
-labels: "recovery, packaging, sonic-seed, reproducibility"
 category: "stories"
-write-id: "1788047389390-0.sia11foemfjg5cmutl"
+labels: "recovery, packaging, sonic-seed, reproducibility"
+type: "task"
+write-id: "1788049248526-0.zcu4wy2l1xmdtznohri"
+points: "5"
+title: "Package and publish the sonic-seed runtime reproducibly"
+priority: "P2"
+status: "incoming"
+uuid: "calliope-issue-14-package-sonic-seed-runtime"
 created_at: "2026-08-29T23:49:49.390Z"
 ---
 
@@ -65,3 +65,7 @@ until that prerequisite is satisfied or explicitly revised through Rheos.
 
 Semantic music-law changes, corpus ingestion, provider renders, product review,
 layout, release admission, and publication execution are out of scope.
+
+---
+Review finding confirmed: this card depends on calliope-issue-13-portable-sonic-seed-skill, but Rheos at source d3937a2 does not expose dependency on create or its guarded frontmatter surface. Direct frontmatter edits are prohibited for this reconciliation, so the enforceable field is authority-blocked by open-hax/eta-mu#306. Keep this card in incoming and do not advance it until Rheos can record the dependency canonically or authorized board policy explicitly revises the prerequisite.
+---

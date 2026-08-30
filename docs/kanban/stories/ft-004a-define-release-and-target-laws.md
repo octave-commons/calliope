@@ -1,20 +1,21 @@
 ---
-uuid: "ft-004a-define-release-manifest-and-publication-target-laws"
-title: "FT-004A: Define release manifest and publication target laws"
-status: icebox
-type: story
-priority: P1
-phase: 4
-epic: "ft-004-prepare-releases-and-publish-through-explicit-target-capabilities"
-owner: unassigned
-points: 5
-labels: release, law, publishing
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
-process: "docs/process/product-design-and-delivery.md"
+category: "stories"
+labels: "release, law, publishing"
 dependency: ["ft-000b-define-media-workbench-domain-laws", "ft-003d-preserve-render-to-release-derivation-graph"]
+process: "docs/process/product-design-and-delivery.md"
+phase: "4"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1788049615461-0.ydc6qsphbviw6qyvxk6"
+points: "5"
+title: "FT-004A: Define release manifest and publication target laws"
+priority: "P1"
+status: "icebox"
+epic: "ft-004-prepare-releases-and-publish-through-explicit-target-capabilities"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-004a-define-release-manifest-and-publication-target-laws"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "unassigned"
 ---
 
 # FT-004A: Define release manifest and publication target laws
@@ -52,3 +53,11 @@ without conflating export, upload, processing, manual handoff, and publication.
 
 Contract and state-transition tests cover invalid premature publication, partial
 target outcomes, manual handoff, retries/checkpoints, and secret-field rejection.
+
+---
+Recovery crosswalk (2026-08-30): GitHub issue #10 (https://github.com/octave-commons/calliope/issues/10) is the current-main release-admission/publication seam and proof umbrella. This card owns the pure law; FT-004F/C/D/E own assembly and target execution. Preserve the issue until its acceptance evidence is split and completed across those canonical cards.
+
+Date correction: the preceding reconciliation comments say 2026-08-30, but Rheos recorded these operations on 2026-08-29 UTC. The substance is unchanged; this append-only correction preserves the original ledger history.
+
+Review correction for GitHub issue #10 crosswalk: FT-004A owns release/target laws; the existing delivery set is FT-004B target-ready packages, FT-004F release assembly/acceptance, FT-004G video assets, FT-004C SoundCloud, FT-004D YouTube, FT-004E distributor/manual handoffs, and FT-004H publication activity/retry. This maps ownership only and does not assert acceptance or completion of any child.
+---

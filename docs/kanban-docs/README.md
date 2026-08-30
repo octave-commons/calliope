@@ -20,7 +20,9 @@ prose lives here in `docs/kanban-docs/` so Rheos does not ingest it as work.
 ADR-001 is accepted and Media Workbench v1 is approved. FT-000A, the review
 reconciliation chores, and FT-OPS-001 preserve historical disposition and
 verification evidence, but their live card status is `incoming`; none is complete
-until Rheos records the lifecycle acceptance. The first ready slices are:
+until Rheos records the lifecycle acceptance. FT-000B and FT-000D were returned
+from `ready` to `breakdown` through Rheos on 2026-08-29 because their declared
+FT-000A dependency is still `incoming`:
 
 - FT-000B — media-workbench domain laws;
 - FT-000D — native UI, real playback, read-model, and application topology.
@@ -48,6 +50,14 @@ Verified with eta-mu 1.1.1 on 2026-07-28: Rheos discovered 27 cards and no phant
 prose cards. See
 `../kanban/chores/ft-ops-001-generate-rheos-board-snapshot.md` for the historical
 command output and tool-version observations.
+
+Current reconciliation evidence on 2026-08-29: Rheos discovered 35 cards
+(`icebox=9`, `incoming=20`, `breakdown=6`, all other columns zero). The increase
+from the latest 31-card receipt consists of the later-added FT-003E card plus
+three canonical recovery cards for GitHub issues #11, #13, and #14. FT-004H was
+already present at the receipt's recorded source head. Historical count
+transcripts above and in receipts remain immutable evidence of their dated trees;
+query Rheos for live counts.
 
 Generated board snapshots remain diagnostic Rheos projections. Live board state,
 legal transitions, writes, and drift detection come from Rheos.

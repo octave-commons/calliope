@@ -12,16 +12,17 @@ controlled by explicit dependencies rather than unresolved product authority.
 | Card | Outcome | Pts | Depends on | State |
 |---|---|---:|---|---|
 | FT-000A | Review and accept/revise ADR-001 and Media Workbench v1 | 2 | — | incoming |
-| FT-000B | Define Malli laws for playable refs, ratings, labels, clips, arrangements, workspaces, releases, and targets | 5 | 000A | ready |
-| FT-000D | Decide native UI, real audio backend, read model, and in-process application topology | 5 | 000A | ready |
+| FT-000B | Define Malli laws for playable refs, ratings, labels, clips, arrangements, workspaces, releases, and targets | 5 | 000A | breakdown |
+| FT-000D | Decide native UI, real audio backend, read model, and in-process application topology | 5 | 000A | breakdown |
 | FT-000C | Define append-only studio events and deterministic rebuildable projection | 5 | 000B, 000D | incoming |
 
 Gate outcome: the application can represent durable user intent and has an
 evidence-backed native implementation topology without treating projections,
 source audio, or model suggestions as mutable truth.
 
-FT-000B and FT-000D may run in parallel. FT-000C joins their decisions into the
-application/event boundary.
+After FT-000A is satisfied or its dependency is explicitly revised through
+canonical authority, FT-000B and FT-000D may return to `ready` and run in
+parallel. FT-000C joins their decisions into the application/event boundary.
 
 ## Gate 1 — Native daily-driver player
 
@@ -102,6 +103,19 @@ screen.
 These cards enter at `incoming` like any other. A card cannot be created already
 `done`: `done` is reached by a Rheos transition, never asserted at creation.
 
+## Recovery intake
+
+| Card | GitHub issue | Outcome | State |
+|---|---:|---|---|
+| `calliope-issue-11-re-ingest-suno-metadata` | #11 | Append canonical Suno observations and rebuild the projection deterministically | incoming |
+| `calliope-issue-13-portable-sonic-seed-skill` | #13 | Land portable sonic-seed law and skill source with hosted tests | incoming |
+| `calliope-issue-14-package-sonic-seed-runtime` | #14 | Package and publish the runtime reproducibly after #13 | incoming |
+
+Issues #9, #10, and #12 map to existing FT-000B, FT-004A plus its delivery
+children, and FT-000D respectively; their Rheos comments preserve that crosswalk.
+The recovery cards remain intake backlog and do not alter the numbered delivery
+gates or imply acceptance.
+
 `board.json` is intentionally not a committed acceptance artifact because the
 current snapshot loses rich frontmatter. FT-OPS-001 recorded a local eta-mu/Rheos
 1.1.1 run on 2026-07-28. Its observations are historical evidence, not a second
@@ -163,6 +177,6 @@ cards that would make the drawing unreadable.
 
 ## Current first move
 
-FT-OPS-001 records a local eta-mu/Rheos read of the corrected board. FT-000B and
-FT-000D are the parallel product implementation fronts; query Rheos for live state
-before acting.
+FT-OPS-001 records a local eta-mu/Rheos read of the corrected board. FT-000A is
+the dependency that must be reconciled before FT-000B and FT-000D can return to
+`ready`; query Rheos for live state before acting.

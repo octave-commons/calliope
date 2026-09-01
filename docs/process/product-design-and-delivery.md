@@ -200,7 +200,9 @@ The current authority set is:
 
 FT-000A, FT-OPS-002, and FT-OPS-003 are currently `incoming`. Their documents
 preserve prior review, disposition, and verification evidence, but no Rheos
-lifecycle has accepted those cards as `done`. FT-000B and FT-000D are the first
-ready implementation/decision slices in the recorded state. Query Rheos for live
-state before acting. FT-000C and player cards remain dependency-gated rather than
-blocked by unresolved product acceptance.
+lifecycle has accepted those cards as `done`. FT-000B and FT-000D are currently
+`breakdown`, not selectable `ready` work, because their declared FT-000A
+dependency is still `incoming`. They may return to `ready` only after that
+dependency is satisfied or explicitly revised through canonical authority.
+Query Rheos for live state before acting. FT-000C and player cards remain
+dependency-gated rather than blocked by unresolved product acceptance.

@@ -28,3 +28,13 @@
   spore: none
   receipt-refs: 4fd2dcc8fab0bf20ac94f9fc8cb4ff04cd39acfd7f3ec40946b57c87c7ac7fc7
   note: "Bound changes to the exact runtime pin and required accountability; preserve prior bytes, incoming state and branch policy. Native service proof does not qualify a later member head."
+
+- ts: 2026-10-23T10:19:34.852378Z
+  session: codex/foresight-antigravity-rollout
+  task: Publish calliope R6 reviewer runtime pin
+  p-efficiency: 0.95
+  p-friction: 0.05
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: c0a5a63489fa7fe034627e00bc042d69a952f14b0635fbf6202874e6ec73abc2
+  note: "Bound changes to the exact runtime pin and required accountability; preserve prior bytes, incoming state and branch policy. Native service proof does not qualify a later member head."

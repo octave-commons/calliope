@@ -12,7 +12,7 @@ The current ADR-002 still owns the external media dataset. This file neither
 reassigns that identity nor declares new architectural acceptance.
 
 Run from this directory with JDK 21, Clojure CLI, Xvfb, PulseAudio/PipeWire and a
-locally available MP3. The example creates a private null sink and leaves the
+locally available MP3 longer than 6250 ms (seek/resume needs a safety margin). The example creates a private null sink and leaves the
 default sink and all physical inputs unchanged:
 
 ```bash

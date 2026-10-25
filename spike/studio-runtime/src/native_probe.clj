@@ -89,7 +89,9 @@
           (on-fx #(.setVolume player 0.1))
           (wait-for #(= "READY" (on-fx (fn [] (str (.getStatus player))))))
           (let [duration (on-fx #(.toMillis (.getTotalDuration player)))]
-            (when-not (> duration 1000) (throw (ex-info "Invalid duration" {:duration duration})))
+            (when-not (and (Double/isFinite duration) (> duration 6250))
+              (throw (ex-info "Asset too short for 5000 ms seek and >5250 ms resume assertions (need >6250 ms)"
+                              {:duration duration})))
             (println "DURATION:" duration)
             (on-fx #(.play player))
             (wait-for #(= "PLAYING" (on-fx (fn [] (str (.getStatus player))))))

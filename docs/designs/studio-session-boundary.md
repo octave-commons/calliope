@@ -38,6 +38,19 @@ this increment does not introduce remote multi-user authorization.
 | `:studio/proposal-result` | Request UUID, validated text, provider/model/prompt identity and evidence refs | Provisional proposal only; agent/system entrypoint |
 | `:studio/decide` | Proposal UUID, `:accept` or `:reject` | Separate attributed human decision and source-event reference |
 
+Studio selections retain exact `:start-sample`/`:end-sample` and the take clock's
+`:sample-rate` alongside the owning workbench clip. To project this half-open
+sample range into integer-millisecond `:clip/range`, use outward rounding:
+`:start-ms = floor(1000 * start-sample / sample-rate)` and
+`:end-ms = ceil(1000 * end-sample / sample-rate)`. The end uses the same outward
+rounding policy, toward the end of the source rather than toward its beginning.
+Compute by integer quotient/remainder; never store raw sample counts in ms fields.
+The render's millisecond duration is likewise `ceil(1000 * total-samples /
+sample-rate)`, so a selection ending at the source end remains bounded. At 48 kHz,
+`[0,24000)` projects to `[0,500)` ms; `[1,2)` projects to `[0,1)` ms. The ms view
+can include less than one extra millisecond at either boundary; precise studio
+replay and recovery use the retained sample offsets, not a conversion back from ms.
+
 Read/query/view/transport commands never create decision facts. A proposal never
 modifies source bytes, clip selection or accepted labels. Unknown proposal, stale
 source identity, agent self-promotion and malformed output return explicit failure.

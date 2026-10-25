@@ -70,9 +70,9 @@ clojure -M:classify -- --seed 3721599729 --dry-run
 clojure -M:classify -- --seed 3721599729
 
 # Rheos discovers openhax.kanban.json from the repository root.
-eta-mu kanban count
-eta-mu kanban list
-eta-mu kanban find ft-000b-define-media-workbench-domain-laws
+npm install --global @eta-mu/rheos@0.2.0  # same pin as CI
+rheos read-board
+rheos read-task ft-000b-define-media-workbench-domain-laws
 
 # Media dataset (ADR-002). Root: CALLIOPE_MEDIA_ROOT, default tracks/.
 bb scripts/media.clj where

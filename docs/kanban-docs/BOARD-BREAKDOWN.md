@@ -175,11 +175,12 @@ cards that would make the drawing unreadable.
 - Any missing board invariant must be implemented in Rheos upstream; Fork Tales
   does not create local validators or shadow board mechanics.
 
-## Current first move
+## Historical first move — before the 2026-10-25 reconciliation
 
-FT-OPS-001 records a local eta-mu/Rheos read of the corrected board. FT-000A is
-the dependency that must be reconciled before FT-000B and FT-000D can return to
-`ready`; query Rheos for live state before acting.
+FT-OPS-001 recorded a local eta-mu/Rheos read of the corrected board. At that
+point FT-000A required reconciliation before FT-000B and FT-000D could return
+to `ready`. That reconciliation is recorded below; do not repeat it from this
+historical instruction. Query Rheos for live state and the next actionable work.
 
 ## Studio recovery — 2026-10-25
 

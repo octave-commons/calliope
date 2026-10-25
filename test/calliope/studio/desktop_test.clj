@@ -207,3 +207,24 @@
       (is (= before @world))
       (is (= :desktop/unknown-plan
              (:error/code (i3/apply! controller (:plan/id preview))))))))
+
+(deftest a-manual-change-observed-after-another-command-is-not-absorbed
+  (let [{:keys [world calls read execute]} (harness)
+        c (i3/controller {:read! read :execute! (fn [op command]
+                                                (let [result (execute op command)]
+                                                  (when (= 1 (count @calls))
+                                                    (swap! world assoc-in [:windows 20 :rect :x] 500))
+                                                  result))})
+        preview (i3/preview! c profile)
+        result (i3/apply! c (:plan/id preview))]
+    (is (= :desktop/user-change (:error/code result)))
+    (is (= :partial (:status result)))
+    (is (= 1 (count @calls)))
+    (is (= 500 (get-in @world [:windows 20 :rect :x])))
+    (is (= 30 (:focus @world)))))
+
+(deftest different-workspace-is-an-explicit-skip
+  (let [s (assoc-in snapshot [:windows 20 :workspace] 2)
+        plan (:plan (desktop/plan s profile))]
+    (is (= [{:id 20 :reason :different-workspace}] (:skipped plan)))
+    (is (= #{10} (set (map :id (:operations plan)))))))

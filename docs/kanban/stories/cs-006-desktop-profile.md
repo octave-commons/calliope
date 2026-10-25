@@ -2,11 +2,11 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["cs-001-native-runtime-recovery"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792934984981-0.zfczbg7ly4lorhf2hxu"
+write-id: "1792937377677-0.xq4xuw6x1qpq2vdgiea"
 points: "3"
 title: "CS-006: Add an explicit one-shot music desktop profile"
 priority: "P0"
-status: "review"
+status: "in_progress"
 design: "docs/designs/studio-session-boundary.md"
 uuid: "cs-006-desktop-profile"
 research: "docs/research/studio-foundation-map.md"

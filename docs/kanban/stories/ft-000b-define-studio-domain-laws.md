@@ -6,7 +6,7 @@ process: "docs/process/product-design-and-delivery.md"
 phase: "0"
 type: "story"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792920227077-0.o2q6hwak057b9e7mcr"
+write-id: "1792921408406-0.t3ztj45cta9nag2dps"
 points: "5"
 title: "FT-000B: Define media workbench domain laws"
 priority: "P0"
@@ -63,5 +63,7 @@ Date correction: the preceding reconciliation comments say 2026-08-30, but Rheos
 Studio goal recovery begins from the existing approved ADR-001/design and issue #9 at source 194512b4ce7e9e706f555a4f933449c632bb8fb5. FT-000A is done in this base, satisfying the recorded readiness repair. This branch recovers pure content laws plus required contextual range/fade/source/arrangement validation into calliope namespaces. Release/publication contracts remain the separately scoped handoff; this contribution will not claim the broader card complete without its remaining scope. New capture-plan cards remain incoming while PR #22 planning review runs.
 
 Content recovery GREEN: calliope.law.studio now supplies qualified plain-data Malli registries; calliope.studio.content supplies pure source/range/fade/marker/rating/arrangement/export admission. RED recorded missing content namespace and later two scalar/encoding admission failures. Full suite now 122 tests/806 assertions, zero failures/errors under umask 0022; lint zero warnings/errors. docs/research/studio-content-law-recovery.md pins original source hash and states metadata-versus-byte verification limits. Release/publication scope is not implemented here, so the broader card is not claimed done.
+
+Self-review RED: the new oversized-fades regression produces two long-overflow errors from intrinsic clip admission rather than the required invalid-clip result (123 tests/809 assertions, zero failures/two errors). A largest valid source range and exactly fitting fades remain the positive boundary. Fix the arithmetic without narrowing recovered source metadata types.
 
 ---

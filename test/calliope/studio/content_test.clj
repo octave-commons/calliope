@@ -193,3 +193,13 @@
                               :encoding/settings {:dynamic executable}})))
     (is (not (content/valid? :calliope.studio/where-v1 [:eq :field executable])))
     (is (zero? @calls))))
+
+(deftest oversized-fades-refuse-without-arithmetic-overflow
+  (let [too-large (assoc clip :clip/fades {:in-ms Long/MAX_VALUE :out-ms 1})
+        longest-render (assoc render :render/duration-ms Long/MAX_VALUE)
+        longest-clip (assoc clip :clip/range {:start-ms 0 :end-ms Long/MAX_VALUE}
+                                :clip/fades {:in-ms (dec Long/MAX_VALUE) :out-ms 1})]
+    (is (false? (content/valid? :calliope.studio/clip-v1 too-large)))
+    (is (= {:ok? false :errors [{:error/code :invalid-clip}]}
+           (content/clip-check too-large render)))
+    (is (:ok? (content/clip-check longest-clip longest-render)))))

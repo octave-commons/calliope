@@ -24,7 +24,7 @@ The kit's six isolated tests pass locally; this supplies no product evidence.
 | Calliope main | a731093b878f600ee30648a01f1a6cd44f3439f0 | ADR-001, approved media-workbench-v1, media dataset/hash verification; no current production capture, playback, studio session or native shell namespace |
 | Calliope original checkout | b473c21251d3281eae942c5bddfef829b37d1182 | device/stealth; preserved, clean; new work uses isolated codex/studio-foundation worktree |
 | Calliope PR #7 | 194512b4ce7e9e706f555a4f933449c632bb8fb5 | Historical accepted native-runtime ADR, studio Malli laws and disposable spikes; closed, unmerged; never union-merge its stale board ledger |
-| Clio | 788cdd3434615a7932b924e68520dbf7f88408c2 | src/clio/law/event.cljc and ledger.cljc own generic identity/admission; domain/projection.cljc owns fold; JVM consumption must pin upstream rather than copy laws |
+| Clio upstream main | 9b14cda67d76639ee33aa90eff3caf10dd120d7c | src/clio/infra/runtime.cljc, ledger.cljc and extern/jvm/fs.clj already own schema snapshots, locking, durability and replay; consume this pinned upstream JVM boundary rather than copy laws/transport |
 | Sol | 1276955c86ff46936cd1ce7d81fbc790f7068e1e | infra/agent/session_store.cljs and run_state.cljs expose persisted runs; no actual durable studio run was admitted or recovered |
 | Muse | b4bdb0a7d019bb33c71aba1bd8daec5933e7ebde | Compatibility compiler; no persistent studio actor ownership inferred |
 | Epiphany | ca3fd843b30ef8fd9ca2881aeb9758e58dac6b66 | Evidence/history owner; future source-reference integration, no new shared ontology in this increment |
@@ -65,7 +65,9 @@ this assignment adds capture/import adapters and source-linked phrases, not a DA
 
 - Host shell, repository read/write, GitHub and native dependencies are available.
 - PipeWire/PulseAudio is reachable. No physical input was opened.
-- Default i3 socket lookup failed; do not claim live layout or alter user's desktop.
+- Default i3 socket lookup failed; explicit discovery found the live socket.
+  Read-only GET_VERSION and GET_TREE verified i3 4.23 and six windows.
+  No layout commands or configuration changes were applied.
 - Use a private Xvfb display and controlled playback sink for native automation.
   Such evidence proves the app path but not human listening or real workstation layout.
 - Real guitar/mic/interface/MIDI, direct monitoring, hardware disconnects, latency
@@ -73,6 +75,22 @@ this assignment adds capture/import adapters and source-linked phrases, not a DA
 - Original media and derived clip identity survive unchanged through restart.
   Corrupt/truncated ledger, failed writes, stale bytes and missing sources must fail.
 - Local disk has about 15 GiB free; fixtures remain small, no model downloads.
+
+## Fresh native discovery
+
+The disposable [native probe](../../spike/studio-runtime/README.md) executed on
+Linux/OpenJDK 21.0.12.1/JavaFX 21.0.3 under Xvfb and an isolated PulseAudio null
+sink. It asserted actual MP3 duration (187824 ms), play progress, paused position,
+seek, resumed progress and stopped state, opened a cljfx window through a
+command/query boundary, then deleted/rebuilt a toy SQLite index from EDN.
+This is current runtime discovery, not the complete studio loop or hardware output.
+The probe and [recovered ADR](recovered/pr-7-native-runtime-adr.md) are research
+artifacts; production implementation still follows planning review and Rheos readiness.
+
+Baseline main tests: 112 tests, 699 assertions, zero failures/errors with umask
+0022. Under the shell's umask 0002 the existing dataset permission test has two
+failures (expected group-write permission versus the replacement file's 0644).
+Hosted Repository Contracts passes. Studio work has not changed that behavior.
 
 ## Delivery sequence
 
@@ -84,4 +102,3 @@ this assignment adds capture/import adapters and source-linked phrases, not a DA
 Planning review precedes production implementation; every story moves only through
 Rheos. Existing FT cards retain their identity and acceptance gates. This increment
 does not assert the entire daily-driver player, all FT gates, or real-device readiness.
-

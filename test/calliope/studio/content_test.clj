@@ -96,6 +96,8 @@
   (is (content/rating-for? rating {:subject/type :clip :subject/id "c1"}))
   (is (not (content/rating-for? rating {:subject/type :render :subject/id "c1"})))
   (is (not (content/rating-for? rating {:subject/type :clip :subject/id "other"})))
+  (is (false? (content/rating-for? (dissoc rating :rating/value)
+                                  {:subject/type :clip :subject/id "c1"})))
   (doseq [key [:rating/subject :rating/dimension :rating/scale
                :rating/value :rating/actor :rating/at]]
     (is (not (content/valid? :calliope.studio/rating-v1 (dissoc rating key)))))
@@ -117,6 +119,9 @@
     (is (false? (:ok? (content/arrangement-check a (dissoc clips "c2") renders))))
     (is (false? (:ok? (content/arrangement-check a (assoc-in clips ["c2" :clip/id] "wrong") renders))))
     (is (false? (:ok? (content/arrangement-check a (assoc-in clips ["c2" :clip/status] :provisional) renders))))
+    (doseq [invalid-renders [{} (assoc-in renders ["r1" :render/sha256] sha-b)]]
+      (is (= {:ok? false :errors [{:error/code :invalid-clip-source}]}
+             (content/arrangement-check a clips invalid-renders))))
     (let [r2 (assoc render :render/id "r2" :render/work-id "w2" :render/sha256 sha-b)
           mixed-clips (assoc clips "c2" (assoc c2 :clip/source
                                               {:source/type :render :source/id "r2" :source/sha256 sha-b}))

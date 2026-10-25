@@ -42,8 +42,9 @@ Structural validation is not complete admission. Use the pure
 - `export-check`: bind arrangement identity/version, the complete distinct source
   hash set, encoding, renderer and output-hash metadata.
 
-Context checks return `{:ok? true ...}` or explicit
-`{:ok? false :errors [{:error/code ...}]}` data. They perform no filesystem,
+The `*-check` functions return `{:ok? true ...}` or explicit
+`{:ok? false :errors [{:error/code ...}]}` data. `rating-for?` returns a boolean.
+They perform no filesystem,
 audio, rendering, storage or publication effect. In particular, hash comparison
 here validates metadata identity; the later source adapter must verify actual
 media bytes.
@@ -64,7 +65,7 @@ Admission now compares each fade against remaining duration rather than summing
 them: invalid extremes return a structured refusal while an exactly fitting
 maximum-integer source range remains valid.
 
-Current local result: 124 tests / 814 assertions, zero failures/errors under
+Current local result: 124 tests / 817 assertions, zero failures/errors under
 umask 0022. New tests cover object cross-promotion, exact source identity,
 range/fade boundaries, marker duration-context integrity and rating scope, accepted-clip ordering,
 cross-work provenance, complete multi-source exports, closed query vocabulary,

@@ -30,7 +30,9 @@ Only the latest preview remains active. `apply!` accepts that ID, not editable p
 data; it consumes it once. Exact snapshot equality checks both the raw-tree revision
 hash and normalized geometry/focus/window identity. A changed preview executes
 zero commands. Each subsequent operation checks the latest observed snapshot;
-changes observed between commands stop further effects. A successful native
+changes observed between commands stop further effects. After each command,
+focus/workspace and every non-commanded window must also remain unchanged;
+an observed change is never silently absorbed into the next baseline. A successful native
 acknowledgement also verifies that operation's declared geometry/floating fields;
 a mismatched result stops instead of applying the remaining operations.
 
@@ -53,11 +55,12 @@ global Clojure executors.
 
 ## Evidence and limits
 
-- Full JVM suite: 156 tests / 1089 assertions, zero failures/errors under umask0022.
+- Full JVM suite: 158 tests / 1096 assertions, zero failures/errors under umask0022.
   Tests cover fixed operation admission, selected-only effects, exact layout,
   unchanged focus/unselected apps, duplicate/old-preview refusal, independent
   revision/geometry/focus staleness, skip reasons, lost acknowledgement,
-  mid-apply focus change, between-operation geometry change, already-matching
+  mid-apply focus change, between-operation geometry change, after-command
+  changes to a different target, different-workspace skip, already-matching
   zero-command success, reconnect and native tree reduction.
 - Full src/test/spike lint: zero errors/warnings after explicit probe imports.
 - Read-only production discovery against the current workstation's explicit
@@ -66,10 +69,33 @@ global Clojure executors.
 - The [isolated real i3 probe](../../spike/studio-desktop/README.md) executes six
   actual fixed commands on two disposable xmessage windows under private Xvfb,
   verifies exact rectangles and unchanged focus, and checks duplicate/stale
-  application produces zero commands. This is separate from mocked effects.
+  application produces zero commands. On current code, the initial floating
+  command triggers real i3 reflow of the other tiled client and stops with an
+  explicit partial result after one command. A separate simulated-operator fresh
+  preview/application completes the layout; the controller never retries it.
+  This is separate from mocked effects.
 
 No current workstation window has been moved by this development. Actual
 user-invoked workstation effects, a real DAW, the integrated native studio UI and
 the full capture-to-restart workflow remain separate verification. The controller
 must be wired to explicit native preview/apply actions in CS-004; model completion
 must not acquire that entrypoint. Story/canon exploration remains parked.
+
+## Review regression: observed after-command changes
+
+Review5643602888/root4371115922 found that the post-command snapshot could absorb
+a deliberate move of another window and later overwrite it. RED8fff558 reproduces
+four failing assertions:6commands/clean success instead of1command/partial, and
+x500 overwritten withx960. The controller now compares focus, workspace and all
+non-commanded windows with the pre-command state before accepting a new baseline.
+A mismatch stops further commands and retains already acknowledged effects.
+
+Real private-i3 testing also disproved the review's secondary claim that floating
+has no collateral effect on other windows. Probe03 stopped after1command because
+i3 reflowed the other tiled client. The conservative check cannot attribute that
+change to i3 versus a simultaneous human move, so it stops for either; it does
+not silently authorize continuation. Probe04 records this partial outcome and
+then uses a separate explicit simulated-operator fresh preview/application to
+finish the two-window profile (6commands total), with unchanged focus and the
+usual duplicate/manual-stale refusals. The UI must expose the partial result and
+require that fresh user action. No automatic reassertion/retry was introduced.

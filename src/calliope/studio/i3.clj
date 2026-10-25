@@ -63,6 +63,12 @@
            :resize (= (select-keys operation [:width :height]) (select-keys (:rect window) [:width :height]))
            :move (= (select-keys operation [:x :y]) (select-keys (:rect window) [:x :y]))))))
 
+(defn- other-state-unchanged? [before after operation]
+  (and (= (select-keys before [:focus :workspace])
+          (select-keys after [:focus :workspace]))
+       (= (dissoc (:windows before) (:id operation))
+          (dissoc (:windows after) (:id operation)))))
+
 (defn apply!
   "Consume one exact preview. Stale/manual changes cancel before any effects.
    Mid-apply change/disconnect stops further commands; no rollback or reassertion.
@@ -96,6 +102,8 @@
                             (not (:ok? after)) (partial-result :desktop/unavailable applied false)
                             (not= (:expected/focus plan) (get-in after [:snapshot :focus]))
                             (partial-result :desktop/focus-changed applied false)
+                            (not (other-state-unchanged? (:snapshot before) (:snapshot after) operation))
+                            (partial-result :desktop/user-change applied false)
                             (not (effect-established? (:snapshot after) operation))
                             (partial-result :desktop/effect-not-established applied false)
                             :else (recur (next remaining) (:snapshot after) applied)))))))

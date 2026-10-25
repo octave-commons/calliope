@@ -53,11 +53,12 @@ global Clojure executors.
 
 ## Evidence and limits
 
-- Full JVM suite: 150 tests / 1068 assertions, zero failures/errors under umask0022.
+- Full JVM suite: 152 tests / 1080 assertions, zero failures/errors under umask0022.
   Tests cover fixed operation admission, selected-only effects, exact layout,
   unchanged focus/unselected apps, duplicate/old-preview refusal, independent
   revision/geometry/focus staleness, skip reasons, lost acknowledgement,
-  mid-apply focus change, reconnect and native tree reduction.
+  mid-apply focus change, between-operation geometry change, already-matching
+  zero-command success, reconnect and native tree reduction.
 - Full src/test/spike lint: zero errors/warnings after explicit probe imports.
 - Read-only production discovery against the current workstation's explicit
   socket succeeds with seven windows and zero layout effects. Saved evidence is

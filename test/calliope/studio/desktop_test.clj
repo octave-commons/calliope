@@ -175,3 +175,35 @@
     (is (= :partial (:status result)))
     (is (= 2 (count @calls)))
     (is (= 700 (get-in @world [:windows 10 :rect :width])))))
+
+(deftest manual-change-between-operations-stops-before-next-command
+  (let [{:keys [world calls reads read execute]} (harness)
+        c (i3/controller {:read! (fn []
+                                  (when (= 4 @reads)
+                                    (swap! world assoc-in [:windows 20 :rect :x] 123))
+                                  (read))
+                          :execute! execute})
+        preview (i3/preview! c profile)
+        result (i3/apply! c (:plan/id preview))]
+    (is (= :desktop/user-change (:error/code result)))
+    (is (= :partial (:status result)))
+    (is (false? (:uncertain? result)))
+    (is (= 1 (count @calls)))
+    (is (= 123 (get-in @world [:windows 20 :rect :x])))
+    (is (= 30 (:focus @world)))))
+
+(deftest an-already-matching-layout-succeeds-without-commands
+  (let [{:keys [world calls controller]} (harness)]
+    (doseq [[id x] [[10 0] [20 960]]]
+      (swap! world update-in [:windows id]
+             assoc :floating? true :rect {:x x :y 0 :width 960 :height 1080}))
+    (let [before @world
+          preview (i3/preview! controller profile)
+          result (i3/apply! controller (:plan/id preview))]
+      (is (:ok? result))
+      (is (= :unchanged (:status result)))
+      (is (empty? (:applied result)))
+      (is (empty? @calls))
+      (is (= before @world))
+      (is (= :desktop/unknown-plan
+             (:error/code (i3/apply! controller (:plan/id preview))))))))

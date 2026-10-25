@@ -1,14 +1,15 @@
 ---
-uuid: "cs-006-desktop-profile"
-title: "CS-006: Add an explicit one-shot music desktop profile"
-status: incoming
-priority: P0
-points: 3
-labels: studio, foundation, native, recovery
+labels: "studio, foundation, native, recovery"
 dependency: ["cs-001-native-runtime-recovery"]
-research: docs/research/studio-foundation-map.md
-adr: docs/adrs/adr-001-local-first-media-workbench.md
-design: docs/designs/studio-session-boundary.md
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1792937669045-0.gbg4h234qbkpfplv8o3"
+points: "3"
+title: "CS-006: Add an explicit one-shot music desktop profile"
+priority: "P0"
+status: "review"
+design: "docs/designs/studio-session-boundary.md"
+uuid: "cs-006-desktop-profile"
+research: "docs/research/studio-foundation-map.md"
 ---
 
 # CS-006: Add an explicit one-shot music desktop profile
@@ -51,3 +52,11 @@ Planning review precedes ready; current-head review/checks precede merge.
 Keep missing sources, failed writes, unavailable providers and partial effects
 explicit. Device and durable-runtime evidence cannot be inferred from fixtures.
 
+---
+Codex claims independent CS-006 after planning convergence at c0d39fa (CodeRabbit completion6397531323, MiMo approval5643155974, canonical planning PASS) and CS-001 done. Implement a pure inspectable plan plus one-shot i3 adapter with fixed operations, exact tree/geometry preconditions, focus preservation and explicit partial/unavailable outcomes. No live layout effects, config replacement or background reconciliation during development; mocks, read-only discovery and any later user-invoked effects remain separate.
+
+GREEN evidence: full JVM suite150tests1068assertions, zero failures/errors under umask0022, full src/test/spike lint zero errors/warnings. Actual production controller passed an isolated Xvfb/i3 run on two disposable xmessage clients: six acknowledged fixed operations, exact960x1080 rectangles, unchanged focus, duplicate apply and manual-change stale apply with zero further commands. Stronger per-operation postconditions also pass the repeated isolated run. Actual workstation adapter discovery separately reads seven windows with zero effects. Evidence and platform/IPC atomicity limits are in docs/research/studio-desktop-implementation.md and spike/studio-desktop/README.md. No current workstation layout or actual Calliope/DAW UI was changed or claimed verified. Moving to review, not done.
+
+Review5643602888/root4371115922 is reproduced by RED8fff558 and fixed in3bfb363: after-command non-commandedwindow/workspace changes stop with partial instead of being rebased and overwritten. Different-workspace skip is tested. Actual private-i3probe04 verifies collateralreflow stops after1command; a separate explicit simulated-operator freshpreview/apply completes6totalcommands, exactrectangles and unchangedfocus. No automaticretry. Capture9763f1a/contenta3a2faa synchronized, bothreceipt histories preserved. Combined full JVM gates follow this comment. Source-head qualification remains pending; CS006 notdone.
+
+---

@@ -6,6 +6,8 @@
             [calliope.classifier.runtime-test]
             [calliope.law.media-test]
             [calliope.studio.content-test]
+            [calliope.studio.midi-test]
+            [calliope.studio.ingress-test]
             [calliope.media.dataset-test]
             [calliope.media.cli-test]
             [calliope.media.ingestion-test]
@@ -21,6 +23,8 @@
                          'calliope.classifier.runtime-test
                          'calliope.law.media-test
                          'calliope.studio.content-test
+                         'calliope.studio.midi-test
+                         'calliope.studio.ingress-test
                          'calliope.media.dataset-test
                          'calliope.media.cli-test
                          'calliope.media.ingestion-test

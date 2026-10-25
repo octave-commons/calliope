@@ -2,11 +2,11 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["cs-001-native-runtime-recovery"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792928411470-0.ggf8iejgaijp4d7stcw"
+write-id: "1792935781034-0.s5qpxfrzoude09hpziw"
 points: "5"
 title: "CS-002: Define source-preserving session laws and deterministic capture adapters"
 priority: "P0"
-status: "incoming"
+status: "review"
 design: "docs/designs/media-workbench-v1.md"
 uuid: "cs-002-capture-laws"
 research: "docs/research/studio-foundation-map.md"
@@ -88,5 +88,11 @@ Planning revision for PR #22: capture-specific proposed contract is docs/designs
 Planning review 5642914512: the v1 ingest contract is explicitly restricted to the trusted native UI entrypoint with the configured user actor and an active session/process grant. Added named ING acceptance cases for agent/system/spoofed entrypoints and absolute, traversal, linked, nonregular or changed-root inputs. V1 source arguments are regular-file leaf names under the root bound into the arm grant; source payloads outside it are never opened or copied.
 
 The acceptance body was hand-authored as supported card content, then recorded with this canonical comment. Executable rejection tests belong to this story before adapters; no production ingest implementation or passing authorization tests are claimed in the planning PR.
+
+Codex claims CS-002 for the authorized synthetic music milestone. Parent planning gate passed on c0d39fa with exact-head CodeRabbit completion6397531323 and MiMo approval5643155974; all19findings settled. CS-001 is now done through Rheos with actual JVM tests/lint, inherited human-accepted native choices and separately documented corpus/error probes. Implement named capture laws and failing clock/MIDI/authorization/confinement tests first, then pure interpretation and JVM source adapters. No real device, human creative decision, durable agent execution or complete studio workflow is claimed.
+
+Implemented named capture/take laws, exact pure MIDI clocks/lifecycle, deterministic 4-second stereo PCM WAV plus six-note SMF, and trusted UI-user staged-source snapshots. RED checkpoints1db248f/1198dcb; current full suite138tests992assertions zero failures/errors; full lint zero errors/warnings. JVM suite runs actual Linux descriptor tests (4 Python cases), including a leaf replaced by an outside symlink after metadata open, FIFO/nonregular refusal before read-capable opens, root replacement and hash mismatch. Controlled pending model worker does not prevent source ingress; failed/unavailable stubs are not called. See docs/research/studio-capture-implementation.md for interfaces, 8MiB/source bound, Linux/procfs/Python requirements and limits. No canonical publication/Clio app session/native studio UI/restart/device/human listening or creative acceptance is claimed; those remain dependent stories. Moving to review, not done, pending peer code review.
+
+Review rework: verified after-stop defect independently reproduced with stopped=true and armed=true, RED13bd8ce then explicit refusal before source access. Snapshot helper now private and tests rebind its private Var. Fixture reuse now checks size and compares through one NOFOLLOW channel; creation races become structured non-overwriting collisions. Full local suite142tests1001assertions zero failures/errors; lint zero errors/warnings. The alleged nonexistent child-attribute overload is contradicted by Java21 official API, local javap, actual successful ingest and independent local assessment. That native finding remains open, not locally settled or approved; see docs/research/studio-capture-review-evidence.md. Local execution paths in old receipts are explicitly workspace-local, with append-only clarification.
 
 ---

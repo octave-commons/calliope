@@ -17,9 +17,12 @@ jobs:
     uses: open-hax/eta-mu/.github/workflows/opencode-code-review.yml@b5b28237c45323cdc1914317260192163d957735
     with:
       pr_head_sha: ${{ github.event.pull_request.head.sha }}
-      setup_eta_mu_toolchain: false
+      setup_eta_mu_toolchain: true
       evidence_gates_script: |
         run_gate diff_stat git diff --stat "${PR_BASE_SHA}...${PR_HEAD_SHA}"
+        run_gate jvm_tests bash -c 'umask 0022 && clojure -M:test'
+        run_gate jvm_lint clj-kondo --lint src test spike
+        run_gate jdk_directory_api javap java.nio.file.SecureDirectoryStream
     # Least privilege: forward only the secrets the review job consumes.
     secrets:
       ETA_MU_APP_ID: ${{ secrets.ETA_MU_APP_ID }}

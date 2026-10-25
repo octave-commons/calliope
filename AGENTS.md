@@ -70,9 +70,9 @@ clojure -M:classify -- --seed 3721599729 --dry-run
 clojure -M:classify -- --seed 3721599729
 
 # Rheos discovers openhax.kanban.json from the repository root.
-eta-mu kanban count
-eta-mu kanban list
-eta-mu kanban find ft-000b-define-media-workbench-domain-laws
+npm install --global @eta-mu/rheos@0.2.0  # same pin as CI
+rheos read-board
+rheos read-task ft-000b-define-media-workbench-domain-laws
 
 # Media dataset (ADR-002). Root: CALLIOPE_MEDIA_ROOT, default tracks/.
 bb scripts/media.clj where
@@ -119,6 +119,8 @@ The governing set is:
 
 - research: `docs/research/media-workbench-interface-and-publishing.md`;
 - accepted ADR: `docs/adrs/adr-001-local-first-media-workbench.md`;
+- reconciled native decision: `docs/adrs/adr-003-reconciled-native-runtime.md`
+  (recorded 2026-08-25 acceptance; current evidence and limits are separate);
 - approved design: `docs/designs/media-workbench-v1.md`;
 - accepted process: `docs/process/product-design-and-delivery.md`;
 - board contract: `docs/kanban-docs/AGENTS.md`;
@@ -176,11 +178,13 @@ playback, curation, or salvage.
   tracked, so transition, comment, and drift history survives a fresh checkout.
   It is one EDN event per line and union-merged; never rewrite or reorder it.
 - Configure lifecycle, transition, and WIP behavior in Rheos/FSM configuration;
-  never shadow those rules with repository code. The installed engine resolves
-  `"fsm"` as either a known name or a complete FSM map used verbatim — it does
-  not merge overlays, and a JSON map cannot express the keyword check ids that
-  gates dispatch on. `"fsm": "promethean"` is therefore the only working value
-  here; the Clojure build gate is an upstream gap tracked in `receipts.edn`.
+  never shadow those rules with repository code. The earlier engine limitation
+  is repaired upstream: the `@eta-mu/rheos@0.2.0` CLI accepts the documented
+  `fsm.extends = promethean` / `buildGateCommands` extension, retaining upstream
+  transitions, checks and WIP law while selecting this repository's JVM gates.
+  [Adoption evidence](docs/research/rheos-jvm-gate-adoption.md) records successful
+  Clojure execution and failed-command refusal through Rheos itself. CI uses that
+  pinned canonical CLI. Never copy the FSM/check implementation into this repo.
 
 ## Ledger discipline
 

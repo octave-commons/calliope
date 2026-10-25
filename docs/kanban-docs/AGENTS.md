@@ -52,10 +52,9 @@ drifting across repositories.
 Run from the repository root so eta-mu/Rheos discovers `openhax.kanban.json`.
 
 ```bash
-eta-mu --version
-eta-mu kanban count
-eta-mu kanban list
-eta-mu kanban find ft-000b-define-media-workbench-domain-laws
+npm install --global @eta-mu/rheos@0.2.0  # same pin as CI
+rheos read-board
+rheos read-task ft-000b-define-media-workbench-domain-laws
 ```
 
 Use `--tasks-dir` only for an intentional alternate board or a configuration

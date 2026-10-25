@@ -206,3 +206,21 @@ dependency is still `incoming`. They may return to `ready` only after that
 dependency is satisfied or explicitly revised through canonical authority.
 Query Rheos for live state before acting. FT-000C and player cards remain
 dependency-gated rather than blocked by unresolved product acceptance.
+
+## Studio recovery reconciliation — 2026-10-25
+
+The preceding incoming/breakdown description records the earlier board baseline.
+The studio recovery re-read native approval comment 5099692071 and independent
+review 4793817603, checked the current accepted ADR/design and recorded FT-000A's
+existing acceptance through its supported Rheos lifecycle. No new implementation
+acceptance is inferred from that reconciliation.
+
+The recorded native-runtime decision is restored at
+[ADR-003](../adrs/adr-003-reconciled-native-runtime.md), with historical identity,
+source hash, unchanged choices, fresh discovery evidence and limits. FT-000D
+continues to own that decision. CS-001 explicitly depends on FT-000D; new studio
+cards retain planning review and their own code/evidence gates.
+
+The old pnpm-only build-gate limitation is replaced by consumption of the
+[upstream Rheos extension](../research/rheos-jvm-gate-adoption.md), not a local
+board implementation. Read the live board through Rheos for current states.

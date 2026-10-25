@@ -21,6 +21,7 @@ on:
       - "docs/kanban/**"
       - "docs/kanban-docs/**"
       - "openhax.kanban.json"
+      - "spike/**"
       - ".opencode/AGENTS.md"
       - ".opencode/skills/calliope-corpus/SKILL.md"
       - "src/calliope/**"
@@ -45,6 +46,7 @@ on:
       - "docs/kanban/**"
       - "docs/kanban-docs/**"
       - "openhax.kanban.json"
+      - "spike/**"
       - ".opencode/AGENTS.md"
       - ".opencode/skills/calliope-corpus/SKILL.md"
       - "src/calliope/**"
@@ -63,17 +65,27 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Install eta-mu/Rheos
-        run: npm install --global eta-mu@1.1.1
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Install canonical Rheos
+        run: npm install --global @eta-mu/rheos@0.2.0
       - name: Read board through Rheos
         run: |
-          eta-mu --version
-          eta-mu kanban count
-          eta-mu kanban list
-          eta-mu kanban find ft-000b-define-media-workbench-domain-laws
+          rheos read-board > "$RUNNER_TEMP/rheos-board.json"
+          rheos read-task ft-000b-define-media-workbench-domain-laws
       - uses: DeLaGuardo/setup-clojure@13.0
         with:
           cli: 1.12.2.1565
           bb: 1.13.219
+          clj-kondo: 2025.07.28
       - name: Run Clojure tests
         run: clojure -M:test
+      - name: Lint Clojure sources
+        run: clj-kondo --lint src test spike
+      - name: Verify Clio through independent JVMs
+        working-directory: spike/clio-consumer
+        run: |
+          clojure -M -m clio-probe append "$RUNNER_TEMP/calliope-clio-probe"
+          clojure -M -m clio-probe recover "$RUNNER_TEMP/calliope-clio-probe"

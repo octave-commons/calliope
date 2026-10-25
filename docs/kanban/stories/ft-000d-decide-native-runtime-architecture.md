@@ -6,11 +6,11 @@ process: "docs/process/product-design-and-delivery.md"
 phase: "0"
 type: "story"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1788047455111-0.6sme6jboey7o15dopd7"
+write-id: "1792917511445-0.6gjs8s0ua84opbsoavf"
 points: "5"
 title: "FT-000D: Decide native desktop, playback, read-model, and application topology"
 priority: "P0"
-status: "breakdown"
+status: "done"
 epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
 design: "docs/designs/media-workbench-v1.md"
 uuid: "ft-000d-decide-native-desktop-playback-read-model-and-application-topology"
@@ -61,4 +61,9 @@ Recovery crosswalk (2026-08-30): GitHub issue #12 (https://github.com/octave-com
 Readiness repair (2026-08-30): moved from ready back to breakdown through Rheos because declared dependency FT-000A is still incoming. Re-enter ready only after the dependency is satisfied or explicitly revised through canonical authority.
 
 Date correction: the preceding reconciliation comments say 2026-08-30, but Rheos recorded these operations on 2026-08-29 UTC. The substance is unchanged; this append-only correction preserves the original ledger history.
+
+2026-10-25 owner reconciliation evidence: docs/adrs/adr-003-reconciled-native-runtime.md carries forward the unchanged historical ADR-002 choices and recorded Err acceptance dated 2026-08-25 from immutable PR #7 head 194512b4ce7e9e706f555a4f933449c632bb8fb5 and decision receipt line 37. Original ADR bytes are preserved separately; current ADR-002 dataset identity is untouched. Fresh spike verifies real corpus MP3 transitions, actual native window and disposable EDN/SQLite rebuild under declared Xvfb/null sink. No new human acceptance, hardware audio, production studio recovery or stale board merge is claimed. FT-000A is now done through its real lifecycle; CS-001 explicitly depends on this owner.
+
+Current lifecycle now completed through Rheos ready -> todo -> in_progress -> review (JVM suite and lint gates executed) -> document -> done. Acceptance basis remains the explicitly recorded 2026-08-25 decision, preserved in ADR-003 with no changed stack choices. Fresh discovery evidence and unverified hardware/production limits are separate. No new studio implementation acceptance is implied.
+
 ---

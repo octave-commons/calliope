@@ -1,19 +1,20 @@
 ---
-uuid: "ft-000a-review-and-accept-or-revise-media-workbench-authority"
-title: "FT-000A: Review and accept or revise Media Workbench authority"
-status: incoming
-type: story
-priority: P0
-phase: 0
-epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
-owner: Err
-points: 2
-labels: architecture, design-review, media-workbench
-category: stories
-research: "docs/research/media-workbench-interface-and-publishing.md"
-adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-design: "docs/designs/media-workbench-v1.md"
+category: "stories"
+labels: "architecture, design-review, media-workbench"
 process: "docs/process/product-design-and-delivery.md"
+phase: "0"
+type: "story"
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1792919603926-0.u3p76n0algmcm49k7nx"
+points: "2"
+title: "FT-000A: Review and accept or revise Media Workbench authority"
+priority: "P0"
+status: "done"
+epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "ft-000a-review-and-accept-or-revise-media-workbench-authority"
+research: "docs/research/media-workbench-interface-and-publishing.md"
+owner: "Err"
 ---
 
 # FT-000A: Review and accept or revise Media Workbench authority
@@ -101,9 +102,20 @@ human comment above is design-disposition evidence, not proof that this card pas
 the Rheos lifecycle. No acceptance of unimplemented player, audio, read-model, or
 publication work is recorded or implied here.
 
+**Historical intake correction, before the 2026-10-25 reconciliation:**
+
 This result section was added after a branch snapshot had already created the new
 card with `status: done`. That status was invalid: a new card enters `incoming`,
-and `done` must be reached through a Rheos lifecycle transition. The current
-frontmatter is therefore `incoming`; the recorded disposition and evidence remain
-inputs to a future lifecycle acceptance rather than a claim that it already
-occurred.
+and `done` must be reached through a Rheos lifecycle transition. At that
+historical correction, frontmatter was returned to `incoming`; the recorded
+disposition and evidence were inputs to a later lifecycle acceptance. The
+2026-10-25 Rheos comments below record the subsequent reconciliation.
+
+---
+2026-10-25 current-source reconciliation for the studio goal: native GitHub readback of human disposition comment 5099692071 and independent review 4793817603 succeeded. The comment records approval after config-discovery correction, with later authority/status reconciliation explicitly separate. Current ADR-001 remains accepted, design remains approved, process accepted; current cards use canonical UUIDs and prose remains outside tasksDir. This is evidence for the existing card lifecycle, not new approval or acceptance of player/capture implementations. References: PR #22, docs/research/studio-foundation-map.md; no historical ledger was imported.
+
+2026-10-25 lifecycle reconciliation completed through Rheos: incoming -> accepted -> breakdown -> ready -> todo -> in_progress, original pnpm gate refusal respected, then review only after consuming the upstream Rheos JVM gate extension and executing 112 tests/699 assertions plus zero-warning lint. document -> done records the already-existing named human acceptance, not approval of new studio code. Source approval comments 5099692071 / 4793817603 were freshly read; prior events remain immutable.
+
+PR #22 MiMo review 5642395703 documentation correction: date-scoped the historical body paragraph that described returning frontmatter to incoming, before the 2026-10-25 lifecycle reconciliation. Corrected the board README historical snapshot and current CLI guidance. No frontmatter status, acceptance decision or historical ledger record was manually edited.
+
+---

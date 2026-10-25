@@ -62,7 +62,8 @@
       (let [{:keys [start-ms end-ms]} (:clip/range value)
             {:keys [in-ms out-ms]} (:clip/fades value)]
         (and (ordered-range? (:clip/range value))
-             (<= (+ (or in-ms 0) (or out-ms 0)) (- end-ms start-ms))
+             (<= (or in-ms 0) (- end-ms start-ms))
+             (<= (or out-ms 0) (- end-ms start-ms (or in-ms 0)))
              (if (contains? value :clip/gain-db)
                (finite-number? (:clip/gain-db value)) true)))
       :calliope.studio/marker-v1

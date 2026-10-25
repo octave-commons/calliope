@@ -59,8 +59,12 @@ The RED commit adds named laws and boundary tests and records the intended
 missing `calliope.studio.content` implementation failure. A subsequent focused
 RED check also caught two intrinsic admission gaps: nonfinite query scalars and
 executable encoding values. Those now fail without executing caller values.
+A further regression reproduced JVM long overflow for oversized fade pairs.
+Admission now compares each fade against remaining duration rather than summing
+them: invalid extremes return a structured refusal while an exactly fitting
+maximum-integer source range remains valid.
 
-Current local result: 122 tests / 806 assertions, zero failures/errors under
+Current local result: 123 tests / 809 assertions, zero failures/errors under
 umask 0022. New tests cover object cross-promotion, exact source identity,
 range/fade boundaries, marker and rating scope, accepted-clip ordering,
 cross-work provenance, complete multi-source exports, closed query vocabulary,

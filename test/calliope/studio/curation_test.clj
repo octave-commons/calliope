@@ -189,3 +189,41 @@
          (is (= expected (get-in (state store) [:proposals proposal-id :failure/code])))
          (is (empty? (:decisions (state store))))
          (ok! (send! store :studio/stop {})))))))
+
+(deftest historical-arm-cannot-authorize-mark-after-restart
+  (fixture/with-store
+   (fn [_ root store]
+     (let [ingest (fixture/setup-capture! store) result (session/ui-command! store fixture/actor ingest)
+           take (get-in result [:result/value :take])]
+       (ok! result)
+       (session/close! store)
+       (let [recovered (session/open! root fixture/actor)]
+         (try
+           (let [before (session/history recovered)
+                 result (send! recovered :studio/mark {:take/id (:take/id take) :marker/id marker-id
+                                                       :range {:start-sample 0 :end-sample 100}})]
+             (is (= :capture/not-armed (:error/code result)))
+             (is (= before (session/history recovered))))
+           (finally (session/close! recovered))))))))
+
+(deftest stale-clip-cannot-be-decided-and-source-corruption-cannot-admit-curation
+  (with-clip
+   (fn [_ _ store take]
+     (request! store) (complete! store)
+     (ok! (send! store :studio/select-clip {:take/id (:take/id take) :clip/id clip-id
+                                           :source/sha256 (get-in take [:take/audio :sha256])
+                                           :range {:start-sample 0 :end-sample 100} :clip/title "Refined"}))
+     (is (= :proposal/stale-clip (:error/code (send! store :studio/decide {:proposal/id proposal-id :decision/value :accept}))))
+     (let [source (session/source-path! store (get-in take [:take/audio :render/id]))
+           before (session/history store)]
+       (spit source "Injected corrupt canonical source")
+       (is (= :error (:result/status (send! store :studio/annotate {:clip/id clip-id :annotation/text "refused" :annotation/labels []}))))
+       (is (= before (session/history store)))))))
+
+(deftest completion-payloads-return-explicit-failure-for-nonmaps
+  (with-clip
+   (fn [_ _ store _]
+     (request! store)
+     (let [channel ((requiring-resolve 'calliope.studio.session/proposal-channel!) store fixture/actor proposal-id)]
+       (doseq [payload [nil "unexpected" 42 [:unexpected]]]
+         (is (= :command/invalid (:error/code (channel payload)))))))))

@@ -20,6 +20,7 @@
 
 (deftest capture-contracts-are-named-closed-edn
   (is (= law/registry (edn/read-string (pr-str law/registry))))
+  (doseq [type (keys law/registry)] (is (ifn? (law/validator type)) (str type)))
   (is (law/valid? :calliope.capture/clock-v1 clock))
   (is (not (law/valid? :calliope.capture/clock-v1 (assoc clock :guess-tempo true))))
   (is (law/valid? :calliope.capture/packet-v1 (on 0 0 0 60 96))))
@@ -27,6 +28,8 @@
 (deftest exact-clock-and-outward-views
   (is (= [0 12000 24000] (mapv #(midi/tick->sample clock %) [0 240 480])))
   (is (= 12007 (midi/tick->sample (assoc clock :sample-origin 7) 240)))
+  (is (= 50000000000000 (midi/tick->sample clock 1000000000000)))
+  (is (= 45 (midi/tick->sample (assoc clock :sample-rate 44100) 1)))
   (is (= {:start-ms 0 :end-ms 500} (midi/sample-range->ms 48000 0 24000)))
   (is (= {:start-ms 0 :end-ms 1} (midi/sample-range->ms 48000 1 2)))
   (doseq [bad-clock [(assoc clock :ppq 0) (assoc clock :sample-rate -1)

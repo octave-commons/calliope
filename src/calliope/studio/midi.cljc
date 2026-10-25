@@ -9,20 +9,16 @@
 (defn- nat? [value]
   (law/valid? :calliope.capture/nat-v1 value))
 
-(defn- product [values]
-  #?(:clj (reduce *' 1 values)
-     :cljs (reduce (fn [a b]
-                     (let [n (* a b)]
-                       (when-not (js/Number.isSafeInteger n)
-                         (refuse! :capture/clock-overflow "Clock product exceeds exact host arithmetic"))
-                       n)) 1 values)))
-
-(defn- floor-ratio [numerator denominator]
-  #?(:clj (quot numerator denominator)
-     :cljs (js/Math.floor (/ numerator denominator))))
+(defn- quotient-remainder [factors denominator]
+  #?(:clj (let [numerator (reduce *' 1 factors)]
+            [(quot numerator denominator) (rem numerator denominator)])
+     :cljs (let [numerator (reduce #(js* "(~{} * ~{})" %1 (js/BigInt %2)) (js/BigInt 1) factors)
+                 divisor (js/BigInt denominator)]
+             [(js/Number (js* "(~{} / ~{})" numerator divisor))
+              (js/Number (js* "(~{} % ~{})" numerator divisor))])))
 
 (defn- bounded-sample [sample]
-  (when-not (nat? sample)
+  (when-not (and (integer? sample) (<= 0 sample law/max-sample))
     (refuse! :capture/clock-overflow "Sample is outside the supported exact integer range"))
   #?(:clj (long sample) :cljs sample))
 
@@ -31,18 +27,17 @@
     (refuse! :capture/invalid-clock "Invalid declared constant-tempo clock or raw tick"))
   (bounded-sample
    (+ (:sample-origin clock)
-      (floor-ratio (product [tick (:sample-rate clock) (:tempo-us-per-quarter clock)])
-                   (product [(:ppq clock) 1000000])))))
+      (first (quotient-remainder [tick (:sample-rate clock) (:tempo-us-per-quarter clock)]
+                                 (* (:ppq clock) 1000000))))))
 
 (defn sample-range->ms [sample-rate start end]
   (when-not (and (integer? sample-rate) (<= 8000 sample-rate 192000)
                  (nat? start) (nat? end) (< start end))
     (refuse! :capture/invalid-range "Expected a nonempty bounded sample range"))
-  (let [scaled-start (product [1000 start])
-        scaled-end (product [1000 end])]
-    {:start-ms (bounded-sample (floor-ratio scaled-start sample-rate))
-     :end-ms (bounded-sample (+ (floor-ratio scaled-end sample-rate)
-                               (if (zero? (rem scaled-end sample-rate)) 0 1)))}))
+  (let [[start-ms _] (quotient-remainder [1000 start] sample-rate)
+        [end-ms remainder] (quotient-remainder [1000 end] sample-rate)]
+    {:start-ms (bounded-sample start-ms)
+     :end-ms (bounded-sample (+ end-ms (if (zero? remainder) 0 1)))}))
 
 (defn- at! [state sample end]
   (when-not (and (nat? sample) (<= (:last-sample state) sample end))

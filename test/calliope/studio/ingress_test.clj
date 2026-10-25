@@ -1,12 +1,16 @@
 (ns calliope.studio.ingress-test
   (:require [calliope.law.capture :as law]
+            [calliope.classifier.runtime :as runtime]
             [calliope.studio.ingress :as ingress]
             [calliope.studio.synthetic :as synthetic]
             [calliope.studio.midi-test :refer [clock]]
+            [clojure.java.shell :as shell]
             [clojure.test :refer [deftest is]])
   (:import [java.nio.file Files Path LinkOption]
            [java.nio.file.attribute FileAttribute]
-           [java.util Arrays]))
+           [java.util Arrays]
+           [java.io ByteArrayInputStream ByteArrayOutputStream]
+           [javax.sound.midi MidiSystem MidiEvent MetaMessage ShortMessage]))
 
 (def operator {:actor/id "simulated-studio-test-operator" :actor/kind :user})
 (def session-id "10000000-0000-4000-8000-000000000001")
@@ -27,7 +31,8 @@
   (merge {:command/type :studio/ingest :command/version 1 :request/id request-id
           :session/id session-id :session/revision 2} files))
 (defn grant [root]
-  (ingress/open-grant! root {:session/id session-id :process/id process-id :actor operator}))
+  (ingress/open-grant! root {:session/id session-id :process/id process-id :actor operator
+                             :clock clock :origin origin}))
 
 (deftest deterministic-fixture-preserves-separate-real-formats
   (let [a (synthetic/fixture 42) b (synthetic/fixture 42)]
@@ -62,7 +67,7 @@
     (try
       (let [files (synthetic/write-fixture! root 42) cmd (command files)]
         (with-open [g (grant root)]
-          (with-redefs [ingress/read-leaf! (fn [& _] (swap! opens inc) (throw (Exception. "Payload must remain unopened")))]
+          (with-redefs [ingress/snapshot-sources! (fn [& _] (swap! opens inc) (throw (Exception. "Payload must remain unopened")))]
             (doseq [[s actor c code]
                     [[(assoc state :capture/armed? false) operator cmd :capture/not-armed]
                      [(assoc state :capture/armed? false :capture/stopped? true) operator cmd :capture/not-armed]
@@ -94,7 +99,7 @@
         (Files/createSymbolicLink (.resolve root "linked.wav") outside-file (make-array FileAttribute 0))
         (Files/createDirectory (.resolve root "directory.wav") (make-array FileAttribute 0))
         (with-open [g (grant root)]
-          (with-redefs [ingress/read-leaf! (fn [& _] (swap! opens inc) (throw (Exception. "Must not open")))]
+          (with-redefs [ingress/snapshot-sources! (fn [& _] (swap! opens inc) (throw (Exception. "Must not open")))]
             (doseq [name ["linked.wav" "directory.wav"]]
               (is (= :capture/unsafe-source
                      (:error/code (ingress/ui-ingest! g state operator (assoc-in cmd [:audio :filename] name))))))
@@ -116,5 +121,51 @@
           (is (= :capture/clock-mismatch
                  (:error/code (ingress/ui-ingest! g (assoc-in state [:capture/clock :ppq] 960) operator cmd))))
           (is (= :capture/invalid-audio
-                 (:error/code (ingress/ui-ingest! g state operator (assoc cmd :audio (:midi files))))))))
+                 (:error/code (ingress/ui-ingest! g state operator (assoc cmd :audio (:midi files))))))
+          (is (= :capture/invalid-midi
+                 (:error/code (ingress/ui-ingest! g state operator (assoc cmd :midi (:audio files))))))))
       (finally (delete-tree! root)))))
+
+(deftest real-smf-tempo-changes-and-unsupported-events-refuse
+  (let [root (temp-root)]
+    (try
+      (let [files (synthetic/write-fixture! root 42)
+            bytes (Files/readAllBytes (.resolve root "synthetic-midi.mid"))]
+        (doseq [[name message expected]
+                [["variable.mid" (doto (MetaMessage.) (.setMessage 81 (byte-array [9 39 -64]) 3)) :capture/clock-mismatch]
+                 ["program.mid" (doto (ShortMessage.) (.setMessage ShortMessage/PROGRAM_CHANGE 0 1 0)) :capture/unsupported-midi]]]
+          (let [sequence (MidiSystem/getSequence (ByteArrayInputStream. bytes))
+                _ (.add (first (.getTracks sequence)) (MidiEvent. message 480))
+                output (ByteArrayOutputStream.)
+                _ (MidiSystem/write sequence 1 output)
+                raw (.toByteArray output)
+                _ (Files/write (.resolve root ^String name) raw (make-array java.nio.file.OpenOption 0))
+                cmd (command (assoc files :midi {:filename name :sha256 (synthetic/sha256 raw)}))]
+            (with-open [g (grant root)]
+              (is (= expected (:error/code (ingress/ui-ingest! g state operator cmd))))))))
+      (finally (delete-tree! root)))))
+
+(deftest actual-descriptor-race-suite
+  (let [{:keys [exit out err]} (shell/sh "/usr/bin/python3" "-I" "-S" "test/calliope/studio/secure_ingress_test.py")]
+    (is (zero? exit) (str out err))))
+
+(deftest model-outcomes-never-hold-the-ingress-boundary
+  (let [root (temp-root) entered (promise) release (promise)]
+    (try
+      (let [files (synthetic/write-fixture! root 42) cmd (command files)]
+        (with-open [g (grant root)]
+          (with-redefs [runtime/invoke-model-http (fn [& _] (deliver entered true) @release)]
+            (let [worker (future (runtime/invoke-model-http {}))]
+              (try
+                (is (= true (deref entered 5000 :timeout)))
+                (let [capture (future (ingress/ui-ingest! g state operator cmd))]
+                  (is (:ok? (deref capture 5000 {:ok? false})))
+                  (is (not (realized? release))))
+                (finally (deliver release :model-finished) @worker))))
+          (doseq [failure [:failed :unavailable]]
+            (let [calls (atom 0)]
+              (with-redefs [runtime/invoke-model-http (fn [& _] (swap! calls inc)
+                                                      (throw (ex-info "Unavailable test provider" {:status failure})))]
+                (is (:ok? (ingress/ui-ingest! g state operator cmd)))
+                (is (zero? @calls)))))))
+      (finally (deliver release :cleanup) (delete-tree! root)))))

@@ -2,7 +2,8 @@
   "Versioned plain-data capture contracts. No device, file or model effects."
   (:require [calliope.law.studio :as studio]
             [malli.core :as m]
-            [malli.registry :as mr]))
+            [malli.registry :as mr]
+            [malli.util :as mu]))
 
 (def max-sample 9007199254740991)
 
@@ -77,6 +78,34 @@
     [:map {:closed true}
      [:source/id [:ref :calliope.capture/uuid-v1]]
      [:sha256 [:ref :calliope.studio/sha256-v1]] [:format [:= :smf]]]
+    :calliope.capture/voice-id-v1
+    [:tuple [:ref :calliope.capture/nat-v1] [:ref :calliope.capture/nat-v1]]
+    :calliope.capture/note-v1
+    [:map {:closed true}
+     [:voice/id [:ref :calliope.capture/voice-id-v1]]
+     [:device/id [:ref :calliope.studio/non-blank-string]]
+     [:channel [:int {:min 0 :max 15}]] [:pitch [:int {:min 0 :max 127}]]
+     [:key/start-sample [:ref :calliope.capture/nat-v1]]
+     [:key/end-sample [:ref :calliope.capture/nat-v1]]
+     [:sound/end-sample [:ref :calliope.capture/nat-v1]]
+     [:interrupted? :boolean]]
+    :calliope.capture/interruption-v1
+    [:map {:closed true}
+     [:reason [:enum :disconnect :stop :end-of-take]]
+     [:sample/offset [:ref :calliope.capture/nat-v1]]
+     [:device/epoch [:ref :calliope.capture/nat-v1]]
+     [:voice/ids [:vector [:ref :calliope.capture/voice-id-v1]]]
+     [:pedal/channels [:vector [:int {:min 0 :max 15}]]]]
+    :calliope.capture/normalized-packet-v1
+    [:merge [:ref :calliope.capture/packet-v1]
+     [:map [:sample/offset [:ref :calliope.capture/nat-v1]]]]
+    :calliope.capture/normalized-reconnect-v1
+    [:merge [:ref :calliope.capture/reconnect-v1]
+     [:map [:sample/offset [:ref :calliope.capture/nat-v1]]]]
+    :calliope.capture/normalized-event-v1
+    [:or [:ref :calliope.capture/normalized-packet-v1]
+     [:ref :calliope.capture/normalized-reconnect-v1]
+     [:ref :calliope.capture/disconnect-v1] [:ref :calliope.capture/stop-v1]]
     :calliope.capture/take-v1
     [:map {:closed true}
      [:take/id [:ref :calliope.capture/uuid-v1]]
@@ -84,8 +113,9 @@
      [:take/audio [:ref :calliope.capture/audio-v1]]
      [:take/midi [:ref :calliope.capture/midi-source-v1]]
      [:take/clock [:ref :calliope.capture/clock-v1]]
-     [:take/events [:vector :map]] [:take/notes [:vector :map]]
-     [:take/interruptions [:vector :map]]
+     [:take/events [:vector [:ref :calliope.capture/normalized-event-v1]]]
+     [:take/notes [:vector [:ref :calliope.capture/note-v1]]]
+     [:take/interruptions [:vector [:ref :calliope.capture/interruption-v1]]]
      [:take/origin [:ref :calliope.capture/origin-v1]]]
     :calliope.capture/input-v1
     [:or [:ref :calliope.capture/packet-v1]
@@ -93,7 +123,7 @@
      [:ref :calliope.capture/reconnect-v1]
      [:ref :calliope.capture/stop-v1]]}))
 
-(def malli-registry (mr/composite-registry m/default-registry registry))
+(def malli-registry (mr/composite-registry m/default-registry (mu/schemas) registry))
 (def validator
   (memoize (fn [type] (m/validator [:ref type] {:registry malli-registry}))))
 

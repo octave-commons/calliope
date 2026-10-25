@@ -67,6 +67,31 @@
      [:record/command [:ref :calliope.session/command-v1]]
      [:record/value [:ref :calliope.session/value-v1]]]
     :calliope.session/append-recovery-v1 append-law/recovery
+    :calliope.session/session-view-v1
+    [:map {:closed true}
+     [:session/id [:ref :calliope.capture/uuid-v1]]
+     [:session/title [:ref :calliope.session/title-v1]]
+     [:work/id [:ref :calliope.studio/non-blank-string]]
+     [:session/links [:ref :calliope.session/links-v1]]
+     [:session/owner [:ref :calliope.studio/actor-v1]]
+     [:session/created-at [:ref :calliope.studio/instant-v1]]
+     [:session/revision [:ref :calliope.capture/positive-v1]]
+     [:capture/last-state [:enum :unarmed :armed :stopped]]
+     [:capture/clock {:optional true} [:ref :calliope.capture/clock-v1]]
+     [:capture/origin {:optional true} [:ref :calliope.capture/origin-v1]]
+     [:takes [:map-of [:ref :calliope.capture/uuid-v1] [:ref :calliope.capture/take-v1]]]]
+    :calliope.session/view-v1
+    [:map {:closed true}
+     [:session [:maybe [:ref :calliope.session/session-view-v1]]]
+     [:event/ids [:vector [:ref :calliope.capture/uuid-v1]]]
+     [:capture/state [:enum :unarmed :armed :stopped]]
+     [:recovery/pending? :boolean]
+     [:recovery/status [:maybe [:enum :uncertain :interrupted :committed-unacknowledged]]]
+     [:recovery/request-id [:maybe [:ref :calliope.capture/uuid-v1]]]]
+    :calliope.session/query-v1 [:enum :sessions :events :sources :takes]
+    :calliope.session/query-result-v1
+    [:map {:closed true} [:columns [:vector :keyword]]
+     [:rows [:vector [:vector [:or :string :int]]]]]
     :calliope.session/result-v1
     [:or
      [:map {:closed true} [:result/status [:= :ok]]

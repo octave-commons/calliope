@@ -4,7 +4,10 @@
             [calliope.studio.synthetic :as synthetic]
             [calliope.studio.ingress :as ingress]
             [calliope.studio.ingress-test :as fixtures]
+            [calliope.studio.session-domain :as domain]
             [clio.extern.jvm.fs :as clio-fs]
+            [clio.infra.event :as clio-event]
+            [clio.infra.runtime :as clio-runtime]
             [clojure.edn :as edn]
             [clojure.test :refer [deftest is]])
   (:import [java.nio.file Files Path LinkOption]
@@ -27,10 +30,10 @@
   (assoc (command :studio/arm revision) :capture/clock synthetic/clock :capture/origin origin))
 
 (defn with-store [f]
-  (let [parent (fixtures/temp-root) root (.resolve parent "session")
-        store (session/create! root actor)]
-    (try (f parent root store)
-         (finally (session/close! store) (fixtures/delete-tree! parent)))))
+  (let [parent (fixtures/temp-root) root (.resolve parent "session") store (volatile! nil)]
+    (try (vreset! store (session/create! root actor))
+         (f parent root @store)
+         (finally (when @store (session/close! @store)) (fixtures/delete-tree! parent)))))
 
 (defn setup-capture! [store]
   (is (= :ok (:result/status (session/ui-command! store actor (create-command)))))
@@ -79,6 +82,7 @@
         (is (not= (get-in take [:take/audio :render/id]) (get-in take [:take/midi :source/id])))
         (is (= 2 (count (source-files store))))
         (is (= :stopped (:capture/state (session/view store))))
+        (is (law/valid? :calliope.session/view-v1 (session/view store)))
         (session/close! store)
         (Files/delete ^Path (:index/path store))
         (let [process (launch! "recover" (str root) (:actor/id actor) (str output))]
@@ -87,6 +91,7 @@
           (is (= history (:history recovered)))
           (is (= (:session (session/view store)) (get-in recovered [:view :session])))
           (is (= :unarmed (get-in recovered [:view :capture/state])))
+          (is (law/valid? :calliope.session/view-v1 (:view recovered)))
           (is (= :capture/not-armed (get-in recovered [:restart-ingest :error/code])))
           (is (= tables (:tables recovered))))))))
 
@@ -141,12 +146,15 @@
 
 (deftest post-write-uncertainty-keeps-the-exact-candidate-and-retries-once
   (with-store
-    (fn [_ root store]
+    (fn [parent root store]
       (let [cmd (setup-capture! store) before (session/view store)
+            ledger-size (Files/size ^Path (:ledger/path store))
             sync clio-fs/sync-directory! failed? (atom false)
             result (with-redefs [clio-fs/sync-directory!
                                 (fn [path]
-                                  (if (and (= (str root) (str path)) (compare-and-set! failed? false true))
+                                  (if (and (= (str root) (str path))
+                                           (> (Files/size ^Path (:ledger/path store)) ledger-size)
+                                           (compare-and-set! failed? false true))
                                     (throw (java.io.IOException. "Injected directory force failure after ledger write"))
                                     (sync path)))]
                      (session/ui-command! store actor cmd))
@@ -156,7 +164,16 @@
         (is (= (:session before) (:session (session/view store))))
         (is (:recovery/pending? (session/view store)))
         (is (= 2 (count (session/history store))))
+        (is (= 2 (count (:rows (session/query-rows store :events)))))
         (is (.contains (slurp (str (:ledger/path store))) (get-in candidate [:event :event/id])))
+        (let [candidate-file (.resolve parent "candidate.edn") output (.resolve parent "candidate-retry.edn")]
+          (spit (str candidate-file) (pr-str candidate))
+          (await-process! (launch! "retry" (str root) (:actor/id actor) (str output) (str candidate-file)))
+          (let [recovered (edn/read-string (slurp (str output)))]
+            (is (= :ok (get-in recovered [:command-result :result/status])))
+            (is (= (get-in candidate [:event :event/id]) (get-in recovered [:command-result :event/id])))
+            (is (= :unarmed (get-in recovered [:view :capture/state])))
+            (is (= 3 (count (:history recovered))))))
         (let [retried (session/retry! store actor candidate)]
           (is (= :ok (:result/status retried)) (pr-str retried))
           (is (= (get-in candidate [:event :event/id]) (:event/id retried)))
@@ -166,7 +183,7 @@
           (is (false? (:recovery/pending? (session/view store)))))))))
 
 (deftest broken-sources-ledger-and-schemas-never-recover-as-empty-success
-  (doseq [fault [:missing-source :changed-source :partial-ledger :missing-schema :missing-ledger]]
+  (doseq [fault [:missing-source :changed-source :partial-ledger :missing-schema :missing-ledger :corrupt-pending]]
     (with-store
       (fn [_ root store]
         (let [cmd (setup-capture! store)]
@@ -177,6 +194,7 @@
             :changed-source (Files/write (.resolve ^Path (:source/root store) ^String (:sha256 (:audio cmd)))
                                          (byte-array [1 2 3]) (make-array java.nio.file.OpenOption 0))
             :partial-ledger (spit (str (:ledger/path store)) "{:broken" :append true)
+            :corrupt-pending (spit (str (.resolve root "pending.edn")) "{:event")
             :missing-schema (fixtures/delete-tree! (.resolve root "schemas"))
             :missing-ledger (Files/delete ^Path (:ledger/path store)))
           (is (thrown? clojure.lang.ExceptionInfo (session/open! root actor)) (str fault)))))))
@@ -206,3 +224,63 @@
           (is (= :session/conflict (some #(get-in % [:command-result :error/code]) results)))
           (is (= (:history (first results)) (:history (second results))))
           (is (= 2 (count (:history (first results))))))))))
+
+(deftest restart-cannot-turn-a-fabricated-recovery-candidate-into-new-capture
+  (with-store
+    (fn [_ root store]
+      (let [cmd (setup-capture! store)
+            admitted (session/ui-command! store actor cmd)
+            _ (is (= :ok (:result/status admitted)))
+            _ (session/close! store)
+            recovered (session/open! root actor)]
+        (try
+          (let [before (session/history recovered)
+                command (assoc cmd :request/id (str (UUID/randomUUID)) :session/revision 3)
+                value (assoc-in (:result/value admitted) [:take :take/id] (str (UUID/randomUUID)))
+                event (clio-event/make-event
+                       (:schema/current (:runtime recovered)) law/event-type
+                       {:event/stream (domain/stream-id sid) :event/seq 4
+                        :event/causes [(:event/id (peek before))]
+                        :event/actor (:actor/id actor) :event/subject (domain/subject-id sid)
+                        :event/data {:record/version 1 :record/actor actor
+                                     :record/command command :record/value value}})
+                candidate {:ledger/path (str (:ledger/path recovered)) :event event}
+                result (session/retry! recovered actor candidate)]
+            (is (= :unarmed (:capture/state (session/view recovered))))
+            (is (= :session/unknown-recovery (:error/code result)) (pr-str result))
+            (is (= before (session/history recovered)))
+            (is (= 3 (count (:rows (session/query-rows recovered :events))))))
+          (finally (session/close! recovered)))))))
+
+(deftest an-unwritten-interrupted-request-is-visible-and-only-retried-explicitly
+  (with-store
+    (fn [parent root store]
+      (let [cmd (setup-capture! store)
+            before (session/history store)
+            result (with-redefs [clio-runtime/retry-append!
+                                (fn [& _] (throw (java.io.IOException. "Injected before event append, after publication")))]
+                     (session/ui-command! store actor cmd))
+            candidate (:append/recovery result)
+            candidate-file (.resolve parent "unwritten-candidate.edn")
+            inspected (.resolve parent "interrupted-inspection.edn")
+            retried (.resolve parent "interrupted-retry.edn")]
+        (is (= :uncertain (:result/status result)))
+        (is (= before (session/history store)))
+        (is (empty? (:rows (session/query-rows store :sources))))
+        (is (= 2 (count (source-files store))))
+        (spit (str candidate-file) (pr-str candidate))
+        (session/close! store)
+        (await-process! (launch! "inspect" (str root) (:actor/id actor) (str inspected)))
+        (let [inspection (edn/read-string (slurp (str inspected)))]
+          (is (= before (:history inspection)))
+          (is (= :unarmed (get-in inspection [:view :capture/state])))
+          (is (true? (get-in inspection [:view :recovery/pending?])))
+          (is (= :interrupted (get-in inspection [:view :recovery/status])))
+          (is (= (:request/id cmd) (get-in inspection [:view :recovery/request-id]))))
+        (await-process! (launch! "retry" (str root) (:actor/id actor) (str retried) (str candidate-file)))
+        (let [recovery (edn/read-string (slurp (str retried)))]
+          (is (= :ok (get-in recovery [:command-result :result/status])))
+          (is (= (get-in candidate [:event :event/id]) (get-in recovery [:command-result :event/id])))
+          (is (= 3 (count (:history recovery))))
+          (is (false? (get-in recovery [:view :recovery/pending?])))
+          (is (= :unarmed (get-in recovery [:view :capture/state]))))))))

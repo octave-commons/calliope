@@ -11,7 +11,9 @@
         store (session/open! root actor)
         initial-view (session/view store)]
     (try
-      (let [result (when (= mode "compete")
+      (let [result (cond
+                     (= mode "retry") (session/retry! store actor (edn/read-string (slurp command-file)))
+                     (= mode "compete")
                      (let [deadline (+ (System/nanoTime) 15000000000)]
                        (spit (str output ".ready") "Opened initial revision\n")
                        (while (not (Files/exists (Path/of barrier (make-array String 0)) (make-array LinkOption 0)))

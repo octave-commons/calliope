@@ -1,17 +1,18 @@
 ---
+labels: "studio, foundation, native, recovery"
+dependency: ["cs-005-proposals-and-curation"]
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1792916611649-0.05akjjgjrlvtnora17hq"
+points: "5"
+title: "CS-004: Wire the native studio controls and playback"
+priority: "P0"
+status: "incoming"
+design: "docs/designs/media-workbench-v1.md"
 uuid: "cs-004-native-studio-loop"
-title: "CS-004: Demonstrate the native studio loop and explicit desktop profile"
-status: incoming
-priority: P0
-points: 5
-labels: studio, foundation, native, recovery
-dependency: ["cs-003-session-recovery"]
-research: docs/research/studio-foundation-map.md
-adr: docs/adrs/adr-001-local-first-media-workbench.md
-design: docs/designs/media-workbench-v1.md
+research: "docs/research/studio-foundation-map.md"
 ---
 
-# CS-004: Demonstrate the native studio loop and explicit desktop profile
+# CS-004: Wire the native studio controls and playback
 
 ## Context
 
@@ -20,11 +21,17 @@ See [current path map](../../research/studio-foundation-map.md) and its source l
 
 ## Outcome
 
-Demonstrate the native studio loop and explicit desktop profile within Calliope's existing native media ownership.
+Wire native studio controls and playback within Calliope's existing ownership.
+Desktop effects move to CS-006; the independent-process demonstration is CS-007.
 
 ## Scope
 
-Wire native cljfx views only through application commands/queries. Provide explicit synthetic source/arm/mark/stop/replay/select/annotate/proposal/accept/reject controls. Add one-shot inspectable i3 profile adapter with mock tests, fixed safe commands and no focus stealing. Keep writing/drawing/animation/simulation/Fork Tales references available without implementing story work. Document portable workflow and run independent process recovery demonstration.
+Wire native cljfx views only through application commands/queries and JavaFX Media.
+Provide explicit synthetic source/arm/mark/stop/replay/select/annotate/proposal/
+accept/reject controls according to the [studio boundary](../../designs/studio-session-boundary.md).
+Keep writing/drawing/animation/simulation/Fork Tales references without story work.
+This five-point story owns native interaction/playback; CS-006 owns the independent
+i3 adapter/harness and CS-007 owns cross-process demonstration/evidence.
 
 ## Non-goals
 
@@ -33,7 +40,24 @@ or a new persistent agent runtime. No declaration that the full FT milestone is 
 
 ## Acceptance criteria
 
-Native view exercised at 640x480 and 960x720 with accessible controls and overflow. Complete scripted interaction goes through real application boundary and actual JavaFX playback under declared display/sink. Restart retrieves same phrase and decisions. Mock i3 covers minimum sizes, opt-outs, stale trees, manual changes and reconnect. Real desktop/hardware/model/durable agent checks remain distinct and unclaimed.
+- At 640x480 and 960x720: startup is visibly UNARMED with ingest/mark disabled;
+  explicit arm shows ARMED and enables ingest; synthetic ingest displays source
+  hashes/duration; mark records a range; stop shows STOPPED and disables ingest.
+- Replay advances actual JavaFX transport over the selected phrase. Selection
+  and annotation retain clip UUID/range/source hashes and show committed results.
+- Request shows pending then provisional or explicit failure/unavailability.
+  Viewing leaves decision count unchanged; each separate accept/reject action
+  displays its resulting attributed record only after command success.
+- Tab reaches each enabled control; Space/Enter activates focused actions;
+  text/range fields are keyboard editable; every action has a nonempty accessible
+  name. At both sizes transport/capture state stays visible and scrollable
+  overflow makes every action reachable without resizing.
+- UI code neither writes ledgers nor invokes providers/FFmpeg directly.
+  CS-007 verifies after restart the same phrase UUID, source/derivative hashes,
+  event identities, selected range, annotations and attributed decision records.
+- CS-006 mock tests verify the one-shot i3 command allowlist, rejected commands,
+  unchanged focus, minimum sizes/opt-outs, stale-tree/manual-change refusal and
+  fresh-plan reconnect. Real desktop/hardware/model/agent checks stay distinct.
 
 ## Verification
 
@@ -48,3 +72,7 @@ Historical native artifacts are not current integration. Recover sources explici
 keep original bytes, independent sources, decisions and failed/unavailable outcomes
 inspectable. Device, display, inference and i3 availability have separate claims.
 
+---
+Planning split for PR #22 review 5642202249: this 5-point story owns native controls/playback only. CS-006 owns desktop-profile effects and mock harness; CS-007 owns the complete independent-process demonstration. Dependency is CS-005, changed through Rheos. Native action/state, keyboard, accessible-name and overflow checks are explicit in the body.
+
+---

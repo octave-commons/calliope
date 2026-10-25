@@ -95,9 +95,14 @@ Hosted Repository Contracts passes. Studio work has not changed that behavior.
 ## Delivery sequence
 
 1. CS-001: reconcile native-runtime source and run fresh disposable evidence.
-2. CS-002: portable session/capture laws, synthetic adapters and lifecycle negatives.
-3. CS-003: durable application commands, source verification, recovery, decisions.
-4. CS-004: native workflow, explicit layout adapter, two-process demonstration.
+2. CS-002: [capture-specific boundary](../designs/studio-session-boundary.md),
+   portable laws, deterministic synthetic adapters and lifecycle negatives.
+3. CS-003: durable session commands, source verification and history recovery.
+4. CS-005: phrase curation, provisional proposals and separate human decisions.
+5. CS-004: native controls/playback and keyboard/size acceptance.
+6. CS-006: one-shot desktop profile and independent i3 mock harness
+   (depends on CS-001; may progress independently of session persistence).
+7. CS-007: complete native journey and independent-process restart demonstration.
 
 Planning review precedes production implementation; every story moves only through
 Rheos. Existing FT cards retain their identity and acceptance gates. This increment

@@ -2,6 +2,7 @@
   "GPL-3.0-or-later. In-process native session boundary; no devices or providers.
    Clio owns generic event identity, admission, locking, durability and recovery."
   (:require [calliope.law.session :as law]
+            [calliope.law.curation :as curation-law]
             [calliope.studio.session-domain :as domain]
             [calliope.studio.session-index :as index]
             [calliope.studio.session-recovery :as pending]
@@ -41,6 +42,7 @@
    :staging/root (.resolve root "staging")
    :root-key (.fileKey (Files/readAttributes root BasicFileAttributes no-links))
    :state (atom domain/empty-state) :grant (atom nil) :pending (atom nil) :pending/origin (atom nil)
+   :proposal/local (atom #{}) :proposal/worker (atom nil) :close-hooks (atom [])
    :capture/state (atom :unarmed) :closed? (atom false)})
 
 (defn- guard! [store]
@@ -69,7 +71,8 @@
 (defn close! [{:keys [state] :as store}]
   (locking state
     (disarm! store :unarmed)
-    (reset! (:closed? store) true)))
+    (reset! (:closed? store) true)
+    (doseq [f @(:close-hooks store)] (f))))
 
 (defn staging-root [store] (:staging/root store))
 (defn history [store] (:events @(:state store)))
@@ -82,6 +85,10 @@
         request-id (get-in candidate [:event :event/data :record/command :request/id])]
     {:session (when (:session/id state) (dissoc state :events :requests))
      :event/ids (mapv :event/id (:events state))
+     :proposal/statuses (into {} (map (fn [[id proposal]]
+                                       [id (if (= :requested (:proposal/status proposal))
+                                             (if (contains? @(:proposal/local store) id) :pending :interrupted)
+                                             (:proposal/status proposal))]) (:proposals state)))
      :capture/state @(:capture/state store) :recovery/pending? (boolean candidate)
      :recovery/request-id request-id
      :recovery/status (when candidate
@@ -230,13 +237,20 @@
                                         [(get-in grant [:binding :clock]) (get-in grant [:binding :origin])]))
                  :process/id (:process/id store))))
 
-(defn ui-command!
+(defn- execute-command!
   "Trusted UI-user command entrypoint. All cheap authority/shape/retry/arm/revision
    checks precede source payload access. Provider work never owns this lock."
-  [{:keys [state] :as store} actor command]
+  [{:keys [state] :as store} actor command provider?]
   (let [candidate (volatile! nil) persistence-started? (volatile! false) prepared-grant (volatile! nil)]
     (try
-      (authorized! store actor)
+      (if provider?
+        (when-not (and (= actor {:actor/id "calliope-local-provider" :actor/kind :agent})
+                       (curation-law/completion? command)
+                       (contains? @(:proposal/local store) (:proposal/id command)))
+          (refuse! :command/not-authorized "Provider channel is not bound to a local proposal"))
+        (do (authorized! store actor)
+            (when (curation-law/completion? command)
+              (refuse! :command/not-authorized "User payloads cannot manufacture provider completion"))))
       (when-not (law/valid? :calliope.session/command-v1 command)
         (refuse! :command/invalid "Malformed version1 session command"))
       (locking state
@@ -263,6 +277,7 @@
                     :else
                     (let [_ (fs/require-directory-sync-support! (str (:root store)))
                           _ (fs/require-directory-sync-support! (str (:source/root store)))
+                          _ (when (= :curate (:effect admitted)) (verify-sources! store state))
                           _ (when (= :arm (:effect admitted))
                               (vreset! prepared-grant
                                        (ingress/open-grant! (:staging/root store)
@@ -300,6 +315,8 @@
                               (reset! (:grant store) @prepared-grant)
                               (vreset! prepared-grant nil)
                               (reset! (:capture/state store) :armed))
+                            (when (= :studio/request-proposal (:command/type command))
+                              (swap! (:proposal/local store) conj (:proposal/id command)))
                             (success-result command (get-in committed [:requests (:request/id command)])))))))))))))
       (catch Exception cause
         (if (and @persistence-started? @candidate)
@@ -308,6 +325,38 @@
               (uncertain-result command @candidate cause))
           (error-result command cause)))
       (finally (when @prepared-grant (.close ^java.io.Closeable @prepared-grant))))))
+
+(defn ui-command!
+  "Trusted configured native user entrypoint. Completion payloads are refused."
+  [store actor command]
+  (execute-command! store actor command false))
+
+(defn proposal-channel!
+  "Mint a one-proposal callback for locally requested work. The trusted native
+   application obtains it as the user; the provider receives only this callback,
+   not the store or user command entrypoint. Result data cannot choose authority,
+   proposal identity, session revision or a decision command."
+  [store actor proposal-id]
+  (authorized! store actor)
+  (when-not (and (contains? @(:proposal/local store) proposal-id)
+                 (= :requested (get-in @(:state store) [:proposals proposal-id :proposal/status])))
+    (refuse! :proposal/not-pending "Only a live local request can create a provider channel"))
+  (fn [payload]
+    (if-not (or (and (= #{:proposal/output} (set (keys payload)))
+                     (curation-law/valid? :calliope.curation/output-v1 (:proposal/output payload)))
+                (and (= #{:failure/code :failure/message} (set (keys payload)))
+                     (contains? #{:timeout :unavailable :invalid-output :failed} (:failure/code payload))
+                     (string? (:failure/message payload)) (<= 1 (count (:failure/message payload)) 500)))
+      (refusal-result {} {:error/code :command/invalid :error/message "Malformed bounded proposal completion"})
+      (let [state (:state store)]
+        (locking state
+        (execute-command!
+         store {:actor/id "calliope-local-provider" :actor/kind :agent}
+         (merge {:command/type (if (:proposal/output payload) :studio/proposal-result :studio/proposal-failed)
+                 :command/version 1 :request/id (str (UUID/randomUUID))
+                 :session/id (:session/id @(:state store)) :session/revision (:session/revision @(:state store))
+                 :proposal/id proposal-id} payload)
+         true))))))
 
 (defn provider-command! [_ _ command]
   (refusal-result command {:error/code :command/not-authorized :error/message "Provider completion cannot issue user session commands"}))
@@ -324,7 +373,10 @@
       (authorized! store actor)
       (append-law/validate-recovery! recovery)
       (when-not (and (= (str (:ledger/path store)) (:ledger/path recovery))
-                     (= actor (get-in recovery [:event :event/data :record/actor]))
+                     (or (= actor (get-in recovery [:event :event/data :record/actor]))
+                         (and (curation-law/completion? command)
+                              (= {:actor/id "calliope-local-provider" :actor/kind :agent}
+                                 (get-in recovery [:event :event/data :record/actor]))))
                      (or (nil? @(:pending store)) (= recovery @(:pending store))))
         (refuse! :command/not-authorized "Recovery must retain this service's original candidate and actor"))
       (locking state

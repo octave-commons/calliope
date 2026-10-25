@@ -1,6 +1,8 @@
 (ns calliope.studio.session-domain
   "GPL-3.0-or-later. Pure Calliope transitions over Clio-admitted history."
-  (:require [calliope.law.session :as law]))
+  (:require [calliope.law.session :as law]
+            [calliope.law.curation :as curation-law]
+            [calliope.studio.curation :as curation]))
 
 (def empty-state {:session/revision 0 :requests {} :takes {} :events []})
 
@@ -15,10 +17,11 @@
    live service, or from historical arm facts only during validated replay."
   [state actor command]
   (let [old (get-in state [:requests (:request/id command)])
-        create? (= :studio/session-create (:command/type command))]
+        create? (= :studio/session-create (:command/type command))
+        completion? (curation-law/completion? command)]
     (cond
-      (not (and (law/valid? :calliope.studio/actor-v1 actor) (= :user (:actor/kind actor))
-                 (or (nil? (:session/owner state)) (= actor (:session/owner state)))))
+      (not (and (law/valid? :calliope.studio/actor-v1 actor) (= (if completion? :agent :user) (:actor/kind actor))
+                 (or completion? (nil? (:session/owner state)) (= actor (:session/owner state)))))
       (refuse :command/not-authorized "The configured session owner must be a local user")
       (not (law/valid? :calliope.session/command-v1 command))
       (refuse :command/invalid "Malformed version1 session command")
@@ -33,7 +36,9 @@
       (and (= :studio/ingest (:command/type command)) (not (true? (:capture/armed? state))))
       (refuse :capture/not-armed "Explicit capture arming in this process is required")
       :else
-      (case (:command/type command)
+      (if (curation/curation? command)
+        (curation/plan state actor command)
+        (case (:command/type command)
         :studio/session-create
         {:ok? true :effect :create
          :value (assoc (select-keys command [:session/id :session/title :work/id :session/links])
@@ -42,7 +47,7 @@
         {:ok? true :effect :arm
          :value (assoc (select-keys command [:capture/clock :capture/origin]) :value/type :capture-armed)}
         :studio/stop {:ok? true :effect :stop :value {:value/type :capture-stopped}}
-        :studio/ingest {:ok? true :effect :ingest}))))
+        :studio/ingest {:ok? true :effect :ingest})))))
 
 (defn sources
   "Canonical source inventory follows admitted takes, never staging filenames."
@@ -108,7 +113,8 @@
                             :capture/last-state :unarmed})
             :arm (merge state (select-keys value [:capture/clock :capture/origin]) {:capture/last-state :armed})
             :stop (assoc state :capture/last-state :stopped)
-            :ingest (assoc-in state [:takes (get-in value [:take :take/id])] (:take value)))]
+            :ingest (assoc-in state [:takes (get-in value [:take :take/id])] (:take value))
+            :curate (curation/apply-command state actor command (:event/id event) (:event/at event)))]
       (-> next-state
           (assoc :session/revision (:event/seq event))
           (update :events conj event)

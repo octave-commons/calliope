@@ -1,6 +1,7 @@
 (ns calliope.law.session
   "GPL-3.0-or-later. Calliope session data composed with Clio's event envelope."
   (:require [calliope.law.capture :as capture]
+            [calliope.law.curation :as curation]
             [clio.law.append :as append-law]
             [clio.law.schema :as clio-schema]
             [malli.core :as m]
@@ -11,7 +12,7 @@
 
 (def registry
   (merge
-   capture/registry
+   capture/registry curation/complete-registry
    {:calliope.session/title-v1
     [:and [:ref :calliope.studio/non-blank-string] [:string {:max 200}]]
     :calliope.session/links-v1
@@ -40,7 +41,8 @@
     [:or [:ref :calliope.session/create-command-v1]
      [:ref :calliope.session/arm-command-v1]
      [:ref :calliope.capture/ingest-command-v1]
-     [:ref :calliope.session/stop-command-v1]]
+     [:ref :calliope.session/stop-command-v1]
+     [:ref :calliope.curation/command-v1]]
     :calliope.session/created-value-v1
     [:map {:closed true} [:value/type [:= :session-created]]
      [:session/id [:ref :calliope.capture/uuid-v1]]
@@ -60,7 +62,8 @@
     [:or [:ref :calliope.session/created-value-v1]
      [:ref :calliope.session/armed-value-v1]
      [:ref :calliope.session/stopped-value-v1]
-     [:ref :calliope.session/take-value-v1]]
+     [:ref :calliope.session/take-value-v1]
+     [:ref :calliope.curation/value-v1]]
     :calliope.session/record-v1
     [:map {:closed true} [:record/version [:= 1]]
      [:record/actor [:ref :calliope.studio/actor-v1]]
@@ -79,12 +82,20 @@
      [:capture/last-state [:enum :unarmed :armed :stopped]]
      [:capture/clock {:optional true} [:ref :calliope.capture/clock-v1]]
      [:capture/origin {:optional true} [:ref :calliope.capture/origin-v1]]
-     [:takes [:map-of [:ref :calliope.capture/uuid-v1] [:ref :calliope.capture/take-v1]]]]
+     [:takes [:map-of [:ref :calliope.capture/uuid-v1] [:ref :calliope.capture/take-v1]]]
+     [:markers {:optional true} [:ref :calliope.curation/markers-v1]]
+     [:clips {:optional true} [:ref :calliope.curation/clips-v1]]
+     [:selected/clip {:optional true} [:maybe [:ref :calliope.capture/uuid-v1]]]
+     [:annotations {:optional true} [:ref :calliope.curation/annotations-v1]]
+     [:proposals {:optional true} [:ref :calliope.curation/proposals-v1]]
+     [:decisions {:optional true} [:ref :calliope.curation/decisions-v1]]
+     [:accepted-labels {:optional true} [:ref :calliope.curation/accepted-labels-v1]]]
     :calliope.session/view-v1
     [:map {:closed true}
      [:session [:maybe [:ref :calliope.session/session-view-v1]]]
      [:event/ids [:vector [:ref :calliope.capture/uuid-v1]]]
      [:capture/state [:enum :unarmed :armed :stopped]]
+     [:proposal/statuses {:optional true} [:ref :calliope.curation/statuses-v1]]
      [:recovery/pending? :boolean]
      [:recovery/status [:maybe [:enum :uncertain :interrupted :committed-unacknowledged]]]
      [:recovery/request-id [:maybe [:ref :calliope.capture/uuid-v1]]]]

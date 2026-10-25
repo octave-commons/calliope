@@ -9,6 +9,7 @@
             [calliope.studio.midi-test]
             [calliope.studio.ingress-test]
             [calliope.studio.session-test]
+            [calliope.studio.curation-test]
             [calliope.media.dataset-test]
             [calliope.media.cli-test]
             [calliope.media.ingestion-test]
@@ -27,6 +28,7 @@
                          'calliope.studio.midi-test
                          'calliope.studio.ingress-test
                          'calliope.studio.session-test
+                         'calliope.studio.curation-test
                          'calliope.media.dataset-test
                          'calliope.media.cli-test
                          'calliope.media.ingestion-test

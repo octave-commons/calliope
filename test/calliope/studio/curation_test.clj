@@ -149,3 +149,43 @@
          (is (= :interrupted (get-in (session/view recovered) [:proposal/statuses proposal-id])))
          (is (empty? (:decisions (state recovered))))
          (finally (session/close! recovered)))))))
+
+(defn await-status! [store id expected]
+  (let [deadline (+ (System/nanoTime) 5000000000)]
+    (loop []
+      (if (= expected (get-in (state store) [:proposals id :proposal/status])) true
+          (if (> (System/nanoTime) deadline) false
+              (do (Thread/sleep 10) (recur)))))))
+
+(deftest stalled-provider-does-not-own-capture-and-times-out-explicitly
+  (with-clip
+   (fn [_ _ store _]
+     (let [entered (promise) release (promise)
+           start! (requiring-resolve 'calliope.studio.proposals/start!)
+           request (cmd store :studio/request-proposal {:clip/id clip-id :proposal/id proposal-id :proposal/prompt "Synthetic motif"})
+           job (start! store fixture/actor request
+                       (fn [_] (deliver entered true) @release {:text "late" :labels []})
+                       {:timeout-ms 300 :provider/id "test-stalled" :model/id "fixture" :execution/kind :fixture})]
+       (ok! (:request job))
+       (is (= true (deref entered 2000 false)))
+       (let [stop (future (send! store :studio/stop {}))]
+         (is (= :ok (:result/status (deref stop 2000 {:result/status :timeout})))))
+       (is (await-status! store proposal-id :failed))
+       (is (= :timeout (get-in (state store) [:proposals proposal-id :failure/code])))
+       (deliver release true)
+       (is (empty? (:decisions (state store))))))))
+
+(deftest failed-and-malformed-provider-output-never-becomes-a-decision
+  (doseq [[provider expected] [[(fn [_] (throw (java.io.IOException. "Unavailable test provider"))) :unavailable]
+                              [(fn [_] {:text "bad" :labels [] :decision/value :accept}) :invalid-output]]]
+    (with-clip
+     (fn [_ _ store _]
+       (let [job ((requiring-resolve 'calliope.studio.proposals/start!)
+                  store fixture/actor
+                  (cmd store :studio/request-proposal {:clip/id clip-id :proposal/id proposal-id :proposal/prompt "Synthetic motif"})
+                  provider {:timeout-ms 1000 :provider/id "test" :model/id "fixture" :execution/kind :fixture})]
+         (ok! (:request job))
+         (is (await-status! store proposal-id :failed))
+         (is (= expected (get-in (state store) [:proposals proposal-id :failure/code])))
+         (is (empty? (:decisions (state store))))
+         (ok! (send! store :studio/stop {})))))))

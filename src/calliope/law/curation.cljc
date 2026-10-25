@@ -32,7 +32,7 @@
                          [:clip/id [:ref :calliope.capture/uuid-v1]]
                          [:source/sha256 [:ref :calliope.studio/sha256-v1]]
                          [:range [:ref :calliope.curation/range-v1]]
-                         [:clip/title [:ref :calliope.session/title-v1]]])
+                         [:clip/title [:ref :calliope.curation/title-v1]]])
           :calliope.curation/annotate-command-v1
           (command-form :studio/annotate
                         [[:clip/id [:ref :calliope.capture/uuid-v1]]
@@ -74,10 +74,48 @@
           [:map {:closed true} [:value/type [:= :curation-applied]]
            [:curation/command [:ref :calliope.curation/command-v1]]]}))
 
-;; Title is named here as well so this independent registry compiles without
-;; loading the session/event catalog (which composes this registry).
+(def view-registry
+  {:calliope.curation/selection-v1
+   [:map {:closed true} [:clip [:ref :calliope.studio/clip-v1]]
+    [:take/id [:ref :calliope.capture/uuid-v1]] [:range [:ref :calliope.curation/range-v1]]
+    [:sample-rate [:ref :calliope.capture/positive-v1]]
+    [:source/hashes [:tuple [:ref :calliope.studio/sha256-v1] [:ref :calliope.studio/sha256-v1]]]
+    [:source/event [:ref :calliope.capture/uuid-v1]]]
+   :calliope.curation/marker-view-v1
+   [:map {:closed true} [:marker [:ref :calliope.studio/marker-v1]]
+    [:take/id [:ref :calliope.capture/uuid-v1]] [:range [:ref :calliope.curation/range-v1]]
+    [:source/event [:ref :calliope.capture/uuid-v1]]]
+   :calliope.curation/annotation-v1
+   [:map {:closed true} [:text [:ref :calliope.curation/text-v1]]
+    [:labels [:ref :calliope.curation/labels-v1]] [:actor [:ref :calliope.studio/actor-v1]]
+    [:at [:ref :calliope.studio/instant-v1]] [:event/id [:ref :calliope.capture/uuid-v1]]]
+   :calliope.curation/proposal-v1
+   [:map {:closed true} [:proposal/id [:ref :calliope.capture/uuid-v1]]
+    [:clip/id [:ref :calliope.capture/uuid-v1]] [:proposal/prompt [:ref :calliope.curation/text-v1]]
+    [:proposal/status [:enum :requested :provisional :failed :decided]]
+    [:proposal/source [:ref :calliope.curation/selection-v1]]
+    [:proposal/request-event [:ref :calliope.capture/uuid-v1]]
+    [:proposal/result-event {:optional true} [:ref :calliope.capture/uuid-v1]]
+    [:proposal/output {:optional true} [:ref :calliope.curation/output-v1]]
+    [:failure/code {:optional true} [:enum :timeout :unavailable :invalid-output :failed]]
+    [:failure/message {:optional true} [:string {:min 1 :max 500}]]]
+   :calliope.curation/decision-v1
+   [:map {:closed true} [:proposal/id [:ref :calliope.capture/uuid-v1]]
+    [:decision/value [:enum :accept :reject]] [:decision/actor [:ref :calliope.studio/actor-v1]]
+    [:decision/at [:ref :calliope.studio/instant-v1]]
+    [:decision/event [:ref :calliope.capture/uuid-v1]]
+    [:decision/source-event [:ref :calliope.capture/uuid-v1]]
+    [:clip/id [:ref :calliope.capture/uuid-v1]] [:clip/source [:ref :calliope.curation/selection-v1]]]
+   :calliope.curation/markers-v1 [:map-of [:ref :calliope.capture/uuid-v1] [:ref :calliope.curation/marker-view-v1]]
+   :calliope.curation/clips-v1 [:map-of [:ref :calliope.capture/uuid-v1] [:ref :calliope.curation/selection-v1]]
+   :calliope.curation/annotations-v1 [:map-of [:ref :calliope.capture/uuid-v1] [:vector [:ref :calliope.curation/annotation-v1]]]
+   :calliope.curation/proposals-v1 [:map-of [:ref :calliope.capture/uuid-v1] [:ref :calliope.curation/proposal-v1]]
+   :calliope.curation/decisions-v1 [:vector [:ref :calliope.curation/decision-v1]]
+   :calliope.curation/accepted-labels-v1 [:map-of [:ref :calliope.capture/uuid-v1] [:ref :calliope.curation/labels-v1]]
+   :calliope.curation/statuses-v1 [:map-of [:ref :calliope.capture/uuid-v1] [:enum :pending :interrupted :provisional :failed :decided]]})
+
 (def complete-registry
-  (assoc registry :calliope.session/title-v1
+  (assoc (merge registry view-registry) :calliope.curation/title-v1
          [:and [:ref :calliope.studio/non-blank-string] [:string {:max 200}]]))
 (def malli-registry (mr/composite-registry m/default-registry (mu/schemas) complete-registry))
 (def validator (memoize #(m/validator [:ref %] {:registry malli-registry})))

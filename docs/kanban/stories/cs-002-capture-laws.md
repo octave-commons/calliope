@@ -2,7 +2,7 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["cs-001-native-runtime-recovery"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792916611071-0.r238ujboi3mchrry7g9"
+write-id: "1792928411470-0.ggf8iejgaijp4d7stcw"
 points: "5"
 title: "CS-002: Define source-preserving session laws and deterministic capture adapters"
 priority: "P0"
@@ -41,6 +41,14 @@ or a new persistent agent runtime. No declaration that the full FT milestone is 
 
 ## Acceptance criteria
 
+- Only the trusted native UI entrypoint with the configured user actor and an
+  active session/process grant may ingest. The ING-AGENT, ING-SYSTEM and
+  ING-SPOOF cases in the studio boundary must prove explicit refusal before
+  filesystem access, with zero source payload opens/copies and zero events.
+- V1 inputs are regular-file leaf names in the granted staging root. ING-PATH,
+  ING-LINK and ING-ROOT must reject absolute/traversal/sibling-prefix paths,
+  links/nonregular entries and changed roots. Open through the anchored root
+  without following links; refuse hosts that cannot enforce confinement.
 - Same source bytes/configuration produce identical normalized events, clocks and
   source hashes. Preserve raw WAV/SMF bytes and separate audio-render/MIDI identity.
 - Unarmed and after-stop ingest each return :capture/not-armed with unchanged
@@ -76,5 +84,9 @@ inspectable. Device, display, inference and i3 availability have separate claims
 
 ---
 Planning revision for PR #22: capture-specific proposed contract is docs/designs/studio-session-boundary.md; current accepted media-workbench design remains governing. The installed frontmatter surface refuses design-key updates, so the proposed companion contract is linked in the supported Markdown body. No status transition or authority promotion is claimed.
+
+Planning review 5642914512: the v1 ingest contract is explicitly restricted to the trusted native UI entrypoint with the configured user actor and an active session/process grant. Added named ING acceptance cases for agent/system/spoofed entrypoints and absolute, traversal, linked, nonregular or changed-root inputs. V1 source arguments are regular-file leaf names under the root bound into the arm grant; source payloads outside it are never opened or copied.
+
+The acceptance body was hand-authored as supported card content, then recorded with this canonical comment. Executable rejection tests belong to this story before adapters; no production ingest implementation or passing authorization tests are claimed in the planning PR.
 
 ---

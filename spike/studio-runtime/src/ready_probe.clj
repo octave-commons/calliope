@@ -11,23 +11,36 @@
   (let [renderer (fx/create-renderer :middleware (fx/wrap-map-desc assoc :fx/type probe/view))]
     (fx/mount-renderer probe/state renderer)
     (try
-      (doseq [channel [:media :player]]
+      (doseq [phase [:ready :transport] channel [:media :player]]
         (let [polls (atom 0)
+              status (atom (if (= phase :ready) "UNKNOWN" "READY"))
               cause (ex-info "Synthetic asynchronous error" {:injected/channel channel})
-              error! #(when (= 2 (swap! polls inc)) cause)
+              error! #(when (= 2 (swap! polls inc)) (reset! status "HALTED") cause)
               media (reify MediaSnapshot (getError [_] (when (= channel :media) (error!))))
               player (reify PlayerSnapshot
                        (getMedia [_] media)
                        (getError [_] (when (= channel :player) (error!)))
-                       (getStatus [_] "UNKNOWN"))]
+                       (getStatus [_] @status))]
           (try
-            (probe/await-media-ready! player)
+            (if (= phase :ready)
+              (probe/await-media-ready! player)
+              (probe/wait-media! player #(= "PLAYING" (str (.getStatus %)))))
             (throw (ex-info "Injected error was not reported" {}))
             (catch clojure.lang.ExceptionInfo e
-              (when-not (and (= "Native media failed before READY" (ex-message e))
-                             (identical? cause (.getCause e)) (= 2 @polls))
-                (throw (ex-info "Wrong injected-error outcome" {:channel channel} e)))
-              (println "INJECTED ERROR PASS:" channel "two polls, original cause retained")))))
+              (when-not (and (identical? cause (.getCause e)) (= 2 @polls)
+                             (= "HALTED" (:media/status (ex-data e))))
+                (throw (ex-info "Wrong injected-error outcome" {:phase phase :channel channel} e)))
+              (println "INJECTED ERROR PASS:" phase channel "two polls, original cause retained")))))
+      (let [media (reify MediaSnapshot (getError [_] nil))
+            player (reify PlayerSnapshot
+                     (getMedia [_] media) (getError [_] nil) (getStatus [_] "HALTED"))]
+        (try
+          (probe/wait-media! player #(= "PLAYING" (str (.getStatus %))))
+          (throw (ex-info "Unreported HALTED state was not refused" {}))
+          (catch clojure.lang.ExceptionInfo e
+            (when-not (= :media/halted-without-error (:media/error-code (ex-data e)))
+              (throw (ex-info "HALTED was masked by another failure" {} e)))
+            (println "HALTED PASS: explicit failure without inventing a reported cause"))))
       (let [media (reify MediaSnapshot (getError [_] nil))
             player (reify PlayerSnapshot
                      (getMedia [_] media) (getError [_] nil) (getStatus [_] "READY"))]

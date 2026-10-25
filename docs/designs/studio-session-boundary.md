@@ -25,6 +25,23 @@ cannot choose or override this context. UI user commands and provider-completion
 commands use separate entrypoints. User identity is the configured local operator;
 this increment does not introduce remote multi-user authorization.
 
+For version 1, `:studio/ingest` is authorized only through the trusted native
+UI-user entrypoint with the configured `:actor/kind :user` context and an active
+arm grant for this session/process. An arm grant does not authorize a provider,
+agent or system entrypoint to import files. Those entrypoints return
+`:command/not-authorized`, even if the supplied context says `:user`; entrypoint
+identity comes from the application boundary, never the command body. Provider
+completion may only report a result/failure for an existing proposal request.
+Future DAW/device workers require a separately reviewed capability; v1 users can
+export DAW files into the displayed staging directory and explicitly ingest them.
+
+`:studio/decide` likewise requires the trusted UI-user entrypoint and
+`:actor/kind :user`. Both `:agent` and `:system` contexts are refused with
+`:command/not-authorized` and append zero decision events. Command-body actor or
+entrypoint overrides are invalid input, not authority. Automated demonstrations
+use a labelled simulated operator, never Err's identity or a claim that a human
+has creatively accepted the generated suggestion.
+
 | Command | Input | Resulting durable fact |
 | --- | --- | --- |
 | `:studio/session-create` | Title, configured work identity and project/source-reference links | New session, initially unarmed |
@@ -67,14 +84,52 @@ Queries return declared projection values without appending an event.
 
 A JVM edge adapter accepts staged source files from synthetic generators, DAW
 exports or future device adapters. It does not open recording devices on startup.
-The command contains paths and expected hashes, never audio bytes in a ledger.
-Paths are host-local ingress references, not canonical source identity.
+The command contains staging-relative WAV/MIDI leaf filenames and expected
+hashes, never audio bytes in a ledger. These are host-local ingress references,
+not canonical source identity. Absolute paths, URLs, drive-qualified names,
+directory components, `.`/`..`, separators, colon and NUL are refused as
+`:capture/unsafe-source` before any source payload is opened or copied.
+
+The staging root is an application-owned directory under the chosen project and
+session, displayed by the UI and bound into the live arm grant. It is not supplied
+by ingest or provider data. Version 1 accepts regular files directly in that root;
+symlinks, subdirectories, FIFOs and other nonregular entries are refused. Open
+through a directory handle anchored to the granted root, without following links;
+do not rely on a string-prefix check or a check-then-open pathname race. Reject a
+changed root identity as `:capture/staging-changed`, and fail closed if the host
+adapter cannot enforce confinement. Opening or resolving an outside path is not
+an alternative import route. These rules apply to both WAV and MIDI inputs.
 
 Before opening/copying any input the service validates the active arm grant,
 command shape, request identity and session revision. Both unarmed and after-stop
 ingest return `:capture/not-armed` and leave session state, ledger bytes,
 existing media bytes, canonical source inventory and hashes unchanged. The rejected
 input is never published as a source.
+
+The same assertions of zero source payload opens, copies and events apply to
+unauthorized entrypoints and unsafe sources. Authorization/arm/command/revision
+checks precede filesystem access; only an authorized request may inspect the
+granted directory and regular-file metadata to enforce confinement.
+
+### Required authorization and confinement acceptance cases
+
+These are planning cases for executable tests owned by CS-002 and CS-005, before
+their adapters are implemented. They are not passing production tests in this PR.
+Use distinct, labelled test operator identities; none represents a real creative
+decision by Err.
+
+| Case | Input/context | Required outcome |
+| --- | --- | --- |
+| ING-USER | UI-user + `:user`, active grant, regular WAV/SMF leaves in the granted root | Continue to hash/format validation; source admission remains explicit |
+| ING-AGENT | Provider/agent entrypoint + `:agent`, active grant, otherwise valid leaves | `:command/not-authorized`; zero payload opens/copies and zero events |
+| ING-SYSTEM | System entrypoint + `:system`, active grant | Same refusal and unchanged session/source inventory |
+| ING-SPOOF | Non-UI entrypoint claiming `:user`, or actor/entrypoint keys in the body | Refuse authority spoofing; body fields never choose trusted context |
+| ING-PATH | Absolute/URL/drive/traversal/nested input or a sibling with the same textual root prefix | `:capture/unsafe-source`; no outside payload opened/copied; zero events |
+| ING-LINK | Leaf is a link, directory, FIFO or other nonregular file | `:capture/unsafe-source`; no payload opened/copied; zero events |
+| ING-ROOT | Granted directory is replaced or confinement cannot be established | Explicit changed-root/unavailable refusal; zero events |
+| DEC-USER | UI-user + `:user`, known provisional proposal, unchanged source | One separate attributed accept/reject event, tested independently |
+| DEC-AGENT | `:agent` context, otherwise valid proposal | `:command/not-authorized`; zero decision events and unchanged labels |
+| DEC-SYSTEM | `:system` context, otherwise valid proposal | Same refusal, including through a nominal UI entrypoint |
 
 On valid input, verify exact raw bytes and WAV/SMF metadata, then publish immutable
 content-addressed copies with forced file/directory durability before referencing

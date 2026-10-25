@@ -23,14 +23,26 @@
           (> n 100) (throw (ex-info "Native transition timed out" {}))
           :else (do (Thread/sleep 100) (recur (inc n))))))
 
+(defn media-value! [player f]
+  (on-fx
+   (fn []
+     (let [media-error (.getError (.getMedia player))
+           player-error (.getError player)
+           cause (or media-error player-error)
+           status (str (.getStatus player))]
+       (when cause
+         (throw (ex-info "Native media reported an error"
+                         {:media/status status :media/error-code :media/reported} cause)))
+       (when (= "HALTED" status)
+         (throw (ex-info "Native media HALTED without a reported error"
+                         {:media/status status :media/error-code :media/halted-without-error})))
+       (f player)))))
+
+(defn wait-media! [player predicate]
+  (wait-for #(media-value! player predicate)))
+
 (defn await-media-ready! [player]
-  (wait-for
-   #(on-fx
-     (fn []
-       (when-let [cause (or (.getError (.getMedia player)) (.getError player))]
-         (throw (ex-info "Native media failed before READY"
-                         {:media/status (str (.getStatus player))} cause)))
-       (= "READY" (str (.getStatus player)))))))
+  (wait-media! player #(= "READY" (str (.getStatus %)))))
 
 (defonce state (atom {:status :stopped}))
 (defn command! [command]
@@ -95,28 +107,28 @@
       (println "WINDOW: actual cljfx native stage shown; in-process command/query exercised")
       (let [player (on-fx #(MediaPlayer. (Media. (str (.toURI (File. asset))))))]
         (try
-          (on-fx #(.setVolume player 0.1))
+          (media-value! player #(.setVolume % 0.1))
           (await-media-ready! player)
-          (let [duration (on-fx #(.toMillis (.getTotalDuration player)))]
+          (let [duration (media-value! player #(.toMillis (.getTotalDuration %)))]
             (when-not (and (Double/isFinite duration) (> duration 6250))
               (throw (ex-info "Asset too short for 5000 ms seek and >5250 ms resume assertions (need >6250 ms)"
                               {:duration duration})))
             (println "DURATION:" duration)
-            (on-fx #(.play player))
-            (wait-for #(= "PLAYING" (on-fx (fn [] (str (.getStatus player))))))
-            (wait-for #(> (on-fx (fn [] (.toMillis (.getCurrentTime player)))) 250))
-            (on-fx #(.pause player))
-            (wait-for #(= "PAUSED" (on-fx (fn [] (str (.getStatus player))))))
-            (let [before (on-fx #(.toMillis (.getCurrentTime player)))]
+            (media-value! player #(.play %))
+            (wait-media! player #(= "PLAYING" (str (.getStatus %))))
+            (wait-media! player #(> (.toMillis (.getCurrentTime %)) 250))
+            (media-value! player #(.pause %))
+            (wait-media! player #(= "PAUSED" (str (.getStatus %))))
+            (let [before (media-value! player #(.toMillis (.getCurrentTime %)))]
               (Thread/sleep 300)
-              (when-not (< (Math/abs (- before (on-fx #(.toMillis (.getCurrentTime player))))) 50)
+              (when-not (< (Math/abs (- before (media-value! player #(.toMillis (.getCurrentTime %))))) 50)
                 (throw (ex-info "Pause did not hold position" {}))))
-            (on-fx #(.seek player (Duration/millis 5000)))
-            (wait-for #(< (Math/abs (- 5000 (on-fx (fn [] (.toMillis (.getCurrentTime player)))))) 500))
-            (on-fx #(.play player))
-            (wait-for #(> (on-fx (fn [] (.toMillis (.getCurrentTime player)))) 5250))
-            (on-fx #(.stop player))
-            (wait-for #(= "STOPPED" (on-fx (fn [] (str (.getStatus player))))))
+            (media-value! player #(.seek % (Duration/millis 5000)))
+            (wait-media! player #(< (Math/abs (- 5000 (.toMillis (.getCurrentTime %)))) 500))
+            (media-value! player #(.play %))
+            (wait-media! player #(> (.toMillis (.getCurrentTime %)) 5250))
+            (media-value! player #(.stop %))
+            (wait-media! player #(= "STOPPED" (str (.getStatus %))))
             (println "AUDIO: play/progress/pause-held/seek/resume-progress/stop asserted"))
           (finally (on-fx #(.dispose player)))))
       (let [rows (rebuild-query db source)]

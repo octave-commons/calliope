@@ -2,11 +2,11 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["cs-003-session-recovery"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792928411809-0.l4qma2qfqkpymgys6g3"
+write-id: "1792946183411-0.hzne6ebyjx6qc79h2zh"
 points: "3"
 title: "CS-005: Curate phrases and record separate human proposal decisions"
 priority: "P0"
-status: "incoming"
+status: "in_progress"
 design: "docs/designs/studio-session-boundary.md"
 uuid: "cs-005-proposals-and-curation"
 research: "docs/research/studio-foundation-map.md"

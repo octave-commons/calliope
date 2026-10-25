@@ -31,16 +31,19 @@ failed state/position assertions, failed database deletion or mismatched rebuild
 It runs JavaFX commands on the FX thread. The native window calls command/query
 functions; its controls exercise local operational state, not production playback.
 The MediaPlayer transport is tested separately against actual MP3 bytes.
-The READY wait polls both Media and MediaPlayer error properties on the FX thread
-and preserves a reported error as the failure cause. To verify that poll boundary
+All media operations and transport polls check both Media and MediaPlayer error
+properties on the FX thread and preserve a reported error as the failure cause.
+HALTED without an error property is an explicit failure, not a timeout with an
+invented cause. Cleanup still disposes a failed player. To verify that boundary
 with synthetic error getters (no audio playback), run:
 
 ```bash
 xvfb-run -a clojure -M -m ready-probe
 ```
 
-This separate check verifies UNKNOWN followed by an error on poll two for each
-error channel, original-cause identity, and READY without errors. It uses fake
+This separate check verifies UNKNOWN before READY and READY before a transport
+wait, followed by HALTED with an error on poll two for each channel. It checks
+original-cause identity, explicit unreported HALTED, and READY without errors. It uses fake
 getter objects through real FX-thread dispatch; it does not demonstrate an actual
 codec error. A delayed invalid HTTP fixture timed out without setting either
 error property, so it is not counted as error-channel verification.

@@ -2,7 +2,7 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792924583848-0.p8mnqjr3ozdr4n1rx6e"
+write-id: "1792928411085-0.j5o12bwow7zyjxd9xw"
 points: "3"
 title: "CS-001: Reconcile native runtime and reproduce window/audio/rebuild evidence"
 priority: "P0"
@@ -45,6 +45,15 @@ exact selected columns and row values, ordered by the query's declared ORDER BY
 
 ## Verification
 
+Current discovery evidence: the root suite passed 112 tests containing 699
+assertions, with no failures or errors. Full source, test and spike lint passed
+with no errors or warnings. The actual corpus transport and SQLite rebuild also
+passed under a private Xvfb display and null sink. Synthetic error-getter probes
+are separate evidence and do not demonstrate a real decoder failure.
+
+The compressed validation wording in the earlier comment is historical; this
+paragraph and the later Rheos clarification state the current result in full.
+
 Write failing contract/behavior tests before production implementation, then run
 focused tests, full Clojure suite, zero-warning lint and Rheos reads. Preserve
 commands, hashes and execution environment in Receipt River and evidence docs.
@@ -62,5 +71,11 @@ inspectable. Device, display, inference and i3 availability have separate claims
 Planning review 4370152387: added the explicit FT-000D dependency through Rheos. CS-001 cannot enter ready before that owner decision is reconciled/accepted through its existing FT-000A dependency. The current native probe and recovered artifact are orientation/research evidence for the owning FT-000D/issue #12 recovery, not downstream production assumptions or a waiver. No existing FT status or acceptance has been changed.
 
 Planning review5642720031 diagnostic fixes: current ADR now links its affected approved design plus historical alternatives/acceptance conditions; recovered ADR bytes unchanged. READY polling reports Media/MediaPlayer errors with original cause. Actual corpus transport/rebuild still passes. ready-probe separately exercises fake asynchronous getters through real FX dispatch; it is not a real codec-error claim. Root112tests699assertions and full lint pass. Story remains incoming pending planning convergence.
+
+Validation clarification: the root suite reported 112 tests and 699 assertions, with no failures or errors. Full source, test and spike lint passed with no errors or warnings.
+
+The actual corpus transport and SQLite rebuild passed under a private Xvfb display and null sink. The synthetic error probe separately checks both reported error channels before READY and during transport, including HALTED, while preserving the original cause. These are distinct checks; no real decoder failure, physical listening or production session recovery is claimed.
+
+This clear note supersedes the earlier compressed validation wording. The original comment remains historical; board comments and event history are preserved through the supported Rheos append operation. The story remains incoming pending planning convergence.
 
 ---

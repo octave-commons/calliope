@@ -96,9 +96,9 @@
                                 (catch Exception e {:error e})))))
     result))
 
-(defn snapshot-sources!
+(defn- snapshot-sources!
   "Snapshot the pair through metadata-only O_PATH descriptors, then exact regular
-   inode descriptors. Public effect seam for zero-payload-open rejection tests."
+   inode descriptors. Private effect seam for zero-payload-open rejection tests."
   [^Grant grant sources]
   (let [script (slurp (io/resource "studio/secure_ingress.py"))
         builder (ProcessBuilder. ^java.util.List ["/usr/bin/python3" "-I" "-S" "-c" script])
@@ -223,6 +223,7 @@
         (not (and (= actor (get-in grant [:binding :actor])) (= :user (:actor/kind actor))))
         (refuse! :command/not-authorized "Only the configured native UI user may ingest")
         (not (and (not @(:closed grant)) (true? (:capture/armed? state))
+                   (not (:capture/stopped? state))
                    (= (:process/id state) (get-in grant [:binding :process/id]))))
         (refuse! :capture/not-armed "Explicit capture arming in this process is required")
         (not (law/valid? :calliope.capture/ingest-command-v1 command))

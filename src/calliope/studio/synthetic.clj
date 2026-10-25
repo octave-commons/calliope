@@ -1,10 +1,11 @@
 (ns calliope.studio.synthetic
   "Explicit deterministic test signals, never instrument-performance evidence."
   (:require [calliope.law.capture :as law])
-  (:import [java.io ByteArrayOutputStream]
+  (:import [java.io ByteArrayOutputStream IOException]
            [java.nio ByteBuffer ByteOrder]
-           [java.nio.file Files Path StandardOpenOption LinkOption]
-           [java.nio.file.attribute BasicFileAttributes]
+           [java.nio.file Files Path StandardOpenOption LinkOption FileAlreadyExistsException]
+           [java.nio.file.attribute BasicFileAttributes FileAttribute]
+           [java.nio.channels SeekableByteChannel]
            [java.security MessageDigest]
            [java.util Arrays]
            [javax.sound.midi Sequence ShortMessage MetaMessage MidiEvent MidiSystem]))
@@ -57,6 +58,33 @@
    :origin {:kind :synthetic :generator/id :studio-fixture-v1 :seed seed
             :channel-roles [:guitar-fixture :voice-fixture]}})
 
+(defn- collision! [cause]
+  (throw (ex-info "Staged fixture exists with different content/type or changed concurrently"
+                  {:error/code :capture/staging-collision} cause)))
+
+(defn- create-new! [^Path path ^bytes bytes]
+  (Files/write path bytes (into-array StandardOpenOption [StandardOpenOption/CREATE_NEW StandardOpenOption/WRITE])))
+
+(defn- open-existing! [^Path path]
+  (Files/newByteChannel path #{StandardOpenOption/READ LinkOption/NOFOLLOW_LINKS} (make-array FileAttribute 0)))
+
+(defn- compare-existing! [^Path path ^bytes expected]
+  (try
+    (when-not (.isRegularFile (Files/readAttributes path BasicFileAttributes
+                                                   (into-array LinkOption [LinkOption/NOFOLLOW_LINKS])))
+      (collision! nil))
+    (with-open [^SeekableByteChannel channel (open-existing! path)]
+      (when-not (= (alength expected) (.size channel)) (collision! nil))
+      (let [buffer (ByteBuffer/allocate (alength expected))]
+        (loop []
+          (when (.hasRemaining buffer)
+            (when (neg? (.read channel buffer)) (collision! nil))
+            (recur)))
+        (when-not (and (= (alength expected) (.size channel))
+                       (Arrays/equals expected (.array buffer)))
+          (collision! nil))))
+    (catch IOException cause (collision! cause))))
+
 (defn write-fixture!
   "Explicitly create staged fixtures; never overwrite different existing bytes."
   [^Path root seed]
@@ -67,10 +95,7 @@
                 :let [bytes (get data key) path (.resolve root ^String filename)]]
             (do
               (if (Files/exists path (into-array LinkOption [LinkOption/NOFOLLOW_LINKS]))
-                (when-not (and (.isRegularFile (Files/readAttributes path BasicFileAttributes
-                                                                    (into-array LinkOption [LinkOption/NOFOLLOW_LINKS])))
-                               (Arrays/equals ^bytes bytes (Files/readAllBytes path)))
-                  (throw (ex-info "Staged fixture exists with different content/type"
-                                  {:error/code :capture/staging-collision})))
-                (Files/write path ^bytes bytes (into-array StandardOpenOption [StandardOpenOption/CREATE_NEW StandardOpenOption/WRITE])))
+                (compare-existing! path bytes)
+                (try (create-new! path bytes)
+                     (catch FileAlreadyExistsException cause (collision! cause))))
               [kind {:filename filename :sha256 (sha256 bytes)}])))))

@@ -2,7 +2,7 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["cs-001-native-runtime-recovery"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792933033101-0.z2pqs36tgqg88ekb4ip"
+write-id: "1792935781034-0.s5qpxfrzoude09hpziw"
 points: "5"
 title: "CS-002: Define source-preserving session laws and deterministic capture adapters"
 priority: "P0"
@@ -92,5 +92,7 @@ The acceptance body was hand-authored as supported card content, then recorded w
 Codex claims CS-002 for the authorized synthetic music milestone. Parent planning gate passed on c0d39fa with exact-head CodeRabbit completion6397531323 and MiMo approval5643155974; all19findings settled. CS-001 is now done through Rheos with actual JVM tests/lint, inherited human-accepted native choices and separately documented corpus/error probes. Implement named capture laws and failing clock/MIDI/authorization/confinement tests first, then pure interpretation and JVM source adapters. No real device, human creative decision, durable agent execution or complete studio workflow is claimed.
 
 Implemented named capture/take laws, exact pure MIDI clocks/lifecycle, deterministic 4-second stereo PCM WAV plus six-note SMF, and trusted UI-user staged-source snapshots. RED checkpoints1db248f/1198dcb; current full suite138tests992assertions zero failures/errors; full lint zero errors/warnings. JVM suite runs actual Linux descriptor tests (4 Python cases), including a leaf replaced by an outside symlink after metadata open, FIFO/nonregular refusal before read-capable opens, root replacement and hash mismatch. Controlled pending model worker does not prevent source ingress; failed/unavailable stubs are not called. See docs/research/studio-capture-implementation.md for interfaces, 8MiB/source bound, Linux/procfs/Python requirements and limits. No canonical publication/Clio app session/native studio UI/restart/device/human listening or creative acceptance is claimed; those remain dependent stories. Moving to review, not done, pending peer code review.
+
+Review rework: verified after-stop defect independently reproduced with stopped=true and armed=true, RED13bd8ce then explicit refusal before source access. Snapshot helper now private and tests rebind its private Var. Fixture reuse now checks size and compares through one NOFOLLOW channel; creation races become structured non-overwriting collisions. Full local suite142tests1001assertions zero failures/errors; lint zero errors/warnings. The alleged nonexistent child-attribute overload is contradicted by Java21 official API, local javap, actual successful ingest and independent local assessment. That native finding remains open, not locally settled or approved; see docs/research/studio-capture-review-evidence.md. Local execution paths in old receipts are explicitly workspace-local, with append-only clarification.
 
 ---

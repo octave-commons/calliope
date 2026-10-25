@@ -7,6 +7,7 @@
             [clojure.java.shell :as shell]
             [clojure.test :refer [deftest is]])
   (:import [java.nio.file Files Path LinkOption]
+           [java.nio.channels SeekableByteChannel]
            [java.nio.file.attribute FileAttribute]
            [java.util Arrays]
            [java.io ByteArrayInputStream ByteArrayOutputStream]
@@ -67,10 +68,12 @@
     (try
       (let [files (synthetic/write-fixture! root 42) cmd (command files)]
         (with-open [g (grant root)]
-          (with-redefs [ingress/snapshot-sources! (fn [& _] (swap! opens inc) (throw (Exception. "Payload must remain unopened")))]
+          (with-redefs-fn {#'ingress/snapshot-sources! (fn [& _] (swap! opens inc) (throw (Exception. "Payload must remain unopened")))}
+            (fn []
             (doseq [[s actor c code]
                     [[(assoc state :capture/armed? false) operator cmd :capture/not-armed]
                      [(assoc state :capture/armed? false :capture/stopped? true) operator cmd :capture/not-armed]
+                     [(assoc state :capture/stopped? true) operator cmd :capture/not-armed]
                      [(assoc state :process/id "restarted-process") operator cmd :capture/not-armed]
                      [state (assoc operator :actor/kind :agent) cmd :command/not-authorized]
                      [state (assoc operator :actor/kind :system) cmd :command/not-authorized]
@@ -87,7 +90,7 @@
                          (str root "-sibling/outside.wav")]]
               (is (= :capture/unsafe-source
                      (:error/code (ingress/ui-ingest! g state operator (assoc-in cmd [:audio :filename] name))))))
-            (is (zero? @opens)))))
+              (is (zero? @opens))))))
       (finally (delete-tree! root)))))
 
 (deftest links-nonregular-entries-and-replaced-roots-refuse-before-payloads
@@ -99,7 +102,8 @@
         (Files/createSymbolicLink (.resolve root "linked.wav") outside-file (make-array FileAttribute 0))
         (Files/createDirectory (.resolve root "directory.wav") (make-array FileAttribute 0))
         (with-open [g (grant root)]
-          (with-redefs [ingress/snapshot-sources! (fn [& _] (swap! opens inc) (throw (Exception. "Must not open")))]
+          (with-redefs-fn {#'ingress/snapshot-sources! (fn [& _] (swap! opens inc) (throw (Exception. "Must not open")))}
+            (fn []
             (doseq [name ["linked.wav" "directory.wav"]]
               (is (= :capture/unsafe-source
                      (:error/code (ingress/ui-ingest! g state operator (assoc-in cmd [:audio :filename] name))))))
@@ -107,7 +111,7 @@
               (Files/move root moved (make-array java.nio.file.CopyOption 0))
               (Files/createDirectory root (make-array FileAttribute 0))
               (is (= :capture/staging-changed (:error/code (ingress/ui-ingest! g state operator cmd)))))
-            (is (zero? @opens)))))
+              (is (zero? @opens))))))
       (finally (delete-tree! root) (delete-tree! outside)))))
 
 (deftest hashes-and-declared-clock-are-verified-against-actual-bytes
@@ -148,6 +152,64 @@
 (deftest actual-descriptor-race-suite
   (let [{:keys [exit out err]} (shell/sh "/usr/bin/python3" "-I" "-S" "test/calliope/studio/secure_ingress_test.py")]
     (is (zero? exit) (str out err))))
+
+(deftest payload-snapshot-is-not-a-public-entrypoint
+  (is (not (contains? (ns-publics 'calliope.studio.ingress) 'snapshot-sources!))))
+
+(deftest fixture-size-mismatch-opens-once-and-reads-zero-bytes
+  (let [root (temp-root) reads (atom 0) opens (atom 0) closes (atom 0)
+        original @#'synthetic/open-existing!]
+    (try
+      (Files/write (.resolve root "synthetic-audio.wav") (byte-array [1]) (make-array java.nio.file.OpenOption 0))
+      (with-redefs-fn
+        {#'synthetic/open-existing!
+         (fn [path]
+           (swap! opens inc)
+           (let [^SeekableByteChannel delegate (original path)]
+             (reify SeekableByteChannel
+               (size [_] (.size delegate))
+               (read [_ _] (swap! reads inc) (throw (AssertionError. "Size mismatch must not read payload")))
+               (write [_ _] (throw (AssertionError. "Comparison must not write")))
+               (position [_] (.position delegate))
+               (position [this _] this)
+               (truncate [this _] this)
+               (isOpen [_] (.isOpen delegate))
+               (close [_] (swap! closes inc) (.close delegate))))) }
+        (fn []
+          (is (= :capture/staging-collision
+                 (try (synthetic/write-fixture! root 42) :unexpected-success
+                      (catch clojure.lang.ExceptionInfo e (:error/code (ex-data e))))))))
+      (is (= [1 0 1] [@opens @reads @closes]))
+      (finally (delete-tree! root)))))
+
+(deftest fixture-creation-race-is-a-structured-non-overwriting-collision
+  (let [root (temp-root) original @#'synthetic/create-new!]
+    (try
+      (with-redefs-fn
+        {#'synthetic/create-new! (fn [path bytes]
+                                 (Files/write path (byte-array [9]) (make-array java.nio.file.OpenOption 0))
+                                 (original path bytes))}
+        (fn []
+          (is (= :capture/staging-collision
+                 (try (synthetic/write-fixture! root 42) :unexpected-success
+                      (catch clojure.lang.ExceptionInfo e (:error/code (ex-data e))))))))
+      (is (= [9] (vec (Files/readAllBytes (.resolve root "synthetic-audio.wav")))))
+      (finally (delete-tree! root)))))
+
+(deftest existing-fixtures-reuse-identical-bytes-and-reject-links
+  (let [root (temp-root) outside (temp-root)]
+    (try
+      (let [files (synthetic/write-fixture! root 42)]
+        (is (= files (synthetic/write-fixture! root 42)))
+        (Files/delete (.resolve root "synthetic-audio.wav"))
+        (let [target (.resolve outside "outside.wav")]
+          (Files/write target (byte-array [1 2 3]) (make-array java.nio.file.OpenOption 0))
+          (Files/createSymbolicLink (.resolve root "synthetic-audio.wav") target (make-array FileAttribute 0))
+          (is (= :capture/staging-collision
+                 (try (synthetic/write-fixture! root 42) :unexpected-success
+                      (catch clojure.lang.ExceptionInfo e (:error/code (ex-data e))))))
+          (is (= [1 2 3] (vec (Files/readAllBytes target))))))
+      (finally (delete-tree! root) (delete-tree! outside)))))
 
 (deftest model-outcomes-never-hold-the-ingress-boundary
   (let [root (temp-root) entered (promise) release (promise)]

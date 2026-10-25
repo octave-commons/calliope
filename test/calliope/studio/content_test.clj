@@ -79,9 +79,15 @@
 
 (deftest marker-and-rating-context-retain-scope
   (is (:ok? (content/marker-check marker render)))
+  (is (:ok? (content/marker-check (-> marker (dissoc :marker/range)
+                                      (assoc :marker/at-ms 0)) render)))
+  (is (:ok? (content/marker-check (-> marker
+                                      (assoc :marker/subject {:subject/type :arrangement :subject/id "a1"}))
+                                 arrangement 100)))
   (doseq [candidate [(dissoc marker :marker/range)
                      (assoc marker :marker/at-ms 10)
                      (assoc marker :marker/range {:start-ms 0 :end-ms 101})
+                     (assoc marker :marker/range {:start-ms 90 :end-ms 10})
                      (assoc-in marker [:marker/subject :subject/id] "other")
                      (assoc-in marker [:marker/subject :subject/type] :clip)
                      (-> marker (assoc :marker/epistemic :accepted)
@@ -109,6 +115,7 @@
                               [{:entry/clip-id "c1" :entry/position 2}
                                {:entry/clip-id "c2" :entry/position 2}]) clips renders))))
     (is (false? (:ok? (content/arrangement-check a (dissoc clips "c2") renders))))
+    (is (false? (:ok? (content/arrangement-check a (assoc-in clips ["c2" :clip/id] "wrong") renders))))
     (is (false? (:ok? (content/arrangement-check a (assoc-in clips ["c2" :clip/status] :provisional) renders))))
     (let [r2 (assoc render :render/id "r2" :render/work-id "w2" :render/sha256 sha-b)
           mixed-clips (assoc clips "c2" (assoc c2 :clip/source
@@ -132,6 +139,18 @@
                      (assoc export :export/output-sha256 "bad")]]
     (is (false? (:ok? (content/export-check candidate arrangement {"c1" clip} {"r1" render})))))
   (is (false? (:ok? (content/export-check export arrangement {} {"r1" render})))))
+
+(deftest export-lineage-requires-every-distinct-source
+  (let [r2 (assoc render :render/id "r2" :render/sha256 sha-b)
+        c2 (assoc clip :clip/id "c2" :clip/source
+                  {:source/type :render :source/id "r2" :source/sha256 sha-b})
+        a (update arrangement :arrangement/entries conj {:entry/clip-id "c2" :entry/position 1})
+        clips {"c1" clip "c2" c2} renders {"r1" render "r2" r2}]
+    (is (:ok? (content/export-check (assoc export :export/source-hashes [sha-b sha]) a clips renders)))
+    (is (false? (:ok? (content/export-check export a clips renders))))
+    (is (false? (:ok? (content/export-check
+                       (assoc export :export/source-hashes [sha sha-b (apply str (repeat 64 "c"))])
+                       a clips renders))))))
 
 
 (deftest organization-and-query-programs-stay-distinct
@@ -165,3 +184,12 @@
     (content/export-check export arrangement {"c1" clip} {"r1" render})
     (is (= before [render clip arrangement export rating marker]))))
 
+(deftest scalar-and-encoding-admission-never-executes-values
+  (let [calls (atom 0)
+        executable (fn [] (swap! calls inc))]
+    (is (not (content/valid? :calliope.studio/query-value-v1 ##NaN)))
+    (is (not (content/valid? :calliope.studio/encoding-v1
+                             {:encoding/format :wav
+                              :encoding/settings {:dynamic executable}})))
+    (is (not (content/valid? :calliope.studio/where-v1 [:eq :field executable])))
+    (is (zero? @calls))))

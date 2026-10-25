@@ -6,7 +6,7 @@ process: "docs/process/product-design-and-delivery.md"
 phase: "0"
 type: "story"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792918984951-0.h1ok3s4of5b868g6wft"
+write-id: "1792920096236-0.8u8tymbwyjj8et99sc"
 points: "5"
 title: "FT-000B: Define media workbench domain laws"
 priority: "P0"
@@ -61,5 +61,7 @@ Readiness repair (2026-08-30): moved from ready back to breakdown through Rheos 
 Date correction: the preceding reconciliation comments say 2026-08-30, but Rheos recorded these operations on 2026-08-29 UTC. The substance is unchanged; this append-only correction preserves the original ledger history.
 
 Studio goal recovery begins from the existing approved ADR-001/design and issue #9 at source 194512b4ce7e9e706f555a4f933449c632bb8fb5. FT-000A is done in this base, satisfying the recorded readiness repair. This branch recovers pure content laws plus required contextual range/fade/source/arrangement validation into calliope namespaces. Release/publication contracts remain the separately scoped handoff; this contribution will not claim the broader card complete without its remaining scope. New capture-plan cards remain incoming while PR #22 planning review runs.
+
+Content recovery GREEN: calliope.law.studio now supplies qualified plain-data Malli registries; calliope.studio.content supplies pure source/range/fade/marker/rating/arrangement/export admission. RED recorded missing content namespace and later two scalar/encoding admission failures. Full suite now 122 tests/806 assertions, zero failures/errors under umask 0022; lint zero warnings/errors. docs/research/studio-content-law-recovery.md pins original source hash and states metadata-versus-byte verification limits. Release/publication scope is not implemented here, so the broader card is not claimed done.
 
 ---

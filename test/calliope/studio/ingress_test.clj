@@ -71,6 +71,7 @@
             (doseq [[s actor c code]
                     [[(assoc state :capture/armed? false) operator cmd :capture/not-armed]
                      [(assoc state :capture/armed? false :capture/stopped? true) operator cmd :capture/not-armed]
+                     [(assoc state :capture/stopped? true) operator cmd :capture/not-armed]
                      [(assoc state :process/id "restarted-process") operator cmd :capture/not-armed]
                      [state (assoc operator :actor/kind :agent) cmd :command/not-authorized]
                      [state (assoc operator :actor/kind :system) cmd :command/not-authorized]
@@ -148,6 +149,9 @@
 (deftest actual-descriptor-race-suite
   (let [{:keys [exit out err]} (shell/sh "/usr/bin/python3" "-I" "-S" "test/calliope/studio/secure_ingress_test.py")]
     (is (zero? exit) (str out err))))
+
+(deftest payload-snapshot-is-not-a-public-entrypoint
+  (is (not (contains? (ns-publics 'calliope.studio.ingress) 'snapshot-sources!))))
 
 (deftest model-outcomes-never-hold-the-ingress-boundary
   (let [root (temp-root) entered (promise) release (promise)]

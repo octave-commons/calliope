@@ -1,14 +1,15 @@
 ---
-uuid: "cs-006-desktop-profile"
-title: "CS-006: Add an explicit one-shot music desktop profile"
-status: incoming
-priority: P0
-points: 3
-labels: studio, foundation, native, recovery
+labels: "studio, foundation, native, recovery"
 dependency: ["cs-001-native-runtime-recovery"]
-research: docs/research/studio-foundation-map.md
-adr: docs/adrs/adr-001-local-first-media-workbench.md
-design: docs/designs/studio-session-boundary.md
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1792933681699-0.9apgt3fcfsfilju2iz1"
+points: "3"
+title: "CS-006: Add an explicit one-shot music desktop profile"
+priority: "P0"
+status: "in_progress"
+design: "docs/designs/studio-session-boundary.md"
+uuid: "cs-006-desktop-profile"
+research: "docs/research/studio-foundation-map.md"
 ---
 
 # CS-006: Add an explicit one-shot music desktop profile
@@ -51,3 +52,7 @@ Planning review precedes ready; current-head review/checks precede merge.
 Keep missing sources, failed writes, unavailable providers and partial effects
 explicit. Device and durable-runtime evidence cannot be inferred from fixtures.
 
+---
+Codex claims independent CS-006 after planning convergence at c0d39fa (CodeRabbit completion6397531323, MiMo approval5643155974, canonical planning PASS) and CS-001 done. Implement a pure inspectable plan plus one-shot i3 adapter with fixed operations, exact tree/geometry preconditions, focus preservation and explicit partial/unavailable outcomes. No live layout effects, config replacement or background reconciliation during development; mocks, read-only discovery and any later user-invoked effects remain separate.
+
+---

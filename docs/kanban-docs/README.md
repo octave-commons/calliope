@@ -17,25 +17,31 @@ publication adapters.
 `docs/kanban/` is the configured Rheos `tasksDir` and contains cards only. Board
 prose lives here in `docs/kanban-docs/` so Rheos does not ingest it as work.
 
-ADR-001 is accepted and Media Workbench v1 is approved. FT-000A, the review
+ADR-001 is accepted and Media Workbench v1 is approved. In the 2026-08-29
+reconciliation snapshot, FT-000A, the review
 reconciliation chores, and FT-OPS-001 preserve historical disposition and
-verification evidence, but their live card status is `incoming`; none is complete
+verification evidence, but their card status was `incoming`; none was complete
 until Rheos records the lifecycle acceptance. FT-000B and FT-000D were returned
 from `ready` to `breakdown` through Rheos on 2026-08-29 because their declared
-FT-000A dependency is still `incoming`:
+FT-000A dependency was then `incoming`:
 
 - FT-000B — media-workbench domain laws;
 - FT-000D — native UI, real playback, read-model, and application topology.
 
+On 2026-10-25 the studio recovery reverified the existing acceptance sources and
+completed FT-000A/FT-000D through the actual Rheos lifecycle, including the
+configured JVM build gates. The [native decision reconciliation](../adrs/adr-003-reconciled-native-runtime.md)
+preserves historical acceptance and current verification limits. New studio
+stories remain separately planning/evidence-gated; query Rheos for live states.
+
 ## Board operations
 
-Run from the repository root so eta-mu/Rheos discovers `openhax.kanban.json`:
+Run the pinned canonical Rheos 0.2.0 CLI from the repository root so it discovers
+`openhax.kanban.json` and its upstream JVM build-command extension:
 
 ```bash
-eta-mu --version
-eta-mu kanban count
-eta-mu kanban list
-eta-mu kanban find ft-000b-define-media-workbench-domain-laws
+rheos read-board
+rheos read-task ft-000b-define-media-workbench-domain-laws
 ```
 
 Use `--tasks-dir` only for an intentional alternate board or configuration
@@ -51,7 +57,7 @@ prose cards. See
 `../kanban/chores/ft-ops-001-generate-rheos-board-snapshot.md` for the historical
 command output and tool-version observations.
 
-Current reconciliation evidence on 2026-08-29: Rheos discovered 35 cards
+Historical reconciliation evidence on 2026-08-29: Rheos discovered 35 cards
 (`icebox=9`, `incoming=20`, `breakdown=6`, all other columns zero). The increase
 from the latest 31-card receipt consists of the later-added FT-003E card plus
 three canonical recovery cards for GitHub issues #11, #13, and #14. FT-004H was

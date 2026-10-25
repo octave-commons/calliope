@@ -40,6 +40,17 @@ No historic board events or status snapshots were imported.
 - Packaging: JVM/jpackage direction; GraalVM native-image and system media-key
   integration remain unverified, not implicit consequences of the stack choice.
 
+The affected [approved media-workbench design](../designs/media-workbench-v1.md)
+remains the current product contract. The historical
+[rejected alternatives](../research/recovered/pr-7-native-runtime-adr.md#rejected-alternatives)
+explain the Swing/AWT, GPU-canvas, embedded-browser, alternative audio, transport
+subprocess and external/read-model tradeoffs. Its
+[acceptance conditions](../research/recovered/pr-7-native-runtime-adr.md#acceptance-conditions)
+require Err's disposition and reproducible native window, corpus-audio transport
+and disposable-index evidence. Those sections are historical references; ADR-003
+is the current decision address. The acceptance receipt above records the prior
+human disposition, and current verification below states what was rerun.
+
 ADR-001 and the approved media-workbench design still govern domain semantics.
 ADR-002 dataset roots/manifests remain compatible with this read model.
 Generic event storage/admission/replay belongs to Clio; SQLite is a disposable

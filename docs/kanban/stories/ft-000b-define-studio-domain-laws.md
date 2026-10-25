@@ -6,11 +6,11 @@ process: "docs/process/product-design-and-delivery.md"
 phase: "0"
 type: "story"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1788047453951-0.czkmcnxdlxeniwicer7"
+write-id: "1792918984951-0.h1ok3s4of5b868g6wft"
 points: "5"
 title: "FT-000B: Define media workbench domain laws"
 priority: "P0"
-status: "breakdown"
+status: "in_progress"
 epic: "ft-000-establish-media-workbench-authority-and-durable-studio-foundation"
 design: "docs/designs/media-workbench-v1.md"
 uuid: "ft-000b-define-media-workbench-domain-laws"
@@ -59,4 +59,7 @@ Recovery crosswalk (2026-08-30): GitHub issue #9 (https://github.com/octave-comm
 Readiness repair (2026-08-30): moved from ready back to breakdown through Rheos because declared dependency FT-000A is still incoming. Re-enter ready only after the dependency is satisfied or explicitly revised through canonical authority.
 
 Date correction: the preceding reconciliation comments say 2026-08-30, but Rheos recorded these operations on 2026-08-29 UTC. The substance is unchanged; this append-only correction preserves the original ledger history.
+
+Studio goal recovery begins from the existing approved ADR-001/design and issue #9 at source 194512b4ce7e9e706f555a4f933449c632bb8fb5. FT-000A is done in this base, satisfying the recorded readiness repair. This branch recovers pure content laws plus required contextual range/fade/source/arrangement validation into calliope namespaces. Release/publication contracts remain the separately scoped handoff; this contribution will not claim the broader card complete without its remaining scope. New capture-plan cards remain incoming while PR #22 planning review runs.
+
 ---

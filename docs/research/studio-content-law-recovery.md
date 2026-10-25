@@ -65,11 +65,14 @@ Admission now compares each fade against remaining duration rather than summing
 them: invalid extremes return a structured refusal while an exactly fitting
 maximum-integer source range remains valid.
 
-Current local result: 124 tests / 817 assertions, zero failures/errors under
+Current local result: 127 tests / 827 assertions, zero failures/errors under
 umask 0022. New tests cover object cross-promotion, exact source identity,
 range/fade boundaries, marker duration-context integrity and rating scope, accepted-clip ordering,
 cross-work provenance, complete multi-source exports, closed query vocabulary,
-plain-data schema round trips and no input mutation.
+plain-data schema round trips and no input mutation. Current review additions combine
+explicit cross-work authorization with complete export lineage, exercise an
+out-of-bounds arrangement point against its resolved duration, and call the
+instant validator directly with valid and invalid calendar values.
 
 Full source/test/probe lint: zero errors/warnings. Hosted CI and current-head
 code review are still required. No audio device, native studio UI, capture,

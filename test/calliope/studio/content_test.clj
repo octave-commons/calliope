@@ -218,3 +218,33 @@
     (is (false? (:ok? (content/marker-check (assoc point :marker/at-ms 101) render 101))))
     (is (false? (:ok? (content/marker-check arrangement-marker arrangement))))
     (is (false? (:ok? (content/marker-check marker nil))))))
+
+(deftest cross-work-export-retains-every-source
+  (let [r2 (assoc render :render/id "r2" :render/work-id "w2" :render/sha256 sha-b)
+        c2 (assoc clip :clip/id "c2" :clip/source
+                  {:source/type :render :source/id "r2" :source/sha256 sha-b})
+        a (-> arrangement
+              (assoc :arrangement/cross-work? true)
+              (update :arrangement/entries conj {:entry/clip-id "c2" :entry/position 1}))
+        clips {"c1" clip "c2" c2} renders {"r1" render "r2" r2}
+        complete (assoc export :export/source-hashes [sha-b sha])]
+    (is (:ok? (content/export-check complete a clips renders)))
+    (is (= :incomplete-or-extra-source-hashes
+           (get-in (content/export-check export a clips renders) [:errors 0 :error/code])))
+    (is (false? (:ok? (content/export-check
+                       complete (assoc a :arrangement/cross-work? false) clips renders))))))
+
+(deftest arrangement-point-marker-respects-resolved-duration
+  (let [point (-> marker
+                  (dissoc :marker/range)
+                  (assoc :marker/subject {:subject/type :arrangement :subject/id "a1"}
+                         :marker/at-ms 100))]
+    (is (:ok? (content/marker-check point arrangement 100)))
+    (is (= :marker-outside-subject
+           (get-in (content/marker-check (assoc point :marker/at-ms 101) arrangement 100)
+                   [:errors 0 :error/code])))))
+
+(deftest direct-instant-admission-checks-calendar-validity
+  (is (true? (content/valid? :calliope.studio/instant-v1 stamp)))
+  (doseq [invalid ["2026-02-29T00:00:00Z" "2026-10-25T25:00:00Z" "not-an-instant" nil]]
+    (is (false? (content/valid? :calliope.studio/instant-v1 invalid)))))

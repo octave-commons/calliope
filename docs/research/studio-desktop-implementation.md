@@ -55,7 +55,7 @@ global Clojure executors.
 
 ## Evidence and limits
 
-- Full JVM suite: 158 tests / 1096 assertions, zero failures/errors under umask0022.
+- Full JVM suite: 161 tests / 1106 assertions, zero failures/errors under umask0022.
   Tests cover fixed operation admission, selected-only effects, exact layout,
   unchanged focus/unselected apps, duplicate/old-preview refusal, independent
   revision/geometry/focus staleness, skip reasons, lost acknowledgement,

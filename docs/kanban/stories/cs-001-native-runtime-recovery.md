@@ -2,11 +2,11 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792928411085-0.j5o12bwow7zyjxd9xw"
+write-id: "1792931479569-0.66nb5zbf4cuboxb5mnm"
 points: "3"
 title: "CS-001: Reconcile native runtime and reproduce window/audio/rebuild evidence"
 priority: "P0"
-status: "incoming"
+status: "done"
 design: "docs/designs/media-workbench-v1.md"
 uuid: "cs-001-native-runtime-recovery"
 research: "docs/research/studio-foundation-map.md"
@@ -77,5 +77,7 @@ Validation clarification: the root suite reported 112 tests and 699 assertions, 
 The actual corpus transport and SQLite rebuild passed under a private Xvfb display and null sink. The synthetic error probe separately checks both reported error channels before READY and during transport, including HALTED, while preserving the original cause. These are distinct checks; no real decoder failure, physical listening or production session recovery is claimed.
 
 This clear note supersedes the earlier compressed validation wording. The original comment remains historical; board comments and event history are preserved through the supported Rheos append operation. The story remains incoming pending planning convergence.
+
+Planning converged on parent head c0d39fa: canonical pr-flow status PASS; MiMo APPROVED review5643155974 and CodeRabbit exact-head request6397530516 / completed reply6397531323 (updated2026-10-25T12:23:22Z), all19findings settled, current hosted contracts passed. This bounded story reconciles existing human-accepted native choices and reproduces current technical evidence; it does not claim new creative acceptance or the full studio workflow. Historical ADR bytes remain pinned; actual corpus window/transport/SQLite rebuild and separate synthetic error-channel probes pass as documented. Moving through canonical lifecycle for this evidence scope before dependent capture work.
 
 ---

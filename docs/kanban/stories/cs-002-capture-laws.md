@@ -2,11 +2,11 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["cs-001-native-runtime-recovery"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792928411470-0.ggf8iejgaijp4d7stcw"
+write-id: "1792931481189-0.ppatl08pvockz2bjl3u"
 points: "5"
 title: "CS-002: Define source-preserving session laws and deterministic capture adapters"
 priority: "P0"
-status: "incoming"
+status: "in_progress"
 design: "docs/designs/media-workbench-v1.md"
 uuid: "cs-002-capture-laws"
 research: "docs/research/studio-foundation-map.md"
@@ -88,5 +88,7 @@ Planning revision for PR #22: capture-specific proposed contract is docs/designs
 Planning review 5642914512: the v1 ingest contract is explicitly restricted to the trusted native UI entrypoint with the configured user actor and an active session/process grant. Added named ING acceptance cases for agent/system/spoofed entrypoints and absolute, traversal, linked, nonregular or changed-root inputs. V1 source arguments are regular-file leaf names under the root bound into the arm grant; source payloads outside it are never opened or copied.
 
 The acceptance body was hand-authored as supported card content, then recorded with this canonical comment. Executable rejection tests belong to this story before adapters; no production ingest implementation or passing authorization tests are claimed in the planning PR.
+
+Codex claims CS-002 for the authorized synthetic music milestone. Parent planning gate passed on c0d39fa with exact-head CodeRabbit completion6397531323 and MiMo approval5643155974; all19findings settled. CS-001 is now done through Rheos with actual JVM tests/lint, inherited human-accepted native choices and separately documented corpus/error probes. Implement named capture laws and failing clock/MIDI/authorization/confinement tests first, then pure interpretation and JVM source adapters. No real device, human creative decision, durable agent execution or complete studio workflow is claimed.
 
 ---

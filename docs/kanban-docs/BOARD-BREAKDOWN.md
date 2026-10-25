@@ -180,3 +180,12 @@ cards that would make the drawing unreadable.
 FT-OPS-001 records a local eta-mu/Rheos read of the corrected board. FT-000A is
 the dependency that must be reconciled before FT-000B and FT-000D can return to
 `ready`; query Rheos for live state before acting.
+
+## Studio recovery — 2026-10-25
+
+The tables above preserve the earlier phase map. Current branch lifecycle
+reconciliation uses Rheos: FT-000A's recorded human acceptance was reverified,
+and FT-000D owns the [restored native decision](../adrs/adr-003-reconciled-native-runtime.md).
+The [studio path map](../research/studio-foundation-map.md) adds CS-001 through
+CS-007 without replacing those existing owner/dependency gates. CS-001 explicitly
+depends on FT-000D. Live states and transitions remain exclusively Rheos-owned.

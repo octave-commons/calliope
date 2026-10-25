@@ -56,6 +56,9 @@ JavaFX 21.0.3/Media, SQLite via JDBC and an in-process command/query boundary.
 Main now uses ADR-002 for the external dataset. Preserve the historic source
 byte-for-byte under research/recovered and refer to its immutable source SHA;
 use a uniquely named reconciliation note rather than overwrite the current ADR.
+The [current native-runtime address](../adrs/adr-003-reconciled-native-runtime.md)
+preserves the recorded 2026-08-25 acceptance, unchanged choices and current
+evidence limits. It does not claim new acceptance of the studio implementation.
 Issue [#12](https://github.com/octave-commons/calliope/issues/12) requires fresh
 window/audio/read-model evidence and Rheos reconciliation. Historic acceptance
 does not prove today's playback. The approved design defers full DAW/MIDI editing;
@@ -107,3 +110,6 @@ Hosted Repository Contracts passes. Studio work has not changed that behavior.
 Planning review precedes production implementation; every story moves only through
 Rheos. Existing FT cards retain their identity and acceptance gates. This increment
 does not assert the entire daily-driver player, all FT gates, or real-device readiness.
+CS-001 has an explicit FT-000D dependency. The existing owner decisions must be
+reconciled through their actual lifecycle; prose or a standalone probe is not a
+replacement readiness gate.

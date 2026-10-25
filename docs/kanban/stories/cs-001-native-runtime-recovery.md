@@ -1,13 +1,15 @@
 ---
-uuid: "cs-001-native-runtime-recovery"
+labels: "studio, foundation, native, recovery"
+dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1792916819284-0.xsm8fsgk9ya33xky269"
+points: "3"
 title: "CS-001: Reconcile native runtime and reproduce window/audio/rebuild evidence"
-status: incoming
-priority: P0
-points: 3
-labels: studio, foundation, native, recovery
-research: docs/research/studio-foundation-map.md
-adr: docs/adrs/adr-001-local-first-media-workbench.md
-design: docs/designs/media-workbench-v1.md
+priority: "P0"
+status: "incoming"
+design: "docs/designs/media-workbench-v1.md"
+uuid: "cs-001-native-runtime-recovery"
+research: "docs/research/studio-foundation-map.md"
 ---
 
 # CS-001: Reconcile native runtime and reproduce window/audio/rebuild evidence
@@ -55,3 +57,8 @@ Planning review precedes ready; code review and current-head gates precede merge
 Historical native artifacts are not current integration. Recover sources explicitly;
 keep original bytes, independent sources, decisions and failed/unavailable outcomes
 inspectable. Device, display, inference and i3 availability have separate claims.
+
+---
+Planning review 4370152387: added the explicit FT-000D dependency through Rheos. CS-001 cannot enter ready before that owner decision is reconciled/accepted through its existing FT-000A dependency. The current native probe and recovered artifact are orientation/research evidence for the owning FT-000D/issue #12 recovery, not downstream production assumptions or a waiver. No existing FT status or acceptance has been changed.
+
+---

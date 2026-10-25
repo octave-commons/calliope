@@ -1,14 +1,15 @@
 ---
-uuid: "cs-005-proposals-and-curation"
-title: "CS-005: Curate phrases and record separate human proposal decisions"
-status: incoming
-priority: P0
-points: 3
-labels: studio, foundation, native, recovery
+labels: "studio, foundation, native, recovery"
 dependency: ["cs-003-session-recovery"]
-research: docs/research/studio-foundation-map.md
-adr: docs/adrs/adr-001-local-first-media-workbench.md
-design: docs/designs/studio-session-boundary.md
+adr: "docs/adrs/adr-001-local-first-media-workbench.md"
+write-id: "1792917560103-0.hrrz02zx3ia72k1qkjy"
+points: "3"
+title: "CS-005: Curate phrases and record separate human proposal decisions"
+priority: "P0"
+status: "incoming"
+design: "docs/designs/studio-session-boundary.md"
+uuid: "cs-005-proposals-and-curation"
+research: "docs/research/studio-foundation-map.md"
 ---
 
 # CS-005: Curate phrases and record separate human proposal decisions
@@ -51,3 +52,7 @@ Planning review precedes ready; current-head review/checks precede merge.
 Keep missing sources, failed writes, unavailable providers and partial effects
 explicit. Device and durable-runtime evidence cannot be inferred from fixtures.
 
+---
+Provider discovery 2026-10-25: the existing Calliope model HTTP adapter reached configured local Ollama gemma4:e4b, but the returned content did not parse as JSON (EOF). A separate bounded raw API diagnostic with think=false timed out after 45s. No valid proposal, listening observation, human decision or durable run is claimed. Keep failed/empty/timeout outcomes explicit and outside capture; future provider integration must verify an actual bounded output rather than rely on catalog advertisement.
+
+---

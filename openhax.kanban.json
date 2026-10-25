@@ -1,4 +1,11 @@
 {
   "tasksDir": "./docs/kanban",
-  "fsm": "promethean"
+  "fsm": {
+    "extends": "promethean",
+    "buildGateCommands": [
+      "umask 0022 && clojure -M:test",
+      "clj-kondo --lint src test spike"
+    ],
+    "cwd": "."
+  }
 }

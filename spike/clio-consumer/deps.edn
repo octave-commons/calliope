@@ -1,0 +1,5 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.12.2"}
+        io.github.open-hax/clio
+        {:git/url "https://github.com/open-hax/clio.git"
+         :git/sha "9b14cda67d76639ee33aa90eff3caf10dd120d7c"}}}

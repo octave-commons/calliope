@@ -2,7 +2,7 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["ft-000d-decide-native-desktop-playback-read-model-and-application-topology"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792916819284-0.xsm8fsgk9ya33xky269"
+write-id: "1792924583848-0.p8mnqjr3ozdr4n1rx6e"
 points: "3"
 title: "CS-001: Reconcile native runtime and reproduce window/audio/rebuild evidence"
 priority: "P0"
@@ -60,5 +60,7 @@ inspectable. Device, display, inference and i3 availability have separate claims
 
 ---
 Planning review 4370152387: added the explicit FT-000D dependency through Rheos. CS-001 cannot enter ready before that owner decision is reconciled/accepted through its existing FT-000A dependency. The current native probe and recovered artifact are orientation/research evidence for the owning FT-000D/issue #12 recovery, not downstream production assumptions or a waiver. No existing FT status or acceptance has been changed.
+
+Planning review5642720031 diagnostic fixes: current ADR now links its affected approved design plus historical alternatives/acceptance conditions; recovered ADR bytes unchanged. READY polling reports Media/MediaPlayer errors with original cause. Actual corpus transport/rebuild still passes. ready-probe separately exercises fake asynchronous getters through real FX dispatch; it is not a real codec-error claim. Root112tests699assertions and full lint pass. Story remains incoming pending planning convergence.
 
 ---

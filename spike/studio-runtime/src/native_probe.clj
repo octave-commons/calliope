@@ -23,6 +23,15 @@
           (> n 100) (throw (ex-info "Native transition timed out" {}))
           :else (do (Thread/sleep 100) (recur (inc n))))))
 
+(defn await-media-ready! [player]
+  (wait-for
+   #(on-fx
+     (fn []
+       (when-let [cause (or (.getError (.getMedia player)) (.getError player))]
+         (throw (ex-info "Native media failed before READY"
+                         {:media/status (str (.getStatus player))} cause)))
+       (= "READY" (str (.getStatus player)))))))
+
 (defonce state (atom {:status :stopped}))
 (defn command! [command]
   (case command
@@ -87,7 +96,7 @@
       (let [player (on-fx #(MediaPlayer. (Media. (str (.toURI (File. asset))))))]
         (try
           (on-fx #(.setVolume player 0.1))
-          (wait-for #(= "READY" (on-fx (fn [] (str (.getStatus player))))))
+          (await-media-ready! player)
           (let [duration (on-fx #(.toMillis (.getTotalDuration player)))]
             (when-not (and (Double/isFinite duration) (> duration 6250))
               (throw (ex-info "Asset too short for 5000 ms seek and >5250 ms resume assertions (need >6250 ms)"

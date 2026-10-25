@@ -203,3 +203,13 @@
     (is (= {:ok? false :errors [{:error/code :invalid-clip}]}
            (content/clip-check too-large render)))
     (is (:ok? (content/clip-check longest-clip longest-render)))))
+
+(deftest marker-duration-context-cannot-expand-the-source
+  (let [point (-> marker (dissoc :marker/range) (assoc :marker/at-ms 100))
+        arrangement-marker (assoc marker :marker/subject
+                                  {:subject/type :arrangement :subject/id "a1"})]
+    (is (:ok? (content/marker-check point render)))
+    (is (false? (:ok? (content/marker-check (assoc point :marker/at-ms 101) render))))
+    (is (false? (:ok? (content/marker-check (assoc point :marker/at-ms 101) render 101))))
+    (is (false? (:ok? (content/marker-check arrangement-marker arrangement))))
+    (is (false? (:ok? (content/marker-check marker nil))))))

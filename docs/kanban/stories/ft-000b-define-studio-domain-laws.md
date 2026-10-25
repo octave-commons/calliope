@@ -6,7 +6,7 @@ process: "docs/process/product-design-and-delivery.md"
 phase: "0"
 type: "story"
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792921450889-0.u9qt4pq63vxgxv712y"
+write-id: "1792922410747-0.naykgl5immhzwr4omzt"
 points: "5"
 title: "FT-000B: Define media workbench domain laws"
 priority: "P0"
@@ -67,5 +67,7 @@ Content recovery GREEN: calliope.law.studio now supplies qualified plain-data Ma
 Self-review RED: the new oversized-fades regression produces two long-overflow errors from intrinsic clip admission rather than the required invalid-clip result (123 tests/809 assertions, zero failures/two errors). A largest valid source range and exactly fitting fades remain the positive boundary. Fix the arithmetic without narrowing recovered source metadata types.
 
 Overflow GREEN: compare each fade with remaining duration instead of summing them. Full suite123tests809assertions passes with zero failures/errors; full src/test/spike lint zero errors/warnings. Oversized pairs refuse with invalid-clip; exactly fitting maximum-integer source metadata remains valid. Capture/session work remains planning-gated; broader release/publication scope is not claimed complete.
+
+Retained artifact from cancelled old77ca7ab review had one finding: malformed receipt repository/harness fields. Existing repo correction is preserved; appended explicit codex-desktop origin correction for both affected historical records without editing their bytes. Added marker duration-context boundary coverage; current behavior already passes, so no artificial RED claim. Full suite124tests814assertions zero failures/errors; full lint zero errors/warnings. Latest exact-head independent review remains required.
 
 ---

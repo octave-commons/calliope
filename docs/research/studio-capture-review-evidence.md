@@ -47,7 +47,7 @@ successful authorized ingestion. The exact-head hosted Repository Contracts
 also passed. The local assessor separately reproduced the stopped-state defect;
 the valid concern was fixed rather than included in the API dispute.
 
-The fresh local full suite passes **142 tests / 1001 assertions**, zero
+On committed217d30d, the local full suite passed **142 tests / 1001 assertions**, zero
 failures/errors, with zero-warning source/test/spike lint. Tests execute actual
 authorized ingress through the disputed call. The review workflow now consumes
 its pinned upstream JVM toolchain and runs the full JVM suite, lint and `javap`
@@ -76,3 +76,13 @@ The fresh opener review is not an in-thread withdrawal or a different Bot's
 rejection agreement. The original root remains open; a scoped user exception
 question is pending. No answer, settlement, native gate pass or CS-003 readiness
 is presumed. Exact-head findings/approvals remain attached to their real heads.
+
+## Content-parent synchronization
+
+After the217d30d review completed, capture incorporated content parent a3a2faa,
+including its three reviewer-requested coverage cases. The combined suite now
+passes145tests/1011assertions with zero failures/errors; full src/test/spike lint
+has zero errors/warnings. Capture production code is unchanged by this merge.
+Receipt history retains the full first-parent bytes plus the incoming append tail.
+This source-head change requires fresh hosted checks and exact-head review; the
+217d30d approval and assessment are not relabeled as current-head qualification.

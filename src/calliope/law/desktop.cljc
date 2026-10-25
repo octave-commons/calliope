@@ -30,6 +30,19 @@
            [:studio/id [:ref :calliope.desktop/id-v1]]
            [:daw/id {:optional true} [:ref :calliope.desktop/id-v1]]
            [:opt-outs {:optional true} [:set [:ref :calliope.desktop/id-v1]]]]
+          :calliope.desktop/target-v1
+          [:map {:closed true} [:id [:ref :calliope.desktop/id-v1]]
+           [:rect [:ref :calliope.desktop/rect-v1]]]
+          :calliope.desktop/skipped-v1
+          [:map {:closed true} [:id [:ref :calliope.desktop/id-v1]]
+           [:reason [:enum :missing :undersized :opted-out :fullscreen :different-workspace]]]
+          :calliope.desktop/plan-v1
+          [:map {:closed true} [:profile/type [:= :music-v1]]
+           [:expected/revision [:ref :calliope.studio/sha256-v1]]
+           [:expected/focus [:ref :calliope.desktop/id-v1]]
+           [:targets [:vector [:ref :calliope.desktop/target-v1]]]
+           [:operations [:vector [:ref :calliope.desktop/operation-v1]]]
+           [:skipped [:vector [:ref :calliope.desktop/skipped-v1]]]]
           :calliope.desktop/operation-v1
           [:or
            [:map {:closed true} [:op [:= :floating-enable]] [:id [:ref :calliope.desktop/id-v1]]]

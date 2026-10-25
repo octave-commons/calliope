@@ -2,11 +2,11 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["cs-001-native-runtime-recovery"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792933681699-0.9apgt3fcfsfilju2iz1"
+write-id: "1792934984981-0.zfczbg7ly4lorhf2hxu"
 points: "3"
 title: "CS-006: Add an explicit one-shot music desktop profile"
 priority: "P0"
-status: "in_progress"
+status: "review"
 design: "docs/designs/studio-session-boundary.md"
 uuid: "cs-006-desktop-profile"
 research: "docs/research/studio-foundation-map.md"
@@ -54,5 +54,7 @@ explicit. Device and durable-runtime evidence cannot be inferred from fixtures.
 
 ---
 Codex claims independent CS-006 after planning convergence at c0d39fa (CodeRabbit completion6397531323, MiMo approval5643155974, canonical planning PASS) and CS-001 done. Implement a pure inspectable plan plus one-shot i3 adapter with fixed operations, exact tree/geometry preconditions, focus preservation and explicit partial/unavailable outcomes. No live layout effects, config replacement or background reconciliation during development; mocks, read-only discovery and any later user-invoked effects remain separate.
+
+GREEN evidence: full JVM suite150tests1068assertions, zero failures/errors under umask0022, full src/test/spike lint zero errors/warnings. Actual production controller passed an isolated Xvfb/i3 run on two disposable xmessage clients: six acknowledged fixed operations, exact960x1080 rectangles, unchanged focus, duplicate apply and manual-change stale apply with zero further commands. Stronger per-operation postconditions also pass the repeated isolated run. Actual workstation adapter discovery separately reads seven windows with zero effects. Evidence and platform/IPC atomicity limits are in docs/research/studio-desktop-implementation.md and spike/studio-desktop/README.md. No current workstation layout or actual Calliope/DAW UI was changed or claimed verified. Moving to review, not done.
 
 ---

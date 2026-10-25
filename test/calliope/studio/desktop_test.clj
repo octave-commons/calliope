@@ -33,6 +33,7 @@
 (deftest profile-only-plans-explicit-selected-windows
   (let [result (desktop/plan snapshot profile) plan (:plan result)]
     (is (:ok? result))
+    (is (law/valid? :calliope.desktop/plan-v1 plan))
     (is (= [10 20] (mapv :id (:targets plan))))
     (is (= [{:x 0 :y 0 :width 960 :height 1080} {:x 960 :y 0 :width 960 :height 1080}]
            (mapv :rect (:targets plan))))
@@ -121,3 +122,56 @@
     (is (= :desktop/focus-changed (:error/code result)))
     (is (= 1 (count @calls)))
     (is (= 20 (:focus @world)))))
+
+(deftest newer-preview-invalidates-older-intent-with-zero-effects
+  (let [{:keys [controller calls]} (harness)
+        old (i3/preview! controller profile)
+        fresh (i3/preview! controller (assoc profile :opt-outs #{20}))]
+    (is (= :desktop/unknown-plan (:error/code (i3/apply! controller (:plan/id old)))))
+    (is (empty? @calls))
+    (is (:ok? (i3/apply! controller (:plan/id fresh))))
+    (is (= #{10} (set (map (comp :id first) @calls))))))
+
+(deftest native-tree-reduction-retains-focus-identity-and-floating-wrappers
+  (let [node {:id 10 :window 100 :focused true :rect (:rect window) :nodes [] :floating_nodes []}
+        tree {:id 1 :type "root" :nodes [{:id 2 :type "workspace" :rect rect
+                                         :nodes [] :floating_nodes [{:id 3 :type "floating_con" :nodes [node]}]}]}
+        result (i3/snapshot-from-tree tree)]
+    (is (:ok? result))
+    (is (= 10 (get-in result [:snapshot :focus])))
+    (is (= 2 (get-in result [:snapshot :workspace :id])))
+    (is (true? (get-in result [:snapshot :windows 10 :floating?])))
+    (is (= result (i3/snapshot-from-tree tree)))
+    (is (false? (:ok? (i3/snapshot-from-tree (assoc tree :nodes [])))))
+    (is (false? (:ok? (i3/snapshot-from-tree
+                      (assoc-in tree [:nodes 0 :floating_nodes 0 :nodes] [node node])))))))
+
+(deftest a-lost-acknowledgement-is-not-an-empty-success-or-safe-retry
+  (let [{:keys [world calls read execute]} (harness)
+        c (i3/controller {:read! read :execute! (fn [op command]
+                                                (execute op command)
+                                                (throw (java.io.IOException. "Lost reply after effect")))})
+        preview (i3/preview! c profile)
+        result (i3/apply! c (:plan/id preview))]
+    (is (= :partial (:status result)))
+    (is (:uncertain? result))
+    (is (= :floating-enable (get-in result [:attempted :op])))
+    (is (empty? (:applied result)))
+    (is (true? (get-in @world [:windows 10 :floating?])))
+    (is (= 1 (count @calls)))
+    (is (false? (:ok? (i3/apply! c (:plan/id preview)))))
+    (is (= 1 (count @calls)))))
+
+(deftest changed-geometry-after-an-acknowledged-resize-stops-further-effects
+  (let [{:keys [world calls read execute]} (harness)
+        c (i3/controller {:read! read :execute! (fn [op command]
+                                                (let [result (execute op command)]
+                                                  (when (= :resize (:op op))
+                                                    (swap! world assoc-in [:windows (:id op) :rect :width] 700))
+                                                  result))})
+        preview (i3/preview! c profile)
+        result (i3/apply! c (:plan/id preview))]
+    (is (= :desktop/effect-not-established (:error/code result)))
+    (is (= :partial (:status result)))
+    (is (= 2 (count @calls)))
+    (is (= 700 (get-in @world [:windows 10 :rect :width])))))

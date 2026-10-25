@@ -51,8 +51,11 @@ The fresh local full suite passes **142 tests / 1001 assertions**, zero
 failures/errors, with zero-warning source/test/spike lint. Tests execute actual
 authorized ingress through the disputed call. The review workflow now consumes
 its pinned upstream JVM toolchain and runs the full JVM suite, lint and `javap`
-as deterministic evidence gates. Fresh hosted results must be read separately;
-this document does not anticipate their outcomes.
+as deterministic evidence gates. The exact217d30d hosted evidence artifact12601770382 was subsequently downloaded.
+Its summary binds expected/executed/completion217d30d, a clean checkout, and all
+four attempted gates exiting0. The deterministic output records142tests /
+1001assertions, zero failures/errors, zero-warning lint, and both Java methods.
+This qualifies that historical exact head; a later source head needs fresh review.
 
 The independent local agent is not an allowlisted native GitHub Bot. Its real
 assessment does not supply native rejection credit, a full review, approval or
@@ -60,3 +63,16 @@ completed-round credit. The original inline finding remains open pending a
 supported native disposition or an explicit, recorded user exception. No native
 Bot response is fabricated and no canonical gate pass is claimed from local
 agreement alone.
+
+## Subsequent exact-head assessment and native review
+
+The same independent local assessor rechecked217d30d against the actual native
+root and current code:11ingress tests/64assertions, zero failures/errors, clean
+checkout before and after. Current native review5643547933 APPROVED217d30d and
+explicitly states that hosted javap contradicts the older overload claim. The
+writer's counterproposal is discussion4371067250 and summary response is
+issuecomment6398542105. These are actual native sources, not Bot transcripts.
+The fresh opener review is not an in-thread withdrawal or a different Bot's
+rejection agreement. The original root remains open; a scoped user exception
+question is pending. No answer, settlement, native gate pass or CS-003 readiness
+is presumed. Exact-head findings/approvals remain attached to their real heads.

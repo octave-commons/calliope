@@ -284,3 +284,33 @@
           (is (= 3 (count (:history recovery))))
           (is (false? (get-in recovery [:view :recovery/pending?])))
           (is (= :unarmed (get-in recovery [:view :capture/state]))))))))
+
+(deftest an-empty-existing-ledger-is-not-a-recovered-session
+  (with-store
+    (fn [_ root store]
+      (is (= :ok (:result/status (session/ui-command! store actor (create-command)))))
+      (session/close! store)
+      (spit (str (:ledger/path store)) "")
+      (is (thrown? clojure.lang.ExceptionInfo (session/open! root actor))))))
+
+(deftest interrupted-initial-creation-can-be-retried-without-inventing-an-empty-session
+  (with-store
+    (fn [parent root store]
+      (let [cmd (create-command)
+            result (with-redefs [clio-runtime/retry-append!
+                                (fn [& _] (throw (java.io.IOException. "Interrupted initial event append")))]
+                     (session/ui-command! store actor cmd))
+            candidate (:append/recovery result)
+            candidate-file (.resolve parent "initial-candidate.edn")
+            output (.resolve parent "initial-recovery.edn")]
+        (is (= :uncertain (:result/status result)))
+        (is (empty? (session/history store)))
+        (session/close! store)
+        (spit (str candidate-file) (pr-str candidate))
+        (await-process! (launch! "retry" (str root) (:actor/id actor) (str output) (str candidate-file)))
+        (let [recovered (edn/read-string (slurp (str output)))]
+          (is (= :ok (get-in recovered [:command-result :result/status])))
+          (is (= sid (get-in recovered [:view :session :session/id])))
+          (is (= [(get-in candidate [:event :event/id])] (get-in recovered [:view :event/ids])))
+          (is (= :unarmed (get-in recovered [:view :capture/state])))
+          (is (false? (get-in recovered [:view :recovery/pending?]))))))))

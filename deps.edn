@@ -3,7 +3,12 @@
  :deps
  {org.clojure/clojure {:mvn/version "1.12.2"}
   org.clojure/data.json {:mvn/version "2.5.1"}
-  metosin/malli {:mvn/version "0.16.4"}}
+  metosin/malli {:mvn/version "0.16.4"}
+  io.github.open-hax/clio
+  {:git/url "https://github.com/open-hax/clio.git"
+   :git/sha "9b14cda67d76639ee33aa90eff3caf10dd120d7c"}
+  org.xerial/sqlite-jdbc {:mvn/version "3.46.1.3"}
+  com.github.seancorfield/next.jdbc {:mvn/version "1.3.1002"}}
 
  :aliases
  {:test

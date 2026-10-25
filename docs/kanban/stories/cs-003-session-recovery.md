@@ -2,11 +2,11 @@
 labels: "studio, foundation, native, recovery"
 dependency: ["cs-002-capture-laws"]
 adr: "docs/adrs/adr-001-local-first-media-workbench.md"
-write-id: "1792916611360-0.by618q9vllhbckaspqz"
+write-id: "1792946060748-0.jv95vh2wkw989svu6sa"
 points: "3"
 title: "CS-003: Persist immutable sources and recover session history"
 priority: "P0"
-status: "incoming"
+status: "review"
 design: "docs/designs/media-workbench-v1.md"
 uuid: "cs-003-session-recovery"
 research: "docs/research/studio-foundation-map.md"
@@ -75,5 +75,9 @@ inspectable. Device, display, inference and i3 availability have separate claims
 
 ---
 Planning split for PR #22 review 5642202249: this 3-point story now owns only immutable source/session persistence. CS-005 owns phrase/proposal/human-decision curation; CS-007 owns combined restart evidence. Failure acceptance distinguishes unchanged pre-write rejection from Clio post-write uncertainty and exact-candidate retry.
+
+Foundation planning gate freshly PASS on unchangedc0d39fa, unanimous current-headMiMo/CodeRabbit and19settledthreads. This card is byte-unchanged from that reviewed plan. Canonical Rheos permitted incoming/accepted/breakdown/ready/todo/in_progress while CS002 remainsreview; starting stackedimplementation does not close its finding, mark itdone or supplymergeapproval. Prior coordinator statement that allCS003workneededCS002done was overlystrict. New namedMalli/Clio-composedcontracts compile; behavior tests nowfail onmissingCalliope session implementation. Next implementdomain then durableadapters.
+
+CS003 local GREEN: 157 tests / 1225 assertions, zero failures/errors, full src/test/spike lint zero warnings/errors; actual Rheos review build gates passed. Independent JVMs preserve history/source identities and rebuild SQLite identically; exact interrupted/postwrite recovery candidate retry, competing writers and negative corruption/authority tests pass. Production-service two-JVM demo has five passing identity/cache/restart checks. See docs/research/studio-session-implementation.md. Simulated operator and synthetic media; no curation/proposal/native UI/device/full-milestone claim. Stacked parent capture review remains open; no merge credit.
 
 ---

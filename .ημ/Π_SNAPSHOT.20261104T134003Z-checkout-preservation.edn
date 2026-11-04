@@ -1,0 +1,24 @@
+{:snapshot/id "20261104T134003Z-checkout-preservation"
+ :base/head "b473c21251d3281eae942c5bddfef829b37d1182"
+ :branch "device/stealth"
+ :tag "Π/checkout/20261104T134003Z"
+ :publication :planned
+ :status :work-in-progress
+ :files [
+  {:path "deps.edn" :bytes 2190 :sha256 "e3d4a849f40be3dadb2dde17a20192d456054f17b735bdca51ce9ee62ac223e8"}
+  {:path "docs/designs/suno-listening-companion.md" :bytes 10424 :sha256 "43609eb96bd5e184d9c3adc7bbb67fdc75682041737621619408ea310f729d39"}
+  {:path "ledgers/ingest.edn" :bytes 57738628 :sha256 "0caf5620bd0935f35e828eb76e5dae30f18d2aadde9b11f4d6e2ebf45fab9f10"}
+  {:path "ledgers/projections/suno-meta-v1.edn" :bytes 5260279 :sha256 "cffad6d8d298440166d094d312eb9dc9f2f877ff724bd57122da6cdbb9197e3d"}
+  {:path "ledgers/studio.edn" :bytes 728 :sha256 "d9a5eee60c73e0a3cf1f34cdc78146017914e3b3e643b8b53fdb3be1205e7e65"}
+  {:path "receipts.edn" :bytes 156973 :sha256 "64970fa080eb88d8183a43c2f28d892471fedab978b06ec05ce11b65dc52464c"}
+  {:path "resources/companion/monokai.edn" :bytes 257 :sha256 "15dd6e1e4d20961fcd6ebd3f33cb64347c024723dcca729c33d8ab0cd94dafac"}
+  {:path "scripts/listen" :bytes 131 :sha256 "4823950a67862160ef37c5917df3a5cc632314e7ba6c07dd23a96e078ed2c463"}
+  {:path "src/calliope/companion/desktop.clj" :bytes 30746 :sha256 "dad611f00b6679c2ca597360c71e2a8c4cb37b8a7c709808c32c23e76259fcbc"}
+  {:path "src/calliope/companion/review.cljc" :bytes 8248 :sha256 "e6cac18d7fe1027ca696427d9d360970c10aef3611efe5ca038d4505d4c88222"}
+  {:path "src/calliope/companion/store.clj" :bytes 10383 :sha256 "f34a953ac0f6882afe9ff60202424bcebaa6bc9447306c2348d295a7da88094b"}
+  {:path "src/calliope/suno/main.clj" :bytes 1534 :sha256 "e0200c9ba1574b892a63132a0a4f64080d173179cbb9aa521e35118bb7b8a802"}
+  {:path "src/calliope/suno/metadata.cljc" :bytes 5270 :sha256 "7f12df75fcadf7d62980bba0bb9ea7b76993744fbd893b242b57111f04d4b38f"}
+  {:path "test/calliope/companion/history_test.clj" :bytes 13870 :sha256 "65330969b1479de02bd8289be028b4300a0eca7e21890bfaf6c7fb50243906c5"}
+  {:path "test/calliope/suno/metadata_test.clj" :bytes 10786 :sha256 "34a711554a07095ece2f2b5b9d6870057b5c9b05f5fcb39459d43ad527da025d"}
+  {:path "test/calliope/test_runner.clj" :bytes 1398 :sha256 "a4bbab7e80fc9a4daae7b1ec188b5bc036b9ab5ef9e64e6422b62ae35c9b2382"}
+ ]}

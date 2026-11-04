@@ -1,0 +1,4 @@
+;; Native color adapter from uxx/tokens/src/colors.ts (Monokai).
+{:background "#272822" :surface "#1e1f1c" :input "#3e3d32"
+ :selection "#414339" :foreground "#f8f8f2" :muted "#cccccc"
+ :accent "#a6e22e" :info "#66d9ef" :warning "#fd971f" :error "#f92672"}

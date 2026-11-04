@@ -6,7 +6,9 @@
   metosin/malli {:mvn/version "0.16.4"}}
 
  :aliases
- {:test
+ {:suno-meta {:main-opts ["-m" "calliope.suno.main"]}
+  :companion {:main-opts ["-m" "calliope.companion.desktop"]}
+  :test
   {:extra-paths ["test"]
    :main-opts ["-m" "calliope.test-runner"]}
 

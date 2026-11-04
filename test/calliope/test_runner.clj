@@ -8,6 +8,8 @@
             [calliope.media.dataset-test]
             [calliope.media.cli-test]
             [calliope.media.ingestion-test]
+            [calliope.suno.metadata-test]
+            [calliope.companion.history-test]
             [calliope.reconstruction.handoff-test]
             [calliope.reconstruction.paths-test]))
 
@@ -22,6 +24,8 @@
                          'calliope.media.dataset-test
                          'calliope.media.cli-test
                          'calliope.media.ingestion-test
+                         'calliope.suno.metadata-test
+                         'calliope.companion.history-test
                         'calliope.reconstruction.handoff-test
                         'calliope.reconstruction.paths-test)]
     (shutdown-agents)

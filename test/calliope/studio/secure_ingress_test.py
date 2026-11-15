@@ -16,6 +16,7 @@ Refusal = helper["Refusal"]
 
 class DescriptorTests(unittest.TestCase):
     def setUp(self):
+        """Create two regular sources and bind their staging-root identity."""
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name) / "staging"
@@ -29,12 +30,14 @@ class DescriptorTests(unittest.TestCase):
                                    for name, data in zip(["a.wav", "b.mid"], self.original)]}
 
     def test_replacement_after_metadata_open_reads_only_original_retained_inode(self):
+        """A replaced leaf cannot redirect reads away from its retained original inode."""
         outside = Path(self.temp.name) / "outside"
         outside.write_bytes(b"outside must never be read")
         original_open = os.open
         replaced = False
 
         def racing_open(path, flags, *args, **kwargs):
+            """Replace the leaf once the first retained-inode payload open begins."""
             nonlocal replaced
             if str(path).startswith("/proc/self/fd/") and not replaced:
                 (self.root / "a.wav").unlink()
@@ -48,6 +51,7 @@ class DescriptorTests(unittest.TestCase):
         self.assertEqual(self.original, [base64.b64decode(s["base64"]) for s in result["sources"]])
 
     def test_fifo_directory_and_symlink_refuse_without_read_capable_source_open(self):
+        """Nonregular leaves refuse before any source is opened for payload reads."""
         for kind in ["fifo", "directory", "link"]:
             with self.subTest(kind=kind):
                 target = self.root / "a.wav"
@@ -65,6 +69,7 @@ class DescriptorTests(unittest.TestCase):
                 reads = []
 
                 def observe(path, flags, *args, **kwargs):
+                    """Record opens that request read-capable rather than metadata-only handles."""
                     if not flags & os.O_PATH:
                         reads.append(path)
                     return original_open(path, flags, *args, **kwargs)
@@ -76,6 +81,7 @@ class DescriptorTests(unittest.TestCase):
                 self.assertEqual([], reads)
 
     def test_replaced_root_refuses_before_source_payload_open(self):
+        """A different directory inode cannot inherit the original staging grant."""
         self.root.rename(self.root.with_name("old-staging"))
         self.root.mkdir()
         with self.assertRaises(Refusal) as raised:
@@ -83,6 +89,7 @@ class DescriptorTests(unittest.TestCase):
         self.assertEqual("capture/staging-changed", raised.exception.code)
 
     def test_hash_mismatch_is_non_success(self):
+        """Changed payload bytes refuse instead of producing a successful snapshot."""
         (self.root / "a.wav").write_bytes(b"changed source")
         with self.assertRaises(Refusal) as raised:
             run(self.config)

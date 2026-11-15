@@ -17,14 +17,17 @@ MAX_BYTES = 8 * 1024 * 1024
 
 class Refusal(Exception):
     def __init__(self, code, message):
+        """Retain the structured refusal code and human-readable explanation."""
         self.code, self.message = code, message
 
 
 def reject(code, message):
+    """Stop this snapshot with an expected structured refusal."""
     raise Refusal(code, message)
 
 
 def leaf(name):
+    """Admit only a nonblank direct staging leaf without path syntax."""
     return (isinstance(name, str) and bool(name.strip()) and name not in (".", "..")
             and not any(c in name for c in ("/", "\\", ":", "\0")))
 
@@ -32,10 +35,12 @@ def leaf(name):
 def identity(s):
     # Unlink/relink can change ctime without changing this retained inode's bytes.
     # Canonical identity is the verified payload hash; pathname is only ingress.
+    """Bind retained payload state without treating unlink ctime as byte mutation."""
     return s.st_dev, s.st_ino, s.st_size, s.st_mtime_ns
 
 
 def run(config):
+    """Snapshot two bounded sources through retained Linux descriptors."""
     if not sys.platform.startswith("linux") or not hasattr(os, "O_PATH"):
         reject("capture/confinement-unavailable", "Linux O_PATH and procfs are required")
     sources = config["sources"]
@@ -86,6 +91,7 @@ def run(config):
 
 
 def main():
+    """Read bounded JSON input and emit a snapshot or an expected refusal."""
     try:
         line = sys.stdin.buffer.read(65537)
         if len(line) > 65536:

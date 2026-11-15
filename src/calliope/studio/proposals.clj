@@ -55,9 +55,11 @@
             input {:prompt (:proposal/prompt command) :clip source :input/kind :synthetic-metadata}
             timeout-task (.schedule ^java.util.concurrent.ScheduledExecutorService timer
                                     ^Runnable (fn []
-                                                (failure! :timeout "Local provider exceeded its configured deadline")
-                                                (when-let [task @running] (.cancel ^Future task true))
-                                                (.purge ^ThreadPoolExecutor pool))
+                                                (when (compare-and-set! done false true)
+                                                  (when-let [task @running] (.cancel ^Future task true))
+                                                  (.purge ^ThreadPoolExecutor pool)
+                                                  (deliver completion (channel {:failure/code :timeout
+                                                                                :failure/message "Local provider exceeded its configured deadline"}))))
                                     (long (:timeout-ms options)) TimeUnit/MILLISECONDS)]
         (try
           (reset! running

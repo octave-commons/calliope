@@ -35,7 +35,7 @@
       (refuse :clip/invalid-range "Range must be nonempty and inside its admitted take")
       (and (= :studio/mark type) (contains? (:markers state) (:marker/id command)))
       (refuse :marker/already-exists "Marker identity already exists")
-      (and (= :studio/mark type) (not= :armed (:capture/last-state state)))
+      (and (= :studio/mark type) (not (true? (:capture/armed? state))))
       (refuse :capture/not-armed "Mark a current phrase while capture is armed")
       (and (= :studio/select-clip type)
            (or (not= (:source/sha256 command) (get-in take [:take/audio :sha256]))

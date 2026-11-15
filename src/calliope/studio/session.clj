@@ -342,11 +342,12 @@
                  (= :requested (get-in @(:state store) [:proposals proposal-id :proposal/status])))
     (refuse! :proposal/not-pending "Only a live local request can create a provider channel"))
   (fn [payload]
-    (if-not (or (and (= #{:proposal/output} (set (keys payload)))
+    (if-not (and (map? payload)
+                (or (and (= #{:proposal/output} (set (keys payload)))
                      (curation-law/valid? :calliope.curation/output-v1 (:proposal/output payload)))
                 (and (= #{:failure/code :failure/message} (set (keys payload)))
                      (contains? #{:timeout :unavailable :invalid-output :failed} (:failure/code payload))
-                     (string? (:failure/message payload)) (<= 1 (count (:failure/message payload)) 500)))
+                     (string? (:failure/message payload)) (<= 1 (count (:failure/message payload)) 500))))
       (refusal-result {} {:error/code :command/invalid :error/message "Malformed bounded proposal completion"})
       (let [state (:state store)]
         (locking state
